@@ -1,0 +1,51 @@
+===========================
+ C++ Reference Lookup Mode
+===========================
+
+:Author: Taesoo Kim (tsgatesv@gmail.com)
+:Date: July 16, 2009
+
+Introduction
+============
+
+ C++ Reference Lookup Mode (called cclookup mode) is another clone of
+ pylookup mode of mine with exactly same interface and philosophy. It is
+ mainly based on cppreference.com(http://www.cppreference.com/wiki/) web documentation.
+
+ Please check,
+    Web  : http://taesoo.org/Opensource/CClookup
+    Repo : http://github.com/tsgates/cclookup
+    
+Install
+=======
+
+ ** [PATH] parameter totally depends on your environment, 
+      ex) "~/.emacs.d/cclookup"
+
+;; ======================================================================
+;; add cclookup to your loadpath, ex) ~/.emacs.d/cclookup
+(setq cclookup-dir "[PATH]")
+(add-to-list 'load-path cclookup-dir)
+
+;; load cclookup when compile time
+(eval-when-compile (require 'cclookup))
+
+;; set executable file and db file
+(setq cclookup-program (concat cclookup-dir "/cclookup.py"))
+(setq cclookup-db-file (concat cclookup-dir "/cclookup.db"))
+
+;; to speedup, just load it on demand
+(autoload 'cclookup-lookup "cclookup"
+  "Lookup SEARCH-TERM in the Python HTML indexes." t)
+
+(autoload 'cclookup-update "cclookup" 
+  "Run cclookup-update and create the database at `cclookup-db-file'." t)
+;;----------------------------------------------------------------------
+
+Searching Local Documents
+=========================
+
+Index the database by yourself
+
+1. download any versions of documents from 'http://www.cppreference.com/cppreference-files.tar.gz'
+2. indexing by typing './cclookup.py -u [path]'

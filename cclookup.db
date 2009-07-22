@@ -4193,4 +4193,9652 @@ p2328
 S'returns an integer representation of the bitset'
 p2329
 tp2330
+a(S'asm'
+p2331
+S'./www.cppreference.com/wiki/keywords/asm'
+p2332
+S'keywords'
+p2333
+S'insert an assembly instruction'
+p2334
+tp2335
+a(S'auto'
+p2336
+S'./www.cppreference.com/wiki/keywords/auto'
+p2337
+S'keywords'
+p2338
+S'declare a local variable'
+p2339
+tp2340
+a(S'bool'
+p2341
+S'./www.cppreference.com/wiki/keywords/bool'
+p2342
+S'keywords'
+p2343
+S'declare a boolean variable'
+p2344
+tp2345
+a(S'break'
+p2346
+S'./www.cppreference.com/wiki/keywords/break'
+p2347
+S'keywords'
+p2348
+S'break out of a loop'
+p2349
+tp2350
+a(S'case'
+p2351
+S'./www.cppreference.com/wiki/keywords/case'
+p2352
+S'keywords'
+p2353
+S'a block of code in a switch statement'
+p2354
+tp2355
+a(S'catch'
+p2356
+S'./www.cppreference.com/wiki/keywords/catch'
+p2357
+S'keywords'
+p2358
+S'handles exceptions from throw'
+p2359
+tp2360
+a(S'char'
+p2361
+S'./www.cppreference.com/wiki/keywords/char'
+p2362
+S'keywords'
+p2363
+S'declare a character variable'
+p2364
+tp2365
+a(S'class'
+p2366
+S'./www.cppreference.com/wiki/keywords/class'
+p2367
+S'keywords'
+p2368
+S'declare a class'
+p2369
+tp2370
+a(S'const'
+p2371
+S'./www.cppreference.com/wiki/keywords/const'
+p2372
+S'keywords'
+p2373
+S'declare immutable data or functions that do not change data'
+p2374
+tp2375
+a(S'const_cast'
+p2376
+S'./www.cppreference.com/wiki/keywords/const_cast'
+p2377
+S'keywords'
+p2378
+S'cast from const variables'
+p2379
+tp2380
+a(S'continue'
+p2381
+S'./www.cppreference.com/wiki/keywords/continue'
+p2382
+S'keywords'
+p2383
+S'bypass iterations of a loop'
+p2384
+tp2385
+a(S'default'
+p2386
+S'./www.cppreference.com/wiki/keywords/default'
+p2387
+S'keywords'
+p2388
+S'default handler in a case statement'
+p2389
+tp2390
+a(S'delete'
+p2391
+S'./www.cppreference.com/wiki/keywords/delete'
+p2392
+S'keywords'
+p2393
+S'make dynamic memory available'
+p2394
+tp2395
+a(S'do'
+p2396
+S'./www.cppreference.com/wiki/keywords/do'
+p2397
+S'keywords'
+p2398
+S'looping construct'
+p2399
+tp2400
+a(S'double'
+p2401
+S'./www.cppreference.com/wiki/keywords/double'
+p2402
+S'keywords'
+p2403
+S'declare a double precision floating-point variable'
+p2404
+tp2405
+a(S'dynamic_cast'
+p2406
+S'./www.cppreference.com/wiki/keywords/dynamic_cast'
+p2407
+S'keywords'
+p2408
+S'perform runtime casts'
+p2409
+tp2410
+a(S'else'
+p2411
+S'./www.cppreference.com/wiki/keywords/else'
+p2412
+S'keywords'
+p2413
+S'alternate case for an if statement'
+p2414
+tp2415
+a(S'enum'
+p2416
+S'./www.cppreference.com/wiki/keywords/enum'
+p2417
+S'keywords'
+p2418
+S'create enumeration types'
+p2419
+tp2420
+a(S'explicit'
+p2421
+S'./www.cppreference.com/wiki/keywords/explicit'
+p2422
+S'keywords'
+p2423
+S'only use constructors when they exactly match'
+p2424
+tp2425
+a(S'export'
+p2426
+S'./www.cppreference.com/wiki/keywords/export'
+p2427
+S'keywords'
+p2428
+S'allows template definitions to be separated from their declarations'
+p2429
+tp2430
+a(S'extern'
+p2431
+S'./www.cppreference.com/wiki/keywords/extern'
+p2432
+S'keywords'
+p2433
+S'tell the compiler about variables defined elsewhere'
+p2434
+tp2435
+a(S'false'
+p2436
+S'./www.cppreference.com/wiki/keywords/false'
+p2437
+S'keywords'
+p2438
+S'a constant representing the boolean false value'
+p2439
+tp2440
+a(S'float'
+p2441
+S'./www.cppreference.com/wiki/keywords/float'
+p2442
+S'keywords'
+p2443
+S'declare a floating-point variable'
+p2444
+tp2445
+a(S'for'
+p2446
+S'./www.cppreference.com/wiki/keywords/for'
+p2447
+S'keywords'
+p2448
+S'looping construct'
+p2449
+tp2450
+a(S'friend'
+p2451
+S'./www.cppreference.com/wiki/keywords/friend'
+p2452
+S'keywords'
+p2453
+S'grant non-member function access to private data'
+p2454
+tp2455
+a(S'goto'
+p2456
+S'./www.cppreference.com/wiki/keywords/goto'
+p2457
+S'keywords'
+p2458
+S'jump to a different part of the program'
+p2459
+tp2460
+a(S'if'
+p2461
+S'./www.cppreference.com/wiki/keywords/if'
+p2462
+S'keywords'
+p2463
+S'execute code based on the result of a test'
+p2464
+tp2465
+a(S'inline'
+p2466
+S'./www.cppreference.com/wiki/keywords/inline'
+p2467
+S'keywords'
+p2468
+S'optimize calls to short functions'
+p2469
+tp2470
+a(S'int'
+p2471
+S'./www.cppreference.com/wiki/keywords/int'
+p2472
+S'keywords'
+p2473
+S'declare an integer variable'
+p2474
+tp2475
+a(S'long'
+p2476
+S'./www.cppreference.com/wiki/keywords/long'
+p2477
+S'keywords'
+p2478
+S'declare a long integer variable'
+p2479
+tp2480
+a(S'mutable'
+p2481
+S'./www.cppreference.com/wiki/keywords/mutable'
+p2482
+S'keywords'
+p2483
+S'override a const variable'
+p2484
+tp2485
+a(S'namespace'
+p2486
+S'./www.cppreference.com/wiki/keywords/namespace'
+p2487
+S'keywords'
+p2488
+S'partition the global namespace by defining a scope'
+p2489
+tp2490
+a(S'new'
+p2491
+S'./www.cppreference.com/wiki/keywords/new'
+p2492
+S'keywords'
+p2493
+S'allocate dynamic memory for a new variable'
+p2494
+tp2495
+a(S'operator'
+p2496
+S'./www.cppreference.com/wiki/keywords/operator'
+p2497
+S'keywords'
+p2498
+S'create overloaded operator functions'
+p2499
+tp2500
+a(S'private'
+p2501
+S'./www.cppreference.com/wiki/keywords/private'
+p2502
+S'keywords'
+p2503
+S'declare private members of a class'
+p2504
+tp2505
+a(S'protected'
+p2506
+S'./www.cppreference.com/wiki/keywords/protected'
+p2507
+S'keywords'
+p2508
+S'declare protected members of a class'
+p2509
+tp2510
+a(S'public'
+p2511
+S'./www.cppreference.com/wiki/keywords/public'
+p2512
+S'keywords'
+p2513
+S'declare public members of a class'
+p2514
+tp2515
+a(S'register'
+p2516
+S'./www.cppreference.com/wiki/keywords/register'
+p2517
+S'keywords'
+p2518
+S'request that a variable be optimized for speed'
+p2519
+tp2520
+a(S'reinterpret_cast'
+p2521
+S'./www.cppreference.com/wiki/keywords/reinterpret_cast'
+p2522
+S'keywords'
+p2523
+S'change the type of a variable'
+p2524
+tp2525
+a(S'return'
+p2526
+S'./www.cppreference.com/wiki/keywords/return'
+p2527
+S'keywords'
+p2528
+S'return from a function'
+p2529
+tp2530
+a(S'short'
+p2531
+S'./www.cppreference.com/wiki/keywords/short'
+p2532
+S'keywords'
+p2533
+S'declare a short integer variable'
+p2534
+tp2535
+a(S'signed'
+p2536
+S'./www.cppreference.com/wiki/keywords/signed'
+p2537
+S'keywords'
+p2538
+S'modify variable type declarations'
+p2539
+tp2540
+a(S'sizeof'
+p2541
+S'./www.cppreference.com/wiki/keywords/sizeof'
+p2542
+S'keywords'
+p2543
+S'return the size of a variable or type'
+p2544
+tp2545
+a(S'static'
+p2546
+S'./www.cppreference.com/wiki/keywords/static'
+p2547
+S'keywords'
+p2548
+S'create permanent storage for a variable'
+p2549
+tp2550
+a(S'static_cast'
+p2551
+S'./www.cppreference.com/wiki/keywords/static_cast'
+p2552
+S'keywords'
+p2553
+S'perform a nonpolymorphic cast'
+p2554
+tp2555
+a(S'struct'
+p2556
+S'./www.cppreference.com/wiki/keywords/struct'
+p2557
+S'keywords'
+p2558
+S'define a new structure'
+p2559
+tp2560
+a(S'switch'
+p2561
+S'./www.cppreference.com/wiki/keywords/switch'
+p2562
+S'keywords'
+p2563
+S'execute code based on different possible values for a variable'
+p2564
+tp2565
+a(S'template'
+p2566
+S'./www.cppreference.com/wiki/keywords/template'
+p2567
+S'keywords'
+p2568
+S'create generic functions'
+p2569
+tp2570
+a(S'this'
+p2571
+S'./www.cppreference.com/wiki/keywords/this'
+p2572
+S'keywords'
+p2573
+S'a pointer to the current object'
+p2574
+tp2575
+a(S'throw'
+p2576
+S'./www.cppreference.com/wiki/keywords/throw'
+p2577
+S'keywords'
+p2578
+S'throws an exception'
+p2579
+tp2580
+a(S'true'
+p2581
+S'./www.cppreference.com/wiki/keywords/true'
+p2582
+S'keywords'
+p2583
+S'a constant representing the boolean true value'
+p2584
+tp2585
+a(S'try'
+p2586
+S'./www.cppreference.com/wiki/keywords/try'
+p2587
+S'keywords'
+p2588
+S'execute code that can throw an exception'
+p2589
+tp2590
+a(S'typedef'
+p2591
+S'./www.cppreference.com/wiki/keywords/typedef'
+p2592
+S'keywords'
+p2593
+S'create a new type name from an existing type'
+p2594
+tp2595
+a(S'typeid'
+p2596
+S'./www.cppreference.com/wiki/keywords/typeid'
+p2597
+S'keywords'
+p2598
+S'describes an object'
+p2599
+tp2600
+a(S'typename'
+p2601
+S'./www.cppreference.com/wiki/keywords/typename'
+p2602
+S'keywords'
+p2603
+S'declare a class or undefined type'
+p2604
+tp2605
+a(S'union'
+p2606
+S'./www.cppreference.com/wiki/keywords/union'
+p2607
+S'keywords'
+p2608
+S'a structure that assigns multiple variables to the same memory location'
+p2609
+tp2610
+a(S'unsigned'
+p2611
+S'./www.cppreference.com/wiki/keywords/unsigned'
+p2612
+S'keywords'
+p2613
+S'declare an unsigned integer variable'
+p2614
+tp2615
+a(S'using'
+p2616
+S'./www.cppreference.com/wiki/keywords/using'
+p2617
+S'keywords'
+p2618
+S'import complete or partial namespaces into the current scope'
+p2619
+tp2620
+a(S'virtual'
+p2621
+S'./www.cppreference.com/wiki/keywords/virtual'
+p2622
+S'keywords'
+p2623
+S'create a function that can be overridden by a derived class'
+p2624
+tp2625
+a(S'void'
+p2626
+S'./www.cppreference.com/wiki/keywords/void'
+p2627
+S'keywords'
+p2628
+S'declare functions or data with no associated data type'
+p2629
+tp2630
+a(S'volatile'
+p2631
+S'./www.cppreference.com/wiki/keywords/volatile'
+p2632
+S'keywords'
+p2633
+S'warn the compiler about variables that can be modified unexpectedly'
+p2634
+tp2635
+a(S'wchar_t'
+p2636
+S'./www.cppreference.com/wiki/keywords/wchar_t'
+p2637
+S'keywords'
+p2638
+S'declare a wide-character variable'
+p2639
+tp2640
+a(S'while'
+p2641
+S'./www.cppreference.com/wiki/keywords/while'
+p2642
+S'keywords'
+p2643
+S'looping construct'
+p2644
+tp2645
+a(S'clearerr'
+p2646
+S'./www.cppreference.com/wiki/c/io/clearerr'
+p2647
+S'c/io'
+p2648
+S'clears errors'
+p2649
+tp2650
+a(S'fclose'
+p2651
+S'./www.cppreference.com/wiki/c/io/fclose'
+p2652
+S'c/io'
+p2653
+S'close a file'
+p2654
+tp2655
+a(S'feof'
+p2656
+S'./www.cppreference.com/wiki/c/io/feof'
+p2657
+S'c/io'
+p2658
+S'true if at the end-of-file'
+p2659
+tp2660
+a(S'ferror'
+p2661
+S'./www.cppreference.com/wiki/c/io/ferror'
+p2662
+S'c/io'
+p2663
+S'checks for a file error'
+p2664
+tp2665
+a(S'fflush'
+p2666
+S'./www.cppreference.com/wiki/c/io/fflush'
+p2667
+S'c/io'
+p2668
+S'writes the contents of the output buffer'
+p2669
+tp2670
+a(S'fgetc'
+p2671
+S'./www.cppreference.com/wiki/c/io/fgetc'
+p2672
+S'c/io'
+p2673
+S'get a character from a stream'
+p2674
+tp2675
+a(S'fgetpos'
+p2676
+S'./www.cppreference.com/wiki/c/io/fgetpos'
+p2677
+S'c/io'
+p2678
+S'get the file position indicator'
+p2679
+tp2680
+a(S'fgets'
+p2681
+S'./www.cppreference.com/wiki/c/io/fgets'
+p2682
+S'c/io'
+p2683
+S'get a string of characters from a stream'
+p2684
+tp2685
+a(S'fopen'
+p2686
+S'./www.cppreference.com/wiki/c/io/fopen'
+p2687
+S'c/io'
+p2688
+S'open a file'
+p2689
+tp2690
+a(S'fprintf'
+p2691
+S'./www.cppreference.com/wiki/c/io/fprintf'
+p2692
+S'c/io'
+p2693
+S'print formatted output to a file'
+p2694
+tp2695
+a(S'fputc'
+p2696
+S'./www.cppreference.com/wiki/c/io/fputc'
+p2697
+S'c/io'
+p2698
+S'write a character to a file'
+p2699
+tp2700
+a(S'fputs'
+p2701
+S'./www.cppreference.com/wiki/c/io/fputs'
+p2702
+S'c/io'
+p2703
+S'write a string to a file'
+p2704
+tp2705
+a(S'fread'
+p2706
+S'./www.cppreference.com/wiki/c/io/fread'
+p2707
+S'c/io'
+p2708
+S'read from a file'
+p2709
+tp2710
+a(S'freopen'
+p2711
+S'./www.cppreference.com/wiki/c/io/freopen'
+p2712
+S'c/io'
+p2713
+S'open an existing stream with a different name'
+p2714
+tp2715
+a(S'fscanf'
+p2716
+S'./www.cppreference.com/wiki/c/io/fscanf'
+p2717
+S'c/io'
+p2718
+S'read formatted input from a file'
+p2719
+tp2720
+a(S'fseek'
+p2721
+S'./www.cppreference.com/wiki/c/io/fseek'
+p2722
+S'c/io'
+p2723
+S'move to a specific location in a file'
+p2724
+tp2725
+a(S'fsetpos'
+p2726
+S'./www.cppreference.com/wiki/c/io/fsetpos'
+p2727
+S'c/io'
+p2728
+S'move to a specific location in a file'
+p2729
+tp2730
+a(S'ftell'
+p2731
+S'./www.cppreference.com/wiki/c/io/ftell'
+p2732
+S'c/io'
+p2733
+S'returns the current file position indicator'
+p2734
+tp2735
+a(S'fwrite'
+p2736
+S'./www.cppreference.com/wiki/c/io/fwrite'
+p2737
+S'c/io'
+p2738
+S'write to a file'
+p2739
+tp2740
+a(S'getc'
+p2741
+S'./www.cppreference.com/wiki/c/io/getc'
+p2742
+S'c/io'
+p2743
+S'read a character from a file'
+p2744
+tp2745
+a(S'getchar'
+p2746
+S'./www.cppreference.com/wiki/c/io/getchar'
+p2747
+S'c/io'
+p2748
+S'read a character from stdin'
+p2749
+tp2750
+a(S'gets'
+p2751
+S'./www.cppreference.com/wiki/c/io/gets'
+p2752
+S'c/io'
+p2753
+S'read a string from stdin'
+p2754
+tp2755
+a(S'perror'
+p2756
+S'./www.cppreference.com/wiki/c/io/perror'
+p2757
+S'c/io'
+p2758
+S'displays a string version of the current error to stderr'
+p2759
+tp2760
+a(S'printf'
+p2761
+S'./www.cppreference.com/wiki/c/io/printf'
+p2762
+S'c/io'
+p2763
+S'write formatted output to stdout'
+p2764
+tp2765
+a(S'putc'
+p2766
+S'./www.cppreference.com/wiki/c/io/putc'
+p2767
+S'c/io'
+p2768
+S'write a character to a stream'
+p2769
+tp2770
+a(S'putchar'
+p2771
+S'./www.cppreference.com/wiki/c/io/putchar'
+p2772
+S'c/io'
+p2773
+S'write a character to stdout'
+p2774
+tp2775
+a(S'puts'
+p2776
+S'./www.cppreference.com/wiki/c/io/puts'
+p2777
+S'c/io'
+p2778
+S'write a string to stdout'
+p2779
+tp2780
+a(S'remove'
+p2781
+S'./www.cppreference.com/wiki/c/io/remove'
+p2782
+S'c/io'
+p2783
+S'erase a file'
+p2784
+tp2785
+a(S'rename'
+p2786
+S'./www.cppreference.com/wiki/c/io/rename'
+p2787
+S'c/io'
+p2788
+S'rename a file'
+p2789
+tp2790
+a(S'rewind'
+p2791
+S'./www.cppreference.com/wiki/c/io/rewind'
+p2792
+S'c/io'
+p2793
+S'move the file position indicator to the beginning of a file'
+p2794
+tp2795
+a(S'scanf'
+p2796
+S'./www.cppreference.com/wiki/c/io/scanf'
+p2797
+S'c/io'
+p2798
+S'read formatted input from stdin'
+p2799
+tp2800
+a(S'setbuf'
+p2801
+S'./www.cppreference.com/wiki/c/io/setbuf'
+p2802
+S'c/io'
+p2803
+S'set the buffer for a specific stream'
+p2804
+tp2805
+a(S'setvbuf'
+p2806
+S'./www.cppreference.com/wiki/c/io/setvbuf'
+p2807
+S'c/io'
+p2808
+S'set the buffer and size for a specific stream'
+p2809
+tp2810
+a(S'snprintf'
+p2811
+S'./www.cppreference.com/wiki/c/io/snprintf'
+p2812
+S'c/io'
+p2813
+S'write formated output to a buffer (with bound checking)'
+p2814
+tp2815
+a(S'sprintf'
+p2816
+S'./www.cppreference.com/wiki/c/io/sprintf'
+p2817
+S'c/io'
+p2818
+S'write formatted output to a buffer'
+p2819
+tp2820
+a(S'sscanf'
+p2821
+S'./www.cppreference.com/wiki/c/io/sscanf'
+p2822
+S'c/io'
+p2823
+S'read formatted input from a buffer'
+p2824
+tp2825
+a(S'tmpfile'
+p2826
+S'./www.cppreference.com/wiki/c/io/tmpfile'
+p2827
+S'c/io'
+p2828
+S'return a pointer to a temporary file'
+p2829
+tp2830
+a(S'tmpnam'
+p2831
+S'./www.cppreference.com/wiki/c/io/tmpnam'
+p2832
+S'c/io'
+p2833
+S'return a unique filename'
+p2834
+tp2835
+a(S'ungetc'
+p2836
+S'./www.cppreference.com/wiki/c/io/ungetc'
+p2837
+S'c/io'
+p2838
+S'puts a character back into a stream'
+p2839
+tp2840
+a(S'vprintf'
+p2841
+S'./www.cppreference.com/wiki/c/io/vprintf_vfprintf_vsprintf'
+p2842
+S'c/io'
+p2843
+S'write formatted output with variable argument lists'
+p2844
+tp2845
+a(S'vfprintf'
+p2846
+S'./www.cppreference.com/wiki/c/io/vprintf_vfprintf_vsprintf'
+p2847
+S'c/io'
+p2848
+S'write formatted output with variable argument lists'
+p2849
+tp2850
+a(S'vsprintf'
+p2851
+S'./www.cppreference.com/wiki/c/io/vprintf_vfprintf_vsprintf'
+p2852
+S'c/io'
+p2853
+S'write formatted output with variable argument lists'
+p2854
+tp2855
+a(S'vscanf'
+p2856
+S'./www.cppreference.com/wiki/c/io/vscanf_vfscanf_vsscanf'
+p2857
+S'c/io'
+p2858
+S'gets formatted input from stdin with variable argument lists'
+p2859
+tp2860
+a(S'vfscanf'
+p2861
+S'./www.cppreference.com/wiki/c/io/vscanf_vfscanf_vsscanf'
+p2862
+S'c/io'
+p2863
+S'gets formatted input from stdin with variable argument lists'
+p2864
+tp2865
+a(S'vsscanf'
+p2866
+S'./www.cppreference.com/wiki/c/io/vscanf_vfscanf_vsscanf'
+p2867
+S'c/io'
+p2868
+S'gets formatted input from stdin with variable argument lists'
+p2869
+tp2870
+a(S'atof'
+p2871
+S'./www.cppreference.com/wiki/c/string/atof'
+p2872
+S'c/string'
+p2873
+S'converts a string to a double'
+p2874
+tp2875
+a(S'atoi'
+p2876
+S'./www.cppreference.com/wiki/c/string/atoi'
+p2877
+S'c/string'
+p2878
+S'converts a string to an integer'
+p2879
+tp2880
+a(S'atol'
+p2881
+S'./www.cppreference.com/wiki/c/string/atol'
+p2882
+S'c/string'
+p2883
+S'converts a string to a long'
+p2884
+tp2885
+a(S'isalnum'
+p2886
+S'./www.cppreference.com/wiki/c/string/isalnum'
+p2887
+S'c/string'
+p2888
+S'true if a character is alphanumeric'
+p2889
+tp2890
+a(S'isalpha'
+p2891
+S'./www.cppreference.com/wiki/c/string/isalpha'
+p2892
+S'c/string'
+p2893
+S'true if a character is alphabetic'
+p2894
+tp2895
+a(S'iscntrl'
+p2896
+S'./www.cppreference.com/wiki/c/string/iscntrl'
+p2897
+S'c/string'
+p2898
+S'true if a character is a control character'
+p2899
+tp2900
+a(S'isdigit'
+p2901
+S'./www.cppreference.com/wiki/c/string/isdigit'
+p2902
+S'c/string'
+p2903
+S'true if a character is a digit'
+p2904
+tp2905
+a(S'isgraph'
+p2906
+S'./www.cppreference.com/wiki/c/string/isgraph'
+p2907
+S'c/string'
+p2908
+S'true if a character is a graphical character'
+p2909
+tp2910
+a(S'islower'
+p2911
+S'./www.cppreference.com/wiki/c/string/islower'
+p2912
+S'c/string'
+p2913
+S'true if a character is lowercase'
+p2914
+tp2915
+a(S'isprint'
+p2916
+S'./www.cppreference.com/wiki/c/string/isprint'
+p2917
+S'c/string'
+p2918
+S'true if a character is a printing character'
+p2919
+tp2920
+a(S'ispunct'
+p2921
+S'./www.cppreference.com/wiki/c/string/ispunct'
+p2922
+S'c/string'
+p2923
+S'true if a character is punctuation'
+p2924
+tp2925
+a(S'isspace'
+p2926
+S'./www.cppreference.com/wiki/c/string/isspace'
+p2927
+S'c/string'
+p2928
+S'true if a character is a space character'
+p2929
+tp2930
+a(S'isupper'
+p2931
+S'./www.cppreference.com/wiki/c/string/isupper'
+p2932
+S'c/string'
+p2933
+S'true if a character is an uppercase character'
+p2934
+tp2935
+a(S'isxdigit'
+p2936
+S'./www.cppreference.com/wiki/c/string/isxdigit'
+p2937
+S'c/string'
+p2938
+S'true if a character is a hexadecimal character'
+p2939
+tp2940
+a(S'memchr'
+p2941
+S'./www.cppreference.com/wiki/c/string/memchr'
+p2942
+S'c/string'
+p2943
+S'searches an array for the first occurance of a character'
+p2944
+tp2945
+a(S'memcmp'
+p2946
+S'./www.cppreference.com/wiki/c/string/memcmp'
+p2947
+S'c/string'
+p2948
+S'compares two buffers'
+p2949
+tp2950
+a(S'memcpy'
+p2951
+S'./www.cppreference.com/wiki/c/string/memcpy'
+p2952
+S'c/string'
+p2953
+S'copies one buffer to another'
+p2954
+tp2955
+a(S'memmove'
+p2956
+S'./www.cppreference.com/wiki/c/string/memmove'
+p2957
+S'c/string'
+p2958
+S'moves one buffer to another'
+p2959
+tp2960
+a(S'memset'
+p2961
+S'./www.cppreference.com/wiki/c/string/memset'
+p2962
+S'c/string'
+p2963
+S'fills a buffer with a character'
+p2964
+tp2965
+a(S'strcat'
+p2966
+S'./www.cppreference.com/wiki/c/string/strcat'
+p2967
+S'c/string'
+p2968
+S'concatenates two strings'
+p2969
+tp2970
+a(S'strchr'
+p2971
+S'./www.cppreference.com/wiki/c/string/strchr'
+p2972
+S'c/string'
+p2973
+S'finds the first occurance of a character in a string'
+p2974
+tp2975
+a(S'strcmp'
+p2976
+S'./www.cppreference.com/wiki/c/string/strcmp'
+p2977
+S'c/string'
+p2978
+S'compares two strings'
+p2979
+tp2980
+a(S'strcoll'
+p2981
+S'./www.cppreference.com/wiki/c/string/strcoll'
+p2982
+S'c/string'
+p2983
+S'compares two strings in accordance to the current locale'
+p2984
+tp2985
+a(S'strcpy'
+p2986
+S'./www.cppreference.com/wiki/c/string/strcpy'
+p2987
+S'c/string'
+p2988
+S'copies one string to another'
+p2989
+tp2990
+a(S'strcspn'
+p2991
+S'./www.cppreference.com/wiki/c/string/strcspn'
+p2992
+S'c/string'
+p2993
+S'searches one string for any characters in another'
+p2994
+tp2995
+a(S'strerror'
+p2996
+S'./www.cppreference.com/wiki/c/string/strerror'
+p2997
+S'c/string'
+p2998
+S'returns a text version of a given error code'
+p2999
+tp3000
+a(S'strlen'
+p3001
+S'./www.cppreference.com/wiki/c/string/strlen'
+p3002
+S'c/string'
+p3003
+S'returns the length of a given string'
+p3004
+tp3005
+a(S'strncat'
+p3006
+S'./www.cppreference.com/wiki/c/string/strncat'
+p3007
+S'c/string'
+p3008
+S'concatenates a certain amount of characters of two strings'
+p3009
+tp3010
+a(S'strncmp'
+p3011
+S'./www.cppreference.com/wiki/c/string/strncmp'
+p3012
+S'c/string'
+p3013
+S'compares a certain amount of characters of two strings'
+p3014
+tp3015
+a(S'strncpy'
+p3016
+S'./www.cppreference.com/wiki/c/string/strncpy'
+p3017
+S'c/string'
+p3018
+S'copies a certain amount of characters from one string to another'
+p3019
+tp3020
+a(S'strpbrk'
+p3021
+S'./www.cppreference.com/wiki/c/string/strpbrk'
+p3022
+S'c/string'
+p3023
+S'finds the first location of any character in one string, in another string'
+p3024
+tp3025
+a(S'strrchr'
+p3026
+S'./www.cppreference.com/wiki/c/string/strrchr'
+p3027
+S'c/string'
+p3028
+S'finds the last occurance of a character in a string'
+p3029
+tp3030
+a(S'strspn'
+p3031
+S'./www.cppreference.com/wiki/c/string/strspn'
+p3032
+S'c/string'
+p3033
+S'returns the length of a substring of characters of a string'
+p3034
+tp3035
+a(S'strstr'
+p3036
+S'./www.cppreference.com/wiki/c/string/strstr'
+p3037
+S'c/string'
+p3038
+S'finds the first occurance of a substring of characters'
+p3039
+tp3040
+a(S'strtod'
+p3041
+S'./www.cppreference.com/wiki/c/string/strtod'
+p3042
+S'c/string'
+p3043
+S'converts a string to a double'
+p3044
+tp3045
+a(S'strtok'
+p3046
+S'./www.cppreference.com/wiki/c/string/strtok'
+p3047
+S'c/string'
+p3048
+S'finds the next token in a string'
+p3049
+tp3050
+a(S'strtol'
+p3051
+S'./www.cppreference.com/wiki/c/string/strtol'
+p3052
+S'c/string'
+p3053
+S'converts a string to a long'
+p3054
+tp3055
+a(S'strtoul'
+p3056
+S'./www.cppreference.com/wiki/c/string/strtoul'
+p3057
+S'c/string'
+p3058
+S'converts a string to an unsigned long'
+p3059
+tp3060
+a(S'strxfrm'
+p3061
+S'./www.cppreference.com/wiki/c/string/strxfrm'
+p3062
+S'c/string'
+p3063
+S'converts a substring so that it can be used by string comparison functions'
+p3064
+tp3065
+a(S'tolower'
+p3066
+S'./www.cppreference.com/wiki/c/string/tolower'
+p3067
+S'c/string'
+p3068
+S'converts a character to lowercase'
+p3069
+tp3070
+a(S'toupper'
+p3071
+S'./www.cppreference.com/wiki/c/string/toupper'
+p3072
+S'c/string'
+p3073
+S'converts a character to uppercase'
+p3074
+tp3075
+a(S'abs'
+p3076
+S'./www.cppreference.com/wiki/c/math/abs'
+p3077
+S'c/math'
+p3078
+S'absolute value'
+p3079
+tp3080
+a(S'acos'
+p3081
+S'./www.cppreference.com/wiki/c/math/acos'
+p3082
+S'c/math'
+p3083
+S'arc cosine'
+p3084
+tp3085
+a(S'asin'
+p3086
+S'./www.cppreference.com/wiki/c/math/asin'
+p3087
+S'c/math'
+p3088
+S'arc sine'
+p3089
+tp3090
+a(S'atan'
+p3091
+S'./www.cppreference.com/wiki/c/math/atan'
+p3092
+S'c/math'
+p3093
+S'arc tangent'
+p3094
+tp3095
+a(S'atan2'
+p3096
+S'./www.cppreference.com/wiki/c/math/atan2'
+p3097
+S'c/math'
+p3098
+S'arc tangent, using signs to determine quadrants'
+p3099
+tp3100
+a(S'ceil'
+p3101
+S'./www.cppreference.com/wiki/c/math/ceil'
+p3102
+S'c/math'
+p3103
+S'the smallest integer not less than a certain value'
+p3104
+tp3105
+a(S'cos'
+p3106
+S'./www.cppreference.com/wiki/c/math/cos'
+p3107
+S'c/math'
+p3108
+S'cosine'
+p3109
+tp3110
+a(S'cosh'
+p3111
+S'./www.cppreference.com/wiki/c/math/cosh'
+p3112
+S'c/math'
+p3113
+S'hyperbolic cosine'
+p3114
+tp3115
+a(S'div'
+p3116
+S'./www.cppreference.com/wiki/c/math/div'
+p3117
+S'c/math'
+p3118
+S'returns the quotient and remainder of a division'
+p3119
+tp3120
+a(S'exp'
+p3121
+S'./www.cppreference.com/wiki/c/math/exp'
+p3122
+S'c/math'
+p3123
+S'returns e raised to a given power'
+p3124
+tp3125
+a(S'fabs'
+p3126
+S'./www.cppreference.com/wiki/c/math/fabs'
+p3127
+S'c/math'
+p3128
+S'absolute value for floating-point numbers'
+p3129
+tp3130
+a(S'floor'
+p3131
+S'./www.cppreference.com/wiki/c/math/floor'
+p3132
+S'c/math'
+p3133
+S'returns the largest integer not greater than a given value'
+p3134
+tp3135
+a(S'fmod'
+p3136
+S'./www.cppreference.com/wiki/c/math/fmod'
+p3137
+S'c/math'
+p3138
+S'returns the remainder of a division'
+p3139
+tp3140
+a(S'frexp'
+p3141
+S'./www.cppreference.com/wiki/c/math/frexp'
+p3142
+S'c/math'
+p3143
+S'decomposes a number into scientific notation'
+p3144
+tp3145
+a(S'labs'
+p3146
+S'./www.cppreference.com/wiki/c/math/labs'
+p3147
+S'c/math'
+p3148
+S'absolute value for long integers'
+p3149
+tp3150
+a(S'ldexp'
+p3151
+S'./www.cppreference.com/wiki/c/math/ldexp'
+p3152
+S'c/math'
+p3153
+S'computes a number in scientific notation'
+p3154
+tp3155
+a(S'ldiv'
+p3156
+S'./www.cppreference.com/wiki/c/math/ldiv'
+p3157
+S'c/math'
+p3158
+S'returns the quotient and remainder of a division, in long integer form'
+p3159
+tp3160
+a(S'log'
+p3161
+S'./www.cppreference.com/wiki/c/math/log'
+p3162
+S'c/math'
+p3163
+S'natural logarithm (to base e)'
+p3164
+tp3165
+a(S'log10'
+p3166
+S'./www.cppreference.com/wiki/c/math/log10'
+p3167
+S'c/math'
+p3168
+S'common logarithm (to base 10)'
+p3169
+tp3170
+a(S'modf'
+p3171
+S'./www.cppreference.com/wiki/c/math/modf'
+p3172
+S'c/math'
+p3173
+S'decomposes a number into integer and fractional parts'
+p3174
+tp3175
+a(S'pow'
+p3176
+S'./www.cppreference.com/wiki/c/math/pow'
+p3177
+S'c/math'
+p3178
+S'returns a given number raised to another number'
+p3179
+tp3180
+a(S'sin'
+p3181
+S'./www.cppreference.com/wiki/c/math/sin'
+p3182
+S'c/math'
+p3183
+S'sine'
+p3184
+tp3185
+a(S'sinh'
+p3186
+S'./www.cppreference.com/wiki/c/math/sinh'
+p3187
+S'c/math'
+p3188
+S'hyperbolic sine'
+p3189
+tp3190
+a(S'sqrt'
+p3191
+S'./www.cppreference.com/wiki/c/math/sqrt'
+p3192
+S'c/math'
+p3193
+S'square root'
+p3194
+tp3195
+a(S'tan'
+p3196
+S'./www.cppreference.com/wiki/c/math/tan'
+p3197
+S'c/math'
+p3198
+S'tangent'
+p3199
+tp3200
+a(S'tanh'
+p3201
+S'./www.cppreference.com/wiki/c/math/tanh'
+p3202
+S'c/math'
+p3203
+S'hyperbolic tangent'
+p3204
+tp3205
+a(S'asctime'
+p3206
+S'./www.cppreference.com/wiki/c/date/asctime'
+p3207
+S'c/date'
+p3208
+S'a textual version of the time'
+p3209
+tp3210
+a(S'clock'
+p3211
+S'./www.cppreference.com/wiki/c/date/clock'
+p3212
+S'c/date'
+p3213
+S'returns the amount of time that the program has been running'
+p3214
+tp3215
+a(S'ctime'
+p3216
+S'./www.cppreference.com/wiki/c/date/ctime'
+p3217
+S'c/date'
+p3218
+S'returns a specifically formatted version of the time'
+p3219
+tp3220
+a(S'difftime'
+p3221
+S'./www.cppreference.com/wiki/c/date/difftime'
+p3222
+S'c/date'
+p3223
+S'the difference between two times'
+p3224
+tp3225
+a(S'gmtime'
+p3226
+S'./www.cppreference.com/wiki/c/date/gmtime'
+p3227
+S'c/date'
+p3228
+S'returns a pointer to the current Greenwich Mean Time'
+p3229
+tp3230
+a(S'localtime'
+p3231
+S'./www.cppreference.com/wiki/c/date/localtime'
+p3232
+S'c/date'
+p3233
+S'returns a pointer to the current time'
+p3234
+tp3235
+a(S'mktime'
+p3236
+S'./www.cppreference.com/wiki/c/date/mktime'
+p3237
+S'c/date'
+p3238
+S'returns the calendar version of a given time'
+p3239
+tp3240
+a(S'setlocale'
+p3241
+S'./www.cppreference.com/wiki/c/date/setlocale'
+p3242
+S'c/date'
+p3243
+S'sets the current locale'
+p3244
+tp3245
+a(S'strftime'
+p3246
+S'./www.cppreference.com/wiki/c/date/strftime'
+p3247
+S'c/date'
+p3248
+S'returns individual elements of the date and time'
+p3249
+tp3250
+a(S'time'
+p3251
+S'./www.cppreference.com/wiki/c/date/time'
+p3252
+S'c/date'
+p3253
+S'returns the current calendar time of the system'
+p3254
+tp3255
+a(S'calloc'
+p3256
+S'./www.cppreference.com/wiki/c/mem/calloc'
+p3257
+S'c/mem'
+p3258
+S'allocates and clears a two-dimensional chunk of memory'
+p3259
+tp3260
+a(S'free'
+p3261
+S'./www.cppreference.com/wiki/c/mem/free'
+p3262
+S'c/mem'
+p3263
+S'returns previously allocated memory to the operating system'
+p3264
+tp3265
+a(S'malloc'
+p3266
+S'./www.cppreference.com/wiki/c/mem/malloc'
+p3267
+S'c/mem'
+p3268
+S'allocates memory'
+p3269
+tp3270
+a(S'realloc'
+p3271
+S'./www.cppreference.com/wiki/c/mem/realloc'
+p3272
+S'c/mem'
+p3273
+S'changes the size of previously allocated memory'
+p3274
+tp3275
+a(S'abort'
+p3276
+S'./www.cppreference.com/wiki/c/other/abort'
+p3277
+S'c/other'
+p3278
+S'stops the program'
+p3279
+tp3280
+a(S'assert'
+p3281
+S'./www.cppreference.com/wiki/c/other/assert'
+p3282
+S'c/other'
+p3283
+S'stops the program if an expression isn&#039;t true'
+p3284
+tp3285
+a(S'atexit'
+p3286
+S'./www.cppreference.com/wiki/c/other/atexit'
+p3287
+S'c/other'
+p3288
+S'sets a function to be called when the program exits'
+p3289
+tp3290
+a(S'bsearch'
+p3291
+S'./www.cppreference.com/wiki/c/other/bsearch'
+p3292
+S'c/other'
+p3293
+S'perform a binary search'
+p3294
+tp3295
+a(S'exit'
+p3296
+S'./www.cppreference.com/wiki/c/other/exit'
+p3297
+S'c/other'
+p3298
+S'stop the program'
+p3299
+tp3300
+a(S'getenv'
+p3301
+S'./www.cppreference.com/wiki/c/other/getenv'
+p3302
+S'c/other'
+p3303
+S'get environnment information about a variable'
+p3304
+tp3305
+a(S'longjmp'
+p3306
+S'./www.cppreference.com/wiki/c/other/longjmp'
+p3307
+S'c/other'
+p3308
+S'start execution at a certain point in the program'
+p3309
+tp3310
+a(S'putenv'
+p3311
+S'./www.cppreference.com/wiki/c/other/putenv'
+p3312
+S'c/other'
+p3313
+S'add/modify the environmental settings'
+p3314
+tp3315
+a(S'qsort'
+p3316
+S'./www.cppreference.com/wiki/c/other/qsort'
+p3317
+S'c/other'
+p3318
+S'perform a quicksort'
+p3319
+tp3320
+a(S'raise'
+p3321
+S'./www.cppreference.com/wiki/c/other/raise'
+p3322
+S'c/other'
+p3323
+S'send a signal to the program'
+p3324
+tp3325
+a(S'rand'
+p3326
+S'./www.cppreference.com/wiki/c/other/rand'
+p3327
+S'c/other'
+p3328
+S'returns a pseudorandom number'
+p3329
+tp3330
+a(S'setjmp'
+p3331
+S'./www.cppreference.com/wiki/c/other/setjmp'
+p3332
+S'c/other'
+p3333
+S'set execution to start at a certain point'
+p3334
+tp3335
+a(S'signal'
+p3336
+S'./www.cppreference.com/wiki/c/other/signal'
+p3337
+S'c/other'
+p3338
+S'register a function as a signal handler'
+p3339
+tp3340
+a(S'srand'
+p3341
+S'./www.cppreference.com/wiki/c/other/srand'
+p3342
+S'c/other'
+p3343
+S'initialize the random number generator'
+p3344
+tp3345
+a(S'system'
+p3346
+S'./www.cppreference.com/wiki/c/other/system'
+p3347
+S'c/other'
+p3348
+S'have the default command interpreter execute a command'
+p3349
+tp3350
+a(S'va_arg'
+p3351
+S'./www.cppreference.com/wiki/c/other/va_arg'
+p3352
+S'c/other'
+p3353
+S'use variable length parameter lists'
+p3354
+tp3355
+a(S'constructors'
+p3356
+S'./www.cppreference.com/wiki/string/string_constructors'
+p3357
+S'string'
+p3358
+S'create strings from arrays of characters and other strings'
+p3359
+tp3360
+a(S'operators'
+p3361
+S'./www.cppreference.com/wiki/string/string_operators'
+p3362
+S'string'
+p3363
+S'concatenate strings, assign strings, use strings for I/O, compare strings'
+p3364
+tp3365
+a(S'append'
+p3366
+S'./www.cppreference.com/wiki/string/append'
+p3367
+S'string'
+p3368
+S'append characters and strings onto a string'
+p3369
+tp3370
+a(S'assign'
+p3371
+S'./www.cppreference.com/wiki/string/assign'
+p3372
+S'string'
+p3373
+S'give a string values from strings of characters and other C++ strings'
+p3374
+tp3375
+a(S'at'
+p3376
+S'./www.cppreference.com/wiki/string/at'
+p3377
+S'string'
+p3378
+S'returns the character at a specific location'
+p3379
+tp3380
+a(S'begin'
+p3381
+S'./www.cppreference.com/wiki/string/begin'
+p3382
+S'string'
+p3383
+S'returns an iterator to the beginning of the string'
+p3384
+tp3385
+a(S'c_str'
+p3386
+S'./www.cppreference.com/wiki/string/c_str'
+p3387
+S'string'
+p3388
+S'returns a non-modifiable standard C character array version of the string'
+p3389
+tp3390
+a(S'capacity'
+p3391
+S'./www.cppreference.com/wiki/string/capacity'
+p3392
+S'string'
+p3393
+S'returns the number of characters that the string can hold'
+p3394
+tp3395
+a(S'clear'
+p3396
+S'./www.cppreference.com/wiki/string/clear'
+p3397
+S'string'
+p3398
+S'removes all characters from the string'
+p3399
+tp3400
+a(S'compare'
+p3401
+S'./www.cppreference.com/wiki/string/compare'
+p3402
+S'string'
+p3403
+S'compares two strings'
+p3404
+tp3405
+a(S'copy'
+p3406
+S'./www.cppreference.com/wiki/string/copy'
+p3407
+S'string'
+p3408
+S'copies characters from a string into an array'
+p3409
+tp3410
+a(S'data'
+p3411
+S'./www.cppreference.com/wiki/string/data'
+p3412
+S'string'
+p3413
+S'returns a pointer to the first character of a string'
+p3414
+tp3415
+a(S'empty'
+p3416
+S'./www.cppreference.com/wiki/string/empty'
+p3417
+S'string'
+p3418
+S'true if the string has no characters'
+p3419
+tp3420
+a(S'end'
+p3421
+S'./www.cppreference.com/wiki/string/end'
+p3422
+S'string'
+p3423
+S'returns an iterator just past the last character of a string'
+p3424
+tp3425
+a(S'erase'
+p3426
+S'./www.cppreference.com/wiki/string/erase'
+p3427
+S'string'
+p3428
+S'removes characters from a string'
+p3429
+tp3430
+a(S'find'
+p3431
+S'./www.cppreference.com/wiki/string/find'
+p3432
+S'string'
+p3433
+S'find characters in the string'
+p3434
+tp3435
+a(S'find_first_not_of'
+p3436
+S'./www.cppreference.com/wiki/string/find_first_not_of'
+p3437
+S'string'
+p3438
+S'find first absence of characters'
+p3439
+tp3440
+a(S'find_first_of'
+p3441
+S'./www.cppreference.com/wiki/string/find_first_of'
+p3442
+S'string'
+p3443
+S'find first occurrence of characters'
+p3444
+tp3445
+a(S'find_last_not_of'
+p3446
+S'./www.cppreference.com/wiki/string/find_last_not_of'
+p3447
+S'string'
+p3448
+S'find last absence of characters'
+p3449
+tp3450
+a(S'find_last_of'
+p3451
+S'./www.cppreference.com/wiki/string/find_last_of'
+p3452
+S'string'
+p3453
+S'find last occurrence of characters'
+p3454
+tp3455
+a(S'getline'
+p3456
+S'./www.cppreference.com/wiki/string/getline'
+p3457
+S'string'
+p3458
+S'read data from an I/O stream into a string'
+p3459
+tp3460
+a(S'insert'
+p3461
+S'./www.cppreference.com/wiki/string/insert'
+p3462
+S'string'
+p3463
+S'insert characters into a string'
+p3464
+tp3465
+a(S'length'
+p3466
+S'./www.cppreference.com/wiki/string/length'
+p3467
+S'string'
+p3468
+S'returns the length of the string'
+p3469
+tp3470
+a(S'max_size'
+p3471
+S'./www.cppreference.com/wiki/string/max_size'
+p3472
+S'string'
+p3473
+S'returns the maximum number of characters that the string can hold'
+p3474
+tp3475
+a(S'push_back'
+p3476
+S'./www.cppreference.com/wiki/string/push_back'
+p3477
+S'string'
+p3478
+S'add a character to the end of the string'
+p3479
+tp3480
+a(S'rbegin'
+p3481
+S'./www.cppreference.com/wiki/string/rbegin'
+p3482
+S'string'
+p3483
+S'returns a reverse_iterator to the end of the string'
+p3484
+tp3485
+a(S'rend'
+p3486
+S'./www.cppreference.com/wiki/string/rend'
+p3487
+S'string'
+p3488
+S'returns a reverse_iterator to the beginning of the string'
+p3489
+tp3490
+a(S'replace'
+p3491
+S'./www.cppreference.com/wiki/string/replace'
+p3492
+S'string'
+p3493
+S'replace characters in the string'
+p3494
+tp3495
+a(S'reserve'
+p3496
+S'./www.cppreference.com/wiki/string/reserve'
+p3497
+S'string'
+p3498
+S'sets the minimum capacity of the string'
+p3499
+tp3500
+a(S'resize'
+p3501
+S'./www.cppreference.com/wiki/string/resize'
+p3502
+S'string'
+p3503
+S'change the size of the string'
+p3504
+tp3505
+a(S'rfind'
+p3506
+S'./www.cppreference.com/wiki/string/rfind'
+p3507
+S'string'
+p3508
+S'find the last occurrence of a substring'
+p3509
+tp3510
+a(S'size'
+p3511
+S'./www.cppreference.com/wiki/string/size'
+p3512
+S'string'
+p3513
+S'returns the number of items in the string'
+p3514
+tp3515
+a(S'substr'
+p3516
+S'./www.cppreference.com/wiki/string/substr'
+p3517
+S'string'
+p3518
+S'returns a certain substring'
+p3519
+tp3520
+a(S'swap'
+p3521
+S'./www.cppreference.com/wiki/string/swap'
+p3522
+S'string'
+p3523
+S'swap the contents of this string with another'
+p3524
+tp3525
+a(S'i/o constructors'
+p3526
+S'./www.cppreference.com/wiki/io/constructors'
+p3527
+S'io'
+p3528
+S'constructors'
+p3529
+tp3530
+a(S'bad'
+p3531
+S'./www.cppreference.com/wiki/io/bad'
+p3532
+S'io'
+p3533
+S'true if an error occurred'
+p3534
+tp3535
+a(S'clear'
+p3536
+S'./www.cppreference.com/wiki/io/clear'
+p3537
+S'io'
+p3538
+S'clear and set status flags'
+p3539
+tp3540
+a(S'close'
+p3541
+S'./www.cppreference.com/wiki/io/close'
+p3542
+S'io'
+p3543
+S'close a stream'
+p3544
+tp3545
+a(S'eof'
+p3546
+S'./www.cppreference.com/wiki/io/eof'
+p3547
+S'io'
+p3548
+S'true if at the end-of-file'
+p3549
+tp3550
+a(S'exceptions'
+p3551
+S'./www.cppreference.com/wiki/io/exceptions'
+p3552
+S'io'
+p3553
+S'set the stream to throw exceptions on errors'
+p3554
+tp3555
+a(S'fail'
+p3556
+S'./www.cppreference.com/wiki/io/fail'
+p3557
+S'io'
+p3558
+S'true if an error occurred'
+p3559
+tp3560
+a(S'fill'
+p3561
+S'./www.cppreference.com/wiki/io/fill'
+p3562
+S'io'
+p3563
+S'manipulate the default fill character'
+p3564
+tp3565
+a(S'flags'
+p3566
+S'./www.cppreference.com/wiki/io/flags'
+p3567
+S'io'
+p3568
+S'access or manipulate io_stream_format_flags'
+p3569
+tp3570
+a(S'flush'
+p3571
+S'./www.cppreference.com/wiki/io/flush'
+p3572
+S'io'
+p3573
+S'empty the buffer'
+p3574
+tp3575
+a(S'gcount'
+p3576
+S'./www.cppreference.com/wiki/io/gcount'
+p3577
+S'io'
+p3578
+S'number of characters read during last input'
+p3579
+tp3580
+a(S'get'
+p3581
+S'./www.cppreference.com/wiki/io/get'
+p3582
+S'io'
+p3583
+S'read characters'
+p3584
+tp3585
+a(S'getline'
+p3586
+S'./www.cppreference.com/wiki/io/getline'
+p3587
+S'io'
+p3588
+S'read a line of characters'
+p3589
+tp3590
+a(S'good'
+p3591
+S'./www.cppreference.com/wiki/io/good'
+p3592
+S'io'
+p3593
+S'true if no errors have occurred'
+p3594
+tp3595
+a(S'ignore'
+p3596
+S'./www.cppreference.com/wiki/io/ignore'
+p3597
+S'io'
+p3598
+S'read and discard characters'
+p3599
+tp3600
+a(S'open'
+p3601
+S'./www.cppreference.com/wiki/io/open'
+p3602
+S'io'
+p3603
+S'open a new stream'
+p3604
+tp3605
+a(S'peek'
+p3606
+S'./www.cppreference.com/wiki/io/peek'
+p3607
+S'io'
+p3608
+S'check the next input character'
+p3609
+tp3610
+a(S'precision'
+p3611
+S'./www.cppreference.com/wiki/io/precision'
+p3612
+S'io'
+p3613
+S'manipulate the precision of a stream'
+p3614
+tp3615
+a(S'put'
+p3616
+S'./www.cppreference.com/wiki/io/put'
+p3617
+S'io'
+p3618
+S'write characters'
+p3619
+tp3620
+a(S'putback'
+p3621
+S'./www.cppreference.com/wiki/io/putback'
+p3622
+S'io'
+p3623
+S'return characters to a stream'
+p3624
+tp3625
+a(S'rdstate'
+p3626
+S'./www.cppreference.com/wiki/io/rdstate'
+p3627
+S'io'
+p3628
+S'returns the state flags of the stream'
+p3629
+tp3630
+a(S'read'
+p3631
+S'./www.cppreference.com/wiki/io/read'
+p3632
+S'io'
+p3633
+S'read data into a buffer'
+p3634
+tp3635
+a(S'seekg'
+p3636
+S'./www.cppreference.com/wiki/io/seekg'
+p3637
+S'io'
+p3638
+S'perform random access on an input stream'
+p3639
+tp3640
+a(S'seekp'
+p3641
+S'./www.cppreference.com/wiki/io/seekp'
+p3642
+S'io'
+p3643
+S'perform random access on output streams'
+p3644
+tp3645
+a(S'setf'
+p3646
+S'./www.cppreference.com/wiki/io/setf'
+p3647
+S'io'
+p3648
+S'set format flags'
+p3649
+tp3650
+a(S'sync_with_stdio'
+p3651
+S'./www.cppreference.com/wiki/io/sync_with_stdio'
+p3652
+S'io'
+p3653
+S'synchronize with standard I/O'
+p3654
+tp3655
+a(S'tellg'
+p3656
+S'./www.cppreference.com/wiki/io/tellg'
+p3657
+S'io'
+p3658
+S'read input stream pointers'
+p3659
+tp3660
+a(S'tellp'
+p3661
+S'./www.cppreference.com/wiki/io/tellp'
+p3662
+S'io'
+p3663
+S'read output stream pointers'
+p3664
+tp3665
+a(S'unsetf'
+p3666
+S'./www.cppreference.com/wiki/io/unsetf'
+p3667
+S'io'
+p3668
+S'clear io_stream_format_flags'
+p3669
+tp3670
+a(S'width'
+p3671
+S'./www.cppreference.com/wiki/io/width'
+p3672
+S'io'
+p3673
+S'access and manipulate the minimum field width'
+p3674
+tp3675
+a(S'write'
+p3676
+S'./www.cppreference.com/wiki/io/write'
+p3677
+S'io'
+p3678
+S'write characters'
+p3679
+tp3680
+a(S'constructors'
+p3681
+S'./www.cppreference.com/wiki/io/sstream/constructors'
+p3682
+S'io/sstream'
+p3683
+S'create new string streams'
+p3684
+tp3685
+a(S'operators'
+p3686
+S'./www.cppreference.com/wiki/io/sstream/operators'
+p3687
+S'io/sstream'
+p3688
+S'read from and write to string streams'
+p3689
+tp3690
+a(S'rdbuf'
+p3691
+S'./www.cppreference.com/wiki/io/sstream/rdbuf'
+p3692
+S'io/sstream'
+p3693
+S'get the buffer for a string stream'
+p3694
+tp3695
+a(S'str'
+p3696
+S'./www.cppreference.com/wiki/io/sstream/str'
+p3697
+S'io/sstream'
+p3698
+S'get or set the stream&#039;s string'
+p3699
+tp3700
+a(S'accumulate'
+p3701
+S'./www.cppreference.com/wiki/stl/algorithm/accumulate'
+p3702
+S'stl/algorithm'
+p3703
+S'sum up a range of elements'
+p3704
+tp3705
+a(S'adjacent_difference'
+p3706
+S'./www.cppreference.com/wiki/stl/algorithm/adjacent_difference'
+p3707
+S'stl/algorithm'
+p3708
+S'compute the differences between adjacent elements in a range'
+p3709
+tp3710
+a(S'adjacent_find'
+p3711
+S'./www.cppreference.com/wiki/stl/algorithm/adjacent_find'
+p3712
+S'stl/algorithm'
+p3713
+S'finds two identical (or some other relationship) items adjacent to each other'
+p3714
+tp3715
+a(S'binary_search'
+p3716
+S'./www.cppreference.com/wiki/stl/algorithm/binary_search'
+p3717
+S'stl/algorithm'
+p3718
+S'determine if an element exists in a certain range'
+p3719
+tp3720
+a(S'copy'
+p3721
+S'./www.cppreference.com/wiki/stl/algorithm/copy'
+p3722
+S'stl/algorithm'
+p3723
+S'copy some range of elements to a new location'
+p3724
+tp3725
+a(S'copy_backward'
+p3726
+S'./www.cppreference.com/wiki/stl/algorithm/copy_backward'
+p3727
+S'stl/algorithm'
+p3728
+S'copy a range of elements in backwards order'
+p3729
+tp3730
+a(S'count'
+p3731
+S'./www.cppreference.com/wiki/stl/algorithm/count'
+p3732
+S'stl/algorithm'
+p3733
+S'return the number of elements matching a given value'
+p3734
+tp3735
+a(S'count_if'
+p3736
+S'./www.cppreference.com/wiki/stl/algorithm/count_if'
+p3737
+S'stl/algorithm'
+p3738
+S'return the number of elements for which a predicate is true'
+p3739
+tp3740
+a(S'equal'
+p3741
+S'./www.cppreference.com/wiki/stl/algorithm/equal'
+p3742
+S'stl/algorithm'
+p3743
+S'determine if two sets of elements are the same'
+p3744
+tp3745
+a(S'equal_range'
+p3746
+S'./www.cppreference.com/wiki/stl/algorithm/equal_range'
+p3747
+S'stl/algorithm'
+p3748
+S'search for a range of elements that are all equal to a certain element'
+p3749
+tp3750
+a(S'fill'
+p3751
+S'./www.cppreference.com/wiki/stl/algorithm/fill'
+p3752
+S'stl/algorithm'
+p3753
+S'assign a range of elements a certain value'
+p3754
+tp3755
+a(S'fill_n'
+p3756
+S'./www.cppreference.com/wiki/stl/algorithm/fill_n'
+p3757
+S'stl/algorithm'
+p3758
+S'assign a value to some number of elements'
+p3759
+tp3760
+a(S'find'
+p3761
+S'./www.cppreference.com/wiki/stl/algorithm/find'
+p3762
+S'stl/algorithm'
+p3763
+S'find a value in a given range'
+p3764
+tp3765
+a(S'find_end'
+p3766
+S'./www.cppreference.com/wiki/stl/algorithm/find_end'
+p3767
+S'stl/algorithm'
+p3768
+S'find the last sequence of elements in a certain range'
+p3769
+tp3770
+a(S'find_first_of'
+p3771
+S'./www.cppreference.com/wiki/stl/algorithm/find_first_of'
+p3772
+S'stl/algorithm'
+p3773
+S'search for any one of a set of elements'
+p3774
+tp3775
+a(S'find_if'
+p3776
+S'./www.cppreference.com/wiki/stl/algorithm/find_if'
+p3777
+S'stl/algorithm'
+p3778
+S'find the first element for which a certain predicate is true'
+p3779
+tp3780
+a(S'for_each'
+p3781
+S'./www.cppreference.com/wiki/stl/algorithm/for_each'
+p3782
+S'stl/algorithm'
+p3783
+S'apply a function to a range of elements'
+p3784
+tp3785
+a(S'generate'
+p3786
+S'./www.cppreference.com/wiki/stl/algorithm/generate'
+p3787
+S'stl/algorithm'
+p3788
+S'saves the result of a function in a range'
+p3789
+tp3790
+a(S'generate_n'
+p3791
+S'./www.cppreference.com/wiki/stl/algorithm/generate_n'
+p3792
+S'stl/algorithm'
+p3793
+S'saves the result of N applications of a function'
+p3794
+tp3795
+a(S'includes'
+p3796
+S'./www.cppreference.com/wiki/stl/algorithm/includes'
+p3797
+S'stl/algorithm'
+p3798
+S'returns true if one set is a subset of another'
+p3799
+tp3800
+a(S'inner_product'
+p3801
+S'./www.cppreference.com/wiki/stl/algorithm/inner_product'
+p3802
+S'stl/algorithm'
+p3803
+S'compute the inner product of two ranges of elements'
+p3804
+tp3805
+a(S'inplace_merge'
+p3806
+S'./www.cppreference.com/wiki/stl/algorithm/inplace_merge'
+p3807
+S'stl/algorithm'
+p3808
+S'merge two ordered ranges in-place'
+p3809
+tp3810
+a(S'is_heap'
+p3811
+S'./www.cppreference.com/wiki/stl/algorithm/is_heap'
+p3812
+S'stl/algorithm'
+p3813
+S'returns true if a given range is a heap'
+p3814
+tp3815
+a(S'iter_swap'
+p3816
+S'./www.cppreference.com/wiki/stl/algorithm/iter_swap'
+p3817
+S'stl/algorithm'
+p3818
+S'swaps the elements pointed to by two iterators'
+p3819
+tp3820
+a(S'lexicographical_compare'
+p3821
+S'./www.cppreference.com/wiki/stl/algorithm/lexicographical_compare'
+p3822
+S'stl/algorithm'
+p3823
+S'returns true if one range is lexicographically less than another'
+p3824
+tp3825
+a(S'lower_bound'
+p3826
+S'./www.cppreference.com/wiki/stl/algorithm/lower_bound'
+p3827
+S'stl/algorithm'
+p3828
+S'search for the first place that a value can be inserted while preserving order'
+p3829
+tp3830
+a(S'make_heap'
+p3831
+S'./www.cppreference.com/wiki/stl/algorithm/make_heap'
+p3832
+S'stl/algorithm'
+p3833
+S'creates a heap out of a range of elements'
+p3834
+tp3835
+a(S'max'
+p3836
+S'./www.cppreference.com/wiki/stl/algorithm/max'
+p3837
+S'stl/algorithm'
+p3838
+S'returns the larger of two elements'
+p3839
+tp3840
+a(S'max_element'
+p3841
+S'./www.cppreference.com/wiki/stl/algorithm/max_element'
+p3842
+S'stl/algorithm'
+p3843
+S'returns the largest element in a range'
+p3844
+tp3845
+a(S'merge'
+p3846
+S'./www.cppreference.com/wiki/stl/algorithm/merge'
+p3847
+S'stl/algorithm'
+p3848
+S'merge two sorted ranges'
+p3849
+tp3850
+a(S'min'
+p3851
+S'./www.cppreference.com/wiki/stl/algorithm/min'
+p3852
+S'stl/algorithm'
+p3853
+S'returns the smaller of two elements'
+p3854
+tp3855
+a(S'min_element'
+p3856
+S'./www.cppreference.com/wiki/stl/algorithm/min_element'
+p3857
+S'stl/algorithm'
+p3858
+S'returns the smallest element in a range'
+p3859
+tp3860
+a(S'mismatch'
+p3861
+S'./www.cppreference.com/wiki/stl/algorithm/mismatch'
+p3862
+S'stl/algorithm'
+p3863
+S'finds the first position where two ranges differ'
+p3864
+tp3865
+a(S'next_permutation'
+p3866
+S'./www.cppreference.com/wiki/stl/algorithm/next_permutation'
+p3867
+S'stl/algorithm'
+p3868
+S'generates the next greater lexicographic permutation of a range of elements'
+p3869
+tp3870
+a(S'nth_element'
+p3871
+S'./www.cppreference.com/wiki/stl/algorithm/nth_element'
+p3872
+S'stl/algorithm'
+p3873
+S'put one element in its sorted location and make sure that no elements to its left are greater than any elements to its right'
+p3874
+tp3875
+a(S'partial_sort'
+p3876
+S'./www.cppreference.com/wiki/stl/algorithm/partial_sort'
+p3877
+S'stl/algorithm'
+p3878
+S'sort the first N elements of a range'
+p3879
+tp3880
+a(S'partial_sort_copy'
+p3881
+S'./www.cppreference.com/wiki/stl/algorithm/partial_sort_copy'
+p3882
+S'stl/algorithm'
+p3883
+S'copy and partially sort a range of elements'
+p3884
+tp3885
+a(S'partial_sum'
+p3886
+S'./www.cppreference.com/wiki/stl/algorithm/partial_sum'
+p3887
+S'stl/algorithm'
+p3888
+S'compute the partial sum of a range of elements'
+p3889
+tp3890
+a(S'partition'
+p3891
+S'./www.cppreference.com/wiki/stl/algorithm/partition'
+p3892
+S'stl/algorithm'
+p3893
+S'divide a range of elements into two groups'
+p3894
+tp3895
+a(S'pop_heap'
+p3896
+S'./www.cppreference.com/wiki/stl/algorithm/pop_heap'
+p3897
+S'stl/algorithm'
+p3898
+S'remove the largest element from a heap'
+p3899
+tp3900
+a(S'prev_permutation'
+p3901
+S'./www.cppreference.com/wiki/stl/algorithm/prev_permutation'
+p3902
+S'stl/algorithm'
+p3903
+S'generates the next smaller lexicographic permutation of a range of elements'
+p3904
+tp3905
+a(S'push_heap'
+p3906
+S'./www.cppreference.com/wiki/stl/algorithm/push_heap'
+p3907
+S'stl/algorithm'
+p3908
+S'add an element to a heap'
+p3909
+tp3910
+a(S'random_shuffle'
+p3911
+S'./www.cppreference.com/wiki/stl/algorithm/random_shuffle'
+p3912
+S'stl/algorithm'
+p3913
+S'randomly re-order elements in some range'
+p3914
+tp3915
+a(S'remove'
+p3916
+S'./www.cppreference.com/wiki/stl/algorithm/remove'
+p3917
+S'stl/algorithm'
+p3918
+S'remove elements equal to certain value'
+p3919
+tp3920
+a(S'remove_copy'
+p3921
+S'./www.cppreference.com/wiki/stl/algorithm/remove_copy'
+p3922
+S'stl/algorithm'
+p3923
+S'copy a range of elements omitting those that match a certian value'
+p3924
+tp3925
+a(S'remove_copy_if'
+p3926
+S'./www.cppreference.com/wiki/stl/algorithm/remove_copy_if'
+p3927
+S'stl/algorithm'
+p3928
+S'create a copy of a range of elements, omitting any for which a predicate is true'
+p3929
+tp3930
+a(S'remove_if'
+p3931
+S'./www.cppreference.com/wiki/stl/algorithm/remove_if'
+p3932
+S'stl/algorithm'
+p3933
+S'remove all elements for which a predicate is true'
+p3934
+tp3935
+a(S'replace'
+p3936
+S'./www.cppreference.com/wiki/stl/algorithm/replace'
+p3937
+S'stl/algorithm'
+p3938
+S'replace every occurrence of some value in a range with another value'
+p3939
+tp3940
+a(S'replace_copy'
+p3941
+S'./www.cppreference.com/wiki/stl/algorithm/replace_copy'
+p3942
+S'stl/algorithm'
+p3943
+S'copy a range, replacing certain elements with new ones'
+p3944
+tp3945
+a(S'replace_copy_if'
+p3946
+S'./www.cppreference.com/wiki/stl/algorithm/replace_copy_if'
+p3947
+S'stl/algorithm'
+p3948
+S'copy a range of elements, replacing those for which a predicate is true'
+p3949
+tp3950
+a(S'replace_if'
+p3951
+S'./www.cppreference.com/wiki/stl/algorithm/replace_if'
+p3952
+S'stl/algorithm'
+p3953
+S'change the values of elements for which a predicate is true'
+p3954
+tp3955
+a(S'reverse'
+p3956
+S'./www.cppreference.com/wiki/stl/algorithm/reverse'
+p3957
+S'stl/algorithm'
+p3958
+S'reverse elements in some range'
+p3959
+tp3960
+a(S'reverse_copy'
+p3961
+S'./www.cppreference.com/wiki/stl/algorithm/reverse_copy'
+p3962
+S'stl/algorithm'
+p3963
+S'create a copy of a range that is reversed'
+p3964
+tp3965
+a(S'rotate'
+p3966
+S'./www.cppreference.com/wiki/stl/algorithm/rotate'
+p3967
+S'stl/algorithm'
+p3968
+S'move the elements in some range to the left by some amount'
+p3969
+tp3970
+a(S'rotate_copy'
+p3971
+S'./www.cppreference.com/wiki/stl/algorithm/rotate_copy'
+p3972
+S'stl/algorithm'
+p3973
+S'copy and rotate a range of elements'
+p3974
+tp3975
+a(S'search'
+p3976
+S'./www.cppreference.com/wiki/stl/algorithm/search'
+p3977
+S'stl/algorithm'
+p3978
+S'search for a range of elements'
+p3979
+tp3980
+a(S'search_n'
+p3981
+S'./www.cppreference.com/wiki/stl/algorithm/search_n'
+p3982
+S'stl/algorithm'
+p3983
+S'search for N consecutive copies of an element in some range'
+p3984
+tp3985
+a(S'set_difference'
+p3986
+S'./www.cppreference.com/wiki/stl/algorithm/set_difference'
+p3987
+S'stl/algorithm'
+p3988
+S'computes the difference between two sets'
+p3989
+tp3990
+a(S'set_intersection'
+p3991
+S'./www.cppreference.com/wiki/stl/algorithm/set_intersection'
+p3992
+S'stl/algorithm'
+p3993
+S'computes the intersection of two sets'
+p3994
+tp3995
+a(S'set_symmetric_difference'
+p3996
+S'./www.cppreference.com/wiki/stl/algorithm/set_symmetric_difference'
+p3997
+S'stl/algorithm'
+p3998
+S'computes the symmetric difference between two sets'
+p3999
+tp4000
+a(S'set_union'
+p4001
+S'./www.cppreference.com/wiki/stl/algorithm/set_union'
+p4002
+S'stl/algorithm'
+p4003
+S'computes the union of two sets'
+p4004
+tp4005
+a(S'sort'
+p4006
+S'./www.cppreference.com/wiki/stl/algorithm/sort'
+p4007
+S'stl/algorithm'
+p4008
+S'sort a range into ascending order'
+p4009
+tp4010
+a(S'sort_heap'
+p4011
+S'./www.cppreference.com/wiki/stl/algorithm/sort_heap'
+p4012
+S'stl/algorithm'
+p4013
+S'turns a heap into a sorted range of elements'
+p4014
+tp4015
+a(S'stable_partition'
+p4016
+S'./www.cppreference.com/wiki/stl/algorithm/stable_partition'
+p4017
+S'stl/algorithm'
+p4018
+S'divide elements into two groups while preserving their relative order'
+p4019
+tp4020
+a(S'stable_sort'
+p4021
+S'./www.cppreference.com/wiki/stl/algorithm/stable_sort'
+p4022
+S'stl/algorithm'
+p4023
+S'sort a range of elements while preserving order between equal elements'
+p4024
+tp4025
+a(S'swap'
+p4026
+S'./www.cppreference.com/wiki/stl/algorithm/swap'
+p4027
+S'stl/algorithm'
+p4028
+S'swap the values of two objects'
+p4029
+tp4030
+a(S'swap_ranges'
+p4031
+S'./www.cppreference.com/wiki/stl/algorithm/swap_ranges'
+p4032
+S'stl/algorithm'
+p4033
+S'swaps two ranges of elements'
+p4034
+tp4035
+a(S'transform'
+p4036
+S'./www.cppreference.com/wiki/stl/algorithm/transform'
+p4037
+S'stl/algorithm'
+p4038
+S'applies a function to a range of elements'
+p4039
+tp4040
+a(S'unique'
+p4041
+S'./www.cppreference.com/wiki/stl/algorithm/unique'
+p4042
+S'stl/algorithm'
+p4043
+S'remove consecutive duplicate elements in a range'
+p4044
+tp4045
+a(S'unique_copy'
+p4046
+S'./www.cppreference.com/wiki/stl/algorithm/unique_copy'
+p4047
+S'stl/algorithm'
+p4048
+S'creates a copy of some range of elements that contains no consecutive duplicates'
+p4049
+tp4050
+a(S'upper_bound'
+p4051
+S'./www.cppreference.com/wiki/stl/algorithm/upper_bound'
+p4052
+S'stl/algorithm'
+p4053
+S'searches for the last place that a value can be inserted while preserving order (first place that is greater than the value)'
+p4054
+tp4055
+a(S'constructors'
+p4056
+S'./www.cppreference.com/wiki/stl/vector/vector_constructors'
+p4057
+S'stl/vector'
+p4058
+S'create vectors and initialize them with some data'
+p4059
+tp4060
+a(S'operators'
+p4061
+S'./www.cppreference.com/wiki/stl/vector/vector_operators'
+p4062
+S'stl/vector'
+p4063
+S'compare, assign, and access elements of a vector'
+p4064
+tp4065
+a(S'assign'
+p4066
+S'./www.cppreference.com/wiki/stl/vector/assign'
+p4067
+S'stl/vector'
+p4068
+S'assign elements to a vector'
+p4069
+tp4070
+a(S'at'
+p4071
+S'./www.cppreference.com/wiki/stl/vector/at'
+p4072
+S'stl/vector'
+p4073
+S'returns an element at a specific location'
+p4074
+tp4075
+a(S'back'
+p4076
+S'./www.cppreference.com/wiki/stl/vector/back'
+p4077
+S'stl/vector'
+p4078
+S'returns a reference to last element of a vector'
+p4079
+tp4080
+a(S'begin'
+p4081
+S'./www.cppreference.com/wiki/stl/vector/begin'
+p4082
+S'stl/vector'
+p4083
+S'returns an iterator to the beginning of the vector'
+p4084
+tp4085
+a(S'capacity'
+p4086
+S'./www.cppreference.com/wiki/stl/vector/capacity'
+p4087
+S'stl/vector'
+p4088
+S'returns the number of elements that the vector can hold'
+p4089
+tp4090
+a(S'clear'
+p4091
+S'./www.cppreference.com/wiki/stl/vector/clear'
+p4092
+S'stl/vector'
+p4093
+S'removes all elements from the vector'
+p4094
+tp4095
+a(S'empty'
+p4096
+S'./www.cppreference.com/wiki/stl/vector/empty'
+p4097
+S'stl/vector'
+p4098
+S'true if the vector has no elements'
+p4099
+tp4100
+a(S'end'
+p4101
+S'./www.cppreference.com/wiki/stl/vector/end'
+p4102
+S'stl/vector'
+p4103
+S'returns an iterator just past the last element of a vector'
+p4104
+tp4105
+a(S'erase'
+p4106
+S'./www.cppreference.com/wiki/stl/vector/erase'
+p4107
+S'stl/vector'
+p4108
+S'removes elements from a vector'
+p4109
+tp4110
+a(S'front'
+p4111
+S'./www.cppreference.com/wiki/stl/vector/front'
+p4112
+S'stl/vector'
+p4113
+S'returns a reference to the first element of a vector'
+p4114
+tp4115
+a(S'insert'
+p4116
+S'./www.cppreference.com/wiki/stl/vector/insert'
+p4117
+S'stl/vector'
+p4118
+S'inserts elements into the vector'
+p4119
+tp4120
+a(S'max_size'
+p4121
+S'./www.cppreference.com/wiki/stl/vector/max_size'
+p4122
+S'stl/vector'
+p4123
+S'returns the maximum number of elements that the vector can hold'
+p4124
+tp4125
+a(S'pop_back'
+p4126
+S'./www.cppreference.com/wiki/stl/vector/pop_back'
+p4127
+S'stl/vector'
+p4128
+S'removes the last element of a vector'
+p4129
+tp4130
+a(S'push_back'
+p4131
+S'./www.cppreference.com/wiki/stl/vector/push_back'
+p4132
+S'stl/vector'
+p4133
+S'add an element to the end of the vector'
+p4134
+tp4135
+a(S'rbegin'
+p4136
+S'./www.cppreference.com/wiki/stl/vector/rbegin'
+p4137
+S'stl/vector'
+p4138
+S'returns a reverse_iterator to the end of the vector'
+p4139
+tp4140
+a(S'rend'
+p4141
+S'./www.cppreference.com/wiki/stl/vector/rend'
+p4142
+S'stl/vector'
+p4143
+S'returns a reverse_iterator to the beginning of the vector'
+p4144
+tp4145
+a(S'reserve'
+p4146
+S'./www.cppreference.com/wiki/stl/vector/reserve'
+p4147
+S'stl/vector'
+p4148
+S'sets the minimum capacity of the vector'
+p4149
+tp4150
+a(S'resize'
+p4151
+S'./www.cppreference.com/wiki/stl/vector/resize'
+p4152
+S'stl/vector'
+p4153
+S'change the size of the vector'
+p4154
+tp4155
+a(S'size'
+p4156
+S'./www.cppreference.com/wiki/stl/vector/size'
+p4157
+S'stl/vector'
+p4158
+S'returns the number of items in the vector'
+p4159
+tp4160
+a(S'swap'
+p4161
+S'./www.cppreference.com/wiki/stl/vector/swap'
+p4162
+S'stl/vector'
+p4163
+S'swap the contents of this vector with another'
+p4164
+tp4165
+a(S'constructors'
+p4166
+S'./www.cppreference.com/wiki/stl/deque/deque_constructors'
+p4167
+S'stl/deque'
+p4168
+S'create deques and initialize them with some data'
+p4169
+tp4170
+a(S'operators'
+p4171
+S'./www.cppreference.com/wiki/stl/deque/deque_operators'
+p4172
+S'stl/deque'
+p4173
+S'compare, assign, and access elements of a deque'
+p4174
+tp4175
+a(S'assign'
+p4176
+S'./www.cppreference.com/wiki/stl/deque/assign'
+p4177
+S'stl/deque'
+p4178
+S'assign elements to a deque'
+p4179
+tp4180
+a(S'at'
+p4181
+S'./www.cppreference.com/wiki/stl/deque/at'
+p4182
+S'stl/deque'
+p4183
+S'returns an element at a specific location'
+p4184
+tp4185
+a(S'back'
+p4186
+S'./www.cppreference.com/wiki/stl/deque/back'
+p4187
+S'stl/deque'
+p4188
+S'returns a reference to last element of a deque'
+p4189
+tp4190
+a(S'begin'
+p4191
+S'./www.cppreference.com/wiki/stl/deque/begin'
+p4192
+S'stl/deque'
+p4193
+S'returns an iterator to the beginning of the deque'
+p4194
+tp4195
+a(S'clear'
+p4196
+S'./www.cppreference.com/wiki/stl/deque/clear'
+p4197
+S'stl/deque'
+p4198
+S'removes all elements from the deque'
+p4199
+tp4200
+a(S'empty'
+p4201
+S'./www.cppreference.com/wiki/stl/deque/empty'
+p4202
+S'stl/deque'
+p4203
+S'true if the deque has no elements'
+p4204
+tp4205
+a(S'end'
+p4206
+S'./www.cppreference.com/wiki/stl/deque/end'
+p4207
+S'stl/deque'
+p4208
+S'returns an iterator just past the last element of a deque'
+p4209
+tp4210
+a(S'erase'
+p4211
+S'./www.cppreference.com/wiki/stl/deque/erase'
+p4212
+S'stl/deque'
+p4213
+S'removes elements from a deque'
+p4214
+tp4215
+a(S'front'
+p4216
+S'./www.cppreference.com/wiki/stl/deque/front'
+p4217
+S'stl/deque'
+p4218
+S'returns a reference to the first element of a deque'
+p4219
+tp4220
+a(S'insert'
+p4221
+S'./www.cppreference.com/wiki/stl/deque/insert'
+p4222
+S'stl/deque'
+p4223
+S'inserts elements into the deque'
+p4224
+tp4225
+a(S'max_size'
+p4226
+S'./www.cppreference.com/wiki/stl/deque/max_size'
+p4227
+S'stl/deque'
+p4228
+S'returns the maximum number of elements that the deque can hold'
+p4229
+tp4230
+a(S'pop_back'
+p4231
+S'./www.cppreference.com/wiki/stl/deque/pop_back'
+p4232
+S'stl/deque'
+p4233
+S'removes the last element of a deque'
+p4234
+tp4235
+a(S'pop_front'
+p4236
+S'./www.cppreference.com/wiki/stl/deque/pop_front'
+p4237
+S'stl/deque'
+p4238
+S'removes the first element of the deque'
+p4239
+tp4240
+a(S'push_back'
+p4241
+S'./www.cppreference.com/wiki/stl/deque/push_back'
+p4242
+S'stl/deque'
+p4243
+S'add an element to the end of the deque'
+p4244
+tp4245
+a(S'push_front'
+p4246
+S'./www.cppreference.com/wiki/stl/deque/push_front'
+p4247
+S'stl/deque'
+p4248
+S'add an element to the front of the deque'
+p4249
+tp4250
+a(S'rbegin'
+p4251
+S'./www.cppreference.com/wiki/stl/deque/rbegin'
+p4252
+S'stl/deque'
+p4253
+S'returns a reverse_iterator to the end of the deque'
+p4254
+tp4255
+a(S'rend'
+p4256
+S'./www.cppreference.com/wiki/stl/deque/rend'
+p4257
+S'stl/deque'
+p4258
+S'returns a reverse_iterator to the beginning of the deque'
+p4259
+tp4260
+a(S'resize'
+p4261
+S'./www.cppreference.com/wiki/stl/deque/resize'
+p4262
+S'stl/deque'
+p4263
+S'change the size of the deque'
+p4264
+tp4265
+a(S'size'
+p4266
+S'./www.cppreference.com/wiki/stl/deque/size'
+p4267
+S'stl/deque'
+p4268
+S'returns the number of items in the deque'
+p4269
+tp4270
+a(S'swap'
+p4271
+S'./www.cppreference.com/wiki/stl/deque/swap'
+p4272
+S'stl/deque'
+p4273
+S'swap the contents of this deque with another'
+p4274
+tp4275
+a(S'constructors'
+p4276
+S'./www.cppreference.com/wiki/stl/list/list_constructors'
+p4277
+S'stl/list'
+p4278
+S'create lists and initialize them with some data'
+p4279
+tp4280
+a(S'operators'
+p4281
+S'./www.cppreference.com/wiki/stl/list/list_operators'
+p4282
+S'stl/list'
+p4283
+S'assign and compare lists'
+p4284
+tp4285
+a(S'assign'
+p4286
+S'./www.cppreference.com/wiki/stl/list/assign'
+p4287
+S'stl/list'
+p4288
+S'assign elements to a list'
+p4289
+tp4290
+a(S'back'
+p4291
+S'./www.cppreference.com/wiki/stl/list/back'
+p4292
+S'stl/list'
+p4293
+S'returns a reference to last element of a list'
+p4294
+tp4295
+a(S'begin'
+p4296
+S'./www.cppreference.com/wiki/stl/list/begin'
+p4297
+S'stl/list'
+p4298
+S'returns an iterator to the beginning of the list'
+p4299
+tp4300
+a(S'clear'
+p4301
+S'./www.cppreference.com/wiki/stl/list/clear'
+p4302
+S'stl/list'
+p4303
+S'removes all elements from the list'
+p4304
+tp4305
+a(S'empty'
+p4306
+S'./www.cppreference.com/wiki/stl/list/empty'
+p4307
+S'stl/list'
+p4308
+S'true if the list has no elements'
+p4309
+tp4310
+a(S'end'
+p4311
+S'./www.cppreference.com/wiki/stl/list/end'
+p4312
+S'stl/list'
+p4313
+S'returns an iterator just past the last element of a list'
+p4314
+tp4315
+a(S'erase'
+p4316
+S'./www.cppreference.com/wiki/stl/list/erase'
+p4317
+S'stl/list'
+p4318
+S'removes elements from a list'
+p4319
+tp4320
+a(S'front'
+p4321
+S'./www.cppreference.com/wiki/stl/list/front'
+p4322
+S'stl/list'
+p4323
+S'returns a reference to the first element of a list'
+p4324
+tp4325
+a(S'insert'
+p4326
+S'./www.cppreference.com/wiki/stl/list/insert'
+p4327
+S'stl/list'
+p4328
+S'inserts elements into the list'
+p4329
+tp4330
+a(S'max_size'
+p4331
+S'./www.cppreference.com/wiki/stl/list/max_size'
+p4332
+S'stl/list'
+p4333
+S'returns the maximum number of elements that the list can hold'
+p4334
+tp4335
+a(S'merge'
+p4336
+S'./www.cppreference.com/wiki/stl/list/merge'
+p4337
+S'stl/list'
+p4338
+S'merge two lists'
+p4339
+tp4340
+a(S'pop_back'
+p4341
+S'./www.cppreference.com/wiki/stl/list/pop_back'
+p4342
+S'stl/list'
+p4343
+S'removes the last element of a list'
+p4344
+tp4345
+a(S'pop_front'
+p4346
+S'./www.cppreference.com/wiki/stl/list/pop_front'
+p4347
+S'stl/list'
+p4348
+S'removes the first element of the list'
+p4349
+tp4350
+a(S'push_back'
+p4351
+S'./www.cppreference.com/wiki/stl/list/push_back'
+p4352
+S'stl/list'
+p4353
+S'add an element to the end of the list'
+p4354
+tp4355
+a(S'push_front'
+p4356
+S'./www.cppreference.com/wiki/stl/list/push_front'
+p4357
+S'stl/list'
+p4358
+S'add an element to the front of the list'
+p4359
+tp4360
+a(S'rbegin'
+p4361
+S'./www.cppreference.com/wiki/stl/list/rbegin'
+p4362
+S'stl/list'
+p4363
+S'returns a reverse_iterator to the end of the list'
+p4364
+tp4365
+a(S'remove'
+p4366
+S'./www.cppreference.com/wiki/stl/list/remove'
+p4367
+S'stl/list'
+p4368
+S'removes elements from a list'
+p4369
+tp4370
+a(S'remove_if'
+p4371
+S'./www.cppreference.com/wiki/stl/list/remove_if'
+p4372
+S'stl/list'
+p4373
+S'removes elements conditionally'
+p4374
+tp4375
+a(S'rend'
+p4376
+S'./www.cppreference.com/wiki/stl/list/rend'
+p4377
+S'stl/list'
+p4378
+S'returns a reverse_iterator to the beginning of the list'
+p4379
+tp4380
+a(S'resize'
+p4381
+S'./www.cppreference.com/wiki/stl/list/resize'
+p4382
+S'stl/list'
+p4383
+S'change the size of the list'
+p4384
+tp4385
+a(S'reverse'
+p4386
+S'./www.cppreference.com/wiki/stl/list/reverse'
+p4387
+S'stl/list'
+p4388
+S'reverse the list'
+p4389
+tp4390
+a(S'size'
+p4391
+S'./www.cppreference.com/wiki/stl/list/size'
+p4392
+S'stl/list'
+p4393
+S'returns the number of items in the list'
+p4394
+tp4395
+a(S'sort'
+p4396
+S'./www.cppreference.com/wiki/stl/list/sort'
+p4397
+S'stl/list'
+p4398
+S'sorts a list into ascending order'
+p4399
+tp4400
+a(S'splice'
+p4401
+S'./www.cppreference.com/wiki/stl/list/splice'
+p4402
+S'stl/list'
+p4403
+S'merge two lists in'
+p4404
+tp4405
+a(S'swap'
+p4406
+S'./www.cppreference.com/wiki/stl/list/swap'
+p4407
+S'stl/list'
+p4408
+S'swap the contents of this list with another'
+p4409
+tp4410
+a(S'unique'
+p4411
+S'./www.cppreference.com/wiki/stl/list/unique'
+p4412
+S'stl/list'
+p4413
+S'removes consecutive duplicate elements'
+p4414
+tp4415
+a(S'constructors'
+p4416
+S'./www.cppreference.com/wiki/stl/priority_queue/pqueue_constructors'
+p4417
+S'stl/priority_queue'
+p4418
+S'construct a new priority queue'
+p4419
+tp4420
+a(S'empty'
+p4421
+S'./www.cppreference.com/wiki/stl/priority_queue/empty'
+p4422
+S'stl/priority_queue'
+p4423
+S'true if the priority queue has no elements'
+p4424
+tp4425
+a(S'pop'
+p4426
+S'./www.cppreference.com/wiki/stl/priority_queue/pop'
+p4427
+S'stl/priority_queue'
+p4428
+S'removes the top element of a priority queue'
+p4429
+tp4430
+a(S'push'
+p4431
+S'./www.cppreference.com/wiki/stl/priority_queue/push'
+p4432
+S'stl/priority_queue'
+p4433
+S'adds an element to the end of the priority queue'
+p4434
+tp4435
+a(S'size'
+p4436
+S'./www.cppreference.com/wiki/stl/priority_queue/size'
+p4437
+S'stl/priority_queue'
+p4438
+S'returns the number of items in the priority queue'
+p4439
+tp4440
+a(S'top'
+p4441
+S'./www.cppreference.com/wiki/stl/priority_queue/top'
+p4442
+S'stl/priority_queue'
+p4443
+S'returns the top element of the priority queue'
+p4444
+tp4445
+a(S'constructors'
+p4446
+S'./www.cppreference.com/wiki/stl/queue/queue_constructors'
+p4447
+S'stl/queue'
+p4448
+S'construct a new queue'
+p4449
+tp4450
+a(S'back'
+p4451
+S'./www.cppreference.com/wiki/stl/queue/back'
+p4452
+S'stl/queue'
+p4453
+S'returns a reference to last element of a queue'
+p4454
+tp4455
+a(S'empty'
+p4456
+S'./www.cppreference.com/wiki/stl/queue/empty'
+p4457
+S'stl/queue'
+p4458
+S'true if the queue has no elements'
+p4459
+tp4460
+a(S'front'
+p4461
+S'./www.cppreference.com/wiki/stl/queue/front'
+p4462
+S'stl/queue'
+p4463
+S'returns a reference to the first element of a queue'
+p4464
+tp4465
+a(S'pop'
+p4466
+S'./www.cppreference.com/wiki/stl/queue/pop'
+p4467
+S'stl/queue'
+p4468
+S'removes the first element of a queue'
+p4469
+tp4470
+a(S'push'
+p4471
+S'./www.cppreference.com/wiki/stl/queue/push'
+p4472
+S'stl/queue'
+p4473
+S'adds an element to the end of the queue'
+p4474
+tp4475
+a(S'size'
+p4476
+S'./www.cppreference.com/wiki/stl/queue/size'
+p4477
+S'stl/queue'
+p4478
+S'returns the number of items in the queue'
+p4479
+tp4480
+a(S'constructors'
+p4481
+S'./www.cppreference.com/wiki/stl/stack/stack_constructors'
+p4482
+S'stl/stack'
+p4483
+S'construct a new stack'
+p4484
+tp4485
+a(S'empty'
+p4486
+S'./www.cppreference.com/wiki/stl/stack/empty'
+p4487
+S'stl/stack'
+p4488
+S'true if the stack has no elements'
+p4489
+tp4490
+a(S'pop'
+p4491
+S'./www.cppreference.com/wiki/stl/stack/pop'
+p4492
+S'stl/stack'
+p4493
+S'removes the top element of a stack'
+p4494
+tp4495
+a(S'push'
+p4496
+S'./www.cppreference.com/wiki/stl/stack/push'
+p4497
+S'stl/stack'
+p4498
+S'adds an element to the top of the stack'
+p4499
+tp4500
+a(S'size'
+p4501
+S'./www.cppreference.com/wiki/stl/stack/size'
+p4502
+S'stl/stack'
+p4503
+S'returns the number of items in the stack'
+p4504
+tp4505
+a(S'top'
+p4506
+S'./www.cppreference.com/wiki/stl/stack/top'
+p4507
+S'stl/stack'
+p4508
+S'returns the top element of the stack'
+p4509
+tp4510
+a(S'constructors'
+p4511
+S'./www.cppreference.com/wiki/stl/set/set_constructors'
+p4512
+S'stl/set'
+p4513
+S'default methods to allocate, copy, and deallocate sets'
+p4514
+tp4515
+a(S'operators'
+p4516
+S'./www.cppreference.com/wiki/stl/set/set_operators'
+p4517
+S'stl/set'
+p4518
+S'assign and compare sets'
+p4519
+tp4520
+a(S'begin'
+p4521
+S'./www.cppreference.com/wiki/stl/set/begin'
+p4522
+S'stl/set'
+p4523
+S'returns an iterator to the beginning of the set'
+p4524
+tp4525
+a(S'clear'
+p4526
+S'./www.cppreference.com/wiki/stl/set/clear'
+p4527
+S'stl/set'
+p4528
+S'removes all elements from the set'
+p4529
+tp4530
+a(S'count'
+p4531
+S'./www.cppreference.com/wiki/stl/set/count'
+p4532
+S'stl/set'
+p4533
+S'returns the number of elements matching a certain key'
+p4534
+tp4535
+a(S'empty'
+p4536
+S'./www.cppreference.com/wiki/stl/set/empty'
+p4537
+S'stl/set'
+p4538
+S'true if the set has no elements'
+p4539
+tp4540
+a(S'end'
+p4541
+S'./www.cppreference.com/wiki/stl/set/end'
+p4542
+S'stl/set'
+p4543
+S'returns an iterator just past the last element of a set'
+p4544
+tp4545
+a(S'equal_range'
+p4546
+S'./www.cppreference.com/wiki/stl/set/equal_range'
+p4547
+S'stl/set'
+p4548
+S'returns iterators to the first and just past the last elements matching a specific key'
+p4549
+tp4550
+a(S'erase'
+p4551
+S'./www.cppreference.com/wiki/stl/set/erase'
+p4552
+S'stl/set'
+p4553
+S'removes elements from a set'
+p4554
+tp4555
+a(S'find'
+p4556
+S'./www.cppreference.com/wiki/stl/set/find'
+p4557
+S'stl/set'
+p4558
+S'returns an iterator to specific elements'
+p4559
+tp4560
+a(S'insert'
+p4561
+S'./www.cppreference.com/wiki/stl/set/insert'
+p4562
+S'stl/set'
+p4563
+S'insert items into a set'
+p4564
+tp4565
+a(S'key_comp'
+p4566
+S'./www.cppreference.com/wiki/stl/set/key_comp'
+p4567
+S'stl/set'
+p4568
+S'returns the function that compares keys'
+p4569
+tp4570
+a(S'lower_bound'
+p4571
+S'./www.cppreference.com/wiki/stl/set/lower_bound'
+p4572
+S'stl/set'
+p4573
+S'returns an iterator to the first element greater than or equal to a certain value'
+p4574
+tp4575
+a(S'max_size'
+p4576
+S'./www.cppreference.com/wiki/stl/set/max_size'
+p4577
+S'stl/set'
+p4578
+S'returns the maximum number of elements that the set can hold'
+p4579
+tp4580
+a(S'rbegin'
+p4581
+S'./www.cppreference.com/wiki/stl/set/rbegin'
+p4582
+S'stl/set'
+p4583
+S'returns a reverse_iterator to the end of the set'
+p4584
+tp4585
+a(S'rend'
+p4586
+S'./www.cppreference.com/wiki/stl/set/rend'
+p4587
+S'stl/set'
+p4588
+S'returns a reverse_iterator to the beginning of the set'
+p4589
+tp4590
+a(S'size'
+p4591
+S'./www.cppreference.com/wiki/stl/set/size'
+p4592
+S'stl/set'
+p4593
+S'returns the number of items in the set'
+p4594
+tp4595
+a(S'swap'
+p4596
+S'./www.cppreference.com/wiki/stl/set/swap'
+p4597
+S'stl/set'
+p4598
+S'swap the contents of this set with another'
+p4599
+tp4600
+a(S'upper_bound'
+p4601
+S'./www.cppreference.com/wiki/stl/set/upper_bound'
+p4602
+S'stl/set'
+p4603
+S'returns an iterator to the first element greater than a certain value'
+p4604
+tp4605
+a(S'value_comp'
+p4606
+S'./www.cppreference.com/wiki/stl/set/value_comp'
+p4607
+S'stl/set'
+p4608
+S'returns the function that compares values'
+p4609
+tp4610
+a(S'multiset constructors'
+p4611
+S'./www.cppreference.com/wiki/stl/multiset/multiset_constructors'
+p4612
+S'stl/multiset'
+p4613
+S'default methods to allocate, copy, and deallocate multisets'
+p4614
+tp4615
+a(S'multiset operators'
+p4616
+S'./www.cppreference.com/wiki/stl/multiset/multiset_operators'
+p4617
+S'stl/multiset'
+p4618
+S'assign and compare multisets'
+p4619
+tp4620
+a(S'begin'
+p4621
+S'./www.cppreference.com/wiki/stl/multiset/begin'
+p4622
+S'stl/multiset'
+p4623
+S'returns an iterator to the beginning of the multiset'
+p4624
+tp4625
+a(S'clear'
+p4626
+S'./www.cppreference.com/wiki/stl/multiset/clear'
+p4627
+S'stl/multiset'
+p4628
+S'removes all elements from the multiset'
+p4629
+tp4630
+a(S'count'
+p4631
+S'./www.cppreference.com/wiki/stl/multiset/count'
+p4632
+S'stl/multiset'
+p4633
+S'returns the number of elements matching a certain key'
+p4634
+tp4635
+a(S'empty'
+p4636
+S'./www.cppreference.com/wiki/stl/multiset/empty'
+p4637
+S'stl/multiset'
+p4638
+S'true if the multiset has no elements'
+p4639
+tp4640
+a(S'end'
+p4641
+S'./www.cppreference.com/wiki/stl/multiset/end'
+p4642
+S'stl/multiset'
+p4643
+S'returns an iterator just past the last element of a multiset'
+p4644
+tp4645
+a(S'equal_range'
+p4646
+S'./www.cppreference.com/wiki/stl/multiset/equal_range'
+p4647
+S'stl/multiset'
+p4648
+S'returns iterators to the first and just past the last elements matching a specific key'
+p4649
+tp4650
+a(S'erase'
+p4651
+S'./www.cppreference.com/wiki/stl/multiset/erase'
+p4652
+S'stl/multiset'
+p4653
+S'removes elements from a multiset'
+p4654
+tp4655
+a(S'find'
+p4656
+S'./www.cppreference.com/wiki/stl/multiset/find'
+p4657
+S'stl/multiset'
+p4658
+S'returns an iterator to specific elements'
+p4659
+tp4660
+a(S'insert'
+p4661
+S'./www.cppreference.com/wiki/stl/multiset/insert'
+p4662
+S'stl/multiset'
+p4663
+S'inserts items into a multiset'
+p4664
+tp4665
+a(S'key_comp'
+p4666
+S'./www.cppreference.com/wiki/stl/multiset/key_comp'
+p4667
+S'stl/multiset'
+p4668
+S'returns the function that compares keys'
+p4669
+tp4670
+a(S'lower_bound'
+p4671
+S'./www.cppreference.com/wiki/stl/multiset/lower_bound'
+p4672
+S'stl/multiset'
+p4673
+S'returns an iterator to the first element greater than or equal to a certain value'
+p4674
+tp4675
+a(S'max_size'
+p4676
+S'./www.cppreference.com/wiki/stl/multiset/max_size'
+p4677
+S'stl/multiset'
+p4678
+S'returns the maximum number of elements that the multiset can hold'
+p4679
+tp4680
+a(S'rbegin'
+p4681
+S'./www.cppreference.com/wiki/stl/multiset/rbegin'
+p4682
+S'stl/multiset'
+p4683
+S'returns a reverse_iterator to the end of the multiset'
+p4684
+tp4685
+a(S'rend'
+p4686
+S'./www.cppreference.com/wiki/stl/multiset/rend'
+p4687
+S'stl/multiset'
+p4688
+S'returns a reverse_iterator to the beginning of the multiset'
+p4689
+tp4690
+a(S'size'
+p4691
+S'./www.cppreference.com/wiki/stl/multiset/size'
+p4692
+S'stl/multiset'
+p4693
+S'returns the number of items in the multiset'
+p4694
+tp4695
+a(S'swap'
+p4696
+S'./www.cppreference.com/wiki/stl/multiset/swap'
+p4697
+S'stl/multiset'
+p4698
+S'swap the contents of this multiset with another'
+p4699
+tp4700
+a(S'upper_bound'
+p4701
+S'./www.cppreference.com/wiki/stl/multiset/upper_bound'
+p4702
+S'stl/multiset'
+p4703
+S'returns an iterator to the first element greater than a certain value'
+p4704
+tp4705
+a(S'value_comp'
+p4706
+S'./www.cppreference.com/wiki/stl/multiset/value_comp'
+p4707
+S'stl/multiset'
+p4708
+S'returns the function that compares values'
+p4709
+tp4710
+a(S'map constructors & destructors'
+p4711
+S'./www.cppreference.com/wiki/stl/map/map_constructors'
+p4712
+S'stl/map'
+p4713
+S'default methods to allocate, copy, and deallocate maps'
+p4714
+tp4715
+a(S'map operators'
+p4716
+S'./www.cppreference.com/wiki/stl/map/map_operators'
+p4717
+S'stl/map'
+p4718
+S'assign, compare, and access elements of a map'
+p4719
+tp4720
+a(S'map typedefs'
+p4721
+S'./www.cppreference.com/wiki/stl/map/map_typedefs'
+p4722
+S'stl/map'
+p4723
+S'typedefs of a map'
+p4724
+tp4725
+a(S'begin'
+p4726
+S'./www.cppreference.com/wiki/stl/map/begin'
+p4727
+S'stl/map'
+p4728
+S'returns an iterator to the beginning of the map'
+p4729
+tp4730
+a(S'clear'
+p4731
+S'./www.cppreference.com/wiki/stl/map/clear'
+p4732
+S'stl/map'
+p4733
+S'removes all elements from the map'
+p4734
+tp4735
+a(S'count'
+p4736
+S'./www.cppreference.com/wiki/stl/map/count'
+p4737
+S'stl/map'
+p4738
+S'returns the number of elements matching a certain key'
+p4739
+tp4740
+a(S'empty'
+p4741
+S'./www.cppreference.com/wiki/stl/map/empty'
+p4742
+S'stl/map'
+p4743
+S'true if the map has no elements'
+p4744
+tp4745
+a(S'end'
+p4746
+S'./www.cppreference.com/wiki/stl/map/end'
+p4747
+S'stl/map'
+p4748
+S'returns an iterator just past the last element of a map'
+p4749
+tp4750
+a(S'equal_range'
+p4751
+S'./www.cppreference.com/wiki/stl/map/equal_range'
+p4752
+S'stl/map'
+p4753
+S'returns iterators to the first and just past the last elements matching a specific key'
+p4754
+tp4755
+a(S'erase'
+p4756
+S'./www.cppreference.com/wiki/stl/map/erase'
+p4757
+S'stl/map'
+p4758
+S'removes elements from a map'
+p4759
+tp4760
+a(S'find'
+p4761
+S'./www.cppreference.com/wiki/stl/map/find'
+p4762
+S'stl/map'
+p4763
+S'returns an iterator to specific elements'
+p4764
+tp4765
+a(S'insert'
+p4766
+S'./www.cppreference.com/wiki/stl/map/insert'
+p4767
+S'stl/map'
+p4768
+S'insert items into a map'
+p4769
+tp4770
+a(S'key_comp'
+p4771
+S'./www.cppreference.com/wiki/stl/map/key_comp'
+p4772
+S'stl/map'
+p4773
+S'returns the function that compares keys'
+p4774
+tp4775
+a(S'lower_bound'
+p4776
+S'./www.cppreference.com/wiki/stl/map/lower_bound'
+p4777
+S'stl/map'
+p4778
+S'returns an iterator to the first element greater than or equal to a certain value'
+p4779
+tp4780
+a(S'max_size'
+p4781
+S'./www.cppreference.com/wiki/stl/map/max_size'
+p4782
+S'stl/map'
+p4783
+S'returns the maximum number of elements that the map can hold'
+p4784
+tp4785
+a(S'rbegin'
+p4786
+S'./www.cppreference.com/wiki/stl/map/rbegin'
+p4787
+S'stl/map'
+p4788
+S'returns a reverse_iterator to the end of the map'
+p4789
+tp4790
+a(S'rend'
+p4791
+S'./www.cppreference.com/wiki/stl/map/rend'
+p4792
+S'stl/map'
+p4793
+S'returns a reverse_iterator to the beginning of the map'
+p4794
+tp4795
+a(S'size'
+p4796
+S'./www.cppreference.com/wiki/stl/map/size'
+p4797
+S'stl/map'
+p4798
+S'returns the number of items in the map'
+p4799
+tp4800
+a(S'swap'
+p4801
+S'./www.cppreference.com/wiki/stl/map/swap'
+p4802
+S'stl/map'
+p4803
+S'swap the contents of this map with another'
+p4804
+tp4805
+a(S'upper_bound'
+p4806
+S'./www.cppreference.com/wiki/stl/map/upper_bound'
+p4807
+S'stl/map'
+p4808
+S'returns an iterator to the first element greater than a certain value'
+p4809
+tp4810
+a(S'value_comp'
+p4811
+S'./www.cppreference.com/wiki/stl/map/value_comp'
+p4812
+S'stl/map'
+p4813
+S'returns the function that compares values'
+p4814
+tp4815
+a(S'constructors'
+p4816
+S'./www.cppreference.com/wiki/stl/multimap/multimap_constructors'
+p4817
+S'stl/multimap'
+p4818
+S'default methods to allocate, copy, and deallocate multimaps'
+p4819
+tp4820
+a(S'operators'
+p4821
+S'./www.cppreference.com/wiki/stl/multimap/multimap_operators'
+p4822
+S'stl/multimap'
+p4823
+S'assign and compare multimaps'
+p4824
+tp4825
+a(S'begin'
+p4826
+S'./www.cppreference.com/wiki/stl/multimap/begin'
+p4827
+S'stl/multimap'
+p4828
+S'returns an iterator to the beginning of the multimap'
+p4829
+tp4830
+a(S'clear'
+p4831
+S'./www.cppreference.com/wiki/stl/multimap/clear'
+p4832
+S'stl/multimap'
+p4833
+S'removes all elements from the multimap'
+p4834
+tp4835
+a(S'count'
+p4836
+S'./www.cppreference.com/wiki/stl/multimap/count'
+p4837
+S'stl/multimap'
+p4838
+S'returns the number of elements matching a certain key'
+p4839
+tp4840
+a(S'empty'
+p4841
+S'./www.cppreference.com/wiki/stl/multimap/empty'
+p4842
+S'stl/multimap'
+p4843
+S'true if the multimap has no elements'
+p4844
+tp4845
+a(S'end'
+p4846
+S'./www.cppreference.com/wiki/stl/multimap/end'
+p4847
+S'stl/multimap'
+p4848
+S'returns an iterator just past the last element of a multimap'
+p4849
+tp4850
+a(S'equal_range'
+p4851
+S'./www.cppreference.com/wiki/stl/multimap/equal_range'
+p4852
+S'stl/multimap'
+p4853
+S'returns iterators to the first and just past the last elements matching a specific key'
+p4854
+tp4855
+a(S'erase'
+p4856
+S'./www.cppreference.com/wiki/stl/multimap/erase'
+p4857
+S'stl/multimap'
+p4858
+S'removes elements from a multimap'
+p4859
+tp4860
+a(S'find'
+p4861
+S'./www.cppreference.com/wiki/stl/multimap/find'
+p4862
+S'stl/multimap'
+p4863
+S'returns an iterator to specific elements'
+p4864
+tp4865
+a(S'insert'
+p4866
+S'./www.cppreference.com/wiki/stl/multimap/insert'
+p4867
+S'stl/multimap'
+p4868
+S'inserts items into a multimap'
+p4869
+tp4870
+a(S'key_comp'
+p4871
+S'./www.cppreference.com/wiki/stl/multimap/key_comp'
+p4872
+S'stl/multimap'
+p4873
+S'returns the function that compares keys'
+p4874
+tp4875
+a(S'lower_bound'
+p4876
+S'./www.cppreference.com/wiki/stl/multimap/lower_bound'
+p4877
+S'stl/multimap'
+p4878
+S'returns an iterator to the first element greater than or equal to a certain value'
+p4879
+tp4880
+a(S'max_size'
+p4881
+S'./www.cppreference.com/wiki/stl/multimap/max_size'
+p4882
+S'stl/multimap'
+p4883
+S'returns the maximum number of elements that the multimap can hold'
+p4884
+tp4885
+a(S'rbegin'
+p4886
+S'./www.cppreference.com/wiki/stl/multimap/rbegin'
+p4887
+S'stl/multimap'
+p4888
+S'returns a reverse_iterator to the end of the multimap'
+p4889
+tp4890
+a(S'rend'
+p4891
+S'./www.cppreference.com/wiki/stl/multimap/rend'
+p4892
+S'stl/multimap'
+p4893
+S'returns a reverse_iterator to the beginning of the multimap'
+p4894
+tp4895
+a(S'size'
+p4896
+S'./www.cppreference.com/wiki/stl/multimap/size'
+p4897
+S'stl/multimap'
+p4898
+S'returns the number of items in the multimap'
+p4899
+tp4900
+a(S'swap'
+p4901
+S'./www.cppreference.com/wiki/stl/multimap/swap'
+p4902
+S'stl/multimap'
+p4903
+S'swap the contents of this multimap with another'
+p4904
+tp4905
+a(S'upper_bound'
+p4906
+S'./www.cppreference.com/wiki/stl/multimap/upper_bound'
+p4907
+S'stl/multimap'
+p4908
+S'returns an iterator to the first element greater than a certain value'
+p4909
+tp4910
+a(S'value_comp'
+p4911
+S'./www.cppreference.com/wiki/stl/multimap/value_comp'
+p4912
+S'stl/multimap'
+p4913
+S'returns the function that compares values'
+p4914
+tp4915
+a(S'constructors'
+p4916
+S'./www.cppreference.com/wiki/stl/bitset/bitset_constructors'
+p4917
+S'stl/bitset'
+p4918
+S'create new bitsets'
+p4919
+tp4920
+a(S'operators'
+p4921
+S'./www.cppreference.com/wiki/stl/bitset/bitset_operators'
+p4922
+S'stl/bitset'
+p4923
+S'compare and assign bitsets'
+p4924
+tp4925
+a(S'any'
+p4926
+S'./www.cppreference.com/wiki/stl/bitset/any'
+p4927
+S'stl/bitset'
+p4928
+S'true if any bits are set'
+p4929
+tp4930
+a(S'count'
+p4931
+S'./www.cppreference.com/wiki/stl/bitset/count'
+p4932
+S'stl/bitset'
+p4933
+S'returns the number of set bits'
+p4934
+tp4935
+a(S'flip'
+p4936
+S'./www.cppreference.com/wiki/stl/bitset/flip'
+p4937
+S'stl/bitset'
+p4938
+S'reverses the bitset'
+p4939
+tp4940
+a(S'none'
+p4941
+S'./www.cppreference.com/wiki/stl/bitset/none'
+p4942
+S'stl/bitset'
+p4943
+S'true if no bits are set'
+p4944
+tp4945
+a(S'reset'
+p4946
+S'./www.cppreference.com/wiki/stl/bitset/reset'
+p4947
+S'stl/bitset'
+p4948
+S'sets bits to zero'
+p4949
+tp4950
+a(S'set'
+p4951
+S'./www.cppreference.com/wiki/stl/bitset/set'
+p4952
+S'stl/bitset'
+p4953
+S'sets bits'
+p4954
+tp4955
+a(S'size'
+p4956
+S'./www.cppreference.com/wiki/stl/bitset/size'
+p4957
+S'stl/bitset'
+p4958
+S'number of bits that the bitset can hold'
+p4959
+tp4960
+a(S'test'
+p4961
+S'./www.cppreference.com/wiki/stl/bitset/test'
+p4962
+S'stl/bitset'
+p4963
+S'returns the value of a given bit'
+p4964
+tp4965
+a(S'to_string'
+p4966
+S'./www.cppreference.com/wiki/stl/bitset/to_string'
+p4967
+S'stl/bitset'
+p4968
+S'string representation of the bitset'
+p4969
+tp4970
+a(S'to_ulong'
+p4971
+S'./www.cppreference.com/wiki/stl/bitset/to_ulong'
+p4972
+S'stl/bitset'
+p4973
+S'returns an integer representation of the bitset'
+p4974
+tp4975
+a(S'# ##'
+p4976
+S'./www.cppreference.com/wiki/preprocessor/sharp'
+p4977
+S'preprocessor'
+p4978
+S'manipulate strings'
+p4979
+tp4980
+a(S'#define'
+p4981
+S'./www.cppreference.com/wiki/preprocessor/define'
+p4982
+S'preprocessor'
+p4983
+S'define variables'
+p4984
+tp4985
+a(S'#error'
+p4986
+S'./www.cppreference.com/wiki/preprocessor/error'
+p4987
+S'preprocessor'
+p4988
+S'display an error message'
+p4989
+tp4990
+a(S'#if'
+p4991
+S'./www.cppreference.com/wiki/preprocessor/preprocessor_if'
+p4992
+S'preprocessor'
+p4993
+S'conditional operators'
+p4994
+tp4995
+a(S'#ifdef'
+p4996
+S'./www.cppreference.com/wiki/preprocessor/preprocessor_if'
+p4997
+S'preprocessor'
+p4998
+S'conditional operators'
+p4999
+tp5000
+a(S'#ifndef'
+p5001
+S'./www.cppreference.com/wiki/preprocessor/preprocessor_if'
+p5002
+S'preprocessor'
+p5003
+S'conditional operators'
+p5004
+tp5005
+a(S'#else'
+p5006
+S'./www.cppreference.com/wiki/preprocessor/preprocessor_if'
+p5007
+S'preprocessor'
+p5008
+S'conditional operators'
+p5009
+tp5010
+a(S'#elif'
+p5011
+S'./www.cppreference.com/wiki/preprocessor/preprocessor_if'
+p5012
+S'preprocessor'
+p5013
+S'conditional operators'
+p5014
+tp5015
+a(S'#endif'
+p5016
+S'./www.cppreference.com/wiki/preprocessor/preprocessor_if'
+p5017
+S'preprocessor'
+p5018
+S'conditional operators'
+p5019
+tp5020
+a(S'#include'
+p5021
+S'./www.cppreference.com/wiki/preprocessor/include'
+p5022
+S'preprocessor'
+p5023
+S'insert the contents of another file'
+p5024
+tp5025
+a(S'#line'
+p5026
+S'./www.cppreference.com/wiki/preprocessor/line'
+p5027
+S'preprocessor'
+p5028
+S'set line and file information'
+p5029
+tp5030
+a(S'#pragma'
+p5031
+S'./www.cppreference.com/wiki/preprocessor/pragma'
+p5032
+S'preprocessor'
+p5033
+S'implementation specific command'
+p5034
+tp5035
+a(S'#undef'
+p5036
+S'./www.cppreference.com/wiki/preprocessor/undef'
+p5037
+S'preprocessor'
+p5038
+S'used to undefine variables'
+p5039
+tp5040
+a(S'predefined preprocessor variables'
+p5041
+S'./www.cppreference.com/wiki/preprocessor/preprocessor_vars'
+p5042
+S'preprocessor'
+p5043
+S'miscellaneous preprocessor variables'
+p5044
+tp5045
+a(S'asm'
+p5046
+S'./www.cppreference.com/wiki/keywords/asm'
+p5047
+S'keywords'
+p5048
+S'insert an assembly instruction'
+p5049
+tp5050
+a(S'auto'
+p5051
+S'./www.cppreference.com/wiki/keywords/auto'
+p5052
+S'keywords'
+p5053
+S'declare a local variable'
+p5054
+tp5055
+a(S'bool'
+p5056
+S'./www.cppreference.com/wiki/keywords/bool'
+p5057
+S'keywords'
+p5058
+S'declare a boolean variable'
+p5059
+tp5060
+a(S'break'
+p5061
+S'./www.cppreference.com/wiki/keywords/break'
+p5062
+S'keywords'
+p5063
+S'break out of a loop'
+p5064
+tp5065
+a(S'case'
+p5066
+S'./www.cppreference.com/wiki/keywords/case'
+p5067
+S'keywords'
+p5068
+S'a block of code in a switch statement'
+p5069
+tp5070
+a(S'catch'
+p5071
+S'./www.cppreference.com/wiki/keywords/catch'
+p5072
+S'keywords'
+p5073
+S'handles exceptions from throw'
+p5074
+tp5075
+a(S'char'
+p5076
+S'./www.cppreference.com/wiki/keywords/char'
+p5077
+S'keywords'
+p5078
+S'declare a character variable'
+p5079
+tp5080
+a(S'class'
+p5081
+S'./www.cppreference.com/wiki/keywords/class'
+p5082
+S'keywords'
+p5083
+S'declare a class'
+p5084
+tp5085
+a(S'const'
+p5086
+S'./www.cppreference.com/wiki/keywords/const'
+p5087
+S'keywords'
+p5088
+S'declare immutable data or functions that do not change data'
+p5089
+tp5090
+a(S'const_cast'
+p5091
+S'./www.cppreference.com/wiki/keywords/const_cast'
+p5092
+S'keywords'
+p5093
+S'cast from const variables'
+p5094
+tp5095
+a(S'continue'
+p5096
+S'./www.cppreference.com/wiki/keywords/continue'
+p5097
+S'keywords'
+p5098
+S'bypass iterations of a loop'
+p5099
+tp5100
+a(S'default'
+p5101
+S'./www.cppreference.com/wiki/keywords/default'
+p5102
+S'keywords'
+p5103
+S'default handler in a case statement'
+p5104
+tp5105
+a(S'delete'
+p5106
+S'./www.cppreference.com/wiki/keywords/delete'
+p5107
+S'keywords'
+p5108
+S'make dynamic memory available'
+p5109
+tp5110
+a(S'do'
+p5111
+S'./www.cppreference.com/wiki/keywords/do'
+p5112
+S'keywords'
+p5113
+S'looping construct'
+p5114
+tp5115
+a(S'double'
+p5116
+S'./www.cppreference.com/wiki/keywords/double'
+p5117
+S'keywords'
+p5118
+S'declare a double precision floating-point variable'
+p5119
+tp5120
+a(S'dynamic_cast'
+p5121
+S'./www.cppreference.com/wiki/keywords/dynamic_cast'
+p5122
+S'keywords'
+p5123
+S'perform runtime casts'
+p5124
+tp5125
+a(S'else'
+p5126
+S'./www.cppreference.com/wiki/keywords/else'
+p5127
+S'keywords'
+p5128
+S'alternate case for an if statement'
+p5129
+tp5130
+a(S'enum'
+p5131
+S'./www.cppreference.com/wiki/keywords/enum'
+p5132
+S'keywords'
+p5133
+S'create enumeration types'
+p5134
+tp5135
+a(S'explicit'
+p5136
+S'./www.cppreference.com/wiki/keywords/explicit'
+p5137
+S'keywords'
+p5138
+S'only use constructors when they exactly match'
+p5139
+tp5140
+a(S'export'
+p5141
+S'./www.cppreference.com/wiki/keywords/export'
+p5142
+S'keywords'
+p5143
+S'allows template definitions to be separated from their declarations'
+p5144
+tp5145
+a(S'extern'
+p5146
+S'./www.cppreference.com/wiki/keywords/extern'
+p5147
+S'keywords'
+p5148
+S'tell the compiler about variables defined elsewhere'
+p5149
+tp5150
+a(S'false'
+p5151
+S'./www.cppreference.com/wiki/keywords/false'
+p5152
+S'keywords'
+p5153
+S'a constant representing the boolean false value'
+p5154
+tp5155
+a(S'float'
+p5156
+S'./www.cppreference.com/wiki/keywords/float'
+p5157
+S'keywords'
+p5158
+S'declare a floating-point variable'
+p5159
+tp5160
+a(S'for'
+p5161
+S'./www.cppreference.com/wiki/keywords/for'
+p5162
+S'keywords'
+p5163
+S'looping construct'
+p5164
+tp5165
+a(S'friend'
+p5166
+S'./www.cppreference.com/wiki/keywords/friend'
+p5167
+S'keywords'
+p5168
+S'grant non-member function access to private data'
+p5169
+tp5170
+a(S'goto'
+p5171
+S'./www.cppreference.com/wiki/keywords/goto'
+p5172
+S'keywords'
+p5173
+S'jump to a different part of the program'
+p5174
+tp5175
+a(S'if'
+p5176
+S'./www.cppreference.com/wiki/keywords/if'
+p5177
+S'keywords'
+p5178
+S'execute code based on the result of a test'
+p5179
+tp5180
+a(S'inline'
+p5181
+S'./www.cppreference.com/wiki/keywords/inline'
+p5182
+S'keywords'
+p5183
+S'optimize calls to short functions'
+p5184
+tp5185
+a(S'int'
+p5186
+S'./www.cppreference.com/wiki/keywords/int'
+p5187
+S'keywords'
+p5188
+S'declare an integer variable'
+p5189
+tp5190
+a(S'long'
+p5191
+S'./www.cppreference.com/wiki/keywords/long'
+p5192
+S'keywords'
+p5193
+S'declare a long integer variable'
+p5194
+tp5195
+a(S'mutable'
+p5196
+S'./www.cppreference.com/wiki/keywords/mutable'
+p5197
+S'keywords'
+p5198
+S'override a const variable'
+p5199
+tp5200
+a(S'namespace'
+p5201
+S'./www.cppreference.com/wiki/keywords/namespace'
+p5202
+S'keywords'
+p5203
+S'partition the global namespace by defining a scope'
+p5204
+tp5205
+a(S'new'
+p5206
+S'./www.cppreference.com/wiki/keywords/new'
+p5207
+S'keywords'
+p5208
+S'allocate dynamic memory for a new variable'
+p5209
+tp5210
+a(S'operator'
+p5211
+S'./www.cppreference.com/wiki/keywords/operator'
+p5212
+S'keywords'
+p5213
+S'create overloaded operator functions'
+p5214
+tp5215
+a(S'private'
+p5216
+S'./www.cppreference.com/wiki/keywords/private'
+p5217
+S'keywords'
+p5218
+S'declare private members of a class'
+p5219
+tp5220
+a(S'protected'
+p5221
+S'./www.cppreference.com/wiki/keywords/protected'
+p5222
+S'keywords'
+p5223
+S'declare protected members of a class'
+p5224
+tp5225
+a(S'public'
+p5226
+S'./www.cppreference.com/wiki/keywords/public'
+p5227
+S'keywords'
+p5228
+S'declare public members of a class'
+p5229
+tp5230
+a(S'register'
+p5231
+S'./www.cppreference.com/wiki/keywords/register'
+p5232
+S'keywords'
+p5233
+S'request that a variable be optimized for speed'
+p5234
+tp5235
+a(S'reinterpret_cast'
+p5236
+S'./www.cppreference.com/wiki/keywords/reinterpret_cast'
+p5237
+S'keywords'
+p5238
+S'change the type of a variable'
+p5239
+tp5240
+a(S'return'
+p5241
+S'./www.cppreference.com/wiki/keywords/return'
+p5242
+S'keywords'
+p5243
+S'return from a function'
+p5244
+tp5245
+a(S'short'
+p5246
+S'./www.cppreference.com/wiki/keywords/short'
+p5247
+S'keywords'
+p5248
+S'declare a short integer variable'
+p5249
+tp5250
+a(S'signed'
+p5251
+S'./www.cppreference.com/wiki/keywords/signed'
+p5252
+S'keywords'
+p5253
+S'modify variable type declarations'
+p5254
+tp5255
+a(S'sizeof'
+p5256
+S'./www.cppreference.com/wiki/keywords/sizeof'
+p5257
+S'keywords'
+p5258
+S'return the size of a variable or type'
+p5259
+tp5260
+a(S'static'
+p5261
+S'./www.cppreference.com/wiki/keywords/static'
+p5262
+S'keywords'
+p5263
+S'create permanent storage for a variable'
+p5264
+tp5265
+a(S'static_cast'
+p5266
+S'./www.cppreference.com/wiki/keywords/static_cast'
+p5267
+S'keywords'
+p5268
+S'perform a nonpolymorphic cast'
+p5269
+tp5270
+a(S'struct'
+p5271
+S'./www.cppreference.com/wiki/keywords/struct'
+p5272
+S'keywords'
+p5273
+S'define a new structure'
+p5274
+tp5275
+a(S'switch'
+p5276
+S'./www.cppreference.com/wiki/keywords/switch'
+p5277
+S'keywords'
+p5278
+S'execute code based on different possible values for a variable'
+p5279
+tp5280
+a(S'template'
+p5281
+S'./www.cppreference.com/wiki/keywords/template'
+p5282
+S'keywords'
+p5283
+S'create generic functions'
+p5284
+tp5285
+a(S'this'
+p5286
+S'./www.cppreference.com/wiki/keywords/this'
+p5287
+S'keywords'
+p5288
+S'a pointer to the current object'
+p5289
+tp5290
+a(S'throw'
+p5291
+S'./www.cppreference.com/wiki/keywords/throw'
+p5292
+S'keywords'
+p5293
+S'throws an exception'
+p5294
+tp5295
+a(S'true'
+p5296
+S'./www.cppreference.com/wiki/keywords/true'
+p5297
+S'keywords'
+p5298
+S'a constant representing the boolean true value'
+p5299
+tp5300
+a(S'try'
+p5301
+S'./www.cppreference.com/wiki/keywords/try'
+p5302
+S'keywords'
+p5303
+S'execute code that can throw an exception'
+p5304
+tp5305
+a(S'typedef'
+p5306
+S'./www.cppreference.com/wiki/keywords/typedef'
+p5307
+S'keywords'
+p5308
+S'create a new type name from an existing type'
+p5309
+tp5310
+a(S'typeid'
+p5311
+S'./www.cppreference.com/wiki/keywords/typeid'
+p5312
+S'keywords'
+p5313
+S'describes an object'
+p5314
+tp5315
+a(S'typename'
+p5316
+S'./www.cppreference.com/wiki/keywords/typename'
+p5317
+S'keywords'
+p5318
+S'declare a class or undefined type'
+p5319
+tp5320
+a(S'union'
+p5321
+S'./www.cppreference.com/wiki/keywords/union'
+p5322
+S'keywords'
+p5323
+S'a structure that assigns multiple variables to the same memory location'
+p5324
+tp5325
+a(S'unsigned'
+p5326
+S'./www.cppreference.com/wiki/keywords/unsigned'
+p5327
+S'keywords'
+p5328
+S'declare an unsigned integer variable'
+p5329
+tp5330
+a(S'using'
+p5331
+S'./www.cppreference.com/wiki/keywords/using'
+p5332
+S'keywords'
+p5333
+S'import complete or partial namespaces into the current scope'
+p5334
+tp5335
+a(S'virtual'
+p5336
+S'./www.cppreference.com/wiki/keywords/virtual'
+p5337
+S'keywords'
+p5338
+S'create a function that can be overridden by a derived class'
+p5339
+tp5340
+a(S'void'
+p5341
+S'./www.cppreference.com/wiki/keywords/void'
+p5342
+S'keywords'
+p5343
+S'declare functions or data with no associated data type'
+p5344
+tp5345
+a(S'volatile'
+p5346
+S'./www.cppreference.com/wiki/keywords/volatile'
+p5347
+S'keywords'
+p5348
+S'warn the compiler about variables that can be modified unexpectedly'
+p5349
+tp5350
+a(S'wchar_t'
+p5351
+S'./www.cppreference.com/wiki/keywords/wchar_t'
+p5352
+S'keywords'
+p5353
+S'declare a wide-character variable'
+p5354
+tp5355
+a(S'while'
+p5356
+S'./www.cppreference.com/wiki/keywords/while'
+p5357
+S'keywords'
+p5358
+S'looping construct'
+p5359
+tp5360
+a(S'clearerr'
+p5361
+S'./www.cppreference.com/wiki/c/io/clearerr'
+p5362
+S'c/io'
+p5363
+S'clears errors'
+p5364
+tp5365
+a(S'fclose'
+p5366
+S'./www.cppreference.com/wiki/c/io/fclose'
+p5367
+S'c/io'
+p5368
+S'close a file'
+p5369
+tp5370
+a(S'feof'
+p5371
+S'./www.cppreference.com/wiki/c/io/feof'
+p5372
+S'c/io'
+p5373
+S'true if at the end-of-file'
+p5374
+tp5375
+a(S'ferror'
+p5376
+S'./www.cppreference.com/wiki/c/io/ferror'
+p5377
+S'c/io'
+p5378
+S'checks for a file error'
+p5379
+tp5380
+a(S'fflush'
+p5381
+S'./www.cppreference.com/wiki/c/io/fflush'
+p5382
+S'c/io'
+p5383
+S'writes the contents of the output buffer'
+p5384
+tp5385
+a(S'fgetc'
+p5386
+S'./www.cppreference.com/wiki/c/io/fgetc'
+p5387
+S'c/io'
+p5388
+S'get a character from a stream'
+p5389
+tp5390
+a(S'fgetpos'
+p5391
+S'./www.cppreference.com/wiki/c/io/fgetpos'
+p5392
+S'c/io'
+p5393
+S'get the file position indicator'
+p5394
+tp5395
+a(S'fgets'
+p5396
+S'./www.cppreference.com/wiki/c/io/fgets'
+p5397
+S'c/io'
+p5398
+S'get a string of characters from a stream'
+p5399
+tp5400
+a(S'fopen'
+p5401
+S'./www.cppreference.com/wiki/c/io/fopen'
+p5402
+S'c/io'
+p5403
+S'open a file'
+p5404
+tp5405
+a(S'fprintf'
+p5406
+S'./www.cppreference.com/wiki/c/io/fprintf'
+p5407
+S'c/io'
+p5408
+S'print formatted output to a file'
+p5409
+tp5410
+a(S'fputc'
+p5411
+S'./www.cppreference.com/wiki/c/io/fputc'
+p5412
+S'c/io'
+p5413
+S'write a character to a file'
+p5414
+tp5415
+a(S'fputs'
+p5416
+S'./www.cppreference.com/wiki/c/io/fputs'
+p5417
+S'c/io'
+p5418
+S'write a string to a file'
+p5419
+tp5420
+a(S'fread'
+p5421
+S'./www.cppreference.com/wiki/c/io/fread'
+p5422
+S'c/io'
+p5423
+S'read from a file'
+p5424
+tp5425
+a(S'freopen'
+p5426
+S'./www.cppreference.com/wiki/c/io/freopen'
+p5427
+S'c/io'
+p5428
+S'open an existing stream with a different name'
+p5429
+tp5430
+a(S'fscanf'
+p5431
+S'./www.cppreference.com/wiki/c/io/fscanf'
+p5432
+S'c/io'
+p5433
+S'read formatted input from a file'
+p5434
+tp5435
+a(S'fseek'
+p5436
+S'./www.cppreference.com/wiki/c/io/fseek'
+p5437
+S'c/io'
+p5438
+S'move to a specific location in a file'
+p5439
+tp5440
+a(S'fsetpos'
+p5441
+S'./www.cppreference.com/wiki/c/io/fsetpos'
+p5442
+S'c/io'
+p5443
+S'move to a specific location in a file'
+p5444
+tp5445
+a(S'ftell'
+p5446
+S'./www.cppreference.com/wiki/c/io/ftell'
+p5447
+S'c/io'
+p5448
+S'returns the current file position indicator'
+p5449
+tp5450
+a(S'fwrite'
+p5451
+S'./www.cppreference.com/wiki/c/io/fwrite'
+p5452
+S'c/io'
+p5453
+S'write to a file'
+p5454
+tp5455
+a(S'getc'
+p5456
+S'./www.cppreference.com/wiki/c/io/getc'
+p5457
+S'c/io'
+p5458
+S'read a character from a file'
+p5459
+tp5460
+a(S'getchar'
+p5461
+S'./www.cppreference.com/wiki/c/io/getchar'
+p5462
+S'c/io'
+p5463
+S'read a character from stdin'
+p5464
+tp5465
+a(S'gets'
+p5466
+S'./www.cppreference.com/wiki/c/io/gets'
+p5467
+S'c/io'
+p5468
+S'read a string from stdin'
+p5469
+tp5470
+a(S'perror'
+p5471
+S'./www.cppreference.com/wiki/c/io/perror'
+p5472
+S'c/io'
+p5473
+S'displays a string version of the current error to stderr'
+p5474
+tp5475
+a(S'printf'
+p5476
+S'./www.cppreference.com/wiki/c/io/printf'
+p5477
+S'c/io'
+p5478
+S'write formatted output to stdout'
+p5479
+tp5480
+a(S'putc'
+p5481
+S'./www.cppreference.com/wiki/c/io/putc'
+p5482
+S'c/io'
+p5483
+S'write a character to a stream'
+p5484
+tp5485
+a(S'putchar'
+p5486
+S'./www.cppreference.com/wiki/c/io/putchar'
+p5487
+S'c/io'
+p5488
+S'write a character to stdout'
+p5489
+tp5490
+a(S'puts'
+p5491
+S'./www.cppreference.com/wiki/c/io/puts'
+p5492
+S'c/io'
+p5493
+S'write a string to stdout'
+p5494
+tp5495
+a(S'remove'
+p5496
+S'./www.cppreference.com/wiki/c/io/remove'
+p5497
+S'c/io'
+p5498
+S'erase a file'
+p5499
+tp5500
+a(S'rename'
+p5501
+S'./www.cppreference.com/wiki/c/io/rename'
+p5502
+S'c/io'
+p5503
+S'rename a file'
+p5504
+tp5505
+a(S'rewind'
+p5506
+S'./www.cppreference.com/wiki/c/io/rewind'
+p5507
+S'c/io'
+p5508
+S'move the file position indicator to the beginning of a file'
+p5509
+tp5510
+a(S'scanf'
+p5511
+S'./www.cppreference.com/wiki/c/io/scanf'
+p5512
+S'c/io'
+p5513
+S'read formatted input from stdin'
+p5514
+tp5515
+a(S'setbuf'
+p5516
+S'./www.cppreference.com/wiki/c/io/setbuf'
+p5517
+S'c/io'
+p5518
+S'set the buffer for a specific stream'
+p5519
+tp5520
+a(S'setvbuf'
+p5521
+S'./www.cppreference.com/wiki/c/io/setvbuf'
+p5522
+S'c/io'
+p5523
+S'set the buffer and size for a specific stream'
+p5524
+tp5525
+a(S'snprintf'
+p5526
+S'./www.cppreference.com/wiki/c/io/snprintf'
+p5527
+S'c/io'
+p5528
+S'write formated output to a buffer (with bound checking)'
+p5529
+tp5530
+a(S'sprintf'
+p5531
+S'./www.cppreference.com/wiki/c/io/sprintf'
+p5532
+S'c/io'
+p5533
+S'write formatted output to a buffer'
+p5534
+tp5535
+a(S'sscanf'
+p5536
+S'./www.cppreference.com/wiki/c/io/sscanf'
+p5537
+S'c/io'
+p5538
+S'read formatted input from a buffer'
+p5539
+tp5540
+a(S'tmpfile'
+p5541
+S'./www.cppreference.com/wiki/c/io/tmpfile'
+p5542
+S'c/io'
+p5543
+S'return a pointer to a temporary file'
+p5544
+tp5545
+a(S'tmpnam'
+p5546
+S'./www.cppreference.com/wiki/c/io/tmpnam'
+p5547
+S'c/io'
+p5548
+S'return a unique filename'
+p5549
+tp5550
+a(S'ungetc'
+p5551
+S'./www.cppreference.com/wiki/c/io/ungetc'
+p5552
+S'c/io'
+p5553
+S'puts a character back into a stream'
+p5554
+tp5555
+a(S'vprintf'
+p5556
+S'./www.cppreference.com/wiki/c/io/vprintf_vfprintf_vsprintf'
+p5557
+S'c/io'
+p5558
+S'write formatted output with variable argument lists'
+p5559
+tp5560
+a(S'vfprintf'
+p5561
+S'./www.cppreference.com/wiki/c/io/vprintf_vfprintf_vsprintf'
+p5562
+S'c/io'
+p5563
+S'write formatted output with variable argument lists'
+p5564
+tp5565
+a(S'vsprintf'
+p5566
+S'./www.cppreference.com/wiki/c/io/vprintf_vfprintf_vsprintf'
+p5567
+S'c/io'
+p5568
+S'write formatted output with variable argument lists'
+p5569
+tp5570
+a(S'vscanf'
+p5571
+S'./www.cppreference.com/wiki/c/io/vscanf_vfscanf_vsscanf'
+p5572
+S'c/io'
+p5573
+S'gets formatted input from stdin with variable argument lists'
+p5574
+tp5575
+a(S'vfscanf'
+p5576
+S'./www.cppreference.com/wiki/c/io/vscanf_vfscanf_vsscanf'
+p5577
+S'c/io'
+p5578
+S'gets formatted input from stdin with variable argument lists'
+p5579
+tp5580
+a(S'vsscanf'
+p5581
+S'./www.cppreference.com/wiki/c/io/vscanf_vfscanf_vsscanf'
+p5582
+S'c/io'
+p5583
+S'gets formatted input from stdin with variable argument lists'
+p5584
+tp5585
+a(S'atof'
+p5586
+S'./www.cppreference.com/wiki/c/string/atof'
+p5587
+S'c/string'
+p5588
+S'converts a string to a double'
+p5589
+tp5590
+a(S'atoi'
+p5591
+S'./www.cppreference.com/wiki/c/string/atoi'
+p5592
+S'c/string'
+p5593
+S'converts a string to an integer'
+p5594
+tp5595
+a(S'atol'
+p5596
+S'./www.cppreference.com/wiki/c/string/atol'
+p5597
+S'c/string'
+p5598
+S'converts a string to a long'
+p5599
+tp5600
+a(S'isalnum'
+p5601
+S'./www.cppreference.com/wiki/c/string/isalnum'
+p5602
+S'c/string'
+p5603
+S'true if a character is alphanumeric'
+p5604
+tp5605
+a(S'isalpha'
+p5606
+S'./www.cppreference.com/wiki/c/string/isalpha'
+p5607
+S'c/string'
+p5608
+S'true if a character is alphabetic'
+p5609
+tp5610
+a(S'iscntrl'
+p5611
+S'./www.cppreference.com/wiki/c/string/iscntrl'
+p5612
+S'c/string'
+p5613
+S'true if a character is a control character'
+p5614
+tp5615
+a(S'isdigit'
+p5616
+S'./www.cppreference.com/wiki/c/string/isdigit'
+p5617
+S'c/string'
+p5618
+S'true if a character is a digit'
+p5619
+tp5620
+a(S'isgraph'
+p5621
+S'./www.cppreference.com/wiki/c/string/isgraph'
+p5622
+S'c/string'
+p5623
+S'true if a character is a graphical character'
+p5624
+tp5625
+a(S'islower'
+p5626
+S'./www.cppreference.com/wiki/c/string/islower'
+p5627
+S'c/string'
+p5628
+S'true if a character is lowercase'
+p5629
+tp5630
+a(S'isprint'
+p5631
+S'./www.cppreference.com/wiki/c/string/isprint'
+p5632
+S'c/string'
+p5633
+S'true if a character is a printing character'
+p5634
+tp5635
+a(S'ispunct'
+p5636
+S'./www.cppreference.com/wiki/c/string/ispunct'
+p5637
+S'c/string'
+p5638
+S'true if a character is punctuation'
+p5639
+tp5640
+a(S'isspace'
+p5641
+S'./www.cppreference.com/wiki/c/string/isspace'
+p5642
+S'c/string'
+p5643
+S'true if a character is a space character'
+p5644
+tp5645
+a(S'isupper'
+p5646
+S'./www.cppreference.com/wiki/c/string/isupper'
+p5647
+S'c/string'
+p5648
+S'true if a character is an uppercase character'
+p5649
+tp5650
+a(S'isxdigit'
+p5651
+S'./www.cppreference.com/wiki/c/string/isxdigit'
+p5652
+S'c/string'
+p5653
+S'true if a character is a hexadecimal character'
+p5654
+tp5655
+a(S'memchr'
+p5656
+S'./www.cppreference.com/wiki/c/string/memchr'
+p5657
+S'c/string'
+p5658
+S'searches an array for the first occurance of a character'
+p5659
+tp5660
+a(S'memcmp'
+p5661
+S'./www.cppreference.com/wiki/c/string/memcmp'
+p5662
+S'c/string'
+p5663
+S'compares two buffers'
+p5664
+tp5665
+a(S'memcpy'
+p5666
+S'./www.cppreference.com/wiki/c/string/memcpy'
+p5667
+S'c/string'
+p5668
+S'copies one buffer to another'
+p5669
+tp5670
+a(S'memmove'
+p5671
+S'./www.cppreference.com/wiki/c/string/memmove'
+p5672
+S'c/string'
+p5673
+S'moves one buffer to another'
+p5674
+tp5675
+a(S'memset'
+p5676
+S'./www.cppreference.com/wiki/c/string/memset'
+p5677
+S'c/string'
+p5678
+S'fills a buffer with a character'
+p5679
+tp5680
+a(S'strcat'
+p5681
+S'./www.cppreference.com/wiki/c/string/strcat'
+p5682
+S'c/string'
+p5683
+S'concatenates two strings'
+p5684
+tp5685
+a(S'strchr'
+p5686
+S'./www.cppreference.com/wiki/c/string/strchr'
+p5687
+S'c/string'
+p5688
+S'finds the first occurance of a character in a string'
+p5689
+tp5690
+a(S'strcmp'
+p5691
+S'./www.cppreference.com/wiki/c/string/strcmp'
+p5692
+S'c/string'
+p5693
+S'compares two strings'
+p5694
+tp5695
+a(S'strcoll'
+p5696
+S'./www.cppreference.com/wiki/c/string/strcoll'
+p5697
+S'c/string'
+p5698
+S'compares two strings in accordance to the current locale'
+p5699
+tp5700
+a(S'strcpy'
+p5701
+S'./www.cppreference.com/wiki/c/string/strcpy'
+p5702
+S'c/string'
+p5703
+S'copies one string to another'
+p5704
+tp5705
+a(S'strcspn'
+p5706
+S'./www.cppreference.com/wiki/c/string/strcspn'
+p5707
+S'c/string'
+p5708
+S'searches one string for any characters in another'
+p5709
+tp5710
+a(S'strerror'
+p5711
+S'./www.cppreference.com/wiki/c/string/strerror'
+p5712
+S'c/string'
+p5713
+S'returns a text version of a given error code'
+p5714
+tp5715
+a(S'strlen'
+p5716
+S'./www.cppreference.com/wiki/c/string/strlen'
+p5717
+S'c/string'
+p5718
+S'returns the length of a given string'
+p5719
+tp5720
+a(S'strncat'
+p5721
+S'./www.cppreference.com/wiki/c/string/strncat'
+p5722
+S'c/string'
+p5723
+S'concatenates a certain amount of characters of two strings'
+p5724
+tp5725
+a(S'strncmp'
+p5726
+S'./www.cppreference.com/wiki/c/string/strncmp'
+p5727
+S'c/string'
+p5728
+S'compares a certain amount of characters of two strings'
+p5729
+tp5730
+a(S'strncpy'
+p5731
+S'./www.cppreference.com/wiki/c/string/strncpy'
+p5732
+S'c/string'
+p5733
+S'copies a certain amount of characters from one string to another'
+p5734
+tp5735
+a(S'strpbrk'
+p5736
+S'./www.cppreference.com/wiki/c/string/strpbrk'
+p5737
+S'c/string'
+p5738
+S'finds the first location of any character in one string, in another string'
+p5739
+tp5740
+a(S'strrchr'
+p5741
+S'./www.cppreference.com/wiki/c/string/strrchr'
+p5742
+S'c/string'
+p5743
+S'finds the last occurance of a character in a string'
+p5744
+tp5745
+a(S'strspn'
+p5746
+S'./www.cppreference.com/wiki/c/string/strspn'
+p5747
+S'c/string'
+p5748
+S'returns the length of a substring of characters of a string'
+p5749
+tp5750
+a(S'strstr'
+p5751
+S'./www.cppreference.com/wiki/c/string/strstr'
+p5752
+S'c/string'
+p5753
+S'finds the first occurance of a substring of characters'
+p5754
+tp5755
+a(S'strtod'
+p5756
+S'./www.cppreference.com/wiki/c/string/strtod'
+p5757
+S'c/string'
+p5758
+S'converts a string to a double'
+p5759
+tp5760
+a(S'strtok'
+p5761
+S'./www.cppreference.com/wiki/c/string/strtok'
+p5762
+S'c/string'
+p5763
+S'finds the next token in a string'
+p5764
+tp5765
+a(S'strtol'
+p5766
+S'./www.cppreference.com/wiki/c/string/strtol'
+p5767
+S'c/string'
+p5768
+S'converts a string to a long'
+p5769
+tp5770
+a(S'strtoul'
+p5771
+S'./www.cppreference.com/wiki/c/string/strtoul'
+p5772
+S'c/string'
+p5773
+S'converts a string to an unsigned long'
+p5774
+tp5775
+a(S'strxfrm'
+p5776
+S'./www.cppreference.com/wiki/c/string/strxfrm'
+p5777
+S'c/string'
+p5778
+S'converts a substring so that it can be used by string comparison functions'
+p5779
+tp5780
+a(S'tolower'
+p5781
+S'./www.cppreference.com/wiki/c/string/tolower'
+p5782
+S'c/string'
+p5783
+S'converts a character to lowercase'
+p5784
+tp5785
+a(S'toupper'
+p5786
+S'./www.cppreference.com/wiki/c/string/toupper'
+p5787
+S'c/string'
+p5788
+S'converts a character to uppercase'
+p5789
+tp5790
+a(S'abs'
+p5791
+S'./www.cppreference.com/wiki/c/math/abs'
+p5792
+S'c/math'
+p5793
+S'absolute value'
+p5794
+tp5795
+a(S'acos'
+p5796
+S'./www.cppreference.com/wiki/c/math/acos'
+p5797
+S'c/math'
+p5798
+S'arc cosine'
+p5799
+tp5800
+a(S'asin'
+p5801
+S'./www.cppreference.com/wiki/c/math/asin'
+p5802
+S'c/math'
+p5803
+S'arc sine'
+p5804
+tp5805
+a(S'atan'
+p5806
+S'./www.cppreference.com/wiki/c/math/atan'
+p5807
+S'c/math'
+p5808
+S'arc tangent'
+p5809
+tp5810
+a(S'atan2'
+p5811
+S'./www.cppreference.com/wiki/c/math/atan2'
+p5812
+S'c/math'
+p5813
+S'arc tangent, using signs to determine quadrants'
+p5814
+tp5815
+a(S'ceil'
+p5816
+S'./www.cppreference.com/wiki/c/math/ceil'
+p5817
+S'c/math'
+p5818
+S'the smallest integer not less than a certain value'
+p5819
+tp5820
+a(S'cos'
+p5821
+S'./www.cppreference.com/wiki/c/math/cos'
+p5822
+S'c/math'
+p5823
+S'cosine'
+p5824
+tp5825
+a(S'cosh'
+p5826
+S'./www.cppreference.com/wiki/c/math/cosh'
+p5827
+S'c/math'
+p5828
+S'hyperbolic cosine'
+p5829
+tp5830
+a(S'div'
+p5831
+S'./www.cppreference.com/wiki/c/math/div'
+p5832
+S'c/math'
+p5833
+S'returns the quotient and remainder of a division'
+p5834
+tp5835
+a(S'exp'
+p5836
+S'./www.cppreference.com/wiki/c/math/exp'
+p5837
+S'c/math'
+p5838
+S'returns e raised to a given power'
+p5839
+tp5840
+a(S'fabs'
+p5841
+S'./www.cppreference.com/wiki/c/math/fabs'
+p5842
+S'c/math'
+p5843
+S'absolute value for floating-point numbers'
+p5844
+tp5845
+a(S'floor'
+p5846
+S'./www.cppreference.com/wiki/c/math/floor'
+p5847
+S'c/math'
+p5848
+S'returns the largest integer not greater than a given value'
+p5849
+tp5850
+a(S'fmod'
+p5851
+S'./www.cppreference.com/wiki/c/math/fmod'
+p5852
+S'c/math'
+p5853
+S'returns the remainder of a division'
+p5854
+tp5855
+a(S'frexp'
+p5856
+S'./www.cppreference.com/wiki/c/math/frexp'
+p5857
+S'c/math'
+p5858
+S'decomposes a number into scientific notation'
+p5859
+tp5860
+a(S'labs'
+p5861
+S'./www.cppreference.com/wiki/c/math/labs'
+p5862
+S'c/math'
+p5863
+S'absolute value for long integers'
+p5864
+tp5865
+a(S'ldexp'
+p5866
+S'./www.cppreference.com/wiki/c/math/ldexp'
+p5867
+S'c/math'
+p5868
+S'computes a number in scientific notation'
+p5869
+tp5870
+a(S'ldiv'
+p5871
+S'./www.cppreference.com/wiki/c/math/ldiv'
+p5872
+S'c/math'
+p5873
+S'returns the quotient and remainder of a division, in long integer form'
+p5874
+tp5875
+a(S'log'
+p5876
+S'./www.cppreference.com/wiki/c/math/log'
+p5877
+S'c/math'
+p5878
+S'natural logarithm (to base e)'
+p5879
+tp5880
+a(S'log10'
+p5881
+S'./www.cppreference.com/wiki/c/math/log10'
+p5882
+S'c/math'
+p5883
+S'common logarithm (to base 10)'
+p5884
+tp5885
+a(S'modf'
+p5886
+S'./www.cppreference.com/wiki/c/math/modf'
+p5887
+S'c/math'
+p5888
+S'decomposes a number into integer and fractional parts'
+p5889
+tp5890
+a(S'pow'
+p5891
+S'./www.cppreference.com/wiki/c/math/pow'
+p5892
+S'c/math'
+p5893
+S'returns a given number raised to another number'
+p5894
+tp5895
+a(S'sin'
+p5896
+S'./www.cppreference.com/wiki/c/math/sin'
+p5897
+S'c/math'
+p5898
+S'sine'
+p5899
+tp5900
+a(S'sinh'
+p5901
+S'./www.cppreference.com/wiki/c/math/sinh'
+p5902
+S'c/math'
+p5903
+S'hyperbolic sine'
+p5904
+tp5905
+a(S'sqrt'
+p5906
+S'./www.cppreference.com/wiki/c/math/sqrt'
+p5907
+S'c/math'
+p5908
+S'square root'
+p5909
+tp5910
+a(S'tan'
+p5911
+S'./www.cppreference.com/wiki/c/math/tan'
+p5912
+S'c/math'
+p5913
+S'tangent'
+p5914
+tp5915
+a(S'tanh'
+p5916
+S'./www.cppreference.com/wiki/c/math/tanh'
+p5917
+S'c/math'
+p5918
+S'hyperbolic tangent'
+p5919
+tp5920
+a(S'asctime'
+p5921
+S'./www.cppreference.com/wiki/c/date/asctime'
+p5922
+S'c/date'
+p5923
+S'a textual version of the time'
+p5924
+tp5925
+a(S'clock'
+p5926
+S'./www.cppreference.com/wiki/c/date/clock'
+p5927
+S'c/date'
+p5928
+S'returns the amount of time that the program has been running'
+p5929
+tp5930
+a(S'ctime'
+p5931
+S'./www.cppreference.com/wiki/c/date/ctime'
+p5932
+S'c/date'
+p5933
+S'returns a specifically formatted version of the time'
+p5934
+tp5935
+a(S'difftime'
+p5936
+S'./www.cppreference.com/wiki/c/date/difftime'
+p5937
+S'c/date'
+p5938
+S'the difference between two times'
+p5939
+tp5940
+a(S'gmtime'
+p5941
+S'./www.cppreference.com/wiki/c/date/gmtime'
+p5942
+S'c/date'
+p5943
+S'returns a pointer to the current Greenwich Mean Time'
+p5944
+tp5945
+a(S'localtime'
+p5946
+S'./www.cppreference.com/wiki/c/date/localtime'
+p5947
+S'c/date'
+p5948
+S'returns a pointer to the current time'
+p5949
+tp5950
+a(S'mktime'
+p5951
+S'./www.cppreference.com/wiki/c/date/mktime'
+p5952
+S'c/date'
+p5953
+S'returns the calendar version of a given time'
+p5954
+tp5955
+a(S'setlocale'
+p5956
+S'./www.cppreference.com/wiki/c/date/setlocale'
+p5957
+S'c/date'
+p5958
+S'sets the current locale'
+p5959
+tp5960
+a(S'strftime'
+p5961
+S'./www.cppreference.com/wiki/c/date/strftime'
+p5962
+S'c/date'
+p5963
+S'returns individual elements of the date and time'
+p5964
+tp5965
+a(S'time'
+p5966
+S'./www.cppreference.com/wiki/c/date/time'
+p5967
+S'c/date'
+p5968
+S'returns the current calendar time of the system'
+p5969
+tp5970
+a(S'calloc'
+p5971
+S'./www.cppreference.com/wiki/c/mem/calloc'
+p5972
+S'c/mem'
+p5973
+S'allocates and clears a two-dimensional chunk of memory'
+p5974
+tp5975
+a(S'free'
+p5976
+S'./www.cppreference.com/wiki/c/mem/free'
+p5977
+S'c/mem'
+p5978
+S'returns previously allocated memory to the operating system'
+p5979
+tp5980
+a(S'malloc'
+p5981
+S'./www.cppreference.com/wiki/c/mem/malloc'
+p5982
+S'c/mem'
+p5983
+S'allocates memory'
+p5984
+tp5985
+a(S'realloc'
+p5986
+S'./www.cppreference.com/wiki/c/mem/realloc'
+p5987
+S'c/mem'
+p5988
+S'changes the size of previously allocated memory'
+p5989
+tp5990
+a(S'abort'
+p5991
+S'./www.cppreference.com/wiki/c/other/abort'
+p5992
+S'c/other'
+p5993
+S'stops the program'
+p5994
+tp5995
+a(S'assert'
+p5996
+S'./www.cppreference.com/wiki/c/other/assert'
+p5997
+S'c/other'
+p5998
+S'stops the program if an expression isn&#039;t true'
+p5999
+tp6000
+a(S'atexit'
+p6001
+S'./www.cppreference.com/wiki/c/other/atexit'
+p6002
+S'c/other'
+p6003
+S'sets a function to be called when the program exits'
+p6004
+tp6005
+a(S'bsearch'
+p6006
+S'./www.cppreference.com/wiki/c/other/bsearch'
+p6007
+S'c/other'
+p6008
+S'perform a binary search'
+p6009
+tp6010
+a(S'exit'
+p6011
+S'./www.cppreference.com/wiki/c/other/exit'
+p6012
+S'c/other'
+p6013
+S'stop the program'
+p6014
+tp6015
+a(S'getenv'
+p6016
+S'./www.cppreference.com/wiki/c/other/getenv'
+p6017
+S'c/other'
+p6018
+S'get environnment information about a variable'
+p6019
+tp6020
+a(S'longjmp'
+p6021
+S'./www.cppreference.com/wiki/c/other/longjmp'
+p6022
+S'c/other'
+p6023
+S'start execution at a certain point in the program'
+p6024
+tp6025
+a(S'putenv'
+p6026
+S'./www.cppreference.com/wiki/c/other/putenv'
+p6027
+S'c/other'
+p6028
+S'add/modify the environmental settings'
+p6029
+tp6030
+a(S'qsort'
+p6031
+S'./www.cppreference.com/wiki/c/other/qsort'
+p6032
+S'c/other'
+p6033
+S'perform a quicksort'
+p6034
+tp6035
+a(S'raise'
+p6036
+S'./www.cppreference.com/wiki/c/other/raise'
+p6037
+S'c/other'
+p6038
+S'send a signal to the program'
+p6039
+tp6040
+a(S'rand'
+p6041
+S'./www.cppreference.com/wiki/c/other/rand'
+p6042
+S'c/other'
+p6043
+S'returns a pseudorandom number'
+p6044
+tp6045
+a(S'setjmp'
+p6046
+S'./www.cppreference.com/wiki/c/other/setjmp'
+p6047
+S'c/other'
+p6048
+S'set execution to start at a certain point'
+p6049
+tp6050
+a(S'signal'
+p6051
+S'./www.cppreference.com/wiki/c/other/signal'
+p6052
+S'c/other'
+p6053
+S'register a function as a signal handler'
+p6054
+tp6055
+a(S'srand'
+p6056
+S'./www.cppreference.com/wiki/c/other/srand'
+p6057
+S'c/other'
+p6058
+S'initialize the random number generator'
+p6059
+tp6060
+a(S'system'
+p6061
+S'./www.cppreference.com/wiki/c/other/system'
+p6062
+S'c/other'
+p6063
+S'have the default command interpreter execute a command'
+p6064
+tp6065
+a(S'va_arg'
+p6066
+S'./www.cppreference.com/wiki/c/other/va_arg'
+p6067
+S'c/other'
+p6068
+S'use variable length parameter lists'
+p6069
+tp6070
+a(S'constructors'
+p6071
+S'./www.cppreference.com/wiki/string/string_constructors'
+p6072
+S'string'
+p6073
+S'create strings from arrays of characters and other strings'
+p6074
+tp6075
+a(S'operators'
+p6076
+S'./www.cppreference.com/wiki/string/string_operators'
+p6077
+S'string'
+p6078
+S'concatenate strings, assign strings, use strings for I/O, compare strings'
+p6079
+tp6080
+a(S'append'
+p6081
+S'./www.cppreference.com/wiki/string/append'
+p6082
+S'string'
+p6083
+S'append characters and strings onto a string'
+p6084
+tp6085
+a(S'assign'
+p6086
+S'./www.cppreference.com/wiki/string/assign'
+p6087
+S'string'
+p6088
+S'give a string values from strings of characters and other C++ strings'
+p6089
+tp6090
+a(S'at'
+p6091
+S'./www.cppreference.com/wiki/string/at'
+p6092
+S'string'
+p6093
+S'returns the character at a specific location'
+p6094
+tp6095
+a(S'begin'
+p6096
+S'./www.cppreference.com/wiki/string/begin'
+p6097
+S'string'
+p6098
+S'returns an iterator to the beginning of the string'
+p6099
+tp6100
+a(S'c_str'
+p6101
+S'./www.cppreference.com/wiki/string/c_str'
+p6102
+S'string'
+p6103
+S'returns a non-modifiable standard C character array version of the string'
+p6104
+tp6105
+a(S'capacity'
+p6106
+S'./www.cppreference.com/wiki/string/capacity'
+p6107
+S'string'
+p6108
+S'returns the number of characters that the string can hold'
+p6109
+tp6110
+a(S'clear'
+p6111
+S'./www.cppreference.com/wiki/string/clear'
+p6112
+S'string'
+p6113
+S'removes all characters from the string'
+p6114
+tp6115
+a(S'compare'
+p6116
+S'./www.cppreference.com/wiki/string/compare'
+p6117
+S'string'
+p6118
+S'compares two strings'
+p6119
+tp6120
+a(S'copy'
+p6121
+S'./www.cppreference.com/wiki/string/copy'
+p6122
+S'string'
+p6123
+S'copies characters from a string into an array'
+p6124
+tp6125
+a(S'data'
+p6126
+S'./www.cppreference.com/wiki/string/data'
+p6127
+S'string'
+p6128
+S'returns a pointer to the first character of a string'
+p6129
+tp6130
+a(S'empty'
+p6131
+S'./www.cppreference.com/wiki/string/empty'
+p6132
+S'string'
+p6133
+S'true if the string has no characters'
+p6134
+tp6135
+a(S'end'
+p6136
+S'./www.cppreference.com/wiki/string/end'
+p6137
+S'string'
+p6138
+S'returns an iterator just past the last character of a string'
+p6139
+tp6140
+a(S'erase'
+p6141
+S'./www.cppreference.com/wiki/string/erase'
+p6142
+S'string'
+p6143
+S'removes characters from a string'
+p6144
+tp6145
+a(S'find'
+p6146
+S'./www.cppreference.com/wiki/string/find'
+p6147
+S'string'
+p6148
+S'find characters in the string'
+p6149
+tp6150
+a(S'find_first_not_of'
+p6151
+S'./www.cppreference.com/wiki/string/find_first_not_of'
+p6152
+S'string'
+p6153
+S'find first absence of characters'
+p6154
+tp6155
+a(S'find_first_of'
+p6156
+S'./www.cppreference.com/wiki/string/find_first_of'
+p6157
+S'string'
+p6158
+S'find first occurrence of characters'
+p6159
+tp6160
+a(S'find_last_not_of'
+p6161
+S'./www.cppreference.com/wiki/string/find_last_not_of'
+p6162
+S'string'
+p6163
+S'find last absence of characters'
+p6164
+tp6165
+a(S'find_last_of'
+p6166
+S'./www.cppreference.com/wiki/string/find_last_of'
+p6167
+S'string'
+p6168
+S'find last occurrence of characters'
+p6169
+tp6170
+a(S'getline'
+p6171
+S'./www.cppreference.com/wiki/string/getline'
+p6172
+S'string'
+p6173
+S'read data from an I/O stream into a string'
+p6174
+tp6175
+a(S'insert'
+p6176
+S'./www.cppreference.com/wiki/string/insert'
+p6177
+S'string'
+p6178
+S'insert characters into a string'
+p6179
+tp6180
+a(S'length'
+p6181
+S'./www.cppreference.com/wiki/string/length'
+p6182
+S'string'
+p6183
+S'returns the length of the string'
+p6184
+tp6185
+a(S'max_size'
+p6186
+S'./www.cppreference.com/wiki/string/max_size'
+p6187
+S'string'
+p6188
+S'returns the maximum number of characters that the string can hold'
+p6189
+tp6190
+a(S'push_back'
+p6191
+S'./www.cppreference.com/wiki/string/push_back'
+p6192
+S'string'
+p6193
+S'add a character to the end of the string'
+p6194
+tp6195
+a(S'rbegin'
+p6196
+S'./www.cppreference.com/wiki/string/rbegin'
+p6197
+S'string'
+p6198
+S'returns a reverse_iterator to the end of the string'
+p6199
+tp6200
+a(S'rend'
+p6201
+S'./www.cppreference.com/wiki/string/rend'
+p6202
+S'string'
+p6203
+S'returns a reverse_iterator to the beginning of the string'
+p6204
+tp6205
+a(S'replace'
+p6206
+S'./www.cppreference.com/wiki/string/replace'
+p6207
+S'string'
+p6208
+S'replace characters in the string'
+p6209
+tp6210
+a(S'reserve'
+p6211
+S'./www.cppreference.com/wiki/string/reserve'
+p6212
+S'string'
+p6213
+S'sets the minimum capacity of the string'
+p6214
+tp6215
+a(S'resize'
+p6216
+S'./www.cppreference.com/wiki/string/resize'
+p6217
+S'string'
+p6218
+S'change the size of the string'
+p6219
+tp6220
+a(S'rfind'
+p6221
+S'./www.cppreference.com/wiki/string/rfind'
+p6222
+S'string'
+p6223
+S'find the last occurrence of a substring'
+p6224
+tp6225
+a(S'size'
+p6226
+S'./www.cppreference.com/wiki/string/size'
+p6227
+S'string'
+p6228
+S'returns the number of items in the string'
+p6229
+tp6230
+a(S'substr'
+p6231
+S'./www.cppreference.com/wiki/string/substr'
+p6232
+S'string'
+p6233
+S'returns a certain substring'
+p6234
+tp6235
+a(S'swap'
+p6236
+S'./www.cppreference.com/wiki/string/swap'
+p6237
+S'string'
+p6238
+S'swap the contents of this string with another'
+p6239
+tp6240
+a(S'i/o constructors'
+p6241
+S'./www.cppreference.com/wiki/io/constructors'
+p6242
+S'io'
+p6243
+S'constructors'
+p6244
+tp6245
+a(S'bad'
+p6246
+S'./www.cppreference.com/wiki/io/bad'
+p6247
+S'io'
+p6248
+S'true if an error occurred'
+p6249
+tp6250
+a(S'clear'
+p6251
+S'./www.cppreference.com/wiki/io/clear'
+p6252
+S'io'
+p6253
+S'clear and set status flags'
+p6254
+tp6255
+a(S'close'
+p6256
+S'./www.cppreference.com/wiki/io/close'
+p6257
+S'io'
+p6258
+S'close a stream'
+p6259
+tp6260
+a(S'eof'
+p6261
+S'./www.cppreference.com/wiki/io/eof'
+p6262
+S'io'
+p6263
+S'true if at the end-of-file'
+p6264
+tp6265
+a(S'exceptions'
+p6266
+S'./www.cppreference.com/wiki/io/exceptions'
+p6267
+S'io'
+p6268
+S'set the stream to throw exceptions on errors'
+p6269
+tp6270
+a(S'fail'
+p6271
+S'./www.cppreference.com/wiki/io/fail'
+p6272
+S'io'
+p6273
+S'true if an error occurred'
+p6274
+tp6275
+a(S'fill'
+p6276
+S'./www.cppreference.com/wiki/io/fill'
+p6277
+S'io'
+p6278
+S'manipulate the default fill character'
+p6279
+tp6280
+a(S'flags'
+p6281
+S'./www.cppreference.com/wiki/io/flags'
+p6282
+S'io'
+p6283
+S'access or manipulate io_stream_format_flags'
+p6284
+tp6285
+a(S'flush'
+p6286
+S'./www.cppreference.com/wiki/io/flush'
+p6287
+S'io'
+p6288
+S'empty the buffer'
+p6289
+tp6290
+a(S'gcount'
+p6291
+S'./www.cppreference.com/wiki/io/gcount'
+p6292
+S'io'
+p6293
+S'number of characters read during last input'
+p6294
+tp6295
+a(S'get'
+p6296
+S'./www.cppreference.com/wiki/io/get'
+p6297
+S'io'
+p6298
+S'read characters'
+p6299
+tp6300
+a(S'getline'
+p6301
+S'./www.cppreference.com/wiki/io/getline'
+p6302
+S'io'
+p6303
+S'read a line of characters'
+p6304
+tp6305
+a(S'good'
+p6306
+S'./www.cppreference.com/wiki/io/good'
+p6307
+S'io'
+p6308
+S'true if no errors have occurred'
+p6309
+tp6310
+a(S'ignore'
+p6311
+S'./www.cppreference.com/wiki/io/ignore'
+p6312
+S'io'
+p6313
+S'read and discard characters'
+p6314
+tp6315
+a(S'open'
+p6316
+S'./www.cppreference.com/wiki/io/open'
+p6317
+S'io'
+p6318
+S'open a new stream'
+p6319
+tp6320
+a(S'peek'
+p6321
+S'./www.cppreference.com/wiki/io/peek'
+p6322
+S'io'
+p6323
+S'check the next input character'
+p6324
+tp6325
+a(S'precision'
+p6326
+S'./www.cppreference.com/wiki/io/precision'
+p6327
+S'io'
+p6328
+S'manipulate the precision of a stream'
+p6329
+tp6330
+a(S'put'
+p6331
+S'./www.cppreference.com/wiki/io/put'
+p6332
+S'io'
+p6333
+S'write characters'
+p6334
+tp6335
+a(S'putback'
+p6336
+S'./www.cppreference.com/wiki/io/putback'
+p6337
+S'io'
+p6338
+S'return characters to a stream'
+p6339
+tp6340
+a(S'rdstate'
+p6341
+S'./www.cppreference.com/wiki/io/rdstate'
+p6342
+S'io'
+p6343
+S'returns the state flags of the stream'
+p6344
+tp6345
+a(S'read'
+p6346
+S'./www.cppreference.com/wiki/io/read'
+p6347
+S'io'
+p6348
+S'read data into a buffer'
+p6349
+tp6350
+a(S'seekg'
+p6351
+S'./www.cppreference.com/wiki/io/seekg'
+p6352
+S'io'
+p6353
+S'perform random access on an input stream'
+p6354
+tp6355
+a(S'seekp'
+p6356
+S'./www.cppreference.com/wiki/io/seekp'
+p6357
+S'io'
+p6358
+S'perform random access on output streams'
+p6359
+tp6360
+a(S'setf'
+p6361
+S'./www.cppreference.com/wiki/io/setf'
+p6362
+S'io'
+p6363
+S'set format flags'
+p6364
+tp6365
+a(S'sync_with_stdio'
+p6366
+S'./www.cppreference.com/wiki/io/sync_with_stdio'
+p6367
+S'io'
+p6368
+S'synchronize with standard I/O'
+p6369
+tp6370
+a(S'tellg'
+p6371
+S'./www.cppreference.com/wiki/io/tellg'
+p6372
+S'io'
+p6373
+S'read input stream pointers'
+p6374
+tp6375
+a(S'tellp'
+p6376
+S'./www.cppreference.com/wiki/io/tellp'
+p6377
+S'io'
+p6378
+S'read output stream pointers'
+p6379
+tp6380
+a(S'unsetf'
+p6381
+S'./www.cppreference.com/wiki/io/unsetf'
+p6382
+S'io'
+p6383
+S'clear io_stream_format_flags'
+p6384
+tp6385
+a(S'width'
+p6386
+S'./www.cppreference.com/wiki/io/width'
+p6387
+S'io'
+p6388
+S'access and manipulate the minimum field width'
+p6389
+tp6390
+a(S'write'
+p6391
+S'./www.cppreference.com/wiki/io/write'
+p6392
+S'io'
+p6393
+S'write characters'
+p6394
+tp6395
+a(S'constructors'
+p6396
+S'./www.cppreference.com/wiki/io/sstream/constructors'
+p6397
+S'io/sstream'
+p6398
+S'create new string streams'
+p6399
+tp6400
+a(S'operators'
+p6401
+S'./www.cppreference.com/wiki/io/sstream/operators'
+p6402
+S'io/sstream'
+p6403
+S'read from and write to string streams'
+p6404
+tp6405
+a(S'rdbuf'
+p6406
+S'./www.cppreference.com/wiki/io/sstream/rdbuf'
+p6407
+S'io/sstream'
+p6408
+S'get the buffer for a string stream'
+p6409
+tp6410
+a(S'str'
+p6411
+S'./www.cppreference.com/wiki/io/sstream/str'
+p6412
+S'io/sstream'
+p6413
+S'get or set the stream&#039;s string'
+p6414
+tp6415
+a(S'accumulate'
+p6416
+S'./www.cppreference.com/wiki/stl/algorithm/accumulate'
+p6417
+S'stl/algorithm'
+p6418
+S'sum up a range of elements'
+p6419
+tp6420
+a(S'adjacent_difference'
+p6421
+S'./www.cppreference.com/wiki/stl/algorithm/adjacent_difference'
+p6422
+S'stl/algorithm'
+p6423
+S'compute the differences between adjacent elements in a range'
+p6424
+tp6425
+a(S'adjacent_find'
+p6426
+S'./www.cppreference.com/wiki/stl/algorithm/adjacent_find'
+p6427
+S'stl/algorithm'
+p6428
+S'finds two identical (or some other relationship) items adjacent to each other'
+p6429
+tp6430
+a(S'binary_search'
+p6431
+S'./www.cppreference.com/wiki/stl/algorithm/binary_search'
+p6432
+S'stl/algorithm'
+p6433
+S'determine if an element exists in a certain range'
+p6434
+tp6435
+a(S'copy'
+p6436
+S'./www.cppreference.com/wiki/stl/algorithm/copy'
+p6437
+S'stl/algorithm'
+p6438
+S'copy some range of elements to a new location'
+p6439
+tp6440
+a(S'copy_backward'
+p6441
+S'./www.cppreference.com/wiki/stl/algorithm/copy_backward'
+p6442
+S'stl/algorithm'
+p6443
+S'copy a range of elements in backwards order'
+p6444
+tp6445
+a(S'count'
+p6446
+S'./www.cppreference.com/wiki/stl/algorithm/count'
+p6447
+S'stl/algorithm'
+p6448
+S'return the number of elements matching a given value'
+p6449
+tp6450
+a(S'count_if'
+p6451
+S'./www.cppreference.com/wiki/stl/algorithm/count_if'
+p6452
+S'stl/algorithm'
+p6453
+S'return the number of elements for which a predicate is true'
+p6454
+tp6455
+a(S'equal'
+p6456
+S'./www.cppreference.com/wiki/stl/algorithm/equal'
+p6457
+S'stl/algorithm'
+p6458
+S'determine if two sets of elements are the same'
+p6459
+tp6460
+a(S'equal_range'
+p6461
+S'./www.cppreference.com/wiki/stl/algorithm/equal_range'
+p6462
+S'stl/algorithm'
+p6463
+S'search for a range of elements that are all equal to a certain element'
+p6464
+tp6465
+a(S'fill'
+p6466
+S'./www.cppreference.com/wiki/stl/algorithm/fill'
+p6467
+S'stl/algorithm'
+p6468
+S'assign a range of elements a certain value'
+p6469
+tp6470
+a(S'fill_n'
+p6471
+S'./www.cppreference.com/wiki/stl/algorithm/fill_n'
+p6472
+S'stl/algorithm'
+p6473
+S'assign a value to some number of elements'
+p6474
+tp6475
+a(S'find'
+p6476
+S'./www.cppreference.com/wiki/stl/algorithm/find'
+p6477
+S'stl/algorithm'
+p6478
+S'find a value in a given range'
+p6479
+tp6480
+a(S'find_end'
+p6481
+S'./www.cppreference.com/wiki/stl/algorithm/find_end'
+p6482
+S'stl/algorithm'
+p6483
+S'find the last sequence of elements in a certain range'
+p6484
+tp6485
+a(S'find_first_of'
+p6486
+S'./www.cppreference.com/wiki/stl/algorithm/find_first_of'
+p6487
+S'stl/algorithm'
+p6488
+S'search for any one of a set of elements'
+p6489
+tp6490
+a(S'find_if'
+p6491
+S'./www.cppreference.com/wiki/stl/algorithm/find_if'
+p6492
+S'stl/algorithm'
+p6493
+S'find the first element for which a certain predicate is true'
+p6494
+tp6495
+a(S'for_each'
+p6496
+S'./www.cppreference.com/wiki/stl/algorithm/for_each'
+p6497
+S'stl/algorithm'
+p6498
+S'apply a function to a range of elements'
+p6499
+tp6500
+a(S'generate'
+p6501
+S'./www.cppreference.com/wiki/stl/algorithm/generate'
+p6502
+S'stl/algorithm'
+p6503
+S'saves the result of a function in a range'
+p6504
+tp6505
+a(S'generate_n'
+p6506
+S'./www.cppreference.com/wiki/stl/algorithm/generate_n'
+p6507
+S'stl/algorithm'
+p6508
+S'saves the result of N applications of a function'
+p6509
+tp6510
+a(S'includes'
+p6511
+S'./www.cppreference.com/wiki/stl/algorithm/includes'
+p6512
+S'stl/algorithm'
+p6513
+S'returns true if one set is a subset of another'
+p6514
+tp6515
+a(S'inner_product'
+p6516
+S'./www.cppreference.com/wiki/stl/algorithm/inner_product'
+p6517
+S'stl/algorithm'
+p6518
+S'compute the inner product of two ranges of elements'
+p6519
+tp6520
+a(S'inplace_merge'
+p6521
+S'./www.cppreference.com/wiki/stl/algorithm/inplace_merge'
+p6522
+S'stl/algorithm'
+p6523
+S'merge two ordered ranges in-place'
+p6524
+tp6525
+a(S'is_heap'
+p6526
+S'./www.cppreference.com/wiki/stl/algorithm/is_heap'
+p6527
+S'stl/algorithm'
+p6528
+S'returns true if a given range is a heap'
+p6529
+tp6530
+a(S'iter_swap'
+p6531
+S'./www.cppreference.com/wiki/stl/algorithm/iter_swap'
+p6532
+S'stl/algorithm'
+p6533
+S'swaps the elements pointed to by two iterators'
+p6534
+tp6535
+a(S'lexicographical_compare'
+p6536
+S'./www.cppreference.com/wiki/stl/algorithm/lexicographical_compare'
+p6537
+S'stl/algorithm'
+p6538
+S'returns true if one range is lexicographically less than another'
+p6539
+tp6540
+a(S'lower_bound'
+p6541
+S'./www.cppreference.com/wiki/stl/algorithm/lower_bound'
+p6542
+S'stl/algorithm'
+p6543
+S'search for the first place that a value can be inserted while preserving order'
+p6544
+tp6545
+a(S'make_heap'
+p6546
+S'./www.cppreference.com/wiki/stl/algorithm/make_heap'
+p6547
+S'stl/algorithm'
+p6548
+S'creates a heap out of a range of elements'
+p6549
+tp6550
+a(S'max'
+p6551
+S'./www.cppreference.com/wiki/stl/algorithm/max'
+p6552
+S'stl/algorithm'
+p6553
+S'returns the larger of two elements'
+p6554
+tp6555
+a(S'max_element'
+p6556
+S'./www.cppreference.com/wiki/stl/algorithm/max_element'
+p6557
+S'stl/algorithm'
+p6558
+S'returns the largest element in a range'
+p6559
+tp6560
+a(S'merge'
+p6561
+S'./www.cppreference.com/wiki/stl/algorithm/merge'
+p6562
+S'stl/algorithm'
+p6563
+S'merge two sorted ranges'
+p6564
+tp6565
+a(S'min'
+p6566
+S'./www.cppreference.com/wiki/stl/algorithm/min'
+p6567
+S'stl/algorithm'
+p6568
+S'returns the smaller of two elements'
+p6569
+tp6570
+a(S'min_element'
+p6571
+S'./www.cppreference.com/wiki/stl/algorithm/min_element'
+p6572
+S'stl/algorithm'
+p6573
+S'returns the smallest element in a range'
+p6574
+tp6575
+a(S'mismatch'
+p6576
+S'./www.cppreference.com/wiki/stl/algorithm/mismatch'
+p6577
+S'stl/algorithm'
+p6578
+S'finds the first position where two ranges differ'
+p6579
+tp6580
+a(S'next_permutation'
+p6581
+S'./www.cppreference.com/wiki/stl/algorithm/next_permutation'
+p6582
+S'stl/algorithm'
+p6583
+S'generates the next greater lexicographic permutation of a range of elements'
+p6584
+tp6585
+a(S'nth_element'
+p6586
+S'./www.cppreference.com/wiki/stl/algorithm/nth_element'
+p6587
+S'stl/algorithm'
+p6588
+S'put one element in its sorted location and make sure that no elements to its left are greater than any elements to its right'
+p6589
+tp6590
+a(S'partial_sort'
+p6591
+S'./www.cppreference.com/wiki/stl/algorithm/partial_sort'
+p6592
+S'stl/algorithm'
+p6593
+S'sort the first N elements of a range'
+p6594
+tp6595
+a(S'partial_sort_copy'
+p6596
+S'./www.cppreference.com/wiki/stl/algorithm/partial_sort_copy'
+p6597
+S'stl/algorithm'
+p6598
+S'copy and partially sort a range of elements'
+p6599
+tp6600
+a(S'partial_sum'
+p6601
+S'./www.cppreference.com/wiki/stl/algorithm/partial_sum'
+p6602
+S'stl/algorithm'
+p6603
+S'compute the partial sum of a range of elements'
+p6604
+tp6605
+a(S'partition'
+p6606
+S'./www.cppreference.com/wiki/stl/algorithm/partition'
+p6607
+S'stl/algorithm'
+p6608
+S'divide a range of elements into two groups'
+p6609
+tp6610
+a(S'pop_heap'
+p6611
+S'./www.cppreference.com/wiki/stl/algorithm/pop_heap'
+p6612
+S'stl/algorithm'
+p6613
+S'remove the largest element from a heap'
+p6614
+tp6615
+a(S'prev_permutation'
+p6616
+S'./www.cppreference.com/wiki/stl/algorithm/prev_permutation'
+p6617
+S'stl/algorithm'
+p6618
+S'generates the next smaller lexicographic permutation of a range of elements'
+p6619
+tp6620
+a(S'push_heap'
+p6621
+S'./www.cppreference.com/wiki/stl/algorithm/push_heap'
+p6622
+S'stl/algorithm'
+p6623
+S'add an element to a heap'
+p6624
+tp6625
+a(S'random_shuffle'
+p6626
+S'./www.cppreference.com/wiki/stl/algorithm/random_shuffle'
+p6627
+S'stl/algorithm'
+p6628
+S'randomly re-order elements in some range'
+p6629
+tp6630
+a(S'remove'
+p6631
+S'./www.cppreference.com/wiki/stl/algorithm/remove'
+p6632
+S'stl/algorithm'
+p6633
+S'remove elements equal to certain value'
+p6634
+tp6635
+a(S'remove_copy'
+p6636
+S'./www.cppreference.com/wiki/stl/algorithm/remove_copy'
+p6637
+S'stl/algorithm'
+p6638
+S'copy a range of elements omitting those that match a certian value'
+p6639
+tp6640
+a(S'remove_copy_if'
+p6641
+S'./www.cppreference.com/wiki/stl/algorithm/remove_copy_if'
+p6642
+S'stl/algorithm'
+p6643
+S'create a copy of a range of elements, omitting any for which a predicate is true'
+p6644
+tp6645
+a(S'remove_if'
+p6646
+S'./www.cppreference.com/wiki/stl/algorithm/remove_if'
+p6647
+S'stl/algorithm'
+p6648
+S'remove all elements for which a predicate is true'
+p6649
+tp6650
+a(S'replace'
+p6651
+S'./www.cppreference.com/wiki/stl/algorithm/replace'
+p6652
+S'stl/algorithm'
+p6653
+S'replace every occurrence of some value in a range with another value'
+p6654
+tp6655
+a(S'replace_copy'
+p6656
+S'./www.cppreference.com/wiki/stl/algorithm/replace_copy'
+p6657
+S'stl/algorithm'
+p6658
+S'copy a range, replacing certain elements with new ones'
+p6659
+tp6660
+a(S'replace_copy_if'
+p6661
+S'./www.cppreference.com/wiki/stl/algorithm/replace_copy_if'
+p6662
+S'stl/algorithm'
+p6663
+S'copy a range of elements, replacing those for which a predicate is true'
+p6664
+tp6665
+a(S'replace_if'
+p6666
+S'./www.cppreference.com/wiki/stl/algorithm/replace_if'
+p6667
+S'stl/algorithm'
+p6668
+S'change the values of elements for which a predicate is true'
+p6669
+tp6670
+a(S'reverse'
+p6671
+S'./www.cppreference.com/wiki/stl/algorithm/reverse'
+p6672
+S'stl/algorithm'
+p6673
+S'reverse elements in some range'
+p6674
+tp6675
+a(S'reverse_copy'
+p6676
+S'./www.cppreference.com/wiki/stl/algorithm/reverse_copy'
+p6677
+S'stl/algorithm'
+p6678
+S'create a copy of a range that is reversed'
+p6679
+tp6680
+a(S'rotate'
+p6681
+S'./www.cppreference.com/wiki/stl/algorithm/rotate'
+p6682
+S'stl/algorithm'
+p6683
+S'move the elements in some range to the left by some amount'
+p6684
+tp6685
+a(S'rotate_copy'
+p6686
+S'./www.cppreference.com/wiki/stl/algorithm/rotate_copy'
+p6687
+S'stl/algorithm'
+p6688
+S'copy and rotate a range of elements'
+p6689
+tp6690
+a(S'search'
+p6691
+S'./www.cppreference.com/wiki/stl/algorithm/search'
+p6692
+S'stl/algorithm'
+p6693
+S'search for a range of elements'
+p6694
+tp6695
+a(S'search_n'
+p6696
+S'./www.cppreference.com/wiki/stl/algorithm/search_n'
+p6697
+S'stl/algorithm'
+p6698
+S'search for N consecutive copies of an element in some range'
+p6699
+tp6700
+a(S'set_difference'
+p6701
+S'./www.cppreference.com/wiki/stl/algorithm/set_difference'
+p6702
+S'stl/algorithm'
+p6703
+S'computes the difference between two sets'
+p6704
+tp6705
+a(S'set_intersection'
+p6706
+S'./www.cppreference.com/wiki/stl/algorithm/set_intersection'
+p6707
+S'stl/algorithm'
+p6708
+S'computes the intersection of two sets'
+p6709
+tp6710
+a(S'set_symmetric_difference'
+p6711
+S'./www.cppreference.com/wiki/stl/algorithm/set_symmetric_difference'
+p6712
+S'stl/algorithm'
+p6713
+S'computes the symmetric difference between two sets'
+p6714
+tp6715
+a(S'set_union'
+p6716
+S'./www.cppreference.com/wiki/stl/algorithm/set_union'
+p6717
+S'stl/algorithm'
+p6718
+S'computes the union of two sets'
+p6719
+tp6720
+a(S'sort'
+p6721
+S'./www.cppreference.com/wiki/stl/algorithm/sort'
+p6722
+S'stl/algorithm'
+p6723
+S'sort a range into ascending order'
+p6724
+tp6725
+a(S'sort_heap'
+p6726
+S'./www.cppreference.com/wiki/stl/algorithm/sort_heap'
+p6727
+S'stl/algorithm'
+p6728
+S'turns a heap into a sorted range of elements'
+p6729
+tp6730
+a(S'stable_partition'
+p6731
+S'./www.cppreference.com/wiki/stl/algorithm/stable_partition'
+p6732
+S'stl/algorithm'
+p6733
+S'divide elements into two groups while preserving their relative order'
+p6734
+tp6735
+a(S'stable_sort'
+p6736
+S'./www.cppreference.com/wiki/stl/algorithm/stable_sort'
+p6737
+S'stl/algorithm'
+p6738
+S'sort a range of elements while preserving order between equal elements'
+p6739
+tp6740
+a(S'swap'
+p6741
+S'./www.cppreference.com/wiki/stl/algorithm/swap'
+p6742
+S'stl/algorithm'
+p6743
+S'swap the values of two objects'
+p6744
+tp6745
+a(S'swap_ranges'
+p6746
+S'./www.cppreference.com/wiki/stl/algorithm/swap_ranges'
+p6747
+S'stl/algorithm'
+p6748
+S'swaps two ranges of elements'
+p6749
+tp6750
+a(S'transform'
+p6751
+S'./www.cppreference.com/wiki/stl/algorithm/transform'
+p6752
+S'stl/algorithm'
+p6753
+S'applies a function to a range of elements'
+p6754
+tp6755
+a(S'unique'
+p6756
+S'./www.cppreference.com/wiki/stl/algorithm/unique'
+p6757
+S'stl/algorithm'
+p6758
+S'remove consecutive duplicate elements in a range'
+p6759
+tp6760
+a(S'unique_copy'
+p6761
+S'./www.cppreference.com/wiki/stl/algorithm/unique_copy'
+p6762
+S'stl/algorithm'
+p6763
+S'creates a copy of some range of elements that contains no consecutive duplicates'
+p6764
+tp6765
+a(S'upper_bound'
+p6766
+S'./www.cppreference.com/wiki/stl/algorithm/upper_bound'
+p6767
+S'stl/algorithm'
+p6768
+S'searches for the last place that a value can be inserted while preserving order (first place that is greater than the value)'
+p6769
+tp6770
+a(S'constructors'
+p6771
+S'./www.cppreference.com/wiki/stl/vector/vector_constructors'
+p6772
+S'stl/vector'
+p6773
+S'create vectors and initialize them with some data'
+p6774
+tp6775
+a(S'operators'
+p6776
+S'./www.cppreference.com/wiki/stl/vector/vector_operators'
+p6777
+S'stl/vector'
+p6778
+S'compare, assign, and access elements of a vector'
+p6779
+tp6780
+a(S'assign'
+p6781
+S'./www.cppreference.com/wiki/stl/vector/assign'
+p6782
+S'stl/vector'
+p6783
+S'assign elements to a vector'
+p6784
+tp6785
+a(S'at'
+p6786
+S'./www.cppreference.com/wiki/stl/vector/at'
+p6787
+S'stl/vector'
+p6788
+S'returns an element at a specific location'
+p6789
+tp6790
+a(S'back'
+p6791
+S'./www.cppreference.com/wiki/stl/vector/back'
+p6792
+S'stl/vector'
+p6793
+S'returns a reference to last element of a vector'
+p6794
+tp6795
+a(S'begin'
+p6796
+S'./www.cppreference.com/wiki/stl/vector/begin'
+p6797
+S'stl/vector'
+p6798
+S'returns an iterator to the beginning of the vector'
+p6799
+tp6800
+a(S'capacity'
+p6801
+S'./www.cppreference.com/wiki/stl/vector/capacity'
+p6802
+S'stl/vector'
+p6803
+S'returns the number of elements that the vector can hold'
+p6804
+tp6805
+a(S'clear'
+p6806
+S'./www.cppreference.com/wiki/stl/vector/clear'
+p6807
+S'stl/vector'
+p6808
+S'removes all elements from the vector'
+p6809
+tp6810
+a(S'empty'
+p6811
+S'./www.cppreference.com/wiki/stl/vector/empty'
+p6812
+S'stl/vector'
+p6813
+S'true if the vector has no elements'
+p6814
+tp6815
+a(S'end'
+p6816
+S'./www.cppreference.com/wiki/stl/vector/end'
+p6817
+S'stl/vector'
+p6818
+S'returns an iterator just past the last element of a vector'
+p6819
+tp6820
+a(S'erase'
+p6821
+S'./www.cppreference.com/wiki/stl/vector/erase'
+p6822
+S'stl/vector'
+p6823
+S'removes elements from a vector'
+p6824
+tp6825
+a(S'front'
+p6826
+S'./www.cppreference.com/wiki/stl/vector/front'
+p6827
+S'stl/vector'
+p6828
+S'returns a reference to the first element of a vector'
+p6829
+tp6830
+a(S'insert'
+p6831
+S'./www.cppreference.com/wiki/stl/vector/insert'
+p6832
+S'stl/vector'
+p6833
+S'inserts elements into the vector'
+p6834
+tp6835
+a(S'max_size'
+p6836
+S'./www.cppreference.com/wiki/stl/vector/max_size'
+p6837
+S'stl/vector'
+p6838
+S'returns the maximum number of elements that the vector can hold'
+p6839
+tp6840
+a(S'pop_back'
+p6841
+S'./www.cppreference.com/wiki/stl/vector/pop_back'
+p6842
+S'stl/vector'
+p6843
+S'removes the last element of a vector'
+p6844
+tp6845
+a(S'push_back'
+p6846
+S'./www.cppreference.com/wiki/stl/vector/push_back'
+p6847
+S'stl/vector'
+p6848
+S'add an element to the end of the vector'
+p6849
+tp6850
+a(S'rbegin'
+p6851
+S'./www.cppreference.com/wiki/stl/vector/rbegin'
+p6852
+S'stl/vector'
+p6853
+S'returns a reverse_iterator to the end of the vector'
+p6854
+tp6855
+a(S'rend'
+p6856
+S'./www.cppreference.com/wiki/stl/vector/rend'
+p6857
+S'stl/vector'
+p6858
+S'returns a reverse_iterator to the beginning of the vector'
+p6859
+tp6860
+a(S'reserve'
+p6861
+S'./www.cppreference.com/wiki/stl/vector/reserve'
+p6862
+S'stl/vector'
+p6863
+S'sets the minimum capacity of the vector'
+p6864
+tp6865
+a(S'resize'
+p6866
+S'./www.cppreference.com/wiki/stl/vector/resize'
+p6867
+S'stl/vector'
+p6868
+S'change the size of the vector'
+p6869
+tp6870
+a(S'size'
+p6871
+S'./www.cppreference.com/wiki/stl/vector/size'
+p6872
+S'stl/vector'
+p6873
+S'returns the number of items in the vector'
+p6874
+tp6875
+a(S'swap'
+p6876
+S'./www.cppreference.com/wiki/stl/vector/swap'
+p6877
+S'stl/vector'
+p6878
+S'swap the contents of this vector with another'
+p6879
+tp6880
+a(S'constructors'
+p6881
+S'./www.cppreference.com/wiki/stl/deque/deque_constructors'
+p6882
+S'stl/deque'
+p6883
+S'create deques and initialize them with some data'
+p6884
+tp6885
+a(S'operators'
+p6886
+S'./www.cppreference.com/wiki/stl/deque/deque_operators'
+p6887
+S'stl/deque'
+p6888
+S'compare, assign, and access elements of a deque'
+p6889
+tp6890
+a(S'assign'
+p6891
+S'./www.cppreference.com/wiki/stl/deque/assign'
+p6892
+S'stl/deque'
+p6893
+S'assign elements to a deque'
+p6894
+tp6895
+a(S'at'
+p6896
+S'./www.cppreference.com/wiki/stl/deque/at'
+p6897
+S'stl/deque'
+p6898
+S'returns an element at a specific location'
+p6899
+tp6900
+a(S'back'
+p6901
+S'./www.cppreference.com/wiki/stl/deque/back'
+p6902
+S'stl/deque'
+p6903
+S'returns a reference to last element of a deque'
+p6904
+tp6905
+a(S'begin'
+p6906
+S'./www.cppreference.com/wiki/stl/deque/begin'
+p6907
+S'stl/deque'
+p6908
+S'returns an iterator to the beginning of the deque'
+p6909
+tp6910
+a(S'clear'
+p6911
+S'./www.cppreference.com/wiki/stl/deque/clear'
+p6912
+S'stl/deque'
+p6913
+S'removes all elements from the deque'
+p6914
+tp6915
+a(S'empty'
+p6916
+S'./www.cppreference.com/wiki/stl/deque/empty'
+p6917
+S'stl/deque'
+p6918
+S'true if the deque has no elements'
+p6919
+tp6920
+a(S'end'
+p6921
+S'./www.cppreference.com/wiki/stl/deque/end'
+p6922
+S'stl/deque'
+p6923
+S'returns an iterator just past the last element of a deque'
+p6924
+tp6925
+a(S'erase'
+p6926
+S'./www.cppreference.com/wiki/stl/deque/erase'
+p6927
+S'stl/deque'
+p6928
+S'removes elements from a deque'
+p6929
+tp6930
+a(S'front'
+p6931
+S'./www.cppreference.com/wiki/stl/deque/front'
+p6932
+S'stl/deque'
+p6933
+S'returns a reference to the first element of a deque'
+p6934
+tp6935
+a(S'insert'
+p6936
+S'./www.cppreference.com/wiki/stl/deque/insert'
+p6937
+S'stl/deque'
+p6938
+S'inserts elements into the deque'
+p6939
+tp6940
+a(S'max_size'
+p6941
+S'./www.cppreference.com/wiki/stl/deque/max_size'
+p6942
+S'stl/deque'
+p6943
+S'returns the maximum number of elements that the deque can hold'
+p6944
+tp6945
+a(S'pop_back'
+p6946
+S'./www.cppreference.com/wiki/stl/deque/pop_back'
+p6947
+S'stl/deque'
+p6948
+S'removes the last element of a deque'
+p6949
+tp6950
+a(S'pop_front'
+p6951
+S'./www.cppreference.com/wiki/stl/deque/pop_front'
+p6952
+S'stl/deque'
+p6953
+S'removes the first element of the deque'
+p6954
+tp6955
+a(S'push_back'
+p6956
+S'./www.cppreference.com/wiki/stl/deque/push_back'
+p6957
+S'stl/deque'
+p6958
+S'add an element to the end of the deque'
+p6959
+tp6960
+a(S'push_front'
+p6961
+S'./www.cppreference.com/wiki/stl/deque/push_front'
+p6962
+S'stl/deque'
+p6963
+S'add an element to the front of the deque'
+p6964
+tp6965
+a(S'rbegin'
+p6966
+S'./www.cppreference.com/wiki/stl/deque/rbegin'
+p6967
+S'stl/deque'
+p6968
+S'returns a reverse_iterator to the end of the deque'
+p6969
+tp6970
+a(S'rend'
+p6971
+S'./www.cppreference.com/wiki/stl/deque/rend'
+p6972
+S'stl/deque'
+p6973
+S'returns a reverse_iterator to the beginning of the deque'
+p6974
+tp6975
+a(S'resize'
+p6976
+S'./www.cppreference.com/wiki/stl/deque/resize'
+p6977
+S'stl/deque'
+p6978
+S'change the size of the deque'
+p6979
+tp6980
+a(S'size'
+p6981
+S'./www.cppreference.com/wiki/stl/deque/size'
+p6982
+S'stl/deque'
+p6983
+S'returns the number of items in the deque'
+p6984
+tp6985
+a(S'swap'
+p6986
+S'./www.cppreference.com/wiki/stl/deque/swap'
+p6987
+S'stl/deque'
+p6988
+S'swap the contents of this deque with another'
+p6989
+tp6990
+a(S'constructors'
+p6991
+S'./www.cppreference.com/wiki/stl/list/list_constructors'
+p6992
+S'stl/list'
+p6993
+S'create lists and initialize them with some data'
+p6994
+tp6995
+a(S'operators'
+p6996
+S'./www.cppreference.com/wiki/stl/list/list_operators'
+p6997
+S'stl/list'
+p6998
+S'assign and compare lists'
+p6999
+tp7000
+a(S'assign'
+p7001
+S'./www.cppreference.com/wiki/stl/list/assign'
+p7002
+S'stl/list'
+p7003
+S'assign elements to a list'
+p7004
+tp7005
+a(S'back'
+p7006
+S'./www.cppreference.com/wiki/stl/list/back'
+p7007
+S'stl/list'
+p7008
+S'returns a reference to last element of a list'
+p7009
+tp7010
+a(S'begin'
+p7011
+S'./www.cppreference.com/wiki/stl/list/begin'
+p7012
+S'stl/list'
+p7013
+S'returns an iterator to the beginning of the list'
+p7014
+tp7015
+a(S'clear'
+p7016
+S'./www.cppreference.com/wiki/stl/list/clear'
+p7017
+S'stl/list'
+p7018
+S'removes all elements from the list'
+p7019
+tp7020
+a(S'empty'
+p7021
+S'./www.cppreference.com/wiki/stl/list/empty'
+p7022
+S'stl/list'
+p7023
+S'true if the list has no elements'
+p7024
+tp7025
+a(S'end'
+p7026
+S'./www.cppreference.com/wiki/stl/list/end'
+p7027
+S'stl/list'
+p7028
+S'returns an iterator just past the last element of a list'
+p7029
+tp7030
+a(S'erase'
+p7031
+S'./www.cppreference.com/wiki/stl/list/erase'
+p7032
+S'stl/list'
+p7033
+S'removes elements from a list'
+p7034
+tp7035
+a(S'front'
+p7036
+S'./www.cppreference.com/wiki/stl/list/front'
+p7037
+S'stl/list'
+p7038
+S'returns a reference to the first element of a list'
+p7039
+tp7040
+a(S'insert'
+p7041
+S'./www.cppreference.com/wiki/stl/list/insert'
+p7042
+S'stl/list'
+p7043
+S'inserts elements into the list'
+p7044
+tp7045
+a(S'max_size'
+p7046
+S'./www.cppreference.com/wiki/stl/list/max_size'
+p7047
+S'stl/list'
+p7048
+S'returns the maximum number of elements that the list can hold'
+p7049
+tp7050
+a(S'merge'
+p7051
+S'./www.cppreference.com/wiki/stl/list/merge'
+p7052
+S'stl/list'
+p7053
+S'merge two lists'
+p7054
+tp7055
+a(S'pop_back'
+p7056
+S'./www.cppreference.com/wiki/stl/list/pop_back'
+p7057
+S'stl/list'
+p7058
+S'removes the last element of a list'
+p7059
+tp7060
+a(S'pop_front'
+p7061
+S'./www.cppreference.com/wiki/stl/list/pop_front'
+p7062
+S'stl/list'
+p7063
+S'removes the first element of the list'
+p7064
+tp7065
+a(S'push_back'
+p7066
+S'./www.cppreference.com/wiki/stl/list/push_back'
+p7067
+S'stl/list'
+p7068
+S'add an element to the end of the list'
+p7069
+tp7070
+a(S'push_front'
+p7071
+S'./www.cppreference.com/wiki/stl/list/push_front'
+p7072
+S'stl/list'
+p7073
+S'add an element to the front of the list'
+p7074
+tp7075
+a(S'rbegin'
+p7076
+S'./www.cppreference.com/wiki/stl/list/rbegin'
+p7077
+S'stl/list'
+p7078
+S'returns a reverse_iterator to the end of the list'
+p7079
+tp7080
+a(S'remove'
+p7081
+S'./www.cppreference.com/wiki/stl/list/remove'
+p7082
+S'stl/list'
+p7083
+S'removes elements from a list'
+p7084
+tp7085
+a(S'remove_if'
+p7086
+S'./www.cppreference.com/wiki/stl/list/remove_if'
+p7087
+S'stl/list'
+p7088
+S'removes elements conditionally'
+p7089
+tp7090
+a(S'rend'
+p7091
+S'./www.cppreference.com/wiki/stl/list/rend'
+p7092
+S'stl/list'
+p7093
+S'returns a reverse_iterator to the beginning of the list'
+p7094
+tp7095
+a(S'resize'
+p7096
+S'./www.cppreference.com/wiki/stl/list/resize'
+p7097
+S'stl/list'
+p7098
+S'change the size of the list'
+p7099
+tp7100
+a(S'reverse'
+p7101
+S'./www.cppreference.com/wiki/stl/list/reverse'
+p7102
+S'stl/list'
+p7103
+S'reverse the list'
+p7104
+tp7105
+a(S'size'
+p7106
+S'./www.cppreference.com/wiki/stl/list/size'
+p7107
+S'stl/list'
+p7108
+S'returns the number of items in the list'
+p7109
+tp7110
+a(S'sort'
+p7111
+S'./www.cppreference.com/wiki/stl/list/sort'
+p7112
+S'stl/list'
+p7113
+S'sorts a list into ascending order'
+p7114
+tp7115
+a(S'splice'
+p7116
+S'./www.cppreference.com/wiki/stl/list/splice'
+p7117
+S'stl/list'
+p7118
+S'merge two lists in'
+p7119
+tp7120
+a(S'swap'
+p7121
+S'./www.cppreference.com/wiki/stl/list/swap'
+p7122
+S'stl/list'
+p7123
+S'swap the contents of this list with another'
+p7124
+tp7125
+a(S'unique'
+p7126
+S'./www.cppreference.com/wiki/stl/list/unique'
+p7127
+S'stl/list'
+p7128
+S'removes consecutive duplicate elements'
+p7129
+tp7130
+a(S'constructors'
+p7131
+S'./www.cppreference.com/wiki/stl/priority_queue/pqueue_constructors'
+p7132
+S'stl/priority_queue'
+p7133
+S'construct a new priority queue'
+p7134
+tp7135
+a(S'empty'
+p7136
+S'./www.cppreference.com/wiki/stl/priority_queue/empty'
+p7137
+S'stl/priority_queue'
+p7138
+S'true if the priority queue has no elements'
+p7139
+tp7140
+a(S'pop'
+p7141
+S'./www.cppreference.com/wiki/stl/priority_queue/pop'
+p7142
+S'stl/priority_queue'
+p7143
+S'removes the top element of a priority queue'
+p7144
+tp7145
+a(S'push'
+p7146
+S'./www.cppreference.com/wiki/stl/priority_queue/push'
+p7147
+S'stl/priority_queue'
+p7148
+S'adds an element to the end of the priority queue'
+p7149
+tp7150
+a(S'size'
+p7151
+S'./www.cppreference.com/wiki/stl/priority_queue/size'
+p7152
+S'stl/priority_queue'
+p7153
+S'returns the number of items in the priority queue'
+p7154
+tp7155
+a(S'top'
+p7156
+S'./www.cppreference.com/wiki/stl/priority_queue/top'
+p7157
+S'stl/priority_queue'
+p7158
+S'returns the top element of the priority queue'
+p7159
+tp7160
+a(S'constructors'
+p7161
+S'./www.cppreference.com/wiki/stl/queue/queue_constructors'
+p7162
+S'stl/queue'
+p7163
+S'construct a new queue'
+p7164
+tp7165
+a(S'back'
+p7166
+S'./www.cppreference.com/wiki/stl/queue/back'
+p7167
+S'stl/queue'
+p7168
+S'returns a reference to last element of a queue'
+p7169
+tp7170
+a(S'empty'
+p7171
+S'./www.cppreference.com/wiki/stl/queue/empty'
+p7172
+S'stl/queue'
+p7173
+S'true if the queue has no elements'
+p7174
+tp7175
+a(S'front'
+p7176
+S'./www.cppreference.com/wiki/stl/queue/front'
+p7177
+S'stl/queue'
+p7178
+S'returns a reference to the first element of a queue'
+p7179
+tp7180
+a(S'pop'
+p7181
+S'./www.cppreference.com/wiki/stl/queue/pop'
+p7182
+S'stl/queue'
+p7183
+S'removes the first element of a queue'
+p7184
+tp7185
+a(S'push'
+p7186
+S'./www.cppreference.com/wiki/stl/queue/push'
+p7187
+S'stl/queue'
+p7188
+S'adds an element to the end of the queue'
+p7189
+tp7190
+a(S'size'
+p7191
+S'./www.cppreference.com/wiki/stl/queue/size'
+p7192
+S'stl/queue'
+p7193
+S'returns the number of items in the queue'
+p7194
+tp7195
+a(S'constructors'
+p7196
+S'./www.cppreference.com/wiki/stl/stack/stack_constructors'
+p7197
+S'stl/stack'
+p7198
+S'construct a new stack'
+p7199
+tp7200
+a(S'empty'
+p7201
+S'./www.cppreference.com/wiki/stl/stack/empty'
+p7202
+S'stl/stack'
+p7203
+S'true if the stack has no elements'
+p7204
+tp7205
+a(S'pop'
+p7206
+S'./www.cppreference.com/wiki/stl/stack/pop'
+p7207
+S'stl/stack'
+p7208
+S'removes the top element of a stack'
+p7209
+tp7210
+a(S'push'
+p7211
+S'./www.cppreference.com/wiki/stl/stack/push'
+p7212
+S'stl/stack'
+p7213
+S'adds an element to the top of the stack'
+p7214
+tp7215
+a(S'size'
+p7216
+S'./www.cppreference.com/wiki/stl/stack/size'
+p7217
+S'stl/stack'
+p7218
+S'returns the number of items in the stack'
+p7219
+tp7220
+a(S'top'
+p7221
+S'./www.cppreference.com/wiki/stl/stack/top'
+p7222
+S'stl/stack'
+p7223
+S'returns the top element of the stack'
+p7224
+tp7225
+a(S'constructors'
+p7226
+S'./www.cppreference.com/wiki/stl/set/set_constructors'
+p7227
+S'stl/set'
+p7228
+S'default methods to allocate, copy, and deallocate sets'
+p7229
+tp7230
+a(S'operators'
+p7231
+S'./www.cppreference.com/wiki/stl/set/set_operators'
+p7232
+S'stl/set'
+p7233
+S'assign and compare sets'
+p7234
+tp7235
+a(S'begin'
+p7236
+S'./www.cppreference.com/wiki/stl/set/begin'
+p7237
+S'stl/set'
+p7238
+S'returns an iterator to the beginning of the set'
+p7239
+tp7240
+a(S'clear'
+p7241
+S'./www.cppreference.com/wiki/stl/set/clear'
+p7242
+S'stl/set'
+p7243
+S'removes all elements from the set'
+p7244
+tp7245
+a(S'count'
+p7246
+S'./www.cppreference.com/wiki/stl/set/count'
+p7247
+S'stl/set'
+p7248
+S'returns the number of elements matching a certain key'
+p7249
+tp7250
+a(S'empty'
+p7251
+S'./www.cppreference.com/wiki/stl/set/empty'
+p7252
+S'stl/set'
+p7253
+S'true if the set has no elements'
+p7254
+tp7255
+a(S'end'
+p7256
+S'./www.cppreference.com/wiki/stl/set/end'
+p7257
+S'stl/set'
+p7258
+S'returns an iterator just past the last element of a set'
+p7259
+tp7260
+a(S'equal_range'
+p7261
+S'./www.cppreference.com/wiki/stl/set/equal_range'
+p7262
+S'stl/set'
+p7263
+S'returns iterators to the first and just past the last elements matching a specific key'
+p7264
+tp7265
+a(S'erase'
+p7266
+S'./www.cppreference.com/wiki/stl/set/erase'
+p7267
+S'stl/set'
+p7268
+S'removes elements from a set'
+p7269
+tp7270
+a(S'find'
+p7271
+S'./www.cppreference.com/wiki/stl/set/find'
+p7272
+S'stl/set'
+p7273
+S'returns an iterator to specific elements'
+p7274
+tp7275
+a(S'insert'
+p7276
+S'./www.cppreference.com/wiki/stl/set/insert'
+p7277
+S'stl/set'
+p7278
+S'insert items into a set'
+p7279
+tp7280
+a(S'key_comp'
+p7281
+S'./www.cppreference.com/wiki/stl/set/key_comp'
+p7282
+S'stl/set'
+p7283
+S'returns the function that compares keys'
+p7284
+tp7285
+a(S'lower_bound'
+p7286
+S'./www.cppreference.com/wiki/stl/set/lower_bound'
+p7287
+S'stl/set'
+p7288
+S'returns an iterator to the first element greater than or equal to a certain value'
+p7289
+tp7290
+a(S'max_size'
+p7291
+S'./www.cppreference.com/wiki/stl/set/max_size'
+p7292
+S'stl/set'
+p7293
+S'returns the maximum number of elements that the set can hold'
+p7294
+tp7295
+a(S'rbegin'
+p7296
+S'./www.cppreference.com/wiki/stl/set/rbegin'
+p7297
+S'stl/set'
+p7298
+S'returns a reverse_iterator to the end of the set'
+p7299
+tp7300
+a(S'rend'
+p7301
+S'./www.cppreference.com/wiki/stl/set/rend'
+p7302
+S'stl/set'
+p7303
+S'returns a reverse_iterator to the beginning of the set'
+p7304
+tp7305
+a(S'size'
+p7306
+S'./www.cppreference.com/wiki/stl/set/size'
+p7307
+S'stl/set'
+p7308
+S'returns the number of items in the set'
+p7309
+tp7310
+a(S'swap'
+p7311
+S'./www.cppreference.com/wiki/stl/set/swap'
+p7312
+S'stl/set'
+p7313
+S'swap the contents of this set with another'
+p7314
+tp7315
+a(S'upper_bound'
+p7316
+S'./www.cppreference.com/wiki/stl/set/upper_bound'
+p7317
+S'stl/set'
+p7318
+S'returns an iterator to the first element greater than a certain value'
+p7319
+tp7320
+a(S'value_comp'
+p7321
+S'./www.cppreference.com/wiki/stl/set/value_comp'
+p7322
+S'stl/set'
+p7323
+S'returns the function that compares values'
+p7324
+tp7325
+a(S'multiset constructors'
+p7326
+S'./www.cppreference.com/wiki/stl/multiset/multiset_constructors'
+p7327
+S'stl/multiset'
+p7328
+S'default methods to allocate, copy, and deallocate multisets'
+p7329
+tp7330
+a(S'multiset operators'
+p7331
+S'./www.cppreference.com/wiki/stl/multiset/multiset_operators'
+p7332
+S'stl/multiset'
+p7333
+S'assign and compare multisets'
+p7334
+tp7335
+a(S'begin'
+p7336
+S'./www.cppreference.com/wiki/stl/multiset/begin'
+p7337
+S'stl/multiset'
+p7338
+S'returns an iterator to the beginning of the multiset'
+p7339
+tp7340
+a(S'clear'
+p7341
+S'./www.cppreference.com/wiki/stl/multiset/clear'
+p7342
+S'stl/multiset'
+p7343
+S'removes all elements from the multiset'
+p7344
+tp7345
+a(S'count'
+p7346
+S'./www.cppreference.com/wiki/stl/multiset/count'
+p7347
+S'stl/multiset'
+p7348
+S'returns the number of elements matching a certain key'
+p7349
+tp7350
+a(S'empty'
+p7351
+S'./www.cppreference.com/wiki/stl/multiset/empty'
+p7352
+S'stl/multiset'
+p7353
+S'true if the multiset has no elements'
+p7354
+tp7355
+a(S'end'
+p7356
+S'./www.cppreference.com/wiki/stl/multiset/end'
+p7357
+S'stl/multiset'
+p7358
+S'returns an iterator just past the last element of a multiset'
+p7359
+tp7360
+a(S'equal_range'
+p7361
+S'./www.cppreference.com/wiki/stl/multiset/equal_range'
+p7362
+S'stl/multiset'
+p7363
+S'returns iterators to the first and just past the last elements matching a specific key'
+p7364
+tp7365
+a(S'erase'
+p7366
+S'./www.cppreference.com/wiki/stl/multiset/erase'
+p7367
+S'stl/multiset'
+p7368
+S'removes elements from a multiset'
+p7369
+tp7370
+a(S'find'
+p7371
+S'./www.cppreference.com/wiki/stl/multiset/find'
+p7372
+S'stl/multiset'
+p7373
+S'returns an iterator to specific elements'
+p7374
+tp7375
+a(S'insert'
+p7376
+S'./www.cppreference.com/wiki/stl/multiset/insert'
+p7377
+S'stl/multiset'
+p7378
+S'inserts items into a multiset'
+p7379
+tp7380
+a(S'key_comp'
+p7381
+S'./www.cppreference.com/wiki/stl/multiset/key_comp'
+p7382
+S'stl/multiset'
+p7383
+S'returns the function that compares keys'
+p7384
+tp7385
+a(S'lower_bound'
+p7386
+S'./www.cppreference.com/wiki/stl/multiset/lower_bound'
+p7387
+S'stl/multiset'
+p7388
+S'returns an iterator to the first element greater than or equal to a certain value'
+p7389
+tp7390
+a(S'max_size'
+p7391
+S'./www.cppreference.com/wiki/stl/multiset/max_size'
+p7392
+S'stl/multiset'
+p7393
+S'returns the maximum number of elements that the multiset can hold'
+p7394
+tp7395
+a(S'rbegin'
+p7396
+S'./www.cppreference.com/wiki/stl/multiset/rbegin'
+p7397
+S'stl/multiset'
+p7398
+S'returns a reverse_iterator to the end of the multiset'
+p7399
+tp7400
+a(S'rend'
+p7401
+S'./www.cppreference.com/wiki/stl/multiset/rend'
+p7402
+S'stl/multiset'
+p7403
+S'returns a reverse_iterator to the beginning of the multiset'
+p7404
+tp7405
+a(S'size'
+p7406
+S'./www.cppreference.com/wiki/stl/multiset/size'
+p7407
+S'stl/multiset'
+p7408
+S'returns the number of items in the multiset'
+p7409
+tp7410
+a(S'swap'
+p7411
+S'./www.cppreference.com/wiki/stl/multiset/swap'
+p7412
+S'stl/multiset'
+p7413
+S'swap the contents of this multiset with another'
+p7414
+tp7415
+a(S'upper_bound'
+p7416
+S'./www.cppreference.com/wiki/stl/multiset/upper_bound'
+p7417
+S'stl/multiset'
+p7418
+S'returns an iterator to the first element greater than a certain value'
+p7419
+tp7420
+a(S'value_comp'
+p7421
+S'./www.cppreference.com/wiki/stl/multiset/value_comp'
+p7422
+S'stl/multiset'
+p7423
+S'returns the function that compares values'
+p7424
+tp7425
+a(S'map constructors & destructors'
+p7426
+S'./www.cppreference.com/wiki/stl/map/map_constructors'
+p7427
+S'stl/map'
+p7428
+S'default methods to allocate, copy, and deallocate maps'
+p7429
+tp7430
+a(S'map operators'
+p7431
+S'./www.cppreference.com/wiki/stl/map/map_operators'
+p7432
+S'stl/map'
+p7433
+S'assign, compare, and access elements of a map'
+p7434
+tp7435
+a(S'map typedefs'
+p7436
+S'./www.cppreference.com/wiki/stl/map/map_typedefs'
+p7437
+S'stl/map'
+p7438
+S'typedefs of a map'
+p7439
+tp7440
+a(S'begin'
+p7441
+S'./www.cppreference.com/wiki/stl/map/begin'
+p7442
+S'stl/map'
+p7443
+S'returns an iterator to the beginning of the map'
+p7444
+tp7445
+a(S'clear'
+p7446
+S'./www.cppreference.com/wiki/stl/map/clear'
+p7447
+S'stl/map'
+p7448
+S'removes all elements from the map'
+p7449
+tp7450
+a(S'count'
+p7451
+S'./www.cppreference.com/wiki/stl/map/count'
+p7452
+S'stl/map'
+p7453
+S'returns the number of elements matching a certain key'
+p7454
+tp7455
+a(S'empty'
+p7456
+S'./www.cppreference.com/wiki/stl/map/empty'
+p7457
+S'stl/map'
+p7458
+S'true if the map has no elements'
+p7459
+tp7460
+a(S'end'
+p7461
+S'./www.cppreference.com/wiki/stl/map/end'
+p7462
+S'stl/map'
+p7463
+S'returns an iterator just past the last element of a map'
+p7464
+tp7465
+a(S'equal_range'
+p7466
+S'./www.cppreference.com/wiki/stl/map/equal_range'
+p7467
+S'stl/map'
+p7468
+S'returns iterators to the first and just past the last elements matching a specific key'
+p7469
+tp7470
+a(S'erase'
+p7471
+S'./www.cppreference.com/wiki/stl/map/erase'
+p7472
+S'stl/map'
+p7473
+S'removes elements from a map'
+p7474
+tp7475
+a(S'find'
+p7476
+S'./www.cppreference.com/wiki/stl/map/find'
+p7477
+S'stl/map'
+p7478
+S'returns an iterator to specific elements'
+p7479
+tp7480
+a(S'insert'
+p7481
+S'./www.cppreference.com/wiki/stl/map/insert'
+p7482
+S'stl/map'
+p7483
+S'insert items into a map'
+p7484
+tp7485
+a(S'key_comp'
+p7486
+S'./www.cppreference.com/wiki/stl/map/key_comp'
+p7487
+S'stl/map'
+p7488
+S'returns the function that compares keys'
+p7489
+tp7490
+a(S'lower_bound'
+p7491
+S'./www.cppreference.com/wiki/stl/map/lower_bound'
+p7492
+S'stl/map'
+p7493
+S'returns an iterator to the first element greater than or equal to a certain value'
+p7494
+tp7495
+a(S'max_size'
+p7496
+S'./www.cppreference.com/wiki/stl/map/max_size'
+p7497
+S'stl/map'
+p7498
+S'returns the maximum number of elements that the map can hold'
+p7499
+tp7500
+a(S'rbegin'
+p7501
+S'./www.cppreference.com/wiki/stl/map/rbegin'
+p7502
+S'stl/map'
+p7503
+S'returns a reverse_iterator to the end of the map'
+p7504
+tp7505
+a(S'rend'
+p7506
+S'./www.cppreference.com/wiki/stl/map/rend'
+p7507
+S'stl/map'
+p7508
+S'returns a reverse_iterator to the beginning of the map'
+p7509
+tp7510
+a(S'size'
+p7511
+S'./www.cppreference.com/wiki/stl/map/size'
+p7512
+S'stl/map'
+p7513
+S'returns the number of items in the map'
+p7514
+tp7515
+a(S'swap'
+p7516
+S'./www.cppreference.com/wiki/stl/map/swap'
+p7517
+S'stl/map'
+p7518
+S'swap the contents of this map with another'
+p7519
+tp7520
+a(S'upper_bound'
+p7521
+S'./www.cppreference.com/wiki/stl/map/upper_bound'
+p7522
+S'stl/map'
+p7523
+S'returns an iterator to the first element greater than a certain value'
+p7524
+tp7525
+a(S'value_comp'
+p7526
+S'./www.cppreference.com/wiki/stl/map/value_comp'
+p7527
+S'stl/map'
+p7528
+S'returns the function that compares values'
+p7529
+tp7530
+a(S'constructors'
+p7531
+S'./www.cppreference.com/wiki/stl/multimap/multimap_constructors'
+p7532
+S'stl/multimap'
+p7533
+S'default methods to allocate, copy, and deallocate multimaps'
+p7534
+tp7535
+a(S'operators'
+p7536
+S'./www.cppreference.com/wiki/stl/multimap/multimap_operators'
+p7537
+S'stl/multimap'
+p7538
+S'assign and compare multimaps'
+p7539
+tp7540
+a(S'begin'
+p7541
+S'./www.cppreference.com/wiki/stl/multimap/begin'
+p7542
+S'stl/multimap'
+p7543
+S'returns an iterator to the beginning of the multimap'
+p7544
+tp7545
+a(S'clear'
+p7546
+S'./www.cppreference.com/wiki/stl/multimap/clear'
+p7547
+S'stl/multimap'
+p7548
+S'removes all elements from the multimap'
+p7549
+tp7550
+a(S'count'
+p7551
+S'./www.cppreference.com/wiki/stl/multimap/count'
+p7552
+S'stl/multimap'
+p7553
+S'returns the number of elements matching a certain key'
+p7554
+tp7555
+a(S'empty'
+p7556
+S'./www.cppreference.com/wiki/stl/multimap/empty'
+p7557
+S'stl/multimap'
+p7558
+S'true if the multimap has no elements'
+p7559
+tp7560
+a(S'end'
+p7561
+S'./www.cppreference.com/wiki/stl/multimap/end'
+p7562
+S'stl/multimap'
+p7563
+S'returns an iterator just past the last element of a multimap'
+p7564
+tp7565
+a(S'equal_range'
+p7566
+S'./www.cppreference.com/wiki/stl/multimap/equal_range'
+p7567
+S'stl/multimap'
+p7568
+S'returns iterators to the first and just past the last elements matching a specific key'
+p7569
+tp7570
+a(S'erase'
+p7571
+S'./www.cppreference.com/wiki/stl/multimap/erase'
+p7572
+S'stl/multimap'
+p7573
+S'removes elements from a multimap'
+p7574
+tp7575
+a(S'find'
+p7576
+S'./www.cppreference.com/wiki/stl/multimap/find'
+p7577
+S'stl/multimap'
+p7578
+S'returns an iterator to specific elements'
+p7579
+tp7580
+a(S'insert'
+p7581
+S'./www.cppreference.com/wiki/stl/multimap/insert'
+p7582
+S'stl/multimap'
+p7583
+S'inserts items into a multimap'
+p7584
+tp7585
+a(S'key_comp'
+p7586
+S'./www.cppreference.com/wiki/stl/multimap/key_comp'
+p7587
+S'stl/multimap'
+p7588
+S'returns the function that compares keys'
+p7589
+tp7590
+a(S'lower_bound'
+p7591
+S'./www.cppreference.com/wiki/stl/multimap/lower_bound'
+p7592
+S'stl/multimap'
+p7593
+S'returns an iterator to the first element greater than or equal to a certain value'
+p7594
+tp7595
+a(S'max_size'
+p7596
+S'./www.cppreference.com/wiki/stl/multimap/max_size'
+p7597
+S'stl/multimap'
+p7598
+S'returns the maximum number of elements that the multimap can hold'
+p7599
+tp7600
+a(S'rbegin'
+p7601
+S'./www.cppreference.com/wiki/stl/multimap/rbegin'
+p7602
+S'stl/multimap'
+p7603
+S'returns a reverse_iterator to the end of the multimap'
+p7604
+tp7605
+a(S'rend'
+p7606
+S'./www.cppreference.com/wiki/stl/multimap/rend'
+p7607
+S'stl/multimap'
+p7608
+S'returns a reverse_iterator to the beginning of the multimap'
+p7609
+tp7610
+a(S'size'
+p7611
+S'./www.cppreference.com/wiki/stl/multimap/size'
+p7612
+S'stl/multimap'
+p7613
+S'returns the number of items in the multimap'
+p7614
+tp7615
+a(S'swap'
+p7616
+S'./www.cppreference.com/wiki/stl/multimap/swap'
+p7617
+S'stl/multimap'
+p7618
+S'swap the contents of this multimap with another'
+p7619
+tp7620
+a(S'upper_bound'
+p7621
+S'./www.cppreference.com/wiki/stl/multimap/upper_bound'
+p7622
+S'stl/multimap'
+p7623
+S'returns an iterator to the first element greater than a certain value'
+p7624
+tp7625
+a(S'value_comp'
+p7626
+S'./www.cppreference.com/wiki/stl/multimap/value_comp'
+p7627
+S'stl/multimap'
+p7628
+S'returns the function that compares values'
+p7629
+tp7630
+a(S'constructors'
+p7631
+S'./www.cppreference.com/wiki/stl/bitset/bitset_constructors'
+p7632
+S'stl/bitset'
+p7633
+S'create new bitsets'
+p7634
+tp7635
+a(S'operators'
+p7636
+S'./www.cppreference.com/wiki/stl/bitset/bitset_operators'
+p7637
+S'stl/bitset'
+p7638
+S'compare and assign bitsets'
+p7639
+tp7640
+a(S'any'
+p7641
+S'./www.cppreference.com/wiki/stl/bitset/any'
+p7642
+S'stl/bitset'
+p7643
+S'true if any bits are set'
+p7644
+tp7645
+a(S'count'
+p7646
+S'./www.cppreference.com/wiki/stl/bitset/count'
+p7647
+S'stl/bitset'
+p7648
+S'returns the number of set bits'
+p7649
+tp7650
+a(S'flip'
+p7651
+S'./www.cppreference.com/wiki/stl/bitset/flip'
+p7652
+S'stl/bitset'
+p7653
+S'reverses the bitset'
+p7654
+tp7655
+a(S'none'
+p7656
+S'./www.cppreference.com/wiki/stl/bitset/none'
+p7657
+S'stl/bitset'
+p7658
+S'true if no bits are set'
+p7659
+tp7660
+a(S'reset'
+p7661
+S'./www.cppreference.com/wiki/stl/bitset/reset'
+p7662
+S'stl/bitset'
+p7663
+S'sets bits to zero'
+p7664
+tp7665
+a(S'set'
+p7666
+S'./www.cppreference.com/wiki/stl/bitset/set'
+p7667
+S'stl/bitset'
+p7668
+S'sets bits'
+p7669
+tp7670
+a(S'size'
+p7671
+S'./www.cppreference.com/wiki/stl/bitset/size'
+p7672
+S'stl/bitset'
+p7673
+S'number of bits that the bitset can hold'
+p7674
+tp7675
+a(S'test'
+p7676
+S'./www.cppreference.com/wiki/stl/bitset/test'
+p7677
+S'stl/bitset'
+p7678
+S'returns the value of a given bit'
+p7679
+tp7680
+a(S'to_string'
+p7681
+S'./www.cppreference.com/wiki/stl/bitset/to_string'
+p7682
+S'stl/bitset'
+p7683
+S'string representation of the bitset'
+p7684
+tp7685
+a(S'to_ulong'
+p7686
+S'./www.cppreference.com/wiki/stl/bitset/to_ulong'
+p7687
+S'stl/bitset'
+p7688
+S'returns an integer representation of the bitset'
+p7689
+tp7690
 a.

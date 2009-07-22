@@ -62,7 +62,8 @@ if __name__ == "__main__" :
 
     # update
     if opts.url :
-
+        from BeautifulSoup import BeautifulSoup
+        
         root = opts.url
 
         main = BeautifulSoup( open( join( root, "index.html" )  ) )
@@ -85,7 +86,9 @@ if __name__ == "__main__" :
                 index = "standard c functions"
 
             if index.find( "c++" ) != -1 \
-                    or index.find( " c " ) != -1 :
+                    or index.find( " c " ) != -1 \
+                    or index.find( "keywords" ) != -1 \
+                    or index.find( "pre-processor" ) != -1 :
                 print "Indexing", url
             
                 for ( key, addr, desc ) in fetch_page( dirname( url ), url ) :

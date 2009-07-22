@@ -1,15 +1,18 @@
 #! /usr/bin/env python
 
 """
-cclookup is to lookup entries from c++ reference documentation, especially within emacs.
-"""
+Taesoo Kim (tsgatesv@gmail.com)
 
+cclookup is to lookup entries from c++ reference documentation, especially
+within emacs.
+
+Have a fun!
+"""
 
 import pickle
 
 from urllib        import urlopen
 from os.path       import join, dirname, exists
-from BeautifulSoup import BeautifulSoup
 
 def zip2( iters ) :
     iterobj = iters.__iter__()
@@ -21,6 +24,9 @@ def zip2( iters ) :
         yield ( a, b )
 
 def fetch_page( root, url ) :
+    # import only when necessary
+    from BeautifulSoup import BeautifulSoup
+
     soup = BeautifulSoup( urlopen( url ) )
 
     rtn = []

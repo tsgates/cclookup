@@ -118,8 +118,6 @@ if __name__ == "__main__" :
                                      addr.encode( "ascii", "ignore" ),
                                      cat.encode( "ascii", "ignore" ), 
                                      desc.encode( "ascii", "ignore" ) ) )
-            else:
-                print "IGNR", index
                 
         # update database
         pickle.dump( db, open( opts.db, "w" ) )

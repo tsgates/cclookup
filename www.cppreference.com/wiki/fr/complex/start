@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr"
+ lang="fr" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>fr:numeric:complex:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:00-0700" />
+<meta name="keywords" content="fr,numeric,complex,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/fr/numeric/complex/start?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=fr:numeric:complex" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/fr/numeric/complex/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/fr/numeric/complex/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='fr:numeric:complex';var JSINFO = {"id":"fr:numeric:complex:start","namespace":"fr:numeric:complex"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="c_nombres_complexes" id="c_nombres_complexes">C++ Nombres complexes</a></h1>
+<div class="level1">
+
+<p>
+
+La classe <code>complex</code> fournit un moyen facile d&#039;utiliser des nombres complexes. Elle est définie comme une classe de base dans le namespace <code>std</code>, dans le fichier d&#039;entête <code>&lt;complex&gt;</code>.
+
+</p>
+<pre class="cpp code cpp"> <span class="kw2">template</span><span class="sy1">&lt;</span><span class="kw2">typename</span> Num<span class="sy1">&gt;</span>
+ <span class="kw4">struct</span> complex<span class="sy4">;</span></pre>
+<p>
+Le paramètre de type <code>Num</code> est le type qui doit être utilisé pour chacune des composantes réelles et imaginaires du nombres complexe. Il doit être un des suivants : <code>float</code>, <code>double</code>, ou <code>long double</code>.
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/fr/numeric/complex/complex_constructors" class="wikilink2" title="fr:numeric:complex:complex_constructors" rel="nofollow">Constructors</a></td><td class="col1">créer das nombres complexes à partir des parties réelles ou imaginaires d&#039;autres nombres complexes</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/fr/numeric/complex/complex_operators" class="wikilink2" title="fr:numeric:complex:complex_operators" rel="nofollow">Operators</a></td><td class="col1">arithmétique des nombres complexes, égalité des nombres complexes, I/O des nombres complexes</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/fr/numeric/complex/abs" class="wikilink2" title="fr:numeric:complex:abs" rel="nofollow">abs</a></td><td class="col1">valeur absolue d&#039;un nombre complexe</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/fr/numeric/complex/arg" class="wikilink2" title="fr:numeric:complex:arg" rel="nofollow">arg</a></td><td class="col1">argument (angle) d&#039;un nombr complexe</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/fr/numeric/complex/conj" class="wikilink2" title="fr:numeric:complex:conj" rel="nofollow">conj</a></td><td class="col1">conjugué d&#039;un nombre complexe</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/fr/numeric/complex/cos" class="wikilink2" title="fr:numeric:complex:cos" rel="nofollow">cos</a></td><td class="col1">cosinus d&#039;un nombre complexe</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/fr/numeric/complex/cosh" class="wikilink2" title="fr:numeric:complex:cosh" rel="nofollow">cosh</a></td><td class="col1">cosinus hyperbolique d&#039;un nombre complexe</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/fr/numeric/complex/exp" class="wikilink2" title="fr:numeric:complex:exp" rel="nofollow">exp</a></td><td class="col1">exponentiel d&#039;un nombre complexe</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/fr/numeric/complex/imag" class="wikilink2" title="fr:numeric:complex:imag" rel="nofollow">imag</a></td><td class="col1">partie imaginaire d&#039;un nombre complexe</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/fr/numeric/complex/log" class="wikilink2" title="fr:numeric:complex:log" rel="nofollow">log</a></td><td class="col1">logarithme naturel d&#039;un nombre complexe</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/fr/numeric/complex/log10" class="wikilink2" title="fr:numeric:complex:log10" rel="nofollow">log10</a></td><td class="col1">logarithme de base 10 d&#039;un nombre complexe</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/fr/numeric/complex/norm" class="wikilink2" title="fr:numeric:complex:norm" rel="nofollow">norm</a></td><td class="col1">carré de la valeur absolue d&#039;un nombre complexe</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/fr/numeric/complex/polar" class="wikilink2" title="fr:numeric:complex:polar" rel="nofollow">polar</a></td><td class="col1">construit un nombre complexe à partir de coordonnées polaires</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/fr/numeric/complex/pow" class="wikilink2" title="fr:numeric:complex:pow" rel="nofollow">pow</a></td><td class="col1">raising a complex number to a power, raising to a complex number power, or both</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/fr/numeric/complex/real" class="wikilink2" title="fr:numeric:complex:real" rel="nofollow">real</a></td><td class="col1">partie réelle d&#039;un nombre complexe</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/fr/numeric/complex/sin" class="wikilink2" title="fr:numeric:complex:sin" rel="nofollow">sin</a></td><td class="col1">sinus d&#039;un nombre complexe</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/fr/numeric/complex/sinh" class="wikilink2" title="fr:numeric:complex:sinh" rel="nofollow">sinh</a></td><td class="col1">sinus hyperbolique d&#039;un nombre complexe</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/fr/numeric/complex/sqrt" class="wikilink2" title="fr:numeric:complex:sqrt" rel="nofollow">sqrt</a></td><td class="col1">racine carré d&#039;un nombre complexe</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/fr/numeric/complex/tan" class="wikilink2" title="fr:numeric:complex:tan" rel="nofollow">tan</a></td><td class="col1">tangente d&#039;un nombre complexe</td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/fr/numeric/complex/tanh" class="wikilink2" title="fr:numeric:complex:tanh" rel="nofollow">tanh</a></td><td class="col1">tangente hyperbolique d&#039;un nombre complexe</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [509-1706] -->
+</div>
+</div>
+</body>
+</html>

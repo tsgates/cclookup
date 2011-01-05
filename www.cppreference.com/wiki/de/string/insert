@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de"
+ lang="de" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>de:string:insert</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:26-0700" />
+<meta name="keywords" content="de,string,insert" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/de/string/insert?do=index" title="Übersicht" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=de:string" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/de/string/insert" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/de/string/insert" />
+<link rel="canonical" href="insert" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='de:string';var JSINFO = {"id":"de:string:insert","namespace":"de:string"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="insert" id="insert">insert</a></h2>
+<div class="level2">
+
+<p>
+Syntax:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;string&gt;</span>
+    iterator insert<span class="br0">&#40;</span> iterator i, Char ch <span class="br0">&#41;</span><span class="sy4">;</span>
+    string<span class="sy3">&amp;</span> insert<span class="br0">&#40;</span> size_type index, <span class="kw4">const</span> string<span class="sy3">&amp;</span> str <span class="br0">&#41;</span><span class="sy4">;</span>
+    string<span class="sy3">&amp;</span> insert<span class="br0">&#40;</span> size_type index, <span class="kw4">const</span> Char<span class="sy2">*</span> str <span class="br0">&#41;</span><span class="sy4">;</span>
+    string<span class="sy3">&amp;</span> insert<span class="br0">&#40;</span> size_type index1, <span class="kw4">const</span> string<span class="sy3">&amp;</span> str, size_type index2, size_type num <span class="br0">&#41;</span><span class="sy4">;</span>
+    string<span class="sy3">&amp;</span> insert<span class="br0">&#40;</span> size_type index, <span class="kw4">const</span> Char<span class="sy2">*</span> str, size_type num <span class="br0">&#41;</span><span class="sy4">;</span>
+    string<span class="sy3">&amp;</span> insert<span class="br0">&#40;</span> size_type index, size_type num, Char ch <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">void</span> insert<span class="br0">&#40;</span> iterator i, size_type num, Char ch <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">void</span> insert<span class="br0">&#40;</span> iterator i, input_iterator start, input_iterator end <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Die multifunktionale Methode <code>insert()</code>:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> einfügt <code>ch</code> vor dem Zeichen angegeben mit <code>i</code>,<br/>
+</div>
+</li>
+<li class="level1"><div class="li"> einfügt <code>str</code> in die aktuelle Zeichenkette in der Position <code>index</code>,<br/>
+</div>
+</li>
+<li class="level1"><div class="li"> einfügt ein Unterstring von <code>str</code> (beginnend ab Postion <code>index2</code> und <code>num</code> Zeichen lang) in die aktuelle Zeichenkette an der Position <code>index1</code>,</div>
+</li>
+<li class="level1"><div class="li"> einfügt <code>num</code> Kopien von <code>ch</code> in die aktulle Zeichenkette an der Position <code>index</code>,<br/>
+</div>
+</li>
+<li class="level1"><div class="li"> einfügt <code>num</code> Kopien von <code>ch</code> in die aktulle Zeichenkette vor dem Zeichen angegeben mit <code>i</code>.</div>
+</li>
+</ul>
+
+<p>
+
+Sieh auch: <a href="http://www.cppreference.com/wiki/de/string/erase" class="wikilink2" title="de:string:erase" rel="nofollow">erase</a>, <a href="http://www.cppreference.com/wiki/de/string/replace" class="wikilink2" title="de:string:replace" rel="nofollow">replace</a>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "insert" [3-] --></div>
+</body>
+</html>

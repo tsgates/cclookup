@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn"
+ lang="cn" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>cn:container:set:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:54-0700" />
+<meta name="keywords" content="cn,container,set,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/cn/container/set/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=cn:container:set" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/cn/container/set/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/cn/container/set/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='cn:container:set';var JSINFO = {"id":"cn:container:set:start","namespace":"cn:container:set"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<p>
+<strong>C++ Sets</strong>
+</p>
+
+<p>
+集合(Set)是一种包含已排序对象的关联容器
+</p>
+
+<p>
+begin()
+ 返回指向第一个元素的迭代器
+</p>
+
+<p>
+clear()
+ 清除所有元素
+</p>
+
+<p>
+count()
+ 返回某个值元素的个数
+</p>
+
+<p>
+empty()
+ 如果集合为空，返回true
+</p>
+
+<p>
+end()
+ 返回指向最后一个元素的迭代器
+</p>
+
+<p>
+equal_range()
+ 返回集合中与给定值相等的上下限的两个迭代器
+</p>
+
+<p>
+erase()
+ 删除集合中的元素
+</p>
+
+<p>
+find()
+ 返回一个指向被查找到元素的迭代器
+</p>
+
+<p>
+get_allocator()
+ 返回集合的分配器
+</p>
+
+<p>
+insert()
+ 在集合中插入元素
+</p>
+
+<p>
+lower_bound()
+ 返回指向大于（或等于）某值的第一个元素的迭代器
+</p>
+
+<p>
+key_comp()
+ 返回一个用于元素间值比较的函数
+</p>
+
+<p>
+max_size()
+ 返回集合能容纳的元素的最大限值
+</p>
+
+<p>
+rbegin()
+ 返回指向集合中最后一个元素的反向迭代器
+</p>
+
+<p>
+rend()
+ 返回指向集合中第一个元素的反向迭代器
+</p>
+
+<p>
+size()
+ 集合中元素的数目
+</p>
+
+<p>
+swap()
+ 交换两个集合变量
+</p>
+
+<p>
+upper_bound()
+ 返回大于某个值元素的迭代器
+</p>
+
+<p>
+value_comp()
+ 返回一个用于比较元素间的值的函数
+</p>
+
+<p>
+　
+</p>
+</div>
+</body>
+</html>

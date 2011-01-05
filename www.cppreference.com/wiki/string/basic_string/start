@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>string:basic_string:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="noindex,nofollow" />
+<meta name="date" content="2010-11-14T17:37:15-0800" />
+<meta name="keywords" content="string,basic_string,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/string/basic_string/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=string:basic_string" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/string/basic_string/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/string/basic_string/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='string:basic_string';var JSINFO = {"id":"string:basic_string:start","namespace":"string:basic_string"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="basic_string" id="basic_string">basic_string</a></h2>
+<div class="level2">
+<pre class="cpp code cpp"><span class="co2">#include &lt;string&gt;</span>
+&nbsp;
+<span class="kw2">template</span><span class="sy1">&lt;</span>
+    <span class="kw2">typename</span> Char,
+    <span class="kw2">typename</span> Traits <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">char_traits</span><span class="sy1">&lt;</span> Char <span class="sy1">&gt;</span>,
+    <span class="kw2">typename</span> Allocator <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">allocator</span><span class="sy1">&lt;</span> Char <span class="sy1">&gt;</span>
+<span class="sy1">&gt;</span> <span class="kw2">class</span> basic_string<span class="sy4">;</span></pre>
+<p>
+The class template <code>basic_string</code> generalizes the way how sequences of characters are manipulated and stored. Several specializations for common character types are provided:
+</p>
+<pre class="cpp code cpp"><span class="kw4">typedef</span> basic_string<span class="sy1">&lt;</span> <span class="kw4">char</span> <span class="sy1">&gt;</span>     string<span class="sy4">;</span>
+<span class="kw4">typedef</span> basic_string<span class="sy1">&lt;</span> <span class="kw4">wchar_t</span> <span class="sy1">&gt;</span>  wstring<span class="sy4">;</span>
+<span class="kw4">typedef</span> basic_string<span class="sy1">&lt;</span> char16_t <span class="sy1">&gt;</span> u16string<span class="sy4">;</span>    <span class="co1">//C++0x feature</span>
+<span class="kw4">typedef</span> basic_string<span class="sy1">&lt;</span> char32_t <span class="sy1">&gt;</span> u32string<span class="sy4">;</span>    <span class="co1">//C++0x feature</span></pre>
+</div>
+
+<h4><a name="member_types" id="member_types">Member types</a></h4>
+<div class="level4">
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<th class="col0">Member type </th><th class="col1"> Definition </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <code>traits_type</code> </td><td class="col1"> <code>Traits</code> </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <code>value_type</code> </td><td class="col1"> <code>Traits::char_type</code> </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> <code>allocator_type</code> </td><td class="col1"> <code>Allocator</code> </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> <code>size_type</code> </td><td class="col1"> <code>Allocator::size_type</code> </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> <code>difference_type</code> </td><td class="col1"> <code>Allocator::difference_type</code> </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> <code>reference</code> </td><td class="col1"> <code>Allocator::reference</code> </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"> <code>const_reference</code> </td><td class="col1"> <code>Allocator::const_reference</code> </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"> <code>pointer</code> </td><td class="col1"> <code>Allocator::pointer</code> </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"> <code>const_pointer</code> </td><td class="col1"> <code>Allocator::const_pointer</code> </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"> <code>iterator</code> </td><td class="col1"> Random access iterator </td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"> <code>const_iterator</code> </td><td class="col1"> Constant random access iterator </td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"> <code>reverse_iterator</code> </td><td class="col1"> <code>std::reverse_iterator&lt;iterator&gt;</code> </td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"> <code>const_reverse_iterator</code> </td><td class="col1"> <code>std::reverse_iterator&lt;const_iterator&gt;</code> </td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [633-1310] -->
+</div>
+
+<h4><a name="member_functions" id="member_functions">Member functions</a></h4>
+<div class="level4">
+<div class="table sectionedit3"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <a href="basic_string" class="wikilink1" title="string:basic_string:basic_string"> (constructor) </a> </td><td class="col1"> creates strings from arrays of characters and other strings</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="operators" class="wikilink1" title="string:basic_string:operators">Operators</a> </td><td class="col1"> concatenate strings, assign strings, use strings for I/O, compare strings</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="assign" class="wikilink1" title="string:basic_string:assign">assign</a> </td><td class="col1"> assign characters to a string </td>
+	</tr>
+</table></div>
+<!-- EDIT3 TABLE [1336-1582] -->
+</div>
+
+<h5><a name="element_access" id="element_access">Element access</a></h5>
+<div class="level5">
+<div class="table sectionedit4"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="at" class="wikilink1" title="string:basic_string:at">at</a></td><td class="col1"> access specified character with bounds checking</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="operator_at" class="wikilink1" title="string:basic_string:operator_at">operator[] </a></td><td class="col1"> access specified character</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="data" class="wikilink1" title="string:basic_string:data">data</a></td><td class="col1">returns a pointer to the first character of a string</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="c_str" class="wikilink1" title="string:basic_string:c_str">c_str</a></td><td class="col1">returns a non-modifiable standard C character array version of the string</td>
+	</tr>
+</table></div>
+<!-- EDIT4 TABLE [1605-1870] -->
+</div>
+
+<h5><a name="iterators" id="iterators">Iterators</a></h5>
+<div class="level5">
+<div class="table sectionedit5"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="begin" class="wikilink1" title="string:basic_string:begin">begin</a></td><td class="col1">returns an iterator to the beginning of the string</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="end" class="wikilink1" title="string:basic_string:end">end</a></td><td class="col1">returns an iterator just past the last element of a string</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="rbegin" class="wikilink1" title="string:basic_string:rbegin">rbegin</a></td><td class="col1">returns a reverse_iterator to the end of the string</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="rend" class="wikilink1" title="string:basic_string:rend">rend</a></td><td class="col1">returns a reverse_iterator just past the beginning of the string</td>
+	</tr>
+</table></div>
+<!-- EDIT5 TABLE [1887-2159] -->
+</div>
+
+<h5><a name="capacity" id="capacity">Capacity</a></h5>
+<div class="level5">
+<div class="table sectionedit6"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="capacity" class="wikilink1" title="string:basic_string:capacity">capacity</a></td><td class="col1">returns the number of elements that the string can hold</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="empty" class="wikilink1" title="string:basic_string:empty">empty</a></td><td class="col1">true if the string has no characters</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="max_size" class="wikilink1" title="string:basic_string:max_size">max_size</a></td><td class="col1">returns the maximum number of elements that the string can hold</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="reserve" class="wikilink1" title="string:basic_string:reserve">reserve</a></td><td class="col1">sets the minimum capacity of the string</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="size" class="wikilink1" title="string:basic_string:size">size</a></td><td class="col1">returns the number of items in the string</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="length" class="wikilink1" title="string:basic_string:length">length</a></td><td class="col1">returns the length of the string</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="resize" class="wikilink1" title="string:basic_string:resize">resize</a></td><td class="col1">change the size of the string</td>
+	</tr>
+</table></div>
+<!-- EDIT6 TABLE [2175-2569] -->
+</div>
+
+<h5><a name="operations" id="operations">Operations</a></h5>
+<div class="level5">
+<div class="table sectionedit7"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="clear" class="wikilink1" title="string:basic_string:clear">clear</a> </td><td class="col1"> clears the contents </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="erase" class="wikilink1" title="string:basic_string:erase">erase</a></td><td class="col1">removes characters from string</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="append" class="wikilink1" title="string:basic_string:append">append</a></td><td class="col1">append characters and strings onto a string</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="compare" class="wikilink1" title="string:basic_string:compare">compare</a></td><td class="col1">compares two strings</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="replace" class="wikilink1" title="string:basic_string:replace">replace</a></td><td class="col1">replace characters in the string</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="pop_back" class="wikilink1" title="string:basic_string:pop_back">pop_back</a></td><td class="col1">removes the last character of a string</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="push_back" class="wikilink1" title="string:basic_string:push_back">push_back</a></td><td class="col1">append a character to the end of the string</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="substr" class="wikilink1" title="string:basic_string:substr">substr</a></td><td class="col1">returns a certain substring</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="copy" class="wikilink1" title="string:basic_string:copy">copy</a></td><td class="col1">copies characters from a string into an array</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="insert" class="wikilink1" title="string:basic_string:insert">insert</a></td><td class="col1">insert characters into a string</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="swap" class="wikilink1" title="string:basic_string:swap">swap</a></td><td class="col1">swap the contents of this string with another</td>
+	</tr>
+</table></div>
+<!-- EDIT7 TABLE [2587-3117] -->
+</div>
+
+<h5><a name="search" id="search">Search</a></h5>
+<div class="level5">
+<div class="table sectionedit8"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="find" class="wikilink1" title="string:basic_string:find">find</a></td><td class="col1">find characters in the string</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="find_first_not_of" class="wikilink1" title="string:basic_string:find_first_not_of">find_first_not_of</a></td><td class="col1">find first absence of characters</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="find_first_of" class="wikilink1" title="string:basic_string:find_first_of">find_first_of</a></td><td class="col1">find first occurrence of characters</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="find_last_not_of" class="wikilink1" title="string:basic_string:find_last_not_of">find_last_not_of</a></td><td class="col1">find last absence of characters</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="find_last_of" class="wikilink1" title="string:basic_string:find_last_of">find_last_of</a></td><td class="col1">find last occurrence of characters</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="rfind" class="wikilink1" title="string:basic_string:rfind">rfind</a></td><td class="col1">find the last occurrence of a substring</td>
+	</tr>
+</table></div>
+<!-- EDIT8 TABLE [3130-3444] -->
+</div>
+
+<h5><a name="allocator" id="allocator">Allocator</a></h5>
+<div class="level5">
+<div class="table sectionedit9"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/string/basic_string/get_allocator" class="wikilink2" title="string:basic_string:get_allocator" rel="nofollow">get_allocator</a></td><td class="col1"><a href="../../todo" class="wikilink1" title="todo">todo</a></td>
+	</tr>
+</table></div>
+<!-- EDIT9 TABLE [3461-3490] --><div class="table sectionedit10"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="npos" class="wikilink1" title="string:basic_string:npos">npos</a></td><td class="col1">a special value that indicates “not found” or “all remaining characters”</td>
+	</tr>
+</table></div>
+<!-- EDIT10 TABLE [3492-3575] -->
+<p>
+
+==
+</p>
+
+</div>
+</div>
+</body>
+</html>

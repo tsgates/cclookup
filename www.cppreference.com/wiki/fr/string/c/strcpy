@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr"
+ lang="fr" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>fr:string:c:strcpy</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:58-0700" />
+<meta name="keywords" content="fr,string,c,strcpy" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/fr/string/c/strcpy?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=fr:string:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/fr/string/c/strcpy" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/fr/string/c/strcpy" />
+<link rel="canonical" href="strcpy" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='fr:string:c';var JSINFO = {"id":"fr:string:c:strcpy","namespace":"fr:string:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<p>
+fonct
+</p>
+
+<h2 class="sectionedit1"><a name="strcpy" id="strcpy">strcpy</a></h2>
+<div class="level2">
+
+<p>
+Syntaxe :
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cstring&gt;</span>
+    <span class="kw4">char</span> <span class="sy2">*</span><span class="kw3">strcpy</span> <span class="br0">&#40;</span><span class="kw4">char</span> <span class="sy2">*</span>vers, <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>depuis<span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+La fonction <code>strcpy()</code> copie les caractères de la chaîne <code>depuis</code> dans la
+chaîne de destination <code>vers</code>, en incluant le caractère de terminaison de fin
+de chaîne (<code>\0</code>). La valeur de retour de <code>strcpy()</code> est un pointeur sur <code>vers</code>.
+</p>
+
+<p>
+Remarquez que <code>strcpy()</code> n&#039;effectue pas de vérification de limites et peut ainsi
+provoquer des problème de mémoire. Pour une fonction similaire qui implémente une
+vérification aux limite, cf. <code><a href="strncpy" class="wikilink1" title="fr:string:c:strncpy">strncpy()</a></code>.
+</p>
+
+<p>
+Sujets connexes : <a href="memcpy" class="wikilink1" title="fr:string:c:memcpy">memcpy</a>, <a href="strcat" class="wikilink1" title="fr:string:c:strcat">strcat</a>, <a href="strchr" class="wikilink1" title="fr:string:c:strchr">strchr</a>, <a href="strcmp" class="wikilink1" title="fr:string:c:strcmp">strcmp</a>, <a href="strncmp" class="wikilink1" title="fr:string:c:strncmp">strncmp</a>, <a href="strncpy" class="wikilink1" title="fr:string:c:strncpy">strncpy</a>
+</p>
+
+<p>
+Deux autres fonctions similaires (mais non-standards) existent, il s&#039;agit de <a href="http://www.cppreference.com/wiki/fr/string/c/strlcpy" class="wikilink2" title="fr:string:c:strlcpy" rel="nofollow">strlcpy</a> et <a href="http://www.cppreference.com/wiki/fr/string/c/strlcat" class="wikilink2" title="fr:string:c:strlcat" rel="nofollow">strlcat</a>.
+
+</p>
+
+</div>
+<!-- EDIT1 SECTION "strcpy" [6-] --></div>
+</body>
+</html>

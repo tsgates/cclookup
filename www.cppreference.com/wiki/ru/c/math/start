@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru"
+ lang="ru" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>ru:numeric:c:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:13-0700" />
+<meta name="keywords" content="ru,numeric,c,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/ru/numeric/c/start?do=index" title="Все страницы" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=ru:numeric:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/ru/numeric/c/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/ru/numeric/c/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='ru:numeric:c';var JSINFO = {"id":"ru:numeric:c:start","namespace":"ru:numeric:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="функции_cматематика" id="функции_cматематика">Функции C: Математика</a></h1>
+<div class="level1">
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="abs" class="wikilink1" title="ru:numeric:c:abs">abs</a></td><td class="col1">модуль числа</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/numeric/c/acos" class="wikilink2" title="ru:numeric:c:acos" rel="nofollow">acos</a></td><td class="col1">арккосинус</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/numeric/c/asin" class="wikilink2" title="ru:numeric:c:asin" rel="nofollow">asin</a></td><td class="col1">арксинус</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/numeric/c/atan" class="wikilink2" title="ru:numeric:c:atan" rel="nofollow">atan</a></td><td class="col1">арктангенс</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/numeric/c/atan2" class="wikilink2" title="ru:numeric:c:atan2" rel="nofollow">atan2</a></td><td class="col1">арктангенс от y/x</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="ceil" class="wikilink1" title="ru:numeric:c:ceil">ceil</a></td><td class="col1">возвращает наименьшее целое число, не меньше заданного значения</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/numeric/c/cos" class="wikilink2" title="ru:numeric:c:cos" rel="nofollow">cos</a></td><td class="col1">косинус</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/numeric/c/cosh" class="wikilink2" title="ru:numeric:c:cosh" rel="nofollow">cosh</a></td><td class="col1">вычисляет гиперболический косинус</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/numeric/c/div" class="wikilink2" title="ru:numeric:c:div" rel="nofollow">div</a></td><td class="col1">возвращает частное и остаток от деления</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="exp" class="wikilink1" title="ru:numeric:c:exp">exp</a></td><td class="col1">возвращает число e возведенное в степень</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/numeric/c/fabs" class="wikilink2" title="ru:numeric:c:fabs" rel="nofollow">fabs</a></td><td class="col1">абсолютное значение числа с плавающей точкой</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="floor" class="wikilink1" title="ru:numeric:c:floor">floor</a></td><td class="col1">возвращает наибольшее целое число, не больше заданного значения</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/numeric/c/fmod" class="wikilink2" title="ru:numeric:c:fmod" rel="nofollow">fmod</a></td><td class="col1">возвращает остаток от деления</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/numeric/c/frexp" class="wikilink2" title="ru:numeric:c:frexp" rel="nofollow">frexp</a></td><td class="col1">разделяет число двойной точности на мантиссу и порядок</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/numeric/c/labs" class="wikilink2" title="ru:numeric:c:labs" rel="nofollow">labs</a></td><td class="col1">возвращает модуль числа, для типа данных long int</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/numeric/c/ldexp" class="wikilink2" title="ru:numeric:c:ldexp" rel="nofollow">ldexp</a></td><td class="col1">computes a number in scientific notation</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/numeric/c/ldiv" class="wikilink2" title="ru:numeric:c:ldiv" rel="nofollow">ldiv</a></td><td class="col1">возвращает частное и остаток от деления, для типа данных long int</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/numeric/c/log" class="wikilink2" title="ru:numeric:c:log" rel="nofollow">log</a></td><td class="col1">натуральный логарифм (c основанием е)</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/numeric/c/log10" class="wikilink2" title="ru:numeric:c:log10" rel="nofollow">log10</a></td><td class="col1">десятичный логарифм(с основанием 10)</td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/numeric/c/modf" class="wikilink2" title="ru:numeric:c:modf" rel="nofollow">modf</a></td><td class="col1">вычисляет дробную и целую части значения  аргумента</td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"><a href="pow" class="wikilink1" title="ru:numeric:c:pow">pow</a></td><td class="col1">возведение в степень</td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/numeric/c/sin" class="wikilink2" title="ru:numeric:c:sin" rel="nofollow">sin</a></td><td class="col1">синус</td>
+	</tr>
+	<tr class="row22">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/numeric/c/sinh" class="wikilink2" title="ru:numeric:c:sinh" rel="nofollow">sinh</a></td><td class="col1">гиперболический косинус</td>
+	</tr>
+	<tr class="row23">
+		<td class="col0"><a href="sqrt" class="wikilink1" title="ru:numeric:c:sqrt">sqrt</a></td><td class="col1">вычисление квадратного корня</td>
+	</tr>
+	<tr class="row24">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/numeric/c/tan" class="wikilink2" title="ru:numeric:c:tan" rel="nofollow">tan</a></td><td class="col1">тангенс</td>
+	</tr>
+	<tr class="row25">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/numeric/c/tanh" class="wikilink2" title="ru:numeric:c:tanh" rel="nofollow">tanh</a></td><td class="col1">гиперболический тангенс</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [61-1845] -->
+</div>
+</div>
+</body>
+</html>

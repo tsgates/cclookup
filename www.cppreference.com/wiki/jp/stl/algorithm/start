@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:algorithm:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:23-0700" />
+<meta name="keywords" content="jp,algorithm,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/algorithm/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp:algorithm" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/algorithm/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/algorithm/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp:algorithm';var JSINFO = {"id":"jp:algorithm:start","namespace":"jp:algorithm"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="c_アルゴリズム" id="c_アルゴリズム">C++アルゴリズム</a></h1>
+<div class="level1">
+
+<p>
+以下の関数は &lt;algorithm&gt; か &lt;numeric&gt; の中で定義されています。またそれはstd名前空間の一部です。
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="accumulate" class="wikilink1" title="jp:algorithm:accumulate">accumulate</a></td><td class="col1">配列の合計を出す</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="adjacent_difference" class="wikilink1" title="jp:algorithm:adjacent_difference">adjacent_difference</a></td><td class="col1">ある範囲の中で隣り合った要素間の差を計算する</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="adjacent_find" class="wikilink1" title="jp:algorithm:adjacent_find">adjacent_find</a></td><td class="col1">同値の（あるいは他の基準を満たす）隣り合った要素を見つける</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/binary_search" class="wikilink2" title="jp:algorithm:binary_search" rel="nofollow">binary_search</a></td><td class="col1">ある範囲の中で要素があるかどうか判定する</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/copy" class="wikilink2" title="jp:algorithm:copy" rel="nofollow">copy</a></td><td class="col1">配列を新しい場所にコピーする</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/copy_backward" class="wikilink2" title="jp:algorithm:copy_backward" rel="nofollow">copy_backward</a></td><td class="col1">ある範囲の要素を逆順でコピーする</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/count" class="wikilink2" title="jp:algorithm:count" rel="nofollow">count</a></td><td class="col1">与えられた値とマッチする要素の数を返す</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/count_if" class="wikilink2" title="jp:algorithm:count_if" rel="nofollow">count_if</a></td><td class="col1">ある条件がtrueとなる要素の数を返す</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/equal" class="wikilink2" title="jp:algorithm:equal" rel="nofollow">equal</a></td><td class="col1">2つの要素のセットが同値か判断する</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/equal_range" class="wikilink2" title="jp:algorithm:equal_range" rel="nofollow">equal_range</a></td><td class="col1">ある要素とすべて同値となる範囲を探す</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="fill" class="wikilink1" title="jp:algorithm:fill">fill</a></td><td class="col1">ある範囲に特定の値を割り当てる</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="fill_n" class="wikilink1" title="jp:algorithm:fill_n">fill_n</a></td><td class="col1">特定の数の要素に値を割り当てる</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><a href="find" class="wikilink1" title="jp:algorithm:find">find</a></td><td class="col1">与えられた範囲内で値を探す</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/find_end" class="wikilink2" title="jp:algorithm:find_end" rel="nofollow">find_end</a></td><td class="col1">ある範囲の最後の要素を探す</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/find_first_of" class="wikilink2" title="jp:algorithm:find_first_of" rel="nofollow">find_first_of</a></td><td class="col1">あるセットの要素の中でどれでも一つ探す</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/find_if" class="wikilink2" title="jp:algorithm:find_if" rel="nofollow">find_if</a></td><td class="col1">ある条件がtrueとなる最初の要素を見つける</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/for_each" class="wikilink2" title="jp:algorithm:for_each" rel="nofollow">for_each</a></td><td class="col1">配列に関数を適用させる</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/generate" class="wikilink2" title="jp:algorithm:generate" rel="nofollow">generate</a></td><td class="col1">配列に関数の返り値を保存する</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/generate_n" class="wikilink2" title="jp:algorithm:generate_n" rel="nofollow">generate_n</a></td><td class="col1">saves the result of N applications of a function</td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/includes" class="wikilink2" title="jp:algorithm:includes" rel="nofollow">includes</a></td><td class="col1">あるセットが他のセットのサブセットになっていたときにtrueを返す</td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/inner_product" class="wikilink2" title="jp:algorithm:inner_product" rel="nofollow">inner_product</a></td><td class="col1">2つの配列の内積を計算する</td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/inplace_merge" class="wikilink2" title="jp:algorithm:inplace_merge" rel="nofollow">inplace_merge</a></td><td class="col1">merge two ordered ranges in-place</td>
+	</tr>
+	<tr class="row22">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/is_heap" class="wikilink2" title="jp:algorithm:is_heap" rel="nofollow">is_heap</a></td><td class="col1">ある範囲がヒープ構造になっている場合trueを返す</td>
+	</tr>
+	<tr class="row23">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/iter_swap" class="wikilink2" title="jp:algorithm:iter_swap" rel="nofollow">iter_swap</a></td><td class="col1">2つのイテレータが指す要素を入れ替える</td>
+	</tr>
+	<tr class="row24">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/lexicographical_compare" class="wikilink2" title="jp:algorithm:lexicographical_compare" rel="nofollow">lexicographical_compare</a></td><td class="col1">ある配列が他の配列より辞書順で早い場合trueを返す</td>
+	</tr>
+	<tr class="row25">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/lower_bound" class="wikilink2" title="jp:algorithm:lower_bound" rel="nofollow">lower_bound</a></td><td class="col1">ソートされた配列でその要素が昇順を崩さない最初のインデックスを探す</td>
+	</tr>
+	<tr class="row26">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/make_heap" class="wikilink2" title="jp:algorithm:make_heap" rel="nofollow">make_heap</a></td><td class="col1">配列からヒープを作成する</td>
+	</tr>
+	<tr class="row27">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/max" class="wikilink2" title="jp:algorithm:max" rel="nofollow">max</a></td><td class="col1">2つの要素のうち大きな方を返す</td>
+	</tr>
+	<tr class="row28">
+		<td class="col0"><a href="max_element" class="wikilink1" title="jp:algorithm:max_element">max_element</a></td><td class="col1">配列内で最大の要素を返す</td>
+	</tr>
+	<tr class="row29">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/merge" class="wikilink2" title="jp:algorithm:merge" rel="nofollow">merge</a></td><td class="col1">2つのソートされた配列をマージソートする</td>
+	</tr>
+	<tr class="row30">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/min" class="wikilink2" title="jp:algorithm:min" rel="nofollow">min</a></td><td class="col1">2つの要素のうち小さな方を返す</td>
+	</tr>
+	<tr class="row31">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/min_element" class="wikilink2" title="jp:algorithm:min_element" rel="nofollow">min_element</a></td><td class="col1">配列内で最小の要素を返す</td>
+	</tr>
+	<tr class="row32">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/mismatch" class="wikilink2" title="jp:algorithm:mismatch" rel="nofollow">mismatch</a></td><td class="col1">2つの配列の違いがでる最初のインデックスを探す</td>
+	</tr>
+	<tr class="row33">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/next_permutation" class="wikilink2" title="jp:algorithm:next_permutation" rel="nofollow">next_permutation</a></td><td class="col1">generates the next greater lexicographic permutation of a range of elements</td>
+	</tr>
+	<tr class="row34">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/nth_element" class="wikilink2" title="jp:algorithm:nth_element" rel="nofollow">nth_element</a></td><td class="col1">ある要素をソートされたときに正しい位置に配列内に挿入する。その要素よりも左側にはその値より大きな値の要素がこないようにし、逆に右側には小さな値がこないようにする。</td>
+	</tr>
+	<tr class="row35">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/partial_sort" class="wikilink2" title="jp:algorithm:partial_sort" rel="nofollow">partial_sort</a></td><td class="col1">配列内の最初のN要素を部分的にソートする</td>
+	</tr>
+	<tr class="row36">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/partial_sort_copy" class="wikilink2" title="jp:algorithm:partial_sort_copy" rel="nofollow">partial_sort_copy</a></td><td class="col1">配列をコピーし部分的にソートする</td>
+	</tr>
+	<tr class="row37">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/partial_sum" class="wikilink2" title="jp:algorithm:partial_sum" rel="nofollow">partial_sum</a></td><td class="col1">配列の部分和を計算する</td>
+	</tr>
+	<tr class="row38">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/partition" class="wikilink2" title="jp:algorithm:partition" rel="nofollow">partition</a></td><td class="col1">配列を2つに分割する</td>
+	</tr>
+	<tr class="row39">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/pop_heap" class="wikilink2" title="jp:algorithm:pop_heap" rel="nofollow">pop_heap</a></td><td class="col1">ヒープ内の最大の要素を取り除く</td>
+	</tr>
+	<tr class="row40">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/prev_permutation" class="wikilink2" title="jp:algorithm:prev_permutation" rel="nofollow">prev_permutation</a></td><td class="col1">ある配列の次に辞書的に早い配列を生成する</td>
+	</tr>
+	<tr class="row41">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/push_heap" class="wikilink2" title="jp:algorithm:push_heap" rel="nofollow">push_heap</a></td><td class="col1">ヒープに要素を追加する</td>
+	</tr>
+	<tr class="row42">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/random_shuffle" class="wikilink2" title="jp:algorithm:random_shuffle" rel="nofollow">random_shuffle</a></td><td class="col1">ある配列を読み込み専用でシャッフルする</td>
+	</tr>
+	<tr class="row43">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/remove" class="wikilink2" title="jp:algorithm:remove" rel="nofollow">remove</a></td><td class="col1">与えられた値の要素を取り除く</td>
+	</tr>
+	<tr class="row44">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/remove_copy" class="wikilink2" title="jp:algorithm:remove_copy" rel="nofollow">remove_copy</a></td><td class="col1">与えられた値の要素以外をコピーする</td>
+	</tr>
+	<tr class="row45">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/remove_copy_if" class="wikilink2" title="jp:algorithm:remove_copy_if" rel="nofollow">remove_copy_if</a></td><td class="col1">与えられた条件に該当する要素以外をコピーする</td>
+	</tr>
+	<tr class="row46">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/remove_if" class="wikilink2" title="jp:algorithm:remove_if" rel="nofollow">remove_if</a></td><td class="col1">与えられた条件に該当するすべての要素を取り除く</td>
+	</tr>
+	<tr class="row47">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/replace" class="wikilink2" title="jp:algorithm:replace" rel="nofollow">replace</a></td><td class="col1">配列内である値を持つ要素をすべて別の値に置き換える</td>
+	</tr>
+	<tr class="row48">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/replace_copy" class="wikilink2" title="jp:algorithm:replace_copy" rel="nofollow">replace_copy</a></td><td class="col1">ある値を持つ要素を別の値に置き換えて配列をコピーする</td>
+	</tr>
+	<tr class="row49">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/replace_copy_if" class="wikilink2" title="jp:algorithm:replace_copy_if" rel="nofollow">replace_copy_if</a></td><td class="col1">与えられた条件に該当する要素の値を置き換えて配列をコピーする</td>
+	</tr>
+	<tr class="row50">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/replace_if" class="wikilink2" title="jp:algorithm:replace_if" rel="nofollow">replace_if</a></td><td class="col1">与えられた条件に該当する要素の値を変更する</td>
+	</tr>
+	<tr class="row51">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/reverse" class="wikilink2" title="jp:algorithm:reverse" rel="nofollow">reverse</a></td><td class="col1">配列を逆順に並び替える</td>
+	</tr>
+	<tr class="row52">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/reverse_copy" class="wikilink2" title="jp:algorithm:reverse_copy" rel="nofollow">reverse_copy</a></td><td class="col1">配列を逆順に並び替えたコピーを作る</td>
+	</tr>
+	<tr class="row53">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/rotate" class="wikilink2" title="jp:algorithm:rotate" rel="nofollow">rotate</a></td><td class="col1">ある範囲の要素を与えられた数だけ左に動かす</td>
+	</tr>
+	<tr class="row54">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/rotate_copy" class="wikilink2" title="jp:algorithm:rotate_copy" rel="nofollow">rotate_copy</a></td><td class="col1">配列をコピーし、ある範囲の要素を与えられた数だけ左に動かす</td>
+	</tr>
+	<tr class="row55">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/search" class="wikilink2" title="jp:algorithm:search" rel="nofollow">search</a></td><td class="col1">配列内を探索する</td>
+	</tr>
+	<tr class="row56">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/search_n" class="wikilink2" title="jp:algorithm:search_n" rel="nofollow">search_n</a></td><td class="col1">search for N consecutive copies of an element in some range</td>
+	</tr>
+	<tr class="row57">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/set_difference" class="wikilink2" title="jp:algorithm:set_difference" rel="nofollow">set_difference</a></td><td class="col1">2つのセットの差分を出す</td>
+	</tr>
+	<tr class="row58">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/set_intersection" class="wikilink2" title="jp:algorithm:set_intersection" rel="nofollow">set_intersection</a></td><td class="col1">2つのセットの共通集合を出す</td>
+	</tr>
+	<tr class="row59">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/set_symmetric_difference" class="wikilink2" title="jp:algorithm:set_symmetric_difference" rel="nofollow">set_symmetric_difference</a></td><td class="col1">2つのセットの対象差を出す</td>
+	</tr>
+	<tr class="row60">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/set_union" class="wikilink2" title="jp:algorithm:set_union" rel="nofollow">set_union</a></td><td class="col1">2つのセットの和集合を出す</td>
+	</tr>
+	<tr class="row61">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/sort" class="wikilink2" title="jp:algorithm:sort" rel="nofollow">sort</a></td><td class="col1">配列を昇順にソートする</td>
+	</tr>
+	<tr class="row62">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/sort_heap" class="wikilink2" title="jp:algorithm:sort_heap" rel="nofollow">sort_heap</a></td><td class="col1">ヒープをソートされた配列に変換する</td>
+	</tr>
+	<tr class="row63">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/stable_partition" class="wikilink2" title="jp:algorithm:stable_partition" rel="nofollow">stable_partition</a></td><td class="col1">配列を最初の順番を守りながら2つのグループに分割する</td>
+	</tr>
+	<tr class="row64">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/stable_sort" class="wikilink2" title="jp:algorithm:stable_sort" rel="nofollow">stable_sort</a></td><td class="col1">配列を最初の順番を守りながらソートする</td>
+	</tr>
+	<tr class="row65">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/swap" class="wikilink2" title="jp:algorithm:swap" rel="nofollow">swap</a></td><td class="col1">2つのオブジェクトの値を入れ替える</td>
+	</tr>
+	<tr class="row66">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/swap_ranges" class="wikilink2" title="jp:algorithm:swap_ranges" rel="nofollow">swap_ranges</a></td><td class="col1">2つの配列を入れ替える</td>
+	</tr>
+	<tr class="row67">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/transform" class="wikilink2" title="jp:algorithm:transform" rel="nofollow">transform</a></td><td class="col1">配列に関数を適用する</td>
+	</tr>
+	<tr class="row68">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/algorithm/unique" class="wikilink2" title="jp:algorithm:unique" rel="nofollow">unique</a></td><td class="col1">配列内で連続して重複した要素を取り除く</td>
+	</tr>
+	<tr class="row69">
+		<td class="col0"><a href="unique_copy" class="wikilink1" title="jp:algorithm:unique_copy">unique_copy</a></td><td class="col1">ある配列の連続して重複した要素を取り除いたもののコピーを作る</td>
+	</tr>
+	<tr class="row70">
+		<td class="col0"><a href="upper_bound" class="wikilink1" title="jp:algorithm:upper_bound">upper_bound</a></td><td class="col1">順序を崩さずに挿入可能な最後の位置を検索する（指定値より大きい最初の位置を返す）</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [174-5442] -->
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr"
+ lang="fr" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>fr:preprocessor:preprocessor_vars</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:56-0700" />
+<meta name="keywords" content="fr,preprocessor,preprocessor_vars" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/fr/preprocessor/preprocessor_vars?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=fr:preprocessor" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/fr/preprocessor/preprocessor_vars" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/fr/preprocessor/preprocessor_vars" />
+<link rel="canonical" href="preprocessor_vars" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='fr:preprocessor';var JSINFO = {"id":"fr:preprocessor:preprocessor_vars","namespace":"fr:preprocessor"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="variables_predefinies_du_pre-processeur" id="variables_predefinies_du_pre-processeur">Variables prédéfinies du pré-processeur</a></h2>
+<div class="level2">
+
+<p>
+Syntaxe :
+
+</p>
+<pre class="cpp code cpp">    __LINE__
+    __FILE__
+    __DATE__
+    __TIME__
+    __cplusplus
+    __STDC__</pre>
+<p>
+La signification des variables peut changer en fonction du compilateur
+mais en général, voici le sens des variables définies par le pré-processeur:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>__LINE__</code> et <code>__FILE__</code> représentent la ligne et le fichier actuellement parcourus par le compilateur.</div>
+</li>
+<li class="level1"><div class="li"> <code>__DATE__</code> contient la date actuelle, au format mois/jour/année. C&#039;est la date de compilation du fichier, pas nécessairement la date à l&#039;exécution.</div>
+</li>
+<li class="level1"><div class="li"> <code>__TIME__</code> contient l&#039;heure actuelle, au format heure:minute:seconde. C&#039;est l&#039;heure de compilation du fichier, pas nécessairement l&#039;heure de l&#039;exécution.</div>
+</li>
+<li class="level1"><div class="li"> La variable <code>__cpluplus</code> est définie uniquement lors de la compilation en C++. Dans certains vieux compilateurs, cette variables est aussi appelée <code>c_plusplus</code>.</div>
+</li>
+<li class="level1"><div class="li"> LA variable <code>__STDC__</code> est définie uniquement lors de la compilation en C, mais peut aussi être définie quand vous compilez du C++.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT1 SECTION "Variables prédéfinies du pré-processeur" [1-1083] -->
+<h3 class="sectionedit2"><a name="variables_specifiques_a_gcc" id="variables_specifiques_a_gcc">Variables spécifiques à GCC</a></h3>
+<div class="level3">
+
+<p>
+
+La variables suivantes sont spécifiques à GCC. Ce ne sont pas exactement des macro de pré-processeur mais elle sont ”<a href="http://gcc.gnu.org/onlinedocs/gcc/Function-Names.html" class="urlextern" title="http://gcc.gnu.org/onlinedocs/gcc/Function-Names.html"  rel="nofollow">magiques</a>” et peuvent être utilisées comme telles :
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>__func__</code> contient le nom seul de la fonction.</div>
+</li>
+<li class="level1"><div class="li"> <code>__FUNCTION__</code> est un alias pour <code>__func__</code></div>
+</li>
+<li class="level1"><div class="li"> <code>__PRETTY_FUNCTION__</code> contient la signature de la fonction en plus de son nom.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT2 SECTION "Variables spécifiques à GCC" [1084-] --></div>
+</body>
+</html>

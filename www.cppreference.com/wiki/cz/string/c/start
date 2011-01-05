@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cz"
+ lang="cz" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>cz:string:c:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:28-0700" />
+<meta name="keywords" content="cz,string,c,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/cz/string/c/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=cz:string:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/cz/string/c/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/cz/string/c/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='cz:string:c';var JSINFO = {"id":"cz:string:c:start","namespace":"cz:string:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="standard_c_string_and_character_retezce_a_znaky" id="standard_c_string_and_character_retezce_a_znaky">Standard C String and Character  (řetězce a znaky)</a></h1>
+<div class="level1">
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/string/c/atof" class="wikilink2" title="cz:string:c:atof" rel="nofollow">atof</a></td><td class="col1">převede řetězec na float</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/string/c/atoi" class="wikilink2" title="cz:string:c:atoi" rel="nofollow">atoi</a></td><td class="col1">převede řetězec na integer</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/string/c/atol" class="wikilink2" title="cz:string:c:atol" rel="nofollow">atol</a></td><td class="col1">převede řetězec na long</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/string/c/isalnum" class="wikilink2" title="cz:string:c:isalnum" rel="nofollow">isalnum</a></td><td class="col1">je znak z abecedy nebo číslice (alphanumeric)? (iff)</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/string/c/isalpha" class="wikilink2" title="cz:string:c:isalpha" rel="nofollow">isalpha</a></td><td class="col1">je znak z abecedy (alphabetic)? (iff)</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/string/c/iscntrl" class="wikilink2" title="cz:string:c:iscntrl" rel="nofollow">iscntrl</a></td><td class="col1">je znak řídídcím znakem? (iff)</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/string/c/isdigit" class="wikilink2" title="cz:string:c:isdigit" rel="nofollow">isdigit</a></td><td class="col1">je znak číslice(digit)? (iff)</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/string/c/isgraph" class="wikilink2" title="cz:string:c:isgraph" rel="nofollow">isgraph</a></td><td class="col1">je znak grafickým znakem (graphical character)? (iff)</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/string/c/islower" class="wikilink2" title="cz:string:c:islower" rel="nofollow">islower</a></td><td class="col1">je znak malé písmeno (lowercase)? (iff)</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/string/c/isprint" class="wikilink2" title="cz:string:c:isprint" rel="nofollow">isprint</a></td><td class="col1">je znak tisknutelný? (iff)</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/string/c/ispunct" class="wikilink2" title="cz:string:c:ispunct" rel="nofollow">ispunct</a></td><td class="col1">je znak interpunkční? (iff)</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/string/c/isspace" class="wikilink2" title="cz:string:c:isspace" rel="nofollow">isspace</a></td><td class="col1">je znak mezera? (iff)</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/string/c/isupper" class="wikilink2" title="cz:string:c:isupper" rel="nofollow">isupper</a></td><td class="col1">je znak velké písmeno (uppercase)? (iff)</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/string/c/isxdigit" class="wikilink2" title="cz:string:c:isxdigit" rel="nofollow">isxdigit</a></td><td class="col1">je znak hexadecimální číslicí? (iff)</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/string/c/memchr" class="wikilink2" title="cz:string:c:memchr" rel="nofollow">memchr</a></td><td class="col1">vyhledá první výskyt znaku v “řetězci” určeného pomocí ukazatele a délky bloku paměti</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/string/c/memcmp" class="wikilink2" title="cz:string:c:memcmp" rel="nofollow">memcmp</a></td><td class="col1">porovnává dva buffery</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/string/c/memcpy" class="wikilink2" title="cz:string:c:memcpy" rel="nofollow">memcpy</a></td><td class="col1">kopíruje buffer do jiného</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/string/c/memmove" class="wikilink2" title="cz:string:c:memmove" rel="nofollow">memmove</a></td><td class="col1">přemisťuje obsah bufferu do jiného</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/string/c/memset" class="wikilink2" title="cz:string:c:memset" rel="nofollow">memset</a></td><td class="col1">plní buffer znakem</td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/string/c/strcat" class="wikilink2" title="cz:string:c:strcat" rel="nofollow">strcat</a></td><td class="col1">zřetězuje dva řetězce</td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/string/c/strchr" class="wikilink2" title="cz:string:c:strchr" rel="nofollow">strchr</a></td><td class="col1">vyhledá první výskyt znaku v řetězci a vrátí jeho pozici</td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/string/c/strcmp" class="wikilink2" title="cz:string:c:strcmp" rel="nofollow">strcmp</a></td><td class="col1">porovnává dva řetězce</td>
+	</tr>
+	<tr class="row22">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/string/c/strcoll" class="wikilink2" title="cz:string:c:strcoll" rel="nofollow">strcoll</a></td><td class="col1">porovnává dva řetězce s ohledem na aktuální lokalizaci</td>
+	</tr>
+	<tr class="row23">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/string/c/strcpy" class="wikilink2" title="cz:string:c:strcpy" rel="nofollow">strcpy</a></td><td class="col1">kopíruje řetězec do jiného</td>
+	</tr>
+	<tr class="row24">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/string/c/strcspn" class="wikilink2" title="cz:string:c:strcspn" rel="nofollow">strcspn</a></td><td class="col1">vrací index prvního výskytu znaku shodující se s jakýmkoliv znakem v druhém řetězci</td>
+	</tr>
+	<tr class="row25">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/string/c/strerror" class="wikilink2" title="cz:string:c:strerror" rel="nofollow">strerror</a></td><td class="col1">vrací textovou verzi předaného chybového kódu (error code)</td>
+	</tr>
+	<tr class="row26">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/string/c/strlen" class="wikilink2" title="cz:string:c:strlen" rel="nofollow">strlen</a></td><td class="col1">vrací délku řetězce</td>
+	</tr>
+	<tr class="row27">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/string/c/strncat" class="wikilink2" title="cz:string:c:strncat" rel="nofollow">strncat</a></td><td class="col1">zřetězuje dva podřetězce s určenou délkou ze dvou řetězců</td>
+	</tr>
+	<tr class="row28">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/string/c/strncmp" class="wikilink2" title="cz:string:c:strncmp" rel="nofollow">strncmp</a></td><td class="col1">porovnává dva podřetězce s určenou délkou ze dvou řetězců</td>
+	</tr>
+	<tr class="row29">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/string/c/strncpy" class="wikilink2" title="cz:string:c:strncpy" rel="nofollow">strncpy</a></td><td class="col1">kopíruje podřetězec s určenou délkou do jiného řetězce</td>
+	</tr>
+	<tr class="row30">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/string/c/strpbrk" class="wikilink2" title="cz:string:c:strpbrk" rel="nofollow">strpbrk</a></td><td class="col1">vrací ukazatel na první výskyt znaku shodující se s jakýmkoliv znakem v druhém řetězci</td>
+	</tr>
+	<tr class="row31">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/string/c/strrchr" class="wikilink2" title="cz:string:c:strrchr" rel="nofollow">strrchr</a></td><td class="col1">vyhledá poslední výskyt znaku v řetězci a vrátí jeho pozici</td>
+	</tr>
+	<tr class="row32">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/string/c/strspn" class="wikilink2" title="cz:string:c:strspn" rel="nofollow">strspn</a></td><td class="col1">vrací index prvního znaku, který se neshoduje v obouch řetězcích</td>
+	</tr>
+	<tr class="row33">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/string/c/strstr" class="wikilink2" title="cz:string:c:strstr" rel="nofollow">strstr</a></td><td class="col1">vrací ukazatel na první výskyt podřetězce</td>
+	</tr>
+	<tr class="row34">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/string/c/strtod" class="wikilink2" title="cz:string:c:strtod" rel="nofollow">strtod</a></td><td class="col1">konvertuje řetězec na double</td>
+	</tr>
+	<tr class="row35">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/string/c/strtok" class="wikilink2" title="cz:string:c:strtok" rel="nofollow">strtok</a></td><td class="col1">vrací ukazatel na další token, kde druhý parametr ho určuje</td>
+	</tr>
+	<tr class="row36">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/string/c/strtol" class="wikilink2" title="cz:string:c:strtol" rel="nofollow">strtol</a></td><td class="col1">konvertuje řetězec na long</td>
+	</tr>
+	<tr class="row37">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/string/c/strtoul" class="wikilink2" title="cz:string:c:strtoul" rel="nofollow">strtoul</a></td><td class="col1">konvertuje řetězec na unsigned long</td>
+	</tr>
+	<tr class="row38">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/string/c/strxfrm" class="wikilink2" title="cz:string:c:strxfrm" rel="nofollow">strxfrm</a></td><td class="col1">konvertuje podřetězec tak, že je možné ho použít s porovnávacími funkcemi</td>
+	</tr>
+	<tr class="row39">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/string/c/tolower" class="wikilink2" title="cz:string:c:tolower" rel="nofollow">tolower</a></td><td class="col1">konvertuje znak na malý (lowercase)</td>
+	</tr>
+	<tr class="row40">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/string/c/toupper" class="wikilink2" title="cz:string:c:toupper" rel="nofollow">toupper</a></td><td class="col1">konvertuje znak na velký (uppercase)</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [75-2528] -->
+</div>
+</div>
+</body>
+</html>

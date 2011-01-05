@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es"
+ lang="es" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>es:util:functional:less</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:32-0700" />
+<meta name="keywords" content="es,util,functional,less" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/es/util/functional/less?do=index" title="Índice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=es:util:functional" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/es/util/functional/less" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/es/util/functional/less" />
+<link rel="canonical" href="less" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='es:util:functional';var JSINFO = {"id":"es:util:functional:less","namespace":"es:util:functional"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Tabla de Contenidos</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="less#less" class="toc">less</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="less#uso" class="toc">Uso</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="less#ejemplo" class="toc">Ejemplo</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="less#topicos_relacionados" class="toc">Tópicos Relacionados</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="less" id="less">less</a></h2>
+<div class="level2">
+
+<p>
+Sintaxis:
+</p>
+<pre class="cpp code cpp"><span class="co2">#include &lt;functional&gt;</span>
+<span class="kw2">template</span> <span class="sy1">&lt;</span><span class="kw2">typename</span> Type<span class="sy1">&gt;</span>
+<span class="kw4">struct</span> std<span class="sy4">::</span><span class="me2">less</span><span class="sy4">;</span></pre>
+<p>
+<code>less()</code> es una plantilla para una familia de functoides provista en la cabecera <code><a href="start" class="wikilink1" title="es:util:functional:start">&lt;functional&gt;</a></code> y que provee una interface a la comparación “menor-que” global (<code>operator&lt;</code>).
+</p>
+
+<p>
+Para un tipo de datos <em>Type</em>, una instancia de <code>less&lt;Type&gt;</code> es una función binaria que toma dos argumentos (<em>a</em> y <em>b</em> por ejemplo) de tipo <code>Type</code> y devuelve <code><a href="../../keywords/true" class="wikilink1" title="es:keywords:true">true</a></code> si el primer argumento es “menor-que” el segundo acorde al operador <code>operator&lt;</code>. Es decir, <code>less()</code> está implementado de la siguiente manera:
+</p>
+<pre class="cpp code cpp">  <span class="kw2">template</span> <span class="sy1">&lt;</span><span class="kw2">class</span> T<span class="sy1">&gt;</span> <span class="kw4">struct</span> less <span class="sy4">:</span> binary_function <span class="sy1">&lt;</span>T,T,<span class="kw4">bool</span><span class="sy1">&gt;</span> <span class="br0">&#123;</span>
+    <span class="kw4">bool</span> operator<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#40;</span><span class="kw4">const</span> T<span class="sy3">&amp;</span> a, <span class="kw4">const</span> T<span class="sy3">&amp;</span> b<span class="br0">&#41;</span> <span class="kw4">const</span>
+      <span class="br0">&#123;</span><span class="kw1">return</span> a<span class="sy1">&lt;</span>b<span class="sy4">;</span><span class="br0">&#125;</span>
+  <span class="br0">&#125;</span><span class="sy4">;</span></pre>
+<p>
+En términos generalizados el operador <code>operator()</code> está definido para proveer la sintaxis necesaria, permitiendo usar <code>less</code> de la misma manera como si fuera una función común y corriente.
+</p>
+
+</div>
+<!-- EDIT1 SECTION "less" [1-1000] -->
+<h3 class="sectionedit2"><a name="uso" id="uso">Uso</a></h3>
+<div class="level3">
+
+<p>
+
+Instancias (objetos) de esta clase pueden usarse en cualquier lugar en los <a href="../algorithm/start" class="wikilink1" title="es:stl:algorithm:start">algoritmos</a> en el cual se requiera un criterio de ordenación, como en <a href="http://www.cppreference.com/wiki/es/stl/algorithm/sort" class="wikilink2" title="es:stl:algorithm:sort" rel="nofollow">sort</a> o merge.
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Uso" [1001-1220] -->
+<h3 class="sectionedit3"><a name="ejemplo" id="ejemplo">Ejemplo</a></h3>
+<div class="level3">
+
+<p>
+
+<img src="../../../lib/images/smileys/fixme.gif" class="middle" alt="FIXME" />
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Ejemplo" [1221-1246] -->
+<h3 class="sectionedit4"><a name="topicos_relacionados" id="topicos_relacionados">Tópicos Relacionados</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/es/util/functional/less_equal" class="wikilink2" title="es:util:functional:less_equal" rel="nofollow">less_equal</a>, <a href="greater" class="wikilink1" title="es:util:functional:greater">greater</a> y relacionados: functoides que proveen las otras formas de comparación “mayor-que”, etc.</div>
+</li>
+<li class="level1"><div class="li"> <code><a href="equal_to" class="wikilink1" title="es:util:functional:equal_to">equal_to</a></code>: functoide que provee el comparador de igualdad</div>
+</li>
+<li class="level1"><div class="li"> <code><a href="http://www.cppreference.com/wiki/es/stl/algorithm/sort" class="wikilink2" title="es:stl:algorithm:sort" rel="nofollow">sort</a></code>: algoritmos de ordenación que usan criterios como los que <code>less</code> provee.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT4 SECTION "Tópicos Relacionados" [1247-] --></div>
+</body>
+</html>

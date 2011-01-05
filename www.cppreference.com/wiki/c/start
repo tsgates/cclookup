@@ -5,21 +5,25 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>c:start</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="generator" content="DokuWiki" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2008-11-19T04:20:44-0800" />
+<meta name="date" content="2010-10-28T18:16:59-0700" />
 <meta name="keywords" content="c,start" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/c/start?do=index" title="Index" />
+<link rel="start" href="../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/c/start?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
 <link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=c" />
 <link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/c/start" />
 <link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/c/start" />
-<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='c';var JSINFO = {"id":"c:start","namespace":"c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
@@ -42,9 +46,7 @@
 </div>
 <!-- TOC END -->
 
-
-
-<h2><a name="the_standard_c_library" id="the_standard_c_library">The Standard C Library</a></h2>
+<h2 class="sectionedit1"><a name="the_standard_c_library" id="the_standard_c_library">The Standard C Library</a></h2>
 <div class="level2">
 
 <p>
@@ -53,8 +55,8 @@ C++ programmers have access to a variety of functions from the standard C librar
 </p>
 
 </div>
-<!-- SECTION "The Standard C Library" [1-344] -->
-<h3><a name="c_library_functions" id="c_library_functions">C Library Functions</a></h3>
+<!-- EDIT1 SECTION "The Standard C Library" [1-344] -->
+<h3 class="sectionedit2"><a name="c_library_functions" id="c_library_functions">C Library Functions</a></h3>
 <div class="level3">
 
 <p>
@@ -77,14 +79,9 @@ The following is a list of standard C library functions, grouped roughly by func
 </li>
 </ul>
 
-<p>
-
-Alternatively, there is a list of <a href="all" class="wikilink1" title="c:all">all standard C library functions</a>.
-</p>
-
 </div>
-<!-- SECTION "C Library Functions" [345-768] -->
-<h3><a name="standard_c_header_files" id="standard_c_header_files">Standard C Header Files</a></h3>
+<!-- EDIT2 SECTION "C Library Functions" [345-691] -->
+<h3 class="sectionedit3"><a name="standard_c_header_files" id="standard_c_header_files">Standard C Header Files</a></h3>
 <div class="level3">
 
 <p>
@@ -135,7 +132,7 @@ The functions above are defined in the following 18 header files:
 
 When including header files for the standard C libraries, it is preferable to use the <code>cfile</code> notation instead of the <code>file.h</code> notation.  For example, the <code>stdio.h</code> header file should be included using this command:
 </p>
-<pre class="c code c++" style="font-family:monospace;">  <span class="co2">#include &lt;cstdio&gt;</span></pre>
+<pre class="cpp code cpp">  <span class="co2">#include &lt;cstdio&gt;</span></pre>
 <p>
 The <code>file.h</code> notation works, but it is mainly meant for backwards compatibility.   The difference between the <code>cfile</code> and <code>file.h</code> notation is that functions included via the <code>file.h</code> notation will appear in the global namespace instead of the <strong>std</strong> namespace.
 </p>
@@ -145,6 +142,6 @@ See also: <a href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1124.pdf" cl
 </p>
 
 </div>
-<!-- SECTION "Standard C Header Files" [769-] --></div>
+<!-- EDIT3 SECTION "Standard C Header Files" [692-] --></div>
 </body>
 </html>

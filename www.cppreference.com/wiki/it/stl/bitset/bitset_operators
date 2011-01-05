@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it"
+ lang="it" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>it:container:bitset:bitset_operators</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:10-0700" />
+<meta name="keywords" content="it,container,bitset,bitset_operators" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/it/container/bitset/bitset_operators?do=index" title="Indice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=it:container:bitset" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/it/container/bitset/bitset_operators" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/it/container/bitset/bitset_operators" />
+<link rel="canonical" href="bitset_operators" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='it:container:bitset';var JSINFO = {"id":"it:container:bitset:bitset_operators","namespace":"it:container:bitset"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="operatori_di_bitset" id="operatori_di_bitset">Operatori di Bitset</a></h2>
+<div class="level2">
+
+<p>
+Sintassi:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;bitset&gt;</span>
+    <span class="sy3">!</span><span class="sy1">=</span>, <span class="sy1">==</span>, <span class="sy3">&amp;</span><span class="sy1">=</span>, <span class="sy3">^</span><span class="sy1">=</span>, <span class="sy3">|</span><span class="sy1">=</span>, ~, <span class="sy1">&lt;&lt;=</span>, <span class="sy1">&gt;&gt;=</span>, <span class="br0">&#91;</span><span class="br0">&#93;</span>, <span class="sy1">=</span></pre>
+<p>
+Questi sono gli operatori che funzionano sui <code>bitset</code>. 
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Operatore </th><th class="col1"> Descrizione </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 centeralign">  <code>!=</code>  </td><td class="col1">returna <em>true</em> se i due bitset non sono uguali</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 centeralign">  <code>==</code>  </td><td class="col1">returns <em>true</em> se i due bitset sono uguali</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 centeralign">  <code>&amp;=</code>  </td><td class="col1">esegue l&#039;operazione AND tra i due bitset</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 centeralign">  <code>^=</code>  </td><td class="col1">esegue l&#039;operazione XOR tra due bitsets</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 centeralign">  <code>|=</code>  </td><td class="col1">esegue l&#039;operazine OR sui due bitsets</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0 centeralign">  <code>~</code>  </td><td class="col1">inverte lo stato del bitset (come invocare <a href="flip" class="wikilink1" title="it:container:bitset:flip">flip()</a>)</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0 centeralign">  <code>&lt;&lt;=</code>  </td><td class="col1">shift a sinistra del bitset</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0 centeralign">  <code>&gt;&gt;=</code>  </td><td class="col1">shift a destra del bitset</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0 centeralign">  <code>b[n]</code>  </td><td class="col1">ritorna una reference all&#039;n-esimo bit del bitset</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0 centeralign">  <code>=</code>  </td><td class="col1">prende un &#039;unsigned long&#039; e lo usa per impostare i corrispondenti bit nel bitset</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [182-806] -->
+<p>
+Esempio: il codice seguente crea un <code>bitset</code> ed esegue uno shift a sinistra di 4 posizioni:
+</p>
+<pre class="cpp code cpp">   <span class="co1">// crea un bitset a partire da un numero</span>
+   bitset<span class="sy1">&lt;</span><span class="nu0">8</span><span class="sy1">&gt;</span> bs2<span class="br0">&#40;</span> <span class="br0">&#40;</span><span class="kw4">long</span><span class="br0">&#41;</span> <span class="nu0">131</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+   <span class="co1">// si potrebbe fare lo stesso con: bitset&lt;8&gt; bs2; bs2 = (long) 131;</span>
+&nbsp;
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;bs2 è: &quot;</span> <span class="sy1">&lt;&lt;</span> bs2 <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+   <span class="co1">// shift del bitset di 4 posizioni</span>
+   bs2 <span class="sy1">&lt;&lt;=</span> <span class="nu0">4</span><span class="sy4">;</span>
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;ora bs2 è &quot;</span> <span class="sy1">&lt;&lt;</span> bs2 <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
+<p>
+Quando il codice gira stampa:
+</p>
+<pre class="code">
+ bs2 è 10000011
+ ora bs2 è 00110000</pre>
+</div>
+</div>
+</body>
+</html>

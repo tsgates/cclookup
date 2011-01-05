@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it"
+ lang="it" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>it:c:other:rand</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:08-0700" />
+<meta name="keywords" content="it,c,other,rand" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/it/c/other/rand?do=index" title="Indice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=it:c:other" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/it/c/other/rand" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/it/c/other/rand" />
+<link rel="canonical" href="rand" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='it:c:other';var JSINFO = {"id":"it:c:other:rand","namespace":"it:c:other"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="rand" id="rand">rand</a></h2>
+<div class="level2">
+
+<p>
+Prototipo:
+</p>
+<pre class="cpp code cpp">  <span class="co2">#include &lt;cstdlib&gt;</span>
+&nbsp;
+  <span class="kw4">int</span> <span class="kw3">rand</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+La funzione <strong>rand()</strong> ritorna un valore numerico intero pseudocasuale compreso tra zero e RAND_MAX.
+</p>
+
+<p>
+Esempio:
+</p>
+<pre class="cpp code cpp">  <span class="kw3">srand</span><span class="br0">&#40;</span> <span class="kw3">time</span><span class="br0">&#40;</span><span class="kw2">NULL</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+  <span class="kw1">for</span><span class="br0">&#40;</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;=</span> <span class="nu0">10</span><span class="sy4">;</span> i<span class="sy2">++</span><span class="br0">&#41;</span>
+    <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Numero Pseudocasuale #&quot;</span> <span class="sy1">&lt;&lt;</span> i <span class="sy1">&lt;&lt;</span> <span class="kw3">rand</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
+<p>
+<strong>Nota:</strong> Non usare % (modulo) per limitare la generazione dei numeri, altrimenti la casualità verrà di molto ridotta.
+</p>
+
+<p>
+Per generare numeri pseudocasuali in un intervallo compreso tra 0 e <em>n</em> (con <em>n</em> deciso dal programmatore), si utilizzi un codice simile a questo:
+</p>
+<pre class="cpp code cpp">  <span class="co1">// L'uso di letterali numerici reali è importante, in quanto l'utilizzo di</span>
+  <span class="co1">// interi potrebbe generare un errore di overflow quando viene aggiunto l'1.</span>
+&nbsp;
+  <span class="kw4">int</span> numeriCasuali<span class="br0">&#40;</span><span class="kw4">int</span> max<span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// La funzione corretta per generare numeri nell'intervallo chiuso [0,max]</span>
+    <span class="br0">&#123;</span>
+       <span class="co1">// Scala di intervallo [0,1].</span>
+       <span class="kw4">const</span> <span class="kw4">float</span> scala <span class="sy1">=</span> <span class="kw3">rand</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy2">/</span> <span class="kw4">float</span><span class="br0">&#40;</span><span class="kw2">RAND_MAX</span><span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+       <span class="co1">// Ritorna l'intervallo [0,max].</span>
+       <span class="kw1">return</span> <span class="kw4">int</span><span class="br0">&#40;</span>scala <span class="sy2">*</span> max <span class="sy2">+</span> <span class="nu16">0.5</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// Opera un cast implicito e tronca un'eventuale decimale in intero.</span>
+    <span class="br0">&#125;</span></pre>
+<p>
+Argomenti correlati: <a href="http://www.cppreference.com/wiki/it/c/other/srand" class="wikilink2" title="it:c:other:srand" rel="nofollow">srand</a>
+
+</p>
+
+</div>
+</div>
+</body>
+</html>

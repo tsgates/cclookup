@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="tr"
+ lang="tr" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>tr:keywords:while</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:27-0700" />
+<meta name="keywords" content="tr,keywords,while" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/tr/keywords/while?do=index" title="İndeks" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=tr:keywords" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/tr/keywords/while" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/tr/keywords/while" />
+<link rel="canonical" href="while" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='tr:keywords';var JSINFO = {"id":"tr:keywords:while","namespace":"tr:keywords"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<p>
+While dögüsü yaklaşık olarak tekrar anlamına gelir.Şimdi bunu örnekler üzerinde inceliyelim.
+
+</p>
+<pre class="code">#include &lt;iostream&gt;
+using namespace std;
+int main(){
+int x, y;
+cout &lt;&lt; &quot; X&#039;e deger verin = &quot;;
+            cin &gt;&gt; x;
+cout &lt;&lt; &quot; Y&#039;e deger verin = &quot;;
+            cin &gt;&gt; y;
+while (x == y){
+           cout &lt;&lt; &quot; While&#039;ın içineyim &quot;;
+  }
+        cout &lt;&lt; &quot; While&#039;dan ciktim &quot;;
+
+system(&quot;PAUSE&quot;);
+  return EXIT_SUCCESS;
+}</pre>
+
+<p>
+ Eğer bu kodu yazarsak ve X&#039;e Y&#039;den daha büyük bir değer verirsek böyle olur ;
+</p>
+<pre class="code">While&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyimWhile&#039;ın icindeyim</pre>
+
+<p>
+Böyle saçma bir ekran yani ardarda gelirdi :)
+</p>
+
+<p>
+Eğer küçük olsaydı
+
+</p>
+<pre class="code"> While&#039;dan ciktim</pre>
+
+<p>
+
+Bundan yola çıkarak birşeyler yapabilirsiniz :)
+</p>
+<pre class="code"> while(Bir işlem){
+ İşlem doğruysa tekrarlanıcaklar ...
+ }</pre>
+</div>
+</body>
+</html>

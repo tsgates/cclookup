@@ -4,61 +4,115 @@
  lang="en" dir="ltr">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>stl:vector:back</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
+  <title>container:vector:back</title>
+<meta name="generator" content="DokuWiki" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2008-10-14T15:42:10-0700" />
-<meta name="keywords" content="stl,vector,back" />
+<meta name="date" content="2010-11-07T16:15:36-0800" />
+<meta name="keywords" content="container,vector,back" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/stl/vector/back?do=index" title="Index" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/container/vector/back?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
-<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=stl:vector" />
-<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/stl/vector/back" />
-<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/stl/vector/back" />
-<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=container:vector" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/container/vector/back" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/container/vector/back" />
+<link rel="canonical" href="back" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='container:vector';var JSINFO = {"id":"container:vector:back","namespace":"container:vector"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
 
+<ul class="toc">
+<li class="clear">
 
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="back#vectorback" class="toc">vector::back</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="back#parameters" class="toc">Parameters</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="back#return_value" class="toc">Return value</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="back#example" class="toc">Example</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="back#complexity" class="toc">Complexity</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="back#see_also" class="toc">See also</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
 
-<h2><a name="back" id="back">back</a></h2>
+<h2 class="sectionedit1"><a name="vectorback" id="vectorback">vector::back</a></h2>
 <div class="level2">
+<pre class="cpp code cpp">reference back<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+const_reference back<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span></pre>
+<p>
+Returns a reference to the last element in the container.
+</p>
+
+</div>
+<!-- EDIT1 SECTION "vector::back" [1-146] -->
+<h3 class="sectionedit2"><a name="parameters" id="parameters">Parameters</a></h3>
+<div class="level3">
 
 <p>
-Syntax:
+
+(none)
 </p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;vector&gt;</span>
-    TYPE<span class="sy0">&amp;</span> back<span class="br0">&#40;</span><span class="br0">&#41;</span>;
-    <span class="kw4">const</span> TYPE<span class="sy0">&amp;</span> back<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw4">const</span>;</pre>
+
+</div>
+<!-- EDIT2 SECTION "Parameters" [147-174] -->
+<h3 class="sectionedit3"><a name="return_value" id="return_value">Return value</a></h3>
+<div class="level3">
+
 <p>
-The back() function returns a reference to the last element in the vector.
-For example:
+
+reference to the last element
 </p>
-<pre class="c code c++" style="font-family:monospace;">   vector<span class="sy0">&lt;</span>int<span class="sy0">&gt;</span> v;
-   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i <span class="sy0">=</span> <span class="nu19">0</span>; i <span class="sy0">&lt;</span> <span class="nu0">5</span>; i<span class="sy0">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
-     v.<span class="me1">push_back</span><span class="br0">&#40;</span>i<span class="br0">&#41;</span>;
+
+</div>
+<!-- EDIT3 SECTION "Return value" [175-227] -->
+<h3 class="sectionedit4"><a name="example" id="example">Example</a></h3>
+<div class="level3">
+<pre class="cpp code cpp">   vector<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> v<span class="sy4">;</span>
+   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">5</span><span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     v.<span class="me1">push_back</span><span class="br0">&#40;</span>i<span class="br0">&#41;</span><span class="sy4">;</span>
    <span class="br0">&#125;</span>
-   <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;The first element is &quot;</span> <span class="sy0">&lt;&lt;</span> v.<span class="me1">front</span><span class="br0">&#40;</span><span class="br0">&#41;</span>
-        <span class="sy0">&lt;&lt;</span> <span class="st0">&quot; and the last element is &quot;</span> <span class="sy0">&lt;&lt;</span> v.<span class="me1">back</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy0">&lt;&lt;</span> endl;</pre>
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;The first element is &quot;</span> <span class="sy1">&lt;&lt;</span> v.<span class="me1">front</span><span class="br0">&#40;</span><span class="br0">&#41;</span>
+        <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; and the last element is &quot;</span> <span class="sy1">&lt;&lt;</span> v.<span class="me1">back</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
 <p>
 This code produces the following output:
 </p>
 <pre class="code">
    The first element is 0 and the last element is 4</pre>
-<p>
-The back() function runs in <a href="../../complexity" class="wikilink1" title="complexity">constant time</a>.
-</p>
+</div>
+<!-- EDIT4 SECTION "Example" [228-565] -->
+<h3 class="sectionedit5"><a name="complexity" id="complexity">Complexity</a></h3>
+<div class="level3">
 
 <p>
-Related Topics: <a href="front" class="wikilink1" title="stl:vector:front">front</a>, <a href="pop_back" class="wikilink1" title="stl:vector:pop_back">pop_back</a>
+
+constant
 </p>
 
 </div>
-<!-- SECTION "back" [3-] --></div>
+<!-- EDIT5 SECTION "Complexity" [566-595] -->
+<h3 class="sectionedit6"><a name="see_also" id="see_also">See also</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="front" class="wikilink1" title="container:vector:front">front</a>, <a href="pop_back" class="wikilink1" title="container:vector:pop_back">pop_back</a>
+</p>
+
+</div>
+<!-- EDIT6 SECTION "See also" [596-] --></div>
 </body>
 </html>

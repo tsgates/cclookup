@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr"
+ lang="fr" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>fr:io:c:ungetc</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:59-0700" />
+<meta name="keywords" content="fr,io,c,ungetc" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/fr/io/c/ungetc?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=fr:io:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/fr/io/c/ungetc" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/fr/io/c/ungetc" />
+<link rel="canonical" href="ungetc" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='fr:io:c';var JSINFO = {"id":"fr:io:c:ungetc","namespace":"fr:io:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="ungetc" id="ungetc">ungetc</a></h2>
+<div class="level2">
+
+<p>
+Syntaxe :
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cstdio&gt;</span>
+    <span class="kw4">int</span> <span class="kw3">ungetc</span><span class="br0">&#40;</span><span class="kw4">int</span> c, <span class="kw4">FILE</span> <span class="sy2">*</span>flux<span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+La fonction <code>ungetc()</code> remet le caractère <code>c</code> dans le <code>flux</code>. La prochaine opération de
+lecture sur ce <code>flux</code> renverra donc ce caractère.
+</p>
+
+<p>
+Plusieurs appels successifs à <code>ungetc()</code> peuvent être effectués et les caractères
+“renvoyés” dans le <code>flux</code> seront lus dans l&#039;ordre inverse de leur insertion.
+</p>
+
+<p>
+Le fichier éventuellement associé au flux n&#039;est pas modifié, et à un appel à <code><a href="fseek" class="wikilink1" title="fr:io:c:fseek">fseek()</a></code>,
+<code><a href="rewind" class="wikilink1" title="fr:io:c:rewind">rewind()</a></code> ou <code><a href="fsetpos" class="wikilink1" title="fr:io:c:fsetpos">fsetpos()</a></code> “supprime” tout les caractères envoyés à
+ce <code>flux</code> et encore non lus.
+</p>
+
+<p>
+La valeur de retour de <code>ungetc()</code> est le caractère remis dans le <code>flux</code>
+ou <code><acronym title="End of file">EOF</acronym></code> en cas d&#039;erreur.
+</p>
+
+<p>
+Sujets connexes : <a href="getc" class="wikilink1" title="fr:io:c:getc">getc</a>, <a href="http://www.cppreference.com/wiki/fr/io/putback" class="wikilink2" title="fr:io:putback" rel="nofollow">(C++ I/O) putback</a>
+
+</p>
+
+</div>
+</div>
+</body>
+</html>

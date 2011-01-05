@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:numeric:c:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:23-0700" />
+<meta name="keywords" content="jp,numeric,c,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/numeric/c/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp:numeric:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/numeric/c/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/numeric/c/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp:numeric:c';var JSINFO = {"id":"jp:numeric:c:start","namespace":"jp:numeric:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="標準c_数学" id="標準c_数学">標準C 数学</a></h1>
+<div class="level1">
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="abs" class="wikilink1" title="jp:numeric:c:abs">abs</a></td><td class="col1">絶対値</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="acos" class="wikilink1" title="jp:numeric:c:acos">acos</a></td><td class="col1">アークコサイン</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="asin" class="wikilink1" title="jp:numeric:c:asin">asin</a></td><td class="col1">アークサイン</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="atan" class="wikilink1" title="jp:numeric:c:atan">atan</a></td><td class="col1">アークタンジェント</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="atan2" class="wikilink1" title="jp:numeric:c:atan2">atan2</a></td><td class="col1">アークタンジェント。符号は4象限を決定するために使われます</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="ceil" class="wikilink1" title="jp:numeric:c:ceil">ceil</a></td><td class="col1">与えられた数を下回らない最小の整数を返却します</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="cos" class="wikilink1" title="jp:numeric:c:cos">cos</a></td><td class="col1">コサイン</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="cosh" class="wikilink1" title="jp:numeric:c:cosh">cosh</a></td><td class="col1">ハイパボリックコサイン</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="div" class="wikilink1" title="jp:numeric:c:div">div</a></td><td class="col1">除算の商と余りを返却します</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="exp" class="wikilink1" title="jp:numeric:c:exp">exp</a></td><td class="col1">eの与えられた数によるべき乗を返却します</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="fabs" class="wikilink1" title="jp:numeric:c:fabs">fabs</a></td><td class="col1">浮動小数点の絶対値を返却します</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="floor" class="wikilink1" title="jp:numeric:c:floor">floor</a></td><td class="col1">与えられた数を超えない最大の整数を返却します</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><a href="fmod" class="wikilink1" title="jp:numeric:c:fmod">fmod</a></td><td class="col1">剰余を返却します</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><a href="frexp" class="wikilink1" title="jp:numeric:c:frexp">frexp</a></td><td class="col1">数を科学的表記に分解します</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><a href="labs" class="wikilink1" title="jp:numeric:c:labs">labs</a></td><td class="col1">長整数型の絶対値を返却します</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><a href="ldexp" class="wikilink1" title="jp:numeric:c:ldexp">ldexp</a></td><td class="col1">科学的表記された数を計算します</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><a href="ldiv" class="wikilink1" title="jp:numeric:c:ldiv">ldiv</a></td><td class="col1">調整数表現における、除算の商と余りを返却します</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><a href="log" class="wikilink1" title="jp:numeric:c:log">log</a></td><td class="col1">自然対数 (eを底とする)</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"><a href="log10" class="wikilink1" title="jp:numeric:c:log10">log10</a></td><td class="col1">常用対数 (10を底とする)</td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"><a href="modf" class="wikilink1" title="jp:numeric:c:modf">modf</a></td><td class="col1">数を整数部と小数部に分解します</td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"><a href="pow" class="wikilink1" title="jp:numeric:c:pow">pow</a></td><td class="col1">与えられた数を別の数でべき乗にした値を返却します</td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"><a href="sin" class="wikilink1" title="jp:numeric:c:sin">sin</a></td><td class="col1">サイン</td>
+	</tr>
+	<tr class="row22">
+		<td class="col0"><a href="sinh" class="wikilink1" title="jp:numeric:c:sinh">sinh</a></td><td class="col1">ハイパボリックサイン</td>
+	</tr>
+	<tr class="row23">
+		<td class="col0"><a href="sqrt" class="wikilink1" title="jp:numeric:c:sqrt">sqrt</a></td><td class="col1">平方根</td>
+	</tr>
+	<tr class="row24">
+		<td class="col0"><a href="tan" class="wikilink1" title="jp:numeric:c:tan">tan</a></td><td class="col1">タンジェント</td>
+	</tr>
+	<tr class="row25">
+		<td class="col0"><a href="tanh" class="wikilink1" title="jp:numeric:c:tanh">tanh</a></td><td class="col1">ハイパボリックタンジェント</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [37-1331] -->
+</div>
+
+<h5><a name="gccでのコンパイル" id="gccでのコンパイル">gccでのコンパイル</a></h5>
+<div class="level5">
+
+<p>
+
+上記関数のうちいくつかを使用するために、ある種のバージョンのgccコンパイラでは<code>-lm</code>コマンドラインオプションで数学ライブラリを明示的にリンクする必要があります。
+</p>
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn"
+ lang="cn" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>cn:io:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:53-0700" />
+<meta name="keywords" content="cn,io,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/cn/io/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=cn:io" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/cn/io/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/cn/io/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='cn:io';var JSINFO = {"id":"cn:io:start","namespace":"cn:io"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<p>
+<strong>C++ I/O</strong>
+</p>
+
+<p>
+&lt;iostream&gt;库自动定义了一些标准对象:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> cout, ostream类的一个对象，可以将数据显示在标准输出设备上. </div>
+</li>
+<li class="level1"><div class="li"> cerr, ostream类的另一个对象，它无缓冲地向标准错误输出设备输出数据. </div>
+</li>
+<li class="level1"><div class="li"> clog, 类似cerr,但是它使用缓冲输出. </div>
+</li>
+<li class="level1"><div class="li"> cin, istream类的一个对象,它用于从标准输入设备读取数据. </div>
+</li>
+</ul>
+
+<p>
+&lt;fstream&gt;库允许编程人员利用ifstream和ofstream类进行文件输入和输出. 
+</p>
+
+<p>
+一些C++ I/O流(精度，判断等)的行为可以通过操作不同的标志来修改。
+</p>
+
+<p>
+Constructors 构造器
+</p>
+<ul>
+<li class="level1"><div class="li"> bad() 如果出现错误则返回true </div>
+</li>
+<li class="level1"><div class="li"> clear() 清除状态标志 </div>
+</li>
+<li class="level1"><div class="li"> close() 关闭一个流 </div>
+</li>
+<li class="level1"><div class="li"> eof() 如果处于文件结尾处则返回true </div>
+</li>
+<li class="level1"><div class="li"> fail() 如果出现错误则返回true </div>
+</li>
+<li class="level1"><div class="li"> fill() 控制默认填充字符 </div>
+</li>
+<li class="level1"><div class="li"> flags() 操作flags </div>
+</li>
+<li class="level1"><div class="li"> flush() 清空缓冲区 </div>
+</li>
+<li class="level1"><div class="li"> gcount() 返回读取的最后一次输入的字符数 </div>
+</li>
+<li class="level1"><div class="li"> get() 读取字符 </div>
+</li>
+<li class="level1"><div class="li"> getline() 读取一行字符 </div>
+</li>
+<li class="level1"><div class="li"> good() 如果没有出现过错误则返回true </div>
+</li>
+<li class="level1"><div class="li"> ignore() 读取字符并忽略指定字符 </div>
+</li>
+<li class="level1"><div class="li"> open() 创建一个输入流 </div>
+</li>
+<li class="level1"><div class="li"> peek() 检查下一个输入的字符 </div>
+</li>
+<li class="level1"><div class="li"> precision() 设置精度 </div>
+</li>
+<li class="level1"><div class="li"> put() 写字符 </div>
+</li>
+<li class="level1"><div class="li"> putback() 返回字符给一个流 </div>
+</li>
+<li class="level1"><div class="li"> rdstate() 返回流的状态 </div>
+</li>
+<li class="level1"><div class="li"> read() 读取字条符 </div>
+</li>
+<li class="level1"><div class="li"> seekg() 在一个输入流中进行随机访问 </div>
+</li>
+<li class="level1"><div class="li"> seekp() 在一个输出流中进行随机访问 </div>
+</li>
+<li class="level1"><div class="li"> setf() 设置格式标志 </div>
+</li>
+<li class="level1"><div class="li"> sync_with_stdio() 同标准I/O同步 </div>
+</li>
+<li class="level1"><div class="li"> tellg() 使用输入流读取流指针 </div>
+</li>
+<li class="level1"><div class="li"> tellp() 使用输出流读取流指针 </div>
+</li>
+<li class="level1"><div class="li"> unsetf() 清除格式标志 </div>
+</li>
+<li class="level1"><div class="li"> width() 操作域宽度 </div>
+</li>
+<li class="level1"><div class="li"> write() 写字符 </div>
+</li>
+</ul>
+</div>
+</body>
+</html>

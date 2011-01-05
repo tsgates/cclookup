@@ -5,46 +5,43 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>string:clear</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="generator" content="DokuWiki" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2008-10-14T15:42:11-0700" />
+<meta name="date" content="2010-11-10T16:29:57-0800" />
 <meta name="keywords" content="string,clear" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/string/clear?do=index" title="Index" />
+<link rel="start" href="../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/string/clear?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
 <link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=string" />
 <link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/string/clear" />
 <link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/string/clear" />
-<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="canonical" href="clear" />
+<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='string';var JSINFO = {"id":"string:clear","namespace":"string"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
 
-
-
-<h2><a name="clear" id="clear">clear</a></h2>
+<h2 class="sectionedit1"><a name="page_redirected_auto" id="page_redirected_auto">Page redirected (auto)</a></h2>
 <div class="level2">
-
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="../redirect" class="wikilink1" title="redirect">redirect</a></td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [34-49] -->
 <p>
-Syntax:
-</p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;string&gt;</span>
-    <span class="kw4">void</span> clear<span class="br0">&#40;</span><span class="br0">&#41;</span>;</pre>
-<p>
 
-The function clear() deletes all of the elements in the string. clear() runs in
-<a href="../complexity" class="wikilink1" title="complexity">linear time</a>.
+See <a href="basic_string/clear" class="wikilink1" title="string:basic_string:clear"> this</a>
 </p>
-
-<p>
-Related Topics: <a href="http://www.cppreference.com/wiki/string/c_lists_erase" class="wikilink2" title="string:c_lists_erase" rel="nofollow">(C++ Lists) erase</a>
-</p>
-
+<div class="noteredirect">This page has been moved, the new location is <a href="basic_string/clear" class="wikilink1" title="string:basic_string:clear">basic_string::clear</a>.</div>
 </div>
-<!-- SECTION "clear" [3-] --></div>
+</div>
 </body>
 </html>

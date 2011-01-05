@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="tw"
+ lang="tw" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>tw:preprocessor:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-11-10T03:12:43-0800" />
+<meta name="keywords" content="tw,preprocessor,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/tw/preprocessor/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=tw:preprocessor" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/tw/preprocessor/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/tw/preprocessor/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='tw:preprocessor';var JSINFO = {"id":"tw:preprocessor:start","namespace":"tw:preprocessor"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="preprocessor_commands" id="preprocessor_commands">Preprocessor Commands</a></h2>
+<div class="level2">
+
+<p>
+
+The C++ preprocessor runs before any other compilation happens.  Commands given to the preprocessor allow the programmer to define variables, perform text substitution, and test simple conditions.
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/preprocessor/sharp" class="wikilink2" title="tw:preprocessor:sharp" rel="nofollow"># and ##</a></td><td class="col1">manipulate strings</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/preprocessor/define" class="wikilink2" title="tw:preprocessor:define" rel="nofollow">#define</a></td><td class="col1">定義巨集</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/preprocessor/error" class="wikilink2" title="tw:preprocessor:error" rel="nofollow">#error</a></td><td class="col1">顯示一個錯誤訊息</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/preprocessor/preprocessor_if" class="wikilink2" title="tw:preprocessor:preprocessor_if" rel="nofollow">#if, #ifdef, #ifndef, #else, #elif, and #endif</a></td><td class="col1">條件式編譯</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/preprocessor/include" class="wikilink2" title="tw:preprocessor:include" rel="nofollow">#include</a></td><td class="col1">插入其他檔案的內容(通常是載入附檔名為.h的標頭檔)</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/preprocessor/line" class="wikilink2" title="tw:preprocessor:line" rel="nofollow">#line</a></td><td class="col1">set line and file information</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/preprocessor/pragma" class="wikilink2" title="tw:preprocessor:pragma" rel="nofollow">#pragma</a></td><td class="col1">implementation specific command</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/preprocessor/undef" class="wikilink2" title="tw:preprocessor:undef" rel="nofollow">#undef</a></td><td class="col1">取消已定義的巨集</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/preprocessor/preprocessor_vars" class="wikilink2" title="tw:preprocessor:preprocessor_vars" rel="nofollow">Predefined preprocessor variables</a></td><td class="col1">miscellaneous preprocessor variables</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [233-768] -->
+</div>
+</div>
+</body>
+</html>

@@ -5,35 +5,37 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>tr:io:getline</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="generator" content="DokuWiki" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2009-07-07T06:04:39-0700" />
+<meta name="date" content="2010-10-28T18:17:26-0700" />
 <meta name="keywords" content="tr,io,getline" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../../index.html" />
+<link rel="start" href="../../../index.html" />
 <link rel="contents" href="http://www.cppreference.com/wiki/tr/io/getline?do=index" title="İndeks" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
 <link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=tr:io" />
 <link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/tr/io/getline" />
 <link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/tr/io/getline" />
-<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="canonical" href="getline" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='tr:io';var JSINFO = {"id":"tr:io:getline","namespace":"tr:io"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
 
-
-
-<h2><a name="getline" id="getline">getline</a></h2>
+<h2 class="sectionedit1"><a name="getline" id="getline">getline</a></h2>
 <div class="level2">
 
 <p>
 Sözdizimi:
 </p>
-<pre class="c code c++" style="font-family:monospace;">    istream<span class="sy0">&amp;</span> istream<span class="sy0">::</span><span class="me2">getline</span><span class="br0">&#40;</span> <span class="kw4">char</span><span class="sy0">*</span> tampon<span class="sy0">,</span> streamsize num <span class="br0">&#41;</span>;
-    istream<span class="sy0">&amp;</span> istream<span class="sy0">::</span><span class="me2">getline</span><span class="br0">&#40;</span> <span class="kw4">char</span><span class="sy0">*</span> tampon<span class="sy0">,</span> streamsize num<span class="sy0">,</span> <span class="kw4">char</span> ayrac <span class="br0">&#41;</span>;</pre>
+<pre class="cpp code cpp">    istream<span class="sy3">&amp;</span> istream<span class="sy4">::</span><span class="me2">getline</span><span class="br0">&#40;</span> <span class="kw4">char</span><span class="sy2">*</span> tampon, streamsize num <span class="br0">&#41;</span><span class="sy4">;</span>
+    istream<span class="sy3">&amp;</span> istream<span class="sy4">::</span><span class="me2">getline</span><span class="br0">&#40;</span> <span class="kw4">char</span><span class="sy2">*</span> tampon, streamsize num, <span class="kw4">char</span> ayrac <span class="br0">&#41;</span><span class="sy4">;</span></pre>
 <p>
 get() fonksiyonu giriş akımlarıyla kullanılır. char ayrac parametresi olmayan biçimi, ayraç olarak yeni satır karakterini kullanır. getline() aşağıdaki durumlardan biri gerçekleşene kadar tampon belleğe karakterleri okur:
 
@@ -55,13 +57,13 @@ Ayraç karakteri (normalde yeni satır) okunmadığında, giriş akımı <a href
 <p>
 Örneğin, aşağıdaki kod getline fonksiyonunu kullanarak bir metin dosyasının ilk 99 karakterini (bir karakter sonlandırma karakteri olarak ayrılmıştır) veya tek tek her bir satırını –hangisi daha önce gerçekleşirse– ekrana gösterir. (<acronym title="End of file">EOF</acronym> gelene veya 99 karakterden uzun bir satırla karşılaşılana kadar):
 </p>
-<pre class="c code c++" style="font-family:monospace;">    ifstream fin<span class="br0">&#40;</span><span class="st0">&quot;tmp.dat&quot;</span><span class="br0">&#41;</span>;
+<pre class="cpp code cpp">    ifstream fin<span class="br0">&#40;</span><span class="st0">&quot;tmp.dat&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
 &nbsp;
-    <span class="kw4">int</span> MAX_LENGTH <span class="sy0">=</span> <span class="nu0">100</span>;
-    <span class="kw4">char</span> satir<span class="br0">&#91;</span>MAX_LENGTH<span class="br0">&#93;</span>;
+    <span class="kw4">int</span> MAX_LENGTH <span class="sy1">=</span> <span class="nu0">100</span><span class="sy4">;</span>
+    <span class="kw4">char</span> satir<span class="br0">&#91;</span>MAX_LENGTH<span class="br0">&#93;</span><span class="sy4">;</span>
 &nbsp;
-    <span class="kw1">while</span><span class="br0">&#40;</span> fin.<span class="me1">getline</span><span class="br0">&#40;</span>satir<span class="sy0">,</span> MAX_LENGTH<span class="br0">&#41;</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
-      <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;okunan satir: &quot;</span> <span class="sy0">&lt;&lt;</span> satir <span class="sy0">&lt;&lt;</span> endl;
+    <span class="kw1">while</span><span class="br0">&#40;</span> fin.<span class="me1">getline</span><span class="br0">&#40;</span>satir, MAX_LENGTH<span class="br0">&#41;</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+      <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;okunan satir: &quot;</span> <span class="sy1">&lt;&lt;</span> satir <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
     <span class="br0">&#125;</span></pre>
 <p>
 Eğer dosyadan satırları karakter dizileri yerine string nesnelerine doğrudan okumak istiyorsanız, <a href="../../string/getline" class="wikilink1" title="string:getline">string getline</a> fonksiyonunu kullanabilirsiniz.
@@ -76,6 +78,6 @@ Microsoft derleyicisi kullananlar getline&#039;ın bir karakter fazladan okumas�
 </p>
 
 </div>
-<!-- SECTION "getline" [3-] --></div>
+<!-- EDIT1 SECTION "getline" [3-] --></div>
 </body>
 </html>

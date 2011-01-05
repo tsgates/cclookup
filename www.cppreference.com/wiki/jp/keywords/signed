@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:keywords:signed</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:20-0700" />
+<meta name="keywords" content="jp,keywords,signed" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/keywords/signed?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp:keywords" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/keywords/signed" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/keywords/signed" />
+<link rel="canonical" href="signed" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp:keywords';var JSINFO = {"id":"jp:keywords:signed","namespace":"jp:keywords"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="signed" id="signed">signed</a></h2>
+<div class="level2">
+
+<p>
+
+signedキーワードはデータ型の修飾子です。通常はsigned char型の宣言をするときに使用されます。詳しくは<a href="../data_types" class="wikilink1" title="jp:data_types">データ型</a>のページを参照してください。
+</p>
+
+<p>
+関連トピック: <a href="bool" class="wikilink1" title="jp:keywords:bool">bool</a>, <a href="char" class="wikilink1" title="jp:keywords:char">char</a>, <a href="double" class="wikilink1" title="jp:keywords:double">double</a>, <a href="float" class="wikilink1" title="jp:keywords:float">float</a>, <a href="int" class="wikilink1" title="jp:keywords:int">int</a>, <a href="long" class="wikilink1" title="jp:keywords:long">long</a>, <a href="short" class="wikilink1" title="jp:keywords:short">short</a>, <a href="unsigned" class="wikilink1" title="jp:keywords:unsigned">unsigned</a>, <a href="void" class="wikilink1" title="jp:keywords:void">void</a>, <a href="wchar_t" class="wikilink1" title="jp:keywords:wchar_t">wchar_t</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

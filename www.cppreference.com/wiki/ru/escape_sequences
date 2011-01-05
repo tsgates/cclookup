@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru"
+ lang="ru" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>ru:escape_sequences</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:13-0700" />
+<meta name="keywords" content="ru,escape_sequences" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/ru/escape_sequences?do=index" title="Все страницы" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=ru" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/ru/escape_sequences" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/ru/escape_sequences" />
+<link rel="canonical" href="escape_sequences" />
+<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='ru';var JSINFO = {"id":"ru:escape_sequences","namespace":"ru"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="символьные_литералы" id="символьные_литералы">Символьные литералы</a></h2>
+<div class="level2">
+
+<p>
+Следующие последовательности символов, используються для определения некоторых специальных символов
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<th class="col0 centeralign">  Символьный литерал  </th><th class="col1 centeralign">  Описание  </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">%%</td><td class="col1">Знак процента</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">\&#039;</td><td class="col1">Знак апострофа</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">\»</td><td class="col1">Знак дюйма (цитата)</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">\\</td><td class="col1">Обратный слеш</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0">\nnn</td><td class="col1">Восьмеричное число (nnn)</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0">\0</td><td class="col1">Не печатный символ Null (на самом деле это восьмеричный ноль)</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0">\a</td><td class="col1">Звуковой сигнал</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0">\b</td><td class="col1">Бэкспейс</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0">\f</td><td class="col1">Перевод страницы</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0">\n</td><td class="col1">Перевод строки</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0">\r</td><td class="col1">Возврат коретки</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0">\t</td><td class="col1">Горизонтальная табуляция</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0">\v</td><td class="col1">Вертикальная табуляция</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0">\xnnn</td><td class="col1">Шестнадцатеричное число (nnn)</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [239-922] -->
+<p>
+
+Пример кода
+
+</p>
+<pre class="cpp code cpp">    <span class="kw3">printf</span><span class="br0">&#40;</span><span class="st0">&quot;Hello world<span class="es1">\n</span>&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw3">printf</span><span class="br0">&#40;</span><span class="st0">&quot;<span class="es1">\'</span> <span class="es1">\&quot;</span><span class="es1">\n</span>T<span class="es1">\n</span>E<span class="es1">\n</span>X<span class="es1">\n</span>T<span class="es1">\n</span><span class="es1">\n</span>Bye,<span class="es1">\f</span> world&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+На выводе
+
+</p>
+<pre class="code">
+Hello world
+' "
+T
+E
+X
+T
+
+Bye,
+     world</pre>
+</div>
+</div>
+</body>
+</html>

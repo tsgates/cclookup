@@ -4,38 +4,61 @@
  lang="en" dir="ltr">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>stl:algorithm:sort</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
+  <title>algorithm:sort</title>
+<meta name="generator" content="DokuWiki" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2009-05-05T05:05:30-0700" />
-<meta name="keywords" content="stl,algorithm,sort" />
+<meta name="date" content="2010-10-28T18:18:12-0700" />
+<meta name="keywords" content="algorithm,sort" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/stl/algorithm/sort?do=index" title="Index" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/algorithm/sort?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
-<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=stl:algorithm" />
-<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/stl/algorithm/sort" />
-<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/stl/algorithm/sort" />
-<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=algorithm" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/algorithm/sort" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/algorithm/sort" />
+<link rel="canonical" href="sort" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='algorithm';var JSINFO = {"id":"algorithm:sort","namespace":"algorithm"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
 
+<ul class="toc">
+<li class="clear">
 
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="sort#sort" class="toc">sort</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="sort#parameters" class="toc">Parameters</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="sort#return_value" class="toc">Return value</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="sort#example" class="toc">Example</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="sort#complexity" class="toc">Complexity</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="sort#see_also" class="toc">See also</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
 
-<h2><a name="sort" id="sort">sort</a></h2>
+<h2 class="sectionedit1"><a name="sort" id="sort">sort</a></h2>
 <div class="level2">
 
 <p>
 
 Syntax:
 </p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;algorithm&gt;</span>
-    <span class="kw4">void</span> sort<span class="br0">&#40;</span> iterator start<span class="sy0">,</span> iterator end <span class="br0">&#41;</span>;
-    <span class="kw4">void</span> sort<span class="br0">&#40;</span> iterator start<span class="sy0">,</span> iterator end<span class="sy0">,</span> StrictWeakOrdering cmp <span class="br0">&#41;</span>;</pre>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;algorithm&gt;</span>
+    <span class="kw4">void</span> sort<span class="br0">&#40;</span> random_iterator start, random_iterator end <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">void</span> sort<span class="br0">&#40;</span> random_iterator start, random_iterator end, StrictWeakOrdering cmp <span class="br0">&#41;</span><span class="sy4">;</span></pre>
 <p>
 The sort() algorithm sorts the elements in the range <code>[start,end)</code> into ascending
 order. If two elements are equal, there is no guarantee what order they will be
@@ -55,34 +78,60 @@ slower than <a href="../../complexity" class="wikilink1" title="complexity">line
 
 <p>
 Note that sort() will only work with random access iterators. So you cannot use
-sort() on the iterators of a “list” (linked list). Instead, you should use list&#039;s
-own <a href="../list/sort" class="wikilink1" title="stl:list:sort">sort</a> method to sort it instead.
+sort() on the iterators of a “list” (linked list); you should use list&#039;s
+own <a href="http://www.cppreference.com/wiki/list/sort" class="wikilink2" title="list:sort" rel="nofollow">sort</a> method to sort it instead.
 </p>
 
+</div>
+<!-- EDIT1 SECTION "sort" [1-918] -->
+<h3 class="sectionedit2"><a name="parameters" id="parameters">Parameters</a></h3>
+<div class="level3">
+
 <p>
-For example, the following code sorts a vector of integers into ascending
+
+todo
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Parameters" [919-944] -->
+<h3 class="sectionedit3"><a name="return_value" id="return_value">Return value</a></h3>
+<div class="level3">
+
+<p>
+
+todo
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Return value" [945-972] -->
+<h3 class="sectionedit4"><a name="example" id="example">Example</a></h3>
+<div class="level3">
+
+<p>
+
+The following code sorts a vector of integers into ascending
 order:
 </p>
-<pre class="c code c++" style="font-family:monospace;">   vector<span class="sy0">&lt;</span>int<span class="sy0">&gt;</span> v;
-   v.<span class="me1">push_back</span><span class="br0">&#40;</span> <span class="nu0">23</span> <span class="br0">&#41;</span>;
-   v.<span class="me1">push_back</span><span class="br0">&#40;</span> <span class="sy0">-</span><span class="nu0">1</span> <span class="br0">&#41;</span>;
-   v.<span class="me1">push_back</span><span class="br0">&#40;</span> <span class="nu0">9999</span> <span class="br0">&#41;</span>;
-   v.<span class="me1">push_back</span><span class="br0">&#40;</span> <span class="nu19">0</span> <span class="br0">&#41;</span>;
-   v.<span class="me1">push_back</span><span class="br0">&#40;</span> <span class="nu0">4</span> <span class="br0">&#41;</span>;
+<pre class="cpp code cpp">   vector<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> v<span class="sy4">;</span>
+   v.<span class="me1">push_back</span><span class="br0">&#40;</span> <span class="nu0">23</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+   v.<span class="me1">push_back</span><span class="br0">&#40;</span> <span class="sy2">-</span><span class="nu0">1</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+   v.<span class="me1">push_back</span><span class="br0">&#40;</span> <span class="nu0">9999</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+   v.<span class="me1">push_back</span><span class="br0">&#40;</span> <span class="nu0">0</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+   v.<span class="me1">push_back</span><span class="br0">&#40;</span> <span class="nu0">4</span> <span class="br0">&#41;</span><span class="sy4">;</span>
 &nbsp;
-   <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;Before sorting: &quot;</span>;
-   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">unsigned</span> <span class="kw4">int</span> i <span class="sy0">=</span> <span class="nu19">0</span>; i <span class="sy0">&lt;</span> v.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span>; i<span class="sy0">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
-     <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> v<span class="br0">&#91;</span>i<span class="br0">&#93;</span> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot; &quot;</span>;
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Before sorting: &quot;</span><span class="sy4">;</span>
+   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">unsigned</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> v.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> v<span class="br0">&#91;</span>i<span class="br0">&#93;</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; &quot;</span><span class="sy4">;</span>
    <span class="br0">&#125;</span>
-   <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> endl;
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
 &nbsp;
-   sort<span class="br0">&#40;</span> v.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">,</span> v.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span>;
+   sort<span class="br0">&#40;</span> v.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, v.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
 &nbsp;
-   <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;After sorting: &quot;</span>;
-   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">unsigned</span> <span class="kw4">int</span> i <span class="sy0">=</span> <span class="nu19">0</span>; i <span class="sy0">&lt;</span> v.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span>; i<span class="sy0">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
-     <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> v<span class="br0">&#91;</span>i<span class="br0">&#93;</span> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot; &quot;</span>;
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;After sorting: &quot;</span><span class="sy4">;</span>
+   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">unsigned</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> v.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> v<span class="br0">&#91;</span>i<span class="br0">&#93;</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; &quot;</span><span class="sy4">;</span>
    <span class="br0">&#125;</span>
-   <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> endl;</pre>
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
 <p>
 When run, the above code displays this output:
 </p>
@@ -93,57 +142,73 @@ When run, the above code displays this output:
 Alternatively, the following code uses the sort() function to sort a normal
 array of integers, and displays the same output as the previous example:
 </p>
-<pre class="c code c++" style="font-family:monospace;">   <span class="kw4">int</span> array<span class="br0">&#91;</span><span class="br0">&#93;</span> <span class="sy0">=</span> <span class="br0">&#123;</span> <span class="nu0">23</span><span class="sy0">,</span> <span class="sy0">-</span><span class="nu0">1</span><span class="sy0">,</span> <span class="nu0">9999</span><span class="sy0">,</span> <span class="nu19">0</span><span class="sy0">,</span> <span class="nu0">4</span> <span class="br0">&#125;</span>;
-   <span class="kw4">unsigned</span> <span class="kw4">int</span> array_size <span class="sy0">=</span> <span class="nu0">5</span>;
+<pre class="cpp code cpp">   <span class="kw4">int</span> array<span class="br0">&#91;</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="br0">&#123;</span> <span class="nu0">23</span>, <span class="sy2">-</span><span class="nu0">1</span>, <span class="nu0">9999</span>, <span class="nu0">0</span>, <span class="nu0">4</span> <span class="br0">&#125;</span><span class="sy4">;</span>
+   <span class="kw4">unsigned</span> <span class="kw4">int</span> array_size <span class="sy1">=</span> <span class="nu0">5</span><span class="sy4">;</span>
 &nbsp;
-   <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;Before sorting: &quot;</span>;
-   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">unsigned</span> <span class="kw4">int</span> i <span class="sy0">=</span> <span class="nu19">0</span>; i <span class="sy0">&lt;</span> array_size; i<span class="sy0">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
-     <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> array<span class="br0">&#91;</span>i<span class="br0">&#93;</span> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot; &quot;</span>;
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Before sorting: &quot;</span><span class="sy4">;</span>
+   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">unsigned</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> array_size<span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> array<span class="br0">&#91;</span>i<span class="br0">&#93;</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; &quot;</span><span class="sy4">;</span>
    <span class="br0">&#125;</span>
-   <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> endl;
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
 &nbsp;
-   sort<span class="br0">&#40;</span> array<span class="sy0">,</span> array <span class="sy0">+</span> array_size <span class="br0">&#41;</span>;
+   sort<span class="br0">&#40;</span> array, array <span class="sy2">+</span> array_size <span class="br0">&#41;</span><span class="sy4">;</span>
 &nbsp;
-   <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;After sorting: &quot;</span>;
-   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">unsigned</span> <span class="kw4">int</span> i <span class="sy0">=</span> <span class="nu19">0</span>; i <span class="sy0">&lt;</span> array_size; i<span class="sy0">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
-     <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> array<span class="br0">&#91;</span>i<span class="br0">&#93;</span> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot; &quot;</span>;
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;After sorting: &quot;</span><span class="sy4">;</span>
+   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">unsigned</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> array_size<span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> array<span class="br0">&#91;</span>i<span class="br0">&#93;</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; &quot;</span><span class="sy4">;</span>
    <span class="br0">&#125;</span>
-   <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> endl;</pre>
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
 <p>
 This next example shows how to use sort() with a user-specified comparison
 function. The function <code>cmp</code> is defined to do the opposite of the <code>&lt;</code> operator.
 When sort() is called with <code>cmp</code> used as the comparison function, the result is a
 list sorted in descending, rather than ascending, order:
 </p>
-<pre class="c code c++" style="font-family:monospace;">   bool cmp<span class="br0">&#40;</span> <span class="kw4">int</span> a<span class="sy0">,</span> <span class="kw4">int</span> b <span class="br0">&#41;</span> <span class="br0">&#123;</span>
-     <span class="kw1">return</span> a <span class="sy0">&gt;</span> b;
+<pre class="cpp code cpp">   <span class="kw4">bool</span> cmp<span class="br0">&#40;</span> <span class="kw4">int</span> a, <span class="kw4">int</span> b <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     <span class="kw1">return</span> a <span class="sy1">&gt;</span> b<span class="sy4">;</span>
    <span class="br0">&#125;</span>
 &nbsp;
    ...
 &nbsp;
-   <span class="me1">vector</span><span class="sy0">&lt;</span>int<span class="sy0">&gt;</span> v;
-   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i <span class="sy0">=</span> <span class="nu19">0</span>; i <span class="sy0">&lt;</span> <span class="nu0">10</span>; i<span class="sy0">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
-     v.<span class="me1">push_back</span><span class="br0">&#40;</span>i<span class="br0">&#41;</span>;
+   <span class="me1">vector</span><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> v<span class="sy4">;</span>
+   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     v.<span class="me1">push_back</span><span class="br0">&#40;</span>i<span class="br0">&#41;</span><span class="sy4">;</span>
    <span class="br0">&#125;</span>
 &nbsp;
-   <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;Before: &quot;</span>;
-   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i <span class="sy0">=</span> <span class="nu19">0</span>; i <span class="sy0">&lt;</span> <span class="nu0">10</span>; i<span class="sy0">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
-     <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> v<span class="br0">&#91;</span>i<span class="br0">&#93;</span> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot; &quot;</span>;
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Before: &quot;</span><span class="sy4">;</span>
+   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> v<span class="br0">&#91;</span>i<span class="br0">&#93;</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; &quot;</span><span class="sy4">;</span>
    <span class="br0">&#125;</span>
-   <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> endl;
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
 &nbsp;
-   sort<span class="br0">&#40;</span> v.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">,</span> v.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">,</span> cmp <span class="br0">&#41;</span>;
+   sort<span class="br0">&#40;</span> v.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, v.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, cmp <span class="br0">&#41;</span><span class="sy4">;</span>
 &nbsp;
-   <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;After: &quot;</span>;
-   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i <span class="sy0">=</span> <span class="nu19">0</span>; i <span class="sy0">&lt;</span> <span class="nu0">10</span>; i<span class="sy0">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
-     <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> v<span class="br0">&#91;</span>i<span class="br0">&#93;</span> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot; &quot;</span>;
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;After: &quot;</span><span class="sy4">;</span>
+   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> v<span class="br0">&#91;</span>i<span class="br0">&#93;</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; &quot;</span><span class="sy4">;</span>
    <span class="br0">&#125;</span>
-   <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> endl;</pre>
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
+</div>
+<!-- EDIT4 SECTION "Example" [973-2891] -->
+<h3 class="sectionedit5"><a name="complexity" id="complexity">Complexity</a></h3>
+<div class="level3">
+
 <p>
-Related Topics: <a href="binary_search" class="wikilink1" title="stl:algorithm:binary_search">binary_search</a>, <a href="merge" class="wikilink1" title="stl:algorithm:merge">merge</a>, <a href="partial_sort" class="wikilink1" title="stl:algorithm:partial_sort">partial_sort</a>, <a href="partial_sort_copy" class="wikilink1" title="stl:algorithm:partial_sort_copy">partial_sort_copy</a>, <a href="stable_sort" class="wikilink1" title="stl:algorithm:stable_sort">stable_sort</a>, <a href="../../c/other/qsort" class="wikilink1" title="c:other:qsort">qsort</a>
+
+todo
 </p>
 
 </div>
+<!-- EDIT5 SECTION "Complexity" [2892-2917] -->
+<h3 class="sectionedit6"><a name="see_also" id="see_also">See also</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="binary_search" class="wikilink1" title="algorithm:binary_search">binary_search</a>, <a href="merge" class="wikilink1" title="algorithm:merge">merge</a>, <a href="partial_sort" class="wikilink1" title="algorithm:partial_sort">partial_sort</a>, <a href="partial_sort_copy" class="wikilink1" title="algorithm:partial_sort_copy">partial_sort_copy</a>, <a href="stable_sort" class="wikilink1" title="algorithm:stable_sort">stable_sort</a>, <a href="../../c/other/qsort" class="wikilink1" title="c:other:qsort">qsort</a>
+</p>
+
 </div>
+<!-- EDIT6 SECTION "See also" [2918-] --></div>
 </body>
 </html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn"
+ lang="cn" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>cn:chrono:c:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-11-08T11:43:28-0800" />
+<meta name="keywords" content="cn,chrono,c,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/cn/chrono/c/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=cn:chrono:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/cn/chrono/c/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/cn/chrono/c/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='cn:chrono:c';var JSINFO = {"id":"cn:chrono:c:start","namespace":"cn:chrono:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="标准c日期与时间函数" id="标准c日期与时间函数">标准c日期与时间函数</a></h1>
+<div class="level1">
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="asctime" class="wikilink1" title="cn:chrono:c:asctime">asctime</a></td><td class="col1">time函数的文本格式版本</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="clock" class="wikilink1" title="cn:chrono:c:clock">clock</a></td><td class="col1">返回自程序开始运行所经过的时间</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="ctime" class="wikilink1" title="cn:chrono:c:ctime">ctime</a></td><td class="col1">返回特定格式时间</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="difftime" class="wikilink1" title="cn:chrono:c:difftime">difftime</a></td><td class="col1">两时刻的间隔</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="gmtime" class="wikilink1" title="cn:chrono:c:gmtime">gmtime</a></td><td class="col1">返回指向当前格林威治时间的指针</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="localtime" class="wikilink1" title="cn:chrono:c:localtime">localtime</a></td><td class="col1">返回指向当前时间的指针</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="mktime" class="wikilink1" title="cn:chrono:c:mktime">mktime</a></td><td class="col1">返回指定时间的日历格式</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/chrono/c/setlocale" class="wikilink2" title="cn:chrono:c:setlocale" rel="nofollow">setlocale</a></td><td class="col1">设置当前的locale</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="strftime" class="wikilink1" title="cn:chrono:c:strftime">strftime</a></td><td class="col1">返回日期和时间的单个元素</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="time" class="wikilink1" title="cn:chrono:c:time">time</a></td><td class="col1">返回系统的当前日历时间</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [51-516] -->
+</div>
+</div>
+</body>
+</html>

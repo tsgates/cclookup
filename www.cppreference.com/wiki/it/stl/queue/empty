@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it"
+ lang="it" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>it:container:queue:empty</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:09-0700" />
+<meta name="keywords" content="it,container,queue,empty" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/it/container/queue/empty?do=index" title="Indice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=it:container:queue" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/it/container/queue/empty" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/it/container/queue/empty" />
+<link rel="canonical" href="empty" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='it:container:queue';var JSINFO = {"id":"it:container:queue:empty","namespace":"it:container:queue"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="empty" id="empty">empty</a></h2>
+<div class="level2">
+
+<p>
+Sintassi:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;queue&gt;</span>
+    <span class="kw4">bool</span> empty<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span></pre>
+<p>
+La funzione empty() returna <em>true</em> se la queue non contiene elementi, altrimenti
+ritorna <em>false</em>.
+</p>
+
+<p>
+Esempio: empty() viene usata come condizione di stopo in loop <code>while</code> per svuotare una coda e mostrarne
+i contenuti allo stesso tempo:
+</p>
+<pre class="cpp code cpp">   queue<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> q<span class="sy4">;</span>
+   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">5</span><span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     q.<span class="me1">push</span><span class="br0">&#40;</span>i<span class="br0">&#41;</span><span class="sy4">;</span>
+   <span class="br0">&#125;</span>
+   <span class="kw1">while</span><span class="br0">&#40;</span> <span class="sy3">!</span>q.<span class="me1">empty</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> q.<span class="me1">front</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+     q.<span class="me1">pop</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+   <span class="br0">&#125;</span></pre>
+<p>
+Argomenti correlati: <a href="size" class="wikilink1" title="it:container:queue:size">size</a>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "empty" [3-] --></div>
+</body>
+</html>

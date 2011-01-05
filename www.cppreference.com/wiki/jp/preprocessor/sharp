@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:preprocessor:sharp</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:18-0700" />
+<meta name="keywords" content="jp,preprocessor,sharp" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/preprocessor/sharp?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp:preprocessor" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/preprocessor/sharp" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/preprocessor/sharp" />
+<link rel="canonical" href="sharp" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp:preprocessor';var JSINFO = {"id":"jp:preprocessor:sharp","namespace":"jp:preprocessor"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="と" id="と"># と ##</a></h2>
+<div class="level2">
+
+<p>
+
+#、 ## プリプロセッサ演算子は<a href="define" class="wikilink1" title="jp:preprocessor:define">#define</a>プリプロセッサ命令と一緒に使用されます。
+
+</p>
+<ul>
+<li class="level1"><div class="li"> Using # causes the first argument after the # to be returned as a string in quotes. </div>
+</li>
+<li class="level1"><div class="li"> Using ## concatenates what&#039;s before the ## with what&#039;s after it.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> # を使用すると、#の後の最初の引数を、クオートされた文字列として返します。</div>
+</li>
+<li class="level1"><div class="li"> ## を使用すると、##演算子の前後の内容を接合します。</div>
+</li>
+</ul>
+
+<p>
+
+#のサンプルコード:
+
+</p>
+<pre class="cpp code cpp">     <span class="co2">#define to_string( s ) # s</span></pre>
+<p>
+上記のようなマクロが定義されると、以下のようなコードが書かれた場合に、
+
+</p>
+<pre class="cpp code cpp">     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> to_string<span class="br0">&#40;</span> Hello World<span class="sy3">!</span> <span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
+<p>
+以下のようなコードに置き換えられます。
+
+</p>
+<pre class="cpp code cpp">     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Hello World!&quot;</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
+<p>
+##演算子のサンプルコード:
+
+</p>
+<pre class="cpp code cpp">     <span class="co2">#define concatenate( a, b ) a ## b</span>
+     ...
+     <span class="kw4">int</span> xy <span class="sy1">=</span> <span class="nu0">10</span><span class="sy4">;</span>
+     ...</pre>
+<p>
+上記のようなマクロが定義されたとすると、以下のようなコードがあると、
+
+</p>
+<pre class="cpp code cpp">     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> concatenate<span class="br0">&#40;</span> x, y <span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
+<p>
+以下のようなコードに置換されます。
+
+</p>
+<pre class="cpp code cpp">     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> xy <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
+<p>
+これを実行すると、もちろん、&#039;10&#039;という結果が標準出力に表示されます。
+</p>
+
+<p>
+関連トピック: <a href="define" class="wikilink1" title="jp:preprocessor:define">#define</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

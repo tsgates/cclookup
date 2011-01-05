@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn"
+ lang="cn" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>cn:about:faq</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:53-0700" />
+<meta name="keywords" content="cn,about,faq" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/cn/about/faq?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=cn:about" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/cn/about/faq" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/cn/about/faq" />
+<link rel="canonical" href="faq" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='cn:about';var JSINFO = {"id":"cn:about:faq","namespace":"cn:about"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="faq#经常被问到的问题" class="toc">经常被问到的问题</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="faq#我可以得到这个站点的一个拷贝吗" class="toc">我可以得到这个站点的一个拷贝吗？</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="faq#我能_镜像_翻译_加入我自己的版本或者其他_这个站点吗" class="toc">我能[镜像、翻译、加入我自己的版本或者其他]这个站点吗？</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="faq#什么_这是一个wiki_我能修改东西吗" class="toc">什么？ 这是一个wiki？我能修改东西吗？</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="faq#这个站点运行在什么wiki软件之上" class="toc">这个站点运行在什么wiki软件之上？</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="faq#这个站点针对什么" class="toc">这个站点针对什么</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="faq#这个站点包含一个完整的_最终的_包含一切我可以使用到的_c_的列表吗" class="toc">这个站点包含一个完整的、最终的，包含一切我可以使用到的 C++的列表吗?</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="faq#这个站点上的一些例子并不能在我的系统上运行_请问这是怎么回事呢" class="toc">这个站点上的一些例子并不能在我的系统上运行，请问这是怎么回事呢？</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="faq#如果您发现网站内容中有错误" class="toc">如果您发现网站内容中有错误.</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="faq#这是一个什么网站" class="toc">这是一个什么网站?</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h3 class="sectionedit1"><a name="经常被问到的问题" id="经常被问到的问题">经常被问到的问题</a></h3>
+<div class="level3">
+
+</div>
+<!-- EDIT1 SECTION "经常被问到的问题" [2-36] -->
+<h3 class="sectionedit2"><a name="我可以得到这个站点的一个拷贝吗" id="我可以得到这个站点的一个拷贝吗">我可以得到这个站点的一个拷贝吗？</a></h3>
+<div class="level3">
+
+<p>
+<a href="http://www.cppreference.com/cppreference-files.tar.gz" class="urlextern" title="http://www.cppreference.com/cppreference-files.tar.gz"  rel="nofollow">这里是这个站点打包好的版本</a>,每天更新。
+</p>
+
+<p>
+另外，这个站点的Wiki内容（到2009年二月为止）的一个完整的带索引并且可以搜索的WindowsHTML帮助(.chm)版本同样是许可的。 它在多数的Windows的版本上都工作，而不需要其它的软件。因为这个文件有索引所以它可以被用在很多的支持.chm文件的<em>集成开发环境(IDE)</em>中，例如，提供正确的关键字访问函数和模板名字。
+</p>
+
+<p>
+你可以从这里下载帮助文件：<a href="http://www.cppreference.com/wiki/_media/about/cppreferencecom_feb09.zip" class="media mediafile mf_zip" title="about:cppreferencecom_feb09.zip">cppreferencecom_feb09.zip</a>
+</p>
+
+</div>
+<!-- EDIT2 SECTION "我可以得到这个站点的一个拷贝吗？" [37-702] -->
+<h3 class="sectionedit3"><a name="我能_镜像_翻译_加入我自己的版本或者其他_这个站点吗" id="我能_镜像_翻译_加入我自己的版本或者其他_这个站点吗">我能[镜像、翻译、加入我自己的版本或者其他]这个站点吗？</a></h3>
+<div class="level3">
+
+<p>
+当然，太好了！这里所有的内容都授权在<a href="http://creativecommons.org/licenses/by/3.0/us/" class="urlextern" title="http://creativecommons.org/licenses/by/3.0/us/"  rel="nofollow">Creative Commons Attribution 3.0 license</a>之下。
+</p>
+
+<p>
+所有的我们要求的就是你要包含一个到cppreference.com的连接。这样人们就知道到那里去找更新的内容了。
+</p>
+
+</div>
+<!-- EDIT3 SECTION "我能[镜像、翻译、加入我自己的版本或者其他]这个站点吗？" [703-1085] -->
+<h3 class="sectionedit4"><a name="什么_这是一个wiki_我能修改东西吗" id="什么_这是一个wiki_我能修改东西吗">什么？ 这是一个wiki？我能修改东西吗？</a></h3>
+<div class="level3">
+
+<p>
+
+当然。如果你看到什么东西错了，修改它。如果你想要添加内容，确定现在这些内容还没有，编辑它。
+</p>
+
+<p>
+只是你的改变要温和一点，在<em>写字之前考虑好</em>。
+</p>
+
+</div>
+<!-- EDIT4 SECTION "什么？ 这是一个wiki？我能修改东西吗？" [1086-1354] -->
+<h3 class="sectionedit5"><a name="这个站点运行在什么wiki软件之上" id="这个站点运行在什么wiki软件之上">这个站点运行在什么wiki软件之上？</a></h3>
+<div class="level3">
+
+<p>
+cppreference.com 基于 <a href="http://www.dokuwiki.org" class="urlextern" title="http://www.dokuwiki.org"  rel="nofollow">DokuWiki</a>.
+</p>
+
+</div>
+<!-- EDIT5 SECTION "这个站点运行在什么wiki软件之上？" [1355-1472] -->
+<h3 class="sectionedit6"><a name="这个站点针对什么" id="这个站点针对什么">这个站点针对什么</a></h3>
+<div class="level3">
+
+<p>
+
+这里没有“编程介绍”的自修课程。这个站点本打算是给有或多或少C++编程经验的程序员使用，这些程序员
+已经知道他们想做什么，并且可以简单的去查询语法规则。如果你有兴趣学习C或者C++，试试看下边的站点吧：
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="http://www.howstuffworks.com/c.htm" class="urlextern" title="http://www.howstuffworks.com/c.htm"  rel="nofollow">How C Programming Works</a></div>
+</li>
+<li class="level2"><div class="li"> <a href="http://www.its.strath.ac.uk/courses/c/" class="urlextern" title="http://www.its.strath.ac.uk/courses/c/"  rel="nofollow">C Programming</a></div>
+</li>
+<li class="level2"><div class="li"> <a href="http://www.cplusplus.com/doc/tutorial/" class="urlextern" title="http://www.cplusplus.com/doc/tutorial/"  rel="nofollow">C++ Language Tutorial</a></div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT6 SECTION "这个站点针对什么" [1473-2000] -->
+<h3 class="sectionedit7"><a name="这个站点包含一个完整的_最终的_包含一切我可以使用到的_c_的列表吗" id="这个站点包含一个完整的_最终的_包含一切我可以使用到的_c_的列表吗">这个站点包含一个完整的、最终的，包含一切我可以使用到的 C++的列表吗?</a></h3>
+<div class="level3">
+
+<p>
+
+一生中很少有东西是隔绝独立的。许多C++编译器增加或者缺少一些功能。如果在这里你不能找到你所要的，请不要假设这并不存在。一定要在Google上去找找看。
+</p>
+
+</div>
+<!-- EDIT7 SECTION "这个站点包含一个完整的、最终的，包含一切我可以使用到的 C++的列表吗?" [2001-2320] -->
+<h3 class="sectionedit8"><a name="这个站点上的一些例子并不能在我的系统上运行_请问这是怎么回事呢" id="这个站点上的一些例子并不能在我的系统上运行_请问这是怎么回事呢">这个站点上的一些例子并不能在我的系统上运行，请问这是怎么回事呢？</a></h3>
+<div class="level3">
+
+<p>
+
+本站的绝大部分的代码是在Linux下(Red Hat, Debian, or
+Ubuntu)的GCC编译的<a href="http://gcc.gnu.org" class="urlextern" title="http://gcc.gnu.org"  rel="nofollow">GNU Compiler Collection</a>. 因为本站只是关注标准C++的参考，不是每个编译器支持的功能列表。比如，
+
+</p>
+<ul>
+<li class="level1"><div class="li"> 头文件的包含格式经常被改变，想要使用<a href="../../stl/vector/start" class="wikilink1" title="stl:vector:start">vectors</a>你可能需要包含下边的其中一个，以适应不同的编译器。</div>
+</li>
+</ul>
+<pre class="cpp code cpp">      <span class="co2">#include &lt;vector&gt;</span>
+      <span class="co2">#include &lt;Vector&gt;</span>
+      <span class="co2">#include &lt;vector.h&gt;</span></pre>
+<p>
+
+(根据标准, 上边第一个文件应该是可以使用的,编译器应该能够根据它推测出真正的vector头文件。)
+
+</p>
+<ul>
+<li class="level1"><div class="li"> 新的编译器通常可以使用平台依存的命令来包含标准C库，例如，你可以使用</div>
+</li>
+</ul>
+<pre class="cpp code cpp">      <span class="co2">#include &lt;cstdio&gt;</span></pre>
+<p>
+
+代替
+
+</p>
+<pre class="cpp code cpp">      <span class="co2">#include &lt;stdio.h&gt;</span></pre><ul>
+<li class="level1"><div class="li"> 这里发布的所有代码都指定了命名空间，如果你的编译器有点老的话，下边这样简单的语句可能也能够通过编译；</div>
+</li>
+</ul>
+<pre class="cpp code cpp">      <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;hello world!&quot;</span><span class="sy4">;</span></pre>
+<p>
+
+但是，新的编译器要求你必须使用：
+
+</p>
+<pre class="cpp code cpp">      std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;hello world!&quot;</span><span class="sy4">;</span></pre>
+<p>
+
+或者使用using namespace命令来声明命名空间。
+</p>
+<ul>
+<li class="level1"><div class="li"> 一些流行的编译器(比如Microsoft&#039;s Visual C++附带的编译器)替换了标准模板库或者为了标准模板库添加可选功能，例如，Visual C++中的MFC提供了具有string功能的CString类型。它具备string的功能，但是它不是C++标准模板库的一部分。</div>
+</li>
+</ul>
+
+<p>
+
+还有很多类似的事情，也就是说，个别情况还可能有很多。
+</p>
+
+</div>
+<!-- EDIT8 SECTION "这个站点上的一些例子并不能在我的系统上运行，请问这是怎么回事呢？" [2321-3969] -->
+<h3 class="sectionedit9"><a name="如果您发现网站内容中有错误" id="如果您发现网站内容中有错误">如果您发现网站内容中有错误.</a></h3>
+<div class="level3">
+
+<p>
+如果您在这份指南里发现任何错误，请不要感到奇怪，修改它或者通过 <a href="mailto:&#x63;&#x6f;&#x6d;&#x6d;&#x65;&#x6e;&#x74;&#x73;&#x40;&#x63;&#x70;&#x70;&#x72;&#x65;&#x66;&#x65;&#x72;&#x65;&#x6e;&#x63;&#x65;&#x2e;&#x63;&#x6f;&#x6d;" class="mail JSnocheck" title="&#x63;&#x6f;&#x6d;&#x6d;&#x65;&#x6e;&#x74;&#x73;&#x40;&#x63;&#x70;&#x70;&#x72;&#x65;&#x66;&#x65;&#x72;&#x65;&#x6e;&#x63;&#x65;&#x2e;&#x63;&#x6f;&#x6d;">&#x63;&#x6f;&#x6d;&#x6d;&#x65;&#x6e;&#x74;&#x73;&#x40;&#x63;&#x70;&#x70;&#x72;&#x65;&#x66;&#x65;&#x72;&#x65;&#x6e;&#x63;&#x65;&#x2e;&#x63;&#x6f;&#x6d;</a>.联系我们
+</p>
+
+</div>
+<!-- EDIT9 SECTION "如果您发现网站内容中有错误." [3970-4154] -->
+<h3 class="sectionedit10"><a name="这是一个什么网站" id="这是一个什么网站">这是一个什么网站?</a></h3>
+<div class="level3">
+
+<p>
+
+把它看成一个交流平台, for geeks, by geeks.
+</p>
+
+</div>
+<!-- EDIT10 SECTION "这是一个什么网站?" [4155-] --></div>
+</body>
+</html>

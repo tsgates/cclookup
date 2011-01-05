@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de"
+ lang="de" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>de:string:c:strlen</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:26-0700" />
+<meta name="keywords" content="de,string,c,strlen" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/de/string/c/strlen?do=index" title="Übersicht" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=de:string:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/de/string/c/strlen" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/de/string/c/strlen" />
+<link rel="canonical" href="strlen" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='de:string:c';var JSINFO = {"id":"de:string:c:strlen","namespace":"de:string:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<p>
+<strong>strlen</strong>
+</p>
+
+<p>
+Syntax: 
+
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cstring&gt;</span>
+    <span class="kw4">size_t</span> <span class="kw3">strlen</span><span class="br0">&#40;</span> <span class="kw4">char</span> <span class="sy2">*</span>str <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+
+Die Funktion strlen() gibt die Länge des in Klammern angegebenen Strings zurück. Das abschliessenden \0 wird nicht mitgezählt.
+</p>
+
+<p>
+Zum Beispiel:
+</p>
+<pre class="cpp code cpp">     <span class="kw3">printf</span><span class="br0">&#40;</span> <span class="st0">&quot;Enter your name: &quot;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+     <span class="kw3">scanf</span><span class="br0">&#40;</span> <span class="st0">&quot;%s&quot;</span>, name <span class="br0">&#41;</span><span class="sy4">;</span>
+     <span class="kw3">printf</span><span class="br0">&#40;</span> <span class="st0">&quot;Hello, your name has %d chars.<span class="es1">\n</span>&quot;</span>, <span class="kw3">strlen</span><span class="br0">&#40;</span>name<span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Verwandte Themen: <a href="http://www.cppreference.com/wiki/de/string/c/memcpy" class="wikilink2" title="de:string:c:memcpy" rel="nofollow">memcpy</a>, <a href="http://www.cppreference.com/wiki/de/string/c/strchr" class="wikilink2" title="de:string:c:strchr" rel="nofollow">strchr</a>, <a href="strcmp" class="wikilink1" title="de:string:c:strcmp">strcmp</a>, <a href="http://www.cppreference.com/wiki/de/string/c/strncmp" class="wikilink2" title="de:string:c:strncmp" rel="nofollow">strncmp</a>
+
+</p>
+</div>
+</body>
+</html>

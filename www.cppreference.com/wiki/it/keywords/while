@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it"
+ lang="it" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>it:keywords:while</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:07-0700" />
+<meta name="keywords" content="it,keywords,while" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/it/keywords/while?do=index" title="Indice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=it:keywords" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/it/keywords/while" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/it/keywords/while" />
+<link rel="canonical" href="while" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='it:keywords';var JSINFO = {"id":"it:keywords:while","namespace":"it:keywords"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="while" id="while">while</a></h2>
+<div class="level2">
+
+<p>
+Sintassi:
+</p>
+<pre class="cpp code cpp">    <span class="kw1">while</span><span class="br0">&#40;</span> condition <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        statement<span class="sy2">-</span>list<span class="sy4">;</span>
+    <span class="br0">&#125;</span></pre>
+<p>
+La parola chiave <code>while</code> è un costrutto per loop che esegue un blocco di istruzioni
+fintanto che la condizione è vera. Notare che se la condizione è inizialmente falsa 
+allora il blocco di codice non verrà eseguito. (Per avere almeno un esecuzione
+si può usare il costrutto <a href="do" class="wikilink1" title="it:keywords:do">do</a>). Per esempio:
+</p>
+<pre class="cpp code cpp">     <span class="kw4">bool</span> done <span class="sy1">=</span> <span class="kw2">false</span><span class="sy4">;</span>
+     <span class="kw1">while</span><span class="br0">&#40;</span> <span class="sy3">!</span>done <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+       ProcessData<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+       <span class="kw1">if</span><span class="br0">&#40;</span> StopLooping<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+         done <span class="sy1">=</span> <span class="kw2">true</span><span class="sy4">;</span>
+       <span class="br0">&#125;</span>
+     <span class="br0">&#125;</span></pre>
+<p>
+Argomenti correlati: <a href="break" class="wikilink1" title="it:keywords:break">break</a>, <a href="continue" class="wikilink1" title="it:keywords:continue">continue</a>, <a href="do" class="wikilink1" title="it:keywords:do">do</a>, <a href="for" class="wikilink1" title="it:keywords:for">for</a>, <a href="if" class="wikilink1" title="it:keywords:if">if</a>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "while" [3-] --></div>
+</body>
+</html>

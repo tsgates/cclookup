@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it"
+ lang="it" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>it:about:faq</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:07-0700" />
+<meta name="keywords" content="it,about,faq" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/it/about/faq?do=index" title="Indice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=it:about" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/it/about/faq" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/it/about/faq" />
+<link rel="canonical" href="faq" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='it:about';var JSINFO = {"id":"it:about:faq","namespace":"it:about"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Indice</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="faq#faq" class="toc">FAQ</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="faq#posso_fare_una_copia_di_questo_sito" class="toc">Posso fare una copia di questo sito?</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="faq#posso_tradurrefare_il_mirrorallestire_la_mia_copia_personale_di_questo_sito" class="toc">Posso [tradurre/fare il mirror/allestire la mia copia personale] di questo sito?</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="faq#come_questo_e_un_wiki_posso_modificare_del_materiale" class="toc">Come?  Questo è un wiki?  Posso modificare del materiale?</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="faq#su_quale_software_di_wiki_e_basato_il_sito" class="toc">Su quale software di wiki è basato il sito?</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="faq#a_chi_si_rivolge_il_sito" class="toc">A chi si rivolge il sito?</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="faq#questo_sito_contiene_un_lista_completa_e_sicura_di_tutto_cio_che_posso_fare_in_c" class="toc">Questo sito contiene un lista completa e sicura di tutto ciò che posso fare in C++?</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="faq#alcuni_esempi_illustrati_non_funzionano_sul_mio_computer_cosa_c_e_che_non_va" class="toc">Alcuni esempi illustrati non funzionano sul mio computer. Cosa c&#039;è che non va?</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="faq#c_e_un_errore_in_questo_sito" class="toc">C&#039;è un errore in questo sito!</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="faq#cos_e_allora_questo_sito" class="toc">Cos&#039;è allora questo sito?</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="faq" id="faq">FAQ</a></h2>
+<div class="level2">
+
+</div>
+<!-- EDIT1 SECTION "FAQ" [1-15] -->
+<h3 class="sectionedit2"><a name="posso_fare_una_copia_di_questo_sito" id="posso_fare_una_copia_di_questo_sito">Posso fare una copia di questo sito?</a></h3>
+<div class="level3">
+
+<p>
+
+A questo link è disponibile <a href="http://www.cppreference.com/cppreference-files.tar.gz" class="urlextern" title="http://www.cppreference.com/cppreference-files.tar.gz"  rel="nofollow">un archivio contenente una copia</a> del sito aggiornata quotidianamente.
+</p>
+
+<p>
+In alternativa è disponibile un file di help in formato <acronym title="HyperText Markup Language">HTML</acronym> per Windows dei contenuti di questo wiki allo stato del Febbraio 2009.
+</p>
+
+<p>
+Funziona su molte versioni di Windows, comprese le più recenti, senza bisogno di software aggiuntivo. Questo file è indicizzato e può essere usato in parecchie applicazioni <em>IDE</em> che supportano file tipo .chm per l&#039;accesso all&#039;help di funzioni e template in modo dipendente dal contesto di editing.
+</p>
+
+<p>
+Il file può essere scaricato tramite il seguente link: <a href="http://www.cppreference.com/wiki/_media/about/cppreferencecom_feb09.zip" class="media mediafile mf_zip" title="about:cppreferencecom_feb09.zip">cppreferencecom_feb09.zip</a>
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Posso fare una copia di questo sito?" [16-753] -->
+<h3 class="sectionedit3"><a name="posso_tradurrefare_il_mirrorallestire_la_mia_copia_personale_di_questo_sito" id="posso_tradurrefare_il_mirrorallestire_la_mia_copia_personale_di_questo_sito">Posso [tradurre/fare il mirror/allestire la mia copia personale] di questo sito?</a></h3>
+<div class="level3">
+
+<p>
+
+Certo, siete i benvenuti. I contenuti sono soggetti alla licenza <a href="http://creativecommons.org/licenses/by/3.0/us/" class="urlextern" title="http://creativecommons.org/licenses/by/3.0/us/"  rel="nofollow">Creative Commons Attribution 3.0 license</a>.
+</p>
+
+<p>
+Tutto quello che vi chiediamo è che includiate un link a cppreference.com cosicchè si sappia dove trovare la versione più aggiornata del sito.
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Posso [tradurre/fare il mirror/allestire la mia copia personale] di questo sito?" [754-1149] -->
+<h3 class="sectionedit4"><a name="come_questo_e_un_wiki_posso_modificare_del_materiale" id="come_questo_e_un_wiki_posso_modificare_del_materiale">Come?  Questo è un wiki?  Posso modificare del materiale?</a></h3>
+<div class="level3">
+
+<p>
+
+Assolutamente sì. Se notate qualcosa di sbagliato correggetelo. Se voleste aggiungere nuovo contenuto prima controllate che non sia già esistente, quindi procedete pure.
+</p>
+
+<p>
+Siate cauti con le modifiche e non dimenticare di <em>pensare prima di digitare</em>.
+</p>
+
+</div>
+<!-- EDIT4 SECTION "Come?  Questo è un wiki?  Posso modificare del materiale?" [1150-1472] -->
+<h3 class="sectionedit5"><a name="su_quale_software_di_wiki_e_basato_il_sito" id="su_quale_software_di_wiki_e_basato_il_sito">Su quale software di wiki è basato il sito?</a></h3>
+<div class="level3">
+
+<p>
+
+cppreference.com è sviluppato con <a href="http://www.dokuwiki.org" class="urlextern" title="http://www.dokuwiki.org"  rel="nofollow">DokuWiki</a>.
+</p>
+
+</div>
+<!-- EDIT5 SECTION "Su quale software di wiki è basato il sito?" [1473-1600] -->
+<h3 class="sectionedit6"><a name="a_chi_si_rivolge_il_sito" id="a_chi_si_rivolge_il_sito">A chi si rivolge il sito?</a></h3>
+<div class="level3">
+
+<p>
+
+Non troverete sul sito tutorial di introduzione alla programmazione. Questo site 
+è inteso per essere usato da programmatori C++ di varia esperienza che hanno però
+già una idea di quello che vogliono e semplicemente hanno bisogno di ottenere la sintassi o
+le funzionalità generali. Se siete interessati ad imparare il C o il C++ provate a consultare
+i seguenti siti:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="http://www.howstuffworks.com/c.htm" class="urlextern" title="http://www.howstuffworks.com/c.htm"  rel="nofollow">How C Programming Works</a></div>
+</li>
+<li class="level2"><div class="li"> <a href="http://www.its.strath.ac.uk/courses/c/" class="urlextern" title="http://www.its.strath.ac.uk/courses/c/"  rel="nofollow">C Programming</a></div>
+</li>
+<li class="level2"><div class="li"> <a href="http://www.cplusplus.com/doc/tutorial/" class="urlextern" title="http://www.cplusplus.com/doc/tutorial/"  rel="nofollow">C++ Language Tutorial</a></div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT6 SECTION "A chi si rivolge il sito?" [1601-2211] -->
+<h3 class="sectionedit7"><a name="questo_sito_contiene_un_lista_completa_e_sicura_di_tutto_cio_che_posso_fare_in_c" id="questo_sito_contiene_un_lista_completa_e_sicura_di_tutto_cio_che_posso_fare_in_c">Questo sito contiene un lista completa e sicura di tutto ciò che posso fare in C++?</a></h3>
+<div class="level3">
+
+<p>
+
+Ci sono poche certezze nella vita. Molti compilatori C++ hanno certe funzionalità aggiuntive o 
+altre funzionalità mancanti. Se non trovate quello che cercate qui non assumete che non esiste. Fate una ricerca su internet invece.
+</p>
+
+</div>
+<!-- EDIT7 SECTION "Questo sito contiene un lista completa e sicura di tutto ciò che posso fare in C++?" [2212-2537] -->
+<h3 class="sectionedit8"><a name="alcuni_esempi_illustrati_non_funzionano_sul_mio_computer_cosa_c_e_che_non_va" id="alcuni_esempi_illustrati_non_funzionano_sul_mio_computer_cosa_c_e_che_non_va">Alcuni esempi illustrati non funzionano sul mio computer. Cosa c&#039;è che non va?</a></h3>
+<div class="level3">
+
+<p>
+
+Gran parte del codice di questo sito è stato compilato su Linux (Red Hat, Debian, Ubuntu…) con il compilatore 
+<a href="http://gcc.gnu.org" class="urlextern" title="http://gcc.gnu.org"  rel="nofollow">GNU Compiler Collection</a>. Questo sito è semplicemente un insieme di riferimenti per le 
+caratteristiche del C++ e non tutti i compilatori sarebbero in grado di compilare ogni esempio codice riportato qui.
+</p>
+
+<p>
+Un esempio
+
+</p>
+<ul>
+<li class="level1"><div class="li"> I file di header variano di implementazione in implementazione. Per includere il supporto necessrio per i <a href="../stl/vector/start" class="wikilink1" title="it:stl:vector:start">vettori</a>, potreste trovarvi nella necessità di includere uno di questi moduli:</div>
+</li>
+</ul>
+<pre class="cpp code cpp">      <span class="co2">#include &lt;vector&gt;</span>
+      <span class="co2">#include &lt;Vector&gt;</span>
+      <span class="co2">#include &lt;vector.h&gt;</span></pre>
+<p>
+(secondo le specifiche il primo dovrebbe funzionare e il compilatore dovrebbe essere abbastanza evoluto da usarlo come riferimento verso il vero file di header.)
+
+</p>
+<ul>
+<li class="level1"><div class="li"> Un&#039;altra questione legata ai file di header è che alcuni compilatori recenti possono usare comandi che hanno una veste </div>
+</li>
+</ul>
+
+<p>
+<em>plattform-independent</em> per includere librerie standard del C. Per esempio dovreste essere in grado di usare
+</p>
+<pre class="cpp code cpp">      <span class="co2">#include &lt;cstdio&gt;</span></pre>
+<p>
+
+invece di 
+
+</p>
+<pre class="cpp code cpp">      <span class="co2">#include &lt;stdio.h&gt;</span></pre><ul>
+<li class="level1"><div class="li"> Tutto il codice di questo sito assume essere usato con il namespace corretto. Se il vostro compilatore è un pò stagionato potreste anche riuscire a passare codice come questo:</div>
+</li>
+</ul>
+<pre class="cpp code cpp">      <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;hello world!&quot;</span><span class="sy4">;</span></pre>
+<p>
+Mentre compilatori più recenti richiedono che venga scritto così
+</p>
+<pre class="cpp code cpp">      std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;hello world!&quot;</span><span class="sy4">;</span></pre>
+<p>
+
+o che si dichiari quale namespace usare con il comando ”<code>using namespace</code>”
+
+</p>
+<ul>
+<li class="level1"><div class="li"> Certi compilatori popolari (come quello che viene distribuito con il Visual C++ di Microsoft) hanno aggiunto alternative o funzionalità aggiuntive alla Standard Template Library del C++. Per esempio la MFC del Visual C++ possiede il tipo di stringa “CString”, che ha la funzionalità di una stringa, ma non è parte della STL. </div>
+</li>
+</ul>
+
+<p>
+
+…La lista continua. Il altre parole: i risultati individuali possono cambiare di caso in caso.
+</p>
+
+</div>
+<!-- EDIT8 SECTION "Alcuni esempi illustrati non funzionano sul mio computer. Cosa c'è che non va?" [2538-4627] -->
+<h3 class="sectionedit9"><a name="c_e_un_errore_in_questo_sito" id="c_e_un_errore_in_questo_sito">C&#039;è un errore in questo sito!</a></h3>
+<div class="level3">
+
+<p>
+
+Se trovate errori in questo manuale di riferimento siete liberi di correggerli, oppure contattateci a <a href="mailto:&#x63;&#x6f;&#x6d;&#x6d;&#x65;&#x6e;&#x74;&#x73;&#x40;&#x63;&#x70;&#x70;&#x72;&#x65;&#x66;&#x65;&#x72;&#x65;&#x6e;&#x63;&#x65;&#x2e;&#x63;&#x6f;&#x6d;" class="mail JSnocheck" title="&#x63;&#x6f;&#x6d;&#x6d;&#x65;&#x6e;&#x74;&#x73;&#x40;&#x63;&#x70;&#x70;&#x72;&#x65;&#x66;&#x65;&#x72;&#x65;&#x6e;&#x63;&#x65;&#x2e;&#x63;&#x6f;&#x6d;">&#x63;&#x6f;&#x6d;&#x6d;&#x65;&#x6e;&#x74;&#x73;&#x40;&#x63;&#x70;&#x70;&#x72;&#x65;&#x66;&#x65;&#x72;&#x65;&#x6e;&#x63;&#x65;&#x2e;&#x63;&#x6f;&#x6d;</a>.
+</p>
+
+</div>
+<!-- EDIT9 SECTION "C'è un errore in questo sito!" [4628-4799] -->
+<h3 class="sectionedit10"><a name="cos_e_allora_questo_sito" id="cos_e_allora_questo_sito">Cos&#039;è allora questo sito?</a></h3>
+<div class="level3">
+
+<p>
+
+Pensatelo come un servizio di una comunità: “for geeks, by geeks”.
+</p>
+
+</div>
+<!-- EDIT10 SECTION "Cos'è allora questo sito?" [4800-] --></div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru"
+ lang="ru" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>ru:io:eof</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:12-0700" />
+<meta name="keywords" content="ru,io,eof" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/ru/io/eof?do=index" title="Все страницы" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=ru:io" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/ru/io/eof" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/ru/io/eof" />
+<link rel="canonical" href="eof" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='ru:io';var JSINFO = {"id":"ru:io:eof","namespace":"ru:io"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="eof" id="eof">eof</a></h2>
+<div class="level2">
+
+<p>
+Синтаксис:
+</p>
+<pre class="cpp code cpp">    <span class="kw4">bool</span> istream<span class="sy4">::</span><span class="me2">eof</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Функция eof() возвращает истину, если достигнут конец связанного файла ввода, в ином случае возвращается ложь.
+</p>
+
+<p>
+Поток переходит в состояние <acronym title="End of file">EOF</acronym> (конец файла) всякий раз, когда найден конец потока, т.е. прочитан символ, расположенный за концом файла. Так как оператор » и <a href="getline" class="wikilink1" title="ru:io:getline">getline</a> обычно читают символы до последнего символа (до пробела, некорректного символа, символа конца строки или конца файла <acronym title="End of file">EOF</acronym>),  возможно, что потоковый флаг примет значение даже при кооректном считывании символа за концом файла. И наоборот, поток не переходит в состояние <acronym title="End of file">EOF</acronym>, если после последнего символа стоит пробел, но чтение любого другого символа вызовет ошибку.
+</p>
+
+<p>
+Поэтому флаг <acronym title="End of file">EOF</acronym> <strong>не может использоваться</strong> как тест в цикле чтения всего содержимого потока до конца файла <acronym title="End of file">EOF</acronym>.
+</p>
+
+<p>
+Вместо этого нужно проверять состояние ошибки после попытки чтения. Это делается наиболее удобно с помощью проверки самого потока, как показано ниже:
+</p>
+<pre class="cpp code cpp">   std<span class="sy4">::</span><span class="me2">ifstream</span> file<span class="br0">&#40;</span><span class="st0">&quot;test.txt&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+   std<span class="sy4">::</span><span class="me2">string</span> line<span class="sy4">;</span>
+   <span class="kw1">while</span> <span class="br0">&#40;</span>std<span class="sy4">::</span><span class="me2">getline</span><span class="br0">&#40;</span>file, line<span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     <span class="co1">// строка прочитана успешно, с ней можно работать</span>
+   <span class="br0">&#125;</span></pre>
+<p>
+Строка 7 примера, приведенного ниже, показывает главный способ использования проверки состояния <acronym title="End of file">EOF</acronym>: после ошибки чтения. В такой ситуации можно так же определить, был ли сбой вызван окончанием потока или нет.
+</p>
+<pre class="cpp code cpp"><span class="lno">1:</span>    std<span class="sy4">::</span><span class="me2">ifstream</span> file<span class="br0">&#40;</span><span class="st0">&quot;test.txt&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+<span class="lno">2:</span>    std<span class="sy4">::</span><span class="me2">string</span> word<span class="sy4">;</span>
+<span class="lno">3:</span>    <span class="kw4">double</span> value<span class="sy4">;</span>
+<span class="lno">4:</span>    <span class="kw1">while</span> <span class="br0">&#40;</span>file <span class="sy1">&gt;&gt;</span> word <span class="sy1">&gt;&gt;</span> value<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+<span class="lno">5:</span>      <span class="co1">// строка word и значение double value прочитаны успешно</span>
+<span class="lno">6:</span>    <span class="br0">&#125;</span>
+<span class="lno">7:</span>    <span class="kw1">if</span> <span class="br0">&#40;</span><span class="sy3">!</span>file.<span class="me1">eof</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="kw1">throw</span> std<span class="sy4">::</span><span class="me2">runtime_error</span><span class="br0">&#40;</span><span class="st0">&quot;Invalid data from file&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+</pre>
+<p>
+Таблица ниже показывает список различных состояний, в которых может быть поток:
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<th class="col0">Test</th><th class="col1">Description</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">if (s)</td><td class="col1">Предыдущая операция успешна (аналог !s.fail() ).</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">if (s.fail())</td><td class="col1">Предыдущая операция не удалась.</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">if (s.eof())</td><td class="col1">Произведена попытка чтения за границей файла.</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">if (s.bad())</td><td class="col1">Состояние потока не определено. Поток не может быть больше использован.</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0">if (s.good())</td><td class="col1">Нет ни одного из состояний bad/eof/fail.</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [2747-3255] -->
+<p>
+
+Related Topics: <a href="bad" class="wikilink1" title="ru:io:bad">bad</a>, <a href="clear" class="wikilink1" title="ru:io:clear">clear</a>, <a href="exceptions" class="wikilink1" title="ru:io:exceptions">exceptions</a>, <a href="fail" class="wikilink1" title="ru:io:fail">fail</a>, <a href="good" class="wikilink1" title="ru:io:good">good</a>, <a href="rdstate" class="wikilink1" title="ru:io:rdstate">rdstate</a>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "eof" [3-] --></div>
+</body>
+</html>

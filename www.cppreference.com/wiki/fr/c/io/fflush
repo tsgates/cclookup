@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr"
+ lang="fr" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>fr:c:io:fflush</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:56-0700" />
+<meta name="keywords" content="fr,c,io,fflush" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/fr/c/io/fflush?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=fr:c:io" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/fr/c/io/fflush" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/fr/c/io/fflush" />
+<link rel="canonical" href="fflush" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='fr:c:io';var JSINFO = {"id":"fr:c:io:fflush","namespace":"fr:c:io"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="fflush" id="fflush">fflush</a></h2>
+<div class="level2">
+
+<p>
+Syntaxe :
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cstdio&gt;</span>
+     <span class="kw4">int</span> <span class="kw3">fflush</span><span class="br0">&#40;</span> <span class="kw4">FILE</span> <span class="sy2">*</span>fichier <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+La fonction fflush() possède un comportement différent selon le type de fichier :
+</p>
+<ul>
+<li class="level1"><div class="li"> Si le fichier est un flux de sortie (ouvert avec “w” ou “a” dans fopen), alors elle force l&#039;écriture du buffer dans le fichier</div>
+</li>
+<li class="level1"><div class="li"> Si le fichier est un flux d&#039;entrée (ouvert avec “r” dans fopen), son comportement n&#039;est pas défini (et il est donc déconseillé de l&#039;utiliser dans ce cas…)</div>
+</li>
+</ul>
+
+<p>
+fflush() est très pratique pour le débogage, lorsqu&#039;un programme échoue (par un segmentation fault par exemple) avant d&#039;avoir pu afficher à l&#039;écran des informations utiles.<br/>
+
+Dans ce cas, appeler fflush sur le flush de sortie standard immédiatement après l&#039;écriture des informations de débogage permet de s&#039;assurer qu&#039;elle seront bien écrites.
+</p>
+<pre class="cpp code cpp">     <span class="kw3">printf</span><span class="br0">&#40;</span> <span class="st0">&quot;Avant le premier appel<span class="es1">\n</span>&quot;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+     <span class="kw3">fflush</span><span class="br0">&#40;</span> <span class="kw2">stdout</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+     fonction_potentiellement_dangereuse<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+     <span class="kw3">printf</span><span class="br0">&#40;</span> <span class="st0">&quot;Avant le second appel<span class="es1">\n</span>&quot;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+     <span class="kw3">fflush</span><span class="br0">&#40;</span> <span class="kw2">stdout</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+     dereferencement_interdit<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Voir aussi : <a href="http://c-faq.com/stdio/stdinflush.html" class="urlextern" title="http://c-faq.com/stdio/stdinflush.html"  rel="nofollow">http://c-faq.com/stdio/stdinflush.html</a> (anglais)
+</p>
+
+<p>
+Sujets relatifs : <a href="fclose" class="wikilink1" title="fr:c:io:fclose">fclose</a>, <a href="fopen" class="wikilink1" title="fr:c:io:fopen">fopen</a>, <a href="fread" class="wikilink1" title="fr:c:io:fread">fread</a>, <a href="http://www.cppreference.com/wiki/fr/c/io/fpurge" class="wikilink2" title="fr:c:io:fpurge" rel="nofollow">fpurge</a>, <a href="fwrite" class="wikilink1" title="fr:c:io:fwrite">fwrite</a>, <a href="getc" class="wikilink1" title="fr:c:io:getc">getc</a>, <a href="putc" class="wikilink1" title="fr:c:io:putc">putc</a>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "fflush" [3-] --></div>
+</body>
+</html>

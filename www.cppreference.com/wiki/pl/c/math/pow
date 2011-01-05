@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl"
+ lang="pl" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>pl:numeric:c:pow</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:39-0700" />
+<meta name="keywords" content="pl,numeric,c,pow" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/pl/numeric/c/pow?do=index" title="Indeks" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=pl:numeric:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/pl/numeric/c/pow" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/pl/numeric/c/pow" />
+<link rel="canonical" href="pow" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='pl:numeric:c';var JSINFO = {"id":"pl:numeric:c:pow","namespace":"pl:numeric:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="pow" id="pow">pow</a></h2>
+<div class="level2">
+
+<p>
+Składnia:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cmath&gt;</span>
+    <span class="kw4">double</span> <span class="kw3">pow</span><span class="br0">&#40;</span> <span class="kw4">double</span> podstawa, <span class="kw4">double</span> wykladnik <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+
+Funkcja pow() zwraca <em>podstawa</em> podniesione do <em>wykladnik</em> potegi. 
+</p>
+
+<p>
+W przypadku, gdy <em>podstawa</em> jest rowna zero i <em>wykladnik</em> jest mniejszy lub równy zero, albo <em>podstawa</em> jest ujemna i <em>wykladnik</em> nie jest liczbą całkowitą, występuje błąd dziedziny.
+W przypadku przekroczenia zakresu występuje <em>range error</em>.
+</p>
+
+<p>
+C++ dostarcza przeciążone wersje funkcji:
+
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cmath&gt;</span>
+    <span class="kw4">float</span> <span class="kw3">pow</span><span class="br0">&#40;</span> <span class="kw4">float</span> podstawa, <span class="kw4">float</span> wykladnik <span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// to samo co powf() w C99</span>
+    <span class="kw4">long</span> <span class="kw4">double</span> <span class="kw3">pow</span><span class="br0">&#40;</span> <span class="kw4">long</span> <span class="kw4">double</span> podstawa, <span class="kw4">long</span> <span class="kw4">double</span> wykladnik <span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// to samo co powl() w C99</span></pre>
+<p>
+
+C++ dostarcza przeciążone wersje funkcji, podnoszące do potęg całkowitych:
+
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cmath&gt;</span>
+    <span class="kw4">float</span> <span class="kw3">pow</span><span class="br0">&#40;</span> <span class="kw4">float</span> postawa, <span class="kw4">int</span> wyklanik <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">double</span> <span class="kw3">pow</span><span class="br0">&#40;</span> <span class="kw4">double</span> podstawa, <span class="kw4">int</span> wykladnik <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">long</span> <span class="kw4">double</span> <span class="kw3">pow</span><span class="br0">&#40;</span> <span class="kw4">long</span> <span class="kw4">double</span> podstawa, <span class="kw4">int</span> wykladnik <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Powiązane tematy: <a href="exp" class="wikilink1" title="pl:numeric:c:exp">exp</a>, <a href="log" class="wikilink1" title="pl:numeric:c:log">log</a>, <a href="sqrt" class="wikilink1" title="pl:numeric:c:sqrt">sqrt</a>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "pow" [3-] --></div>
+</body>
+</html>

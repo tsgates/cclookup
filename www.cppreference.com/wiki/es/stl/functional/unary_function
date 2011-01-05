@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es"
+ lang="es" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>es:util:functional:unary_function</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:32-0700" />
+<meta name="keywords" content="es,util,functional,unary_function" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/es/util/functional/unary_function?do=index" title="Índice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=es:util:functional" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/es/util/functional/unary_function" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/es/util/functional/unary_function" />
+<link rel="canonical" href="unary_function" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='es:util:functional';var JSINFO = {"id":"es:util:functional:unary_function","namespace":"es:util:functional"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Tabla de Contenidos</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="unary_function#unary_function" class="toc">unary_function</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="unary_function#limitaciones" class="toc">Limitaciones</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="unary_function#topicos_relacionados" class="toc">Tópicos Relacionados</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="unary_function" id="unary_function">unary_function</a></h2>
+<div class="level2">
+
+<p>
+
+Sintaxis:
+
+</p>
+<pre class="cpp code cpp">  <span class="kw2">template</span> <span class="sy1">&lt;</span><span class="kw2">class</span> Arg1, <span class="kw2">class</span> Result<span class="sy1">&gt;</span>
+    <span class="kw4">struct</span> unary_function<span class="sy4">;</span></pre>
+<p>
+<code>unary_function</code> es la plantilla sobre la cual están basados los functoides unarios (de un parámetro) en C++ STL. De por sí esta plantilla no provee el comportamiento del functoide (<code>operator()</code>) sino que simplemente provee algunos <a href="http://www.cppreference.com/wiki/es/keywords/typedef" class="wikilink2" title="es:keywords:typedef" rel="nofollow">aliases</a> para el uso de clases derivadas que <em>explícitamente</em> implementan el comportamiento del functoide:
+</p>
+<pre class="cpp code cpp">    <span class="kw4">typedef</span> Arg1 argument_type<span class="sy4">;</span>
+    <span class="kw4">typedef</span> Result result_type<span class="sy4">;</span></pre>
+</div>
+<!-- EDIT1 SECTION "unary_function" [1-582] -->
+<h3 class="sectionedit2"><a name="limitaciones" id="limitaciones">Limitaciones</a></h3>
+<div class="level3">
+
+<p>
+
+Un functoide que herede de <code>unary_function</code> puede ser utilizado en cualquier algoritmo o construcción que espere un <code>unary_function</code> (por ejemplo, <a href="http://www.cppreference.com/wiki/es/stl/algorithm/for_each" class="wikilink2" title="es:stl:algorithm:for_each" rel="nofollow">for_each</a>). Pero un functoide que no herede de <code>unary_function</code> no puede ser utilizado en todos los algoritmos ya que algunos de éstos pueden requerir que estén definidos los aliases <code>argument_type</code> o <code>result_type</code>.
+</p>
+
+<p>
+C++0x resolverá esta ambigüedad al reemplazar esta construcción por la construcción para functoides genéricos <code>function&lt;&gt;</code>.
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Limitaciones" [583-1136] -->
+<h3 class="sectionedit3"><a name="topicos_relacionados" id="topicos_relacionados">Tópicos Relacionados</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> <code><a href="binary_function" class="wikilink1" title="es:util:functional:binary_function">binary_function</a></code></div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT3 SECTION "Tópicos Relacionados" [1137-] --></div>
+</body>
+</html>

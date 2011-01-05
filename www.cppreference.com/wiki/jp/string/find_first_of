@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:string:find_first_of</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:17-0700" />
+<meta name="keywords" content="jp,string,find_first_of" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/string/find_first_of?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp:string" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/string/find_first_of" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/string/find_first_of" />
+<link rel="canonical" href="find_first_of" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp:string';var JSINFO = {"id":"jp:string:find_first_of","namespace":"jp:string"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="find_first_of" id="find_first_of">find_first_of</a></h2>
+<div class="level2">
+
+<p>
+Syntax:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;string&gt;</span>
+    size_type find_first_of<span class="br0">&#40;</span> <span class="kw4">const</span> string <span class="sy3">&amp;</span>str, size_type index <span class="sy1">=</span> <span class="nu0">0</span> <span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span>
+    size_type find_first_of<span class="br0">&#40;</span> <span class="kw4">const</span> Char<span class="sy2">*</span> str, size_type index <span class="sy1">=</span> <span class="nu0">0</span> <span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span>
+    size_type find_first_of<span class="br0">&#40;</span> <span class="kw4">const</span> Char<span class="sy2">*</span> str, size_type index, size_type num <span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span>
+    size_type find_first_of<span class="br0">&#40;</span> Char ch, size_type index <span class="sy1">=</span> <span class="nu0">0</span> <span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span></pre>
+<p>
+find_first_of()関数は、いずれかの動作をします。
+
+</p>
+<ul>
+<li class="level1"><div class="li">  現在の文字列から”str”に含まれる文字にマッチした最初の文字の位置を返します。検索開始位置を”index”で与えることができ、見つからなかったら”string::npos”を返します。</div>
+</li>
+<li class="level1"><div class="li"> 現在の文字列の”index”番目から”num”文字に対して、文字列”str”の文字を検索します。最初にマッチした位置を返し、見つからなかったら”string::npos”を返します。   </div>
+</li>
+<li class="level1"><div class="li"> 文字&#039;ch&#039;が現在の文字列に対して、最初にマッチしなかった位置を返します。検索開始位置を”index”で与えることができ、見つからなかったら”string::npos”を返します。</div>
+</li>
+</ul>
+
+<p>
+
+例えば、次のコードは find_first_of を使い、母音をアスタリスクに置換しています。
+</p>
+<pre class="cpp code cpp">  string str <span class="sy1">=</span> <span class="st0">&quot;In this house, we obey the laws of thermodynamics!&quot;</span><span class="sy4">;</span>
+  string<span class="sy4">::</span><span class="me2">size_type</span> found <span class="sy1">=</span> str.<span class="me1">find_first_of</span><span class="br0">&#40;</span><span class="st0">&quot;aeiouAEIOU&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+  <span class="kw1">while</span><span class="br0">&#40;</span> found <span class="sy3">!</span><span class="sy1">=</span> string<span class="sy4">::</span><span class="me2">npos</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    str<span class="br0">&#91;</span>found<span class="br0">&#93;</span> <span class="sy1">=</span> <span class="st0">'*'</span><span class="sy4">;</span>
+    found <span class="sy1">=</span> str.<span class="me1">find_first_of</span><span class="br0">&#40;</span><span class="st0">&quot;aeiouAEIUO&quot;</span>,found<span class="sy2">+</span><span class="nu0">1</span><span class="br0">&#41;</span><span class="sy4">;</span>
+  <span class="br0">&#125;</span>
+&nbsp;
+  <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> str <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>  <span class="co1">// displays &quot;*n th*s h**s*, w* *b*y th* l*ws *f th*rm*dyn*m*cs!&quot;</span></pre>
+<p>
+Related Topics: <a href="find" class="wikilink1" title="jp:string:find">find</a>, <a href="find_first_not_of" class="wikilink1" title="jp:string:find_first_not_of">find_first_not_of</a>, <a href="find_last_not_of" class="wikilink1" title="jp:string:find_last_not_of">find_last_not_of</a>, <a href="find_last_of" class="wikilink1" title="jp:string:find_last_of">find_last_of</a>, <a href="rfind" class="wikilink1" title="jp:string:rfind">rfind</a>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "find_first_of" [3-] --></div>
+</body>
+</html>

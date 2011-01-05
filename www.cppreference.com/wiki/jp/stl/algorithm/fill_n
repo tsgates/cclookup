@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:algorithm:fill_n</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:23-0700" />
+<meta name="keywords" content="jp,algorithm,fill_n" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/algorithm/fill_n?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp:algorithm" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/algorithm/fill_n" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/algorithm/fill_n" />
+<link rel="canonical" href="fill_n" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp:algorithm';var JSINFO = {"id":"jp:algorithm:fill_n","namespace":"jp:algorithm"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="fill_n" id="fill_n">fill_n</a></h2>
+<div class="level2">
+
+<p>
+文法:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;algorithm&gt;</span>
+    <span class="kw4">void</span> fill_n<span class="br0">&#40;</span> output_iterator start, SIZE n, <span class="kw4">const</span> T<span class="sy3">&amp;</span> val <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+fill_n は <a href="fill" class="wikilink1" title="jp:algorithm:fill">fill</a> に似ています. fill は与えた範囲に値を代入しますが fill_n はstartから始まる最初の n 要素に値を代入します．
+</p>
+
+<p>
+次の例では fill_n を使ってvectorの前半分に -1 をセットします．
+</p>
+<pre class="cpp code cpp">   vector<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> v1<span class="sy4">;</span>
+   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     v1.<span class="me1">push_back</span><span class="br0">&#40;</span> i <span class="br0">&#41;</span><span class="sy4">;</span>
+   <span class="br0">&#125;</span>
+&nbsp;
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Before, v1 is: &quot;</span><span class="sy4">;</span>
+   <span class="kw1">for</span><span class="br0">&#40;</span> vector<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">size_type</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> v1.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> v1<span class="br0">&#91;</span>i<span class="br0">&#93;</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; &quot;</span><span class="sy4">;</span>
+   <span class="br0">&#125;</span>
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+&nbsp;
+   fill_n<span class="br0">&#40;</span> v1.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, v1.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy2">/</span><span class="nu0">2</span>, <span class="sy2">-</span><span class="nu0">1</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;After, v1 is: &quot;</span><span class="sy4">;</span>
+   <span class="kw1">for</span><span class="br0">&#40;</span> vector<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">size_type</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> v1.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> v1<span class="br0">&#91;</span>i<span class="br0">&#93;</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; &quot;</span><span class="sy4">;</span>
+   <span class="br0">&#125;</span>
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
+<p>
+出力:
+</p>
+<pre class="code">
+   Before, v1 is: 0 1 2 3 4 5 6 7 8 9
+   After, v1 is: -1 -1 -1 -1 -1 5 6 7 8 9</pre>
+<p>
+関連項目: <a href="fill" class="wikilink1" title="jp:algorithm:fill">fill</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

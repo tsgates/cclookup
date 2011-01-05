@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr"
+ lang="fr" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>fr:string:c:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:58-0700" />
+<meta name="keywords" content="fr,string,c,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/fr/string/c/start?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=fr:string:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/fr/string/c/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/fr/string/c/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='fr:string:c';var JSINFO = {"id":"fr:string:c:start","namespace":"fr:string:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="standard_c_chaine_de_caractere" id="standard_c_chaine_de_caractere">Standard C Chaîne de caractère</a></h1>
+<div class="level1">
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="atof" class="wikilink1" title="fr:string:c:atof">atof</a></td><td class="col1">convertis une chaine vers un double</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="atoi" class="wikilink1" title="fr:string:c:atoi">atoi</a></td><td class="col1">convertis une chaine vers un entier</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="atol" class="wikilink1" title="fr:string:c:atol">atol</a></td><td class="col1">convertis une chaine vers un long</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="isalnum" class="wikilink1" title="fr:string:c:isalnum">isalnum</a></td><td class="col1">vrai si un caractère est alphanumerique</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="isalpha" class="wikilink1" title="fr:string:c:isalpha">isalpha</a></td><td class="col1">vrai si un caractère est alphabetique</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="iscntrl" class="wikilink1" title="fr:string:c:iscntrl">iscntrl</a></td><td class="col1">vrai si un caractère est un caractère de contrôle</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="isdigit" class="wikilink1" title="fr:string:c:isdigit">isdigit</a></td><td class="col1">vrai si un caractère est un chiffre</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="isgraph" class="wikilink1" title="fr:string:c:isgraph">isgraph</a></td><td class="col1">vrai si un caractère est un caractère graphique</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="islower" class="wikilink1" title="fr:string:c:islower">islower</a></td><td class="col1">vrai si un caractère est une minuscule</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="isprint" class="wikilink1" title="fr:string:c:isprint">isprint</a></td><td class="col1">vrai si un caractère est un caractère affichable</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="ispunct" class="wikilink1" title="fr:string:c:ispunct">ispunct</a></td><td class="col1">vrai si un caractère est une ponctuation</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="isspace" class="wikilink1" title="fr:string:c:isspace">isspace</a></td><td class="col1">vrai si un caractère est un caractère d&#039;espace</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><a href="isupper" class="wikilink1" title="fr:string:c:isupper">isupper</a></td><td class="col1">vrai si un caractère est une majuscule</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><a href="isxdigit" class="wikilink1" title="fr:string:c:isxdigit">isxdigit</a></td><td class="col1">vrai si un caractère est un caractère hexadecimal</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><a href="memchr" class="wikilink1" title="fr:string:c:memchr">memchr</a></td><td class="col1">recherche dans un tableau la première occurrence d&#039;un caractère</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><a href="memcmp" class="wikilink1" title="fr:string:c:memcmp">memcmp</a></td><td class="col1">compare deux buffers</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><a href="memcpy" class="wikilink1" title="fr:string:c:memcpy">memcpy</a></td><td class="col1">copie un buffer dans un autre</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><a href="memmove" class="wikilink1" title="fr:string:c:memmove">memmove</a></td><td class="col1">déplace un buffer vers un autre</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"><a href="memset" class="wikilink1" title="fr:string:c:memset">memset</a></td><td class="col1">rempli un buffer avec un caractère</td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"><a href="strcat" class="wikilink1" title="fr:string:c:strcat">strcat</a></td><td class="col1">concatène deux chaines</td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"><a href="strchr" class="wikilink1" title="fr:string:c:strchr">strchr</a></td><td class="col1">recherche la première occurence d&#039;un caractère dans une chaine</td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"><a href="strcmp" class="wikilink1" title="fr:string:c:strcmp">strcmp</a></td><td class="col1">compare deux chaînes de caractères</td>
+	</tr>
+	<tr class="row22">
+		<td class="col0"><a href="strcoll" class="wikilink1" title="fr:string:c:strcoll">strcoll</a></td><td class="col1">compare deux chaînes de caractères selon la valeur de la locale courante</td>
+	</tr>
+	<tr class="row23">
+		<td class="col0"><a href="strcpy" class="wikilink1" title="fr:string:c:strcpy">strcpy</a></td><td class="col1">copie une chaîne dans une autre</td>
+	</tr>
+	<tr class="row24">
+		<td class="col0"><a href="strcspn" class="wikilink1" title="fr:string:c:strcspn">strcspn</a></td><td class="col1">renvoie la position de la première occurence d&#039;une séquence de caractères dans une chaîne</td>
+	</tr>
+	<tr class="row25">
+		<td class="col0"><a href="strerror" class="wikilink1" title="fr:string:c:strerror">strerror</a></td><td class="col1">renvoie la description associée à un code d&#039;erreur</td>
+	</tr>
+	<tr class="row26">
+		<td class="col0"><a href="strlen" class="wikilink1" title="fr:string:c:strlen">strlen</a></td><td class="col1">renvoie la longueur d&#039;une chaîne de caractères</td>
+	</tr>
+	<tr class="row27">
+		<td class="col0"><a href="strncat" class="wikilink1" title="fr:string:c:strncat">strncat</a></td><td class="col1">concatène deux chaînes dans la limite d&#039;une certain nombre de caractères</td>
+	</tr>
+	<tr class="row28">
+		<td class="col0"><a href="strncmp" class="wikilink1" title="fr:string:c:strncmp">strncmp</a></td><td class="col1">compare deux chaînes dans la limite d&#039;une certain nombre de caractères</td>
+	</tr>
+	<tr class="row29">
+		<td class="col0"><a href="strncpy" class="wikilink1" title="fr:string:c:strncpy">strncpy</a></td><td class="col1">copie un certain nombre de caractères d&#039;une chaîne dans une autre</td>
+	</tr>
+	<tr class="row30">
+		<td class="col0"><a href="strpbrk" class="wikilink1" title="fr:string:c:strpbrk">strpbrk</a></td><td class="col1">trouve la première occurence d&#039;une séquence de caractères dans une chaîne de caractères</td>
+	</tr>
+	<tr class="row31">
+		<td class="col0"><a href="strrchr" class="wikilink1" title="fr:string:c:strrchr">strrchr</a></td><td class="col1">trouve la dernière occurence d&#039;un caractère dans une chaîne</td>
+	</tr>
+	<tr class="row32">
+		<td class="col0"><a href="strspn" class="wikilink1" title="fr:string:c:strspn">strspn</a></td><td class="col1">renvoie l&#039;index du premier caractère n&#039;appartenant pas à une séquence de caractères donnée</td>
+	</tr>
+	<tr class="row33">
+		<td class="col0"><a href="strstr" class="wikilink1" title="fr:string:c:strstr">strstr</a></td><td class="col1">trouve la première occurence d&#039;une sous-chaîne de caractères</td>
+	</tr>
+	<tr class="row34">
+		<td class="col0"><a href="strtod" class="wikilink1" title="fr:string:c:strtod">strtod</a></td><td class="col1">convertit une chaîne en double</td>
+	</tr>
+	<tr class="row35">
+		<td class="col0"><a href="strtok" class="wikilink1" title="fr:string:c:strtok">strtok</a></td><td class="col1">trouve le “segment” suivant dans une chaîne de caractères</td>
+	</tr>
+	<tr class="row36">
+		<td class="col0"><a href="strtol" class="wikilink1" title="fr:string:c:strtol">strtol</a></td><td class="col1">convertit une chaîne en long</td>
+	</tr>
+	<tr class="row37">
+		<td class="col0"><a href="strtoul" class="wikilink1" title="fr:string:c:strtoul">strtoul</a></td><td class="col1">convertit une chaîne en unsigned long</td>
+	</tr>
+	<tr class="row38">
+		<td class="col0"><a href="strxfrm" class="wikilink1" title="fr:string:c:strxfrm">strxfrm</a></td><td class="col1">transforme une sous-chaîne de manière à pouvoir la comparer avec <code>strcoll</code></td>
+	</tr>
+	<tr class="row39">
+		<td class="col0"><a href="tolower" class="wikilink1" title="fr:string:c:tolower">tolower</a></td><td class="col1">convertit un caractère en minuscule</td>
+	</tr>
+	<tr class="row40">
+		<td class="col0"><a href="toupper" class="wikilink1" title="fr:string:c:toupper">toupper</a></td><td class="col1">convertit un caractère en majuscule</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [55-2671] -->
+</div>
+</div>
+</body>
+</html>

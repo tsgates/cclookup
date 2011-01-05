@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es"
+ lang="es" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>es:string:getline</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:32-0700" />
+<meta name="keywords" content="es,string,getline" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/es/string/getline?do=index" title="Índice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=es:string" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/es/string/getline" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/es/string/getline" />
+<link rel="canonical" href="getline" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='es:string';var JSINFO = {"id":"es:string:getline","namespace":"es:string"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="getline" id="getline">getline</a></h2>
+<div class="level2">
+
+<p>
+Sintaxis:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;string&gt;</span>
+    istream<span class="sy3">&amp;</span> std<span class="sy4">::</span><span class="me2">getline</span><span class="br0">&#40;</span> istream<span class="sy3">&amp;</span> is, string<span class="sy3">&amp;</span> s <span class="br0">&#41;</span><span class="sy4">;</span>
+    istream<span class="sy3">&amp;</span> std<span class="sy4">::</span><span class="me2">getline</span><span class="br0">&#40;</span> istream<span class="sy3">&amp;</span> is, string<span class="sy3">&amp;</span> s, Char delimiter <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+La cabecera <code>&lt;string&gt;</code> define la función global <code>getline()</code> para leer cadenas desde un flujo de E/S. Esta función no forma parte de la interface de la clase <code>string</code> pero aún así interactúa con ella, leyendo una línea y almacenándola en la cadena <code>s</code>. Si se especifica un delimitador, <code>getline()</code> usa ese delimitador para determinar cuándo terminar de leer datos (de manera parecida a como lo hace <code>get()</code>). Por lo demás, se puede invocar de la siguiente manera:
+</p>
+<pre class="cpp code cpp"> <span class="kw1">return</span> getline<span class="br0">&#40;</span> is, s, is.<span class="me1">widen</span><span class="br0">&#40;</span> <span class="st0">'<span class="es1">\n</span>'</span> <span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+NOTA: <code>istream</code> es el tipo de flujo <code>basic_istream&lt;Char&gt;</code> correspondiente a un tipo de caracter <code>Char</code>.
+</p>
+
+<p>
+En el siguiente ejemplo se usa <code>getline()</code> para leer un archivo de líneas de texto desde la entrada estándar y mostrar los resultados en la salida estándar:
+</p>
+<pre class="cpp code cpp">   string s<span class="sy4">;</span>
+   getline<span class="br0">&#40;</span> <span class="kw3">cin</span>, s <span class="br0">&#41;</span><span class="sy4">;</span>
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Se ha ingresado &quot;</span> <span class="sy1">&lt;&lt;</span> s <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
+<p>
+Después de haber recibido datos en una cadena, puede resultar conveniente usar <a href="../io/sstream/start" class="wikilink1" title="es:io:sstream:start">stringstreams</a> para extraer datos de esa cadena. Por ejemplo el siguiente código lee números desde la entrada estándar, ignorando líneas “comentadas” al estilo C, es decir con dos slash (//) al inicio:
+
+</p>
+<pre class="cpp code cpp">    <span class="co1">// se espera recibir números delimitador por blancos,</span>
+    <span class="co1">// o líneas de texto empezando con dos slashes (//)</span>
+    string s<span class="sy4">;</span>
+    <span class="kw1">while</span><span class="br0">&#40;</span> getline<span class="br0">&#40;</span><span class="kw3">cin</span>,s<span class="br0">&#41;</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+      <span class="kw1">if</span><span class="br0">&#40;</span> s.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy1">&gt;=</span> <span class="nu0">2</span> <span class="sy3">&amp;&amp;</span> s<span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span> <span class="sy1">==</span> <span class="st0">'/'</span> <span class="sy3">&amp;&amp;</span> s<span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span> <span class="sy1">==</span> <span class="st0">'/'</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;  comentario ignorado: &quot;</span> <span class="sy1">&lt;&lt;</span> s <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+      <span class="br0">&#125;</span> <span class="kw1">else</span> <span class="br0">&#123;</span>
+        istringstream ss<span class="br0">&#40;</span>s<span class="br0">&#41;</span><span class="sy4">;</span>
+        <span class="kw4">double</span> d<span class="sy4">;</span>
+        <span class="kw1">while</span><span class="br0">&#40;</span> ss <span class="sy1">&gt;&gt;</span> d <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+          <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;  número obtenido: &quot;</span> <span class="sy1">&lt;&lt;</span> d <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+        <span class="br0">&#125;</span>
+      <span class="br0">&#125;</span>
+    <span class="br0">&#125;</span></pre>
+<p>
+Al ejecutar este código con una entrada de datos provista por el usuario se obtiene un resultado como el siguiente:
+</p>
+<pre class="code">
+    // test
+      comentario ignorado: // test
+    23.3 -1 3.14159
+      número obtenido: 23.3
+      número obtenido: -1
+      número obtenido: 3.14159
+    // next batch
+      comentario ignorado: // next batch
+    1 2 3 4 5
+      número obtenido: 1
+      número obtenido: 2
+      número obtenido: 3
+      número obtenido: 4
+      número obtenido: 5
+    50
+      número obtenido: 50</pre>
+<p>
+Una invocación a <code>getline()</code> empieza a leer desde la posición donde se está leyendo en un archivo por lo que se puede usar para leer el resto de una línea cuando se ha detenido la lectura por encontrar un delimitador.
+</p>
+
+<p>
+Tópicos Relacionados: <a href="../io/get" class="wikilink1" title="es:io:get">get</a>, <a href="http://www.cppreference.com/wiki/es/io/getline" class="wikilink2" title="es:io:getline" rel="nofollow">getline</a>, <a href="../io/sstream/start" class="wikilink1" title="es:io:sstream:start">stringstream</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

@@ -4,46 +4,113 @@
  lang="en" dir="ltr">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>stl:algorithm:reverse</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
+  <title>algorithm:reverse</title>
+<meta name="generator" content="DokuWiki" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2008-10-14T15:42:06-0700" />
-<meta name="keywords" content="stl,algorithm,reverse" />
+<meta name="date" content="2010-11-13T05:17:27-0800" />
+<meta name="keywords" content="algorithm,reverse" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/stl/algorithm/reverse?do=index" title="Index" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/algorithm/reverse?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
-<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=stl:algorithm" />
-<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/stl/algorithm/reverse" />
-<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/stl/algorithm/reverse" />
-<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=algorithm" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/algorithm/reverse" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/algorithm/reverse" />
+<link rel="canonical" href="reverse" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='algorithm';var JSINFO = {"id":"algorithm:reverse","namespace":"algorithm"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
 
+<ul class="toc">
+<li class="clear">
 
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="reverse#reverse" class="toc">reverse</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="reverse#parameters" class="toc">Parameters</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="reverse#return_value" class="toc">Return value</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="reverse#equivalent_function" class="toc">Equivalent function</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="reverse#complexity" class="toc">Complexity</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="reverse#see_also" class="toc">See also</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
 
-<h2><a name="reverse" id="reverse">reverse</a></h2>
+<h2 class="sectionedit1"><a name="reverse" id="reverse">reverse</a></h2>
 <div class="level2">
-
+<pre class="cpp code cpp"><span class="co2">#include &lt;algorithm&gt;</span>
+&nbsp;
+<span class="kw2">template</span><span class="sy1">&lt;</span> <span class="kw2">class</span> BidirectionalIterator <span class="sy1">&gt;</span>
+<span class="kw4">void</span> reverse<span class="br0">&#40;</span> BidirectionalIterator first, BidirectionalIterator last <span class="br0">&#41;</span><span class="sy4">;</span></pre>
 <p>
-Syntax:
-</p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;algorithm&gt;</span>
-    <span class="kw4">void</span> reverse<span class="br0">&#40;</span> iterator start<span class="sy0">,</span> iterator end <span class="br0">&#41;</span>;</pre>
-<p>
-The reverse() algorithm reverses the order of elements in the range
-[start,end).
-</p>
-
-<p>
-Related Topics: <a href="reverse_copy" class="wikilink1" title="stl:algorithm:reverse_copy">reverse_copy</a>
+Reverses the order of the elements in the range <code>[first, last)</code>.
 </p>
 
 </div>
-<!-- SECTION "reverse" [3-] --></div>
+<!-- EDIT1 SECTION "reverse" [1-237] -->
+<h3 class="sectionedit2"><a name="parameters" id="parameters">Parameters</a></h3>
+<div class="level3">
+
+<p>
+
+<code>first</code>, <code>last</code> - the range to be reversed
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Parameters" [238-305] -->
+<h3 class="sectionedit3"><a name="return_value" id="return_value">Return value</a></h3>
+<div class="level3">
+
+<p>
+
+(none)
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Return value" [306-335] -->
+<h3 class="sectionedit4"><a name="equivalent_function" id="equivalent_function">Equivalent function</a></h3>
+<div class="level3">
+<pre class="cpp code cpp"><span class="kw2">template</span><span class="sy1">&lt;</span><span class="kw2">class</span> BidirectionalIterator<span class="sy1">&gt;</span>
+<span class="kw4">void</span> reverse <span class="br0">&#40;</span>BidirectionalIterator first, BidirectionalIterator last<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <span class="kw1">while</span> <span class="br0">&#40;</span><span class="br0">&#40;</span>first <span class="sy3">!</span><span class="sy1">=</span> last<span class="br0">&#41;</span> <span class="sy3">&amp;&amp;</span> <span class="br0">&#40;</span>first <span class="sy3">!</span><span class="sy1">=</span> <span class="sy2">--</span>last<span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        std<span class="sy4">::</span><span class="me2">swap</span><span class="br0">&#40;</span><span class="sy2">*</span>first<span class="sy2">++</span>, <span class="sy2">*</span>last<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="br0">&#125;</span>
+<span class="br0">&#125;</span></pre>
+</div>
+<!-- EDIT4 SECTION "Equivalent function" [336-586] -->
+<h3 class="sectionedit5"><a name="complexity" id="complexity">Complexity</a></h3>
+<div class="level3">
+
+<p>
+
+linear in the distance between <code>first</code> and <code>last</code>
+</p>
+
+</div>
+<!-- EDIT5 SECTION "Complexity" [587-661] -->
+<h3 class="sectionedit6"><a name="see_also" id="see_also">See also</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="reverse_copy" class="wikilink1" title="algorithm:reverse_copy">reverse_copy</a>
+</p>
+
+</div>
+<!-- EDIT6 SECTION "See also" [662-] --></div>
 </body>
 </html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>start2</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="noindex,nofollow" />
+<meta name="date" content="2010-11-15T04:48:54-0800" />
+<meta name="keywords" content="start2" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/start2?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/start2" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/start2" />
+<link rel="canonical" href="start2" />
+<link rel="stylesheet" media="screen" type="text/css" href="lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='';var JSINFO = {"id":"start2","namespace":""};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="start2#c_reference" class="toc">C++ Reference</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="start2#section" class="toc"></a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="start2#section1" class="toc"></a></span></div></li>
+</ul>
+</li>
+<li class="level2"><div class="li"><span class="li"><a href="start2#section2" class="toc"></a></span></div></li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="c_reference" id="c_reference">C++ Reference</a></h2>
+<div class="level2">
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0">Beta</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [26-32] --><table class="columns-plugin" style="width:100%">
+<tr><td class="first" style="width:50%;vertical-align:top;">
+
+<p>
+<strong>General Topics</strong>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="about/faq" class="wikilink1" title="about:faq">FAQ</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="preprocessor/start" class="wikilink1" title="preprocessor:start">Pre-processor commands</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="operator_precedence" class="wikilink1" title="operator_precedence">Operator Precedence</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="escape_sequences" class="wikilink1" title="escape_sequences">Escape Sequences</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="ascii" class="wikilink1" title="ascii">ASCII Chart</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="data_types" class="wikilink1" title="data_types">Data Types</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="keywords/start" class="wikilink1" title="keywords:start">Keywords</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="header_files" class="wikilink1" title="header_files">Header Files</a></div>
+</li>
+</ul>
+
+<p>
+
+ Standard C Library 
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="c/start" class="wikilink1" title="c:start">Overview</a></div>
+</li>
+<li class="level1"><div class="li"> <del> Standard C Math</del></div>
+</li>
+<li class="level1"><div class="li"> <del> Standard C Time &amp; Date</del></div>
+</li>
+<li class="level1"><div class="li"> <del> Standard C Memory</del></div>
+</li>
+<li class="level1"><div class="li"> <a href="c/other/start" class="wikilink1" title="c:other:start">Other standard C functions</a></div>
+</li>
+</ul>
+</td><td class="last">
+
+<p>
+
+<strong> C++ Standard libraries </strong>
+</p>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> Language supprort library</div>
+</li>
+</ul>
+
+</div>
+<div class="level3">
+
+<p>
+<a href="types/start" class="wikilink1" title="types:start"> Standard types</a><br/>
+
+<a href="rtti/start" class="wikilink1" title="rtti:start"> Runtime type identification</a><br/>
+
+<a href="error/start" class="wikilink1" title="error:start"> Error handling</a><br/>
+
+<a href="memory/start" class="wikilink1" title="memory:start"> Dynamic memory management</a><br/>
+
+<a href="support/start" class="wikilink1" title="support:start"> Other runtime support</a><br/>
+
+</p>
+
+</div>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> <a href="utility/start" class="wikilink1" title="utility:start"> General utilities library</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="string/start" class="wikilink1" title="string:start"> Strings library</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="stl/start" class="wikilink1" title="stl:start"> Containers library</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="stl/algorithm/start" class="wikilink1" title="algorithm:start"> Algorithms library</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="stl/iterators" class="wikilink1" title="iterator:start"> Iterators library</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="numeric/start" class="wikilink1" title="numeric:start"> Numerics library</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="locale/start" class="wikilink1" title="locale:start"> Localizations library</a> </div>
+</li>
+<li class="level1"><div class="li"> <a href="io/start" class="wikilink1" title="io:start"> Input/Output library</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="regex/start" class="wikilink1" title="regex:start"> Regular expressions library</a> (<a href="c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</div>
+</li>
+<li class="level1"><div class="li"> <a href="atomic/start" class="wikilink1" title="atomic:start"> Atomic operations library</a> (<a href="c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</div>
+</li>
+<li class="level1"><div class="li"> <a href="thread/start" class="wikilink1" title="thread:start"> Thread support library</a> (<a href="c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</div>
+</li>
+</ul>
+
+</div>
+</td></tr></table>
+
+</div>
+</div>
+</body>
+</html>

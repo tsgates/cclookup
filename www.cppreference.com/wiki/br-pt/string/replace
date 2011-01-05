@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="br-pt"
+ lang="br-pt" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>br-pt:string:replace</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:02-0700" />
+<meta name="keywords" content="br-pt,string,replace" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/br-pt/string/replace?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=br-pt:string" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/br-pt/string/replace" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/br-pt/string/replace" />
+<link rel="canonical" href="replace" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='br-pt:string';var JSINFO = {"id":"br-pt:string:replace","namespace":"br-pt:string"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="replace" id="replace">replace</a></h2>
+<div class="level2">
+
+<p>
+Sintaxe:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;string&gt;</span>
+    string<span class="sy3">&amp;</span> replace<span class="br0">&#40;</span> size_type index, size_type num, <span class="kw4">const</span> string<span class="sy3">&amp;</span> str <span class="br0">&#41;</span><span class="sy4">;</span>
+    string<span class="sy3">&amp;</span> replace<span class="br0">&#40;</span> size_type index1, size_type num1, <span class="kw4">const</span> string<span class="sy3">&amp;</span> str, size_type index2, size_type num2 <span class="br0">&#41;</span><span class="sy4">;</span>
+    string<span class="sy3">&amp;</span> replace<span class="br0">&#40;</span> size_type index, size_type num, <span class="kw4">const</span> Char<span class="sy2">*</span> str <span class="br0">&#41;</span><span class="sy4">;</span>
+    string<span class="sy3">&amp;</span> replace<span class="br0">&#40;</span> size_type index, size_type num1, <span class="kw4">const</span> Char<span class="sy2">*</span> str, size_type num2 <span class="br0">&#41;</span><span class="sy4">;</span>
+    string<span class="sy3">&amp;</span> replace<span class="br0">&#40;</span> size_type index, size_type num1, size_type num2, Char ch<span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+    string<span class="sy3">&amp;</span> replace<span class="br0">&#40;</span> iterator start, iterator end, <span class="kw4">const</span> string<span class="sy3">&amp;</span> str <span class="br0">&#41;</span><span class="sy4">;</span>
+    string<span class="sy3">&amp;</span> replace<span class="br0">&#40;</span> iterator start, iterator end, <span class="kw4">const</span> Char<span class="sy2">*</span> str <span class="br0">&#41;</span><span class="sy4">;</span>
+    string<span class="sy3">&amp;</span> replace<span class="br0">&#40;</span> iterator start, iterator end, <span class="kw4">const</span> Char<span class="sy2">*</span> str, size_type num <span class="br0">&#41;</span><span class="sy4">;</span>
+    string<span class="sy3">&amp;</span> replace<span class="br0">&#40;</span> iterator start, iterator end, size_type num, Char ch <span class="br0">&#41;</span><span class="sy4">;</span>
+    string<span class="sy3">&amp;</span> replace<span class="br0">&#40;</span> iterator start, iterator end, input_iterator start2, input_iterator end2 <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+
+A função replace():
+
+</p>
+<ul>
+<li class="level1"><div class="li"> substitui até <code>num</code> caracteres da string actual com caracteres de <code>str</code>, começando em <code>index</code>,</div>
+</li>
+<li class="level1"><div class="li"> substitui até <code>num1</code> caracteres da string actual (começando em <code>index1</code>) com no máximo <code>num2</code> caracteres de <code>str</code> começando em <code>index2</code>,</div>
+</li>
+<li class="level1"><div class="li"> substitui até <code>num</code> caracteres da string actual com caracteres de <code>str</code>, começando na posição <code>index</code> em <code>str</code>,</div>
+</li>
+<li class="level1"><div class="li"> substitui até <code>num1</code> caracteres da string actual (começando em <code>index1</code>) com <code>num2</code> caracteres de <code>str</code> começando em <code>index2</code>,</div>
+</li>
+<li class="level1"><div class="li"> substitui até <code>num1</code> caracteres na string actual (começando em <code>index</code>) com <code>num2</code> cópias de <code>ch</code>,</div>
+</li>
+<li class="level1"><div class="li"> substitui os caracteres da string actual de <code>start</code> a <code>end</code> com <code>str</code>,</div>
+</li>
+<li class="level1"><div class="li"> substitui caracteres na string actual de <code>start</code> a <code>end</code> com <code>num</code> caracteres de <code>str</code>,</div>
+</li>
+<li class="level1"><div class="li"> ou substitui os caracteres na string actual de <code>start</code> a <code>end com </code>num<code> cópias de </code>ch&#039;&#039;.</div>
+</li>
+</ul>
+
+<p>
+
+Por exemplo, o código seguinte mostra a string “They say he carved it himself…find your soul-mate, Homer.”
+</p>
+<pre class="cpp code cpp">     string s <span class="sy1">=</span> <span class="st0">&quot;They say he carved it himself...from a BIGGER spoon&quot;</span><span class="sy4">;</span>
+     string s2 <span class="sy1">=</span> <span class="st0">&quot;find your soul-mate, Homer.&quot;</span><span class="sy4">;</span>
+     s.<span class="me1">replace</span><span class="br0">&#40;</span> <span class="nu0">32</span>, s.<span class="me1">length</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy2">-</span> <span class="nu0">32</span>, s2 <span class="br0">&#41;</span><span class="sy4">;</span>
+     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> s <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
+<p>
+Tópicos Relacionados: <a href="insert" class="wikilink1" title="br-pt:string:insert">insert</a>
+
+</p>
+
+</div>
+<!-- EDIT1 SECTION "replace" [3-] --></div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="tr"
+ lang="tr" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>tr:chrono:c:asctime</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-11-08T13:10:21-0800" />
+<meta name="keywords" content="tr,chrono,c,asctime" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/tr/chrono/c/asctime?do=index" title="İndeks" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=tr:chrono:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/tr/chrono/c/asctime" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/tr/chrono/c/asctime" />
+<link rel="canonical" href="asctime" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='tr:chrono:c';var JSINFO = {"id":"tr:chrono:c:asctime","namespace":"tr:chrono:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="asctime" id="asctime">asctime</a></h2>
+<div class="level2">
+
+<p>
+Sözdizimi:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;ctime&gt;</span>
+    <span class="kw4">char</span> <span class="sy2">*</span><span class="kw3">asctime</span><span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">struct</span> <span class="kw4">tm</span> <span class="sy2">*</span>ptr <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+
+<strong>asctime()</strong> fonksiyonu &#039;ptr&#039; yapısında tutulan zaman bilgisini aşağıdaki biçime uygun olarak, karakter dizisine çevirir: 
+</p>
+<pre class="cpp code cpp">     haftanın_günü ay tarih saat<span class="sy4">:</span>dakika<span class="sy4">:</span>saniye yıl</pre>
+<p>
+
+Örnek:
+</p>
+<pre class="cpp code cpp">     Mon Jun <span class="nu0">26</span> <span class="nu0">12</span><span class="sy4">:</span><span class="nu8">03</span><span class="sy4">:</span><span class="nu0">53</span> <span class="nu0">2000</span></pre>
+<p>
+İlgili Başlıklar: <a href="http://www.cppreference.com/wiki/tr/chrono/c/clock" class="wikilink2" title="tr:chrono:c:clock" rel="nofollow">clock</a>, <a href="http://www.cppreference.com/wiki/tr/chrono/c/ctime" class="wikilink2" title="tr:chrono:c:ctime" rel="nofollow">ctime</a>, <a href="http://www.cppreference.com/wiki/tr/chrono/c/difftime" class="wikilink2" title="tr:chrono:c:difftime" rel="nofollow">difftime</a>, <a href="http://www.cppreference.com/wiki/tr/chrono/c/gmtime" class="wikilink2" title="tr:chrono:c:gmtime" rel="nofollow">gmtime</a>, <a href="http://www.cppreference.com/wiki/tr/chrono/c/localtime" class="wikilink2" title="tr:chrono:c:localtime" rel="nofollow">localtime</a>, <a href="http://www.cppreference.com/wiki/tr/chrono/c/mktime" class="wikilink2" title="tr:chrono:c:mktime" rel="nofollow">mktime</a>, <a href="time" class="wikilink1" title="tr:chrono:c:time">time</a>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "asctime" [2-] --></div>
+</body>
+</html>

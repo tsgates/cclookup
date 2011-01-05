@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>string:cw:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:07-0700" />
+<meta name="keywords" content="string,cw,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/string/cw/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=string:cw" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/string/cw/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/string/cw/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='string:cw';var JSINFO = {"id":"string:cw:start","namespace":"string:cw"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="null-terminated_wide_strings" id="null-terminated_wide_strings">Null-terminated wide strings</a></h2>
+<div class="level2">
+
+<p>
+
+See also <a href="../c/start" class="wikilink1" title="string:c:start"> null-terminated narrow strings</a>
+</p>
+
+</div>
+
+<h4><a name="functions" id="functions">Functions</a></h4>
+<div class="level4">
+
+</div>
+
+<h5><a name="wide_character_mainpulation" id="wide_character_mainpulation">Wide character mainpulation</a></h5>
+<div class="level5">
+
+<p>
+
+See <a href="http://www.cppreference.com/wiki/string/cw/character_classes" class="wikilink2" title="string:cw:character_classes" rel="nofollow">character_classes</a>
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/string/cw/iswalnum" class="wikilink2" title="string:cw:iswalnum" rel="nofollow">iswalnum</a> </td><td class="col1"> checks if a wide character is alphanumeric</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/string/cw/iswalpha" class="wikilink2" title="string:cw:iswalpha" rel="nofollow">iswalpha</a> </td><td class="col1"> checks if a wide character is alphabetic</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/string/cw/iswblank" class="wikilink2" title="string:cw:iswblank" rel="nofollow">iswblank</a> </td><td class="col1"> <a href="../../todo" class="wikilink1" title="todo">todo</a> (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/string/cw/iswcntrl" class="wikilink2" title="string:cw:iswcntrl" rel="nofollow">iswcntrl</a> </td><td class="col1"> checks if a wide character is a control character</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/string/cw/iswdigit" class="wikilink2" title="string:cw:iswdigit" rel="nofollow">iswdigit</a> </td><td class="col1"> checks if a wide character is a digit</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/string/cw/iswgraph" class="wikilink2" title="string:cw:iswgraph" rel="nofollow">iswgraph</a> </td><td class="col1"> checks if a wide character is a graphical character</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/string/cw/iswlower" class="wikilink2" title="string:cw:iswlower" rel="nofollow">iswlower</a> </td><td class="col1"> checks if a wide character is lowercase</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/string/cw/iswprint" class="wikilink2" title="string:cw:iswprint" rel="nofollow">iswprint</a> </td><td class="col1"> checks if a wide character is a printing character</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/string/cw/iswpunct" class="wikilink2" title="string:cw:iswpunct" rel="nofollow">iswpunct</a> </td><td class="col1"> checks if a wide character is punctuation</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/string/cw/iswspace" class="wikilink2" title="string:cw:iswspace" rel="nofollow">iswspace</a> </td><td class="col1"> checks if a wide character is a space character</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/string/cw/iswupper" class="wikilink2" title="string:cw:iswupper" rel="nofollow">iswupper</a> </td><td class="col1"> checks if a wide character is an uppercase character</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/string/cw/iswxdigit" class="wikilink2" title="string:cw:iswxdigit" rel="nofollow">iswxdigit</a></td><td class="col1"> checks if a wide character is a hexadecimal character</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/string/cw/towlower" class="wikilink2" title="string:cw:towlower" rel="nofollow">towlower</a> </td><td class="col1"> converts a wide character to lowercase</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/string/cw/towupper" class="wikilink2" title="string:cw:towupper" rel="nofollow">towupper</a> </td><td class="col1"> converts a wide character to uppercase</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [180-1038] -->
+</div>
+
+<h5><a name="conversions_to_numeric_formats" id="conversions_to_numeric_formats">Conversions to numeric formats</a></h5>
+<div class="level5">
+<div class="table sectionedit3"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/string/cw/wcstol" class="wikilink2" title="string:cw:wcstol" rel="nofollow">wcstol</a></td><td class="col1">converts a character string to a <code>long</code></td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/string/cw/wcstoul" class="wikilink2" title="string:cw:wcstoul" rel="nofollow">wcstoul</a></td><td class="col1">converts a character string to an <code>unsigned long</code></td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/string/cw/wcstod" class="wikilink2" title="string:cw:wcstod" rel="nofollow">wcstod</a></td><td class="col1">converts a character string to a <code>double</code></td>
+	</tr>
+</table></div>
+<!-- EDIT3 TABLE [1076-1253] -->
+</div>
+
+<h5><a name="wide_string_manipulation" id="wide_string_manipulation">Wide string manipulation</a></h5>
+<div class="level5">
+<div class="table sectionedit4"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/string/cw/wcscpy" class="wikilink2" title="string:cw:wcscpy" rel="nofollow">wcscpy</a></td><td class="col1">copies one string to another</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/string/cw/wcsncpy" class="wikilink2" title="string:cw:wcsncpy" rel="nofollow">wcsncpy</a></td><td class="col1">copies a certain amount of characters from one string to another</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/string/cw/wcscat" class="wikilink2" title="string:cw:wcscat" rel="nofollow">wcscat</a></td><td class="col1">concatenates two strings</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/string/cw/wcsncat" class="wikilink2" title="string:cw:wcsncat" rel="nofollow">wcsncat</a></td><td class="col1">concatenates a certain amount of characters of two strings</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/string/cw/wcsxfrm" class="wikilink2" title="string:cw:wcsxfrm" rel="nofollow">wcsxfrm</a></td><td class="col1">converts a substring so that it can be used by string comparison functions</td>
+	</tr>
+</table></div>
+<!-- EDIT4 TABLE [1285-1605] -->
+</div>
+
+<h5><a name="wide_string_examination" id="wide_string_examination">Wide string examination</a></h5>
+<div class="level5">
+<div class="table sectionedit5"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/string/cw/wcschr" class="wikilink2" title="string:cw:wcschr" rel="nofollow">wcschr</a></td><td class="col1">finds the first occurrence of a character in a string</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/string/cw/wcscmp" class="wikilink2" title="string:cw:wcscmp" rel="nofollow">wcscmp</a></td><td class="col1">compares two strings</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/string/cw/wcsncmp" class="wikilink2" title="string:cw:wcsncmp" rel="nofollow">wcsncmp</a></td><td class="col1">compares a certain amount of characters of two strings</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/string/cw/wcscoll" class="wikilink2" title="string:cw:wcscoll" rel="nofollow">wcscoll</a></td><td class="col1">compares two wide character strings in accordance to the current locale</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/string/cw/wcscspn" class="wikilink2" title="string:cw:wcscspn" rel="nofollow">wcscspn</a></td><td class="col1">searches one string for any characters in another</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/string/cw/wcslen" class="wikilink2" title="string:cw:wcslen" rel="nofollow">wcslen</a></td><td class="col1">returns the length of a given string</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/string/cw/wcspbrk" class="wikilink2" title="string:cw:wcspbrk" rel="nofollow">wcspbrk</a></td><td class="col1">finds the first location of any character in one string, in another string</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/string/cw/wcsrchr" class="wikilink2" title="string:cw:wcsrchr" rel="nofollow">wcsrchr</a></td><td class="col1">finds the last occurrence of a character in a string</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/string/cw/wcsspn" class="wikilink2" title="string:cw:wcsspn" rel="nofollow">wcsspn</a></td><td class="col1">returns the length of a substring of characters of a character string</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/string/cw/wcsstr" class="wikilink2" title="string:cw:wcsstr" rel="nofollow">wcsstr</a></td><td class="col1">finds the first occurrence of a substring of characters</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/string/cw/wcstok" class="wikilink2" title="string:cw:wcstok" rel="nofollow">wcstok</a></td><td class="col1">finds the next token in a character string</td>
+	</tr>
+</table></div>
+<!-- EDIT5 TABLE [1636-2369] -->
+</div>
+
+<h5><a name="memory_manipulation" id="memory_manipulation">Memory manipulation</a></h5>
+<div class="level5">
+<div class="table sectionedit6"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/string/cw/wmemchr" class="wikilink2" title="string:cw:wmemchr" rel="nofollow">wmemchr</a></td><td class="col1">searches an array for the first occurrence of a character</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/string/cw/wmemcmp" class="wikilink2" title="string:cw:wmemcmp" rel="nofollow">wmemcmp</a></td><td class="col1">compares two buffers</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/string/cw/wmemset" class="wikilink2" title="string:cw:wmemset" rel="nofollow">wmemset</a></td><td class="col1">fills a buffer with a character</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/string/cw/wmemcpy" class="wikilink2" title="string:cw:wmemcpy" rel="nofollow">wmemcpy</a></td><td class="col1">copies one buffer to another</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/string/cw/wmemmove" class="wikilink2" title="string:cw:wmemmove" rel="nofollow">wmemmove</a></td><td class="col1">moves one buffer to another</td>
+	</tr>
+</table></div>
+<!-- EDIT6 TABLE [2396-2634] -->
+</div>
+
+<h5><a name="miscellaneous" id="miscellaneous">Miscellaneous</a></h5>
+<div class="level5">
+
+</div>
+<!-- EDIT1 SECTION "Null-terminated wide strings" [1-2654] -->
+<h3 class="sectionedit7"><a name="todo" id="todo">TODO</a></h3>
+<div class="level3">
+<div class="table sectionedit8"><table class="inline">
+	<tr class="row0">
+		<td class="col0">btowc</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0">wcsrtombs</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">mbrlen</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">mbrtowc</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">mbsinit</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0">mbsrtowcs</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0">wcrtomb</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0">wctob</td>
+	</tr>
+</table></div>
+<!-- EDIT8 TABLE [2669-2747] --><div class="table sectionedit9"><table class="inline">
+	<tr class="row0">
+		<th class="col0">wide time</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">wcsftime</td>
+	</tr>
+</table></div>
+<!-- EDIT9 TABLE [2749-2771] --><div class="table sectionedit10"><table class="inline">
+	<tr class="row0">
+		<th class="col0">c++0x</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">wcstof</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">wcstold</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">wcstoll</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">wcstoull</td>
+	</tr>
+</table></div>
+<!-- EDIT10 TABLE [2773-2820] -->
+</div>
+<!-- EDIT7 SECTION "TODO" [2655-] --></div>
+</body>
+</html>

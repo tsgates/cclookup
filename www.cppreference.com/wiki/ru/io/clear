@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru"
+ lang="ru" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>ru:io:clear</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:12-0700" />
+<meta name="keywords" content="ru,io,clear" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/ru/io/clear?do=index" title="Все страницы" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=ru:io" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/ru/io/clear" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/ru/io/clear" />
+<link rel="canonical" href="clear" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='ru:io';var JSINFO = {"id":"ru:io:clear","namespace":"ru:io"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="clear" id="clear">clear</a></h2>
+<div class="level2">
+
+<p>
+Синтаксис:
+</p>
+<pre class="cpp code cpp">    <span class="kw4">void</span> stream<span class="sy4">::</span><span class="me2">clear</span><span class="br0">&#40;</span> iostate flags <span class="sy1">=</span> ios<span class="sy4">::</span><span class="me2">goodbit</span> <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Функция clear() делает две вещи:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> сбрасывает все флаги io_stream_state_flags, связанные с текущим потоком,</div>
+</li>
+<li class="level1"><div class="li"> задает флаги обозначенные с помощью flags.</div>
+</li>
+</ul>
+
+<p>
+
+Аргумент flags определен с помощью ios::goodbit. Это означает, что по умолчанию все флаги сброшены и задан ios::goodbit.
+</p>
+
+<p>
+Например, следующий код использует clear() для сброса флагов файлового потока вывода после попытки чтения из этого потока вывода.
+</p>
+
+<p>
+Код примера:
+</p>
+<pre class="cpp code cpp">   fstream outputFile<span class="br0">&#40;</span> <span class="st0">&quot;output.txt&quot;</span>, fstream<span class="sy4">::</span><span class="me2">out</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+   <span class="co1">// попытка чтения из потока вывода; она не будет работать</span>
+   <span class="kw4">int</span> val<span class="sy4">;</span>
+   outputFile <span class="sy1">&gt;&gt;</span> val<span class="sy4">;</span>
+   <span class="kw1">if</span><span class="br0">&#40;</span> outputFile.<span class="me1">fail</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Error reading from the output stream&quot;</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+     <span class="co1">// сброс флагов, связанных с потоком</span>
+     outputFile.<span class="me1">clear</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+   <span class="br0">&#125;</span>
+   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     outputFile <span class="sy1">&lt;&lt;</span> i <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; &quot;</span><span class="sy4">;</span>
+   <span class="br0">&#125;</span>
+   outputFile <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
+<p>
+Смотрите также: <a href="eof" class="wikilink1" title="ru:io:eof">eof</a>, <a href="fail" class="wikilink1" title="ru:io:fail">fail</a>, <a href="good" class="wikilink1" title="ru:io:good">good</a>, <a href="rdstate" class="wikilink1" title="ru:io:rdstate">rdstate</a>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "clear" [3-] --></div>
+</body>
+</html>

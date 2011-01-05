@@ -4,69 +4,109 @@
  lang="en" dir="ltr">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>stl:vector:end</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
+  <title>container:vector:end</title>
+<meta name="generator" content="DokuWiki" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2008-10-14T15:42:10-0700" />
-<meta name="keywords" content="stl,vector,end" />
+<meta name="date" content="2010-11-07T03:47:22-0800" />
+<meta name="keywords" content="container,vector,end" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/stl/vector/end?do=index" title="Index" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/container/vector/end?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
-<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=stl:vector" />
-<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/stl/vector/end" />
-<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/stl/vector/end" />
-<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=container:vector" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/container/vector/end" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/container/vector/end" />
+<link rel="canonical" href="end" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='container:vector';var JSINFO = {"id":"container:vector:end","namespace":"container:vector"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
 
+<ul class="toc">
+<li class="clear">
 
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="end#vectorend_vectorcend" class="toc">vector::end, vector::cend</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="end#parameters" class="toc">Parameters</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="end#return_value" class="toc">Return value</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="end#example" class="toc">Example</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="end#complexity" class="toc">Complexity</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="end#see_also" class="toc">See also</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
 
-<h2><a name="end" id="end">end</a></h2>
+<h2 class="sectionedit1"><a name="vectorend_vectorcend" id="vectorend_vectorcend">vector::end, vector::cend</a></h2>
 <div class="level2">
-
+<pre class="cpp code cpp">iterator end<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+const_iterator end<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span>
+const_iterator cend<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span>     <span class="co1">//C++0x feature</span></pre>
 <p>
-Syntax:
-</p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;vector&gt;</span>
-    iterator end<span class="br0">&#40;</span><span class="br0">&#41;</span>;
-    const_iterator end<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw4">const</span>;</pre>
-<p>
-The end() function returns an iterator just past the end of the vector.
-Note that before you can access the last element of the vector using an
-iterator that you get from a call to end(), you&#039;ll have to decrement the
-iterator first. This is because end() doesn&#039;t point to the end of the vector;
-it points just past the end of the vector.
+Returns the past-the-end iterator of the container. The iterator acts as a placeholder, attempting to access the associated value results in undefined behavior.
 </p>
 
+</div>
+<!-- EDIT1 SECTION "vector::end, vector::cend" [1-308] -->
+<h3 class="sectionedit2"><a name="parameters" id="parameters">Parameters</a></h3>
+<div class="level3">
+
 <p>
-For example, in the following code, the first “cout” statement will display
-garbage, whereas the second statement will actually display the last element of
-the vector:
+
+(none)
 </p>
-<pre class="c code c++" style="font-family:monospace;">    vector<span class="sy0">&lt;</span>int<span class="sy0">&gt;</span> v1;
-    v1.<span class="me1">push_back</span><span class="br0">&#40;</span> <span class="nu19">0</span> <span class="br0">&#41;</span>;
-    v1.<span class="me1">push_back</span><span class="br0">&#40;</span> <span class="nu0">1</span> <span class="br0">&#41;</span>;
-    v1.<span class="me1">push_back</span><span class="br0">&#40;</span> <span class="nu0">2</span> <span class="br0">&#41;</span>;
-    v1.<span class="me1">push_back</span><span class="br0">&#40;</span> <span class="nu0">3</span> <span class="br0">&#41;</span>;
+
+</div>
+<!-- EDIT2 SECTION "Parameters" [309-336] -->
+<h3 class="sectionedit3"><a name="return_value" id="return_value">Return value</a></h3>
+<div class="level3">
+
+<p>
+
+past-the-end iterator of the container
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Return value" [337-398] -->
+<h3 class="sectionedit4"><a name="example" id="example">Example</a></h3>
+<div class="level3">
+
+<p>
+
+In the following code, the result of the first “cout” statement is <code>undefined</code>, whereas the second statement will actually display the last element of the vector:
+</p>
+<pre class="cpp code cpp">    vector<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> v1<span class="sy4">;</span>
+    v1.<span class="me1">push_back</span><span class="br0">&#40;</span> <span class="nu0">0</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+    v1.<span class="me1">push_back</span><span class="br0">&#40;</span> <span class="nu0">1</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+    v1.<span class="me1">push_back</span><span class="br0">&#40;</span> <span class="nu0">2</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+    v1.<span class="me1">push_back</span><span class="br0">&#40;</span> <span class="nu0">3</span> <span class="br0">&#41;</span><span class="sy4">;</span>
 &nbsp;
-    <span class="kw4">int</span> bad_val <span class="sy0">=</span> <span class="sy0">*</span><span class="br0">&#40;</span>v1.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>;
-    <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;bad_val is &quot;</span> <span class="sy0">&lt;&lt;</span> bad_val <span class="sy0">&lt;&lt;</span> endl;
+    <span class="kw4">int</span> bad_val <span class="sy1">=</span> <span class="sy2">*</span><span class="br0">&#40;</span>v1.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;bad_val is &quot;</span> <span class="sy1">&lt;&lt;</span> bad_val <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
 &nbsp;
-    <span class="kw4">int</span> good_val <span class="sy0">=</span> <span class="sy0">*</span><span class="br0">&#40;</span>v1.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy0">-</span> <span class="nu0">1</span><span class="br0">&#41;</span>;
-    <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;good_val is &quot;</span> <span class="sy0">&lt;&lt;</span> good_val <span class="sy0">&lt;&lt;</span> endl;</pre>
+    <span class="kw4">int</span> good_val <span class="sy1">=</span> <span class="sy2">*</span><span class="br0">&#40;</span>v1.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy2">-</span> <span class="nu0">1</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;good_val is &quot;</span> <span class="sy1">&lt;&lt;</span> good_val <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
 <p>
 The next example shows how begin() and end() can be used to iterate through all
 of the members of a vector.
 </p>
-<pre class="c code c++" style="font-family:monospace;">    vector<span class="sy0">&lt;</span>int<span class="sy0">&gt;</span> v1<span class="br0">&#40;</span> <span class="nu0">3</span><span class="sy0">,</span> <span class="nu0">5</span> <span class="br0">&#41;</span>;
-    vector<span class="sy0">&lt;</span>int<span class="sy0">&gt;::</span><span class="me2">iterator</span> it;
-    <span class="kw1">for</span><span class="br0">&#40;</span> it <span class="sy0">=</span> v1.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span>; it <span class="sy0">!=</span> v1.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span>; it<span class="sy0">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
-      <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="sy0">*</span>it <span class="sy0">&lt;&lt;</span> endl;
+<pre class="cpp code cpp">    vector<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> v1<span class="br0">&#40;</span> <span class="nu0">3</span>, <span class="nu0">5</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+    <span class="kw1">for</span><span class="br0">&#40;</span> vector<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">const_iterator</span> it <span class="sy1">=</span> v1.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+         it <span class="sy3">!</span><span class="sy1">=</span> v1.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="sy2">++</span>it <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+      <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="sy2">*</span>it <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
     <span class="br0">&#125;</span></pre>
 <p>
 The iterator is initialized with a call to begin(). After the body of the loop
@@ -76,15 +116,27 @@ element just after the last element of the vector, the loop will only stop once
 all of the elements of the vector have been displayed.
 </p>
 
-<p>
-end() runs in <a href="../../complexity" class="wikilink1" title="complexity">constant time</a>.
-</p>
+</div>
+<!-- EDIT4 SECTION "Example" [399-1525] -->
+<h3 class="sectionedit5"><a name="complexity" id="complexity">Complexity</a></h3>
+<div class="level3">
 
 <p>
-Related Topics: <a href="begin" class="wikilink1" title="stl:vector:begin">begin</a>, <a href="rbegin" class="wikilink1" title="stl:vector:rbegin">rbegin</a>, <a href="rend" class="wikilink1" title="stl:vector:rend">rend</a>
+
+constant
 </p>
 
 </div>
-<!-- SECTION "end" [3-] --></div>
+<!-- EDIT5 SECTION "Complexity" [1526-1555] -->
+<h3 class="sectionedit6"><a name="see_also" id="see_also">See also</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="begin" class="wikilink1" title="container:vector:begin">begin</a>, <a href="rbegin" class="wikilink1" title="container:vector:rbegin">rbegin</a>, <a href="rend" class="wikilink1" title="container:vector:rend">rend</a>
+</p>
+
+</div>
+<!-- EDIT6 SECTION "See also" [1556-] --></div>
 </body>
 </html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru"
+ lang="ru" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>ru:algorithm:next_permutation</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:13-0700" />
+<meta name="keywords" content="ru,algorithm,next_permutation" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/ru/algorithm/next_permutation?do=index" title="Все страницы" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=ru:algorithm" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/ru/algorithm/next_permutation" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/ru/algorithm/next_permutation" />
+<link rel="canonical" href="next_permutation" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='ru:algorithm';var JSINFO = {"id":"ru:algorithm:next_permutation","namespace":"ru:algorithm"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="next_permutation" id="next_permutation">next_permutation</a></h2>
+<div class="level2">
+
+<p>
+Синтаксис:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;algorithm&gt;</span>
+    <span class="kw4">bool</span> next_permutation<span class="br0">&#40;</span> bidirectional_iterator start, bidirectional_iterator end <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">bool</span> next_permutation<span class="br0">&#40;</span> bidirectional_iterator start, bidirectional_iterator end, StrictWeakOrdering cmp <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Производит перестановку элементов диапазона
+</p>
+
+<p>
+Переставляет элементы диапазона [first, last), в результате чего получается следующая, бОльшая перестановка. Сравнение отдельных элементов происходит: в первом варианте с помощью оператора &lt;, а во втором варианте с помощью оператора comp.
+</p>
+
+<p>
+Перестановка - это любой вариант из N! возможных вариантов расположения элементов в диапазоне относительно друг друга. Различные перестановки могут быть упорядочены по возрастанию их относительного лексикографического сравнения между собой; Первая перестановка в таком отсортированном списке (та, которая является лексикографически наименьшей из всех перестановок) будет та, при которой все элементы диапазона упорядочены по возрастанию. Наибольшая перестановка будет та, в которой все элементы упорядочены по убыванию.
+</p>
+
+<p>
+Если функция может определить следующую перестановку, она переставляет элементы в следующую перестановку и возвращает истину. Если невозможно определить следующую перестановку (потому что она уже является наибольшей), функция переставляет элементы в соответствии с первой перестановкой (отсортированной по возрастанию) и возвращает ложь.
+</p>
+
+<p>
+Параметры
+</p>
+
+<p>
+first, last
+Двунаправленные итераторы на начальную и конечную позиции последовательности. Они определяют диапазон [first,last), который содержит все элементы между first и last, включая элемент, обозначенный указателем first, но не включая элемент, обозначенный указателем last.
+</p>
+
+<p>
+comp
+</p>
+
+<p>
+Объект-функция сравнения, которая берет два значения одинакового типа, содержащиеся в диапазоне, и, сравнивая их, возвращает истину, если первый аргумент меньше чем второй.
+</p>
+
+<p>
+Возвращаемое значение
+</p>
+
+<p>
+Истина, если функция может переставить элементы диапазона в лексикографически бОльшую перестановку. Иначе функция возвращает ложь, чтобы показать, что перестановка не больше предыдущей и является наименьшей возможной (отсортированной по возрастанию).
+</p>
+
+<p>
+Пример
+</p>
+<pre class="cpp code cpp"><span class="co1">// next_permutation</span>
+<span class="co2">#include &lt;iostream&gt;</span>
+<span class="co2">#include &lt;algorithm&gt;</span>
+<span class="kw2">using</span> <span class="kw2">namespace</span> std<span class="sy4">;</span>
+&nbsp;
+<span class="kw4">int</span> main <span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+  <span class="kw4">int</span> myints<span class="br0">&#91;</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="br0">&#123;</span><span class="nu0">1</span>,<span class="nu0">2</span>,<span class="nu0">3</span><span class="br0">&#125;</span><span class="sy4">;</span>
+&nbsp;
+  <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;The 3! possible permutations with 3 elements:<span class="es1">\n</span>&quot;</span><span class="sy4">;</span>
+&nbsp;
+  sort <span class="br0">&#40;</span>myints,myints<span class="sy2">+</span><span class="nu0">3</span><span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+  <span class="kw1">do</span> <span class="br0">&#123;</span>
+    <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> myints<span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; &quot;</span> <span class="sy1">&lt;&lt;</span> myints<span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; &quot;</span> <span class="sy1">&lt;&lt;</span> myints<span class="br0">&#91;</span><span class="nu0">2</span><span class="br0">&#93;</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+  <span class="br0">&#125;</span> <span class="kw1">while</span> <span class="br0">&#40;</span> next_permutation <span class="br0">&#40;</span>myints,myints<span class="sy2">+</span><span class="nu0">3</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+  <span class="kw1">return</span> <span class="nu0">0</span><span class="sy4">;</span>
+<span class="br0">&#125;</span></pre>
+<p>
+Вывод:
+</p>
+
+<p>
+1 2 3
+</p>
+
+<p>
+1 3 2
+</p>
+
+<p>
+2 1 3
+</p>
+
+<p>
+2 3 1
+</p>
+
+<p>
+3 1 2
+</p>
+
+<p>
+3 2 1
+</p>
+
+<p>
+
+Смотрите также: <a href="prev_permutation" class="wikilink1" title="ru:algorithm:prev_permutation">prev_permutation</a>, <a href="http://www.cppreference.com/wiki/ru/algorithm/random_sample" class="wikilink2" title="ru:algorithm:random_sample" rel="nofollow">random_sample</a>, <a href="http://www.cppreference.com/wiki/ru/algorithm/random_sample_n" class="wikilink2" title="ru:algorithm:random_sample_n" rel="nofollow">random_sample_n</a>, <a href="random_shuffle" class="wikilink1" title="ru:algorithm:random_shuffle">random_shuffle</a>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "next_permutation" [3-] --></div>
+</body>
+</html>

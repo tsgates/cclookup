@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it"
+ lang="it" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>it:c:io:fscanf</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:07-0700" />
+<meta name="keywords" content="it,c,io,fscanf" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/it/c/io/fscanf?do=index" title="Indice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=it:c:io" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/it/c/io/fscanf" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/it/c/io/fscanf" />
+<link rel="canonical" href="fscanf" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='it:c:io';var JSINFO = {"id":"it:c:io:fscanf","namespace":"it:c:io"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="fscanf" id="fscanf">fscanf</a></h2>
+<div class="level2">
+
+<p>
+Sintassi:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cstdio&gt;</span>
+    <span class="kw4">int</span> <span class="kw3">fscanf</span><span class="br0">&#40;</span> <span class="kw4">FILE</span> <span class="sy2">*</span>stream, <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>format, ... <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+
+La funzione fscanf() legge i dati da file nello stesso modo che fa la scanf li legge da tastiera ().
+Il valore di ritorno della fscanf ()  viene memorizzato nella variabile char, o <acronym title="End of file">EOF</acronym> se si verifica un errore.
+</p>
+
+<p>
+
+Topic simili: <a href="fgets" class="wikilink1" title="it:c:io:fgets">fgets</a>, <a href="fprintf" class="wikilink1" title="it:c:io:fprintf">fprintf</a>, <a href="http://www.cppreference.com/wiki/it/c/io/fputs" class="wikilink2" title="it:c:io:fputs" rel="nofollow">fputs</a>, <a href="http://www.cppreference.com/wiki/it/c/io/fread" class="wikilink2" title="it:c:io:fread" rel="nofollow">fread</a>, <a href="fwrite" class="wikilink1" title="it:c:io:fwrite">fwrite</a>, <a href="http://www.cppreference.com/wiki/it/c/io/scanf" class="wikilink2" title="it:c:io:scanf" rel="nofollow">scanf</a>, <a href="http://www.cppreference.com/wiki/it/c/io/sscanf" class="wikilink2" title="it:c:io:sscanf" rel="nofollow">sscanf</a>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "fscanf" [3-] --></div>
+</body>
+</html>

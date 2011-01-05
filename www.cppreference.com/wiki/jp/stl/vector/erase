@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:container:vector:erase</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:23-0700" />
+<meta name="keywords" content="jp,container,vector,erase" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/container/vector/erase?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp:container:vector" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/container/vector/erase" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/container/vector/erase" />
+<link rel="canonical" href="erase" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp:container:vector';var JSINFO = {"id":"jp:container:vector:erase","namespace":"jp:container:vector"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="erase" id="erase">erase</a></h2>
+<div class="level2">
+
+<p>
+Syntax:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;vector&gt;</span>
+    iterator erase<span class="br0">&#40;</span> iterator loc <span class="br0">&#41;</span><span class="sy4">;</span>
+    iterator erase<span class="br0">&#40;</span> iterator start, iterator end <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+erase()関数は位置locの要素を削除するか、startとendの間にある要素(startを含む、endを含まない)を削除します。
+戻り値は削除された最後の要素のすぐ後の要素です。
+</p>
+
+<p>
+1つ目のerase関数(位置locの要素を削除する)はリストでは<a href="../../complexity" class="wikilink1" title="jp:complexity">定数時間</a>で、ベクタ, デック, stringでは<a href="../../complexity" class="wikilink1" title="jp:complexity">線形時間</a>で動作します。
+2つ目のerase関数は常に<a href="../../complexity" class="wikilink1" title="jp:complexity">線形時間</a>で動作します。
+</p>
+
+<p>
+例:
+</p>
+<pre class="cpp code cpp">    <span class="co1">// Create a vector, load it with the first ten characters of the alphabet</span>
+    vector<span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span> alphas<span class="sy4">;</span>
+    <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i<span class="sy1">=</span><span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+      <span class="kw4">static</span> <span class="kw4">const</span> <span class="kw4">char</span> letters<span class="br0">&#91;</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="st0">&quot;ABCDEFGHIJ&quot;</span><span class="sy4">;</span>
+      alphas.<span class="me1">push_back</span><span class="br0">&#40;</span> letters<span class="br0">&#91;</span>i<span class="br0">&#93;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="br0">&#125;</span>
+    vector<span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">size_type</span> size <span class="sy1">=</span> alphas.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    vector<span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">iterator</span> startIterator<span class="sy4">;</span>
+    vector<span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">iterator</span> tempIterator<span class="sy4">;</span>
+    <span class="kw1">for</span><span class="br0">&#40;</span> vector<span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">size_type</span> i<span class="sy1">=</span><span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> size<span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+      startIterator <span class="sy1">=</span> alphas.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+      alphas.<span class="me1">erase</span><span class="br0">&#40;</span> startIterator <span class="br0">&#41;</span><span class="sy4">;</span>
+      <span class="co1">// Display the vector</span>
+      <span class="kw1">for</span><span class="br0">&#40;</span> tempIterator <span class="sy1">=</span> alphas.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> tempIterator <span class="sy3">!</span><span class="sy1">=</span> alphas.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="sy2">++</span>tempIterator <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="sy2">*</span>tempIterator<span class="sy4">;</span>
+      <span class="br0">&#125;</span>
+      <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+    <span class="br0">&#125;</span></pre>
+<p>
+上記のコードは次の出力をします:
+</p>
+<pre class="code">
+    BCDEFGHIJ
+    CDEFGHIJ
+    DEFGHIJ
+    EFGHIJ
+    FGHIJ
+    GHIJ
+    HIJ
+    IJ
+    J</pre>
+<p>
+次の例では、ベクタから要素を範囲で削除するためにerase関数を2つのiteratorを用いて呼び出しています。
+</p>
+<pre class="cpp code cpp">    <span class="co1">// create a vector, load it with the first ten characters of the alphabet</span>
+    vector<span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span> alphas<span class="sy4">;</span>
+    <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i<span class="sy1">=</span><span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+      <span class="kw4">static</span> <span class="kw4">const</span> <span class="kw4">char</span> letters<span class="br0">&#91;</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="st0">&quot;ABCDEFGHIJ&quot;</span><span class="sy4">;</span>
+      alphas.<span class="me1">push_back</span><span class="br0">&#40;</span> letters<span class="br0">&#91;</span>i<span class="br0">&#93;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="br0">&#125;</span>
+    <span class="co1">// display the complete vector</span>
+    <span class="kw1">for</span><span class="br0">&#40;</span> vector<span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">size_type</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> alphas.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+      <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> alphas<span class="br0">&#91;</span>i<span class="br0">&#93;</span><span class="sy4">;</span>
+    <span class="br0">&#125;</span>
+    <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+&nbsp;
+    <span class="co1">// use erase to remove all but the first two and last three elements</span>
+    <span class="co1">// of the vector</span>
+    alphas.<span class="me1">erase</span><span class="br0">&#40;</span> alphas.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy2">+</span><span class="nu0">2</span>, alphas.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy2">-</span><span class="nu0">3</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="co1">// display the modified vector</span>
+    <span class="kw1">for</span><span class="br0">&#40;</span> vector<span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">size_type</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> alphas.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+      <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> alphas<span class="br0">&#91;</span>i<span class="br0">&#93;</span><span class="sy4">;</span>
+    <span class="br0">&#125;</span>
+    <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
+<p>
+上記のコードを実行した時、次の出力をします:
+</p>
+<pre class="code">
+    ABCDEFGHIJ
+    ABHIJ</pre>
+<p>
+<strong>要素の挿入や削除をするときは全てのコンテナの種類で注意しなければなりません。なぜなら無効なiteratorになり得るからです。</strong>
+</p>
+
+<p>
+ここにstd::vectorで有効な例を示します。
+特に、vector::erase()は削除される要素に対する全てのiterator(そしてポインタ)を無効にします。
+例では状態(ここでは文字BとD)に応じて要素を削除しています。
+</p>
+<pre class="cpp code cpp"><span class="co2">#include &lt;iostream&gt;</span>
+<span class="co2">#include &lt;vector&gt;</span>
+<span class="co2">#include &lt;iterator&gt;</span>
+&nbsp;
+<span class="kw2">using</span> <span class="kw2">namespace</span> std<span class="sy4">;</span>
+&nbsp;
+<span class="kw4">int</span> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    vector<span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span> alphas<span class="sy4">;</span>
+    <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i<span class="sy1">=</span><span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+      <span class="kw4">static</span> <span class="kw4">const</span> <span class="kw4">char</span> letters<span class="br0">&#91;</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="st0">&quot;ABCDEFGHIJ&quot;</span><span class="sy4">;</span>
+      alphas.<span class="me1">push_back</span><span class="br0">&#40;</span> letters<span class="br0">&#91;</span>i<span class="br0">&#93;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="br0">&#125;</span>
+&nbsp;
+    vector<span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">iterator</span> iter <span class="sy1">=</span> alphas.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw1">while</span><span class="br0">&#40;</span> iter <span class="sy3">!</span><span class="sy1">=</span> alphas.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+      <span class="kw1">if</span> <span class="br0">&#40;</span><span class="sy2">*</span>iter <span class="sy1">==</span> <span class="st0">'B'</span> <span class="sy3">||</span> <span class="sy2">*</span>iter <span class="sy1">==</span> <span class="st0">'D'</span><span class="br0">&#41;</span>
+        iter <span class="sy1">=</span> alphas.<span class="me1">erase</span><span class="br0">&#40;</span> iter <span class="br0">&#41;</span><span class="sy4">;</span>
+      <span class="kw1">else</span>
+        <span class="sy2">++</span>iter<span class="sy4">;</span>
+    <span class="br0">&#125;</span>
+&nbsp;
+    copy<span class="br0">&#40;</span>alphas.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, alphas.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, ostream_iterator<span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span><span class="br0">&#40;</span><span class="kw3">cout</span>, <span class="st0">&quot;&quot;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+&nbsp;
+<span class="br0">&#125;</span></pre>
+<p>
+上記のコードを実行した時、次の出力をします:
+</p>
+<pre class="code">
+    ACEFGHIJ</pre>
+<p>
+
+Related Topics: <a href="clear" class="wikilink1" title="jp:container:vector:clear">clear</a>, <a href="insert" class="wikilink1" title="jp:container:vector:insert">insert</a>, <a href="pop_back" class="wikilink1" title="jp:container:vector:pop_back">pop_back</a>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "erase" [2-] --></div>
+</body>
+</html>

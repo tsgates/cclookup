@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it"
+ lang="it" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>it:keywords:wchar_t</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:07-0700" />
+<meta name="keywords" content="it,keywords,wchar_t" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/it/keywords/wchar_t?do=index" title="Indice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=it:keywords" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/it/keywords/wchar_t" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/it/keywords/wchar_t" />
+<link rel="canonical" href="wchar_t" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='it:keywords';var JSINFO = {"id":"it:keywords:wchar_t","namespace":"it:keywords"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="wchar_t" id="wchar_t">wchar_t</a></h2>
+<div class="level2">
+
+<p>
+La parola <code>wchar_t</code> viene usata per dichiarare variabili tipo <em>wide character</em> (caratteri estesi per rappresentazione di alfabeti non latini). La dimensione dei caratteri definiti da <code>wchar_t</code> è stata lasciata “implementazione dipendente”, quindi nello sviluppo di applicazioni portabili non si può assumere che certe rappresentazioni come <a href="http://www.unicode.org/" class="urlextern" title="http://www.unicode.org/"  rel="nofollow">Unicode</a> possano essere contenute in questo tipo di dato su ogni piattaforma con qualsiasi compilatore.
+</p>
+
+<p>
+ Si veda la pagina sui <a href="../../data_types" class="wikilink1" title="data_types">data types</a> per maggiori informazioni.
+</p>
+
+<p>
+Argomenti correlati: <a href="bool" class="wikilink1" title="it:keywords:bool">bool</a>, <a href="char" class="wikilink1" title="it:keywords:char">char</a>, <a href="double" class="wikilink1" title="it:keywords:double">double</a>, <a href="float" class="wikilink1" title="it:keywords:float">float</a>, <a href="int" class="wikilink1" title="it:keywords:int">int</a>, <a href="short" class="wikilink1" title="it:keywords:short">short</a>, <a href="signed" class="wikilink1" title="it:keywords:signed">signed</a>, <a href="unsigned" class="wikilink1" title="it:keywords:unsigned">unsigned</a>, <a href="void" class="wikilink1" title="it:keywords:void">void</a>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "wchar_t" [3-] --></div>
+</body>
+</html>

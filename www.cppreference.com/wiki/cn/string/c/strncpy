@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn"
+ lang="cn" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>cn:string:c:strncpy</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:42-0700" />
+<meta name="keywords" content="cn,string,c,strncpy" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/cn/string/c/strncpy?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=cn:string:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/cn/string/c/strncpy" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/cn/string/c/strncpy" />
+<link rel="canonical" href="strncpy" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='cn:string:c';var JSINFO = {"id":"cn:string:c:strncpy","namespace":"cn:string:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="strncpy" id="strncpy">strncpy</a></h2>
+<div class="level2">
+
+<p>
+语法：
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cstring&gt;</span>
+    <span class="kw4">char</span> <span class="sy2">*</span><span class="kw3">strncpy</span><span class="br0">&#40;</span> <span class="kw4">char</span> <span class="sy2">*</span>to, <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>from, <span class="kw4">size_t</span> count <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw2">namespace</span> std <span class="br0">&#123;</span>
+      <span class="kw2">using</span> <span class="sy4">::</span><span class="kw3">strncpy</span><span class="sy4">;</span>
+   <span class="br0">&#125;</span></pre>
+<p>
+strncpy() 拷贝from中至多count个字符到to中。如果from中少于count个字符，余下的将被填充为字符 &#039;\0&#039;。返回值是结果字符串。
+</p>
+
+<p>
+<strong>警告：</strong> 如果仔细阅读定义，你会发现strncpy将不会为结果字符串添加空结束符！这将会令很多人惊讶，但是它有很好的原因，来让我们看看strncpy()通常的(idiomatic)使用：、
+</p>
+<pre class="cpp code cpp">  <span class="co2">#include &lt;cstring&gt;</span>
+  <span class="co2">#include &lt;cstdlib&gt;</span>
+  <span class="kw4">int</span> main<span class="br0">&#40;</span><span class="kw4">int</span> argc, <span class="kw4">char</span> <span class="sy2">*</span>argv<span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    <span class="kw1">if</span> <span class="br0">&#40;</span>argc<span class="sy3">!</span><span class="sy1">=</span><span class="nu0">2</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> <span class="kw1">return</span> <span class="kw2">EXIT_FAILURE</span><span class="sy4">;</span> <span class="br0">&#125;</span>
+    <span class="kw4">char</span> buff<span class="br0">&#91;</span><span class="nu0">6</span><span class="br0">&#93;</span><span class="sy4">;</span>
+    <span class="kw3">strncpy</span><span class="br0">&#40;</span>buff, argv<span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span>, <span class="kw3">sizeof</span><span class="br0">&#40;</span>buff<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="co1">// Here comes the idiomatic part, that</span>
+    <span class="co1">// must not be missing from code using strncpy:</span>
+    <span class="kw1">if</span> <span class="br0">&#40;</span>buff<span class="br0">&#91;</span><span class="kw3">sizeof</span><span class="br0">&#40;</span>buff<span class="br0">&#41;</span><span class="sy2">-</span><span class="nu0">1</span><span class="br0">&#93;</span> <span class="sy3">!</span><span class="sy1">=</span> <span class="st0">'<span class="es5">\0</span>'</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+      <span class="co1">// We have overflow.  You may decide to give an error:</span>
+      <span class="kw1">return</span> <span class="kw2">EXIT_FAILURE</span><span class="sy4">;</span>
+      <span class="co1">// or to truncate your string:</span>
+      buff<span class="br0">&#91;</span><span class="kw3">sizeof</span><span class="br0">&#40;</span>buff<span class="br0">&#41;</span><span class="sy2">-</span><span class="nu0">1</span><span class="br0">&#93;</span><span class="sy1">=</span><span class="st0">'<span class="es5">\0</span>'</span><span class="sy4">;</span>
+    <span class="br0">&#125;</span>
+    <span class="co1">// but in any case, make sure that at this line</span>
+    <span class="co1">// you string is NULL (zero) terminated!</span>
+  <span class="br0">&#125;</span></pre>
+<p>
+strncpy()自己的使用并不会导致安全的代码。必须正确的使用它（正如上面），否则在后面的代码，如果假设6个大小的缓冲区包含至多5个字符，将会失效，而且也许会导致安全风险（崩溃或更糟）。
+</p>
+
+<p>
+另外一个一直是NULL结尾的字符串是使用 <a href="strncat" class="wikilink1" title="cn:string:c:strncat">strncat</a>:
+</p>
+<pre class="cpp code cpp">  <span class="co2">#include &lt;cstring&gt;</span>
+  <span class="co2">#include &lt;cstdlib&gt;</span>
+  <span class="kw4">int</span> main<span class="br0">&#40;</span><span class="kw4">int</span> argc, <span class="kw4">char</span> <span class="sy2">*</span>argv<span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    <span class="kw1">if</span> <span class="br0">&#40;</span>argc<span class="sy3">!</span><span class="sy1">=</span><span class="nu0">2</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> <span class="kw1">return</span> <span class="kw2">EXIT_FAILURE</span><span class="sy4">;</span> <span class="br0">&#125;</span>
+    <span class="kw4">char</span> buff<span class="br0">&#91;</span><span class="nu0">6</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="st0">&quot;&quot;</span><span class="sy4">;</span>
+    <span class="kw3">strncat</span><span class="br0">&#40;</span>buff, argv<span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span>, <span class="kw3">sizeof</span><span class="br0">&#40;</span>buff<span class="br0">&#41;</span><span class="sy2">-</span><span class="nu0">1</span><span class="br0">&#41;</span><span class="sy4">;</span>
+  <span class="br0">&#125;</span></pre>
+<p>
+相关主题： <a href="memcpy" class="wikilink1" title="cn:string:c:memcpy">memcpy</a>, <a href="strchr" class="wikilink1" title="cn:string:c:strchr">strchr</a>, <a href="strcpy" class="wikilink1" title="cn:string:c:strcpy">strcpy</a>, <a href="strncat" class="wikilink1" title="cn:string:c:strncat">strncat</a>, <a href="strncmp" class="wikilink1" title="cn:string:c:strncmp">strncmp</a>
+</p>
+
+<p>
+另一组相关（但非标准）的函数是 <a href="http://www.cppreference.com/wiki/cn/string/c/strlcpy" class="wikilink2" title="cn:string:c:strlcpy" rel="nofollow">strlcpy</a> 和 <a href="http://www.cppreference.com/wiki/cn/string/c/strlcat" class="wikilink2" title="cn:string:c:strlcat" rel="nofollow">strlcat</a>.
+</p>
+
+</div>
+<!-- EDIT1 SECTION "strncpy" [3-] --></div>
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>types:limits</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-11-01T11:02:59-0700" />
+<meta name="keywords" content="types,limits" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/types/limits?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=types" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/types/limits" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/types/limits" />
+<link rel="canonical" href="limits" />
+<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='types';var JSINFO = {"id":"types:limits","namespace":"types"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="numeric_limits" id="numeric_limits">numeric_limits</a></h2>
+<div class="level2">
+<pre class="cpp code cpp">    <span class="co2">#include &lt;limits&gt;</span>
+&nbsp;
+    <span class="kw2">template</span><span class="sy1">&lt;</span> <span class="kw2">class</span> T <span class="sy1">&gt;</span> <span class="kw2">class</span> numeric_limits<span class="sy4">;</span></pre>
+<p>
+The <code>numeric_limits</code> class template provides a standardized way to query about various properties of representation of fundamental types. This information is provided via specializations of the <code>numeric_limits</code> template. Specializations for fundamental types are already provided:
+</p>
+<pre class="cpp code cpp">    <span class="kw2">template</span><span class="sy1">&lt;&gt;</span> <span class="kw2">class</span> numeric_limits<span class="sy1">&lt;</span> <span class="kw4">bool</span> <span class="sy1">&gt;</span><span class="sy4">;</span>
+    <span class="kw2">template</span><span class="sy1">&lt;&gt;</span> <span class="kw2">class</span> numeric_limits<span class="sy1">&lt;</span> <span class="kw4">char</span> <span class="sy1">&gt;</span><span class="sy4">;</span>
+    <span class="kw2">template</span><span class="sy1">&lt;&gt;</span> <span class="kw2">class</span> numeric_limits<span class="sy1">&lt;</span> <span class="kw4">signed</span> <span class="kw4">char</span> <span class="sy1">&gt;</span><span class="sy4">;</span>
+    <span class="kw2">template</span><span class="sy1">&lt;&gt;</span> <span class="kw2">class</span> numeric_limits<span class="sy1">&lt;</span> <span class="kw4">unsigned</span> <span class="kw4">char</span> <span class="sy1">&gt;</span><span class="sy4">;</span>
+    <span class="kw2">template</span><span class="sy1">&lt;&gt;</span> <span class="kw2">class</span> numeric_limits<span class="sy1">&lt;</span> <span class="kw4">wchar_t</span> <span class="sy1">&gt;</span><span class="sy4">;</span>
+    <span class="kw2">template</span><span class="sy1">&lt;&gt;</span> <span class="kw2">class</span> numeric_limits<span class="sy1">&lt;</span> char16_t <span class="sy1">&gt;</span><span class="sy4">;</span>   <span class="co1">//C++0x feature</span>
+    <span class="kw2">template</span><span class="sy1">&lt;&gt;</span> <span class="kw2">class</span> numeric_limits<span class="sy1">&lt;</span> char32_t <span class="sy1">&gt;</span><span class="sy4">;</span>   <span class="co1">//C++0x feature</span>
+    <span class="kw2">template</span><span class="sy1">&lt;&gt;</span> <span class="kw2">class</span> numeric_limits<span class="sy1">&lt;</span> <span class="kw4">short</span> <span class="sy1">&gt;</span><span class="sy4">;</span>
+    <span class="kw2">template</span><span class="sy1">&lt;&gt;</span> <span class="kw2">class</span> numeric_limits<span class="sy1">&lt;</span> <span class="kw4">unsigned</span> <span class="kw4">short</span> <span class="sy1">&gt;</span><span class="sy4">;</span>
+    <span class="kw2">template</span><span class="sy1">&lt;&gt;</span> <span class="kw2">class</span> numeric_limits<span class="sy1">&lt;</span> <span class="kw4">int</span> <span class="sy1">&gt;</span><span class="sy4">;</span>
+    <span class="kw2">template</span><span class="sy1">&lt;&gt;</span> <span class="kw2">class</span> numeric_limits<span class="sy1">&lt;</span> <span class="kw4">unsigned</span> <span class="kw4">int</span> <span class="sy1">&gt;</span><span class="sy4">;</span>
+    <span class="kw2">template</span><span class="sy1">&lt;&gt;</span> <span class="kw2">class</span> numeric_limits<span class="sy1">&lt;</span> <span class="kw4">long</span> <span class="sy1">&gt;</span><span class="sy4">;</span>
+    <span class="kw2">template</span><span class="sy1">&lt;&gt;</span> <span class="kw2">class</span> numeric_limits<span class="sy1">&lt;</span> <span class="kw4">unsigned</span> <span class="kw4">long</span> <span class="sy1">&gt;</span><span class="sy4">;</span>
+    <span class="kw2">template</span><span class="sy1">&lt;&gt;</span> <span class="kw2">class</span> numeric_limits<span class="sy1">&lt;</span> <span class="kw4">long</span> <span class="kw4">long</span> <span class="sy1">&gt;</span><span class="sy4">;</span>
+    <span class="kw2">template</span><span class="sy1">&lt;&gt;</span> <span class="kw2">class</span> numeric_limits<span class="sy1">&lt;</span> <span class="kw4">unsigned</span> <span class="kw4">long</span> <span class="kw4">long</span> <span class="sy1">&gt;</span><span class="sy4">;</span>
+    <span class="kw2">template</span><span class="sy1">&lt;&gt;</span> <span class="kw2">class</span> numeric_limits<span class="sy1">&lt;</span> <span class="kw4">float</span> <span class="sy1">&gt;</span><span class="sy4">;</span>
+    <span class="kw2">template</span><span class="sy1">&lt;&gt;</span> <span class="kw2">class</span> numeric_limits<span class="sy1">&lt;</span> <span class="kw4">double</span> <span class="sy1">&gt;</span><span class="sy4">;</span>
+    <span class="kw2">template</span><span class="sy1">&lt;&gt;</span> <span class="kw2">class</span> numeric_limits<span class="sy1">&lt;</span> <span class="kw4">long</span> <span class="kw4">double</span> <span class="sy1">&gt;</span><span class="sy4">;</span></pre>
+</div>
+
+<h4><a name="members" id="members">Members</a></h4>
+<div class="level4">
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Member </th><th class="col1"> Default </th><th class="col2"> Explanation </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <code>static const bool is_specialized</code> </td><td class="col1"> <code>false</code> </td><td class="col2"> <code>true</code> for all specializations of <code>numeric_limits</code> class template </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <code>static const bool is_iec559</code> </td><td class="col1"> <code>false</code> </td><td class="col2"> <code>true</code> if the type adheres to IEC559 international standard (the same as IEEE 754). Meaningful for all floating point numbers. </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> <code>static const bool is_signed</code> </td><td class="col1"> <code>false</code> </td><td class="col2"> <code>true</code> if the type is signed </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> <code>static const bool is_integer</code> </td><td class="col1"> <code>false</code> </td><td class="col2"> <code>true</code> if the type is integer </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> <code>static const bool is_exact</code> </td><td class="col1"> <code>false</code> </td><td class="col2"> <code>true</code> if the type uses an exact representation </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> <code>static const bool is_modulo</code> </td><td class="col1"> <code>false</code> </td><td class="col2"> <code>true</code> if the type is modulo, i.e. if an operation consisting from <code>*</code>, <code>+</code> and <code>-</code> results in overflow then the final result differs from expected result by a multiple of integer (<code>max() - min() + 1</code>) </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"> <code>static const bool is_bounded</code> </td><td class="col1"> <code>false</code> </td><td class="col2"> <code>true</code> if the type uses has infinite set of representable values, i.e. arbitrary precision number </td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [1362-2397] -->
+</div>
+
+<h5><a name="representable_values" id="representable_values">Representable values</a></h5>
+<div class="level5">
+<div class="table sectionedit3"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Member </th><th class="col1"> Default </th><th class="col2"> Explanation </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <code>static T min()</code> </td><td class="col1"> <code>{return T();}</code> </td><td class="col2 leftalign"> minimum finite value. For floating point types: minimum denormalized value. Only meaningful if <code>is_bounded</code> is <code>true</code>  </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <code>static T max()</code> </td><td class="col1"> <code>{return T();}</code> </td><td class="col2 leftalign"> maximum finite value. Only meaningful if <code>is_bounded</code> is <code>true</code>  </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> <code>static T lowest()</code> </td><td class="col1"> <code>{return T();}</code> </td><td class="col2"> minimum finite value. Only meaningful if <code>is_bounded</code> is <code>true</code> (<a href="../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> <code>static const denorm_style has_denorm</code> </td><td class="col1"> <code>denorm_absent</code> </td><td class="col2"> <code>denorm_present</code> if denormalized values are allowed, <code>denorm_absent</code> if not and <code>denorm_indeterminate</code> if this is not known at compile time. Meaningful for floating point types. </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> <code>static T denorm_min()</code> </td><td class="col1"> <code>{return T();}</code> </td><td class="col2"> returns minimum positive denormalized value. If <code>has_denorm</code> is <code>denorm_absent</code> returns minimum positive normalized value. Meaningful for floating point types. </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> <code>static const bool has_infinity</code> </td><td class="col1"> <code>false</code> </td><td class="col2"> <code>true</code> if the type can represent positive infinity. Shall be <code>true</code> for all specializations in which <code>is_iec559 == true</code> </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"> <code>static T infinity()</code> </td><td class="col1"> <code>{return T();}</code> </td><td class="col2 leftalign"> returns positive infinity. Only meaningful if <code>has_infinity</code> is <code>true</code>. Required for all specializations in which <code>is_iec559 == true</code>  </td>
+	</tr>
+</table></div>
+<!-- EDIT3 TABLE [2425-3736] -->
+</div>
+
+<h5><a name="representation" id="representation">Representation</a></h5>
+<div class="level5">
+<div class="table sectionedit4"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Member </th><th class="col1"> Default </th><th class="col2"> Explanation </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <code>static const int radix</code> </td><td class="col1"> <code>0</code> </td><td class="col2"> base of the representation </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <code>static const int min_exponent</code> </td><td class="col1"> <code>0</code> </td><td class="col2"> minimum negative integer such that <code>radix</code> raised by power one less than that integer is a normalized floating point number. Meaningful for floating point types </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> <code>static const int min_exponent10</code> </td><td class="col1"> <code>0</code> </td><td class="col2"> minimum negative integer such that <code>10</code> raised by that power is a normalized floating point number. Meaningful for floating point types </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> <code>static const int max_exponent</code> </td><td class="col1"> <code>0</code> </td><td class="col2"> maximum integer such that <code>radix</code> raised by power one less than that integer is a representable finite floating point number. Meaningful for floating point types </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> <code>static const int max_exponent10</code> </td><td class="col1"> <code>0</code> </td><td class="col2"> maximum integer such that <code>10</code> raised by that power is a representable finite floating point number. Meaningful for floating point types </td>
+	</tr>
+</table></div>
+<!-- EDIT4 TABLE [3758-4675] -->
+</div>
+
+<h5><a name="precision" id="precision">Precision</a></h5>
+<div class="level5">
+<div class="table sectionedit5"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Member </th><th class="col1"> Default </th><th class="col2"> Explanation </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <code>static const int digits</code> </td><td class="col1"> <code>0</code> </td><td class="col2"> number of base <code>radix</code> digits that can be represented without losing precision</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <code>static const int digits10</code> </td><td class="col1"> <code>0</code> </td><td class="col2"> number of decimal digits that can be represented without losing precision. Only meaningful if <code>is_bounded</code> is <code>true</code> </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> <code>static const int max_digits10</code> </td><td class="col1"> <code>0</code> </td><td class="col2"> number of decimal digits needed to represent any value without losing precision </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> <code>static const T epsilon()</code> </td><td class="col1"> <code>{return T();}</code> </td><td class="col2"> the difference between <code>1</code> and the next representable value. Meaningful for all floating point types</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> <code>static const T round_error()</code> </td><td class="col1"> <code>{return T();}</code> </td><td class="col2"> maximum possible rounding error </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> <code>static const bool has_denorm_loss</code> </td><td class="col1"> <code>false</code> </td><td class="col2"> <code>true</code> if loss of precision is detected as a denormalization loss, rather than as an inexact result </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"> <code>static const float_round_style round_style</code> </td><td class="col1"> <code>round_towards_zero</code> </td><td class="col2"> floating point rounding mode. Meaningful for floating point types. Integer types shall return <code>round_towards_zero</code></td>
+	</tr>
+</table></div>
+<!-- EDIT5 TABLE [4692-5764] -->
+</div>
+
+<h5><a name="not-a-numbers_nans" id="not-a-numbers_nans">Not-a-numbers (NaNs)</a></h5>
+<div class="level5">
+<div class="table sectionedit6"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Member </th><th class="col1"> Default </th><th class="col2"> Explanation </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <code>static const bool has_signaling_NaN</code> </td><td class="col1"> <code>false</code> </td><td class="col2"> <code>true</code> if the type can represent signaling not-a-number (NaN). Shall be <code>true</code> if <code>is_iec559 == true</code> </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <code>static const bool has_quiet_NaN</code> </td><td class="col1"> <code>false</code> </td><td class="col2"> <code>true</code> if the type can represent non-signaling (quiet) not-a-number (NaN). Shall be <code>true</code> if <code>is_iec559 == true</code> </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> <code>static T signaling_NaN()</code> </td><td class="col1"> <code>{return T();}</code> </td><td class="col2"> returns signaling not-a-number (NaN). Only meaningful if <code>has_signaling_NaN</code> is <code>true</code>. Required if <code>is_iec559 == true</code> </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> <code>static T quiet_NaN()</code> </td><td class="col1"> <code>{return T();}</code> </td><td class="col2"> returns non-signalling (quiet) not-a-number (NaN). Only meaningful if <code>has_quiet_NaN</code> is <code>true</code>. Required if <code>is_iec559 == true</code> </td>
+	</tr>
+</table></div>
+<!-- EDIT6 TABLE [5792-6545] -->
+</div>
+
+<h5><a name="miscellaneous" id="miscellaneous">Miscellaneous</a></h5>
+<div class="level5">
+<div class="table sectionedit7"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <code>static const bool traps</code> </td><td class="col1"> <code>false</code> </td><td class="col2"> <code>true</code> if it is possible for trap to happen </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <code>static const bool tinyness_before</code> </td><td class="col1"> <code>false</code> </td><td class="col2"> <code>true</code> if tinyness is detected before rounding. Meaningful for floating point types. </td>
+	</tr>
+</table></div>
+<!-- EDIT7 TABLE [6565-6805] -->
+</div>
+</div>
+</body>
+</html>

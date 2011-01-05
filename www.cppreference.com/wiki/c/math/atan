@@ -4,54 +4,95 @@
  lang="en" dir="ltr">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>c:math:atan</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
+  <title>numeric:c:atan</title>
+<meta name="generator" content="DokuWiki" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2009-03-19T23:42:03-0700" />
-<meta name="keywords" content="c,math,atan" />
+<meta name="date" content="2010-10-28T18:17:32-0700" />
+<meta name="keywords" content="numeric,c,atan" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/c/math/atan?do=index" title="Index" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/numeric/c/atan?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
-<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=c:math" />
-<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/c/math/atan" />
-<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/c/math/atan" />
-<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=numeric:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/numeric/c/atan" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/numeric/c/atan" />
+<link rel="canonical" href="atan" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='numeric:c';var JSINFO = {"id":"numeric:c:atan","namespace":"numeric:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
 
+<ul class="toc">
+<li class="clear">
 
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="atan#atan" class="toc">atan</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="atan#parameters" class="toc">Parameters</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="atan#return_value" class="toc">Return value</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="atan#see_also" class="toc">See also</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
 
-<h2><a name="atan" id="atan">atan</a></h2>
+<h2 class="sectionedit1"><a name="atan" id="atan">atan</a></h2>
 <div class="level2">
 
 <p>
 Syntax:
 </p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;cmath&gt;</span>
-    <span class="kw4">double</span> atan<span class="br0">&#40;</span> <span class="kw4">double</span> arg <span class="br0">&#41;</span>;</pre>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cmath&gt;</span>
+&nbsp;
+    <span class="kw4">float</span> <span class="kw3">atan</span><span class="br0">&#40;</span> <span class="kw4">float</span> arg <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">double</span> <span class="kw3">atan</span><span class="br0">&#40;</span> <span class="kw4">double</span> arg <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">long</span> <span class="kw4">double</span> <span class="kw3">atan</span><span class="br0">&#40;</span> <span class="kw4">long</span> <span class="kw4">double</span> arg <span class="br0">&#41;</span><span class="sy4">;</span></pre>
 <p>
-
-The function atan() returns the arc tangent of arg, which will be in the range
-[-pi/2, +pi/2].
-</p>
-
-<p>
-C++ also provides the following overloaded forms:
-
-</p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;cmath&gt;</span>
-    <span class="kw4">float</span> atan<span class="br0">&#40;</span> <span class="kw4">float</span> arg <span class="br0">&#41;</span>; <span class="co1">// same as atanf() in C99</span>
-    <span class="kw4">long</span> <span class="kw4">double</span> atan<span class="br0">&#40;</span> <span class="kw4">long</span> <span class="kw4">double</span> arg <span class="br0">&#41;</span>; <span class="co1">// same as atanl() in C99</span></pre>
-<p>
-Related Topics: <a href="acos" class="wikilink1" title="c:math:acos">acos</a>, <a href="asin" class="wikilink1" title="c:math:asin">asin</a>, <a href="atan2" class="wikilink1" title="c:math:atan2">atan2</a>, <a href="cos" class="wikilink1" title="c:math:cos">cos</a>, <a href="cosh" class="wikilink1" title="c:math:cosh">cosh</a>, <a href="sin" class="wikilink1" title="c:math:sin">sin</a>, <a href="sinh" class="wikilink1" title="c:math:sinh">sinh</a>, <a href="tan" class="wikilink1" title="c:math:tan">tan</a>, <a href="tanh" class="wikilink1" title="c:math:tanh">tanh</a>
+Computes the arc tangent of <code>arg</code>.
 </p>
 
 </div>
-<!-- SECTION "atan" [3-] --></div>
+<!-- EDIT1 SECTION "atan" [1-205] -->
+<h3 class="sectionedit2"><a name="parameters" id="parameters">Parameters</a></h3>
+<div class="level3">
+
+<p>
+
+<code>arg</code> - floating point value
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Parameters" [206-257] -->
+<h3 class="sectionedit3"><a name="return_value" id="return_value">Return value</a></h3>
+<div class="level3">
+
+<p>
+
+arc tangent of <code>arg</code> in radians in the range of [-pi/2; pi/2] radians.
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Return value" [258-353] -->
+<h3 class="sectionedit4"><a name="see_also" id="see_also">See also</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="asin" class="wikilink1" title="numeric:c:asin">asin</a>, <a href="acos" class="wikilink1" title="numeric:c:acos">acos</a>, <a href="atan2" class="wikilink1" title="numeric:c:atan2">atan2</a>, <a href="tan" class="wikilink1" title="numeric:c:tan">tan</a>
+</p>
+
+</div>
+<!-- EDIT4 SECTION "See also" [354-] --></div>
 </body>
 </html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru"
+ lang="ru" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>ru:string:string_operators</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:13-0700" />
+<meta name="keywords" content="ru,string,string_operators" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/ru/string/string_operators?do=index" title="Все страницы" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=ru:string" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/ru/string/string_operators" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/ru/string/string_operators" />
+<link rel="canonical" href="string_operators" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='ru:string';var JSINFO = {"id":"ru:string:string_operators","namespace":"ru:string"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="строковые_операторы" id="строковые_операторы">Строковые операторы</a></h2>
+<div class="level2">
+
+<p>
+Синтаксис:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;string&gt;</span>
+    <span class="kw4">bool</span> operator<span class="sy1">==</span><span class="br0">&#40;</span><span class="kw4">const</span> string<span class="sy3">&amp;</span> c1, <span class="kw4">const</span> string<span class="sy3">&amp;</span> c2<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">bool</span> operator<span class="sy3">!</span><span class="sy1">=</span><span class="br0">&#40;</span><span class="kw4">const</span> string<span class="sy3">&amp;</span> c1, <span class="kw4">const</span> string<span class="sy3">&amp;</span> c2<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">bool</span> operator<span class="sy1">&lt;</span><span class="br0">&#40;</span><span class="kw4">const</span> string<span class="sy3">&amp;</span> c1, <span class="kw4">const</span> string<span class="sy3">&amp;</span> c2<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">bool</span> operator<span class="sy1">&gt;</span><span class="br0">&#40;</span><span class="kw4">const</span> string<span class="sy3">&amp;</span> c1, <span class="kw4">const</span> string<span class="sy3">&amp;</span> c2<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">bool</span> operator<span class="sy1">&lt;=</span><span class="br0">&#40;</span><span class="kw4">const</span> string<span class="sy3">&amp;</span> c1, <span class="kw4">const</span> string<span class="sy3">&amp;</span> c2<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">bool</span> operator<span class="sy1">&gt;=</span><span class="br0">&#40;</span><span class="kw4">const</span> string<span class="sy3">&amp;</span> c1, <span class="kw4">const</span> string<span class="sy3">&amp;</span> c2<span class="br0">&#41;</span><span class="sy4">;</span>
+    string operator<span class="sy2">+</span><span class="br0">&#40;</span><span class="kw4">const</span> string<span class="sy3">&amp;</span> s1, <span class="kw4">const</span> string<span class="sy3">&amp;</span> s2 <span class="br0">&#41;</span><span class="sy4">;</span>
+    string operator<span class="sy2">+</span><span class="br0">&#40;</span><span class="kw4">const</span> Char<span class="sy2">*</span> s, <span class="kw4">const</span> string<span class="sy3">&amp;</span> s2 <span class="br0">&#41;</span><span class="sy4">;</span>
+    string operator<span class="sy2">+</span><span class="br0">&#40;</span> Char c, <span class="kw4">const</span> string<span class="sy3">&amp;</span> s2 <span class="br0">&#41;</span><span class="sy4">;</span>
+    string operator<span class="sy2">+</span><span class="br0">&#40;</span> <span class="kw4">const</span> string<span class="sy3">&amp;</span> s1, <span class="kw4">const</span> Char<span class="sy2">*</span> s <span class="br0">&#41;</span><span class="sy4">;</span>
+    string operator<span class="sy2">+</span><span class="br0">&#40;</span> <span class="kw4">const</span> string<span class="sy3">&amp;</span> s1, Char c <span class="br0">&#41;</span><span class="sy4">;</span>
+    string<span class="sy3">&amp;</span> operator<span class="sy2">+</span><span class="sy1">=</span><span class="br0">&#40;</span><span class="kw4">const</span> string<span class="sy3">&amp;</span> append<span class="br0">&#41;</span><span class="sy4">;</span>
+    string<span class="sy3">&amp;</span> operator<span class="sy2">+</span><span class="sy1">=</span><span class="br0">&#40;</span><span class="kw4">const</span> Char<span class="sy2">*</span> append<span class="br0">&#41;</span><span class="sy4">;</span>
+    string<span class="sy3">&amp;</span> operator<span class="sy2">+</span><span class="sy1">=</span><span class="br0">&#40;</span><span class="kw4">const</span> Char  append<span class="br0">&#41;</span><span class="sy4">;</span>
+    ostream<span class="sy3">&amp;</span> operator<span class="sy1">&lt;&lt;</span><span class="br0">&#40;</span> ostream<span class="sy3">&amp;</span> os, <span class="kw4">const</span> string<span class="sy3">&amp;</span> s <span class="br0">&#41;</span><span class="sy4">;</span>
+    istream<span class="sy3">&amp;</span> operator<span class="sy1">&gt;&gt;</span><span class="br0">&#40;</span> istream<span class="sy3">&amp;</span> is, string<span class="sy3">&amp;</span> s <span class="br0">&#41;</span><span class="sy4">;</span>
+    string<span class="sy3">&amp;</span> operator<span class="sy1">=</span><span class="br0">&#40;</span> <span class="kw4">const</span> string<span class="sy3">&amp;</span> s <span class="br0">&#41;</span><span class="sy4">;</span>
+    string<span class="sy3">&amp;</span> operator<span class="sy1">=</span><span class="br0">&#40;</span> <span class="kw4">const</span> Char<span class="sy2">*</span> s <span class="br0">&#41;</span><span class="sy4">;</span>
+    string<span class="sy3">&amp;</span> operator<span class="sy1">=</span><span class="br0">&#40;</span> Char ch <span class="br0">&#41;</span><span class="sy4">;</span>
+    Char<span class="sy3">&amp;</span> operator<span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#40;</span> size_type index <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">const</span> Char<span class="sy3">&amp;</span> operator<span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#40;</span> size_type index <span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span></pre>
+<p>
+Строки в C++ можно присваивать и сравнивать с помощью стандартных операторов сравнения: ==, !=, ⇐, &gt;=, &lt;, &gt;, и =. Выполнение сравнения или присваивания одной строки другой происходит за <a href="../../complexity" class="wikilink1" title="complexity">линейное время</a>.
+</p>
+
+<p>
+Две строки равны, если:
+
+</p>
+<ol>
+<li class="level1"><div class="li"> Их размер равен, и</div>
+</li>
+<li class="level1"><div class="li"> Каждый символ в позиции i одной строки равен символу в позиции i в другой строке.</div>
+</li>
+</ol>
+
+<p>
+
+Сравнения между строками производятся лексикографически.
+</p>
+
+<p>
+В дополнение к обычным операциям с контейнерами, строки так же могут быть сцеплены с помощью оператора + и введены/выведены с помощью <a href="../../io/start" class="wikilink1" title="io:start">потоков ввода/вывода C++</a> с операторами &lt;&lt; И &gt;&gt;.
+</p>
+
+<p>
+Например, следующий код сцепляет две строки и показывает результат:
+</p>
+<pre class="cpp code cpp">   string s1 <span class="sy1">=</span> <span class="st0">&quot;Now is the time...&quot;</span><span class="sy4">;</span>
+   string s2 <span class="sy1">=</span> <span class="st0">&quot;for all good men...&quot;</span><span class="sy4">;</span>
+   string s3 <span class="sy1">=</span> s1 <span class="sy2">+</span> s2<span class="sy4">;</span>
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;s3 is &quot;</span> <span class="sy1">&lt;&lt;</span> s3 <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
+<p>
+
+Больше того, строкам можно присвоить значения, которые являются другими строками, символьными массивами, или символами. Следующий код является абсолютно правильным:
+</p>
+<pre class="cpp code cpp">   <span class="kw4">char</span> ch <span class="sy1">=</span> <span class="st0">'N'</span><span class="sy4">;</span>
+   string s<span class="sy4">;</span>
+   s <span class="sy1">=</span> ch<span class="sy4">;</span></pre>
+<p>
+
+Отдельные символы строки можно просмотреть с помощью оператора [], это происходит за <a href="../../complexity" class="wikilink1" title="complexity">константное время</a>
+</p>
+
+<p>
+Смотрите так же: <a href="c_str" class="wikilink1" title="ru:string:c_str">c_str</a>, <a href="compare" class="wikilink1" title="ru:string:compare">compare</a>, <a href="data" class="wikilink1" title="ru:string:data">data</a>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "Строковые операторы" [3-] --></div>
+</body>
+</html>

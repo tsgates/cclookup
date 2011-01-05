@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>io:c:template_printf_format</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-29T15:14:17-0700" />
+<meta name="keywords" content="io,c,template_printf_format" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/io/c/template_printf_format?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=io:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/io/c/template_printf_format" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/io/c/template_printf_format" />
+<link rel="canonical" href="template_printf_format" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='io:c';var JSINFO = {"id":"io:c:template_printf_format","namespace":"io:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="templateprintf_format_string" id="templateprintf_format_string">template:printf format string</a></h2>
+<div class="level2">
+
+<p>
+
+The format string consists of whitespace characters, non-whitespace characters (except <code>%</code>) and conversion specifications. Each conversion specification has the following format:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> introductory <code>%</code> character</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> (optional) one or more flags that modify the behavior of the conversion:</div>
+<ul>
+<li class="level2"><div class="li"> <code>-</code> : the result of the conversion is left-justified within the field (by default it is right-justified)</div>
+</li>
+<li class="level2"><div class="li"> <code>+</code> : signed conversions always prepend the result with its sign (by default the result is preceded by minus only when it is negative)</div>
+</li>
+<li class="level2"><div class="li"> <em>space</em>: if the result of a signed conversion does not start with a sign character, or is empty, space is prepended to the result. It is ignored if <code>+</code> flag is present.</div>
+</li>
+<li class="level2"><div class="li"> <code>#</code> : <em>alternative form</em> of the conversion is performed. See the definitions of conversion specifiers.</div>
+</li>
+<li class="level2"><div class="li"> <code>0</code> : for integer and floating point number conversions, leading zeros are used to pad the field instead of <em>space</em> characters. For floating point numbers it is ignored if the precision is explicitly specified. For other conversions using this flag results in undefined behavior. It is ignored if <code>-</code> flag is present.</div>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> (optional) integer value or <code>*</code> that specifies minimum field width. The result is padded with <em>space</em> characters (by default), if required, on the left when right-justified, or on the right if left-justified. In case of <code>*</code> used, the width is specified by an additional argument of type <code>int</code>. If the value of the argument is negative, it results with the <code>-</code> flag specified and positive field width.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> (optional) <code>.</code> followed by integer number or <code>*</code> that specifies precision of the conversion. For integer number conversions this specifies the minimum number of digits to appear. For floating point conversions this specifies the number of digits to appear after the decimal point character. For string conversion this specifies the maximum number of bytes to be written. In case of <code>*</code> used, the width is specified by an additional argument of type <code>int</code>. If the value of the argument is negative, it is ignored.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> (optional) length modifier that specifies the size of the argument</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> conversion specifier</div>
+</li>
+</ul>
+
+<p>
+The following conversion specifiers are available:
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<th class="col0 centeralign" rowspan="2">  Conversion<br/>
+specifier  </th><th class="col1 centeralign" rowspan="2">  Explanation  </th><th class="col2 centeralign" colspan="10">  Argument type  </th>
+	</tr>
+	<tr class="row1">
+		<th class="col0 centeralign">  <code>hh</code>  </th><th class="col1 centeralign">  <code>h</code>  </th><th class="col2 centeralign">  (none)  </th><th class="col3 centeralign">  <code>l</code>  </th><th class="col4 centeralign">  <code>ll</code>  </th><th class="col5 centeralign">  <code>j</code>  </th><th class="col6 centeralign">  <code>z</code>  </th><th class="col7 centeralign">  <code>t</code>  </th><th class="col8 centeralign">  <code>L</code>  </th><td class="col9"></td>
+	</tr>
+	<tr class="row2">
+		<th class="col0 centeralign">  <code>%</code>  </th><td class="col1"> writes literal <strong><code>%</code></strong> </td><td class="col2 centeralign">  (invalid)  </td><td class="col3 centeralign">  (invalid)  </td><td class="col4 centeralign">  (invalid)  </td><td class="col5 centeralign">  (invalid)  </td><td class="col6 centeralign">  (invalid)  </td><td class="col7 centeralign">  (invalid)  </td><td class="col8 centeralign">  (invalid)  </td><td class="col9 centeralign">  (invalid)  </td><td class="col10 centeralign">  (invalid)  </td><td class="col11"></td>
+	</tr>
+	<tr class="row3">
+		<th class="col0 centeralign">  <code>c</code>  </th><td class="col1"> writes a single <strong>character</strong> </td><td class="col2 centeralign" rowspan="3">  (invalid)  </td><td class="col3 centeralign" rowspan="3">  (invalid)  </td><td class="col4 centeralign" rowspan="3">  <code>char</code>  </td><td class="col5 centeralign" rowspan="3">  <code>wchar_t</code>  </td><td class="col6 centeralign" rowspan="3">  (invalid)  </td><td class="col7 centeralign" rowspan="3">  (invalid)  </td><td class="col8 centeralign" rowspan="3">  (invalid)  </td><td class="col9 centeralign" rowspan="3">  (invalid)  </td><td class="col10 centeralign" rowspan="3">  (invalid)  </td><td class="col11"></td>
+	</tr>
+	<tr class="row4">
+		<th class="col0 centeralign">  <code>s</code>  </th><td class="col1"> writes a <strong>character string</strong> </td><td class="col2"></td>
+	</tr>
+	<tr class="row5">
+		<th class="col0 centeralign">  <code>[<em>set</em>]</code>  </th><td class="col1"> matches a non-empty sequence of character from a given set of characters. If the first character of the set is <code>^</code>, then all characters not in the set are matched. If the set begins with <code>]</code> or <code>^]</code> then the <code>]</code> character is also included into the set. </td><td class="col2"></td>
+	</tr>
+	<tr class="row6">
+		<th class="col0 centeralign">  <code>d</code>  </th><td class="col1"> writes a <strong>decimal integer</strong> whose format is the same as expected by <code>strtol</code> with the value <code>10</code> for the <code>base</code> argument</td><td class="col2 centeralign" rowspan="6">  <code>signed<br/>
+char</code> <br/>
+<br/>
+or <br/>
+<br/>
+<code>unsigned<br/>
+char</code>  </td><td class="col3 centeralign" rowspan="6">  <code>signed<br/>
+short</code> <br/>
+<br/>
+or <br/>
+<br/>
+<code>unsigned<br/>
+short</code>  </td><td class="col4 centeralign" rowspan="6">  <code>signed<br/>
+int</code> <br/>
+<br/>
+or <br/>
+<br/>
+<code>unsigned<br/>
+int</code>  </td><td class="col5 centeralign" rowspan="6">  <code>signed<br/>
+long</code> <br/>
+<br/>
+or <br/>
+<br/>
+<code>unsigned<br/>
+long</code>  </td><td class="col6 centeralign" rowspan="6">  <code>signed<br/>
+long long</code> <br/>
+<br/>
+or <br/>
+<br/>
+<code>unsigned<br/>
+long long</code>  </td><td class="col7 centeralign" rowspan="6">  <code>intmax_t</code><br/>
+<br/>
+or <br/>
+<br/>
+<code>uintmax_t</code>  </td><td class="col8 centeralign" rowspan="6">  <code>size_t</code>  </td><td class="col9 centeralign" rowspan="6">  <code>ptrdiff_t</code>  </td><td class="col10 centeralign" rowspan="6">  (invalid)  </td><td class="col11"></td>
+	</tr>
+	<tr class="row7">
+		<th class="col0 centeralign">  <code>i</code>  </th><td class="col1"> writes an <strong>integer</strong> whose format is the same as expected by <code>strtol</code> with the value <code>0</code> for the <code>base</code> argument </td><td class="col2"></td>
+	</tr>
+	<tr class="row8">
+		<th class="col0 centeralign">  <code>u</code>  </th><td class="col1"> writes an <strong>unsigned integer</strong> whose format is the same as expected by <code>strtoul</code> with the value <code>0</code> for the <code>base</code> argument</td><td class="col2"></td>
+	</tr>
+	<tr class="row9">
+		<th class="col0 centeralign">  <code>o</code>  </th><td class="col1"> writes an <strong>octal integer</strong> whose format is the same as expected by <code>strtol</code> with the value <code>8</code> for the <code>base</code> argument</td><td class="col2"></td>
+	</tr>
+	<tr class="row10">
+		<th class="col0 centeralign">  <code>x</code>, <code>X</code>  </th><td class="col1"> matches a <strong>hexadecimal integer</strong> whose format is the same as expected by <code>strtol</code> with the value <code>16</code> for the <code>base</code> argument</td><td class="col2"></td>
+	</tr>
+	<tr class="row11">
+		<th class="col0 centeralign">  <code>n</code>  </th><td class="col1"> no output is written. The <strong>number of characters written so far</strong> is <em>written</em> to the argument. If the specifier has either one of the flags, precision or field specified, the behavior is undefined </td><td class="col2"></td>
+	</tr>
+	<tr class="row12">
+		<th class="col0 centeralign">  <code>a</code>, <code>A</code> <br/>
+<code>e</code>, <code>E</code> <br/>
+<code>f</code>, <code>F</code> <br/>
+<code>g</code>, <code>G</code>  </th><td class="col1 leftalign"> writes a <strong>floating-point number</strong> whose format is the same as expected by <code>strtod</code>  </td><td class="col2 centeralign">  (invalid)  </td><td class="col3 centeralign">  (invalid)  </td><td class="col4 centeralign">  <code>float</code>  </td><td class="col5 centeralign">  <code>double</code>  </td><td class="col6 centeralign">  (invalid)  </td><td class="col7 centeralign">  (invalid)  </td><td class="col8 centeralign">  (invalid)  </td><td class="col9 centeralign">  (invalid)  </td><td class="col10 centeralign">  <code>long<br/>
+double</code>  </td><td class="col11"></td>
+	</tr>
+	<tr class="row13">
+		<th class="col0 centeralign">  <code>p</code>  </th><td class="col1"> writed implementation defined character sequence defining a <strong>pointer</strong> </td><td class="col2 centeralign">  (invalid)  </td><td class="col3 centeralign">  (invalid)  </td><td class="col4 centeralign">  <code>void *</code>  </td><td class="col5 centeralign">  (invalid)  </td><td class="col6 centeralign">  (invalid)  </td><td class="col7 centeralign">  (invalid)  </td><td class="col8 centeralign">  (invalid)  </td><td class="col9 centeralign">  (invalid)  </td><td class="col10 centeralign">  (invalid)  </td><td class="col11"></td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [2307-5343] -->
+</div>
+<!-- EDIT1 SECTION "template:printf format string" [1-5343] -->
+<h3 class="sectionedit3"><a name="formatting_modifiers" id="formatting_modifiers">Formatting Modifiers</a></h3>
+<div class="level3">
+
+<p>
+
+An integer placed between a % sign and the format command acts as a minimum
+field width specifier, and pads the output with spaces or zeros to make it long
+enough. If you want to pad with zeros, place a zero before the minimum field
+width specifier:
+</p>
+<pre class="cpp code cpp">     <span class="sy2">%</span>012d</pre>
+<p>
+You may also specify the minimum field width in an int variable if instead of a
+number you put the * sign:
+</p>
+<pre class="cpp code cpp">     <span class="kw4">int</span> width <span class="sy1">=</span> <span class="nu0">12</span><span class="sy4">;</span>
+     <span class="kw4">int</span> age <span class="sy1">=</span> <span class="nu0">100</span><span class="sy4">;</span>
+     <span class="kw3">printf</span><span class="br0">&#40;</span><span class="st0">&quot;%*d&quot;</span>, width, age<span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+You can also include a precision modifier, in the form of a <code>.N</code> where <code>N</code> is some
+number, before the format command:
+</p>
+<pre class="cpp code cpp">     <span class="sy2">%</span>012.4d</pre>
+<p>
+The precision modifier has different meanings depending on the format command
+being used:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> With <code>%e</code>, <code>%E</code>, and <code>%f</code>, the precision modifier lets you specify the number of decimal places desired. For example, <code>%12.6f</code> will display a floating number at least 12 digits wide, with six decimal places.</div>
+</li>
+<li class="level1"><div class="li"> With <code>%g</code> and <code>%G</code>, the precision modifier determines the maximum number of significant digits displayed.</div>
+</li>
+<li class="level1"><div class="li"> With <code>%s</code>, the precision modifier simply acts as a maximum field length, to complement the minimum field length that precedes the period.</div>
+</li>
+</ul>
+
+<p>
+
+As with field width specifier, you may use an int variable
+to specify the precision modifier by using the * sign:
+</p>
+<pre class="cpp code cpp">     <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> msg <span class="sy1">=</span> <span class="st0">&quot;Hello printf&quot;</span><span class="sy4">;</span>
+     <span class="kw4">int</span> string_size <span class="sy1">=</span> <span class="kw3">strlen</span> <span class="br0">&#40;</span>msg<span class="br0">&#41;</span><span class="sy4">;</span>
+     <span class="kw3">printf</span><span class="br0">&#40;</span><span class="st0">&quot;msg: %.*s&quot;</span>, string_size, msg<span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+All of <code>printf</code>&#039;s output is right-justified, unless you place a minus sign
+right after the % sign. For example,
+</p>
+<pre class="cpp code cpp">     <span class="sy2">%-</span><span class="nu17">12.4f</span></pre>
+<p>
+will display a floating point number with a minimum of 12 characters, 4 decimal
+places, and left justified. 
+</p>
+
+<p>
+You may modify the <code>%d</code>, <code>%i</code>, <code>%o</code>, <code>%u</code>, and <code>%x</code> type
+specifiers with the letter <code>l</code> and the letter <code>h</code> to specify <code>long</code> and <code>short</code> data
+types (e.g. <code>%hd</code> means a <code>short</code> integer). 
+</p>
+
+<p>
+The <code>%e</code>, <code>%f</code>, and <code>%g</code> type specifiers can have the letter <code>l</code> before them to indicate that a double follows. 
+The <code>%g</code>, <code>%f</code>, and <code>%e</code> type specifiers can be preceded with the character <code>#</code> to ensure that
+the decimal point will be present, even if there are no decimal digits. 
+</p>
+
+<p>
+The use of the <code>#</code> character with the <code>%x</code> type specifier indicates that the hexidecimal
+number should be printed with the <code>0x</code> prefix. 
+</p>
+
+<p>
+The use of the <code>#</code> character
+with the <code>%o</code> type specifier indicates that the octal value should be displayed
+with a <code>0</code> prefix.
+</p>
+
+<p>
+Inserting a plus sign <code>+</code> into the type specifier will force positive values to
+be preceded by a <code>+</code> sign. Putting a space character &#039; &#039; there will force
+positive values to be preceded by a single space character.
+</p>
+
+<p>
+You can also include <a href="../../escape_sequences" class="wikilink1" title="escape_sequences">constant escape sequences</a> in the output string.
+</p>
+
+<p>
+<a href="../../todo" class="wikilink1" title="todo">todo</a>
+
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Formatting Modifiers" [5344-] --></div>
+</body>
+</html>

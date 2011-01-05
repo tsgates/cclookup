@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>container:unordered_set:end</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-11-07T03:51:32-0800" />
+<meta name="keywords" content="container,unordered_set,end" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/container/unordered_set/end?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=container:unordered_set" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/container/unordered_set/end" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/container/unordered_set/end" />
+<link rel="canonical" href="end" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='container:unordered_set';var JSINFO = {"id":"container:unordered_set:end","namespace":"container:unordered_set"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="end#unordered_setend_unordered_setcend" class="toc">unordered_set::end, unordered_set::cend</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="end#parameters" class="toc">Parameters</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="end#return_value" class="toc">Return value</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="end#complexity" class="toc">Complexity</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="end#see_also" class="toc">See also</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="unordered_setend_unordered_setcend" id="unordered_setend_unordered_setcend">unordered_set::end, unordered_set::cend</a></h2>
+<div class="level2">
+<pre class="cpp code cpp">iterator end<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+const_iterator end<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span>
+const_iterator cend<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span></pre><div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature </td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [141-162] -->
+<p>
+
+Returns the past-the-end iterator of the container. The iterator acts as a placeholder, attempting to access the associated value results in undefined behavior.
+</p>
+
+</div>
+<!-- EDIT1 SECTION "unordered_set::end, unordered_set::cend" [1-325] -->
+<h3 class="sectionedit3"><a name="parameters" id="parameters">Parameters</a></h3>
+<div class="level3">
+
+<p>
+
+(none)
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Parameters" [326-353] -->
+<h3 class="sectionedit4"><a name="return_value" id="return_value">Return value</a></h3>
+<div class="level3">
+
+<p>
+
+past-the-end iterator of the container
+</p>
+
+</div>
+<!-- EDIT4 SECTION "Return value" [354-415] -->
+<h3 class="sectionedit5"><a name="complexity" id="complexity">Complexity</a></h3>
+<div class="level3">
+
+<p>
+
+constant
+</p>
+
+</div>
+<!-- EDIT5 SECTION "Complexity" [416-445] -->
+<h3 class="sectionedit6"><a name="see_also" id="see_also">See also</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="begin" class="wikilink1" title="container:unordered_set:begin">begin</a>
+
+</p>
+
+</div>
+<!-- EDIT6 SECTION "See also" [446-] --></div>
+</body>
+</html>

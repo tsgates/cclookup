@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it"
+ lang="it" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>it:preprocessor:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:07-0700" />
+<meta name="keywords" content="it,preprocessor,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/it/preprocessor/start?do=index" title="Indice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=it:preprocessor" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/it/preprocessor/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/it/preprocessor/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='it:preprocessor';var JSINFO = {"id":"it:preprocessor:start","namespace":"it:preprocessor"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="comandi_del_preprocessore" id="comandi_del_preprocessore">Comandi del Preprocessore</a></h2>
+<div class="level2">
+
+<p>
+
+Il preprocessore esamina il codice prima che venga effettuata la compilazione. I comandi passati al preprocessore permettono di definire variabili, effettuare sostituzione di testo o effettuare inclusioni condizionate di codice
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="sharp" class="wikilink1" title="it:preprocessor:sharp"># and ##</a></td><td class="col1">manipolazione di stringhe</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="define" class="wikilink1" title="it:preprocessor:define">#define</a></td><td class="col1">definisci una macro</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="error" class="wikilink1" title="it:preprocessor:error">#error</a></td><td class="col1">mostra un messaggio di errore</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="preprocessor_if" class="wikilink1" title="it:preprocessor:preprocessor_if">#if, #ifdef, #ifndef, #else, #elif, and #endif</a></td><td class="col1">operatori condizionali</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="include" class="wikilink1" title="it:preprocessor:include">#include</a></td><td class="col1">inserisce i contenuti di un altro file</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/preprocessor/line" class="wikilink2" title="it:preprocessor:line" rel="nofollow">#line</a></td><td class="col1">imposta informazioni sulla linea e sul file</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/preprocessor/pragma" class="wikilink2" title="it:preprocessor:pragma" rel="nofollow">#pragma</a></td><td class="col1">implementazione di comandi specifici</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/preprocessor/undef" class="wikilink2" title="it:preprocessor:undef" rel="nofollow">#undef</a></td><td class="col1">elimina macro precedentemente definite</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/preprocessor/preprocessor_vars" class="wikilink2" title="it:preprocessor:preprocessor_vars" rel="nofollow">Variabili predefinite del preprocessore</a></td><td class="col1">Miscellanea di variabili del preprocessore</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [268-842] -->
+</div>
+</div>
+</body>
+</html>

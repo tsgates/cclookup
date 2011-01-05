@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:preprocessor:preprocessor_vars</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:18-0700" />
+<meta name="keywords" content="jp,preprocessor,preprocessor_vars" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/preprocessor/preprocessor_vars?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp:preprocessor" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/preprocessor/preprocessor_vars" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/preprocessor/preprocessor_vars" />
+<link rel="canonical" href="preprocessor_vars" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp:preprocessor';var JSINFO = {"id":"jp:preprocessor:preprocessor_vars","namespace":"jp:preprocessor"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="定義済みのプリプロセッサ変数" id="定義済みのプリプロセッサ変数">定義済みのプリプロセッサ変数</a></h2>
+<div class="level2">
+
+<p>
+
+文法:
+
+</p>
+<pre class="cpp code cpp">    __LINE__
+    __FILE__
+    __DATE__
+    __TIME__
+    __cplusplus
+    __STDC__</pre>
+<p>
+以下のプリプロセッサ変数は、プリプロセッサによって次のように定義/置換されます:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>__LINE__</code> と <code>__FILE__</code> は、そのマクロ名の現れた行番号とファイル名に置換されます。</div>
+</li>
+<li class="level1"><div class="li"> <code>__DATE__</code> は、月/日/年 形式のコンパイル年月日に置換されます。 実行時の年月日ではなく、コンパイル時の年月日である点に注意してください。</div>
+</li>
+<li class="level1"><div class="li"> <code>__TIME__</code> は、時:分:秒 形式のコンパイル時刻に置換されます。 実行時の時刻ではなく、コンパイル時の時刻である点に注意してください。</div>
+</li>
+<li class="level1"><div class="li"> <code>__cplusplus</code> は、ソースコードがC++としてコンパイルされている時にのみ定義されているプリプロセッサ変数です。 いくつかの古いコンパイラでは、<code>c_plusplus</code>という名前でも定義されていました。</div>
+</li>
+<li class="level1"><div class="li"> <code>__STDC__</code> は、ソースコードがCとしてコンパイルされており、コンパイラが標準Cに準拠しているなら必ず定義されています。 ソースコードがC++としてコンパイルされている場合には、このプリプロセッサ変数が定義されているかどうかは処理系依存です。</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT1 SECTION "定義済みのプリプロセッサ変数" [1-1437] -->
+<h3 class="sectionedit2"><a name="gcc独自仕様" id="gcc独自仕様">GCC独自仕様</a></h3>
+<div class="level3">
+
+<p>
+
+以下の名称は、GCC独自仕様として予約されている名称です。 実際のところ、これらはプリプロセッサ変数ではないのですが (参考:<a href="http://gcc.gnu.org/onlinedocs/gcc/Function-Names.html" class="urlextern" title="http://gcc.gnu.org/onlinedocs/gcc/Function-Names.html"  rel="nofollow">magic</a>)、同じように用いることが可能です:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>__func__</code> は、コード上のその地点を含む、裸の関数名(コード上で書かれたとおりの関数名)に置換されます。</div>
+</li>
+<li class="level1"><div class="li"> <code>__FUNCTION__</code> は、 <code>__func__</code>　の別名です。</div>
+</li>
+<li class="level1"><div class="li"> <code>__PRETTY_FUNCTION__</code> は、裸の関数名に加えて戻り値型や引数型などの情報も含んだ、関数シグニチャに置換されます。</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT2 SECTION "GCC独自仕様" [1438-] --></div>
+</body>
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn"
+ lang="cn" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>cn:ascii:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:53-0700" />
+<meta name="keywords" content="cn,ascii,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/cn/ascii/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=cn:ascii" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/cn/ascii/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/cn/ascii/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='cn:ascii';var JSINFO = {"id":"cn:ascii:start","namespace":"cn:ascii"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<p>
+<strong><acronym title="American Standard Code for Information Interchange">ASCII</acronym> 码表</strong>
+</p>
+
+<p>
+下面的 <acronym title="American Standard Code for Information Interchange">ASCII</acronym> 码表包含数值在0-127之间的字符的十进制、八进制以及十六进制表示.
+</p>
+
+<p>
+十进制 八进制 十六进制 字符  描述
+</p>
+<ul>
+<li class="level1"><div class="li"> 0 0 00 NUL  </div>
+</li>
+<li class="level1"><div class="li"> 1 1 01 SOH start of header </div>
+</li>
+<li class="level1"><div class="li">2 2 02 STX start of text </div>
+</li>
+<li class="level1"><div class="li">3 3 03 ETX end of text </div>
+</li>
+<li class="level1"><div class="li">4 4 04 <acronym title="End of text">EOT</acronym> end of transmission </div>
+</li>
+<li class="level1"><div class="li">5 5 05 ENQ enquiry </div>
+</li>
+<li class="level1"><div class="li">6 6 06 ACK acknowledge </div>
+</li>
+<li class="level1"><div class="li">7 7 07 BEL bell </div>
+</li>
+<li class="level1"><div class="li">8 10 08 BS backspace </div>
+</li>
+<li class="level1"><div class="li">9 11 09 HT horizontal tab </div>
+</li>
+<li class="level1"><div class="li">10 12 0A LF line feed </div>
+</li>
+<li class="level1"><div class="li">11 13 0B VT vertical tab </div>
+</li>
+<li class="level1"><div class="li">12 14 0C FF form feed </div>
+</li>
+<li class="level1"><div class="li">13 15 0D CR carriage return </div>
+</li>
+<li class="level1"><div class="li">14 16 0E SO shift out </div>
+</li>
+<li class="level1"><div class="li">15 17 0F SI shift in </div>
+</li>
+<li class="level1"><div class="li">16 20 10 DLE data link escape </div>
+</li>
+<li class="level1"><div class="li">17 21 11 DC1 no assignment, but usually XON </div>
+</li>
+<li class="level1"><div class="li">18 22 12 DC2  </div>
+</li>
+<li class="level1"><div class="li">19 23 13 DC3 no assignment, but usually XOFF </div>
+</li>
+<li class="level1"><div class="li">20 24 14 DC4  </div>
+</li>
+<li class="level1"><div class="li">21 25 15 NAK negative acknowledge </div>
+</li>
+<li class="level1"><div class="li">22 26 16 SYN synchronous idle </div>
+</li>
+<li class="level1"><div class="li">23 27 17 ETB end of transmission block </div>
+</li>
+<li class="level1"><div class="li">24 30 18 CAN cancel </div>
+</li>
+<li class="level1"><div class="li">25 31 19 EM end of medium </div>
+</li>
+<li class="level1"><div class="li">26 32 1A SUB substitute </div>
+</li>
+<li class="level1"><div class="li">27 33 1B ESC escape </div>
+</li>
+<li class="level1"><div class="li">28 34 1C FS file seperator </div>
+</li>
+<li class="level1"><div class="li">29 35 1D GS group seperator </div>
+</li>
+<li class="level1"><div class="li">30 36 1E RS record seperator </div>
+</li>
+<li class="level1"><div class="li">31 37 1F US unit seperator </div>
+</li>
+<li class="level1"><div class="li">32 40 20 SPC space </div>
+</li>
+<li class="level1"><div class="li">33 41 21 !  </div>
+</li>
+<li class="level1"><div class="li">34 42 22 ”  </div>
+</li>
+<li class="level1"><div class="li">35 43 23 #  </div>
+</li>
+<li class="level1"><div class="li">36 44 24 $  </div>
+</li>
+<li class="level1"><div class="li">37 45 25 %  </div>
+</li>
+<li class="level1"><div class="li">38 46 26 &amp;  </div>
+</li>
+<li class="level1"><div class="li">39 47 27 &#039;  </div>
+</li>
+<li class="level1"><div class="li">40 50 28 (  </div>
+</li>
+<li class="level1"><div class="li">41 51 29 )  </div>
+</li>
+<li class="level1"><div class="li">42 52 2A *  </div>
+</li>
+<li class="level1"><div class="li">43 53 2B +  </div>
+</li>
+<li class="level1"><div class="li">44 54 2C ,  </div>
+</li>
+<li class="level1"><div class="li">45 55 2D -  </div>
+</li>
+<li class="level1"><div class="li">46 56 2E .  </div>
+</li>
+<li class="level1"><div class="li">47 57 2F /  </div>
+</li>
+<li class="level1"><div class="li">48 60 30 0  </div>
+</li>
+<li class="level1"><div class="li">49 61 31 1  </div>
+</li>
+<li class="level1"><div class="li">50 62 32 2  </div>
+</li>
+<li class="level1"><div class="li">51 63 33 3  </div>
+</li>
+<li class="level1"><div class="li">52 64 34 4  </div>
+</li>
+<li class="level1"><div class="li">53 65 35 5  </div>
+</li>
+<li class="level1"><div class="li">54 66 36 6  </div>
+</li>
+<li class="level1"><div class="li">55 67 37 7  </div>
+</li>
+<li class="level1"><div class="li">56 70 38 8  </div>
+</li>
+<li class="level1"><div class="li">57 71 39 9  </div>
+</li>
+<li class="level1"><div class="li">58 72 3A :  </div>
+</li>
+<li class="level1"><div class="li">59 73 3B ;  </div>
+</li>
+<li class="level1"><div class="li">60 74 3C &lt;  </div>
+</li>
+<li class="level1"><div class="li">61 75 3D =  </div>
+</li>
+<li class="level1"><div class="li">62 76 3E &gt;  </div>
+</li>
+<li class="level1"><div class="li">63 77 3F ?  </div>
+</li>
+<li class="level1"><div class="li">64 100 40 @  </div>
+</li>
+<li class="level1"><div class="li">65 101 41 A  </div>
+</li>
+<li class="level1"><div class="li">66 102 42 B  </div>
+</li>
+<li class="level1"><div class="li">67 103 43 C  </div>
+</li>
+<li class="level1"><div class="li">68 104 44 D  </div>
+</li>
+<li class="level1"><div class="li">69 105 45 E  </div>
+</li>
+<li class="level1"><div class="li">70 106 46 F  </div>
+</li>
+<li class="level1"><div class="li">71 107 47 G  </div>
+</li>
+<li class="level1"><div class="li">72 110 48 H  </div>
+</li>
+<li class="level1"><div class="li">73 111 49 I  </div>
+</li>
+<li class="level1"><div class="li">74 112 4A J  </div>
+</li>
+<li class="level1"><div class="li">75 113 4B K  </div>
+</li>
+<li class="level1"><div class="li">76 114 4C L  </div>
+</li>
+<li class="level1"><div class="li">77 115 4D M  </div>
+</li>
+<li class="level1"><div class="li">78 116 4E N  </div>
+</li>
+<li class="level1"><div class="li">79 117 4F O  </div>
+</li>
+<li class="level1"><div class="li">80 120 50 P  </div>
+</li>
+<li class="level1"><div class="li">81 121 51 Q  </div>
+</li>
+<li class="level1"><div class="li">82 122 52 R  </div>
+</li>
+<li class="level1"><div class="li">83 123 53 S  </div>
+</li>
+<li class="level1"><div class="li">84 124 54 T  </div>
+</li>
+<li class="level1"><div class="li">85 125 55 U  </div>
+</li>
+<li class="level1"><div class="li">86 126 56 V  </div>
+</li>
+<li class="level1"><div class="li">87 127 57 W  </div>
+</li>
+<li class="level1"><div class="li">88 130 58 X  </div>
+</li>
+<li class="level1"><div class="li">89 131 59 Y  </div>
+</li>
+<li class="level1"><div class="li">90 132 5A Z  </div>
+</li>
+<li class="level1"><div class="li">91 133 5B [  </div>
+</li>
+<li class="level1"><div class="li">92 134 5C \  </div>
+</li>
+<li class="level1"><div class="li">93 135 5D ]  </div>
+</li>
+<li class="level1"><div class="li">94 136 5E ^  </div>
+</li>
+<li class="level1"><div class="li">95 137 5F _  </div>
+</li>
+<li class="level1"><div class="li">96 140 60 `  </div>
+</li>
+<li class="level1"><div class="li">97 141 61 a  </div>
+</li>
+<li class="level1"><div class="li">98 142 62 b  </div>
+</li>
+<li class="level1"><div class="li">99 143 63 c  </div>
+</li>
+<li class="level1"><div class="li">100 144 64 d  </div>
+</li>
+<li class="level1"><div class="li">101 145 65 e  </div>
+</li>
+<li class="level1"><div class="li">102 146 66 f  </div>
+</li>
+<li class="level1"><div class="li">103 147 67 g  </div>
+</li>
+<li class="level1"><div class="li">104 150 68 h  </div>
+</li>
+<li class="level1"><div class="li">105 151 69 i  </div>
+</li>
+<li class="level1"><div class="li">106 152 6A j  </div>
+</li>
+<li class="level1"><div class="li">107 153 6B k  </div>
+</li>
+<li class="level1"><div class="li">108 154 6C l  </div>
+</li>
+<li class="level1"><div class="li">109 155 6D m  </div>
+</li>
+<li class="level1"><div class="li">110 156 6E n  </div>
+</li>
+<li class="level1"><div class="li">111 157 6F o  </div>
+</li>
+<li class="level1"><div class="li">112 160 70 p  </div>
+</li>
+<li class="level1"><div class="li">113 161 71 q  </div>
+</li>
+<li class="level1"><div class="li">114 162 72 r  </div>
+</li>
+<li class="level1"><div class="li">115 163 73 s  </div>
+</li>
+<li class="level1"><div class="li">116 164 74 t  </div>
+</li>
+<li class="level1"><div class="li">117 165 75 u  </div>
+</li>
+<li class="level1"><div class="li">118 166 76 v  </div>
+</li>
+<li class="level1"><div class="li">119 167 77 w  </div>
+</li>
+<li class="level1"><div class="li">120 170 78 x  </div>
+</li>
+<li class="level1"><div class="li">121 171 79 y  </div>
+</li>
+<li class="level1"><div class="li">122 172 7A z  </div>
+</li>
+<li class="level1"><div class="li">123 173 7B {  </div>
+</li>
+<li class="level1"><div class="li">124 174 7C |  </div>
+</li>
+<li class="level1"><div class="li">125 175 7D }  </div>
+</li>
+<li class="level1"><div class="li">126 176 7E ~  </div>
+</li>
+<li class="level1"><div class="li">127 177 7F DEL delete </div>
+</li>
+</ul>
+</div>
+</body>
+</html>

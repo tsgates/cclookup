@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn"
+ lang="cn" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>cn:io:c:setvbuf</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:53-0700" />
+<meta name="keywords" content="cn,io,c,setvbuf" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/cn/io/c/setvbuf?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=cn:io:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/cn/io/c/setvbuf" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/cn/io/c/setvbuf" />
+<link rel="canonical" href="setvbuf" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='cn:io:c';var JSINFO = {"id":"cn:io:c:setvbuf","namespace":"cn:io:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="setvbuf" id="setvbuf">setvbuf</a></h2>
+<div class="level2">
+
+<p>
+语法：
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cstdio&gt;</span>
+    <span class="kw4">int</span> <span class="kw3">setvbuf</span><span class="br0">&#40;</span> <span class="kw4">FILE</span> <span class="sy2">*</span>stream, <span class="kw4">char</span> <span class="sy2">*</span>buffer, <span class="kw4">int</span> mode, <span class="kw4">size_t</span> size <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+
+函数setvbuf()为文件流stream设置缓冲区buffer，设置缓冲区大小为size。模式mode可以是：
+</p>
+
+<p>
+* _IOFBF, 指示使用全缓冲
+* _IOLBF, 意味着行缓冲
+* _IONBF, 意味着没有缓冲
+</p>
+
+<p>
+
+相关主题： <a href="setbuf" class="wikilink1" title="cn:io:c:setbuf">setbuf</a>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "setvbuf" [3-] --></div>
+</body>
+</html>

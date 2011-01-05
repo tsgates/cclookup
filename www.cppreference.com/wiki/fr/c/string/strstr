@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr"
+ lang="fr" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>fr:c:string:strstr</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:57-0700" />
+<meta name="keywords" content="fr,c,string,strstr" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/fr/c/string/strstr?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=fr:c:string" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/fr/c/string/strstr" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/fr/c/string/strstr" />
+<link rel="canonical" href="strstr" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='fr:c:string';var JSINFO = {"id":"fr:c:string:strstr","namespace":"fr:c:string"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="strstr" id="strstr">strstr</a></h2>
+<div class="level2">
+
+<p>
+Syntaxe :
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cstring&gt;</span>
+    <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span><span class="kw3">strstr</span> <span class="br0">&#40;</span><span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>str1, <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>str2<span class="br0">&#41;</span><span class="sy4">;</span>
+          <span class="kw4">char</span> <span class="sy2">*</span><span class="kw3">strstr</span> <span class="br0">&#40;</span><span class="kw4">char</span> <span class="sy2">*</span>str1, <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>str2<span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+La fonction <code>strstr()</code> renvoie un pointeur sur la première occurrence de
+<code>str2</code> dans <code>str1</code>, ou bien <code>NULL</code> si aucune correspondance n&#039;a été trouvée.
+</p>
+
+<p>
+Si la longueur de <code>str2</code> est nulle, alors <code>strstr()</code> va renvoyer <code>str1</code>.
+</p>
+
+<p>
+Par exemple, la code ci-dessous va cherche la présence d&#039;une chaîne dans
+une autre :
+</p>
+<pre class="cpp code cpp">    <span class="kw4">char</span><span class="sy2">*</span> str1 <span class="sy1">=</span> <span class="st0">&quot;ceci est une chaîne de caractères&quot;</span><span class="sy4">;</span>
+    <span class="kw4">char</span><span class="sy2">*</span> str2 <span class="sy1">=</span> <span class="st0">&quot;une chaîne&quot;</span><span class="sy4">;</span>
+    <span class="kw4">char</span><span class="sy2">*</span> res <span class="sy1">=</span> <span class="kw3">strstr</span><span class="br0">&#40;</span>str1, str2<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw1">if</span> <span class="br0">&#40;</span>res <span class="sy1">==</span> <span class="kw2">NULL</span><span class="br0">&#41;</span> <span class="kw3">printf</span><span class="br0">&#40;</span><span class="st0">&quot;Non trouvé : '%s' dans '%s'<span class="es1">\n</span>&quot;</span>, str2, str1<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw1">else</span> <span class="kw3">printf</span><span class="br0">&#40;</span><span class="st0">&quot;Sous-chaîne trouvée : '%s'<span class="es1">\n</span>&quot;</span>, res<span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+À l’exécution, ce code produira ceci :
+</p>
+<pre class="cpp code cpp">    Sous<span class="sy2">-</span>chaîne trouvée <span class="sy4">:</span> <span class="st0">'une chaîne de caractères'</span></pre>
+<p>
+Sujets connexes : <a href="memchr" class="wikilink1" title="fr:c:string:memchr">memchr</a>, <a href="strchr" class="wikilink1" title="fr:c:string:strchr">strchr</a>, <a href="strcspn" class="wikilink1" title="fr:c:string:strcspn">strcspn</a>, <a href="strpbrk" class="wikilink1" title="fr:c:string:strpbrk">strpbrk</a>, <a href="strrchr" class="wikilink1" title="fr:c:string:strrchr">strrchr</a>, <a href="strspn" class="wikilink1" title="fr:c:string:strspn">strspn</a>, <a href="strtok" class="wikilink1" title="fr:c:string:strtok">strtok</a>
+
+</p>
+
+</div>
+</div>
+</body>
+</html>

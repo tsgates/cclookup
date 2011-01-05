@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:util:functional:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:23-0700" />
+<meta name="keywords" content="jp,util,functional,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/util/functional/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp:util:functional" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/util/functional/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/util/functional/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp:util:functional';var JSINFO = {"id":"jp:util:functional:start","namespace":"jp:util:functional"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="functional_ヘッダファイル" id="functional_ヘッダファイル">&lt;functional&gt; ヘッダファイル</a></h2>
+<div class="level2">
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="binary_function" class="wikilink1" title="jp:util:functional:binary_function">binary_function</a></td><td class="col1"> </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="binary_negate" class="wikilink1" title="jp:util:functional:binary_negate">binary_negate</a></td><td class="col1"> </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="bind1st" class="wikilink1" title="jp:util:functional:bind1st">bind1st</a></td><td class="col1">2つの引数を持つ関数オブジェクトの1つめの引数に値を紐付け(bind)します</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="bind2nd" class="wikilink1" title="jp:util:functional:bind2nd">bind2nd</a></td><td class="col1">2つの引数を持つ関数オブジェクトの2つめの引数に値を紐付け(bind)します</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="binder1st" class="wikilink1" title="jp:util:functional:binder1st">binder1st</a></td><td class="col1"> </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="binder2nd" class="wikilink1" title="jp:util:functional:binder2nd">binder2nd</a></td><td class="col1"> </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="const_mem_fun1_ref_t" class="wikilink1" title="jp:util:functional:const_mem_fun1_ref_t">const_mem_fun1_ref_t</a></td><td class="col1"> </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="const_mem_fun1_t" class="wikilink1" title="jp:util:functional:const_mem_fun1_t">const_mem_fun1_t</a></td><td class="col1"> </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="const_mem_fun_ref_t" class="wikilink1" title="jp:util:functional:const_mem_fun_ref_t">const_mem_fun_ref_t</a></td><td class="col1"> </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="const_mem_fun_t" class="wikilink1" title="jp:util:functional:const_mem_fun_t">const_mem_fun_t</a></td><td class="col1"> </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="divides" class="wikilink1" title="jp:util:functional:divides">divides</a></td><td class="col1"> </td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/util/functional/equal_to" class="wikilink2" title="jp:util:functional:equal_to" rel="nofollow">equal_to</a></td><td class="col1">第1引数が第2引数と等しいかどうか判定します</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/util/functional/greater" class="wikilink2" title="jp:util:functional:greater" rel="nofollow">greater</a></td><td class="col1">第1引数が第2引数より大きいかどうか判定します</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/util/functional/greater_equal" class="wikilink2" title="jp:util:functional:greater_equal" rel="nofollow">greater_equal</a></td><td class="col1">第1引数が第2引数以上かどうか判定します</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/util/functional/less" class="wikilink2" title="jp:util:functional:less" rel="nofollow">less</a></td><td class="col1">第1引数が第2引数より小さいかどうか判定します</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/util/functional/less_equal" class="wikilink2" title="jp:util:functional:less_equal" rel="nofollow">less_equal</a></td><td class="col1">第1引数が第2引数以下かどうか判定します</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/util/functional/logical_and" class="wikilink2" title="jp:util:functional:logical_and" rel="nofollow">logical_and</a></td><td class="col1"> </td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/util/functional/logical_not" class="wikilink2" title="jp:util:functional:logical_not" rel="nofollow">logical_not</a></td><td class="col1"> </td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/util/functional/logical_or" class="wikilink2" title="jp:util:functional:logical_or" rel="nofollow">logical_or</a></td><td class="col1"> </td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/util/functional/mem_fun1_ref_t" class="wikilink2" title="jp:util:functional:mem_fun1_ref_t" rel="nofollow">mem_fun1_ref_t</a></td><td class="col1"> </td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/util/functional/mem_fun1_t" class="wikilink2" title="jp:util:functional:mem_fun1_t" rel="nofollow">mem_fun1_t</a></td><td class="col1"> </td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/util/functional/mem_fun" class="wikilink2" title="jp:util:functional:mem_fun" rel="nofollow">mem_fun</a></td><td class="col1">メンバ関数からファンクタ(functor)を構築します(ポインタ型)</td>
+	</tr>
+	<tr class="row22">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/util/functional/mem_fun_ref" class="wikilink2" title="jp:util:functional:mem_fun_ref" rel="nofollow">mem_fun_ref</a></td><td class="col1">メンバ関数からファンクタ(functor)を構築します(参照型)</td>
+	</tr>
+	<tr class="row23">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/util/functional/mem_fun_ref_t" class="wikilink2" title="jp:util:functional:mem_fun_ref_t" rel="nofollow">mem_fun_ref_t</a></td><td class="col1"> </td>
+	</tr>
+	<tr class="row24">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/util/functional/mem_fun_t" class="wikilink2" title="jp:util:functional:mem_fun_t" rel="nofollow">mem_fun_t</a></td><td class="col1"> </td>
+	</tr>
+	<tr class="row25">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/util/functional/minus" class="wikilink2" title="jp:util:functional:minus" rel="nofollow">minus</a></td><td class="col1"> </td>
+	</tr>
+	<tr class="row26">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/util/functional/modulus" class="wikilink2" title="jp:util:functional:modulus" rel="nofollow">modulus</a></td><td class="col1"> </td>
+	</tr>
+	<tr class="row27">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/util/functional/multiplies" class="wikilink2" title="jp:util:functional:multiplies" rel="nofollow">multiplies</a></td><td class="col1"> </td>
+	</tr>
+	<tr class="row28">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/util/functional/negate" class="wikilink2" title="jp:util:functional:negate" rel="nofollow">negate</a></td><td class="col1"> </td>
+	</tr>
+	<tr class="row29">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/util/functional/not1" class="wikilink2" title="jp:util:functional:not1" rel="nofollow">not1</a></td><td class="col1">単項述語(unary predicate)の否定です</td>
+	</tr>
+	<tr class="row30">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/util/functional/not2" class="wikilink2" title="jp:util:functional:not2" rel="nofollow">not2</a></td><td class="col1">2項述語(binary predicate)の否定です</td>
+	</tr>
+	<tr class="row31">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/util/functional/not_equal_to" class="wikilink2" title="jp:util:functional:not_equal_to" rel="nofollow">not_equal_to</a></td><td class="col1"> </td>
+	</tr>
+	<tr class="row32">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/util/functional/plus" class="wikilink2" title="jp:util:functional:plus" rel="nofollow">plus</a></td><td class="col1"> </td>
+	</tr>
+	<tr class="row33">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/util/functional/pointer_to_binary_function" class="wikilink2" title="jp:util:functional:pointer_to_binary_function" rel="nofollow">pointer_to_binary_function</a></td><td class="col1"> </td>
+	</tr>
+	<tr class="row34">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/util/functional/pointer_to_unary_function" class="wikilink2" title="jp:util:functional:pointer_to_unary_function" rel="nofollow">pointer_to_unary_function</a></td><td class="col1"> </td>
+	</tr>
+	<tr class="row35">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/util/functional/ptr_fun" class="wikilink2" title="jp:util:functional:ptr_fun" rel="nofollow">ptr_fun</a></td><td class="col1">関数ポインタからファンクタ(functor)を構築します</td>
+	</tr>
+	<tr class="row36">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/util/functional/unary_function" class="wikilink2" title="jp:util:functional:unary_function" rel="nofollow">unary_function</a></td><td class="col1"> </td>
+	</tr>
+	<tr class="row37">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/util/functional/unary_negate" class="wikilink2" title="jp:util:functional:unary_negate" rel="nofollow">unary_negate</a></td><td class="col1"> </td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [47-1594] -->
+</div>
+</div>
+</body>
+</html>

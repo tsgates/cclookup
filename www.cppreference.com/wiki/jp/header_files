@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:header_files</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:23-0700" />
+<meta name="keywords" content="jp,header_files" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/header_files?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/header_files" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/header_files" />
+<link rel="canonical" href="header_files" />
+<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp';var JSINFO = {"id":"jp:header_files","namespace":"jp"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="header_files#c_ヘッダファイル" class="toc">C++ヘッダファイル</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="header_files#コンテナ" class="toc">コンテナ</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="header_files#汎用" class="toc">汎用</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="header_files#c_文字列" class="toc">C++文字列</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="header_files#c_ストリームと入出力" class="toc">C++ストリームと入出力</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="header_files#数値" class="toc">数値</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="header_files#言語サポート" class="toc">言語サポート</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="header_files#c標準ライブラリ" class="toc">C標準ライブラリ</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="c_ヘッダファイル" id="c_ヘッダファイル">C++ヘッダファイル</a></h2>
+<div class="level2">
+
+<p>
+
+このページでは、標準C++として提供されるさまざまなヘッダファイルを、グループごとに分類してリスト化しています。
+</p>
+
+</div>
+<!-- EDIT1 SECTION "C++ヘッダファイル" [1-200] -->
+<h3 class="sectionedit2"><a name="コンテナ" id="コンテナ">コンテナ</a></h3>
+<div class="level3">
+<div class="table sectionedit3"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="stl/bitset/start" class="wikilink1" title="jp:stl:bitset:start">&lt;bitset&gt;</a></td><td class="col1">ビット配列に関する特別なコンテナクラスである<a href="../stl/bitset/start" class="wikilink1" title="stl:bitset:start">std::bitset</a>を提供します</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="stl/deque/start" class="wikilink1" title="jp:stl:deque:start">&lt;deque&gt;</a></td><td class="col1">両端キューの<a href="../stl/deque/start" class="wikilink1" title="stl:deque:start">std::deque</a>コンテナクラステンプレートを提供します</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="stl/list/start" class="wikilink1" title="jp:stl:list:start">&lt;list&gt;</a></td><td class="col1">両端リンクリストの<a href="../stl/list/start" class="wikilink1" title="stl:list:start">std::list</a>コンテナクラステンプレートを提供します</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="stl/map/start" class="wikilink1" title="jp:stl:map:start">&lt;map&gt;</a></td><td class="col1">連想配列の<a href="../stl/map/start" class="wikilink1" title="stl:map:start">std::map</a>, <a href="../stl/multimap/start" class="wikilink1" title="stl:multimap:start">std::multimap</a>コンテナクラステンプレートを提供します</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="stl/queue/start" class="wikilink1" title="jp:stl:queue:start">&lt;queue&gt;</a></td><td class="col1">片端キューの<a href="../stl/queue/start" class="wikilink1" title="stl:queue:start">std::queue</a>コンテナクラステンプレートを提供します</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="stl/set/start" class="wikilink1" title="jp:stl:set:start">&lt;set&gt;</a></td><td class="col1">ソート済連想コンテナの<a href="../stl/set/start" class="wikilink1" title="stl:set:start">std::set</a>, <a href="../stl/multiset/start" class="wikilink1" title="stl:multiset:start">std::multiset</a>コンテナクラステンプレートを提供します</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="stl/stack/start" class="wikilink1" title="jp:stl:stack:start">&lt;stack&gt;</a></td><td class="col1">スタックの<a href="../stl/stack/start" class="wikilink1" title="stl:stack:start">std::stack</a>コンテナクラステンプレートを提供します</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="stl/vector/start" class="wikilink1" title="jp:stl:vector:start">&lt;vector&gt;</a></td><td class="col1">動的の配列の<a href="../stl/vector/start" class="wikilink1" title="stl:vector:start">std::vector</a>コンテナクラステンプレートを提供します</td>
+	</tr>
+</table></div>
+<!-- EDIT3 TABLE [223-1335] -->
+</div>
+<!-- EDIT2 SECTION "コンテナ" [201-1336] -->
+<h3 class="sectionedit4"><a name="汎用" id="汎用">汎用</a></h3>
+<div class="level3">
+<div class="table sectionedit5"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="stl/algorithm/start" class="wikilink1" title="jp:stl:algorithm:start">&lt;algorithm&gt;</a></td><td class="col1">多くの種類のコンテナアルゴリズムを提供します</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="stl/functional/start" class="wikilink1" title="jp:stl:functional:start">&lt;functional&gt;</a></td><td class="col1">標準のアルゴリズムと一緒に使用するために設計された、関数オブジェクトを提供します</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="stl/iterators" class="wikilink1" title="jp:stl:iterators">&lt;iterator&gt;</a></td><td class="col1">イテレータとして動作するクラスやテンプレートを提供します</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">&lt;locale&gt;</td><td class="col1">ロケールに関するクラスとテンプレートを提供します</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="stl/memory/start" class="wikilink1" title="jp:stl:memory:start">&lt;memory&gt;</a></td><td class="col1">C++のメモリ管理に関する機能を提供します。<a href="../stl/memory/auto_ptr" class="wikilink1" title="stl:memory:auto_ptr">std::auto_ptr</a>クラステンプレートを含みます</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="exception/start" class="wikilink1" title="jp:exception:start">&lt;stdexcept&gt;</a></td><td class="col1">std::logic_error, std::runtime_errorといったstd::exceptionから継承されている標準例外クラスを提供します</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="stl/utility/start" class="wikilink1" title="jp:stl:utility:start">&lt;utility&gt;</a></td><td class="col1">2要素のタプルとして動作する、<a href="../stl/utility/pair" class="wikilink1" title="stl:utility:pair">std::pair</a>テンプレートクラスを提供します</td>
+	</tr>
+</table></div>
+<!-- EDIT5 TABLE [1353-2299] -->
+</div>
+<!-- EDIT4 SECTION "汎用" [1337-2300] -->
+<h3 class="sectionedit6"><a name="c_文字列" id="c_文字列">C++文字列</a></h3>
+<div class="level3">
+<div class="table sectionedit7"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="string/start" class="wikilink1" title="jp:string:start">&lt;string&gt;</a></td><td class="col1">C++の標準文字列クラスとテンプレートを提供します</td>
+	</tr>
+</table></div>
+<!-- EDIT7 TABLE [2323-2418] -->
+</div>
+<!-- EDIT6 SECTION "C++文字列" [2301-2419] -->
+<h3 class="sectionedit8"><a name="c_ストリームと入出力" id="c_ストリームと入出力">C++ストリームと入出力</a></h3>
+<div class="level3">
+<div class="table sectionedit9"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="io/start" class="wikilink1" title="jp:io:start">&lt;fstream&gt;</a></td><td class="col1">ファイルベースの入出力機能を提供します</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="io/start" class="wikilink1" title="jp:io:start">&lt;ios&gt;</a></td><td class="col1">iostreamの操作の基本となる、いくつかの型と関数を提供します</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="io/start" class="wikilink1" title="jp:io:start">&lt;iostream&gt;</a></td><td class="col1">C++の入出力の基本機能を提供します</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="io/start" class="wikilink1" title="jp:io:start">&lt;iosfwd&gt;</a></td><td class="col1">入出力に関するクラステンプレートの先行宣言を提供します</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="io/start" class="wikilink1" title="jp:io:start">&lt;iomanip&gt;</a></td><td class="col1">整数のフォーマットや、浮動小数点数の精度などの出力フォーマットのマニピュレータ機能を提供します</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="io/sstream/start" class="wikilink1" title="jp:io:sstream:start">&lt;istream&gt;</a></td><td class="col1">入力に関するstd::istreamテンプレートクラスと、関連クラスを提供します</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="io/sstream/start" class="wikilink1" title="jp:io:sstream:start">&lt;ostream&gt;</a></td><td class="col1">出力に関するstd::ostreamテンプレートクラスと、関連クラスを提供します</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="io/sstream/start" class="wikilink1" title="jp:io:sstream:start">&lt;sstream&gt;</a></td><td class="col1">文字列操作に関するstd::sstreamテンプレートクラスと、関連クラスを提供します</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0">&lt;streambuf&gt;</td><td class="col1"> </td>
+	</tr>
+</table></div>
+<!-- EDIT9 TABLE [2460-3394] -->
+</div>
+<!-- EDIT8 SECTION "C++ストリームと入出力" [2420-3395] -->
+<h3 class="sectionedit10"><a name="数値" id="数値">数値</a></h3>
+<div class="level3">
+<div class="table sectionedit11"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="complex/start" class="wikilink1" title="jp:complex:start">&lt;complex&gt;</a></td><td class="col1">複素数に関する、std::complexテンプレートクラスと、関連の関数を提供します</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/numeric/start" class="wikilink2" title="jp:numeric:start" rel="nofollow">&lt;numeric&gt;</a></td><td class="col1">数値を処理するアルゴリズムをいくつか提供します</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/valarray/start" class="wikilink2" title="jp:valarray:start" rel="nofollow">&lt;valarray&gt;</a></td><td class="col1">数値の処理に最適化された配列クラスである、std::valarrayテンプレートクラスを提供します</td>
+	</tr>
+</table></div>
+<!-- EDIT11 TABLE [3412-3792] -->
+</div>
+<!-- EDIT10 SECTION "数値" [3396-3792] -->
+<h3 class="sectionedit12"><a name="言語サポート" id="言語サポート">言語サポート</a></h3>
+<div class="level3">
+<div class="table sectionedit13"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="exception/start" class="wikilink1" title="jp:exception:start">&lt;exception&gt;</a></td><td class="col1">標準ライブラリが投げるすべての例外のベースクラスになっているstd::exceptionを含め、さまざまなな型や、例外を取り扱うための関数などを提供します</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/limits/start" class="wikilink2" title="jp:limits:start" rel="nofollow">&lt;limits&gt;</a></td><td class="col1"><a href="../limits/numeric_limits" class="wikilink1" title="limits:numeric_limits">std::numeric_limits</a>テンプレートクラスを提供します。このクラスは基本的な数値型の特性を取得するのに使用します</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/new/start" class="wikilink2" title="jp:new:start" rel="nofollow">&lt;new&gt;</a></td><td class="col1">C++のメモリ管理の基本部分を構成している、new, delete演算子、その他の関数や型などを提供します</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/typeinfo/start" class="wikilink2" title="jp:typeinfo:start" rel="nofollow">&lt;typeinfo&gt;</a></td><td class="col1">C++の実行時型情報に関連する機能を提供します</td>
+	</tr>
+</table></div>
+<!-- EDIT13 TABLE [3821-4506] -->
+</div>
+<!-- EDIT12 SECTION "言語サポート" [3793-4506] -->
+<h3 class="sectionedit14"><a name="c標準ライブラリ" id="c標準ライブラリ">C標準ライブラリ</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="c/start" class="wikilink1" title="jp:c:start">C言語の標準ライブラリ</a>由来のヘッダファイルも、C++の標準ライブラリに別の名前になって含まれています。C言語の時のヘッダファイル名から.hを取り除き、先頭に&#039;c&#039;を追加したものになります。例えば、<code>time.h</code>は<code>ctime</code>になります。過去のC言語の標準ライブラリのヘッダと唯一違う点は、提供される関数がすべて<code>std::名前空間</code>の中に定義されているということです。実際にこれを行っているコンパイラは多くないですが。ISOのC言語では、標準ライブラリに含まれる関数はマクロを使って定義しても良いとなっていますが、ISOのC++ではこれを認めていません。
+
+</p>
+<ul>
+<li class="level1"><div class="li"> &lt;cassert&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cctype&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cerrno&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cfloat&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;climits&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cmath&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;csetjmp&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;csignal&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cstdlib&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cstddef&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cstdarg&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cstdio&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cstring&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;ctime&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cwchar&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cwctype&gt;</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT14 SECTION "C標準ライブラリ" [4507-] --></div>
+</body>
+</html>

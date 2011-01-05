@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru"
+ lang="ru" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>ru:string:rfind</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:13-0700" />
+<meta name="keywords" content="ru,string,rfind" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/ru/string/rfind?do=index" title="Все страницы" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=ru:string" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/ru/string/rfind" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/ru/string/rfind" />
+<link rel="canonical" href="rfind" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='ru:string';var JSINFO = {"id":"ru:string:rfind","namespace":"ru:string"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<p>
+Синтаксис:
+
+</p>
+<pre class="cpp code cpp">     <span class="co2">#include &lt;string&gt;</span>
+     size_type rfind<span class="br0">&#40;</span> <span class="kw4">const</span> string<span class="sy3">&amp;</span> str, size_type index <span class="sy1">=</span> npos <span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span>
+     size_type rfind<span class="br0">&#40;</span> <span class="kw4">const</span> Char<span class="sy2">*</span> str, size_type index <span class="sy1">=</span> npos <span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span>
+     size_type rfind<span class="br0">&#40;</span> <span class="kw4">const</span> Char<span class="sy2">*</span> str, size_type index, size_type num <span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span>
+     size_type rfind<span class="br0">&#40;</span> Char ch, size_type index <span class="sy1">=</span> npos <span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span></pre>
+<p>
+Функция rfind() возвращает позицию последнего вхождения str в текущую строку, выполняя обратный поиск начиная с index:
+</p>
+<ul>
+<li class="level1"><div class="li"> string::npos если ничего не найдено,</div>
+</li>
+<li class="level1"><div class="li"> позиция от начала, начиная с нуля,</div>
+</li>
+<li class="level1"><div class="li"> ищет среди последних num символов строки.</div>
+</li>
+</ul>
+
+<p>
+
+В следующем примере первый вызов rfind() возвращает string::npos, поскольку целевое слово не в пределах последних 8 символов строки. Однако, второй вызов возвращает 9, поскольку целевое слово находится среди последних 20 символов строки.
+</p>
+<pre class="cpp code cpp">     string<span class="sy4">::</span><span class="me2">size_type</span> loc<span class="sy4">;</span>
+     string s <span class="sy1">=</span> <span class="st0">&quot;My cat's breath smells like cat food.&quot;</span><span class="sy4">;</span>
+     loc <span class="sy1">=</span> s.<span class="me1">rfind</span><span class="br0">&#40;</span> <span class="st0">&quot;breath&quot;</span>, <span class="nu0">8</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;The word breath is at index &quot;</span> <span class="sy1">&lt;&lt;</span> loc <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+     loc <span class="sy1">=</span> s.<span class="me1">rfind</span><span class="br0">&#40;</span> <span class="st0">&quot;breath&quot;</span>, <span class="nu0">20</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;The word breath is at index &quot;</span> <span class="sy1">&lt;&lt;</span> loc <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
+<p>
+Смотрите также: <a href="find" class="wikilink1" title="ru:string:find">find</a>, <a href="find_first_not_of" class="wikilink1" title="ru:string:find_first_not_of">find_first_not_of</a>, <a href="find_first_of" class="wikilink1" title="ru:string:find_first_of">find_first_of</a>, <a href="find_last_not_of" class="wikilink1" title="ru:string:find_last_not_of">find_last_not_of</a>, <a href="find_last_of" class="wikilink1" title="ru:string:find_last_of">find_last_of</a>
+
+</p>
+</div>
+</body>
+</html>

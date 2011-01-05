@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="br-pt"
+ lang="br-pt" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>br-pt:keywords:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:03-0700" />
+<meta name="keywords" content="br-pt,keywords,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/br-pt/keywords/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=br-pt:keywords" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/br-pt/keywords/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/br-pt/keywords/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='br-pt:keywords';var JSINFO = {"id":"br-pt:keywords:start","namespace":"br-pt:keywords"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="palavras-chaves_-_c" id="palavras-chaves_-_c">Palavras-chaves - C++</a></h1>
+<div class="level1">
+
+<p>
+
+Esta  uma lista das palavras-chaves reservadas em C++. Como elas so usadas pela linguagem,
+no esto disponveis para redefinio ou sobrecarga pelos programadores.
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<th class="col0">Palavra-chave</th><th class="col1">Descrição</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="../../alternative_operators" class="wikilink1" title="alternative_operators">and</a></td><td class="col1">alternativa ao operador &amp;&amp;</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="../../alternative_operators" class="wikilink1" title="alternative_operators">and_eq</a></td><td class="col1">alternativa ao operador &amp;=</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="asm" class="wikilink1" title="br-pt:keywords:asm">asm</a></td><td class="col1">insere uma instrução em assembly</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="auto" class="wikilink1" title="br-pt:keywords:auto">auto</a></td><td class="col1">declara uma variável local</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="../../alternative_operators" class="wikilink1" title="alternative_operators">bitand</a></td><td class="col1">alternativa ao operador bitwise &amp;</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="../../alternative_operators" class="wikilink1" title="alternative_operators">bitor</a></td><td class="col1">alternativa ao operador |</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="bool" class="wikilink1" title="br-pt:keywords:bool">bool</a></td><td class="col1">declara uma variável booleana</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="break" class="wikilink1" title="br-pt:keywords:break">break</a></td><td class="col1">sai de um laço</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/case" class="wikilink2" title="br-pt:keywords:case" rel="nofollow">case</a></td><td class="col1">um bloco de código em uma estrutura switch</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/catch" class="wikilink2" title="br-pt:keywords:catch" rel="nofollow">catch</a></td><td class="col1">captura um exceção gerada pelo throw</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/char" class="wikilink2" title="br-pt:keywords:char" rel="nofollow">char</a></td><td class="col1">declara um variável do tipo caractere</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><a href="class" class="wikilink1" title="br-pt:keywords:class">class</a></td><td class="col1">declara uma classe</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><a href="../../alternative_operators" class="wikilink1" title="alternative_operators">compl</a></td><td class="col1">alternativa ao operador ~</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/const" class="wikilink2" title="br-pt:keywords:const" rel="nofollow">const</a></td><td class="col1">declara um dado imutável (constante) ou função que não muda algum dado</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/const_cast" class="wikilink2" title="br-pt:keywords:const_cast" rel="nofollow">const_cast</a></td><td class="col1">opera conversão em variáveis constantes</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/continue" class="wikilink2" title="br-pt:keywords:continue" rel="nofollow">continue</a></td><td class="col1">pula a interação atual do laço</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/default" class="wikilink2" title="br-pt:keywords:default" rel="nofollow">default</a></td><td class="col1">trata o caso padrão em um switch</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"><a href="delete" class="wikilink1" title="br-pt:keywords:delete">delete</a></td><td class="col1">libera memória alocada dinamicamente</td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/do" class="wikilink2" title="br-pt:keywords:do" rel="nofollow">do</a></td><td class="col1">construtor de laço</td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/double" class="wikilink2" title="br-pt:keywords:double" rel="nofollow">double</a></td><td class="col1">declara uma variável de ponto-flutuante com precisão dupla</td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/dynamic_cast" class="wikilink2" title="br-pt:keywords:dynamic_cast" rel="nofollow">dynamic_cast</a></td><td class="col1">opera conversões em tempo de execução</td>
+	</tr>
+	<tr class="row22">
+		<td class="col0"><a href="else" class="wikilink1" title="br-pt:keywords:else">else</a></td><td class="col1">caso alternativo na construção if</td>
+	</tr>
+	<tr class="row23">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/enum" class="wikilink2" title="br-pt:keywords:enum" rel="nofollow">enum</a></td><td class="col1">cria tipos enumeráveis</td>
+	</tr>
+	<tr class="row24">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/explicit" class="wikilink2" title="br-pt:keywords:explicit" rel="nofollow">explicit</a></td><td class="col1">só usa construtores quando eles casam perfeitamente</td>
+	</tr>
+	<tr class="row25">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/export" class="wikilink2" title="br-pt:keywords:export" rel="nofollow">export</a></td><td class="col1">permite que a definição de modelos seja separada de suas declarações</td>
+	</tr>
+	<tr class="row26">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/extern" class="wikilink2" title="br-pt:keywords:extern" rel="nofollow">extern</a></td><td class="col1">diz ao compilador sobre variáveis definidas em outros lugares</td>
+	</tr>
+	<tr class="row27">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/false" class="wikilink2" title="br-pt:keywords:false" rel="nofollow">false</a></td><td class="col1">representação do valor booleano falso</td>
+	</tr>
+	<tr class="row28">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/float" class="wikilink2" title="br-pt:keywords:float" rel="nofollow">float</a></td><td class="col1">declara uma variável de ponto-flutuante</td>
+	</tr>
+	<tr class="row29">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/for" class="wikilink2" title="br-pt:keywords:for" rel="nofollow">for</a></td><td class="col1">contrutor de laço</td>
+	</tr>
+	<tr class="row30">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/friend" class="wikilink2" title="br-pt:keywords:friend" rel="nofollow">friend</a></td><td class="col1">garante que funções que não sejam membros de classe acessem dados privados</td>
+	</tr>
+	<tr class="row31">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/goto" class="wikilink2" title="br-pt:keywords:goto" rel="nofollow">goto</a></td><td class="col1">desvia a execução para uma parte diferente do programa</td>
+	</tr>
+	<tr class="row32">
+		<td class="col0"><a href="if" class="wikilink1" title="br-pt:keywords:if">if</a></td><td class="col1">executa certo código baseando-se no resultado de um teste</td>
+	</tr>
+	<tr class="row33">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/inline" class="wikilink2" title="br-pt:keywords:inline" rel="nofollow">inline</a></td><td class="col1">otimiza chamadas de funções pequenas</td>
+	</tr>
+	<tr class="row34">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/int" class="wikilink2" title="br-pt:keywords:int" rel="nofollow">int</a></td><td class="col1">declara uma variável do tipo inteiro</td>
+	</tr>
+	<tr class="row35">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/long" class="wikilink2" title="br-pt:keywords:long" rel="nofollow">long</a></td><td class="col1">declara uma variável inteira de tamanho extendido</td>
+	</tr>
+	<tr class="row36">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/mutable" class="wikilink2" title="br-pt:keywords:mutable" rel="nofollow">mutable</a></td><td class="col1">sobrescreve uma variável constante</td>
+	</tr>
+	<tr class="row37">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/namespace" class="wikilink2" title="br-pt:keywords:namespace" rel="nofollow">namespace</a></td><td class="col1">particiona o espaço de nomes (namespace) definindo um escopo</td>
+	</tr>
+	<tr class="row38">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/new" class="wikilink2" title="br-pt:keywords:new" rel="nofollow">new</a></td><td class="col1">aloca memória dinamicamente para uma nova variável</td>
+	</tr>
+	<tr class="row39">
+		<td class="col0"><a href="../../alternative_operators" class="wikilink1" title="alternative_operators">not</a></td><td class="col1">alternativa ao operador !</td>
+	</tr>
+	<tr class="row40">
+		<td class="col0"><a href="../../alternative_operators" class="wikilink1" title="alternative_operators">not_eq</a></td><td class="col1">alternativa ao operador !=</td>
+	</tr>
+	<tr class="row41">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/operator" class="wikilink2" title="br-pt:keywords:operator" rel="nofollow">operator</a></td><td class="col1">cria funções de operadores sobrecarregados</td>
+	</tr>
+	<tr class="row42">
+		<td class="col0"><a href="../../alternative_operators" class="wikilink1" title="alternative_operators">or</a></td><td class="col1">alternativa ao operador ||</td>
+	</tr>
+	<tr class="row43">
+		<td class="col0"><a href="../../alternative_operators" class="wikilink1" title="alternative_operators">or_eq</a></td><td class="col1">alternativa ao operador |=</td>
+	</tr>
+	<tr class="row44">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/private" class="wikilink2" title="br-pt:keywords:private" rel="nofollow">private</a></td><td class="col1">declara membros privados de uma classe</td>
+	</tr>
+	<tr class="row45">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/protected" class="wikilink2" title="br-pt:keywords:protected" rel="nofollow">protected</a></td><td class="col1">declara membros protegidos de uma classe</td>
+	</tr>
+	<tr class="row46">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/public" class="wikilink2" title="br-pt:keywords:public" rel="nofollow">public</a></td><td class="col1">declara membros públicos de uma classe</td>
+	</tr>
+	<tr class="row47">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/register" class="wikilink2" title="br-pt:keywords:register" rel="nofollow">register</a></td><td class="col1">pede que a variável seja otimizada na velocidade de acesso</td>
+	</tr>
+	<tr class="row48">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/reinterpret_cast" class="wikilink2" title="br-pt:keywords:reinterpret_cast" rel="nofollow">reinterpret_cast</a></td><td class="col1">muda o tipo de uma variável</td>
+	</tr>
+	<tr class="row49">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/return" class="wikilink2" title="br-pt:keywords:return" rel="nofollow">return</a></td><td class="col1">retorna de uma função</td>
+	</tr>
+	<tr class="row50">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/short" class="wikilink2" title="br-pt:keywords:short" rel="nofollow">short</a></td><td class="col1">declara uma variável inteira de tamanho curto</td>
+	</tr>
+	<tr class="row51">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/signed" class="wikilink2" title="br-pt:keywords:signed" rel="nofollow">signed</a></td><td class="col1">modifica a declaração de uma variável em relação a sua sinalização</td>
+	</tr>
+	<tr class="row52">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/sizeof" class="wikilink2" title="br-pt:keywords:sizeof" rel="nofollow">sizeof</a></td><td class="col1">retorna o tamanho de uma variável, tipo ou expressão</td>
+	</tr>
+	<tr class="row53">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/static" class="wikilink2" title="br-pt:keywords:static" rel="nofollow">static</a></td><td class="col1">cria uma variável de duração fixa (permamente)</td>
+	</tr>
+	<tr class="row54">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/static_cast" class="wikilink2" title="br-pt:keywords:static_cast" rel="nofollow">static_cast</a></td><td class="col1">executa uma conversão não-polimórfica</td>
+	</tr>
+	<tr class="row55">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/struct" class="wikilink2" title="br-pt:keywords:struct" rel="nofollow">struct</a></td><td class="col1">define uma nova estrutura</td>
+	</tr>
+	<tr class="row56">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/switch" class="wikilink2" title="br-pt:keywords:switch" rel="nofollow">switch</a></td><td class="col1">executa um certo código baseando-se nas diferentes possibilidades de valores de uma expressão</td>
+	</tr>
+	<tr class="row57">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/template" class="wikilink2" title="br-pt:keywords:template" rel="nofollow">template</a></td><td class="col1">cria funções genéricas</td>
+	</tr>
+	<tr class="row58">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/this" class="wikilink2" title="br-pt:keywords:this" rel="nofollow">this</a></td><td class="col1">representa um ponteiro para o objeto atual</td>
+	</tr>
+	<tr class="row59">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/throw" class="wikilink2" title="br-pt:keywords:throw" rel="nofollow">throw</a></td><td class="col1">lança uma exceção</td>
+	</tr>
+	<tr class="row60">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/true" class="wikilink2" title="br-pt:keywords:true" rel="nofollow">true</a></td><td class="col1">representação do valor booleano verdadeiro</td>
+	</tr>
+	<tr class="row61">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/try" class="wikilink2" title="br-pt:keywords:try" rel="nofollow">try</a></td><td class="col1">executa um código que pode gerar uma exceção</td>
+	</tr>
+	<tr class="row62">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/typedef" class="wikilink2" title="br-pt:keywords:typedef" rel="nofollow">typedef</a></td><td class="col1">cria um nome alternativo para um tipo já existente</td>
+	</tr>
+	<tr class="row63">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/typeid" class="wikilink2" title="br-pt:keywords:typeid" rel="nofollow">typeid</a></td><td class="col1">descreve um objeto</td>
+	</tr>
+	<tr class="row64">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/typename" class="wikilink2" title="br-pt:keywords:typename" rel="nofollow">typename</a></td><td class="col1">declara uma classe ou um tipo indefinido</td>
+	</tr>
+	<tr class="row65">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/union" class="wikilink2" title="br-pt:keywords:union" rel="nofollow">union</a></td><td class="col1">uma estrutura que pode armazenar várias variáveis de tipos diferentes em um mesmo lugar na memória</td>
+	</tr>
+	<tr class="row66">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/unsigned" class="wikilink2" title="br-pt:keywords:unsigned" rel="nofollow">unsigned</a></td><td class="col1">declara uma variável interia sem sinalização (bit de sinal)</td>
+	</tr>
+	<tr class="row67">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/using" class="wikilink2" title="br-pt:keywords:using" rel="nofollow">using</a></td><td class="col1">importa, completamente ou parcialmente, um espaço de nomes (namespace) no escopo atual</td>
+	</tr>
+	<tr class="row68">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/virtual" class="wikilink2" title="br-pt:keywords:virtual" rel="nofollow">virtual</a></td><td class="col1">cria uma função que pode ser sobrescrita por uma classe-filha</td>
+	</tr>
+	<tr class="row69">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/void" class="wikilink2" title="br-pt:keywords:void" rel="nofollow">void</a></td><td class="col1">declara funções ou variáveis sem tipo de dados associado</td>
+	</tr>
+	<tr class="row70">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/volatile" class="wikilink2" title="br-pt:keywords:volatile" rel="nofollow">volatile</a></td><td class="col1">alerta ao compilador sobre variáveis que podem ser modificadas inesperadamente</td>
+	</tr>
+	<tr class="row71">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/wchar_t" class="wikilink2" title="br-pt:keywords:wchar_t" rel="nofollow">wchar_t</a></td><td class="col1">cria uma variável de caracteres de tamanho extendido</td>
+	</tr>
+	<tr class="row72">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/keywords/while" class="wikilink2" title="br-pt:keywords:while" rel="nofollow">while</a></td><td class="col1">construtor de laço</td>
+	</tr>
+	<tr class="row73">
+		<td class="col0"><a href="../../alternative_operators" class="wikilink1" title="alternative_operators">xor</a></td><td class="col1">alternativa ao operador ^</td>
+	</tr>
+	<tr class="row74">
+		<td class="col0"><a href="../../alternative_operators" class="wikilink1" title="alternative_operators">xor_eq</a></td><td class="col1">alternativa ao operador ^=</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [205-4826] -->
+</div>
+</div>
+</body>
+</html>

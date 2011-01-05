@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es"
+ lang="es" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>es:string:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:32-0700" />
+<meta name="keywords" content="es,string,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/es/string/start?do=index" title="Índice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=es:string" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/es/string/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/es/string/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='es:string';var JSINFO = {"id":"es:string:start","namespace":"es:string"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="cadenas_de_texto_de_c" id="cadenas_de_texto_de_c">Cadenas de Texto de C++</a></h1>
+<div class="level1">
+
+<p>
+
+La <a href="http://www.cppreference.com/wiki/es/keywords/class" class="wikilink2" title="es:keywords:class" rel="nofollow">clase</a> <code>basic_string</code> provee una interface genérica y útil para almacenar secuencias de caracteres (“cadenas”). Estas interfaces proveen la funcionalidad básica para la manipulación de texto en C++.
+</p>
+
+<p>
+<code>basic_string</code> está definido como una plantilla en la cabecera <code>&lt;string&gt;</code>:
+
+</p>
+<pre class="cpp code cpp"> <span class="kw2">template</span> <span class="sy1">&lt;</span><span class="kw2">typename</span> Char,
+           <span class="kw2">typename</span> Traits <span class="sy1">=</span> char_traits<span class="sy1">&lt;</span>Char<span class="sy1">&gt;</span>,
+           <span class="kw2">typename</span> Allocator <span class="sy1">=</span> allocator<span class="sy1">&lt;</span>Char<span class="sy1">&gt;</span> <span class="sy1">&gt;</span>
+ <span class="kw2">class</span> basic_string<span class="sy4">;</span></pre>
+<p>
+En esta definición, <code>Char</code> se refiere al <strong>tipo de caracteres subyacente</strong>, que representa un elemento (letra).
+</p>
+
+<p>
+Para el uso cotidiano se declaran dos especializaciones de <code>basic_string</code>:
+</p>
+<pre class="cpp code cpp"> <span class="kw4">typedef</span> basic_string<span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span>    string<span class="sy4">;</span>
+ <span class="kw4">typedef</span> basic_string<span class="sy1">&lt;</span><span class="kw4">wchar_t</span><span class="sy1">&gt;</span> wstring<span class="sy4">;</span></pre>
+<p>
+La próxima versión del estándar, C++0x, declarará además dos nuevas especializaciones para el uso de cadenas de texto en <a href="http://en.wikipedia.org/wiki/Unicode" class="interwiki iw_wp" title="http://en.wikipedia.org/wiki/Unicode">Unicode</a>:
+</p>
+<pre class="cpp code cpp"> <span class="kw4">typedef</span> basic_string<span class="sy1">&lt;</span>char16_t<span class="sy1">&gt;</span> u16string<span class="sy4">;</span>
+ <span class="kw4">typedef</span> basic_string<span class="sy1">&lt;</span>char32_t<span class="sy1">&gt;</span> u32string<span class="sy4">;</span></pre>
+</div>
+<!-- EDIT1 SECTION "Cadenas de Texto de C++" [1-1058] -->
+<h2 class="sectionedit2"><a name="interface" id="interface">Interface</a></h2>
+<div class="level2">
+
+<p>
+
+Para una mejor generalización, en las secciones siguientes se referirá como <code>string</code> a una especialización cualquiera de <code>basic_string</code>, con tipo de caracteres <code>Char</code>.
+
+</p>
+<div class="table sectionedit3"><table class="inline">
+	<tr class="row0">
+		<td class="col0 leftalign"><a href="http://www.cppreference.com/wiki/es/string/string_constructors" class="wikilink2" title="es:string:string_constructors" rel="nofollow">Constructores</a>  </td><td class="col1 leftalign"> cómo crear cadenas desde arrays o series de caracteres   </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"><a href="string_operators" class="wikilink1" title="es:string:string_operators">Operadores</a>        </td><td class="col1 leftalign"> notación para asignar, concatenar, comparar, leer y escribir cadenas  </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"><a href="http://www.cppreference.com/wiki/es/string/append" class="wikilink2" title="es:string:append" rel="nofollow">append</a>     </td><td class="col1 leftalign"> agregar caracteres o cadenas enteras a una cadena  </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"><a href="http://www.cppreference.com/wiki/es/string/assign" class="wikilink2" title="es:string:assign" rel="nofollow">assign</a>     </td><td class="col1 leftalign"> asignar un valor específico desde caracteres o cadenas de C++  </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"><a href="http://www.cppreference.com/wiki/es/string/at" class="wikilink2" title="es:string:at" rel="nofollow">at</a>         </td><td class="col1 leftalign"> devolver un caracter en una posición  </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 leftalign"><a href="http://www.cppreference.com/wiki/es/string/begin" class="wikilink2" title="es:string:begin" rel="nofollow">begin</a>      </td><td class="col1 leftalign"> devolver un iterador al inicio de una cadena  </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0 leftalign"><a href="http://www.cppreference.com/wiki/es/string/c_str" class="wikilink2" title="es:string:c_str" rel="nofollow">c_str</a>      </td><td class="col1 leftalign"> devolver una representación no modificable de una cadena como una cadena clásica de C  </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0 leftalign"><a href="http://www.cppreference.com/wiki/es/string/capacity" class="wikilink2" title="es:string:capacity" rel="nofollow">capacity</a>   </td><td class="col1 leftalign"> devolver la cantidad de caracteres que la cadena puede almacenar   </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0 leftalign"><a href="http://www.cppreference.com/wiki/es/string/clear" class="wikilink2" title="es:string:clear" rel="nofollow">clear</a>      </td><td class="col1 leftalign"> eliminar todos los caracteres   </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0 leftalign"><a href="http://www.cppreference.com/wiki/es/string/compare" class="wikilink2" title="es:string:compare" rel="nofollow">compare</a>    </td><td class="col1 leftalign"> comparar dos cadenas   </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0 leftalign"><a href="http://www.cppreference.com/wiki/es/string/copy" class="wikilink2" title="es:string:copy" rel="nofollow">copy</a>       </td><td class="col1 leftalign"> copiar caracteres de una cadena a un array   </td>
+	</tr>
+	<tr class="row11">
+		<td class="col0 leftalign"><a href="http://www.cppreference.com/wiki/es/string/data" class="wikilink2" title="es:string:data" rel="nofollow">data</a>       </td><td class="col1 leftalign"> devolver un puntero a los datos internos de una cadena  </td>
+	</tr>
+	<tr class="row12">
+		<td class="col0 leftalign"><a href="http://www.cppreference.com/wiki/es/string/empty" class="wikilink2" title="es:string:empty" rel="nofollow">empty</a>      </td><td class="col1 leftalign"> determinar si la cadena está vacía  </td>
+	</tr>
+	<tr class="row13">
+		<td class="col0 leftalign"><a href="http://www.cppreference.com/wiki/es/string/end" class="wikilink2" title="es:string:end" rel="nofollow">end</a>        </td><td class="col1 leftalign"> devolver un iterador al final de una cadena  </td>
+	</tr>
+	<tr class="row14">
+		<td class="col0 leftalign"><a href="http://www.cppreference.com/wiki/es/string/erase" class="wikilink2" title="es:string:erase" rel="nofollow">erase</a>      </td><td class="col1 leftalign"> eliminar caracteres de una cadena   </td>
+	</tr>
+	<tr class="row15">
+		<td class="col0 leftalign"><a href="http://www.cppreference.com/wiki/es/string/find" class="wikilink2" title="es:string:find" rel="nofollow">find</a>       </td><td class="col1 leftalign"> buscar caracteres en una cadena  </td>
+	</tr>
+	<tr class="row16">
+		<td class="col0 leftalign"><a href="http://www.cppreference.com/wiki/es/string/find_first_not_of" class="wikilink2" title="es:string:find_first_not_of" rel="nofollow">find_first_not_of</a>  </td><td class="col1 leftalign"> encontrar la primera ausencia de caracteres  </td>
+	</tr>
+	<tr class="row17">
+		<td class="col0 leftalign"><a href="http://www.cppreference.com/wiki/es/string/find_first_of" class="wikilink2" title="es:string:find_first_of" rel="nofollow">find_first_of</a>      </td><td class="col1 leftalign"> encontrar la primera ocurrencia de caracteres  </td>
+	</tr>
+	<tr class="row18">
+		<td class="col0 leftalign"><a href="http://www.cppreference.com/wiki/es/string/find_last_not_of" class="wikilink2" title="es:string:find_last_not_of" rel="nofollow">find_last_not_of</a>   </td><td class="col1 leftalign"> encontrar la última ausencia de caracteres   </td>
+	</tr>
+	<tr class="row19">
+		<td class="col0 leftalign"><a href="http://www.cppreference.com/wiki/es/string/find_last_of" class="wikilink2" title="es:string:find_last_of" rel="nofollow">find_last_of</a>       </td><td class="col1 leftalign"> encontrar la última ocurrencia de caracteres  </td>
+	</tr>
+	<tr class="row20">
+		<td class="col0 leftalign"><a href="getline" class="wikilink1" title="es:string:getline">getline</a>            </td><td class="col1 leftalign"> leer datos desde un flujo de E/S a una cadena<sup><a href="start#fn__1" name="fnt__1" id="fnt__1" class="fn_top">1)</a></sup>  </td>
+	</tr>
+	<tr class="row21">
+		<td class="col0 leftalign"><a href="http://www.cppreference.com/wiki/es/string/insert" class="wikilink2" title="es:string:insert" rel="nofollow">insert</a>     </td><td class="col1 leftalign"> insertar caracteres en una cadena  </td>
+	</tr>
+	<tr class="row22">
+		<td class="col0 leftalign"><a href="http://www.cppreference.com/wiki/es/string/length" class="wikilink2" title="es:string:length" rel="nofollow">length</a>     </td><td class="col1 leftalign"> devolver el largo de una cadena   </td>
+	</tr>
+	<tr class="row23">
+		<td class="col0 leftalign"><a href="http://www.cppreference.com/wiki/es/string/max_size" class="wikilink2" title="es:string:max_size" rel="nofollow">max_size</a>   </td><td class="col1 leftalign"> devolver el máximo número de caracteres que la cadena puede almacenar   </td>
+	</tr>
+	<tr class="row24">
+		<td class="col0 leftalign"><a href="http://www.cppreference.com/wiki/es/string/npos" class="wikilink2" title="es:string:npos" rel="nofollow">npos</a>       </td><td class="col1 leftalign"> un valor especial para indicar un “caracter no encontrado” o “todos los caracteres restantes”  </td>
+	</tr>
+	<tr class="row25">
+		<td class="col0 leftalign"><a href="http://www.cppreference.com/wiki/es/string/push_back" class="wikilink2" title="es:string:push_back" rel="nofollow">push_back</a>  </td><td class="col1 leftalign"> agrega un caracter al final de una cadena   </td>
+	</tr>
+	<tr class="row26">
+		<td class="col0 leftalign"><a href="http://www.cppreference.com/wiki/es/string/rbegin" class="wikilink2" title="es:string:rbegin" rel="nofollow">rbegin</a>     </td><td class="col1 leftalign"> devuelve un iterador_reverso al final de una cadena  </td>
+	</tr>
+	<tr class="row27">
+		<td class="col0 leftalign"><a href="http://www.cppreference.com/wiki/es/string/rend" class="wikilink2" title="es:string:rend" rel="nofollow">rend</a>       </td><td class="col1 leftalign"> devuelve un iterador_reverso al inicio de una cadena  </td>
+	</tr>
+	<tr class="row28">
+		<td class="col0 leftalign"><a href="http://www.cppreference.com/wiki/es/string/replace" class="wikilink2" title="es:string:replace" rel="nofollow">replace</a>    </td><td class="col1 leftalign"> reemplaza caracteres en una cadena  </td>
+	</tr>
+	<tr class="row29">
+		<td class="col0 leftalign"><a href="http://www.cppreference.com/wiki/es/string/reserve" class="wikilink2" title="es:string:reserve" rel="nofollow">reserve</a>    </td><td class="col1 leftalign"> reserva espacio mínimo en una cadena  </td>
+	</tr>
+	<tr class="row30">
+		<td class="col0 leftalign"><a href="http://www.cppreference.com/wiki/es/string/resize" class="wikilink2" title="es:string:resize" rel="nofollow">resize</a>     </td><td class="col1 leftalign"> cambia el tamaño de una cadena  </td>
+	</tr>
+	<tr class="row31">
+		<td class="col0 leftalign"><a href="http://www.cppreference.com/wiki/es/string/rfind" class="wikilink2" title="es:string:rfind" rel="nofollow">rfind</a>      </td><td class="col1 leftalign"> encuentra la última ocurrencia de una subcadena  </td>
+	</tr>
+	<tr class="row32">
+		<td class="col0 leftalign"><a href="http://www.cppreference.com/wiki/es/string/size" class="wikilink2" title="es:string:size" rel="nofollow">size</a>       </td><td class="col1 leftalign"> devuelve el número de caracteres en una cadena  </td>
+	</tr>
+	<tr class="row33">
+		<td class="col0 leftalign"><a href="substr" class="wikilink1" title="es:string:substr">substr</a>     </td><td class="col1 leftalign"> devuelve una subcadena específica  </td>
+	</tr>
+	<tr class="row34">
+		<td class="col0 leftalign"><a href="swap" class="wikilink1" title="es:string:swap">swap</a>       </td><td class="col1 leftalign"> intercambia los contenidos con otra cadena  </td>
+	</tr>
+</table></div>
+<!-- EDIT3 TABLE [1258-3769] -->
+</div>
+<!-- EDIT2 SECTION "Interface" [1059-] --><div class="footnotes">
+<div class="fn"><sup><a href="start#fnt__1" id="fn__1" name="fn__1" class="fn_bot">1)</a></sup> 
+función no miembro</div>
+</div>
+</div>
+</body>
+</html>

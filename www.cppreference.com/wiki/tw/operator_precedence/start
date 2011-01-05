@@ -1,0 +1,431 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="tw"
+ lang="tw" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>tw:operator_precedence:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:11-0700" />
+<meta name="keywords" content="tw,operator_precedence,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/tw/operator_precedence/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=tw:operator_precedence" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/tw/operator_precedence/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/tw/operator_precedence/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='tw:operator_precedence';var JSINFO = {"id":"tw:operator_precedence:start","namespace":"tw:operator_precedence"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="start#c_運算子優先順序" class="toc">C++ 運算子優先順序</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="start#order_of_evaluation_and_of_side_effects" class="toc">Order of Evaluation and of Side Effects</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="start#overloading_of_operators" class="toc">Overloading of Operators</a></span></div></li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="c_運算子優先順序" id="c_運算子優先順序">C++ 運算子優先順序</a></h2>
+<div class="level2">
+
+<p>
+
+The operators at the top of this list are evaluated first.  Operators within a group have the same precedence.  All operators have left-to-right associativity unless otherwise noted.
+</p>
+
+<p>
+<br/>
+
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<th class="col0 centeralign">  Precedence  </th><th class="col1 centeralign">  運算子  </th><th class="col2 centeralign">  Description  </th><th class="col3 centeralign">  Example  </th><th class="col4 centeralign">  Overloadable  </th><th class="col5 centeralign">  Associativity  </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">1</td><td class="col1"><code>::</code></td><td class="col2">Scope resolution operator</td><td class="col3">Class::age = 2;</td><td class="col4">no</td><td class="col5">left to right</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">2</td><td class="col1"><code>()</code><br/>
+<code>()</code><br/>
+<code>[]</code><br/>
+<code>-&gt;</code><br/>
+<code>.</code><br/>
+<code>++</code><br/>
+<code>--</code><br/>
+<code>dynamic_cast</code><br/>
+<code>static_cast</code><br/>
+<code>reinterpret_cast</code><br/>
+<code>const_cast</code><br/>
+<code>typeid</code></td><td class="col2">Function call<br/>
+Member initalization <br/>
+Array access<br/>
+Member access from a pointer<br/>
+Member access from an object<br/>
+Post-increment<br/>
+Post-decrement<br/>
+Runtime-checked type conversion<br/>
+Unchecked type conversion<br/>
+Reinterpreting type conversion<br/>
+Cast away/Add constness<br/>
+Get type information</td><td class="col3">isdigit(&#039;1&#039;)<br/>
+ c_tor(int x, int y) : _x(x), _y(y * 10) {}<br/>
+array[4] = 2;<br/>
+ptr-&gt;age = 34;<br/>
+obj.age = 34;<br/>
+for (int i = 0; i &lt; 10; i++) cout &lt;&lt; i;<br/>
+for (int i = 10; i &gt; 0; i--) cout &lt;&lt; i;<br/>
+Y&amp; y = dynamic_cast&lt;Y&amp;&gt;(x);<br/>
+Y&amp; y = static_cast&lt;Y&amp;&gt;(x);<br/>
+int const* p = reinterpret_cast&lt;int const*&gt;(0x1234);<br/>
+int* q = const_cast&lt;int*&gt;(p);<br/>
+std::type_info const&amp; t = typeid(x);</td><td class="col4">yes<br/>
+yes<br/>
+yes<br/>
+yes<br/>
+no<br/>
+yes<br/>
+yes<br/>
+no<br/>
+no<br/>
+no<br/>
+no<br/>
+no</td><td class="col5">left to right</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">3</td><td class="col1"><code>!</code><br/>
+<code>not</code><br/>
+<code>~</code><br/>
+<code>compl</code><br/>
+<code>++</code><br/>
+<code>--</code><br/>
+<code>-</code><br/>
+<code>+</code><br/>
+<code>*</code><br/>
+<code>&amp;</code><br/>
+<code>sizeof</code><br/>
+<code>new</code><br/>
+<code>new []</code><br/>
+<code>delete</code><br/>
+<code>delete []</code><br/>
+<code>(type)</code></td><td class="col2">Logical negation<br/>
+Alternate spelling for ! <br/>
+Bitwise complement<br/>
+Alternate spelling for ~ <br/>
+Pre-increment<br/>
+Pre-decrement<br/>
+Unary minus<br/>
+Unary plus<br/>
+Dereference<br/>
+Address of <br/>
+Size (of the type) of the operand in bytes<br/>
+Dynamic memory allocation<br/>
+Dynamic memory allocation of array<br/>
+Deallocating the memory<br/>
+Deallocating the memory of array<br/>
+Cast to a given type</td><td class="col3">if (!done) …<br/>
+<br/>
+flags = ~flags;<br/>
+<br/>
+for (i = 0; i &lt; 10; ++i) cout &lt;&lt; i;<br/>
+for (i = 10; i &gt; 0; --i) cout &lt;&lt; i;<br/>
+int i = -1;<br/>
+int i = +1;<br/>
+int data = *intPtr;<br/>
+int *intPtr = &amp;data;<br/>
+size_t s = sizeof(int);<br/>
+long* pVar = new long; <br/>
+long* array = new long[20];<br/>
+ delete pVar;<br/>
+ delete [] array;<br/>
+int i = (int)floatNum;</td><td class="col4">yes<br/>
+<br/>
+yes<br/>
+<br/>
+yes<br/>
+yes<br/>
+yes<br/>
+yes<br/>
+yes<br/>
+yes <br/>
+no<br/>
+yes<br/>
+yes<br/>
+yes<br/>
+yes<br/>
+yes</td><td class="col5">right to left</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">4</td><td class="col1"><code>-&gt;*</code><br/>
+<code>.*</code></td><td class="col2">Member pointer selector<br/>
+Member object selector</td><td class="col3">ptr-&gt;*var = 24;<br/>
+obj.*var = 24;</td><td class="col4">yes<br/>
+no</td><td class="col5">left to right</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0">5</td><td class="col1"><code>*</code><br/>
+<code>/</code><br/>
+<code>%</code></td><td class="col2">Multiplication<br/>
+Division<br/>
+Modulus</td><td class="col3">int i = 2 * 4;<br/>
+float f = 10.0 / 3.0;<br/>
+int rem = 4 % 3;</td><td class="col4">yes<br/>
+yes<br/>
+yes</td><td class="col5">left to right</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0">6</td><td class="col1"><code>+</code><br/>
+<code>-</code></td><td class="col2">Addition<br/>
+Subtraction</td><td class="col3">int i = 2 + 3;<br/>
+int i = 5 - 1;</td><td class="col4">yes<br/>
+yes</td><td class="col5">left to right</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0">7</td><td class="col1"><code>&lt;&lt;</code><br/>
+<code>&gt;&gt;</code></td><td class="col2">Bitwise shift left<br/>
+Bitwise shift right</td><td class="col3">int flags = 33 &lt;&lt; 1;<br/>
+int flags = 33 &gt;&gt; 1;</td><td class="col4">yes<br/>
+yes</td><td class="col5">left to right</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0">8</td><td class="col1"><code>&lt;</code><br/>
+<code>&lt;=</code><br/>
+<code>&gt;</code><br/>
+<code>&gt;=</code></td><td class="col2">Comparison less-than<br/>
+Comparison less-than-or-equal-to<br/>
+Comparison greater-than<br/>
+Comparison greater-than-or-equal-to</td><td class="col3">if (i &lt; 42) …<br/>
+if (i &lt;= 42) ...<br/>
+if (i &gt; 42) …<br/>
+if (i &gt;= 42) ...</td><td class="col4">yes<br/>
+yes<br/>
+yes<br/>
+yes</td><td class="col5">left to right</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0">9</td><td class="col1"><code>==</code><br/>
+<code>eq</code><br/>
+<code>!=</code><br/>
+<code>not_eq</code></td><td class="col2">Comparison equal-to<br/>
+Alternate spelling for == <br/>
+Comparison not-equal-to<br/>
+Alternate spelling for != </td><td class="col3">if (i == 42) ...<br/>
+<br/>
+if (i != 42) …<br/>
+</td><td class="col4">yes<br/>
+-<br/>
+yes<br/>
+</td><td class="col5">left to right</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0">10</td><td class="col1"><code>&amp;</code><br/>
+<code>bitand</code></td><td class="col2">Bitwise AND<br/>
+Alternate spelling for &amp; </td><td class="col3">flags = flags &amp; 42;<br/>
+</td><td class="col4">yes<br/>
+</td><td class="col5">left to right</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0">11</td><td class="col1"><code>^</code><br/>
+<code>xor</code></td><td class="col2">Bitwise exclusive OR (XOR)<br/>
+Alternate spelling for ^ </td><td class="col3">flags = flags ^ 42;<br/>
+</td><td class="col4">yes<br/>
+</td><td class="col5">left to right</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0">12</td><td class="col1"><code>|</code><br/>
+<code>bitor</code></td><td class="col2">Bitwise inclusive (normal) OR<br/>
+Alternate spelling for |</td><td class="col3">flags = flags | 42;<br/>
+</td><td class="col4">yes<br/>
+</td><td class="col5">left to right</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0">13</td><td class="col1"><code>&amp;&amp;</code><br/>
+<code>and</code></td><td class="col2">Logical AND<br/>
+Alternate spelling for &amp;&amp; </td><td class="col3">if (conditionA &amp;&amp; conditionB) …<br/>
+</td><td class="col4">yes<br/>
+</td><td class="col5">left to right</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0">14</td><td class="col1"><code>||</code><br/>
+<code>or</code></td><td class="col2">Logical OR<br/>
+Alternate spelling for ||</td><td class="col3">if (conditionA || conditionB) ...<br/>
+</td><td class="col4">yes<br/>
+</td><td class="col5">left to right</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0">15</td><td class="col1"><code>? :</code></td><td class="col2">Ternary conditional (if-then-else)</td><td class="col3">int i = a &gt; b ? a : b;</td><td class="col4">no</td><td class="col5">right to left</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0">16</td><td class="col1"><code>=</code><br/>
+<code>+=</code><br/>
+<code>-=</code><br/>
+<code>*=</code><br/>
+<code>/=</code><br/>
+<code>%=</code><br/>
+<code>&amp;=</code><br/>
+<code>and_eq</code><br/>
+<code>^=</code><br/>
+<code>xor_eq</code><br/>
+<code>|=</code><br/>
+<code>or_eq</code><br/>
+<code>&lt;&lt;=</code><br/>
+<code>&gt;&gt;=</code></td><td class="col2">Assignment operator<br/>
+Increment and assign<br/>
+Decrement and assign<br/>
+Multiply and assign<br/>
+Divide and assign<br/>
+Modulo and assign<br/>
+Bitwise AND and assign<br/>
+Alternate spelling for &amp;= <br/>
+Bitwise exclusive or (XOR) and assign<br/>
+Alternate spelling for ^= <br/>
+Bitwise normal OR and assign<br/>
+Alternate spelling for |=<br/>
+Bitwise shift left and assign<br/>
+Bitwise shift right and assign</td><td class="col3">int a = b;<br/>
+a += 3;<br/>
+b -= 4;<br/>
+a *= 5;<br/>
+a /= 2;<br/>
+a %= 3;<br/>
+flags &amp;= new_flags;<br/>
+<br/>
+flags ^= new_flags;<br/>
+<br/>
+flags |= new_flags;<br/>
+<br/>
+flags &lt;&lt;= 2;<br/>
+flags &gt;&gt;= 2;</td><td class="col4">yes<br/>
+yes<br/>
+yes<br/>
+yes<br/>
+yes<br/>
+yes<br/>
+yes<br/>
+<br/>
+yes<br/>
+<br/>
+yes<br/>
+<br/>
+yes<br/>
+yes</td><td class="col5">right to left</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0">17</td><td class="col1"><code>throw</code></td><td class="col2">throw exception</td><td class="col3">throw EClass(“Message”);</td><td class="col4">no</td><td class="col5"> </td>
+	</tr>
+	<tr class="row18">
+		<td class="col0">18</td><td class="col1"><code>,</code></td><td class="col2">Sequential evaluation operator</td><td class="col3">for (i = 0, j = 0; i &lt; 10; i++, j++) …</td><td class="col4">yes</td><td class="col5">left to right</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [226-5022] -->
+</div>
+<!-- EDIT1 SECTION "C++ 運算子優先順序" [1-5023] -->
+<h2 class="sectionedit3"><a name="order_of_evaluation_and_of_side_effects" id="order_of_evaluation_and_of_side_effects">Order of Evaluation and of Side Effects</a></h2>
+<div class="level2">
+
+<p>
+
+One important aspect of C++ that is related to operator precedence, is the order of evaluation and the order of side effects in expressions.
+In most circumstances, the order in which things happen is not specified.
+For example in <code>f() + g()</code> whether <code>f()</code> or <code>g()</code> is called first is not specified.
+If at least one of the functions has side effects the results may differ across compilers, different versions of the same compiler or even between multiple runs of the same compiler.
+</p>
+
+<p>
+Further, the effect of certain expressions is undefined.
+For example, consider the following code:
+</p>
+<pre class="cpp code cpp">    <span class="kw4">float</span> x <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
+    x <span class="sy1">=</span> x <span class="sy2">/</span> <span class="sy2">++</span>x<span class="sy4">;</span></pre>
+<p>
+The value of x and the rest of the behaviour of the program after evaluating this expression is undefined.
+The program is semantically ill-formed:
+x is modified twice between two consecutive sequence points.
+</p>
+
+<p>
+Expressions like the one above must be avoided.
+When in doubt, break a large expression into multiple statements to ensure that the order of evaluation is
+correct.
+
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Order of Evaluation and of Side Effects" [5024-6086] -->
+<h2 class="sectionedit4"><a name="overloading_of_operators" id="overloading_of_operators">Overloading of Operators</a></h2>
+<div class="level2">
+
+<p>
+
+Overloading of operators can be very useful and very dangerous.
+On one hand overloading operators for a class you have created can help with logistics and
+readability of code.
+On the other hand you can overload an operator in such a way that it can either obfuscate or just downright break your program.
+Use carefully.
+In particular never overload <code>&amp;&amp;</code>, <code>||</code> or <code>,</code>.
+In the overloaded context they lose the guarantee that the left operand is evaluated before the second and that there is a sequence point inbetween.
+</p>
+
+<p>
+There are two ways to over load an operator: global function or class member.
+</p>
+
+<p>
+Example of overloading with a global function:
+
+</p>
+<pre class="cpp code cpp">     ostream<span class="sy3">&amp;</span> operator <span class="sy1">&lt;&lt;</span><span class="br0">&#40;</span>ostream<span class="sy3">&amp;</span> os, <span class="kw4">const</span> myClass<span class="sy3">&amp;</span> rhs<span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+But to be able to reach any private data within a user defined class you have to
+declare the global function as a friend within the definition of the class.
+</p>
+
+<p>
+Example:
+
+</p>
+<pre class="cpp code cpp">     <span class="kw2">class</span> myClass <span class="br0">&#123;</span>
+&nbsp;
+       <span class="co1">// Gives the operator &lt;&lt; function access to 'myData'</span>
+       <span class="co1">// (this declaration should not go in public, private or protected)</span>
+       <span class="kw2">friend</span> ostream<span class="sy3">&amp;</span> operator <span class="sy1">&lt;&lt;</span><span class="br0">&#40;</span>ostream<span class="sy3">&amp;</span> lhs, <span class="kw4">const</span> myClass<span class="sy3">&amp;</span> rhs<span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+       <span class="kw2">private</span><span class="sy4">:</span>
+         <span class="kw4">int</span> myData<span class="sy4">;</span>
+     <span class="br0">&#125;</span></pre>
+<p>
+Overloading with a class member can be done as follows:
+
+</p>
+<pre class="cpp code cpp">     <span class="kw2">class</span> myClass <span class="br0">&#123;</span>
+&nbsp;
+       <span class="kw2">public</span><span class="sy4">:</span>
+         <span class="co1">// The left hand side of this operator becomes '*this'.</span>
+         <span class="kw4">int</span> operator <span class="sy2">+</span><span class="br0">&#40;</span><span class="kw4">const</span> myClass<span class="sy3">&amp;</span> rhs<span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+       <span class="kw2">private</span><span class="sy4">:</span>
+         <span class="kw4">int</span> myData<span class="sy4">;</span>
+     <span class="br0">&#125;</span></pre>
+</div>
+<!-- EDIT4 SECTION "Overloading of Operators" [6087-] --></div>
+</body>
+</html>

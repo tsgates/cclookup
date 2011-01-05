@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru"
+ lang="ru" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>ru:algorithm:search_n</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:14-0700" />
+<meta name="keywords" content="ru,algorithm,search_n" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/ru/algorithm/search_n?do=index" title="Все страницы" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=ru:algorithm" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/ru/algorithm/search_n" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/ru/algorithm/search_n" />
+<link rel="canonical" href="search_n" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='ru:algorithm';var JSINFO = {"id":"ru:algorithm:search_n","namespace":"ru:algorithm"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="search_n" id="search_n">search_n</a></h2>
+<div class="level2">
+
+<p>
+Синтаксис:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;algorithm&gt;</span>
+    forward_iterator search_n<span class="br0">&#40;</span> forward_iterator start, forward_iterator end, SIZE num, <span class="kw4">const</span> T<span class="sy3">&amp;</span> val <span class="br0">&#41;</span><span class="sy4">;</span>
+    forward_iterator search_n<span class="br0">&#40;</span> forward_iterator start, forward_iterator end, SIZE num, <span class="kw4">const</span> T<span class="sy3">&amp;</span> val, BinPred p <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Функция search_n() ищет num вхождений значения val в диапазоне [start,end).
+</p>
+
+<p>
+Если num последовательных копий значения val найдены, search_n() возвращает итератор на начало этой последовательности. Иначе функция возвращает итератор на конец диапазона.
+</p>
+
+<p>
+Если задан бинарный предикат p, то он используется для сравнения элементов между собой.
+</p>
+
+<p>
+Функция работает за <a href="../../../complexity" class="wikilink1" title="complexity">линейное время</a>.
+</p>
+
+<p>
+Смотрите также: <a href="find_end" class="wikilink1" title="ru:algorithm:find_end">find_end</a>, <a href="find_if" class="wikilink1" title="ru:algorithm:find_if">find_if</a>, <a href="search" class="wikilink1" title="ru:algorithm:search">search</a>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "search_n" [3-] --></div>
+</body>
+</html>

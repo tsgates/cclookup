@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr"
+ lang="fr" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>fr:preprocessor:define</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:56-0700" />
+<meta name="keywords" content="fr,preprocessor,define" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/fr/preprocessor/define?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=fr:preprocessor" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/fr/preprocessor/define" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/fr/preprocessor/define" />
+<link rel="canonical" href="define" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='fr:preprocessor';var JSINFO = {"id":"fr:preprocessor:define","namespace":"fr:preprocessor"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="define" id="define">#define</a></h2>
+<div class="level2">
+
+<p>
+
+Syntaxe :
+
+</p>
+<pre class="cpp code cpp">    <span class="co2">#define nom_de_macro chaine_de_remplacement</span></pre>
+<p>
+La commande <code>#define</code> est utilisée pour effectuer des remplacements
+de chaines de caractères dans le fichier dans lequel elle se trouve.
+En d&#039;autres termes, le compilateur va parcourir le fichier et remplacer
+le texte <code>nom_de_macro</code> à tous les endroits où apparaît <code>chaine_de_remplacement</code>. 
+<code>#define</code> utilise le caractère fin de ligne pour délimiter la fin de
+la chaine de remplacement.
+</p>
+
+<p>
+Voici une utilisation classique de <code>#define</code> (tout du moins en C)
+
+</p>
+<pre class="cpp code cpp">     <span class="co2">#define VRAI 1</span>
+     <span class="co2">#define FAUX 0</span>
+     ...
+     <span class="kw4">int</span> fini <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
+     <span class="kw1">while</span> <span class="br0">&#40;</span>fini <span class="sy3">!</span><span class="sy1">=</span> VRAI<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        ...
+     <span class="br0">&#125;</span></pre>
+<p>
+<code>#define</code> peut également prendre des arguments, ce qui permet de créer
+des pseudo fonctions.
+Considérons le code suivant :
+
+</p>
+<pre class="cpp code cpp">     <span class="co2">#define valeur_absolue(x) ( ((x) &lt; 0)?-(x):(x) )</span>
+     ...
+     <span class="kw4">int</span> nb <span class="sy1">=</span> <span class="sy2">-</span><span class="nu0">1</span><span class="sy4">;</span>
+     <span class="kw1">while</span> <span class="br0">&#40;</span>valeur_absolue<span class="br0">&#40;</span>nb<span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        ...
+     <span class="br0">&#125;</span></pre>
+<p>
+Il est préférable de mettre des parenthèses supplémentaires lorsqu&#039;on définit
+des macros complexes. Dans l&#039;exemple ci-dessus, la variable <code>x</code> est toujours
+entourée de parenthèses. Elle va ainsi être évaluée avant d&#039;être comparée à 0
+et multipliée par -1. D&#039;autre part, la macro entière est entourée de parenthèses,
+de façon à éviter que le code situé de part et d&#039;autre lors de son appel ne
+“contamine” la macro. Si vous n&#039;êtes pas prudents, votre compilateur risque
+de mal interpréter le code après le passage du préprocesseur.
+</p>
+
+<p>
+Voici un exemple d&#039;utilisation de commande <code>#define</code> pour créer une boucle
+<code><a href="http://www.cppreference.com/wiki/fr/keywords/for" class="wikilink2" title="fr:keywords:for" rel="nofollow">for</a></code> générique d&#039;incrémentation.
+
+</p>
+<pre class="cpp code cpp">   <span class="co2">#define compter(v, debut, fin) \
+     for ((v) = (debut); (v) &lt;= (fin); (v)++)</span>
+&nbsp;
+   ...
+&nbsp;
+   <span class="kw4">int</span> i<span class="sy4">;</span>
+   compter<span class="br0">&#40;</span>i, <span class="nu0">1</span>, <span class="nu0">20</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     <span class="kw3">printf</span><span class="br0">&#40;</span><span class="st0">&quot;i vaut %d<span class="es1">\n</span>&quot;</span>, i<span class="br0">&#41;</span><span class="sy4">;</span>
+   <span class="br0">&#125;</span></pre>
+<p>
+Sujets connexes : <a href="sharp" class="wikilink1" title="fr:preprocessor:sharp"># and ##</a>, <a href="preprocessor_if" class="wikilink1" title="fr:preprocessor:preprocessor_if">#if,...,#endif</a>, <a href="undef" class="wikilink1" title="fr:preprocessor:undef">#undef</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

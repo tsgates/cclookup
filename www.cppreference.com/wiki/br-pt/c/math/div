@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="br-pt"
+ lang="br-pt" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>br-pt:numeric:c:div</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:03-0700" />
+<meta name="keywords" content="br-pt,numeric,c,div" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/br-pt/numeric/c/div?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=br-pt:numeric:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/br-pt/numeric/c/div" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/br-pt/numeric/c/div" />
+<link rel="canonical" href="div" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='br-pt:numeric:c';var JSINFO = {"id":"br-pt:numeric:c:div","namespace":"br-pt:numeric:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="div" id="div">div</a></h2>
+<div class="level2">
+
+<p>
+Sintaxe:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cstdlib&gt;</span>
+    <span class="kw4">div_t</span> <span class="kw3">div</span><span class="br0">&#40;</span> <span class="kw4">int</span> numerator, <span class="kw4">int</span> denominator <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+
+A função div() devolve o quociente e resto da operação numerador / denominador.
+A estrutura div_t está definida em cstdlib, e tem pelo menos:
+</p>
+<pre class="cpp code cpp">     <span class="kw4">int</span> quot<span class="sy4">;</span>   <span class="co1">// O quociente</span>
+     <span class="kw4">int</span> rem<span class="sy4">;</span>    <span class="co1">// O resto</span></pre>
+<p>
+
+Por exemplo, o código seguinte mostra o quociente e resto de x/y:
+</p>
+<pre class="cpp code cpp">     <span class="kw4">div_t</span> temp<span class="sy4">;</span>
+     temp <span class="sy1">=</span> <span class="kw3">div</span><span class="br0">&#40;</span> x, y <span class="br0">&#41;</span><span class="sy4">;</span>
+     <span class="kw3">printf</span><span class="br0">&#40;</span> <span class="st0">&quot;%d divided by %d yields %d with a remainder of %d<span class="es1">\n</span>&quot;</span>,
+             x, y, temp.<span class="me1">quot</span>, temp.<span class="me1">rem</span> <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+O C++ também fornece as seguintes formas sobre-carregadas (overload):
+
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cstdlib&gt;</span>
+    <span class="kw4">ldiv_t</span> <span class="kw3">div</span><span class="br0">&#40;</span> <span class="kw4">long</span> numerator, <span class="kw4">long</span> denominator <span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// igual a ldiv()</span></pre>
+<p>
+Tópicos Relacionados: <a href="ldiv" class="wikilink1" title="br-pt:numeric:c:ldiv">ldiv</a>
+
+</p>
+
+</div>
+<!-- EDIT1 SECTION "div" [3-] --></div>
+</body>
+</html>

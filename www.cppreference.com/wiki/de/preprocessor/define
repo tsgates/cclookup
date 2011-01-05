@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de"
+ lang="de" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>de:preprocessor:define</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:26-0700" />
+<meta name="keywords" content="de,preprocessor,define" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/de/preprocessor/define?do=index" title="Übersicht" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=de:preprocessor" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/de/preprocessor/define" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/de/preprocessor/define" />
+<link rel="canonical" href="define" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='de:preprocessor';var JSINFO = {"id":"de:preprocessor:define","namespace":"de:preprocessor"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="define" id="define">#define</a></h2>
+<div class="level2">
+
+<p>
+
+Syntax:
+
+</p>
+<pre class="cpp code cpp">    <span class="co2">#define Makroname Ersatzbefehl</span></pre>
+<p>
+Der #define-Befehl wird benutzt, um Ersetzungen in der ganzen Datei, in der er steht, vorzunehmen. Der Compiler geht also die ganze Datei durch und ersetzt jedes Vorkommen des Makronamen durch dessen Ersatzbefehl. Dieser endet am Zeilenende.
+</p>
+
+<p>
+Dies ist ein typischer Anwendungsfall für #define (zumindest in C):
+
+</p>
+<pre class="cpp code cpp">        <span class="co2">#define TRUE 1</span>
+        <span class="co2">#define FALSE 0</span>
+        <span class="co1">//...</span>
+        <span class="kw4">int</span> done <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
+        <span class="kw1">while</span><span class="br0">&#40;</span>done <span class="sy3">!</span><span class="sy1">=</span> TRUE<span class="br0">&#41;</span>
+        <span class="br0">&#123;</span>
+                <span class="co1">//...</span>
+        <span class="br0">&#125;</span></pre>
+<p>
+Eine andere Eigenschaft des #define-Befehls ist, dass er Argumente entgegennehmen kann, sodass man mit ihm Pseudo-Funktionen erstellen kann.
+Beispiel:
+
+</p>
+<pre class="cpp code cpp">        <span class="co2">#define absolute_value(x) (((x)&lt;0)?-(x):(x))</span>
+        <span class="co1">//...</span>
+        <span class="kw4">int</span> n <span class="sy1">=</span> <span class="sy2">-</span><span class="nu0">1</span><span class="sy4">;</span>
+        <span class="kw1">while</span><span class="br0">&#40;</span>absolute_value<span class="br0">&#40;</span>n<span class="br0">&#41;</span><span class="br0">&#41;</span>
+        <span class="br0">&#123;</span>
+                <span class="co1">//...</span>
+        <span class="br0">&#125;</span></pre>
+<p>
+Es ist üblicherweise eine gute Idee, die Makroparameter in Klammern zu setzen, wenn sie benutzt werden. Dadurch wird die Variable „x“ vollständig evaluiert, bevor sie mit 0 verglichen oder mit -1 multipliziert wird. Außerdem ist das gesamte Makro von Klammern eingeschlossen, um zu verhindern, dass es durch angrenzenden Code „gestört“ wird. Wenn der Programmierer nicht vorsichtig ist, besteht das Risiko, dass der Compiler den Code missversteht.
+</p>
+
+<p>
+Hier ist ein Beispiel, wie man den #define-Befehl benutzen kann, um eine universal nutzbare for-Schleife zu definieren, die die Zahlen 1 bis 20 ausgibt.
+
+</p>
+<pre class="cpp code cpp"><span class="co2">#define count_up(v,low,high) \
+        for((v) = (low); (v) &lt;= (high); (v)++)</span>
+        <span class="co1">//...</span>
+        <span class="kw4">int</span> i<span class="sy4">;</span>
+        count_up<span class="br0">&#40;</span>i,<span class="nu0">1</span>,<span class="nu0">20</span><span class="br0">&#41;</span>
+        <span class="br0">&#123;</span>
+                <span class="kw3">printf</span><span class="br0">&#40;</span><span class="st0">&quot;i = %d<span class="es1">\n</span>&quot;</span>,i<span class="br0">&#41;</span><span class="sy4">;</span>
+        <span class="br0">&#125;</span></pre>
+</div>
+</div>
+</body>
+</html>

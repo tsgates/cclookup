@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn"
+ lang="cn" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>cn:chrono:c:asctime</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-11-08T11:50:30-0800" />
+<meta name="keywords" content="cn,chrono,c,asctime" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/cn/chrono/c/asctime?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=cn:chrono:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/cn/chrono/c/asctime" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/cn/chrono/c/asctime" />
+<link rel="canonical" href="asctime" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='cn:chrono:c';var JSINFO = {"id":"cn:chrono:c:asctime","namespace":"cn:chrono:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="asctime" id="asctime">asctime</a></h2>
+<div class="level2">
+
+<p>
+语法：
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;ctime&gt;</span>
+    <span class="kw4">char</span> <span class="sy2">*</span><span class="kw3">asctime</span><span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">struct</span> <span class="kw4">tm</span> <span class="sy2">*</span>ptr <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+
+函数 asctime() 将结构体 &#039;ptr&#039; 中存放的时间变换为以下格式的字符串：
+</p>
+<pre class="cpp code cpp">     年 月 日 小时：分钟：秒 年</pre>
+<p>
+
+一个例子：
+</p>
+<pre class="cpp code cpp">     Mon Jun <span class="nu0">26</span> <span class="nu0">12</span><span class="sy4">:</span><span class="nu8">03</span><span class="sy4">:</span><span class="nu0">53</span> <span class="nu0">2000</span></pre>
+<p>
+相关主题： <a href="clock" class="wikilink1" title="cn:chrono:c:clock">clock</a>, <a href="ctime" class="wikilink1" title="cn:chrono:c:ctime">ctime</a>, <a href="difftime" class="wikilink1" title="cn:chrono:c:difftime">difftime</a>, <a href="gmtime" class="wikilink1" title="cn:chrono:c:gmtime">gmtime</a>, <a href="localtime" class="wikilink1" title="cn:chrono:c:localtime">localtime</a>, <a href="mktime" class="wikilink1" title="cn:chrono:c:mktime">mktime</a>, <a href="time" class="wikilink1" title="cn:chrono:c:time">time</a>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "asctime" [2-] --></div>
+</body>
+</html>

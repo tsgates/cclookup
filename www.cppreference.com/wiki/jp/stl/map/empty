@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:container:map:empty</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:24-0700" />
+<meta name="keywords" content="jp,container,map,empty" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/container/map/empty?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp:container:map" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/container/map/empty" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/container/map/empty" />
+<link rel="canonical" href="empty" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp:container:map';var JSINFO = {"id":"jp:container:map:empty","namespace":"jp:container:map"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="empty" id="empty">empty</a></h2>
+<div class="level2">
+
+<p>
+Syntax:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;map&gt;</span>
+    <span class="kw4">bool</span> empty<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span></pre>
+<p>
+empty()関数は、マップに要素がなければ、trueを返します。そうでない場合は、falseを返します。
+</p>
+
+<p>
+たとえば、次のコードでは、empty()関数を使用し、whileループの停止条件にしています。
+whileループでは、取得順に表示し、取得した要素を削除しています。
+</p>
+<pre class="cpp code cpp">    <span class="kw4">struct</span> strCmp <span class="br0">&#123;</span>
+      <span class="kw4">bool</span> operator<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> s1, <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> s2 <span class="br0">&#41;</span> <span class="kw4">const</span> <span class="br0">&#123;</span>
+        <span class="kw1">return</span> <span class="kw3">strcmp</span><span class="br0">&#40;</span> s1, s2 <span class="br0">&#41;</span> <span class="sy1">&lt;</span> <span class="nu0">0</span><span class="sy4">;</span>
+      <span class="br0">&#125;</span>
+    <span class="br0">&#125;</span><span class="sy4">;</span>
+&nbsp;
+    ...
+&nbsp;
+    <span class="me1">map</span><span class="sy1">&lt;</span><span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span>, <span class="kw4">int</span>, strCmp<span class="sy1">&gt;</span> ages<span class="sy4">;</span>
+    ages<span class="br0">&#91;</span><span class="st0">&quot;Homer&quot;</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="nu0">38</span><span class="sy4">;</span>
+    ages<span class="br0">&#91;</span><span class="st0">&quot;Marge&quot;</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="nu0">37</span><span class="sy4">;</span>
+    ages<span class="br0">&#91;</span><span class="st0">&quot;Lisa&quot;</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="nu0">8</span><span class="sy4">;</span>
+    ages<span class="br0">&#91;</span><span class="st0">&quot;Maggie&quot;</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
+    ages<span class="br0">&#91;</span><span class="st0">&quot;Bart&quot;</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="nu0">11</span><span class="sy4">;</span>
+&nbsp;
+    <span class="kw1">while</span><span class="br0">&#40;</span> <span class="sy3">!</span>ages.<span class="me1">empty</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+      <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Erasing: &quot;</span> <span class="sy1">&lt;&lt;</span> <span class="br0">&#40;</span><span class="sy2">*</span>ages.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>.<span class="me1">first</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;, &quot;</span> <span class="sy1">&lt;&lt;</span> <span class="br0">&#40;</span><span class="sy2">*</span>ages.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>.<span class="me1">second</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+      ages.<span class="me1">erase</span><span class="br0">&#40;</span> ages.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="br0">&#125;</span></pre>
+<p>
+実行すると次の表示結果が得られます。
+</p>
+<pre class="code">
+    Erasing: Bart, 11
+    Erasing: Homer, 38
+    Erasing: Lisa, 8
+    Erasing: Maggie, 1
+    Erasing: Marge, 37</pre>
+<p>
+
+Related Topics: <a href="begin" class="wikilink1" title="jp:container:map:begin">begin</a>, <a href="erase" class="wikilink1" title="jp:container:map:erase">erase</a>, <a href="size" class="wikilink1" title="jp:container:map:size">size</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

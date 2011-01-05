@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es"
+ lang="es" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>es:keywords:enum</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:31-0700" />
+<meta name="keywords" content="es,keywords,enum" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/es/keywords/enum?do=index" title="Índice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=es:keywords" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/es/keywords/enum" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/es/keywords/enum" />
+<link rel="canonical" href="enum" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='es:keywords';var JSINFO = {"id":"es:keywords:enum","namespace":"es:keywords"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="enum" id="enum">enum</a></h2>
+<div class="level2">
+
+<p>
+Sintaxis:
+</p>
+<pre class="code C++">    <span class="kw2">enum</span> nombre <span class="br0">&#123;</span>lista<span class="sy0">-</span>de<span class="sy0">-</span>nombres<span class="br0">&#125;</span> variable<span class="sy0">-</span>lista<span class="sy0">;</span></pre>
+
+<p>
+
+La palabra clave enum es usada para crear un tipo enumerador llamado nombre que consiste de los elementos en lista-de-nombre. La variable-lista es opcional, y puede ser usada para crear instancias de tipo nombre junto con la declaracion. Por ejemplo, el siguiente código crea un tipo enumerador para colores:
+</p>
+<pre class="code C++">    <span class="kw2">enum</span> ColorT <span class="br0">&#123;</span>rojo<span class="sy0">,</span> naranja<span class="sy0">,</span> amarillo<span class="sy0">,</span> verde<span class="sy0">,</span> azul<span class="sy0">,</span> indigo<span class="sy0">,</span> violeta<span class="br0">&#125;</span><span class="sy0">;</span>
+    ...
+    <span class="me1">ColotT</span> c1 <span class="sy0">=</span> indigo<span class="sy0">;</span>
+    <span class="kw1">if</span><span class="br0">&#40;</span> c1 <span class="sy0">==</span> indigo <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;c1 es índigo&quot;</span> <span class="sy0">&lt;&lt;</span> endl<span class="sy0">;</span>
+    <span class="br0">&#125;</span></pre>
+
+<p>
+
+En el ejemplo anterior, el efecto de enumeración es introducir nuevas constantes llamadas rojo, naranja, amarillo, etc. Por defecto, estas constantes son asignadas consecutivamente como enteros empezando en cero. Puedes cambiar los valores de estas constantes, como es mostrado en el siguiente ejemplo:
+</p>
+<pre class="code C++">     <span class="kw2">enum</span> ColorT <span class="br0">&#123;</span> rojo <span class="sy0">=</span> <span class="nu0">10</span><span class="sy0">,</span> azul <span class="sy0">=</span> <span class="nu0">15</span><span class="sy0">,</span> verde <span class="br0">&#125;</span><span class="sy0">;</span>
+     ...
+     <span class="me1">ColorT</span> c <span class="sy0">=</span> verde<span class="sy0">;</span>
+     <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;c es &quot;</span> <span class="sy0">&lt;&lt;</span> c <span class="sy0">&lt;&lt;</span> endl<span class="sy0">;</span></pre>
+
+<p>
+Al ejecutarlo, el anterior código despliega lo siguiente:
+
+</p>
+<pre class="code C++">     c es <span class="nu0">16</span></pre>
+
+<p>
+Note que en el ejemplo anterior solo trabajara con compiladores C++. Si estas trabajando con C, vas a necesitar especificar la palabra clave enum cuando quieras crear una instancia de tipo enumerador:
+</p>
+<pre class="code C">     <span class="kw2">enum</span> ColorT <span class="br0">&#123;</span> rojo <span class="sy0">=</span> <span class="nu0">10</span><span class="sy0">,</span> azul <span class="sy0">=</span> <span class="nu0">15</span><span class="sy0">,</span> verde <span class="br0">&#125;</span><span class="sy0">;</span>
+     ...
+     <span class="kw2">enum</span> ColorT c <span class="sy0">=</span> verde<span class="sy0">;</span>   <span class="coMULTI">/* Nota la adicional palabra clave enum */</span>
+     <a href="http://www.opengroup.org/onlinepubs/009695399/functions/printf.html"><span class="kw3">printf</span></a><span class="br0">&#40;</span> <span class="st0">&quot;c es %d<span class="es1">\n</span>&quot;</span><span class="sy0">,</span> c <span class="br0">&#41;</span><span class="sy0">;</span></pre>
+
+<p>
+Alternativamente, añade typedef para poner C y C++ a la par:
+</p>
+<pre class="code C">     <span class="kw4">typedef</span> <span class="kw2">enum</span> ColorT <span class="br0">&#123;</span> rojo <span class="sy0">=</span> <span class="nu0">10</span><span class="sy0">,</span> azul <span class="sy0">=</span> <span class="nu0">15</span><span class="sy0">,</span> verde <span class="br0">&#125;</span> ColorT<span class="sy0">;</span>
+     ...
+     <span class="me1">ColorT</span> c <span class="sy0">=</span> verde<span class="sy0">;</span>   <span class="coMULTI">/* No mas palabras clave enum */</span>
+     <a href="http://www.opengroup.org/onlinepubs/009695399/functions/printf.html"><span class="kw3">printf</span></a><span class="br0">&#40;</span> <span class="st0">&quot;c es %d<span class="es1">\n</span>&quot;</span><span class="sy0">,</span> c <span class="br0">&#41;</span><span class="sy0">;</span></pre>
+
+</div>
+<!-- EDIT1 SECTION "enum" [3-] --></div>
+</body>
+</html>

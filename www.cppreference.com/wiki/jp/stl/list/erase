@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:container:list:erase</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:24-0700" />
+<meta name="keywords" content="jp,container,list,erase" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/container/list/erase?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp:container:list" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/container/list/erase" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/container/list/erase" />
+<link rel="canonical" href="erase" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp:container:list';var JSINFO = {"id":"jp:container:list:erase","namespace":"jp:container:list"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="erase" id="erase">erase</a></h2>
+<div class="level2">
+
+<p>
+
+文法:
+
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;list&gt;</span>
+    iterator erase<span class="br0">&#40;</span> iterator 場所 <span class="br0">&#41;</span><span class="sy4">;</span>
+    iterator erase<span class="br0">&#40;</span> iterator start, iterator end <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+eraseメソッドは、<code>場所</code>の要素を消したり、<code>start</code>から<code>end</code>の間の要素(<code>start</code>は含むが<code>end</code>は含まない)を削除したりします。返り値は、削除した要素の次の要素になります。
+</p>
+
+<p>
+最初のバージョンのerase(<code>場所</code>で示された要素を一つだけ削除)は、<a href="../../complexity" class="wikilink1" title="jp:complexity">定数時間</a>で実行されます。複数要素を削除する方は、<a href="../../complexity" class="wikilink1" title="jp:complexity">線形時間</a>で処理されます。
+</p>
+
+<p>
+リストは、要素の挿入や接合をおこなっても、イテレータが無効にならないという重要な特性があります。削除に関しても、イテレータで指している要素を削除しない限りは無効になりません。
+</p>
+
+<p>
+イテレータの順番は入れ替わる(リストに対する操作によって、list&lt;T&gt;::iteratorの前後の要素は変わる)かもしれませんが、明示的に無効にしたり、操作しない限りはイテレータは無効になりませんし、異なる要素を指すようになります。
+</p>
+
+<p>
+サンプル:
+</p>
+<pre class="cpp code cpp">   <span class="co1">// リストを作成し、アルファベットの最初の10文字を格納する</span>
+   list<span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span> alphaList<span class="sy4">;</span>
+   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i<span class="sy1">=</span><span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     <span class="kw4">static</span> <span class="kw4">const</span> <span class="kw4">char</span> letters<span class="br0">&#91;</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="st0">&quot;ABCDEFGHIJ&quot;</span><span class="sy4">;</span>
+     alphaList.<span class="me1">push_back</span><span class="br0">&#40;</span> letters<span class="br0">&#91;</span>i<span class="br0">&#93;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+   <span class="br0">&#125;</span>
+   <span class="kw4">int</span> size <span class="sy1">=</span> alphaList.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+   list<span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">iterator</span> startIterator<span class="sy4">;</span>
+   list<span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">iterator</span> tempIterator<span class="sy4">;</span>
+   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i<span class="sy1">=</span><span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> size<span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     startIterator <span class="sy1">=</span> alphaList.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+     alphaList.<span class="me1">erase</span><span class="br0">&#40;</span> startIterator <span class="br0">&#41;</span><span class="sy4">;</span>
+     <span class="co1">// リストの表示</span>
+     copy<span class="br0">&#40;</span> alphaList.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, alphaList.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, ostream_iterator<span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span><span class="br0">&#40;</span><span class="kw3">cout</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+   <span class="br0">&#125;</span></pre>
+<p>
+このコードを実行すると、次のように表示されます:
+</p>
+<pre class="code">
+   BCDEFGHIJ
+   CDEFGHIJ
+   DEFGHIJ
+   EFGHIJ
+   FGHIJ
+   GHIJ
+   HIJ
+   IJ
+   J</pre>
+<p>
+In the next example, erase() is called with two iterators to delete a range of
+elements from a list:
+</p>
+
+<p>
+次のサンプルでは、リストのある範囲の要素を削除するために、二つのイテレータを渡して呼び出しています:
+</p>
+<pre class="cpp code cpp">   <span class="co1">// リストを作成し、アルファベットの最初の10文字を格納する</span>
+   list<span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span> alphaList<span class="sy4">;</span>
+   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i<span class="sy1">=</span><span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     <span class="kw4">static</span> <span class="kw4">const</span> <span class="kw4">char</span> letters<span class="br0">&#91;</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="st0">&quot;ABCDEFGHIJ&quot;</span><span class="sy4">;</span>
+     alphaList.<span class="me1">push_back</span><span class="br0">&#40;</span> letters<span class="br0">&#91;</span>i<span class="br0">&#93;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+   <span class="br0">&#125;</span>
+   <span class="co1">// リスト全体の表示</span>
+   copy<span class="br0">&#40;</span> alphaList.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, alphaList.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, ostream_iterator<span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span><span class="br0">&#40;</span><span class="kw3">cout</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+&nbsp;
+   <span class="co1">// 最初の2つ、最後の3つを除く、すべての要素を削除します。</span>
+   alphaList.<span class="me1">erase</span><span class="br0">&#40;</span> advance<span class="br0">&#40;</span>alphaList.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span>,<span class="nu0">2</span><span class="br0">&#41;</span>, advance<span class="br0">&#40;</span>alphaList.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span>,<span class="sy2">-</span><span class="nu0">3</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+   <span class="co1">// display the modified list</span>
+   copy<span class="br0">&#40;</span> alphaList.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, alphaList.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, ostream_iterator<span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span><span class="br0">&#40;</span><span class="kw3">cout</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
+<p>
+これを実行すると、次のように表示されます:
+</p>
+<pre class="code">
+   ABCDEFGHIJ
+   ABHIJ</pre>
+<p>
+
+関連トピック: <a href="clear" class="wikilink1" title="jp:container:list:clear">clear</a>, <a href="insert" class="wikilink1" title="jp:container:list:insert">insert</a>, <a href="pop_back" class="wikilink1" title="jp:container:list:pop_back">pop_back</a>, <a href="pop_front" class="wikilink1" title="jp:container:list:pop_front">pop_front</a>, <a href="remove" class="wikilink1" title="jp:container:list:remove">remove</a>, <a href="remove_if" class="wikilink1" title="jp:container:list:remove_if">remove_if</a>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "erase" [3-] --></div>
+</body>
+</html>

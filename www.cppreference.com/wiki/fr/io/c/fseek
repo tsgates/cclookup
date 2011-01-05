@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr"
+ lang="fr" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>fr:io:c:fseek</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:59-0700" />
+<meta name="keywords" content="fr,io,c,fseek" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/fr/io/c/fseek?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=fr:io:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/fr/io/c/fseek" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/fr/io/c/fseek" />
+<link rel="canonical" href="fseek" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='fr:io:c';var JSINFO = {"id":"fr:io:c:fseek","namespace":"fr:io:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="fseek" id="fseek">fseek</a></h2>
+<div class="level2">
+
+<p>
+Syntaxe:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cstdio&gt;</span>
+    <span class="kw4">int</span> <span class="kw3">fseek</span><span class="br0">&#40;</span> <span class="kw4">FILE</span> <span class="sy2">*</span>flux, <span class="kw4">long</span> décalage, <span class="kw4">int</span> origine <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+
+La fonction fseek() définit la position du curseur dans le fichier pour le flux spécifié.
+</p>
+
+<p>
+La valeur de l&#039;origine doit être une des valeurs suivantes (définies dans cstdio):
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<th class="col0 leftalign"> Nom      </th><th class="col1 leftalign"> Signification                                   </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> SEEK_SET </td><td class="col1 leftalign"> Positionnement à partir du début du fichier     </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> SEEK_CUR </td><td class="col1"> Positionnement à partir de la position courante </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> SEEK_END </td><td class="col1 leftalign"> Positionnement à partir de la fin du fichier    </td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [304-559] -->
+<p>
+
+fseek() retourne zéro en cas de succès, non-zéro en cas d&#039;échec. Il est possible d&#039;utiliser
+fseek() pour se déplacer après le fichier mais pas avant. L&#039;utilisation de fseek() réinitialise
+l&#039;état <acronym title="End of file">EOF</acronym> associé au flux concerné.
+</p>
+
+<p>
+Sujets en relation : <a href="fgetpos" class="wikilink1" title="fr:io:c:fgetpos">fgetpos</a>, <a href="fopen" class="wikilink1" title="fr:io:c:fopen">fopen</a>, <a href="fsetpos" class="wikilink1" title="fr:io:c:fsetpos">fsetpos</a>, <a href="ftell" class="wikilink1" title="fr:io:c:ftell">ftell</a>, <a href="rewind" class="wikilink1" title="fr:io:c:rewind">rewind</a>, <a href="fread" class="wikilink1" title="fr:io:c:fread">fread</a>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "fseek" [3-] --></div>
+</body>
+</html>

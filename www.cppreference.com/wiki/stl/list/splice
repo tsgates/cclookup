@@ -4,52 +4,128 @@
  lang="en" dir="ltr">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>stl:list:splice</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
+  <title>container:list:splice</title>
+<meta name="generator" content="DokuWiki" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2009-01-03T13:17:38-0800" />
-<meta name="keywords" content="stl,list,splice" />
+<meta name="date" content="2010-11-10T08:25:28-0800" />
+<meta name="keywords" content="container,list,splice" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/stl/list/splice?do=index" title="Index" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/container/list/splice?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
-<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=stl:list" />
-<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/stl/list/splice" />
-<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/stl/list/splice" />
-<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=container:list" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/container/list/splice" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/container/list/splice" />
+<link rel="canonical" href="splice" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='container:list';var JSINFO = {"id":"container:list:splice","namespace":"container:list"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
 
+<ul class="toc">
+<li class="clear">
 
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="splice#listsplice" class="toc">list::splice</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="splice#parameters" class="toc">Parameters</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="splice#return_value" class="toc">Return value</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="splice#complexity" class="toc">Complexity</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="splice#see_also" class="toc">See also</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
 
-<h2><a name="splice" id="splice">splice</a></h2>
+<h2 class="sectionedit1"><a name="listsplice" id="listsplice">list::splice</a></h2>
 <div class="level2">
-
+<pre class="cpp code cpp"><span class="kw4">void</span> splice<span class="br0">&#40;</span> iterator pos, list<span class="sy3">&amp;</span> other <span class="br0">&#41;</span><span class="sy4">;</span>                                 <span class="co1">//1</span>
+<span class="kw4">void</span> splice<span class="br0">&#40;</span> iterator pos, list<span class="sy3">&amp;</span> other, iterator it <span class="br0">&#41;</span><span class="sy4">;</span>                    <span class="co1">//2</span>
+<span class="kw4">void</span> splice<span class="br0">&#40;</span> iterator pos, list<span class="sy3">&amp;</span> other, iterator first, iterator last <span class="br0">&#41;</span><span class="sy4">;</span>  <span class="co1">//3</span></pre>
 <p>
-Syntax:
-</p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;list&gt;</span>
-    <span class="kw4">void</span> splice<span class="br0">&#40;</span> iterator pos<span class="sy0">,</span> list<span class="sy0">&amp;</span> lst <span class="br0">&#41;</span>;
-    <span class="kw4">void</span> splice<span class="br0">&#40;</span> iterator pos<span class="sy0">,</span> list<span class="sy0">&amp;</span> lst<span class="sy0">,</span> iterator del <span class="br0">&#41;</span>;
-    <span class="kw4">void</span> splice<span class="br0">&#40;</span> iterator pos<span class="sy0">,</span> list<span class="sy0">&amp;</span> lst<span class="sy0">,</span> iterator start<span class="sy0">,</span> iterator end <span class="br0">&#41;</span>;</pre>
-<p>
-The splice function moves one or more items from <code>lst</code> right before location <code>pos</code>. The first overloading moves all items to <code>lst</code>, the second moves just the item at <code>del</code>, and the third moves all items in the range inclusive of <code>start</code> to just before <code>end</code>.
+Moves elements to the current list from another list. Elements are inserted to the position immediately before <code>pos</code>.
 </p>
 
 <p>
-splice simply moves elements from one list to another, and doesn&#039;t actually
-do any copying or deleting. Because of this, splice runs in <a href="../../complexity" class="wikilink1" title="complexity">constant time</a> except for the third overloading which needs no more than linear time in the case that <code>lst</code> is not the same as <code>this</code>. However, if <a href="size" class="wikilink1" title="stl:list:size">size</a> is linear complexity then splice is constant time for all three.
+1) inserts all elements from the list <code>other</code>. <code>other</code> becomes empty after the operation.
 </p>
 
 <p>
-Related Topics: <a href="insert" class="wikilink1" title="stl:list:insert">insert</a>, <a href="merge" class="wikilink1" title="stl:list:merge">merge</a>, <a href="swap" class="wikilink1" title="stl:list:swap">swap</a>
+2) inserts element pointed to by <code>it</code>. <code>other</code> does not have the inserted element after the operation.
+</p>
+
+<p>
+3) inserts elements in the range <code>[first, last)</code>. <code>other</code> does not have the inserted elements after the operation.
 </p>
 
 </div>
-<!-- SECTION "splice" [3-] --></div>
+<!-- EDIT1 SECTION "list::splice" [1-717] -->
+<h3 class="sectionedit2"><a name="parameters" id="parameters">Parameters</a></h3>
+<div class="level3">
+
+<p>
+
+<code>pos</code> - iterator before which the content will be inserted
+</p>
+
+<p>
+<code>it</code> - iterator to the element to be inserted. It shall be valid iterator of the list <code>other</code>.
+</p>
+
+<p>
+<code>first</code>, <code>last</code> - range of the elements to be inserted. Iterators shall be valid iterators of the list <code>other</code>.
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Parameters" [718-1018] -->
+<h3 class="sectionedit3"><a name="return_value" id="return_value">Return value</a></h3>
+<div class="level3">
+
+<p>
+
+(none)
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Return value" [1019-1048] -->
+<h3 class="sectionedit4"><a name="complexity" id="complexity">Complexity</a></h3>
+<div class="level3">
+
+<p>
+
+1) linear in the size of <code>other</code>
+</p>
+
+<p>
+2) constant
+</p>
+
+<p>
+3) linear in the distance between <code>first</code> and <code>last</code>
+</p>
+
+</div>
+<!-- EDIT4 SECTION "Complexity" [1049-1175] -->
+<h3 class="sectionedit5"><a name="see_also" id="see_also">See also</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="insert" class="wikilink1" title="container:list:insert">insert</a>, <a href="merge" class="wikilink1" title="container:list:merge">merge</a>, <a href="swap" class="wikilink1" title="container:list:swap">swap</a>
+</p>
+
+</div>
+<!-- EDIT5 SECTION "See also" [1176-] --></div>
 </body>
 </html>

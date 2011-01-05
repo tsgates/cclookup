@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it"
+ lang="it" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>it:io:sstream:str</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:08-0700" />
+<meta name="keywords" content="it,io,sstream,str" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/it/io/sstream/str?do=index" title="Indice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=it:io:sstream" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/it/io/sstream/str" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/it/io/sstream/str" />
+<link rel="canonical" href="str" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='it:io:sstream';var JSINFO = {"id":"it:io:sstream:str","namespace":"it:io:sstream"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="str" id="str">str</a></h2>
+<div class="level2">
+
+<p>
+Sintassi:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;sstream&gt;</span>
+    <span class="kw4">void</span> str<span class="br0">&#40;</span> <span class="kw4">const</span> string<span class="sy3">&amp;</span> s <span class="br0">&#41;</span><span class="sy4">;</span>
+    string str<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+La funzione str() può essere usata in due modi: il primo per avere una copia della stringa che viene manipolata
+all&#039;interno dello stream:
+</p>
+<pre class="cpp code cpp">    ostringstream stream1<span class="sy4">;</span>
+    stream1 <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Testing!&quot;</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+    <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> stream1.<span class="me1">str</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Nel secondo str() può essere usata per copiare una stringa dentro lo stream. Questo metodo è utile soprattutto
+con gli input streams. Esempio:
+</p>
+<pre class="cpp code cpp">    istringstream stream1<span class="sy4">;</span>
+    string string1 <span class="sy1">=</span> <span class="st0">&quot;25&quot;</span><span class="sy4">;</span>
+    stream1.<span class="me1">str</span><span class="br0">&#40;</span>string1<span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+N.B.: Questa funzione lascia i puntatori “get” e “put” impostati a 0. 
+Questo talvolta conduce a risultati confondenti quando si inizializza una 
+stringstream per operazioni bidirezionali.
+</p>
+
+<p>
+str() è utile anche quando è necessario azzerare lo strem cosicchè possa essere riutilizzato. 
+<em class="u">Attenzione</em>: la funzione membro <code>clear()</code> <strong>non</strong> cancella i 
+contenuti dell&#039;oggetto stringa contenuto nello stream, semplicemente
+si limita ad effettuare il clear dello stato dell&#039;oggetto ios, cioè esegue la funzione equivalente di
+basic_ios::clear().
+</p>
+<pre class="cpp code cpp">    istringstream stream1<span class="sy4">;</span>
+    <span class="kw4">float</span> num<span class="sy4">;</span>
+&nbsp;
+    <span class="co1">// use it once</span>
+    string string1 <span class="sy1">=</span> <span class="st0">&quot;25 1 3.235<span class="es1">\n</span>1111111<span class="es1">\n</span>222222&quot;</span><span class="sy4">;</span>
+    stream1.<span class="me1">str</span><span class="br0">&#40;</span>string1<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw1">while</span><span class="br0">&#40;</span> stream1 <span class="sy1">&gt;&gt;</span> num <span class="br0">&#41;</span> <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;num: &quot;</span> <span class="sy1">&lt;&lt;</span> num <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>  <span class="co1">// displays numbers, one per line</span>
+&nbsp;
+    <span class="co1">// use the same string stream again with str()</span>
+    string string2 <span class="sy1">=</span> <span class="st0">&quot;1 2 3 4 5  6 7 8 9 10&quot;</span><span class="sy4">;</span>
+    stream1.<span class="me1">clear</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// not what you think!  But still required to clear the stream's IO state</span>
+    stream1.<span class="me1">str</span><span class="br0">&#40;</span>string2<span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+    <span class="kw1">while</span><span class="br0">&#40;</span> stream1 <span class="sy1">&gt;&gt;</span> num <span class="br0">&#41;</span> <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;num: &quot;</span> <span class="sy1">&lt;&lt;</span> num <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>  <span class="co1">// displays numbers, one per line</span></pre>
+<p>
+Argomenti collegati: <a href="http://www.cppreference.com/wiki/it/io/sstream/rdbuf" class="wikilink2" title="it:io:sstream:rdbuf" rel="nofollow">rdbuf</a>, <a href="../start" class="wikilink1" title="it:io:start">C++ I/O Streams</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

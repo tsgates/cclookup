@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:string:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:17-0700" />
+<meta name="keywords" content="jp,string,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/string/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp:string" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/string/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/string/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp:string';var JSINFO = {"id":"jp:string:start","namespace":"jp:string"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="c_strings" id="c_strings">C++ Strings</a></h1>
+<div class="level1">
+
+<p>
+
+Stringクラスは文字列を操作したり格納するのにとても便利なクラスです。Stringクラスは <code>&lt;string&gt;</code> ヘッダファイルの <code>std</code> 名前空間内で定義されています。
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="string_constructors" class="wikilink1" title="jp:string:string_constructors">コンストラクタ</a></td><td class="col1">キャラクタ列や他の文字列から文字列を作成します</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="string_operators" class="wikilink1" title="jp:string:string_operators">演算子</a></td><td class="col1">文字列の結合、文字列の割り当て、I/Oに対して文字列を扱う、文字列の比較を行う</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="append" class="wikilink1" title="jp:string:append">append</a></td><td class="col1">ある文字列に対してキャラクタや他の文字列を結合します</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="assign" class="wikilink1" title="jp:string:assign">assign</a></td><td class="col1">キャラクタ列や他のC++文字列から文字列を生成します</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="at" class="wikilink1" title="jp:string:at">at</a></td><td class="col1">特定の位置のキャラクタを返します</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="begin" class="wikilink1" title="jp:string:begin">begin</a></td><td class="col1">文字列の先頭の指すイテレータを返します</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="c_str" class="wikilink1" title="jp:string:c_str">c_str</a></td><td class="col1">文字列を変更不能な標準的な C キャラクタ配列に変換して返します</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="capacity" class="wikilink1" title="jp:string:capacity">capacity</a></td><td class="col1">文字列が保持できるキャラクタ数を返します</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="clear" class="wikilink1" title="jp:string:clear">clear</a></td><td class="col1">文字列中のすべてのキャラクタを除去します</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="compare" class="wikilink1" title="jp:string:compare">compare</a></td><td class="col1">2つの文字列を比較します</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="copy" class="wikilink1" title="jp:string:copy">copy</a></td><td class="col1">文字列のキャラクタ列を配列にコピーします</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="data" class="wikilink1" title="jp:string:data">data</a></td><td class="col1">ある文字列の先頭キャラクタを指すポインタを返します</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><a href="empty" class="wikilink1" title="jp:string:empty">empty</a></td><td class="col1">文字列中に１キャラクタも無ければ true を返します</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><a href="end" class="wikilink1" title="jp:string:end">end</a></td><td class="col1">文字列の最後尾直後を指すイテレータを返します</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><a href="erase" class="wikilink1" title="jp:string:erase">erase</a></td><td class="col1">文字列からあるキャラクタ列を除去します</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><a href="find" class="wikilink1" title="jp:string:find">find</a></td><td class="col1">文字列中でのキャラクタ列を探します</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><a href="find_first_not_of" class="wikilink1" title="jp:string:find_first_not_of">find_first_not_of</a></td><td class="col1">あるキャラクタ列が文字列中で見つからない先頭位置を返します</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><a href="find_first_of" class="wikilink1" title="jp:string:find_first_of">find_first_of</a></td><td class="col1">あるキャラクタ列が文字列中で見つかる先頭位置を返します</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"><a href="find_last_not_of" class="wikilink1" title="jp:string:find_last_not_of">find_last_not_of</a></td><td class="col1">あるキャラクタ列が文字列中で見つからない最後尾を返します</td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"><a href="find_last_of" class="wikilink1" title="jp:string:find_last_of">find_last_of</a></td><td class="col1">あるキャラクタ列が文字列中で見つかる最後尾を返します</td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"><a href="getline" class="wikilink1" title="jp:string:getline">getline</a></td><td class="col1">I/Oストリームから読み込んだデータを文字列に挿入します</td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"><a href="insert" class="wikilink1" title="jp:string:insert">insert</a></td><td class="col1">文字列中にキャラクタを挿入します</td>
+	</tr>
+	<tr class="row22">
+		<td class="col0"><a href="length" class="wikilink1" title="jp:string:length">length</a></td><td class="col1">文字列の長さを返します</td>
+	</tr>
+	<tr class="row23">
+		<td class="col0"><a href="max_size" class="wikilink1" title="jp:string:max_size">max_size</a></td><td class="col1">文字列が保持することができる最大キャラクタ数を返します</td>
+	</tr>
+	<tr class="row24">
+		<td class="col0"><a href="push_back" class="wikilink1" title="jp:string:push_back">push_back</a></td><td class="col1">文字列の最後尾にキャラクタを追加します</td>
+	</tr>
+	<tr class="row25">
+		<td class="col0"><a href="rbegin" class="wikilink1" title="jp:string:rbegin">rbegin</a></td><td class="col1">文字列の最後尾を指す逆イテレータを返します</td>
+	</tr>
+	<tr class="row26">
+		<td class="col0"><a href="rend" class="wikilink1" title="jp:string:rend">rend</a></td><td class="col1">文字列の先頭を指す逆イテレータを返します</td>
+	</tr>
+	<tr class="row27">
+		<td class="col0"><a href="replace" class="wikilink1" title="jp:string:replace">replace</a></td><td class="col1">文字列中のキャラクタを置換します</td>
+	</tr>
+	<tr class="row28">
+		<td class="col0"><a href="reserve" class="wikilink1" title="jp:string:reserve">reserve</a></td><td class="col1">ある文字列の最小サイズをセットします</td>
+	</tr>
+	<tr class="row29">
+		<td class="col0"><a href="resize" class="wikilink1" title="jp:string:resize">resize</a></td><td class="col1">文字列のサイズを変更します</td>
+	</tr>
+	<tr class="row30">
+		<td class="col0"><a href="rfind" class="wikilink1" title="jp:string:rfind">rfind</a></td><td class="col1">文字列の中で一番後ろにある部分列を探します</td>
+	</tr>
+	<tr class="row31">
+		<td class="col0"><a href="size" class="wikilink1" title="jp:string:size">size</a></td><td class="col1">文字列中の文字数を返します</td>
+	</tr>
+	<tr class="row32">
+		<td class="col0"><a href="substr" class="wikilink1" title="jp:string:substr">substr</a></td><td class="col1">特定の箇所を抜き出して返します</td>
+	</tr>
+	<tr class="row33">
+		<td class="col0"><a href="swap" class="wikilink1" title="jp:string:swap">swap</a></td><td class="col1">ある文字列と他の文字列の中身をスワップします</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [245-2956] -->
+</div>
+</div>
+</body>
+</html>

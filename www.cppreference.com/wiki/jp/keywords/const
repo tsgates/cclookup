@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:keywords:const</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:19-0700" />
+<meta name="keywords" content="jp,keywords,const" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/keywords/const?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp:keywords" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/keywords/const" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/keywords/const" />
+<link rel="canonical" href="const" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp:keywords';var JSINFO = {"id":"jp:keywords:const","namespace":"jp:keywords"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="const#const" class="toc">const</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="const#使用法" class="toc">使用法</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="const#宣言" class="toc">宣言</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="const#パラメータ" class="toc">パラメータ</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="const#メソッド" class="toc">メソッド</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="const" id="const">const</a></h2>
+<div class="level2">
+
+<p>
+
+constキーワードを使用すると、指定された変数は、一度初期化されたら変更されるべきではない、ということをコンパイラに伝えることができます。それ以外にも、宣言したクラスの関数は、クラスのデータを変更しないということを宣言するのにも使用されます。
+</p>
+
+</div>
+<!-- EDIT1 SECTION "const" [1-375] -->
+<h2 class="sectionedit2"><a name="使用法" id="使用法">使用法</a></h2>
+<div class="level2">
+
+<p>
+
+予想外に上書きされるのから保護するのが適切な場所では、常にconstを使うのが良いプラクティスであると言われています。できあがったプログラムに後からconstを追加しようとすると、滝のように次々とconstを付けていく必要があります。コードの開発サイクルの初期からconstを実装していくのがベストです。これにより、適切な宣言とconstの使用が行えるようになります。
+</p>
+
+<p>
+constキーワードは複数の意味を持っていて様々な場所に使用することができます。無意味な場所にさえ付けることが可能です。
+</p>
+
+</div>
+<!-- EDIT2 SECTION "使用法" [376-1074] -->
+<h3 class="sectionedit3"><a name="宣言" id="宣言">宣言</a></h3>
+<div class="level3">
+
+<p>
+
+constにより何が保護されるのかを理解するために、右の説明を読んでから左側の宣言を見てください。
+</p>
+<pre class="cpp code cpp"><span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span> str<span class="sy4">;</span> <span class="co1">// 「変更できない文字列」に対するポインタです。ただし、ポインタ自身を他のポインタにリダイレクトすることは可能です</span>
+<span class="kw4">char</span> <span class="kw4">const</span> <span class="sy2">*</span> str<span class="sy4">;</span> <span class="co1">// 上の例と同じです。</span>
+<span class="kw4">char</span> <span class="sy2">*</span> <span class="kw4">const</span> str<span class="sy4">;</span> <span class="co1">// 文字列に対する「変更できないポインタ」です。ただし、文字列そのものを変更することは可能です</span></pre>
+<p>
+C++の参照もこれと似ています。ただし、参照に対してconstを適用すると、参照した後に他の要素にリダイレクトすることはできません。
+</p>
+<pre class="cpp code cpp"><span class="kw4">const</span> <span class="kw4">char</span> <span class="sy3">&amp;</span> str<span class="sy4">;</span> <span class="co1">// 「変更できない文字列」に対する参照</span>
+<span class="kw4">char</span> <span class="kw4">const</span> <span class="sy3">&amp;</span> str<span class="sy4">;</span> <span class="co1">// 上記と同じ</span></pre>
+<p>
+ここまでの説明は比較的簡単です。しかし、より複雑なケースでは解読するのもよりむずかしくなっていきます。以下の例を見て下さい:
+</p>
+<pre class="cpp code cpp"><span class="kw4">char</span> <span class="sy2">*</span> <span class="kw4">const</span> <span class="sy2">*</span> data<span class="sy4">;</span> <span class="co1">// 文字列への「不変なポインタ」へのポインタ</span>
+<span class="kw4">char</span> <span class="kw4">const</span> <span class="sy2">**</span> data<span class="sy4">;</span> <span class="co1">// 「不変な文字列」へのポインタへのポインタ</span>
+<span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">**</span> data<span class="sy4">;</span> <span class="co1">// 「不変な文字列」へのポインタへのポインタ</span>
+<span class="kw4">char</span> <span class="sy2">**</span> <span class="kw4">const</span> data<span class="sy4">;</span> <span class="co1">// 文字列へのポインタへの「不変なポインタ」</span>
+<span class="kw4">char</span> <span class="sy2">*</span> <span class="kw4">const</span> <span class="sy2">*</span> <span class="kw4">const</span> data<span class="sy4">;</span> <span class="co1">// 文字列への「不変なポインタ」への「不変なポインタ」</span></pre>
+<p>
+constは型の後に置かなければ<strong>ならない</strong>と信じている人も中にはいますが、通常のポインタ以外の型(“char”など)であれば、型の前後のどちらであっても置くことは自由です。
+今まで書いてきたコード、もしくは組織のコーディング標準にあわせたフォーマットで記述してください。それ以外の場合でも一貫性を保つようにしてください。
+もしもポインタに対してconstを適用したい場合には、アスタリスクの後にconstを配置するようにしましょう。
+</p>
+
+<p>
+オブジェクトの属性が、newで初期化されてからは、deleteされるまでの期間の間に変更されることがないのであれば、そのフィールドに対してconst宣言を行うのは良い習慣です。
+</p>
+
+</div>
+<!-- EDIT3 SECTION "宣言" [1075-3434] -->
+<h3 class="sectionedit4"><a name="パラメータ" id="パラメータ">パラメータ</a></h3>
+<div class="level3">
+
+<p>
+
+もっとも一般的なconstの使用方法としては、ポインタで指定されているオブジェクトや参照されているオブジェクトのデータの保護になります:
+</p>
+<pre class="cpp code cpp"><span class="kw4">void</span> func <span class="br0">&#40;</span> <span class="kw4">const</span> MyObject <span class="sy2">*</span> data <span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// MyObjectはfuncの中では変更できません</span>
+<span class="kw4">void</span> func <span class="br0">&#40;</span> <span class="kw4">const</span> MyObject <span class="sy3">&amp;</span> data <span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// MyObjectはfuncの中では変更できません</span></pre>
+<p>
+
+constの置く位置を、型の前にしても、後ろに置いても違いはありません。次の例は前の例と同じ意味になります:
+
+</p>
+<pre class="cpp code cpp"><span class="kw4">void</span> func <span class="br0">&#40;</span> MyObject <span class="kw4">const</span> <span class="sy2">*</span> data <span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// ( const MyObject * )と同じ</span>
+<span class="kw4">void</span> func <span class="br0">&#40;</span> MyObject <span class="kw4">const</span> <span class="sy3">&amp;</span> data <span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// ( const MyOjbect &amp; )と同じ</span></pre>
+<p>
+しかし、constをポインタや参照の後ろに移動すると、”const”で保護される対象が変わります。ポインタの後のconstは、ポインタに対してのみ有効になり、ポインタが指しているデータは保護されません。
+
+</p>
+<pre class="cpp code cpp"><span class="kw4">void</span> func <span class="br0">&#40;</span> MyObject <span class="sy2">*</span> <span class="kw4">const</span> data <span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// コピーされたMyObjectポインタへの保護(不要な保護)</span></pre>
+<p>
+
+関数の中では、MyObjectへのポインタは操作できませんが、MyObject自身の操作は自由にできてしまいます。しかし、ポインタの値自体は関数呼び出し時に値渡しでもらってきたもので、実際は関数ローカルな変数なので、なんの効果も現しません。関数呼び出しを行う外の関数にとっては、関数の中のローカルのポインタが変更されたかどうかに関しては何も影響がないからです。
+</p>
+
+<p>
+参照の後ろにconstを付けるのは必要はなく、むしろ避けるべきです。参照は暗黙的にconst宣言されているのと同じなので、元々他の参照先に差し替えることはできないからです。
+</p>
+<pre class="cpp code cpp"><span class="kw4">void</span> func <span class="br0">&#40;</span> MyObject <span class="sy3">&amp;</span> <span class="kw4">const</span> data <span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// MyObjectへの参照に対する、不要な保護</span></pre>
+<p>
+
+ここでは、constはもともと操作できない参照を保護しているだけです。
+</p>
+
+<p>
+他の便利使い方としては、returnでprivateなデータを返す場合があります。privateなデータを外部に見せるが、クラスの外では操作されたくない、というケースで有効です。
+
+</p>
+<pre class="cpp code cpp"><span class="kw4">const</span> MyObject <span class="sy3">&amp;</span> MyClass<span class="sy4">::</span><span class="me2">func</span> <span class="br0">&#40;</span> MyObject <span class="sy3">&amp;</span> data <span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// funcは、変更できないMyObjectを返します</span></pre>
+</div>
+<!-- EDIT4 SECTION "パラメータ" [3435-5852] -->
+<h3 class="sectionedit5"><a name="メソッド" id="メソッド">メソッド</a></h3>
+<div class="level3">
+
+<p>
+
+オブジェクトの内部のデータを変更しないインスタンスメソッドというのもよく作成されます。これらのメソッドは<em>アクセッサ</em>として知られています。これはconstをつけて宣言をすべきです。これを付けると、このメソッド内の<a href="this" class="wikilink1" title="jp:keywords:this">this</a>ポインタに作用します。実際にこのポインタが”MyClass *”だったとしても、”const MyClass *”として解釈されます。このポインタを使用してオブジェクトを変更することはできなくなります。
+</p>
+<pre class="cpp code cpp"><span class="kw4">void</span> MyClass<span class="sy4">::</span><span class="me2">func</span> <span class="br0">&#40;</span> MyOjbect <span class="sy3">&amp;</span> data <span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span> <span class="co1">// この関数はクラスのデータを変更することはできません</span></pre>
+<p>
+もしもconstのオブジェクトがあったとしたら、そのオブジェクトの中のメソッドのうち、呼び出せるのはconstの付いたメソッドだけです。理由としては、通常のメソッドが呼べてしまうとすると、そのオブジェクトのポインタをthisポインタとして渡す必要があります。しかし、そのクラスがconstが付いた”const MyClass”オブジェクトだったとすると、”MyClass *”ではなくて、”const MyClass *”しか得ることができませんので、constメソッドしか呼べないのです。
+</p>
+<pre class="cpp code cpp"><span class="kw4">void</span> MyClass<span class="sy4">::</span><span class="me2">const_func</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span>
+<span class="kw4">void</span> MyClass<span class="sy4">::</span><span class="me2">func</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+<span class="kw4">const</span> MyClass object<span class="sy4">;</span>
+&nbsp;
+object.<span class="me1">const_func</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// ok</span>
+object.<span class="me1">func</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// constオブジェクトの非constクラスは呼ぶことができません</span></pre>
+<p>
+同様の理由で、constメソッドの中からそのオブジェクトのメソッドを呼ぶ場合には、他のconstメソッドしか呼ぶことはできません。
+</p>
+
+<p>
+関連トピック: <a href="const_cast" class="wikilink1" title="jp:keywords:const_cast">const_cast</a>, <a href="mutable" class="wikilink1" title="jp:keywords:mutable">mutable</a>
+</p>
+
+</div>
+<!-- EDIT5 SECTION "メソッド" [5853-] --></div>
+</body>
+</html>

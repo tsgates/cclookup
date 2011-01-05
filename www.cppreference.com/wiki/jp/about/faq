@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:about:faq</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:17-0700" />
+<meta name="keywords" content="jp,about,faq" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/about/faq?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp:about" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/about/faq" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/about/faq" />
+<link rel="canonical" href="faq" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp:about';var JSINFO = {"id":"jp:about:faq","namespace":"jp:about"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="faq#faq_よくある質問と答え" class="toc">FAQ よくある質問と答え</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="faq#このサイトのコピーを取得してもいいでしょうか" class="toc">このサイトのコピーを取得してもいいでしょうか？</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="faq#このサイトの_ミラー翻訳自分専用バージョンのアップロードその他_をすることができますか" class="toc">このサイトの[ミラー/翻訳/自分専用バージョンのアップロード/その他]をすることができますか？</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="faq#これはwikiですか_変更してもいいんですか" class="toc">これはWikiですか？変更してもいいんですか？</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="faq#このサイトはどのwikiのソフトウェアを使用していますか" class="toc">このサイトはどのWikiのソフトウェアを使用していますか？</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="faq#このサイトはどのような人のために作成されていますか" class="toc">このサイトはどのような人のために作成されていますか？</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="faq#私がc_でできるすべてのことを完全に網羅したサイトを目指さないのですか" class="toc">私がC++でできるすべてのことを完全に網羅したサイトを目指さないのですか？</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="faq#some_of_the_examples_on_this_site_don_t_work_on_my_system_what_s_going_on" class="toc">Some of the examples on this site don&#039;t work on my system. What&#039;s going on?</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="faq#このサイトに掲載されているサンプルコードは私のマシン上では動作しません_どうすればいいでしょうか" class="toc">このサイトに掲載されているサンプルコードは私のマシン上では動作しません。どうすればいいでしょうか？</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="faq#このサイトのエラーを見つけました" class="toc">このサイトのエラーを見つけました</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="faq#このサイトはどうして作られたのですか" class="toc">このサイトはどうして作られたのですか？</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="faq_よくある質問と答え" id="faq_よくある質問と答え">FAQ よくある質問と答え</a></h2>
+<div class="level2">
+
+</div>
+<!-- EDIT1 SECTION "FAQ よくある質問と答え" [1-43] -->
+<h3 class="sectionedit2"><a name="このサイトのコピーを取得してもいいでしょうか" id="このサイトのコピーを取得してもいいでしょうか">このサイトのコピーを取得してもいいでしょうか？</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="http://www.cppreference.com/cppreference-files.tar.gz" class="urlextern" title="http://www.cppreference.com/cppreference-files.tar.gz"  rel="nofollow">ここに、このサイトのアーカイブがあります</a>。このファイルは毎日更新されています。
+</p>
+
+<p>
+これとは別に、このWikiサイトの内容から作成された、インデックスがついていて、全文検索が可能なWindowsのHTMLヘルプ(.chm)形式もダウンロード可能です。これは2009年の2月版になります。これは、追加のソフトウェアを入れなくても、最近のものを含む多くのWindowsのバージョンで利用可能です。また、このHTMLヘルプファイルはインデックスがついているため、.chmファイルをサポートしている多くの<em>統合開発環境(IDE)</em>では、関数やテンプレート名に対するキーワード検索などが利用できるようになります。
+</p>
+
+<p>
+HTMLヘルプファイルはここからダウンロードできます: <a href="http://www.cppreference.com/wiki/_media/about/cppreferencecom_feb09.zip" class="media mediafile mf_zip" title="about:cppreferencecom_feb09.zip">cppreferencecom_feb09.zip</a>
+</p>
+
+</div>
+<!-- EDIT2 SECTION "このサイトのコピーを取得してもいいでしょうか？" [44-1095] -->
+<h3 class="sectionedit3"><a name="このサイトの_ミラー翻訳自分専用バージョンのアップロードその他_をすることができますか" id="このサイトの_ミラー翻訳自分専用バージョンのアップロードその他_をすることができますか">このサイトの[ミラー/翻訳/自分専用バージョンのアップロード/その他]をすることができますか？</a></h3>
+<div class="level3">
+
+<p>
+
+もちろん。どんどんやってください。このサイトのすべてのコンテンツは<a href="http://creativecommons.org/licenses/by/3.0/us/" class="urlextern" title="http://creativecommons.org/licenses/by/3.0/us/"  rel="nofollow">Creative Commons Attribution 3.0 license</a>の元で公開されています。
+</p>
+
+<p>
+私たちからお願いしたいことは、そのコンテンツを見た人が最新の内容にアクセスできるように、cppreference.comへのリンクを含めて欲しいということだけです。
+</p>
+
+</div>
+<!-- EDIT3 SECTION "このサイトの[ミラー/翻訳/自分専用バージョンのアップロード/その他]をすることができますか？" [1096-1680] -->
+<h3 class="sectionedit4"><a name="これはwikiですか_変更してもいいんですか" id="これはwikiですか_変更してもいいんですか">これはWikiですか？変更してもいいんですか？</a></h3>
+<div class="level3">
+
+<p>
+
+もちろんです。もしも間違いを見つけたらどんどん修正してください。すでに作成されていないコンテンツを追加したければ追加するすることも可能です。
+</p>
+
+<p>
+自分の変更に対しては責任を持つようにして、<em>変更前にはよく考えるように</em>お願いします。
+</p>
+
+</div>
+<!-- EDIT4 SECTION "これはWikiですか？変更してもいいんですか？" [1681-2092] -->
+<h3 class="sectionedit5"><a name="このサイトはどのwikiのソフトウェアを使用していますか" id="このサイトはどのwikiのソフトウェアを使用していますか">このサイトはどのWikiのソフトウェアを使用していますか？</a></h3>
+<div class="level3">
+
+<p>
+
+cppreference.comは<a href="http://www.dokuwiki.org" class="urlextern" title="http://www.dokuwiki.org"  rel="nofollow">DokuWiki</a>を使用しています。
+</p>
+
+</div>
+<!-- EDIT5 SECTION "このサイトはどのWikiのソフトウェアを使用していますか？" [2093-2265] -->
+<h3 class="sectionedit6"><a name="このサイトはどのような人のために作成されていますか" id="このサイトはどのような人のために作成されていますか">このサイトはどのような人のために作成されていますか？</a></h3>
+<div class="level3">
+
+<p>
+
+ここには「プログラミング入門」のチュートリアルはありません。このサイトが対象にしているのは、多かれ少なかれ経験を持つ、C++プログラマーです。
+自分で自分のやりたいことが分かっていて、文法について分からないことがあったらそれについての調べ方も分かるような人でないと難しいでしょう。
+もしもC言語やC++自体をこれから学習していこうと思っているのでしたら、以下のサイト(英語です)で学習してみてください:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="http://www.howstuffworks.com/c.htm" class="urlextern" title="http://www.howstuffworks.com/c.htm"  rel="nofollow">How C Programming Works</a></div>
+</li>
+<li class="level2"><div class="li"> <a href="http://www.its.strath.ac.uk/courses/c/" class="urlextern" title="http://www.its.strath.ac.uk/courses/c/"  rel="nofollow">C Programming</a></div>
+</li>
+<li class="level2"><div class="li"> <a href="http://www.cplusplus.com/doc/tutorial/" class="urlextern" title="http://www.cplusplus.com/doc/tutorial/"  rel="nofollow">C++ Language Tutorial</a></div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT6 SECTION "このサイトはどのような人のために作成されていますか？" [2266-3138] -->
+<h3 class="sectionedit7"><a name="私がc_でできるすべてのことを完全に網羅したサイトを目指さないのですか" id="私がc_でできるすべてのことを完全に網羅したサイトを目指さないのですか">私がC++でできるすべてのことを完全に網羅したサイトを目指さないのですか？</a></h3>
+<div class="level3">
+
+<p>
+
+人生欲張らない方がよい、という真理があります。多くのC++コンパイラは均一ではなく、機能を追加していたり、また足りない機能があったりします。
+もしもあなたが探しているものがここに掲載されていなかったら、その情報は手に入らないと思ってあきらめるのではなく、Googleを使って検索してみてください。
+</p>
+
+</div>
+<!-- EDIT7 SECTION "私がC++でできるすべてのことを完全に網羅したサイトを目指さないのですか？" [3139-3679] -->
+<h3 class="sectionedit8"><a name="some_of_the_examples_on_this_site_don_t_work_on_my_system_what_s_going_on" id="some_of_the_examples_on_this_site_don_t_work_on_my_system_what_s_going_on">Some of the examples on this site don&#039;t work on my system. What&#039;s going on?</a></h3>
+<div class="level3">
+
+</div>
+<!-- EDIT8 SECTION "Some of the examples on this site don't work on my system. What's going on?" [3680-3764] -->
+<h3 class="sectionedit9"><a name="このサイトに掲載されているサンプルコードは私のマシン上では動作しません_どうすればいいでしょうか" id="このサイトに掲載されているサンプルコードは私のマシン上では動作しません_どうすればいいでしょうか">このサイトに掲載されているサンプルコードは私のマシン上では動作しません。どうすればいいでしょうか？</a></h3>
+<div class="level3">
+
+<p>
+
+このサイトにあるほとんどのコードはLinux(Red Hat, Debian, Ubuntu)上の<a href="http://gcc.gnu.org" class="urlextern" title="http://gcc.gnu.org"  rel="nofollow">GNUコンパイラコレクション(GCC)</a>でコンパイルしてテストしています。
+このサイトはC++規格のリファレンスでしかないので、すべてのコンパイラがこのサイトであげている機能のリストをサポートしているわけではありません。例えば:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> ヘッダーファイルは頻繁に変更されます。<a href="../stl/vector/start" class="wikilink1" title="jp:stl:vector:start">vectors</a>をインクルードするためには、以下のどれかを使わなければならないでしょう:</div>
+</li>
+</ul>
+<pre class="cpp code cpp">      <span class="co2">#include &lt;vector&gt;</span>
+      <span class="co2">#include &lt;Vector&gt;</span>
+      <span class="co2">#include &lt;vector.h&gt;</span></pre>
+<p>
+
+仕様によると、最初の行の宣言が使用できなければなりません。もしも本体は違うファイルであったとしても、先頭の行の宣言をすれば本来のvectorのヘッダファイルを参照して使用できるようにならなければなりません。
+</p>
+<ul>
+<li class="level1"><div class="li"> ヘッダファイルに関する問題としては、より新しいコンパイラでも、標準Cライブラリをインクルードするコマンドがプラットフォーム依存性が高いというのもあります。例えば、仕様上は以下のようなインクルード宣言が動作しなければなりません。</div>
+</li>
+</ul>
+<pre class="cpp code cpp">      <span class="co2">#include &lt;cstdio&gt;</span></pre>
+<p>
+
+以下は古い宣言になります。
+
+</p>
+<pre class="cpp code cpp">      <span class="co2">#include &lt;stdio.h&gt;</span></pre><ul>
+<li class="level1"><div class="li"> このリファレンスでは、正しく名前空間が指定されていることを想定しています。もしもコンパイラのバージョンが古ければ、名前空間を省いて、以下のようなシンプルな文を使用することができるでしょう:</div>
+</li>
+</ul>
+<pre class="cpp code cpp">      <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;hello world!&quot;</span><span class="sy4">;</span></pre>
+<p>
+
+しかし、新しいコンパイラでは以下のようにするか、
+
+</p>
+<pre class="cpp code cpp">      std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;hello world!&quot;</span><span class="sy4">;</span></pre>
+<p>
+
+もしくは、”using namespace”コマンドを使って、使用する名前空間の宣言をしなければなりません。
+</p>
+<ul>
+<li class="level1"><div class="li"> MicrosoftのVisual C++のような人気のある特定のコンパイラは、C++の標準テンプレートライブラリの代替機能や追加機能を搭載しています。例えば、Visual C++のMFCは文字列の型としてstringと同じような機能を持つ”CString”を提供していますが、これはC++ STLの一部の機能ではありませんので、このマニュアルには掲載していません。</div>
+</li>
+</ul>
+
+<p>
+
+…listは絶え間なく変化しています。言い換えると、個別の結果が変わってくるかもしれません。
+</p>
+
+</div>
+<!-- EDIT9 SECTION "このサイトに掲載されているサンプルコードは私のマシン上では動作しません。どうすればいいでしょうか？" [3765-6540] -->
+<h3 class="sectionedit10"><a name="このサイトのエラーを見つけました" id="このサイトのエラーを見つけました">このサイトのエラーを見つけました</a></h3>
+<div class="level3">
+
+<p>
+
+もしも間違いを見つけた場合には自由に直してもらっても構いませんし、<a href="mailto:&#x63;&#x6f;&#x6d;&#x6d;&#x65;&#x6e;&#x74;&#x73;&#x40;&#x63;&#x70;&#x70;&#x72;&#x65;&#x66;&#x65;&#x72;&#x65;&#x6e;&#x63;&#x65;&#x2e;&#x63;&#x6f;&#x6d;" class="mail JSnocheck" title="&#x63;&#x6f;&#x6d;&#x6d;&#x65;&#x6e;&#x74;&#x73;&#x40;&#x63;&#x70;&#x70;&#x72;&#x65;&#x66;&#x65;&#x72;&#x65;&#x6e;&#x63;&#x65;&#x2e;&#x63;&#x6f;&#x6d;">&#x63;&#x6f;&#x6d;&#x6d;&#x65;&#x6e;&#x74;&#x73;&#x40;&#x63;&#x70;&#x70;&#x72;&#x65;&#x66;&#x65;&#x72;&#x65;&#x6e;&#x63;&#x65;&#x2e;&#x63;&#x6f;&#x6d;</a>まで連絡していただくことも可能です。
+</p>
+
+</div>
+<!-- EDIT10 SECTION "このサイトのエラーを見つけました" [6541-6780] -->
+<h3 class="sectionedit11"><a name="このサイトはどうして作られたのですか" id="このサイトはどうして作られたのですか">このサイトはどうして作られたのですか？</a></h3>
+<div class="level3">
+
+<p>
+
+このサイトは、ギークによるギークのためのコミュニティサービスだと考えてください。
+</p>
+
+</div>
+<!-- EDIT11 SECTION "このサイトはどうして作られたのですか？" [6781-] --></div>
+</body>
+</html>

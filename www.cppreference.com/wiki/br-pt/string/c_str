@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="br-pt"
+ lang="br-pt" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>br-pt:string:c_str</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:02-0700" />
+<meta name="keywords" content="br-pt,string,c_str" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/br-pt/string/c_str?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=br-pt:string" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/br-pt/string/c_str" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/br-pt/string/c_str" />
+<link rel="canonical" href="c_str" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='br-pt:string';var JSINFO = {"id":"br-pt:string:c_str","namespace":"br-pt:string"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="c_str" id="c_str">c_str</a></h2>
+<div class="level2">
+
+<p>
+Sintaxe:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;string&gt;</span>
+    <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> c_str<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span></pre>
+<p>
+A função c_str() devolve um apontador const para uma string regular tipo C, idêntica
+à string actual. A string devolvida termina com o caracter “null” (código <acronym title="American Standard Code for Information Interchange">ASCII</acronym> 00).
+</p>
+
+<p>
+Note-se que uma vez que o apontador devolvido é do tipo const, os dados devolvidos por c_str()
+não podem ser modificados. Além disso, não é necessário chamar <a href="http://www.cppreference.com/wiki/pt-br/c/mem/free" class="wikilink2" title="pt-br:c:mem:free" rel="nofollow">free</a> ou
+<a href="http://www.cppreference.com/wiki/pt-br/keywords/delete" class="wikilink2" title="pt-br:keywords:delete" rel="nofollow">delete</a> neste apontador.
+</p>
+
+<p>
+Tópicos Relacionados: <a href="string_operators" class="wikilink1" title="br-pt:string:string_operators">String_operators</a>, <a href="data" class="wikilink1" title="br-pt:string:data">data</a>
+
+</p>
+
+</div>
+</div>
+</body>
+</html>

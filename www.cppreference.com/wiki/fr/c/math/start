@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr"
+ lang="fr" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>fr:numeric:c:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:59-0700" />
+<meta name="keywords" content="fr,numeric,c,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/fr/numeric/c/start?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=fr:numeric:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/fr/numeric/c/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/fr/numeric/c/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='fr:numeric:c';var JSINFO = {"id":"fr:numeric:c:start","namespace":"fr:numeric:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="bibliotheque_mathematique_du_c" id="bibliotheque_mathematique_du_c">Bibliothèque mathématique du C</a></h1>
+<div class="level1">
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="abs" class="wikilink1" title="fr:numeric:c:abs">abs</a></td><td class="col1">valeur absolue</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="acos" class="wikilink1" title="fr:numeric:c:acos">acos</a></td><td class="col1">arc cosinus</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="asin" class="wikilink1" title="fr:numeric:c:asin">asin</a></td><td class="col1">arc sinus</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="atan" class="wikilink1" title="fr:numeric:c:atan">atan</a></td><td class="col1">arc tangente</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="atan2" class="wikilink1" title="fr:numeric:c:atan2">atan2</a></td><td class="col1">arc tangente, utilisant le signe pour déterminer le quadrant</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="ceil" class="wikilink1" title="fr:numeric:c:ceil">ceil</a></td><td class="col1">le plus petit entier supérieur à une valeur</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="cos" class="wikilink1" title="fr:numeric:c:cos">cos</a></td><td class="col1">cosinus</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="cosh" class="wikilink1" title="fr:numeric:c:cosh">cosh</a></td><td class="col1">cosinus hyperbolique</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="div" class="wikilink1" title="fr:numeric:c:div">div</a></td><td class="col1">renvoie le quotient et la retenue d&#039;une division</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="exp" class="wikilink1" title="fr:numeric:c:exp">exp</a></td><td class="col1">renvoie “e” élevé à une puissance donnée</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="fabs" class="wikilink1" title="fr:numeric:c:fabs">fabs</a></td><td class="col1">valeur absolue pour les nombres à virgule flottante</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="floor" class="wikilink1" title="fr:numeric:c:floor">floor</a></td><td class="col1">le plus grand entier inférieur à une valeur</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><a href="fmod" class="wikilink1" title="fr:numeric:c:fmod">fmod</a></td><td class="col1">renvoie le reste d&#039;une division</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><a href="frexp" class="wikilink1" title="fr:numeric:c:frexp">frexp</a></td><td class="col1">décompose un nombre en sa notation scientifique</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><a href="labs" class="wikilink1" title="fr:numeric:c:labs">labs</a></td><td class="col1">valeur absolue pour les entiers long</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><a href="ldexp" class="wikilink1" title="fr:numeric:c:ldexp">ldexp</a></td><td class="col1">calcule un nombre en notation scientifique</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><a href="ldiv" class="wikilink1" title="fr:numeric:c:ldiv">ldiv</a></td><td class="col1">renvoie le quotient et le reste d&#039;une division, sous forme long</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><a href="log" class="wikilink1" title="fr:numeric:c:log">log</a></td><td class="col1">logarithme naturel (de base e)</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"><a href="log10" class="wikilink1" title="fr:numeric:c:log10">log10</a></td><td class="col1">logarithme commun (de base 10)</td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"><a href="modf" class="wikilink1" title="fr:numeric:c:modf">modf</a></td><td class="col1">décompose un nombre en une partie entière et une partie fractionnaire</td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"><a href="pow" class="wikilink1" title="fr:numeric:c:pow">pow</a></td><td class="col1">renvoie un nombre élevé à une puissance donnée</td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"><a href="sin" class="wikilink1" title="fr:numeric:c:sin">sin</a></td><td class="col1">sinus</td>
+	</tr>
+	<tr class="row22">
+		<td class="col0"><a href="sinh" class="wikilink1" title="fr:numeric:c:sinh">sinh</a></td><td class="col1">sinus hyperbolique</td>
+	</tr>
+	<tr class="row23">
+		<td class="col0"><a href="sqrt" class="wikilink1" title="fr:numeric:c:sqrt">sqrt</a></td><td class="col1">racine carré</td>
+	</tr>
+	<tr class="row24">
+		<td class="col0"><a href="tan" class="wikilink1" title="fr:numeric:c:tan">tan</a></td><td class="col1">tangente</td>
+	</tr>
+	<tr class="row25">
+		<td class="col0"><a href="tanh" class="wikilink1" title="fr:numeric:c:tanh">tanh</a></td><td class="col1">tangente hyperbolique</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [55-1197] -->
+</div>
+
+<h5><a name="compiler_avec_gcc" id="compiler_avec_gcc">Compiler avec GCC</a></h5>
+<div class="level5">
+
+<p>
+
+Pour utiliser certaine des fonctions précédentes, certaine versions du compilateur GCC requièrent que la bibliothèque mathématique soit liée avec l&#039;option en ligne de commande <code>-lm</code>.
+</p>
+
+</div>
+</div>
+</body>
+</html>

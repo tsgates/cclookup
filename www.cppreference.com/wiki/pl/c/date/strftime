@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl"
+ lang="pl" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>pl:util:time:c:strftime</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:39-0700" />
+<meta name="keywords" content="pl,util,time,c,strftime" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/pl/util/time/c/strftime?do=index" title="Indeks" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=pl:util:time:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/pl/util/time/c/strftime" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/pl/util/time/c/strftime" />
+<link rel="canonical" href="strftime" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='pl:util:time:c';var JSINFO = {"id":"pl:util:time:c:strftime","namespace":"pl:util:time:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<p>
+Dlaczego można tę stronę przetłumaczyć nie posiadając uprawnień??
+</p>
+
+<p>
+Ok, mamy do siebie zaufanie:
+</p>
+
+<p>
+Trochę wiadomości:
+</p>
+
+<p>
+Rosja może prewencyjnie użyć broni jądrowej, a na ostatnich manewrach ćwiczyła ofensywę przeciw Polsce – tak wynika z wystąpienia wiceszefa MON Stanisława Komorowskiego na ostatnim posiedzeniu łączonych komisji obrony narodowej i spraw zagranicznych. „Wprost24” dotarł do niepublikowanego stenogramu tych obrad. Poseł PiS Karol Karski napisał w tej sprawie interpelację do premiera. „Czy Rosja ćwiczyła użycie broni jądrowej?” – pyta w niej. 
+</p>
+
+<p>
+Ostatnie łączone posiedzenie komisji obrony i spraw zagranicznych dotyczyło niedawnych rosyjsko-białoruskich manewrów Komorowski przyznał tam, że, dzieląc ćwiczenia na dwa pozornie odrębne segmenty „Zapad” i „Ładoga”, Moskwa de facto oszukała międzynarodowe organizację. 
+</p>
+
+<p>
+
+- Fakt podzielenia ćwiczeń na dwa, choć były to jedne manewry z punktu widzenia wojskowego, to trick rosyjski. Podzielenie ćwiczeń na dwa pozwoliło pokazać, że ich skala jest mniejsza. Odbywały się również ćwiczenia na południu Rosji – stwierdził wiceszef MON. 
+</p>
+</div>
+</body>
+</html>

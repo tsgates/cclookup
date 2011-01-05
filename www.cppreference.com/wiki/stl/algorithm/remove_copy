@@ -4,51 +4,131 @@
  lang="en" dir="ltr">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>stl:algorithm:remove_copy</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
-<meta name="robots" content="index,follow" />
-<meta name="date" content="2008-10-14T15:42:06-0700" />
-<meta name="keywords" content="stl,algorithm,remove_copy" />
+  <title>algorithm:remove_copy</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="noindex,nofollow" />
+<meta name="date" content="2010-11-13T13:21:38-0800" />
+<meta name="keywords" content="algorithm,remove_copy" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/stl/algorithm/remove_copy?do=index" title="Index" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/algorithm/remove_copy?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
-<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=stl:algorithm" />
-<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/stl/algorithm/remove_copy" />
-<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/stl/algorithm/remove_copy" />
-<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=algorithm" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/algorithm/remove_copy" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/algorithm/remove_copy" />
+<link rel="canonical" href="remove_copy" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='algorithm';var JSINFO = {"id":"algorithm:remove_copy","namespace":"algorithm"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
 
+<ul class="toc">
+<li class="clear">
 
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="remove_copy#remove_copy" class="toc">remove_copy</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="remove_copy#parameters" class="toc">Parameters</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="remove_copy#return_value" class="toc">Return value</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="remove_copy#equivalent_function" class="toc">Equivalent function</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="remove_copy#complexity" class="toc">Complexity</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="remove_copy#see_also" class="toc">See also</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
 
-<h2><a name="remove_copy" id="remove_copy">remove_copy</a></h2>
+<h2 class="sectionedit1"><a name="remove_copy" id="remove_copy">remove_copy</a></h2>
 <div class="level2">
-
+<pre class="cpp code cpp"><span class="co2">#include &lt;algorithm&gt;</span>
+&nbsp;
+<span class="kw2">template</span><span class="sy1">&lt;</span> <span class="kw2">class</span> InputIterator, <span class="kw2">class</span> OutputIterator, <span class="kw2">class</span> T <span class="sy1">&gt;</span>
+OutputIterator remove_copy<span class="br0">&#40;</span> InputIterator first,
+                            InputIterator last,
+                            OutputIterator d_first,
+                            <span class="kw4">const</span> T<span class="sy3">&amp;</span> value <span class="br0">&#41;</span><span class="sy4">;</span></pre>
 <p>
-Syntax:
-</p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;algorithm&gt;</span>
-    iterator remove_copy<span class="br0">&#40;</span> iterator start<span class="sy0">,</span> iterator end<span class="sy0">,</span> iterator result<span class="sy0">,</span> <span class="kw4">const</span> TYPE<span class="sy0">&amp;</span> val <span class="br0">&#41;</span>;</pre>
-<p>
-The remove_copy() algorithm copies the range [start,end) to result but omits
-any elements that are equal to val.
-</p>
-
-<p>
-remove_copy() returns an iterator to the end of the new range, and runs in
-<a href="../../complexity" class="wikilink1" title="complexity">linear time</a>.
-</p>
-
-<p>
-Related Topics: <a href="copy" class="wikilink1" title="stl:algorithm:copy">copy</a>, <a href="remove" class="wikilink1" title="stl:algorithm:remove">remove</a>, <a href="remove_copy_if" class="wikilink1" title="stl:algorithm:remove_copy_if">remove_copy_if</a>, <a href="remove_if" class="wikilink1" title="stl:algorithm:remove_if">remove_if</a>
+Copies the elements not equal to <code>value</code> from the range <code>[first, last)</code>, to another range beginning at <code>d_first</code>.
 </p>
 
 </div>
-<!-- SECTION "remove_copy" [3-] --></div>
+<!-- EDIT1 SECTION "remove_copy" [1-446] -->
+<h3 class="sectionedit2"><a name="parameters" id="parameters">Parameters</a></h3>
+<div class="level3">
+
+<p>
+
+<code>first</code>, <code>last</code> - the range of the elements to be copied
+</p>
+
+<p>
+<code>d_first</code> - beginning of the destination range
+</p>
+
+<p>
+<code>value</code> - value of the elements not to copy
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Parameters" [447-625] -->
+<h3 class="sectionedit3"><a name="return_value" id="return_value">Return value</a></h3>
+<div class="level3">
+
+<p>
+
+output iterator to the element past the last element copied.
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Return value" [626-709] -->
+<h3 class="sectionedit4"><a name="equivalent_function" id="equivalent_function">Equivalent function</a></h3>
+<div class="level3">
+<pre class="cpp code cpp"><span class="kw2">template</span><span class="sy1">&lt;</span><span class="kw2">class</span> InputIterator, <span class="kw2">class</span> OutputIterator, <span class="kw2">class</span> T<span class="sy1">&gt;</span>
+OutputIterator remove_copy<span class="br0">&#40;</span>InputIterator first,
+                           InputIterator last,
+                           OutputIterator d_first,
+                           <span class="kw4">const</span> T<span class="sy3">&amp;</span> value<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <span class="kw1">for</span> <span class="br0">&#40;</span><span class="sy4">;</span> first <span class="sy3">!</span><span class="sy1">=</span> last<span class="sy4">;</span> <span class="sy2">++</span>first<span class="br0">&#41;</span>
+        <span class="kw1">if</span> <span class="br0">&#40;</span><span class="sy3">!</span><span class="br0">&#40;</span><span class="sy2">*</span>first <span class="sy1">==</span> value<span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+            <span class="sy2">*</span>d_first<span class="sy2">++</span> <span class="sy1">=</span> <span class="sy2">*</span>first<span class="sy4">;</span>
+        <span class="br0">&#125;</span>
+    <span class="br0">&#125;</span>
+    <span class="kw1">return</span> d_first<span class="sy4">;</span>
+<span class="br0">&#125;</span></pre>
+</div>
+<!-- EDIT4 SECTION "Equivalent function" [710-1149] -->
+<h3 class="sectionedit5"><a name="complexity" id="complexity">Complexity</a></h3>
+<div class="level3">
+
+<p>
+
+linear in the distance between <code>first</code> and <code>last</code>
+</p>
+
+</div>
+<!-- EDIT5 SECTION "Complexity" [1150-1224] -->
+<h3 class="sectionedit6"><a name="see_also" id="see_also">See also</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="remove" class="wikilink1" title="algorithm:remove">remove</a>, <a href="remove_copy_if" class="wikilink1" title="algorithm:remove_copy_if">remove_copy_if</a>
+
+</p>
+
+</div>
+<!-- EDIT6 SECTION "See also" [1225-] --></div>
 </body>
 </html>

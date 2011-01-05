@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru"
+ lang="ru" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>ru:algorithm:sort</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:14-0700" />
+<meta name="keywords" content="ru,algorithm,sort" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/ru/algorithm/sort?do=index" title="Все страницы" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=ru:algorithm" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/ru/algorithm/sort" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/ru/algorithm/sort" />
+<link rel="canonical" href="sort" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='ru:algorithm';var JSINFO = {"id":"ru:algorithm:sort","namespace":"ru:algorithm"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="sort" id="sort">sort</a></h2>
+<div class="level2">
+
+<p>
+
+Синтаксис:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;algorithm&gt;</span>
+    <span class="kw4">void</span> sort<span class="br0">&#40;</span> random_iterator start, random_iterator end <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">void</span> sort<span class="br0">&#40;</span> random_iterator start, random_iterator end, StrictWeakOrdering cmp <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Алгоритм sort() сортирует элементы диапазона <code>[start,end)</code> по возрастанию. Если элементы равны, нет гарантии сохранения исходного порядка.
+</p>
+
+<p>
+Если нужна повышенная точность, вводится упорядочивающая функция-объект cmp, которая используется для сравнения двух объектов вместо оператора &lt;.
+</p>
+
+<p>
+Алгоритм сортировки sort() - алгоритм introsort (объединение quicksort и heapsort). sort() работает за время O(N log(N)) (в среднем и худшем случае). Это быстрее полиномиального времени, но медленнее <a href="../../../complexity" class="wikilink1" title="complexity">линейного времени</a>.
+</p>
+
+<p>
+Обратите внимание, что sort() работает только с итераторами случайного доступа. Поэтому вы не можете использовать sort() для итераторов списков «list» (связанных списков). Для работы со списками нужно использовать собственный метод списка <a href="http://www.cppreference.com/wiki/ru/list/sort" class="wikilink2" title="ru:list:sort" rel="nofollow">sort</a> для сортировки.
+</p>
+
+<p>
+Например, следующий код сортирует вектор по возрастанию:
+</p>
+<pre class="cpp code cpp">   vector<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> v<span class="sy4">;</span>
+   v.<span class="me1">push_back</span><span class="br0">&#40;</span> <span class="nu0">23</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+   v.<span class="me1">push_back</span><span class="br0">&#40;</span> <span class="sy2">-</span><span class="nu0">1</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+   v.<span class="me1">push_back</span><span class="br0">&#40;</span> <span class="nu0">9999</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+   v.<span class="me1">push_back</span><span class="br0">&#40;</span> <span class="nu0">0</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+   v.<span class="me1">push_back</span><span class="br0">&#40;</span> <span class="nu0">4</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Before sorting: &quot;</span><span class="sy4">;</span>
+   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">unsigned</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> v.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> v<span class="br0">&#91;</span>i<span class="br0">&#93;</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; &quot;</span><span class="sy4">;</span>
+   <span class="br0">&#125;</span>
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+&nbsp;
+   sort<span class="br0">&#40;</span> v.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, v.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;After sorting: &quot;</span><span class="sy4">;</span>
+   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">unsigned</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> v.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> v<span class="br0">&#91;</span>i<span class="br0">&#93;</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; &quot;</span><span class="sy4">;</span>
+   <span class="br0">&#125;</span>
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
+<p>
+Вывод:
+</p>
+<pre class="code">
+   Before sorting: 23 -1 9999 0 4
+   After sorting: -1 0 4 23 9999</pre>
+<p>
+Следующий код использует sort() для сортировки массива целых чисел и производит аналогичный предыдущему примеру вывод:
+</p>
+<pre class="cpp code cpp">   <span class="kw4">int</span> array<span class="br0">&#91;</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="br0">&#123;</span> <span class="nu0">23</span>, <span class="sy2">-</span><span class="nu0">1</span>, <span class="nu0">9999</span>, <span class="nu0">0</span>, <span class="nu0">4</span> <span class="br0">&#125;</span><span class="sy4">;</span>
+   <span class="kw4">unsigned</span> <span class="kw4">int</span> array_size <span class="sy1">=</span> <span class="nu0">5</span><span class="sy4">;</span>
+&nbsp;
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Before sorting: &quot;</span><span class="sy4">;</span>
+   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">unsigned</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> array_size<span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> array<span class="br0">&#91;</span>i<span class="br0">&#93;</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; &quot;</span><span class="sy4">;</span>
+   <span class="br0">&#125;</span>
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+&nbsp;
+   sort<span class="br0">&#40;</span> array, array <span class="sy2">+</span> array_size <span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;After sorting: &quot;</span><span class="sy4">;</span>
+   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">unsigned</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> array_size<span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> array<span class="br0">&#91;</span>i<span class="br0">&#93;</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; &quot;</span><span class="sy4">;</span>
+   <span class="br0">&#125;</span>
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
+<p>
+Следующий пример показывает, как использовать sort() с определенной пользователем функцией сравнения. Функция cmp определена для использования вместо оператора &lt;. Когда sort() вызывается с использованием функции <code>cmp</code> для сравнения, результатом является список, отсортированный по убыванию:
+</p>
+<pre class="cpp code cpp">   <span class="kw4">bool</span> cmp<span class="br0">&#40;</span> <span class="kw4">int</span> a, <span class="kw4">int</span> b <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     <span class="kw1">return</span> a <span class="sy1">&gt;</span> b<span class="sy4">;</span>
+   <span class="br0">&#125;</span>
+&nbsp;
+   ...
+&nbsp;
+   <span class="me1">vector</span><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> v<span class="sy4">;</span>
+   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     v.<span class="me1">push_back</span><span class="br0">&#40;</span>i<span class="br0">&#41;</span><span class="sy4">;</span>
+   <span class="br0">&#125;</span>
+&nbsp;
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Before: &quot;</span><span class="sy4">;</span>
+   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> v<span class="br0">&#91;</span>i<span class="br0">&#93;</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; &quot;</span><span class="sy4">;</span>
+   <span class="br0">&#125;</span>
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+&nbsp;
+   sort<span class="br0">&#40;</span> v.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, v.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, cmp <span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;After: &quot;</span><span class="sy4">;</span>
+   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> v<span class="br0">&#91;</span>i<span class="br0">&#93;</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; &quot;</span><span class="sy4">;</span>
+   <span class="br0">&#125;</span>
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
+<p>
+Смотрите также: <a href="binary_search" class="wikilink1" title="ru:algorithm:binary_search">binary_search</a>, <a href="merge" class="wikilink1" title="ru:algorithm:merge">merge</a>, <a href="partial_sort" class="wikilink1" title="ru:algorithm:partial_sort">partial_sort</a>, <a href="partial_sort_copy" class="wikilink1" title="ru:algorithm:partial_sort_copy">partial_sort_copy</a>, <a href="stable_sort" class="wikilink1" title="ru:algorithm:stable_sort">stable_sort</a>, <a href="../../../c/other/qsort" class="wikilink1" title="c:other:qsort">qsort</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

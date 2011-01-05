@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es"
+ lang="es" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>es:container:set:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:32-0700" />
+<meta name="keywords" content="es,container,set,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/es/container/set/start?do=index" title="Índice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=es:container:set" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/es/container/set/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/es/container/set/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='es:container:set';var JSINFO = {"id":"es:container:set:start","namespace":"es:container:set"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="c_sets" id="c_sets">C++ Sets</a></h1>
+<div class="level1">
+<pre class="cpp code cpp"><span class="co2">#include &lt;set&gt;</span>
+<span class="kw2">using</span> std<span class="sy4">::</span><span class="me2">set</span><span class="sy4">;</span>
+&nbsp;
+set<span class="sy1">&lt;</span>Key, Compare, Alloc<span class="sy1">&gt;</span></pre>
+<p>
+En C++ un <code>Set</code> o <em>Conjunto</em> es un contenedor que representa un conjunto ordenado de elementos únicos, de tipo <code>Key</code>. La ordenación de los elementos es hecha a base del criterio de comparación <code>Compare</code>, que es por defecto <code>std::less&lt;Key&gt;</code>. El almacenamiento de los elementos es gestionado por el criterio de gestión de memoria <code>Alloc</code>, que es por defecto <code>std::allocator&lt;Key&gt;</code>.
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0 leftalign"><a href="set_constructors" class="wikilink1" title="es:container:set:set_constructors">Constructores</a>   </td><td class="col1 leftalign"> constructores por defecto para gestionar, reservar y copiar sets  </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"><a href="http://www.cppreference.com/wiki/es/container/set/set_operators" class="wikilink2" title="es:container:set:set_operators" rel="nofollow">Operators</a>       </td><td class="col1 leftalign"> asigna y compara sets  </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"><a href="begin" class="wikilink1" title="es:container:set:begin">begin</a>            </td><td class="col1 leftalign"> iterador que apunta al principio del set  </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"><a href="clear" class="wikilink1" title="es:container:set:clear">clear</a>            </td><td class="col1 leftalign"> elimina todos los elementos del set  </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"><a href="count" class="wikilink1" title="es:container:set:count">count</a>            </td><td class="col1 leftalign"> cuenta si un elemento existe o no en el set  </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 leftalign"><a href="empty" class="wikilink1" title="es:container:set:empty">empty</a>            </td><td class="col1 leftalign"> determina si el set está vacío  </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0 leftalign"><a href="end" class="wikilink1" title="es:container:set:end">end</a>              </td><td class="col1 leftalign"> iterador que apunta al final de un set  </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0 leftalign"><a href="http://www.cppreference.com/wiki/es/container/set/equal_range" class="wikilink2" title="es:container:set:equal_range" rel="nofollow">equal_range</a>      </td><td class="col1 leftalign"> devuelve iteradores que apuntan al inicio y final de un rango dentro del set que corresponde a un valor en específico  </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0 leftalign"><a href="http://www.cppreference.com/wiki/es/container/set/erase" class="wikilink2" title="es:container:set:erase" rel="nofollow">erase</a>            </td><td class="col1 leftalign"> elimina elementos de un set  </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0 leftalign"><a href="find" class="wikilink1" title="es:container:set:find">find</a>             </td><td class="col1 leftalign"> busca un elemento y devuelve un iterador apuntando a éste  </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0 leftalign"><a href="insert" class="wikilink1" title="es:container:set:insert">insert</a>           </td><td class="col1 leftalign"> inserta (agrega) elementos a un set  </td>
+	</tr>
+	<tr class="row11">
+		<td class="col0 leftalign"><a href="http://www.cppreference.com/wiki/es/container/set/key_comp" class="wikilink1" title="es:container:set:key_comp">key_comp</a>         </td><td class="col1 leftalign"> devuelve el criterio usado para comparar <code>Key</code>s  </td>
+	</tr>
+	<tr class="row12">
+		<td class="col0 leftalign"><a href="http://www.cppreference.com/wiki/es/container/set/lower_bound" class="wikilink2" title="es:container:set:lower_bound" rel="nofollow">lower_bound</a>      </td><td class="col1 leftalign"> devuelve iterador apuntando al punto más bajo donde se puede insertar el elemento  </td>
+	</tr>
+	<tr class="row13">
+		<td class="col0 leftalign"><a href="http://www.cppreference.com/wiki/es/container/set/max_size" class="wikilink2" title="es:container:set:max_size" rel="nofollow">max_size</a>         </td><td class="col1 leftalign"> máximo número de elementos que el set puede almacenar  </td>
+	</tr>
+	<tr class="row14">
+		<td class="col0 leftalign"><a href="http://www.cppreference.com/wiki/es/container/set/rbegin" class="wikilink2" title="es:container:set:rbegin" rel="nofollow">rbegin</a>           </td><td class="col1 leftalign"> iterador reverso que apunta al final (inicio inverso) del set  </td>
+	</tr>
+	<tr class="row15">
+		<td class="col0 leftalign"><a href="http://www.cppreference.com/wiki/es/container/set/rend" class="wikilink2" title="es:container:set:rend" rel="nofollow">rend</a>             </td><td class="col1 leftalign"> iterador reverso que apunta al inicio (final inverso) del set  </td>
+	</tr>
+	<tr class="row16">
+		<td class="col0 leftalign"><a href="size" class="wikilink1" title="es:container:set:size">size</a>             </td><td class="col1 leftalign"> cantidad de elementos en el set  </td>
+	</tr>
+	<tr class="row17">
+		<td class="col0 leftalign"><a href="http://www.cppreference.com/wiki/es/container/set/swap" class="wikilink1" title="es:container:set:swap">swap</a>             </td><td class="col1 leftalign"> intercambia los valores de este set con los de otro  </td>
+	</tr>
+	<tr class="row18">
+		<td class="col0 leftalign"><a href="http://www.cppreference.com/wiki/es/container/set/upper_bound" class="wikilink2" title="es:container:set:upper_bound" rel="nofollow">upper_bound</a>      </td><td class="col1"> devuelve iterador apuntando al punto más alto donde se puede insertar el elemento </td>
+	</tr>
+	<tr class="row19">
+		<td class="col0 leftalign"><a href="value_comp" class="wikilink1" title="es:container:set:value_comp">value_comp</a>       </td><td class="col1 leftalign"> devuelve el criterio usado para comparar los valores  </td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [507-2129] -->
+</div>
+<!-- EDIT1 SECTION "C++ Sets" [1-2130] -->
+<h2 class="sectionedit3"><a name="contenedores_relacionados" id="contenedores_relacionados">Contenedores Relacionados</a></h2>
+<div class="level2">
+
+<p>
+
+En C++ <code>set</code> es el contenedor por asociativo para almacenar elementos sencillos. El contenedor relacionado <code><a href="http://www.cppreference.com/wiki/es/container/map/start" class="wikilink2" title="es:container:map:start" rel="nofollow">Map</a> almacena pares “clave=valor” relacionados.
+
+Un </code>set<code> sólo puede almacenar elementos únicos. Para almacenar elementos repetidos se usa un </code><a href="http://www.cppreference.com/wiki/es/container/multiset/start" class="wikilink2" title="es:container:multiset:start" rel="nofollow">multiset</a>.
+</p>
+
+<p>
+Un <code>set</code> almacena y ordena sus elementos basándose en el criterio de comparación <code>Compare</code> que debe modelar un <a href="http://en.wikipedia.org/wiki/es:orden parcial" class="interwiki iw_wp" title="http://en.wikipedia.org/wiki/es:orden parcial">es:orden parcial</a> (por ejemplo, “menor-que”). En el próximo estándar, C++0x, se puede almacenar elementos basándose solamente en un criterio de igualdad usando un <code>unordered_set</code>.
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Contenedores Relacionados" [2131-] --></div>
+</body>
+</html>

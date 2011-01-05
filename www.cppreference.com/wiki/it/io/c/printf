@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it"
+ lang="it" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>it:io:c:printf</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:08-0700" />
+<meta name="keywords" content="it,io,c,printf" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/it/io/c/printf?do=index" title="Indice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=it:io:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/it/io/c/printf" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/it/io/c/printf" />
+<link rel="canonical" href="printf" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='it:io:c';var JSINFO = {"id":"it:io:c:printf","namespace":"it:io:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Indice</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="printf#printf" class="toc">printf</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="printf#codici_di_formattazione" class="toc">Codici di formattazione</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="printf#modificatori_di_formattazione" class="toc">Modificatori di formattazione</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="printf" id="printf">printf</a></h2>
+<div class="level2">
+
+<p>
+Sintassi:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cstdio&gt;</span>
+    <span class="kw4">int</span> <span class="kw3">printf</span><span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>format, ... <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+La funzione <code>printf</code> stampa in output su <code>stdout</code> secondo quanto specificato
+in <code>format</code> e negli altri argomenti passati alla <code>printf</code>.
+La stringa <code>format</code> consiste in due tipi di elementi:
+i caratteri che saranno stampati sullo schermo, e i comandi di formato che
+definiscono come devono essere stampati gli altri argomenti alla <code>printf</code>.
+Fondamentalmente, viene specificata una stringa di formato che contiene il
+testo da stampare oltre a “speciali” caratteri che corrispondono agli altri
+argomenti alla <code>printf</code>.
+Per esempio, il seguente codice
+</p>
+<pre class="cpp code cpp">     <span class="kw4">char</span> name<span class="br0">&#91;</span><span class="nu0">20</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="st0">&quot;Mario&quot;</span><span class="sy4">;</span>
+     <span class="kw4">int</span> age <span class="sy1">=</span> <span class="nu0">21</span><span class="sy4">;</span>
+     <span class="kw3">printf</span><span class="br0">&#40;</span> <span class="st0">&quot;Ciao %s, tu hai %d anni<span class="es1">\n</span>&quot;</span>, name, age <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+visualizza il seguente output:
+</p>
+
+<p>
+displays the following output:
+</p>
+<pre class="code">
+     Ciao Mario, tu hai 21 anni</pre>
+<p>
+La <code>%s</code> significa, “inserisci il primo argomento, una stringa, esattamente 
+qui”. La <code>%d</code> indica che il secondo argomento (un intero)
+deve essere posto lì, dove appare il carattere speciale.
+</p>
+
+<p>
+Il valore ritornato dalla <code>printf</code> è il numero di caratteri stampati, oppure
+un numero negativo in caso di errore.
+</p>
+
+</div>
+<!-- EDIT1 SECTION "printf" [3-1231] -->
+<h3 class="sectionedit2"><a name="codici_di_formattazione" id="codici_di_formattazione">Codici di formattazione</a></h3>
+<div class="level3">
+
+<p>
+
+Ci sono diversi codici % per i diversi tipi di variabile, come anche opzioni che
+limitano la lunghezza delle variabili e cose simili.
+
+</p>
+<div class="table sectionedit3"><table class="inline">
+	<tr class="row0">
+		<th class="col0">Codice</th><th class="col1">Formato</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">%c</td><td class="col1">carattere</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">%d</td><td class="col1">intero con segno</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">%i</td><td class="col1">intero con segno</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">%I64d</td><td class="col1">intero lungo lungo (64-bit integer), specifico per <acronym title="Microsoft">MS</acronym></td>
+	</tr>
+	<tr class="row5">
+		<td class="col0">%I64u</td><td class="col1">intero lungo lungo senza segno (64-bit integer), specifico per <acronym title="Microsoft">MS</acronym></td>
+	</tr>
+	<tr class="row6">
+		<td class="col0">%e</td><td class="col1">in notazione esponenziale, con una  “e” minuscola</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0">%E</td><td class="col1">in notazione esponenziale, con una  “E” maiuscola</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0">%f</td><td class="col1">in virgola mobile</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0">%g</td><td class="col1">equivale a %e oppure %f, la più corta delle due</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0">%G</td><td class="col1">equaivale a %E oppure %f, la più corta delle due</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0">%o</td><td class="col1">ottale</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0">%s</td><td class="col1">una stringa di caratteri</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0">%u</td><td class="col1">intero senza segno</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0">%x</td><td class="col1">in esadecimale senza segno, con lettere in minuscolo</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0">%X</td><td class="col1">in esadecimale senza segno, con lettere in maiuscolo</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0">%p</td><td class="col1">un puntatore</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0">%n</td><td class="col1">l&#039;argomento è un puntatore ad un intero nel quale verrà inserito il numero di caratteri scritti fino a questo punto</td>
+	</tr>
+</table></div>
+<!-- EDIT3 TABLE [1400-2176] -->
+</div>
+<!-- EDIT2 SECTION "Codici di formattazione" [1232-2177] -->
+<h3 class="sectionedit4"><a name="modificatori_di_formattazione" id="modificatori_di_formattazione">Modificatori di formattazione</a></h3>
+<div class="level3">
+
+<p>
+
+Un intero inserito tra il simbolo % ed il comando di formato agisce come
+uno specificatore di larghezza minima del campo e provoca il riempimento 
+con spazi o zeri dello spazio necessario a raggiungere la larghezza specificata.
+Se il riempimento deve avvenire con degli zeri allora bisogna inserire
+un carattere zero subito prima dello specificatore di larghezza minima:
+</p>
+<pre class="cpp code cpp">     <span class="sy2">%</span>012d</pre>
+<p>
+Puoi anche specificare la larghezza minima del campo in una variabile
+di tipo intero invece che in un numero; inserisci il carattere *:
+</p>
+<pre class="cpp code cpp">     <span class="kw4">int</span> width <span class="sy1">=</span> <span class="nu0">12</span><span class="sy4">;</span>
+     <span class="kw4">int</span> age <span class="sy1">=</span> <span class="nu0">100</span><span class="sy4">;</span>
+     <span class="kw3">printf</span><span class="br0">&#40;</span><span class="st0">&quot;%*d&quot;</span>, width, age<span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Puoi anche inserire un modificatore di precisione, nella forma <code>.N</code>, dove <code>N</code>
+è un numero decimale, prima del comando di formato:
+</p>
+<pre class="cpp code cpp">     <span class="sy2">%</span>012.4d</pre>
+<p>
+Il modificatore di precisione ha significati diversi, a seconda del
+comando di formato sul quale agisce:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> Per <code>%e</code>, <code>%E</code>, e <code>%f</code>, il modificatore di precisione consente di specificare il numero di decimali desiderato. Per esempio, <code>%12.6f</code> visualizzerà un numero in virgola mobile di almno 12 cifre, con sei cifre decimali.</div>
+</li>
+<li class="level1"><div class="li"> Per <code>%g</code> and <code>%G</code>, il modificatore di precisione determina il numero massimo di cifre significative che saranno visualizzate.</div>
+</li>
+<li class="level1"><div class="li"> Per <code>%s</code>, il modificatore di precisione specifica semplicemente la larghezza massima del campo, ed è complementare alla larghezza minima del campo che precede il punto.</div>
+</li>
+</ul>
+
+<p>
+
+Come per lo specificatore di larghezza di campo, anche per il modificatore di precisione è possibile indicare una variabile intera uando il carattere * nella stringa di formato:
+</p>
+<pre class="cpp code cpp">     <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> msg <span class="sy1">=</span> <span class="st0">&quot;Hello printf&quot;</span><span class="sy4">;</span>
+     <span class="kw4">int</span> string_size <span class="sy1">=</span> <span class="kw3">strlen</span> <span class="br0">&#40;</span>msg<span class="br0">&#41;</span><span class="sy4">;</span>
+     <span class="kw3">printf</span><span class="br0">&#40;</span><span class="st0">&quot;msg: %.*s&quot;</span>, string_size, msg<span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Tutto l&#039;output di <code>printf</code> è allineato a destra, a meno che non vengainserito in carattere trattino (il segno aritmetico meno) subito dopo il carattere %. Per esempio il seguente codice:
+</p>
+<pre class="cpp code cpp">     <span class="sy2">%-</span><span class="nu17">12.4f</span></pre>
+<p>
+visualizzerà un numero in virgola mobile con un minimo di 12 caratteri, 4 posizioni decimali e sarà allineato a sinistra.
+</p>
+
+<p>
+E&#039; possibile modificare i comandi di formato <code>%d</code>, <code>%i</code>, <code>%o</code>, <code>%u</code>, e <code>%x</code> anteponendovi le lettere <code>l</code> e <code>h</code> per specificare i tipi di dato <code>long</code> e <code>short</code> (p.es. <code>%hd</code> significa un <code>short int</code>). 
+</p>
+
+<p>
+I comandi di formato <code>%e</code>, <code>%f</code>, e <code>%g</code> possono avere una lettera <code>l</code> la quale indica che l&#039;argomento è un <code>double</code> (numero in virgola mobile in doppia precisione).
+I comandi di formato <code>%e</code>, <code>%f</code>, e <code>%g</code> possono essere preceduti dal carattere <code>#</code> per essere sicuri che il punto decimale sia sempre visualizzato, anche se non ci sono cifre significative dopo la virgola.
+</p>
+
+<p>
+L&#039;uso del carattere <code>#</code> con il comando di formato <code>%x</code> indica che il numero esadecimale visualizzato deve essere preceduto dai caratteri <code>0x</code>. 
+</p>
+
+<p>
+L&#039;uso del carattere <code>#</code> con il comando di formato <code>%o</code> indica che il numero ottale visualizzato deve essere preceduto dal carattere <code>0</code>. 
+</p>
+
+<p>
+Inserendo un segno plus <code>+</code> nel comando di formato forzerà l&#039;output a contenere il segno; quindi i numeri positivi saranno preceduti dal segno <code>+</code> (quelli negativi sono semper preceduti dal segno <code>-</code>).
+Inserendo uno spazio allora l&#039;output dei numeri positivi sarà preceduto da un singolo carattere spazio.
+</p>
+
+<p>
+Nella stringa di formato possono anche essere incluse le <a href="../../../escape_sequences" class="wikilink1" title="escape_sequences">sequenze di escape costanti</a>.
+</p>
+
+<p>
+Argomenti correlati: <a href="fprintf" class="wikilink1" title="it:io:c:fprintf">fprintf</a>, <a href="http://www.cppreference.com/wiki/it/io/c/puts" class="wikilink2" title="it:io:c:puts" rel="nofollow">puts</a>, <a href="http://www.cppreference.com/wiki/it/io/c/scanf" class="wikilink2" title="it:io:c:scanf" rel="nofollow">scanf</a>, <a href="http://www.cppreference.com/wiki/it/io/c/sprintf" class="wikilink2" title="it:io:c:sprintf" rel="nofollow">sprintf</a>
+</p>
+
+</div>
+<!-- EDIT4 SECTION "Modificatori di formattazione" [2178-] --></div>
+</body>
+</html>

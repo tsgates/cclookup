@@ -4,51 +4,116 @@
  lang="en" dir="ltr">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>stl:deque:resize</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
+  <title>container:deque:resize</title>
+<meta name="generator" content="DokuWiki" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2008-11-14T16:13:43-0800" />
-<meta name="keywords" content="stl,deque,resize" />
+<meta name="date" content="2010-10-28T18:17:33-0700" />
+<meta name="keywords" content="container,deque,resize" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/stl/deque/resize?do=index" title="Index" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/container/deque/resize?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
-<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=stl:deque" />
-<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/stl/deque/resize" />
-<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/stl/deque/resize" />
-<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=container:deque" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/container/deque/resize" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/container/deque/resize" />
+<link rel="canonical" href="resize" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='container:deque';var JSINFO = {"id":"container:deque:resize","namespace":"container:deque"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
 
+<ul class="toc">
+<li class="clear">
 
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="resize#resize" class="toc">resize</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="resize#parameters" class="toc">Parameters</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="resize#return_value" class="toc">Return value</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="resize#example" class="toc">Example</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="resize#complexity" class="toc">Complexity</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="resize#see_also" class="toc">See also</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
 
-<h2><a name="resize" id="resize">resize</a></h2>
+<h2 class="sectionedit1"><a name="resize" id="resize">resize</a></h2>
 <div class="level2">
 
 <p>
 Syntax:
 </p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;deque&gt;</span>
-    <span class="kw4">void</span> resize<span class="br0">&#40;</span> size_type num<span class="sy0">,</span> <span class="kw4">const</span> TYPE<span class="sy0">&amp;</span> val <span class="sy0">=</span> TYPE<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span>;</pre>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;deque&gt;</span>
+    <span class="kw4">void</span> resize<span class="br0">&#40;</span> size_type num, T val <span class="sy1">=</span> T<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span></pre>
 <p>
-The function resize() changes the size of the deque to size. If val is
+The function resize() changes the size of the deque to <code>num</code>. If <code>val</code> is
 specified then any newly-created elements will be initialized to have a value
-of val.
-</p>
-
-<p>
-This function runs in <a href="../../complexity" class="wikilink1" title="complexity">linear time</a>.
-</p>
-
-<p>
-Related Topics: <a href="size" class="wikilink1" title="stl:deque:size">size</a>
+of <code>val</code>.
 </p>
 
 </div>
-<!-- SECTION "resize" [3-] --></div>
+<!-- EDIT1 SECTION "resize" [2-281] -->
+<h3 class="sectionedit2"><a name="parameters" id="parameters">Parameters</a></h3>
+<div class="level3">
+
+<p>
+
+todo
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Parameters" [282-307] -->
+<h3 class="sectionedit3"><a name="return_value" id="return_value">Return value</a></h3>
+<div class="level3">
+
+<p>
+
+todo
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Return value" [308-335] -->
+<h3 class="sectionedit4"><a name="example" id="example">Example</a></h3>
+<div class="level3">
+
+<p>
+
+todo
+</p>
+
+</div>
+<!-- EDIT4 SECTION "Example" [336-358] -->
+<h3 class="sectionedit5"><a name="complexity" id="complexity">Complexity</a></h3>
+<div class="level3">
+
+<p>
+
+This function runs in <a href="../../complexity" class="wikilink1" title="complexity">linear time</a>.
+</p>
+
+</div>
+<!-- EDIT5 SECTION "Complexity" [359-430] -->
+<h3 class="sectionedit6"><a name="see_also" id="see_also">See also</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="size" class="wikilink1" title="container:deque:size">size</a>
+</p>
+
+</div>
+<!-- EDIT6 SECTION "See also" [431-] --></div>
 </body>
 </html>

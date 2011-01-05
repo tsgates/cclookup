@@ -4,39 +4,61 @@
  lang="en" dir="ltr">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>stl:algorithm:is_heap</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
+  <title>algorithm:is_heap</title>
+<meta name="generator" content="DokuWiki" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2008-10-14T15:42:05-0700" />
-<meta name="keywords" content="stl,algorithm,is_heap" />
+<meta name="date" content="2010-10-28T18:18:12-0700" />
+<meta name="keywords" content="algorithm,is_heap" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/stl/algorithm/is_heap?do=index" title="Index" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/algorithm/is_heap?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
-<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=stl:algorithm" />
-<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/stl/algorithm/is_heap" />
-<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/stl/algorithm/is_heap" />
-<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=algorithm" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/algorithm/is_heap" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/algorithm/is_heap" />
+<link rel="canonical" href="is_heap" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='algorithm';var JSINFO = {"id":"algorithm:is_heap","namespace":"algorithm"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
 
+<ul class="toc">
+<li class="clear">
 
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="is_heap#is_heap" class="toc">is_heap</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="is_heap#parameters" class="toc">Parameters</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="is_heap#return_value" class="toc">Return value</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="is_heap#complexity" class="toc">Complexity</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="is_heap#see_also" class="toc">See also</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
 
-<h2><a name="is_heap" id="is_heap">is_heap</a></h2>
+<h2 class="sectionedit1"><a name="is_heap" id="is_heap">is_heap</a></h2>
 <div class="level2">
 
 <p>
 Syntax:
 </p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;algorithm&gt;</span>
-    bool is_heap<span class="br0">&#40;</span> iterator start<span class="sy0">,</span> iterator end <span class="br0">&#41;</span>;
-    bool is_heap<span class="br0">&#40;</span> iterator start<span class="sy0">,</span> iterator end<span class="sy0">,</span> StrictWeakOrdering cmp <span class="br0">&#41;</span>;</pre>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;algorithm&gt;</span>
+    <span class="kw4">bool</span> is_heap<span class="br0">&#40;</span>iterator start, iterator end<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">bool</span> is_heap<span class="br0">&#40;</span>iterator start, iterator end, StrictWeakOrdering cmp<span class="br0">&#41;</span><span class="sy4">;</span></pre>
 <p>
-The is_heap() function returns true if the given range [start,end) is a heap.
+The <span class="curid"><a href="is_heap" class="wikilink1" title="algorithm:is_heap">is_heap</a></span>() function returns true if the given range [start,end) is a heap.
 </p>
 
 <p>
@@ -44,15 +66,48 @@ If the strict weak ordering comparison function object cmp is given, then it is
 used instead of the &lt; operator to compare elements.
 </p>
 
-<p>
-is_heap() runs in <a href="../../complexity" class="wikilink1" title="complexity">linear time</a>.
-</p>
+</div>
+<!-- EDIT1 SECTION "is_heap" [1-404] -->
+<h3 class="sectionedit2"><a name="parameters" id="parameters">Parameters</a></h3>
+<div class="level3">
 
 <p>
-Related Topics: <a href="make_heap" class="wikilink1" title="stl:algorithm:make_heap">make_heap</a>, <a href="pop_heap" class="wikilink1" title="stl:algorithm:pop_heap">pop_heap</a>, <a href="push_heap" class="wikilink1" title="stl:algorithm:push_heap">push_heap</a>, <a href="sort_heap" class="wikilink1" title="stl:algorithm:sort_heap">sort_heap</a>
+
+todo
 </p>
 
 </div>
-<!-- SECTION "is_heap" [3-] --></div>
+<!-- EDIT2 SECTION "Parameters" [405-430] -->
+<h3 class="sectionedit3"><a name="return_value" id="return_value">Return value</a></h3>
+<div class="level3">
+
+<p>
+
+todo
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Return value" [431-458] -->
+<h3 class="sectionedit4"><a name="complexity" id="complexity">Complexity</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="../../complexity" class="wikilink1" title="complexity">linear time</a>
+</p>
+
+</div>
+<!-- EDIT4 SECTION "Complexity" [459-507] -->
+<h3 class="sectionedit5"><a name="see_also" id="see_also">See also</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="make_heap" class="wikilink1" title="algorithm:make_heap">make_heap</a>, <a href="pop_heap" class="wikilink1" title="algorithm:pop_heap">pop_heap</a>, <a href="push_heap" class="wikilink1" title="algorithm:push_heap">push_heap</a>, <a href="sort_heap" class="wikilink1" title="algorithm:sort_heap">sort_heap</a>
+
+</p>
+
+</div>
+<!-- EDIT5 SECTION "See also" [508-] --></div>
 </body>
 </html>

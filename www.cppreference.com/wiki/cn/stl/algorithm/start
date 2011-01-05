@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn"
+ lang="cn" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>cn:algorithm:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:54-0700" />
+<meta name="keywords" content="cn,algorithm,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/cn/algorithm/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=cn:algorithm" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/cn/algorithm/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/cn/algorithm/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='cn:algorithm';var JSINFO = {"id":"cn:algorithm:start","namespace":"cn:algorithm"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="c_算法" id="c_算法">C++ 算法</a></h1>
+<div class="level1">
+
+<p>
+下列函数在&lt;algorithm&gt; 或者 &lt;numeric&gt;中定义，属于stl命名空间（namespace）。
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="../../algorithm/accumulate" class="wikilink1" title="cn:algorithm:accumulate">accumulate</a></td><td class="col1">将一段范围的元素累加</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="../../algorithm/adjacent_difference" class="wikilink1" title="cn:algorithm:adjacent_difference">adjacent_difference</a></td><td class="col1">计算一个范围相邻元素的差</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/adjacent_find" class="wikilink2" title="cn:algorithm:adjacent_find" rel="nofollow">adjacent_find</a></td><td class="col1">查找相同的两个相邻元素或者具有某种关系的两个相邻元素</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/binary_search" class="wikilink2" title="cn:algorithm:binary_search" rel="nofollow">binary_search</a></td><td class="col1">判断在某个范围是否存在某个元素</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/copy" class="wikilink2" title="cn:algorithm:copy" rel="nofollow">copy</a></td><td class="col1">把一段范围元素拷贝到另一个位置</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/copy_backward" class="wikilink2" title="cn:algorithm:copy_backward" rel="nofollow">copy_backward</a></td><td class="col1">把一段范围元素反向拷贝到另一个位置</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/count" class="wikilink2" title="cn:algorithm:count" rel="nofollow">count</a></td><td class="col1">返回匹配某个值的元素个数</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/count_if" class="wikilink2" title="cn:algorithm:count_if" rel="nofollow">count_if</a></td><td class="col1">返回满足某个条件的元素个数</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/equal" class="wikilink2" title="cn:algorithm:equal" rel="nofollow">equal</a></td><td class="col1">判断两个集合是否相等</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/equal_range" class="wikilink2" title="cn:algorithm:equal_range" rel="nofollow">equal_range</a></td><td class="col1">查找与某个值相等的一段元素</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/fill" class="wikilink2" title="cn:algorithm:fill" rel="nofollow">fill</a></td><td class="col1">将一个值赋给某一范围元素</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/fill_n" class="wikilink2" title="cn:algorithm:fill_n" rel="nofollow">fill_n</a></td><td class="col1">把某个值赋给某个范围一定数目的元素</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/find" class="wikilink2" title="cn:algorithm:find" rel="nofollow">find</a></td><td class="col1">在一个给定范围查找某个值</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/find_end" class="wikilink2" title="cn:algorithm:find_end" rel="nofollow">find_end</a></td><td class="col1">在某个范围查找某个元素序列</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/find_first_of" class="wikilink2" title="cn:algorithm:find_first_of" rel="nofollow">find_first_of</a></td><td class="col1">search for any one of a set of elements</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/find_if" class="wikilink2" title="cn:algorithm:find_if" rel="nofollow">find_if</a></td><td class="col1">find the first element for which a certain predicate is true</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/for_each" class="wikilink2" title="cn:algorithm:for_each" rel="nofollow">for_each</a></td><td class="col1">将一个函数应用于某个范围的元素</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/generate" class="wikilink2" title="cn:algorithm:generate" rel="nofollow">generate</a></td><td class="col1">saves the result of a function in a range</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/generate_n" class="wikilink2" title="cn:algorithm:generate_n" rel="nofollow">generate_n</a></td><td class="col1">saves the result of N applications of a function</td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/includes" class="wikilink2" title="cn:algorithm:includes" rel="nofollow">includes</a></td><td class="col1">returns true if one set is a subset of another</td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/inner_product" class="wikilink2" title="cn:algorithm:inner_product" rel="nofollow">inner_product</a></td><td class="col1">compute the inner product of two ranges of elements</td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/inplace_merge" class="wikilink2" title="cn:algorithm:inplace_merge" rel="nofollow">inplace_merge</a></td><td class="col1">merge two ordered ranges in-place</td>
+	</tr>
+	<tr class="row22">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/is_heap" class="wikilink2" title="cn:algorithm:is_heap" rel="nofollow">is_heap</a></td><td class="col1">判断一个范围的元素是否构成堆</td>
+	</tr>
+	<tr class="row23">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/iter_swap" class="wikilink2" title="cn:algorithm:iter_swap" rel="nofollow">iter_swap</a></td><td class="col1">swaps the elements pointed to by two iterators</td>
+	</tr>
+	<tr class="row24">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/lexicographical_compare" class="wikilink2" title="cn:algorithm:lexicographical_compare" rel="nofollow">lexicographical_compare</a></td><td class="col1">returns true if one range is lexicographically less than another</td>
+	</tr>
+	<tr class="row25">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/lower_bound" class="wikilink2" title="cn:algorithm:lower_bound" rel="nofollow">lower_bound</a></td><td class="col1">search for the first place that a value can be inserted while preserving order</td>
+	</tr>
+	<tr class="row26">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/make_heap" class="wikilink2" title="cn:algorithm:make_heap" rel="nofollow">make_heap</a></td><td class="col1">将某个范围元素构造为堆</td>
+	</tr>
+	<tr class="row27">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/max" class="wikilink2" title="cn:algorithm:max" rel="nofollow">max</a></td><td class="col1">返回两个元素中较大的元素</td>
+	</tr>
+	<tr class="row28">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/max_element" class="wikilink2" title="cn:algorithm:max_element" rel="nofollow">max_element</a></td><td class="col1">返回某个范围中最大的元素</td>
+	</tr>
+	<tr class="row29">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/merge" class="wikilink2" title="cn:algorithm:merge" rel="nofollow">merge</a></td><td class="col1">将两段有序元素序列合并成有序序列</td>
+	</tr>
+	<tr class="row30">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/min" class="wikilink2" title="cn:algorithm:min" rel="nofollow">min</a></td><td class="col1">returns the smaller of two elements</td>
+	</tr>
+	<tr class="row31">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/min_element" class="wikilink2" title="cn:algorithm:min_element" rel="nofollow">min_element</a></td><td class="col1">returns the smallest element in a range</td>
+	</tr>
+	<tr class="row32">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/mismatch" class="wikilink2" title="cn:algorithm:mismatch" rel="nofollow">mismatch</a></td><td class="col1">finds the first position where two ranges differ</td>
+	</tr>
+	<tr class="row33">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/next_permutation" class="wikilink2" title="cn:algorithm:next_permutation" rel="nofollow">next_permutation</a></td><td class="col1">generates the next greater lexicographic permutation of a range of elements</td>
+	</tr>
+	<tr class="row34">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/nth_element" class="wikilink2" title="cn:algorithm:nth_element" rel="nofollow">nth_element</a></td><td class="col1">put one element in its sorted location and make sure that no elements to its left are greater than any elements to its right</td>
+	</tr>
+	<tr class="row35">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/partial_sort" class="wikilink2" title="cn:algorithm:partial_sort" rel="nofollow">partial_sort</a></td><td class="col1">将某个范围的前N个元素排序</td>
+	</tr>
+	<tr class="row36">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/partial_sort_copy" class="wikilink2" title="cn:algorithm:partial_sort_copy" rel="nofollow">partial_sort_copy</a></td><td class="col1">copy and partially sort a range of elements</td>
+	</tr>
+	<tr class="row37">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/partial_sum" class="wikilink2" title="cn:algorithm:partial_sum" rel="nofollow">partial_sum</a></td><td class="col1">compute the partial sum of a range of elements</td>
+	</tr>
+	<tr class="row38">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/partition" class="wikilink2" title="cn:algorithm:partition" rel="nofollow">partition</a></td><td class="col1">将某段范围元素分为两组</td>
+	</tr>
+	<tr class="row39">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/pop_heap" class="wikilink2" title="cn:algorithm:pop_heap" rel="nofollow">pop_heap</a></td><td class="col1">将堆的最大元素删除</td>
+	</tr>
+	<tr class="row40">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/prev_permutation" class="wikilink2" title="cn:algorithm:prev_permutation" rel="nofollow">prev_permutation</a></td><td class="col1">generates the next smaller lexicographic permutation of a range of elements</td>
+	</tr>
+	<tr class="row41">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/push_heap" class="wikilink2" title="cn:algorithm:push_heap" rel="nofollow">push_heap</a></td><td class="col1">在堆中添加一个元素</td>
+	</tr>
+	<tr class="row42">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/random_shuffle" class="wikilink2" title="cn:algorithm:random_shuffle" rel="nofollow">random_shuffle</a></td><td class="col1">randomly re-order elements in some range</td>
+	</tr>
+	<tr class="row43">
+		<td class="col0"><a href="remove" class="wikilink1" title="cn:algorithm:remove">remove</a></td><td class="col1">remove elements equal to certain value</td>
+	</tr>
+	<tr class="row44">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/remove_copy" class="wikilink2" title="cn:algorithm:remove_copy" rel="nofollow">remove_copy</a></td><td class="col1">copy a range of elements omitting those that match a certain value</td>
+	</tr>
+	<tr class="row45">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/remove_copy_if" class="wikilink2" title="cn:algorithm:remove_copy_if" rel="nofollow">remove_copy_if</a></td><td class="col1">create a copy of a range of elements, omitting any for which a predicate is true</td>
+	</tr>
+	<tr class="row46">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/remove_if" class="wikilink2" title="cn:algorithm:remove_if" rel="nofollow">remove_if</a></td><td class="col1">remove all elements for which a predicate is true</td>
+	</tr>
+	<tr class="row47">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/replace" class="wikilink2" title="cn:algorithm:replace" rel="nofollow">replace</a></td><td class="col1">replace every occurrence of some value in a range with another value</td>
+	</tr>
+	<tr class="row48">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/replace_copy" class="wikilink2" title="cn:algorithm:replace_copy" rel="nofollow">replace_copy</a></td><td class="col1">copy a range, replacing certain elements with new ones</td>
+	</tr>
+	<tr class="row49">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/replace_copy_if" class="wikilink2" title="cn:algorithm:replace_copy_if" rel="nofollow">replace_copy_if</a></td><td class="col1">copy a range of elements, replacing those for which a predicate is true</td>
+	</tr>
+	<tr class="row50">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/replace_if" class="wikilink2" title="cn:algorithm:replace_if" rel="nofollow">replace_if</a></td><td class="col1">change the values of elements for which a predicate is true</td>
+	</tr>
+	<tr class="row51">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/reverse" class="wikilink2" title="cn:algorithm:reverse" rel="nofollow">reverse</a></td><td class="col1">reverse elements in some range</td>
+	</tr>
+	<tr class="row52">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/reverse_copy" class="wikilink2" title="cn:algorithm:reverse_copy" rel="nofollow">reverse_copy</a></td><td class="col1">create a copy of a range that is reversed</td>
+	</tr>
+	<tr class="row53">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/rotate" class="wikilink2" title="cn:algorithm:rotate" rel="nofollow">rotate</a></td><td class="col1">move the elements in some range to the left by some amount</td>
+	</tr>
+	<tr class="row54">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/rotate_copy" class="wikilink2" title="cn:algorithm:rotate_copy" rel="nofollow">rotate_copy</a></td><td class="col1">copy and rotate a range of elements</td>
+	</tr>
+	<tr class="row55">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/search" class="wikilink2" title="cn:algorithm:search" rel="nofollow">search</a></td><td class="col1">search for a range of elements</td>
+	</tr>
+	<tr class="row56">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/search_n" class="wikilink2" title="cn:algorithm:search_n" rel="nofollow">search_n</a></td><td class="col1">search for N consecutive copies of an element in some range</td>
+	</tr>
+	<tr class="row57">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/set_difference" class="wikilink2" title="cn:algorithm:set_difference" rel="nofollow">set_difference</a></td><td class="col1">computes the difference between two sets</td>
+	</tr>
+	<tr class="row58">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/set_intersection" class="wikilink2" title="cn:algorithm:set_intersection" rel="nofollow">set_intersection</a></td><td class="col1">computes the intersection of two sets</td>
+	</tr>
+	<tr class="row59">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/set_symmetric_difference" class="wikilink2" title="cn:algorithm:set_symmetric_difference" rel="nofollow">set_symmetric_difference</a></td><td class="col1">computes the symmetric difference between two sets</td>
+	</tr>
+	<tr class="row60">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/set_union" class="wikilink2" title="cn:algorithm:set_union" rel="nofollow">set_union</a></td><td class="col1">computes the union of two sets</td>
+	</tr>
+	<tr class="row61">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/sort" class="wikilink2" title="cn:algorithm:sort" rel="nofollow">sort</a></td><td class="col1">将某段元素按照递增序排序</td>
+	</tr>
+	<tr class="row62">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/sort_heap" class="wikilink2" title="cn:algorithm:sort_heap" rel="nofollow">sort_heap</a></td><td class="col1">将一个堆排序</td>
+	</tr>
+	<tr class="row63">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/stable_partition" class="wikilink2" title="cn:algorithm:stable_partition" rel="nofollow">stable_partition</a></td><td class="col1">divide elements into two groups while preserving their relative order</td>
+	</tr>
+	<tr class="row64">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/stable_sort" class="wikilink2" title="cn:algorithm:stable_sort" rel="nofollow">stable_sort</a></td><td class="col1">稳定的排序</td>
+	</tr>
+	<tr class="row65">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/swap" class="wikilink2" title="cn:algorithm:swap" rel="nofollow">swap</a></td><td class="col1">swap the values of two objects</td>
+	</tr>
+	<tr class="row66">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/swap_ranges" class="wikilink2" title="cn:algorithm:swap_ranges" rel="nofollow">swap_ranges</a></td><td class="col1">swaps two ranges of elements</td>
+	</tr>
+	<tr class="row67">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/transform" class="wikilink2" title="cn:algorithm:transform" rel="nofollow">transform</a></td><td class="col1">applies a function to a range of elements</td>
+	</tr>
+	<tr class="row68">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/unique" class="wikilink2" title="cn:algorithm:unique" rel="nofollow">unique</a></td><td class="col1">删除连续重复出现的元素</td>
+	</tr>
+	<tr class="row69">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/unique_copy" class="wikilink2" title="cn:algorithm:unique_copy" rel="nofollow">unique_copy</a></td><td class="col1">creates a copy of some range of elements that contains no consecutive duplicates</td>
+	</tr>
+	<tr class="row70">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/algorithm/upper_bound" class="wikilink2" title="cn:algorithm:upper_bound" rel="nofollow">upper_bound</a></td><td class="col1">searches for the last place that a value can be inserted while preserving order (first place that is greater than the value)</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [129-4766] -->
+</div>
+</div>
+</body>
+</html>

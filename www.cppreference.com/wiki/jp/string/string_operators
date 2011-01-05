@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:string:string_operators</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:17-0700" />
+<meta name="keywords" content="jp,string,string_operators" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/string/string_operators?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp:string" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/string/string_operators" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/string/string_operators" />
+<link rel="canonical" href="string_operators" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp:string';var JSINFO = {"id":"jp:string:string_operators","namespace":"jp:string"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="string_演算子" id="string_演算子">String 演算子</a></h2>
+<div class="level2">
+
+<p>
+Syntax:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;string&gt;</span>
+    <span class="kw4">bool</span> operator<span class="sy1">==</span><span class="br0">&#40;</span><span class="kw4">const</span> string<span class="sy3">&amp;</span> c1, <span class="kw4">const</span> string<span class="sy3">&amp;</span> c2<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">bool</span> operator<span class="sy3">!</span><span class="sy1">=</span><span class="br0">&#40;</span><span class="kw4">const</span> string<span class="sy3">&amp;</span> c1, <span class="kw4">const</span> string<span class="sy3">&amp;</span> c2<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">bool</span> operator<span class="sy1">&lt;</span><span class="br0">&#40;</span><span class="kw4">const</span> string<span class="sy3">&amp;</span> c1, <span class="kw4">const</span> string<span class="sy3">&amp;</span> c2<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">bool</span> operator<span class="sy1">&gt;</span><span class="br0">&#40;</span><span class="kw4">const</span> string<span class="sy3">&amp;</span> c1, <span class="kw4">const</span> string<span class="sy3">&amp;</span> c2<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">bool</span> operator<span class="sy1">&lt;=</span><span class="br0">&#40;</span><span class="kw4">const</span> string<span class="sy3">&amp;</span> c1, <span class="kw4">const</span> string<span class="sy3">&amp;</span> c2<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">bool</span> operator<span class="sy1">&gt;=</span><span class="br0">&#40;</span><span class="kw4">const</span> string<span class="sy3">&amp;</span> c1, <span class="kw4">const</span> string<span class="sy3">&amp;</span> c2<span class="br0">&#41;</span><span class="sy4">;</span>
+    string operator<span class="sy2">+</span><span class="br0">&#40;</span><span class="kw4">const</span> string<span class="sy3">&amp;</span> s1, <span class="kw4">const</span> string<span class="sy3">&amp;</span> s2 <span class="br0">&#41;</span><span class="sy4">;</span>
+    string operator<span class="sy2">+</span><span class="br0">&#40;</span><span class="kw4">const</span> Char<span class="sy2">*</span> s, <span class="kw4">const</span> string<span class="sy3">&amp;</span> s2 <span class="br0">&#41;</span><span class="sy4">;</span>
+    string operator<span class="sy2">+</span><span class="br0">&#40;</span> Char c, <span class="kw4">const</span> string<span class="sy3">&amp;</span> s2 <span class="br0">&#41;</span><span class="sy4">;</span>
+    string operator<span class="sy2">+</span><span class="br0">&#40;</span> <span class="kw4">const</span> string<span class="sy3">&amp;</span> s1, <span class="kw4">const</span> Char<span class="sy2">*</span> s <span class="br0">&#41;</span><span class="sy4">;</span>
+    string operator<span class="sy2">+</span><span class="br0">&#40;</span> <span class="kw4">const</span> string<span class="sy3">&amp;</span> s1, Char c <span class="br0">&#41;</span><span class="sy4">;</span>
+    string<span class="sy3">&amp;</span> operator<span class="sy2">+</span><span class="sy1">=</span><span class="br0">&#40;</span><span class="kw4">const</span> string<span class="sy3">&amp;</span> append<span class="br0">&#41;</span><span class="sy4">;</span>
+    string<span class="sy3">&amp;</span> operator<span class="sy2">+</span><span class="sy1">=</span><span class="br0">&#40;</span><span class="kw4">const</span> Char<span class="sy2">*</span> append<span class="br0">&#41;</span><span class="sy4">;</span>
+    string<span class="sy3">&amp;</span> operator<span class="sy2">+</span><span class="sy1">=</span><span class="br0">&#40;</span><span class="kw4">const</span> Char  append<span class="br0">&#41;</span><span class="sy4">;</span>
+    ostream<span class="sy3">&amp;</span> operator<span class="sy1">&lt;&lt;</span><span class="br0">&#40;</span> ostream<span class="sy3">&amp;</span> os, <span class="kw4">const</span> string<span class="sy3">&amp;</span> s <span class="br0">&#41;</span><span class="sy4">;</span>
+    istream<span class="sy3">&amp;</span> operator<span class="sy1">&gt;&gt;</span><span class="br0">&#40;</span> istream<span class="sy3">&amp;</span> is, string<span class="sy3">&amp;</span> s <span class="br0">&#41;</span><span class="sy4">;</span>
+    string<span class="sy3">&amp;</span> operator<span class="sy1">=</span><span class="br0">&#40;</span> <span class="kw4">const</span> string<span class="sy3">&amp;</span> s <span class="br0">&#41;</span><span class="sy4">;</span>
+    string<span class="sy3">&amp;</span> operator<span class="sy1">=</span><span class="br0">&#40;</span> <span class="kw4">const</span> Char<span class="sy2">*</span> s <span class="br0">&#41;</span><span class="sy4">;</span>
+    string<span class="sy3">&amp;</span> operator<span class="sy1">=</span><span class="br0">&#40;</span> Char ch <span class="br0">&#41;</span><span class="sy4">;</span>
+    Char<span class="sy3">&amp;</span> operator<span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#40;</span> size_type index <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">const</span> Char<span class="sy3">&amp;</span> operator<span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#40;</span> size_type index <span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span></pre><blockquote><div class="no">
+C++ strings can be compared and assigned with the standard comparison<br/>
+operators: ==, !=, &lt;=, &gt;=, &lt;, &gt;, and =. Performing a comparison or assigning<br/>
+one string to another takes <a href="../../complexity" class="wikilink1" title="complexity">linear time</a>.</div></blockquote>
+
+<p>
+
+C++ 文字列(string) は、標準の比較演算子 (==, !=, &lt;=, &gt;=, &lt;, &gt;) と = 演算子によって、比較と代入(assign)が可能です。
+ある文字列から別の文字列への比較や代入にかかる計算量は 線形時間(<a href="../../complexity" class="wikilink1" title="complexity">linear time</a>) です。
+
+</p>
+<blockquote><div class="no">
+Two strings are equal if:<br/>
+<br/>
+  - Their size is the same, and<br/>
+  - Each member in location i in one string is equal to the the member in location i in the other string.</div></blockquote>
+
+<p>
+
+二つの文字列は次の場合に等しいです:
+
+</p>
+<ol>
+<li class="level1"><div class="li"> サイズが等しい</div>
+</li>
+<li class="level1"><div class="li"> すべての i について、 片方の文字列の i 番目のメンバが、他方の文字列の i 番目のメンバと等しい</div>
+</li>
+</ol>
+<blockquote><div class="no">
+Comparisons among strings are done lexicographically.</div></blockquote>
+
+<p>
+
+文字列の比較は lexicographically に行われます。
+
+</p>
+<blockquote><div class="no">
+In addition to the normal container operators, strings can also be concatenated<br/>
+with the + operator and fed to the <a href="../../io/start" class="wikilink1" title="io:start">C++ I/O stream classes</a> with the &lt;&lt; and &gt;&gt;<br/>
+operators.</div></blockquote>
+
+<p>
+
+通常のコンテナ演算子に加えて、文字列は + 演算子による結合と、&lt;&lt;, &gt;&gt; 演算しによる <a href="../../io/start" class="wikilink1" title="io:start">C++ I/O stream classes</a> への送受信が可能です。 (訳者メモ: feed を送受信と訳して良いか？)
+
+</p>
+<blockquote><div class="no">
+For example, the following code concatenates two strings and displays the<br/>
+result:</div></blockquote>
+
+<p>
+
+たとえば、次のコードは二つの文字列を結合してその結果を表示します:
+</p>
+<pre class="cpp code cpp">   string s1 <span class="sy1">=</span> <span class="st0">&quot;Now is the time...&quot;</span><span class="sy4">;</span>
+   string s2 <span class="sy1">=</span> <span class="st0">&quot;for all good men...&quot;</span><span class="sy4">;</span>
+   string s3 <span class="sy1">=</span> s1 <span class="sy2">+</span> s2<span class="sy4">;</span>
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;s3 is &quot;</span> <span class="sy1">&lt;&lt;</span> s3 <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre><blockquote><div class="no">
+Furthermore, strings can be assigned values that are other strings, character<br/>
+arrays, or even single characters. The following code is perfectly valid:</div></blockquote>
+
+<p>
+
+加えて、文字列への代入は文字列から以外にも、文字の配列や単一の文字からも可能です。
+次のコードは perfectly valid です。
+</p>
+<pre class="cpp code cpp">   <span class="kw4">char</span> ch <span class="sy1">=</span> <span class="st0">'N'</span><span class="sy4">;</span>
+   string s<span class="sy4">;</span>
+   s <span class="sy1">=</span> ch<span class="sy4">;</span></pre><blockquote><div class="no">
+Individual characters of a string can be examined with the [] operator, which<br/>
+runs in <a href="../../complexity" class="wikilink1" title="complexity">constant time</a>.</div></blockquote>
+
+<p>
+
+文字列の中の各文字は [] 演算子で参照できます。これは 定数時間(<a href="../../complexity" class="wikilink1" title="complexity">constant time</a>) です。
+</p>
+
+<p>
+Related Topics: <a href="c_str" class="wikilink1" title="jp:string:c_str">c_str</a>, <a href="compare" class="wikilink1" title="jp:string:compare">compare</a>, <a href="data" class="wikilink1" title="jp:string:data">data</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

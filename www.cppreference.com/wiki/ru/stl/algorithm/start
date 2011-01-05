@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru"
+ lang="ru" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>ru:algorithm:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:13-0700" />
+<meta name="keywords" content="ru,algorithm,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/ru/algorithm/start?do=index" title="Все страницы" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=ru:algorithm" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/ru/algorithm/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/ru/algorithm/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='ru:algorithm';var JSINFO = {"id":"ru:algorithm:start","namespace":"ru:algorithm"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="алгоритмы_c" id="алгоритмы_c">Алгоритмы C++</a></h1>
+<div class="level1">
+
+<p>
+Следующие функции определены в &lt;algorithm&gt; или &lt;numeric&gt;, и являются составляющими пространства имен std.
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="accumulate" class="wikilink1" title="ru:algorithm:accumulate">accumulate</a></td><td class="col1">складывает диапазон элементов</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="adjacent_difference" class="wikilink1" title="ru:algorithm:adjacent_difference">adjacent_difference</a></td><td class="col1">считает разницу между смежными элементами диапазона</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="adjacent_find" class="wikilink1" title="ru:algorithm:adjacent_find">adjacent_find</a></td><td class="col1">находит два идентичных (или имеющих другое отношение) элемента, смежных друг с другом</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="binary_search" class="wikilink1" title="ru:algorithm:binary_search">binary_search</a></td><td class="col1">определяет, присутствует ли элемент в некотором диапазоне</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="copy" class="wikilink1" title="ru:algorithm:copy">copy</a></td><td class="col1">копирует некоторый диапазон элементов в новое место</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="copy_backward" class="wikilink1" title="ru:algorithm:copy_backward">copy_backward</a></td><td class="col1">копирует диапазон элементов в обратном порядке</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="count" class="wikilink1" title="ru:algorithm:count">count</a></td><td class="col1">возвращает количество элементов, соответствующее данному значению</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="count_if" class="wikilink1" title="ru:algorithm:count_if">count_if</a></td><td class="col1">возвращает количество элементов, для которых предикат является истиной</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="equal" class="wikilink1" title="ru:algorithm:equal">equal</a></td><td class="col1">определяет, одинаковы ли два множества элементов</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="equal_range" class="wikilink1" title="ru:algorithm:equal_range">equal_range</a></td><td class="col1">ищет диапазон элементов, равных определенному элементу</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="fill" class="wikilink1" title="ru:algorithm:fill">fill</a></td><td class="col1">присваивает диапазону элементов определенное значение</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="fill_n" class="wikilink1" title="ru:algorithm:fill_n">fill_n</a></td><td class="col1">присваивает значение некоторому количеству элементов</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><a href="find" class="wikilink1" title="ru:algorithm:find">find</a></td><td class="col1">находит значение в данном диапазоне</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><a href="find_end" class="wikilink1" title="ru:algorithm:find_end">find_end</a></td><td class="col1">находит последнюю последовательность элеметов в определенном диапазоне</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><a href="find_first_of" class="wikilink1" title="ru:algorithm:find_first_of">find_first_of</a></td><td class="col1">ищет первое вхождение элемента во множестве элементов</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><a href="find_if" class="wikilink1" title="ru:algorithm:find_if">find_if</a></td><td class="col1">ищет первое вхождение элемента, для которого верен определенный предикат</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><a href="for_each" class="wikilink1" title="ru:algorithm:for_each">for_each</a></td><td class="col1">применяет функцию к диапазону элементов</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><a href="generate" class="wikilink1" title="ru:algorithm:generate">generate</a></td><td class="col1">сохраняет результат функции в диапазоне</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"><a href="generate_n" class="wikilink1" title="ru:algorithm:generate_n">generate_n</a></td><td class="col1">сохраняет результат N применений функции</td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"><a href="includes" class="wikilink1" title="ru:algorithm:includes">includes</a></td><td class="col1">возвращает истину, если одно общество является подмножеством другого</td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"><a href="inner_product" class="wikilink1" title="ru:algorithm:inner_product">inner_product</a></td><td class="col1">считает внутренний продукт двух диапазонов элементов</td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"><a href="inplace_merge" class="wikilink1" title="ru:algorithm:inplace_merge">inplace_merge</a></td><td class="col1">производит слияние двух упарядоченных диапазонов, сохраняя результат в них</td>
+	</tr>
+	<tr class="row22">
+		<td class="col0"><a href="is_heap" class="wikilink1" title="ru:algorithm:is_heap">is_heap</a></td><td class="col1">возвращает истину, если данный диапазон является кучей</td>
+	</tr>
+	<tr class="row23">
+		<td class="col0"><a href="iter_swap" class="wikilink1" title="ru:algorithm:iter_swap">iter_swap</a></td><td class="col1">меняет местами элементы, обозначенные двумя итераторами</td>
+	</tr>
+	<tr class="row24">
+		<td class="col0"><a href="lexicographical_compare" class="wikilink1" title="ru:algorithm:lexicographical_compare">lexicographical_compare</a></td><td class="col1">возвращает истину, если один диапазон лексикографически меньше, чем другой</td>
+	</tr>
+	<tr class="row25">
+		<td class="col0"><a href="lower_bound" class="wikilink1" title="ru:algorithm:lower_bound">lower_bound</a></td><td class="col1">ищет первое место в диапазоне, в которое можно вставить значение, сохраняя упорядоченность</td>
+	</tr>
+	<tr class="row26">
+		<td class="col0"><a href="make_heap" class="wikilink1" title="ru:algorithm:make_heap">make_heap</a></td><td class="col1">создает кучу из диапазона элементов</td>
+	</tr>
+	<tr class="row27">
+		<td class="col0"><a href="max" class="wikilink1" title="ru:algorithm:max">max</a></td><td class="col1">возвращает больший из двух элементов</td>
+	</tr>
+	<tr class="row28">
+		<td class="col0"><a href="max_element" class="wikilink1" title="ru:algorithm:max_element">max_element</a></td><td class="col1">возвращает наибольший элемент в диапазоне</td>
+	</tr>
+	<tr class="row29">
+		<td class="col0"><a href="merge" class="wikilink1" title="ru:algorithm:merge">merge</a></td><td class="col1">производит слияние двух упорядоченных диапазонов</td>
+	</tr>
+	<tr class="row30">
+		<td class="col0"><a href="min" class="wikilink1" title="ru:algorithm:min">min</a></td><td class="col1">возвращает меньший из двух элементов</td>
+	</tr>
+	<tr class="row31">
+		<td class="col0"><a href="min_element" class="wikilink1" title="ru:algorithm:min_element">min_element</a></td><td class="col1">возвращает наименьший элемент в диапазоне</td>
+	</tr>
+	<tr class="row32">
+		<td class="col0"><a href="mismatch" class="wikilink1" title="ru:algorithm:mismatch">mismatch</a></td><td class="col1">находит первую позицию, в которой два диапазона различны</td>
+	</tr>
+	<tr class="row33">
+		<td class="col0"><a href="next_permutation" class="wikilink1" title="ru:algorithm:next_permutation">next_permutation</a></td><td class="col1">получает следующую в лексикографическом порядке перестановку элементов диапазона</td>
+	</tr>
+	<tr class="row34">
+		<td class="col0"><a href="nth_element" class="wikilink1" title="ru:algorithm:nth_element">nth_element</a></td><td class="col1">вставляет элемент диапазон, сохраняя упорядоченность, и проверяет, что нет элементов,  для которых элемент слева больше чем лемент справа</td>
+	</tr>
+	<tr class="row35">
+		<td class="col0"><a href="partial_sort" class="wikilink1" title="ru:algorithm:partial_sort">partial_sort</a></td><td class="col1">сортирует первые N элементов диапазона</td>
+	</tr>
+	<tr class="row36">
+		<td class="col0"><a href="partial_sort_copy" class="wikilink1" title="ru:algorithm:partial_sort_copy">partial_sort_copy</a></td><td class="col1">копирует и частично сортирует диапазон элементов</td>
+	</tr>
+	<tr class="row37">
+		<td class="col0"><a href="partial_sum" class="wikilink1" title="ru:algorithm:partial_sum">partial_sum</a></td><td class="col1">считает частичную сумму диапазона элементов</td>
+	</tr>
+	<tr class="row38">
+		<td class="col0"><a href="partition" class="wikilink1" title="ru:algorithm:partition">partition</a></td><td class="col1">делит диапазон элементов на две группы</td>
+	</tr>
+	<tr class="row39">
+		<td class="col0"><a href="pop_heap" class="wikilink1" title="ru:algorithm:pop_heap">pop_heap</a></td><td class="col1">удаляет наибольший элемент из кучи</td>
+	</tr>
+	<tr class="row40">
+		<td class="col0"><a href="prev_permutation" class="wikilink1" title="ru:algorithm:prev_permutation">prev_permutation</a></td><td class="col1">получает следующую в лексикографическом порядке перестановку элементов диапазона</td>
+	</tr>
+	<tr class="row41">
+		<td class="col0"><a href="push_heap" class="wikilink1" title="ru:algorithm:push_heap">push_heap</a></td><td class="col1">добавляет элемент в кучу</td>
+	</tr>
+	<tr class="row42">
+		<td class="col0"><a href="random_shuffle" class="wikilink1" title="ru:algorithm:random_shuffle">random_shuffle</a></td><td class="col1">случайное перемешивание элементов диапазона</td>
+	</tr>
+	<tr class="row43">
+		<td class="col0"><a href="remove" class="wikilink1" title="ru:algorithm:remove">remove</a></td><td class="col1">удаляет элемент, равный определенному значению</td>
+	</tr>
+	<tr class="row44">
+		<td class="col0"><a href="remove_copy" class="wikilink1" title="ru:algorithm:remove_copy">remove_copy</a></td><td class="col1">копирует диапазон элементов,  за исключением элементов, равных определенному значению</td>
+	</tr>
+	<tr class="row45">
+		<td class="col0"><a href="remove_copy_if" class="wikilink1" title="ru:algorithm:remove_copy_if">remove_copy_if</a></td><td class="col1">создает копию диапазона, за исключением элементов, для которых предикат является истинным</td>
+	</tr>
+	<tr class="row46">
+		<td class="col0"><a href="remove_if" class="wikilink1" title="ru:algorithm:remove_if">remove_if</a></td><td class="col1">удаляет все элементы, для которых предикат является истинным</td>
+	</tr>
+	<tr class="row47">
+		<td class="col0"><a href="replace" class="wikilink1" title="ru:algorithm:replace">replace</a></td><td class="col1">заменяет каждое вхождение некоторого значения в диапазоне другим значением</td>
+	</tr>
+	<tr class="row48">
+		<td class="col0"><a href="replace_copy" class="wikilink1" title="ru:algorithm:replace_copy">replace_copy</a></td><td class="col1">копирует диапазон, заменяя определенные значения новыми</td>
+	</tr>
+	<tr class="row49">
+		<td class="col0"><a href="replace_copy_if" class="wikilink1" title="ru:algorithm:replace_copy_if">replace_copy_if</a></td><td class="col1">копирует диапазон значений, заменяя те, для которых предикат является истинным</td>
+	</tr>
+	<tr class="row50">
+		<td class="col0"><a href="replace_if" class="wikilink1" title="ru:algorithm:replace_if">replace_if</a></td><td class="col1">заменяет значения тех элементов, для которых предикат является истинным</td>
+	</tr>
+	<tr class="row51">
+		<td class="col0"><a href="reverse" class="wikilink1" title="ru:algorithm:reverse">reverse</a></td><td class="col1">изменяет порядок следования элементов некоторого множества на обратный</td>
+	</tr>
+	<tr class="row52">
+		<td class="col0"><a href="reverse_copy" class="wikilink1" title="ru:algorithm:reverse_copy">reverse_copy</a></td><td class="col1">создает копию некоторого диапазона, изменяя порядок следования элементов на обратный</td>
+	</tr>
+	<tr class="row53">
+		<td class="col0"><a href="rotate" class="wikilink1" title="ru:algorithm:rotate">rotate</a></td><td class="col1">двигает элементы множества влево на некоторое количество позиций</td>
+	</tr>
+	<tr class="row54">
+		<td class="col0"><a href="rotate_copy" class="wikilink1" title="ru:algorithm:rotate_copy">rotate_copy</a></td><td class="col1">копирует и диапазон, сдвигая все его элементы на некоторое количество позиций</td>
+	</tr>
+	<tr class="row55">
+		<td class="col0"><a href="search" class="wikilink1" title="ru:algorithm:search">search</a></td><td class="col1">производит поиск в диапазоне элементов</td>
+	</tr>
+	<tr class="row56">
+		<td class="col0"><a href="search_n" class="wikilink1" title="ru:algorithm:search_n">search_n</a></td><td class="col1">ищет N последовательных копий элемента в диапазоне</td>
+	</tr>
+	<tr class="row57">
+		<td class="col0"><a href="set_difference" class="wikilink1" title="ru:algorithm:set_difference">set_difference</a></td><td class="col1">считает разницу между двумя множествами</td>
+	</tr>
+	<tr class="row58">
+		<td class="col0"><a href="set_intersection" class="wikilink1" title="ru:algorithm:set_intersection">set_intersection</a></td><td class="col1">считает пересечение двух множеств</td>
+	</tr>
+	<tr class="row59">
+		<td class="col0"><a href="set_symmetric_difference" class="wikilink1" title="ru:algorithm:set_symmetric_difference">set_symmetric_difference</a></td><td class="col1">считает симметричную разность между двумя множествами</td>
+	</tr>
+	<tr class="row60">
+		<td class="col0"><a href="set_union" class="wikilink1" title="ru:algorithm:set_union">set_union</a></td><td class="col1">вычисляет объединение двух множеств</td>
+	</tr>
+	<tr class="row61">
+		<td class="col0"><a href="sort" class="wikilink1" title="ru:algorithm:sort">sort</a></td><td class="col1">сортирует диапазон по возрастанию</td>
+	</tr>
+	<tr class="row62">
+		<td class="col0"><a href="sort_heap" class="wikilink1" title="ru:algorithm:sort_heap">sort_heap</a></td><td class="col1">превращает кучу в упорядоченный диапазон</td>
+	</tr>
+	<tr class="row63">
+		<td class="col0"><a href="stable_partition" class="wikilink1" title="ru:algorithm:stable_partition">stable_partition</a></td><td class="col1">делит элементы на две группы, сохраняя их относительный порядок</td>
+	</tr>
+	<tr class="row64">
+		<td class="col0"><a href="stable_sort" class="wikilink1" title="ru:algorithm:stable_sort">stable_sort</a></td><td class="col1">сортирует диапазон элементов, сохраняя относительное положение между равными элементами</td>
+	</tr>
+	<tr class="row65">
+		<td class="col0"><a href="swap" class="wikilink1" title="ru:algorithm:swap">swap</a></td><td class="col1">меняет местами значения двух объектов</td>
+	</tr>
+	<tr class="row66">
+		<td class="col0"><a href="swap_ranges" class="wikilink1" title="ru:algorithm:swap_ranges">swap_ranges</a></td><td class="col1">меняет местами два диапазона элементов</td>
+	</tr>
+	<tr class="row67">
+		<td class="col0"><a href="transform" class="wikilink1" title="ru:algorithm:transform">transform</a></td><td class="col1">применяет функцию к диапазону элементов</td>
+	</tr>
+	<tr class="row68">
+		<td class="col0"><a href="unique" class="wikilink1" title="ru:algorithm:unique">unique</a></td><td class="col1">удаляет дупликаты элементов в диапазоне</td>
+	</tr>
+	<tr class="row69">
+		<td class="col0"><a href="unique_copy" class="wikilink1" title="ru:algorithm:unique_copy">unique_copy</a></td><td class="col1">создает копию диапазона, которая не содержит дупликатов элементов</td>
+	</tr>
+	<tr class="row70">
+		<td class="col0"><a href="upper_bound" class="wikilink1" title="ru:algorithm:upper_bound">upper_bound</a></td><td class="col1">ищет последнее место, куда можно вставить значения, сохраняя упорядоченность (первое место, в котором элемент больше чем вставляемое значение)</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [219-9069] -->
+</div>
+</div>
+</body>
+</html>

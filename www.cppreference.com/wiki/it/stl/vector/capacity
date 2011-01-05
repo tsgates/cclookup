@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it"
+ lang="it" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>it:container:vector:capacity</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:08-0700" />
+<meta name="keywords" content="it,container,vector,capacity" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/it/container/vector/capacity?do=index" title="Indice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=it:container:vector" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/it/container/vector/capacity" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/it/container/vector/capacity" />
+<link rel="canonical" href="capacity" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='it:container:vector';var JSINFO = {"id":"it:container:vector:capacity","namespace":"it:container:vector"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="capacity" id="capacity">capacity</a></h2>
+<div class="level2">
+
+<p>
+Sintassi:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;vector&gt;</span>
+    size_type capacity<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span></pre>
+<p>
+The funzione capacity() ritorna il numero di elementi che un vettore può contenere
+senza allocare nuova memoria.
+</p>
+
+<p>
+Esempio, il codice seguente usa due metodi differenti per impostare la capacità
+di due vettori. Un metodo passa un argomento al costruttire che inizializza il vettore
+con 10 elementi di valore 0, mentre il secondo metodo chiama la funzione &#039;reserve&#039;. 
+Comunque la vera dimensione del vettore rimane zero.
+</p>
+<pre class="cpp code cpp">   vector<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> v1<span class="br0">&#40;</span><span class="nu0">10</span><span class="br0">&#41;</span><span class="sy4">;</span>
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;The capacity of v1 is &quot;</span> <span class="sy1">&lt;&lt;</span> v1.<span class="me1">capacity</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;The size of v1 is &quot;</span> <span class="sy1">&lt;&lt;</span> v1.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+   vector<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> v2<span class="sy4">;</span>
+   v2.<span class="me1">reserve</span><span class="br0">&#40;</span><span class="nu0">20</span><span class="br0">&#41;</span><span class="sy4">;</span>
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;The capacity of v2 is &quot;</span> <span class="sy1">&lt;&lt;</span> v2.<span class="me1">capacity</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;The size of v2 is &quot;</span> <span class="sy1">&lt;&lt;</span> v2.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
+<p>
+Una volta compilato e fatto eseguire l&#039;output è il seguente
+</p>
+<pre class="code">
+   The capacity of v1 is 10
+   The size of v1 is 10
+   The capacity of v2 is 20
+   The size of v2 is 0</pre>
+<p>
+I contenitori del C++ sono progettati per crescere dinamicamente in dimensione.
+Questo risparmia al programmatore di dover preoccuparsi del problema di riallocare
+lo spazio di memoria quando il contenitore cresce oltre la propria capacità. In linea
+di principio quindi i contenitori possono avere un numero arbitrario di elementi.
+Tuttavia il programmatore può preoccuparsi delle prestazioni del proprio programma
+fornendo al valori consigliati per i contenitori.
+Queste indicazioni vengono fornite tramite <a href="reserve" class="wikilink1" title="it:container:vector:reserve">reserve</a> o tramite il costruttore 
+dell&#039;esempio precedente che accetta come parametro la dimensione che ci si può
+aspettare che il contenitore avrà
+</p>
+
+<p>
+La funzione capacity() gira in <a href="../../complexity" class="wikilink1" title="it:complexity">tempo costante</a>.
+</p>
+
+<p>
+Argomenti collegati: <a href="reserve" class="wikilink1" title="it:container:vector:reserve">reserve</a>, <a href="resize" class="wikilink1" title="it:container:vector:resize">resize</a>, <a href="size" class="wikilink1" title="it:container:vector:size">size</a>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "capacity" [3-] --></div>
+</body>
+</html>

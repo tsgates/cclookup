@@ -5,28 +5,30 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>pl:keywords:int</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
-<meta name="robots" content="noindex,nofollow" />
-<meta name="date" content="2009-07-11T15:54:11-0700" />
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:38-0700" />
 <meta name="keywords" content="pl,keywords,int" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../../index.html" />
+<link rel="start" href="../../../index.html" />
 <link rel="contents" href="http://www.cppreference.com/wiki/pl/keywords/int?do=index" title="Indeks" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
 <link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=pl:keywords" />
 <link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/pl/keywords/int" />
 <link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/pl/keywords/int" />
-<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="canonical" href="int" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='pl:keywords';var JSINFO = {"id":"pl:keywords:int","namespace":"pl:keywords"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
 
-
-
-<h2><a name="int" id="int">int</a></h2>
+<h2 class="sectionedit1"><a name="int" id="int">int</a></h2>
 <div class="level2">
 
 <p>
@@ -36,13 +38,13 @@ Słowo kluczowe int jest używane do deklaracji zmiennych typu całkowitego. Zob
 <p>
 Przykład:
 </p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="kw4">int</span> x;  <span class="co1">//deklaracja</span>
-    <span class="kw4">int</span> y <span class="sy0">=</span> <span class="nu0">7</span>;  <span class="co1">//deklaracja i definicja</span></pre>
+<pre class="cpp code cpp">    <span class="kw4">int</span> x<span class="sy4">;</span>  <span class="co1">//deklaracja</span>
+    <span class="kw4">int</span> y <span class="sy1">=</span> <span class="nu0">7</span><span class="sy4">;</span>  <span class="co1">//deklaracja i definicja</span></pre>
 <p>
 Tematy pokrewne: <a href="http://www.cppreference.com/wiki/pl/keywords/bool" class="wikilink2" title="pl:keywords:bool" rel="nofollow">bool</a>, <a href="http://www.cppreference.com/wiki/pl/keywords/char" class="wikilink2" title="pl:keywords:char" rel="nofollow">char</a>, <a href="http://www.cppreference.com/wiki/pl/keywords/double" class="wikilink2" title="pl:keywords:double" rel="nofollow">double</a>, <a href="http://www.cppreference.com/wiki/pl/keywords/float" class="wikilink2" title="pl:keywords:float" rel="nofollow">float</a>, <a href="http://www.cppreference.com/wiki/pl/keywords/long" class="wikilink2" title="pl:keywords:long" rel="nofollow">long</a>, <a href="http://www.cppreference.com/wiki/pl/keywords/short" class="wikilink2" title="pl:keywords:short" rel="nofollow">short</a>, <a href="http://www.cppreference.com/wiki/pl/keywords/signed" class="wikilink2" title="pl:keywords:signed" rel="nofollow">signed</a>, <a href="http://www.cppreference.com/wiki/pl/keywords/unsigned" class="wikilink2" title="pl:keywords:unsigned" rel="nofollow">unsigned</a>, <a href="http://www.cppreference.com/wiki/pl/keywords/void" class="wikilink2" title="pl:keywords:void" rel="nofollow">void</a>, <a href="http://www.cppreference.com/wiki/pl/keywords/wchar_t" class="wikilink2" title="pl:keywords:wchar_t" rel="nofollow">wchar_t</a>
 </p>
 
 </div>
-<!-- SECTION "int" [3-] --></div>
+<!-- EDIT1 SECTION "int" [3-] --></div>
 </body>
 </html>

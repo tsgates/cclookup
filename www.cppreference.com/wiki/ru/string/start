@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru"
+ lang="ru" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>ru:string:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:13-0700" />
+<meta name="keywords" content="ru,string,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/ru/string/start?do=index" title="Все страницы" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=ru:string" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/ru/string/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/ru/string/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='ru:string';var JSINFO = {"id":"ru:string:start","namespace":"ru:string"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="c_strings" id="c_strings">C++ Strings</a></h1>
+<div class="level1">
+
+<p>
+
+Класс <code>basic_string</code> удобен для хранения последовательности символов и манипулирования ей. Он определён как шаблон класса в пространстве имён <code>std</code> в заголовочном файле <code>&lt;string&gt;</code>.
+
+</p>
+<pre class="cpp code cpp"> <span class="kw2">template</span> <span class="sy1">&lt;</span><span class="kw2">typename</span> Char, <span class="kw2">typename</span> Traits <span class="sy1">=</span> char_traits<span class="sy1">&lt;</span>Char<span class="sy1">&gt;</span>, <span class="kw2">typename</span> Allocator <span class="sy1">=</span> allocator<span class="sy1">&lt;</span>Char<span class="sy1">&gt;</span> <span class="sy1">&gt;</span>
+ <span class="kw2">class</span> basic_string<span class="sy4">;</span></pre>
+<p>
+
+В стандартной библиотеке C++ есть две специализации класса <code>basic_string</code>.
+
+</p>
+<pre class="cpp code cpp"> <span class="kw4">typedef</span> basic_string<span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span>    string<span class="sy4">;</span>
+ <span class="kw4">typedef</span> basic_string<span class="sy1">&lt;</span><span class="kw4">wchar_t</span><span class="sy1">&gt;</span> wstring<span class="sy4">;</span></pre>
+<p>
+Далее <code>string</code> будет обозначать собой любую специализацию класса <code>basic_string</code>, а <code>Char</code> будет означать тип его символов.
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="string_constructors" class="wikilink1" title="ru:string:string_constructors">Конструкторы</a></td><td class="col1">создают строку из массива символов или другой строки</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="string_operators" class="wikilink1" title="ru:string:string_operators">Операторы</a></td><td class="col1">складывают строки, присваивают строкам значение, вводят/выводят строки, сравнивают строки</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="append" class="wikilink1" title="ru:string:append">append</a></td><td class="col1">добавляет строку или символы к строке</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="assign" class="wikilink1" title="ru:string:assign">assign</a></td><td class="col1">присваивает строке значение строк символов или других строк C++</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="at" class="wikilink1" title="ru:string:at">at</a></td><td class="col1">возвращает символ, стоящий в некоторой позиции</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="begin" class="wikilink1" title="ru:string:begin">begin</a></td><td class="col1">возвращает итератор на начало строки</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="c_str" class="wikilink1" title="ru:string:c_str">c_str</a></td><td class="col1">возвращает строку в виде немодифицируемого массива символов (как в C)</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="capacity" class="wikilink1" title="ru:string:capacity">capacity</a></td><td class="col1">возвращает количество символов, которые могут поместиться в строку</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="clear" class="wikilink1" title="ru:string:clear">clear</a></td><td class="col1">удаляет все символы из строки</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="compare" class="wikilink1" title="ru:string:compare">compare</a></td><td class="col1">сравнивает две строки</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="copy" class="wikilink1" title="ru:string:copy">copy</a></td><td class="col1">копирует символы из строки в массив</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="data" class="wikilink1" title="ru:string:data">data</a></td><td class="col1">возвращает указатель на первый символ строки</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><a href="empty" class="wikilink1" title="ru:string:empty">empty</a></td><td class="col1">возвращает true если в строке нет символов</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><a href="end" class="wikilink1" title="ru:string:end">end</a></td><td class="col1">возвращает итератор, установленный после последнего символа строки</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><a href="erase" class="wikilink1" title="ru:string:erase">erase</a></td><td class="col1">удаляет символы из строки</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><a href="find" class="wikilink1" title="ru:string:find">find</a></td><td class="col1">ищет символы в строке</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><a href="find_first_not_of" class="wikilink1" title="ru:string:find_first_not_of">find_first_not_of</a></td><td class="col1">находит первый символ, отличный от</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><a href="find_first_of" class="wikilink1" title="ru:string:find_first_of">find_first_of</a></td><td class="col1">находит первый символ схожий с</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"><a href="find_last_not_of" class="wikilink1" title="ru:string:find_last_not_of">find_last_not_of</a></td><td class="col1">находит последний символ, отличный от</td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"><a href="find_last_of" class="wikilink1" title="ru:string:find_last_of">find_last_of</a></td><td class="col1">находит последний символ, схожий с</td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"><a href="getline" class="wikilink1" title="ru:string:getline">getline</a></td><td class="col1">читает из потока ввода в строку</td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"><a href="insert" class="wikilink1" title="ru:string:insert">insert</a></td><td class="col1">вставляет символы в строку</td>
+	</tr>
+	<tr class="row22">
+		<td class="col0"><a href="length" class="wikilink1" title="ru:string:length">length</a></td><td class="col1">возвращает длину строки</td>
+	</tr>
+	<tr class="row23">
+		<td class="col0"><a href="max_size" class="wikilink1" title="ru:string:max_size">max_size</a></td><td class="col1">возвращает максимальное количество символов, которые могут содержаться в строке</td>
+	</tr>
+	<tr class="row24">
+		<td class="col0"><a href="npos" class="wikilink1" title="ru:string:npos">npos</a></td><td class="col1">специальное значение, означающее «не найдено» или «все оставшиеся символы»</td>
+	</tr>
+	<tr class="row25">
+		<td class="col0"><a href="push_back" class="wikilink1" title="ru:string:push_back">push_back</a></td><td class="col1">добавляет символ в конец строки</td>
+	</tr>
+	<tr class="row26">
+		<td class="col0"><a href="rbegin" class="wikilink1" title="ru:string:rbegin">rbegin</a></td><td class="col1">возвращает обратный итератор на конец строки</td>
+	</tr>
+	<tr class="row27">
+		<td class="col0"><a href="rend" class="wikilink1" title="ru:string:rend">rend</a></td><td class="col1">возвращает обратный итератор на начало строки</td>
+	</tr>
+	<tr class="row28">
+		<td class="col0"><a href="replace" class="wikilink1" title="ru:string:replace">replace</a></td><td class="col1">заменяет символы в строке</td>
+	</tr>
+	<tr class="row29">
+		<td class="col0"><a href="reserve" class="wikilink1" title="ru:string:reserve">reserve</a></td><td class="col1">устанавливает минимальную вместимость строки</td>
+	</tr>
+	<tr class="row30">
+		<td class="col0"><a href="resize" class="wikilink1" title="ru:string:resize">resize</a></td><td class="col1">меняет размер строки</td>
+	</tr>
+	<tr class="row31">
+		<td class="col0"><a href="rfind" class="wikilink1" title="ru:string:rfind">rfind</a></td><td class="col1">находит последнее вхождение подстроки</td>
+	</tr>
+	<tr class="row32">
+		<td class="col0"><a href="size" class="wikilink1" title="ru:string:size">size</a></td><td class="col1">возвращает количество символов в строке</td>
+	</tr>
+	<tr class="row33">
+		<td class="col0"><a href="substr" class="wikilink1" title="ru:string:substr">substr</a></td><td class="col1">возвращает определённую подстроку</td>
+	</tr>
+	<tr class="row34">
+		<td class="col0"><a href="swap" class="wikilink1" title="ru:string:swap">swap</a></td><td class="col1">меняет две строки содержимым</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [913-4208] -->
+</div>
+</div>
+</body>
+</html>

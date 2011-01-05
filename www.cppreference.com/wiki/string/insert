@@ -5,68 +5,43 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>string:insert</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="generator" content="DokuWiki" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2008-11-15T16:41:00-0800" />
+<meta name="date" content="2010-11-10T16:30:09-0800" />
 <meta name="keywords" content="string,insert" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/string/insert?do=index" title="Index" />
+<link rel="start" href="../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/string/insert?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
 <link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=string" />
 <link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/string/insert" />
 <link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/string/insert" />
-<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="canonical" href="insert" />
+<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='string';var JSINFO = {"id":"string:insert","namespace":"string"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
 
-
-
-<h2><a name="insert" id="insert">insert</a></h2>
+<h2 class="sectionedit1"><a name="page_redirected_auto" id="page_redirected_auto">Page redirected (auto)</a></h2>
 <div class="level2">
-
-<p>
-Syntax:
-</p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;string&gt;</span>
-    iterator insert<span class="br0">&#40;</span> iterator i<span class="sy0">,</span> <span class="kw4">const</span> char<span class="sy0">&amp;</span> ch <span class="br0">&#41;</span>;
-    string<span class="sy0">&amp;</span> insert<span class="br0">&#40;</span> size_type index<span class="sy0">,</span> <span class="kw4">const</span> string<span class="sy0">&amp;</span> str <span class="br0">&#41;</span>;
-    string<span class="sy0">&amp;</span> insert<span class="br0">&#40;</span> size_type index<span class="sy0">,</span> <span class="kw4">const</span> <span class="kw4">char</span><span class="sy0">*</span> str <span class="br0">&#41;</span>;
-    string<span class="sy0">&amp;</span> insert<span class="br0">&#40;</span> size_type index1<span class="sy0">,</span> <span class="kw4">const</span> string<span class="sy0">&amp;</span> str<span class="sy0">,</span> size_type index2<span class="sy0">,</span> size_type num <span class="br0">&#41;</span>;
-    string<span class="sy0">&amp;</span> insert<span class="br0">&#40;</span> size_type index<span class="sy0">,</span> <span class="kw4">const</span> <span class="kw4">char</span><span class="sy0">*</span> str<span class="sy0">,</span> size_type num <span class="br0">&#41;</span>;
-    string<span class="sy0">&amp;</span> insert<span class="br0">&#40;</span> size_type index<span class="sy0">,</span> size_type num<span class="sy0">,</span> <span class="kw4">char</span> ch <span class="br0">&#41;</span>;
-    <span class="kw4">void</span> insert<span class="br0">&#40;</span> iterator i<span class="sy0">,</span> size_type num<span class="sy0">,</span> <span class="kw4">const</span> char<span class="sy0">&amp;</span> ch <span class="br0">&#41;</span>;
-    <span class="kw4">void</span> insert<span class="br0">&#40;</span> iterator i<span class="sy0">,</span> input_iterator start<span class="sy0">,</span> input_iterator end <span class="br0">&#41;</span>;</pre>
-<p>
-The very multi-purpose insert() function either:
-
-</p>
-<ul>
-<li class="level1"><div class="li"> inserts ch before the character denoted by i,<br/>
-</div>
-</li>
-<li class="level1"><div class="li"> inserts str into the current string, at location index,<br/>
-</div>
-</li>
-<li class="level1"><div class="li"> inserts a substring of str (starting at index2 and num characters long) into the current string, at location index1,</div>
-</li>
-<li class="level1"><div class="li"> inserts num copies of ch into the current string, at location index,<br/>
-</div>
-</li>
-<li class="level1"><div class="li"> inserts num copies of ch into the current string, before the character denoted by i, before the character specified by i.</div>
-</li>
-</ul>
-
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="../redirect" class="wikilink1" title="redirect">redirect</a></td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [34-49] -->
 <p>
 
-Related Topics: <a href="erase" class="wikilink1" title="string:erase">erase</a>, <a href="replace" class="wikilink1" title="string:replace">replace</a>
+See <a href="basic_string/insert" class="wikilink1" title="string:basic_string:insert"> this</a>
 </p>
-
+<div class="noteredirect">This page has been moved, the new location is <a href="basic_string/insert" class="wikilink1" title="string:basic_string:insert">basic_string::insert</a>.</div>
 </div>
-<!-- SECTION "insert" [3-] --></div>
+</div>
 </body>
 </html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>io:basic_istream:tellg</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-11-12T02:48:25-0800" />
+<meta name="keywords" content="io,basic_istream,tellg" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/io/basic_istream/tellg?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=io:basic_istream" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/io/basic_istream/tellg" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/io/basic_istream/tellg" />
+<link rel="canonical" href="tellg" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='io:basic_istream';var JSINFO = {"id":"io:basic_istream:tellg","namespace":"io:basic_istream"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="tellg#basic_istreamtellg" class="toc">basic_istream::tellg</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="tellg#parameters" class="toc">Parameters</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="tellg#return_value" class="toc">Return value</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="tellg#see_also" class="toc">See also</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="basic_istreamtellg" id="basic_istreamtellg">basic_istream::tellg</a></h2>
+<div class="level2">
+<pre class="cpp code cpp">pos_type tellg<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Returns input position indicator of the current associated <code>streambuf</code> object. 
+</p>
+
+<p>
+Essentially calls <code>rdbuf()→pubseekoff(0, std::ios_base::cur, std::ios_base::in)</code>.
+</p>
+
+</div>
+<!-- EDIT1 SECTION "basic_istream::tellg" [1-234] -->
+<h3 class="sectionedit2"><a name="parameters" id="parameters">Parameters</a></h3>
+<div class="level3">
+
+<p>
+
+(none)
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Parameters" [235-262] -->
+<h3 class="sectionedit3"><a name="return_value" id="return_value">Return value</a></h3>
+<div class="level3">
+
+<p>
+
+current input position indicator on success, <code>-1</code> if a failure (<code>fail() != false</code>) occurs.
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Return value" [263-380] -->
+<h3 class="sectionedit4"><a name="see_also" id="see_also">See also</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="seekg" class="wikilink1" title="io:basic_istream:seekg">seekg</a>, <a href="../basic_ostream/tellp" class="wikilink1" title="io:basic_ostream:tellp">tellp</a>, <a href="../basic_ostream/seekp" class="wikilink1" title="io:basic_ostream:seekp">seekp</a>
+
+</p>
+
+</div>
+<!-- EDIT4 SECTION "See also" [381-] --></div>
+</body>
+</html>

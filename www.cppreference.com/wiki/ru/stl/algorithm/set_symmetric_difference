@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru"
+ lang="ru" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>ru:algorithm:set_symmetric_difference</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:14-0700" />
+<meta name="keywords" content="ru,algorithm,set_symmetric_difference" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/ru/algorithm/set_symmetric_difference?do=index" title="Все страницы" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=ru:algorithm" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/ru/algorithm/set_symmetric_difference" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/ru/algorithm/set_symmetric_difference" />
+<link rel="canonical" href="set_symmetric_difference" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='ru:algorithm';var JSINFO = {"id":"ru:algorithm:set_symmetric_difference","namespace":"ru:algorithm"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="set_symmetric_difference" id="set_symmetric_difference">set_symmetric_difference</a></h2>
+<div class="level2">
+
+<p>
+Синтаксис:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;algorithm&gt;</span>
+    output_iterator set_symmetric_difference<span class="br0">&#40;</span> input_iterator start1, input_iterator end1, input_iterator2 start2, input_iterator2 end2, output_iterator result <span class="br0">&#41;</span><span class="sy4">;</span>
+    output_iterator set_symmetric_difference<span class="br0">&#40;</span> input_iterator start1, input_iterator end1, input_iterator2 start2, input_iterator2 end2, output_iterator result, StrictWeakOrdering cmp <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Алгоритм set_symmetric_difference() вычисляет симметричную разность между двумя множествами, определенными как [start1,end1) и [start2,end2), и располагает результат начиная с result.
+</p>
+
+<p>
+Оба множества, заданные как диапазоны, должны быть отсортированы по возрастанию.
+</p>
+
+<p>
+Возвращаемое значение set_symmetric_difference() - итератор на конец результирующего диапазона.
+</p>
+
+<p>
+Если требуется повышенная точность, нужно задать упорядочивающую сравнивающую функцию-объект cmp, которая используется вместо стандартного оператора сравнения &lt;.
+</p>
+
+<p>
+Пример:
+</p>
+<pre class="cpp code cpp"><span class="co1">// пример set_symmetric_difference</span>
+<span class="co2">#include &lt;iostream&gt;</span>
+<span class="co2">#include &lt;algorithm&gt;</span>
+<span class="co2">#include &lt;vector&gt;</span>
+<span class="kw2">using</span> <span class="kw2">namespace</span> std<span class="sy4">;</span>
+&nbsp;
+<span class="kw4">int</span> main <span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+  <span class="kw4">int</span> first<span class="br0">&#91;</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="br0">&#123;</span><span class="nu0">5</span>,<span class="nu0">10</span>,<span class="nu0">15</span>,<span class="nu0">20</span>,<span class="nu0">25</span><span class="br0">&#125;</span><span class="sy4">;</span>
+  <span class="kw4">int</span> second<span class="br0">&#91;</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="br0">&#123;</span><span class="nu0">50</span>,<span class="nu0">40</span>,<span class="nu0">30</span>,<span class="nu0">20</span>,<span class="nu0">10</span><span class="br0">&#125;</span><span class="sy4">;</span>
+  vector<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> v<span class="br0">&#40;</span><span class="nu0">10</span><span class="br0">&#41;</span><span class="sy4">;</span>                           <span class="co1">// 0  0  0  0  0  0  0  0  0  0</span>
+  vector<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">iterator</span> it<span class="sy4">;</span>
+&nbsp;
+  sort <span class="br0">&#40;</span>first,first<span class="sy2">+</span><span class="nu0">5</span><span class="br0">&#41;</span><span class="sy4">;</span>     <span class="co1">//  5 10 15 20 25</span>
+  sort <span class="br0">&#40;</span>second,second<span class="sy2">+</span><span class="nu0">5</span><span class="br0">&#41;</span><span class="sy4">;</span>   <span class="co1">// 10 20 30 40 50</span>
+&nbsp;
+  it<span class="sy1">=</span>set_symmetric_difference <span class="br0">&#40;</span>first, first<span class="sy2">+</span><span class="nu0">5</span>, second, second<span class="sy2">+</span><span class="nu0">5</span>, v.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+                                               <span class="co1">// 5 15 25 30 40 50  0  0  0  0</span>
+&nbsp;
+  <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;symmetric difference has &quot;</span> <span class="sy1">&lt;&lt;</span> <span class="kw4">int</span><span class="br0">&#40;</span>it <span class="sy2">-</span> v.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; elements.<span class="es1">\n</span>&quot;</span><span class="sy4">;</span>
+&nbsp;
+  <span class="kw1">return</span> <span class="nu0">0</span><span class="sy4">;</span>
+<span class="br0">&#125;</span></pre>
+<p>
+Вывод:
+symmetric difference has 6 elements
+</p>
+
+<p>
+
+Смотрите также: <a href="includes" class="wikilink1" title="ru:algorithm:includes">includes</a>, <a href="set_difference" class="wikilink1" title="ru:algorithm:set_difference">set_difference</a>, <a href="set_intersection" class="wikilink1" title="ru:algorithm:set_intersection">set_intersection</a>, <a href="set_union" class="wikilink1" title="ru:algorithm:set_union">set_union</a>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "set_symmetric_difference" [3-] --></div>
+</body>
+</html>

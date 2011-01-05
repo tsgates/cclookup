@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es"
+ lang="es" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>es:keywords:static</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:31-0700" />
+<meta name="keywords" content="es,keywords,static" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/es/keywords/static?do=index" title="Índice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=es:keywords" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/es/keywords/static" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/es/keywords/static" />
+<link rel="canonical" href="static" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='es:keywords';var JSINFO = {"id":"es:keywords:static","namespace":"es:keywords"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Tabla de Contenidos</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="static#static" class="toc">static</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="static#almacenamiento_permanente" class="toc">Almacenamiento permanente</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="static#copia_de_una_variable" class="toc">Copia de una variable</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="static#funciones_de_una_clase_que_pueden_ser_llamadas_sin_el_objeto" class="toc">Funciones de una clase que pueden ser llamadas sin el objeto</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="static#linkeo_interno" class="toc">linkeo interno</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="static" id="static">static</a></h2>
+<div class="level2">
+
+<p>
+
+La palabra <em>static</em> puede ser utilizada en 4 formas distintas:
+</p>
+<ol>
+<li class="level1"><div class="li"> Para crear una variable que mantenga su valor permanentemente en una función.</div>
+</li>
+<li class="level1"><div class="li"> Para crear una copia de una variable que sea compartida por todos los objetos de la misma clase.</div>
+</li>
+<li class="level1"><div class="li"> Para declarar funciones miembro que actúen como funciones “no-miembro.”</div>
+</li>
+<li class="level1"><div class="li"> Para especificar un <em>linkeo</em> interno.</div>
+</li>
+</ol>
+
+</div>
+<!-- EDIT1 SECTION "static" [2-390] -->
+<h3 class="sectionedit2"><a name="almacenamiento_permanente" id="almacenamiento_permanente">Almacenamiento permanente</a></h3>
+<div class="level3">
+
+<p>
+
+Las variables locales <em>Static</em>, pueden conservar su valor en una instancia del programa. Esto quiere decir, que si una función que contiene una variable <em>static</em> es llamada varias veces, esta conserva el último valor asignado. Por ejemplo, en el siguiente código la variable estática “counter” cuenta el número de veces que la funcion foo() es llamada. Si la variable no fuera estática, counter siempre perdería su valor al terminar “foo()”.:
+</p>
+<pre class="cpp code cpp"><span class="kw4">void</span> foo<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+  <span class="kw4">static</span> <span class="kw4">int</span> counter <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
+  <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;foo ha sido llamada &quot;</span> <span class="sy1">&lt;&lt;</span> <span class="sy2">++</span>counter <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; veces<span class="es1">\n</span>&quot;</span><span class="sy4">;</span>
+<span class="br0">&#125;</span>
+&nbsp;
+<span class="kw4">int</span> main<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+  <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="sy4">;</span> <span class="sy2">++</span>i <span class="br0">&#41;</span> foo<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+<span class="br0">&#125;</span></pre>
+</div>
+<!-- EDIT2 SECTION "Almacenamiento permanente" [391-1054] -->
+<h3 class="sectionedit3"><a name="copia_de_una_variable" id="copia_de_una_variable">Copia de una variable</a></h3>
+<div class="level3">
+
+<p>
+
+Cuando es utilizada como dato miembro, todas las “instanciaciones” de una clase comparten una copia de la variable. Esto es, dos objetos de tipo Foo A1, A2 son creados, si A1 modifica numFoos, A2 puede observar este cambio. Por ejemplo:
+</p>
+<pre class="cpp code cpp"><span class="kw2">class</span> Foo <span class="br0">&#123;</span>
+<span class="kw2">public</span><span class="sy4">:</span>
+  Foo<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    <span class="sy2">++</span>numFoos<span class="sy4">;</span>
+    <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Ahora se han creado &quot;</span> <span class="sy1">&lt;&lt;</span> numFoos <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; instancias de la clase Foo<span class="es1">\n</span>&quot;</span><span class="sy4">;</span>
+  <span class="br0">&#125;</span>
+<span class="kw2">private</span><span class="sy4">:</span>
+  <span class="kw4">static</span> <span class="kw4">int</span> numFoos<span class="sy4">;</span>
+<span class="br0">&#125;</span><span class="sy4">;</span>
+&nbsp;
+<span class="kw4">int</span> Foo<span class="sy4">::</span><span class="me2">numFoos</span> <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>  <span class="co1">// Alocación de la memoria para numFoos y su inicialización</span>
+&nbsp;
+<span class="kw4">int</span> main<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+  Foo f1<span class="sy4">;</span>
+  Foo f2<span class="sy4">;</span>
+  Foo f3<span class="sy4">;</span>
+<span class="br0">&#125;</span></pre>
+<p>
+En el código anterior, la variable <em>static</em> esta siendo compartida por las tres instancias de la clase Foo (f1, f2 y f3) y todas mantienen del número de veces que Foo ha sido instanciada.
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Copia de una variable" [1055-1829] -->
+<h3 class="sectionedit4"><a name="funciones_de_una_clase_que_pueden_ser_llamadas_sin_el_objeto" id="funciones_de_una_clase_que_pueden_ser_llamadas_sin_el_objeto">Funciones de una clase que pueden ser llamadas sin el objeto</a></h3>
+<div class="level3">
+
+<p>
+
+Cuando son utilizadas en una clase como funciones miembro, estas no toman una instanciación previa como si fueran una función libre que no depende de una clase. Esto quiere decir; que una función <em>static</em> puede ser llamada sin crear una instancia de la clase que la contiene.
+</p>
+<pre class="cpp code cpp"><span class="kw2">class</span> Foo <span class="br0">&#123;</span>
+<span class="kw2">public</span><span class="sy4">:</span>
+  Foo<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    <span class="sy2">++</span>numFoos<span class="sy4">;</span>
+    <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Se han creado &quot;</span> <span class="sy1">&lt;&lt;</span> numFoos <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; instancias de la clase Foo<span class="es1">\n</span>&quot;</span><span class="sy4">;</span>
+  <span class="br0">&#125;</span>
+  <span class="kw4">static</span> <span class="kw4">int</span> getNumFoos<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    <span class="kw1">return</span> numFoos<span class="sy4">;</span>
+  <span class="br0">&#125;</span>
+<span class="kw2">private</span><span class="sy4">:</span>
+  <span class="kw4">static</span> <span class="kw4">int</span> numFoos<span class="sy4">;</span>
+<span class="br0">&#125;</span><span class="sy4">;</span>
+&nbsp;
+<span class="kw4">int</span> Foo<span class="sy4">::</span><span class="me2">numFoos</span> <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>  <span class="co1">// Alocación de la memoria y la inicialización de numFoos</span>
+&nbsp;
+<span class="kw4">int</span> main<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+  Foo f1<span class="sy4">;</span>
+  Foo f2<span class="sy4">;</span>
+  Foo f3<span class="sy4">;</span>
+  <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Hemos creado &quot;</span> <span class="sy1">&lt;&lt;</span> Foo<span class="sy4">::</span><span class="me2">getNumFoos</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; instancias de la clase Foo<span class="es1">\n</span>&quot;</span><span class="sy4">;</span>
+<span class="br0">&#125;</span></pre>
+</div>
+<!-- EDIT4 SECTION "Funciones de una clase que pueden ser llamadas sin el objeto" [1830-2623] -->
+<h3 class="sectionedit5"><a name="linkeo_interno" id="linkeo_interno">linkeo interno</a></h3>
+<div class="level3">
+
+<p>
+Cuando es usada como una funcion libre, una variable global, o como una constante global, se especifica un “linkeo” interno. Esto limita el acceso del dato o la función del archivo actual. (a revisar)
+</p>
+
+<p>
+Related: <a href="http://www.cppreference.com/wiki/es/keywords/extern" class="wikilink2" title="es:keywords:extern" rel="nofollow">extern</a>
+</p>
+
+</div>
+<!-- EDIT5 SECTION "linkeo interno" [2624-] --></div>
+</body>
+</html>

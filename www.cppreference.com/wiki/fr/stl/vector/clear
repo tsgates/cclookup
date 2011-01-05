@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr"
+ lang="fr" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>fr:container:vector:clear</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:01-0700" />
+<meta name="keywords" content="fr,container,vector,clear" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/fr/container/vector/clear?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=fr:container:vector" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/fr/container/vector/clear" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/fr/container/vector/clear" />
+<link rel="canonical" href="clear" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='fr:container:vector';var JSINFO = {"id":"fr:container:vector:clear","namespace":"fr:container:vector"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="clear" id="clear">clear</a></h2>
+<div class="level2">
+
+<p>
+Syntaxe :
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;vector&gt;</span>
+    <span class="kw4">void</span> clear<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+La méthode clear() supprime tous les éléments dans le vecteur.
+La méthode va appeler le <a href="http://www.cppreference.com/wiki/destructor" class="wikilink2" title="destructor" rel="nofollow">destructor</a> pour tous les éléments dans le vecteur.
+</p>
+
+<p>
+Après un appel à clear, la nouvelle <a href="size" class="wikilink1" title="fr:container:vector:size">size</a> du vecteur sera zéro. Cependant, la <a href="capacity" class="wikilink1" title="fr:container:vector:capacity">capacity</a> du vecteur ne sera pas modifiée et le vecteur ne libérera pas sa mémoire allouée.
+</p>
+
+<p>
+Si vous voulez vider un vecteur de tous ses éléments, ainsi que de sa capacité, vous pouvez utiliser l&#039;astuce du swap (cette astuce ne fonctionne pas dans tous les environnements, par exemple elle ne fonctionne pas avec Intel Compiler 10.0.69 et LINUX 2.6.9-89 x64) :
+
+</p>
+<pre class="cpp code cpp">    std<span class="sy4">::</span><span class="me2">vector</span> aVector<span class="sy4">;</span>
+    <span class="br0">&#91;</span>...<span class="br0">&#93;</span>
+    aVector.<span class="me1">swap</span><span class="br0">&#40;</span> std<span class="sy4">::</span><span class="me2">vector</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+
+Ce code va créer un nouveau vecteur temporaire vide qui va être échangé avec le vecteur que vous souhaitez vider.
+</p>
+
+<p>
+clear() est de <a href="../../../complexity" class="wikilink1" title="complexity">complexité algorithmique linéaire</a>.
+</p>
+
+<p>
+Sujets connexes :  <a href="http://www.cppreference.com/wiki/fr/container/vector/erase" class="wikilink2" title="fr:container:vector:erase" rel="nofollow">erase</a> <a href="swap" class="wikilink1" title="fr:container:vector:swap">swap</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

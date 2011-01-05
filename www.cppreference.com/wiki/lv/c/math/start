@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="lv"
+ lang="lv" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>lv:numeric:c:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:11-0700" />
+<meta name="keywords" content="lv,numeric,c,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/lv/numeric/c/start?do=index" title="Rādītājs" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=lv:numeric:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/lv/numeric/c/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/lv/numeric/c/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='lv:numeric:c';var JSINFO = {"id":"lv:numeric:c:start","namespace":"lv:numeric:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="standarta_cmatematika" id="standarta_cmatematika">Standarta C: Matemātika</a></h1>
+<div class="level1">
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/lv/numeric/c/abs" class="wikilink2" title="lv:numeric:c:abs" rel="nofollow">abs</a></td><td class="col1">absolūtā vērtība</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/lv/numeric/c/acos" class="wikilink2" title="lv:numeric:c:acos" rel="nofollow">acos</a></td><td class="col1">arkkosinuss</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/lv/numeric/c/asin" class="wikilink2" title="lv:numeric:c:asin" rel="nofollow">asin</a></td><td class="col1">arksinuss</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/lv/numeric/c/atan" class="wikilink2" title="lv:numeric:c:atan" rel="nofollow">atan</a></td><td class="col1">arktangenss</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/lv/numeric/c/atan2" class="wikilink2" title="lv:numeric:c:atan2" rel="nofollow">atan2</a></td><td class="col1">arc tangent, using signs to determine quadrants</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/lv/numeric/c/ceil" class="wikilink2" title="lv:numeric:c:ceil" rel="nofollow">ceil</a></td><td class="col1">atgriež skaitli, noapaļotu uz augšu</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/lv/numeric/c/cos" class="wikilink2" title="lv:numeric:c:cos" rel="nofollow">cos</a></td><td class="col1">kosinuss</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/lv/numeric/c/cosh" class="wikilink2" title="lv:numeric:c:cosh" rel="nofollow">cosh</a></td><td class="col1">hyperbolic cosine</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/lv/numeric/c/div" class="wikilink2" title="lv:numeric:c:div" rel="nofollow">div</a></td><td class="col1">returns the quotient and remainder of a division</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/lv/numeric/c/exp" class="wikilink2" title="lv:numeric:c:exp" rel="nofollow">exp</a></td><td class="col1">atgriež skaitli e, kas pacelts dotajā pakāpē</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/lv/numeric/c/fabs" class="wikilink2" title="lv:numeric:c:fabs" rel="nofollow">fabs</a></td><td class="col1">absolūtā vērtība skaitļiem ar peldošo punktu</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/lv/numeric/c/floor" class="wikilink2" title="lv:numeric:c:floor" rel="nofollow">floor</a></td><td class="col1">atgriež skaitļa veselo daļu</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/lv/numeric/c/fmod" class="wikilink2" title="lv:numeric:c:fmod" rel="nofollow">fmod</a></td><td class="col1">atgriež dalījuma atlikumu</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/lv/numeric/c/frexp" class="wikilink2" title="lv:numeric:c:frexp" rel="nofollow">frexp</a></td><td class="col1">decomposes a number into scientific notation</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/lv/numeric/c/labs" class="wikilink2" title="lv:numeric:c:labs" rel="nofollow">labs</a></td><td class="col1">absolūtā vērtība long tipa skaitļiem</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/lv/numeric/c/ldexp" class="wikilink2" title="lv:numeric:c:ldexp" rel="nofollow">ldexp</a></td><td class="col1">computes a number in scientific notation</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/lv/numeric/c/ldiv" class="wikilink2" title="lv:numeric:c:ldiv" rel="nofollow">ldiv</a></td><td class="col1">returns the quotient and remainder of a division, in long integer form</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/lv/numeric/c/log" class="wikilink2" title="lv:numeric:c:log" rel="nofollow">log</a></td><td class="col1">naturālais logaritms</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/lv/numeric/c/log10" class="wikilink2" title="lv:numeric:c:log10" rel="nofollow">log10</a></td><td class="col1">decimālais logaritms</td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/lv/numeric/c/modf" class="wikilink2" title="lv:numeric:c:modf" rel="nofollow">modf</a></td><td class="col1">decomposes a number into integer and fractional parts</td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/lv/numeric/c/pow" class="wikilink2" title="lv:numeric:c:pow" rel="nofollow">pow</a></td><td class="col1">atgriež skaitli, kas pacelts dotajā pakāpē</td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/lv/numeric/c/sin" class="wikilink2" title="lv:numeric:c:sin" rel="nofollow">sin</a></td><td class="col1">sinuss</td>
+	</tr>
+	<tr class="row22">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/lv/numeric/c/sinh" class="wikilink2" title="lv:numeric:c:sinh" rel="nofollow">sinh</a></td><td class="col1">hyperbolic sine</td>
+	</tr>
+	<tr class="row23">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/lv/numeric/c/sqrt" class="wikilink2" title="lv:numeric:c:sqrt" rel="nofollow">sqrt</a></td><td class="col1">kvadrātsakne</td>
+	</tr>
+	<tr class="row24">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/lv/numeric/c/tan" class="wikilink2" title="lv:numeric:c:tan" rel="nofollow">tan</a></td><td class="col1">tangenss</td>
+	</tr>
+	<tr class="row25">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/lv/numeric/c/tanh" class="wikilink2" title="lv:numeric:c:tanh" rel="nofollow">tanh</a></td><td class="col1">hyperbolic tangent</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [47-1115] -->
+</div>
+</div>
+</body>
+</html>

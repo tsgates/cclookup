@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es"
+ lang="es" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>es:algorithm:generate_n</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:32-0700" />
+<meta name="keywords" content="es,algorithm,generate_n" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/es/algorithm/generate_n?do=index" title="Índice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=es:algorithm" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/es/algorithm/generate_n" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/es/algorithm/generate_n" />
+<link rel="canonical" href="generate_n" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='es:algorithm';var JSINFO = {"id":"es:algorithm:generate_n","namespace":"es:algorithm"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Tabla de Contenidos</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="generate_n#generate_n" class="toc">generate_n</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="generate_n#ejemplo" class="toc">Ejemplo</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="generate_n#topicos_relacionados" class="toc">Tópicos Relacionados</a></span></div></li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="generate_n" id="generate_n">generate_n</a></h2>
+<div class="level2">
+
+<p>
+Sintaxis:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;algorithm&gt;</span>
+    <span class="kw4">void</span> generate_n<span class="br0">&#40;</span> forward_iterator inicio, SIZE cantidad, Generator g <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+La función <code>generate_n()</code> toma valores de la función generadora <em>g</em> y almacena <em>cantidad</em> de ellos en el rango que comienza en <em>inicio</em>.
+</p>
+
+</div>
+<!-- EDIT1 SECTION "generate_n" [1-297] -->
+<h2 class="sectionedit2"><a name="ejemplo" id="ejemplo">Ejemplo</a></h2>
+<div class="level2">
+
+<p>
+
+En el siguiente código se usa la función generadora <a href="../../c/other/rand" class="wikilink1" title="es:c:other:rand">rand() de la Biblioteca Estándar</a> para llenar un listado con doce (12) elementos (pseudo-)aleatorios:
+</p>
+<pre class="cpp code cpp">    <span class="kw4">const</span> <span class="kw4">int</span> LIM <span class="sy1">=</span> <span class="nu0">12</span><span class="sy4">;</span>
+    vector<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> v<span class="br0">&#40;</span><span class="nu0">100</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    fill<span class="br0">&#40;</span>v.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, v.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, <span class="nu0">1</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// llenando con +1</span>
+    generate_n<span class="br0">&#40;</span>v.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, LIM, <span class="kw3">rand</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// llamando a la función rand()</span>
+    <span class="co1">// En ciertos compiladores será necesario usar &amp;rand</span>
+&nbsp;
+    <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;v: &quot;</span><span class="sy4">;</span>
+    <span class="kw1">for</span> <span class="br0">&#40;</span>vector<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">size_type</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> v.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="sy2">++</span>i<span class="br0">&#41;</span>
+        <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> v<span class="br0">&#91;</span>i<span class="br0">&#93;</span> <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span><span class="sy4">;</span>
+    <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
+<p>
+La salida será similar a lo siguiente:
+</p>
+<pre class="code">
+v: 74565 -4081 176 -461078 -155 17611 33 -915644 133978 110 12321 610885 -1 -1 -1 -1 ...</pre>
+</div>
+<!-- EDIT2 SECTION "Ejemplo" [298-1021] -->
+<h2 class="sectionedit3"><a name="topicos_relacionados" id="topicos_relacionados">Tópicos Relacionados</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> <code><a href="generate" class="wikilink1" title="es:algorithm:generate">generate</a></code> – llena un rango con valores generados</div>
+</li>
+<li class="level1"><div class="li"> <code><a href="copy" class="wikilink1" title="es:algorithm:copy">copy</a></code>, <code><a href="fill" class="wikilink1" title="es:algorithm:fill">fill</a></code>, <code><a href="http://www.cppreference.com/wiki/es/algorithm/transform" class="wikilink2" title="es:algorithm:transform" rel="nofollow">transform</a></code> – otras maneras de llenar un rango con valores</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT3 SECTION "Tópicos Relacionados" [1022-] --></div>
+</body>
+</html>

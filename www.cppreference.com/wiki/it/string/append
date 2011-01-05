@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it"
+ lang="it" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>it:string:append</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:08-0700" />
+<meta name="keywords" content="it,string,append" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/it/string/append?do=index" title="Indice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=it:string" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/it/string/append" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/it/string/append" />
+<link rel="canonical" href="append" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='it:string';var JSINFO = {"id":"it:string:append","namespace":"it:string"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="append" id="append">append</a></h2>
+<div class="level2">
+
+<p>
+Sintassi:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;string&gt;</span>
+    string<span class="sy3">&amp;</span> append<span class="br0">&#40;</span> <span class="kw4">const</span> string<span class="sy3">&amp;</span> str <span class="br0">&#41;</span><span class="sy4">;</span>
+    string<span class="sy3">&amp;</span> append<span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> str <span class="br0">&#41;</span><span class="sy4">;</span>
+    string<span class="sy3">&amp;</span> append<span class="br0">&#40;</span> <span class="kw4">const</span> string<span class="sy3">&amp;</span> str, size_type index, size_type len <span class="br0">&#41;</span><span class="sy4">;</span>
+    string<span class="sy3">&amp;</span> append<span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> str, size_type num <span class="br0">&#41;</span><span class="sy4">;</span>
+    string<span class="sy3">&amp;</span> append<span class="br0">&#40;</span> size_type num, <span class="kw4">char</span> ch <span class="br0">&#41;</span><span class="sy4">;</span>
+    string<span class="sy3">&amp;</span> append<span class="br0">&#40;</span> input_iterator start, input_iterator end <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+La funzione append() puo&#039; essere usata per eseguire i seguenti task:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> (1&amp;2)Appende la stringa <code>str</code> alla fine della stringa corrente.</div>
+</li>
+<li class="level1"><div class="li"> (3)Appende una sottostringa della stringa <code>str</code> iniziando dal carattere all&#039;indice specificato dal parametro <code>index</code> e lunga <code>len</code> caratteri alla fine della stringa corrente.</div>
+</li>
+<li class="level1"><div class="li"> (4)Appende i primi <code>num</code> caratteri della stringa <code>str</code> alla fine della stringa corrente.  </div>
+</li>
+<li class="level1"><div class="li"> (5)Appende <code>num</code> ripetizioni del carattere <code>ch</code> alla fine della stringa corrente.</div>
+</li>
+<li class="level1"><div class="li"> (6)Appende la sequenza di caratteri delimitata dagli iteratori <code>start</code> ed <code>end</code> alla fine della stringa corrente.</div>
+</li>
+</ul>
+
+<p>
+
+Ad esempio, il seguente frammento di codice appende 10 copie del carattere <code>!</code> ad una stringa:
+</p>
+<pre class="cpp code cpp">     string str <span class="sy1">=</span> <span class="st0">&quot;Hello World&quot;</span><span class="sy4">;</span>
+     str.<span class="me1">append</span><span class="br0">&#40;</span> <span class="nu0">10</span>, <span class="st0">'!'</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> str <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
+<p>
+L&#039;output del codice qui sopra e&#039; il seguente:
+</p>
+<pre class="code">
+     Hello World!!!!!!!!!!</pre>
+<p>
+Nel seguente esempio, append() e&#039; usata per concatenare una sottostringa di una stringa in un altra stringa:
+</p>
+<pre class="cpp code cpp">   string str1 <span class="sy1">=</span> <span class="st0">&quot;Eventually I stopped caring... &quot;</span><span class="sy4">;</span>
+   string str2 <span class="sy1">=</span> <span class="st0">&quot;but that was the '80s so nobody noticed.&quot;</span><span class="sy4">;</span>
+&nbsp;
+   str1.<span class="me1">append</span><span class="br0">&#40;</span> str2, <span class="nu0">25</span>, <span class="nu0">15</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;str1 is &quot;</span> <span class="sy1">&lt;&lt;</span> str1 <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
+<p>
+Una volta eseguito, il codice sopra visualizzera&#039; il seguente output:
+</p>
+<pre class="code">
+   str1 is Eventually I stopped caring... nobody noticed.</pre>
+</div>
+</div>
+</body>
+</html>

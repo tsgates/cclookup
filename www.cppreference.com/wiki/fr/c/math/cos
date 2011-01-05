@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr"
+ lang="fr" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>fr:numeric:c:cos</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:00-0700" />
+<meta name="keywords" content="fr,numeric,c,cos" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/fr/numeric/c/cos?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=fr:numeric:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/fr/numeric/c/cos" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/fr/numeric/c/cos" />
+<link rel="canonical" href="cos" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='fr:numeric:c';var JSINFO = {"id":"fr:numeric:c:cos","namespace":"fr:numeric:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="cos" id="cos">cos</a></h2>
+<div class="level2">
+
+<p>
+Syntaxe :
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cmath&gt;</span>
+    <span class="kw4">double</span> <span class="kw3">cos</span> <span class="br0">&#40;</span><span class="kw4">double</span> arg<span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+La fonction <code>cos()</code> renvoie le cosinus de <code>arg</code>, où <code>arg</code> est exprimé
+en radians.
+</p>
+
+<p>
+La valeur de retour de <code>cos()</code> est compris dans [-1,1]. Si <code>arg</code> est infini,
+<code>cos()</code> renverra <code>NAN</code> (Not A Number) et lèvera une exception de type
+virgule flottante.
+</p>
+
+<p>
+C++ fournit également les implémentations suivantes :
+
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cmath&gt;</span>
+    <span class="kw4">float</span> <span class="kw3">cos</span> <span class="br0">&#40;</span><span class="kw4">float</span> arg<span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// identique à cosf() en C99</span>
+    <span class="kw4">long</span> <span class="kw4">double</span> <span class="kw3">cos</span> <span class="br0">&#40;</span><span class="kw4">long</span> <span class="kw4">double</span> arg<span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// identique à cosl() en C99</span></pre>
+<p>
+Sujets connexes : <a href="acos" class="wikilink1" title="fr:numeric:c:acos">acos</a>, <a href="asin" class="wikilink1" title="fr:numeric:c:asin">asin</a>, <a href="atan" class="wikilink1" title="fr:numeric:c:atan">atan</a>, <a href="atan2" class="wikilink1" title="fr:numeric:c:atan2">atan2</a>, <a href="cosh" class="wikilink1" title="fr:numeric:c:cosh">cosh</a>, <a href="sin" class="wikilink1" title="fr:numeric:c:sin">sin</a>, <a href="sinh" class="wikilink1" title="fr:numeric:c:sinh">sinh</a>, <a href="tan" class="wikilink1" title="fr:numeric:c:tan">tan</a>, <a href="tanh" class="wikilink1" title="fr:numeric:c:tanh">tanh</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

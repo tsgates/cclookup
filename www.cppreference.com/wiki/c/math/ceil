@@ -4,59 +4,117 @@
  lang="en" dir="ltr">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>c:math:ceil</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
+  <title>numeric:c:ceil</title>
+<meta name="generator" content="DokuWiki" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2009-03-19T23:51:12-0700" />
-<meta name="keywords" content="c,math,ceil" />
+<meta name="date" content="2010-10-28T18:17:32-0700" />
+<meta name="keywords" content="numeric,c,ceil" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/c/math/ceil?do=index" title="Index" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/numeric/c/ceil?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
-<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=c:math" />
-<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/c/math/ceil" />
-<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/c/math/ceil" />
-<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=numeric:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/numeric/c/ceil" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/numeric/c/ceil" />
+<link rel="canonical" href="ceil" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='numeric:c';var JSINFO = {"id":"numeric:c:ceil","namespace":"numeric:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
 
+<ul class="toc">
+<li class="clear">
 
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="ceil#ceil" class="toc">ceil</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="ceil#parameters" class="toc">Parameters</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="ceil#return_value" class="toc">Return value</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="ceil#example" class="toc">Example</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="ceil#notes" class="toc">Notes</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="ceil#see_also" class="toc">See also</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
 
-<h2><a name="ceil" id="ceil">ceil</a></h2>
+<h2 class="sectionedit1"><a name="ceil" id="ceil">ceil</a></h2>
 <div class="level2">
 
 <p>
 Syntax:
 </p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;cmath&gt;</span>
-    <span class="kw4">double</span> ceil<span class="br0">&#40;</span> <span class="kw4">double</span> num <span class="br0">&#41;</span>;</pre>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cmath&gt;</span>
+&nbsp;
+    <span class="kw4">float</span> <span class="kw3">ceil</span><span class="br0">&#40;</span> <span class="kw4">float</span> arg <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">double</span> <span class="kw3">ceil</span><span class="br0">&#40;</span> <span class="kw4">double</span> arg <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">long</span> <span class="kw4">double</span> <span class="kw3">ceil</span><span class="br0">&#40;</span> <span class="kw4">long</span> <span class="kw4">double</span> arg <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Computes nearest integer not less than <code>arg</code>.
+</p>
+
+</div>
+<!-- EDIT1 SECTION "ceil" [1-216] -->
+<h3 class="sectionedit2"><a name="parameters" id="parameters">Parameters</a></h3>
+<div class="level3">
+
 <p>
 
-The ceil() function returns the smallest integer no less than num. For example,
+<code>arg</code> - floating point value
 </p>
-<pre class="c code c++" style="font-family:monospace;">     y <span class="sy0">=</span> <span class="nu16">6.04</span>;
-     x <span class="sy0">=</span> ceil<span class="br0">&#40;</span> y <span class="br0">&#41;</span>;</pre>
+
+</div>
+<!-- EDIT2 SECTION "Parameters" [217-268] -->
+<h3 class="sectionedit3"><a name="return_value" id="return_value">Return value</a></h3>
+<div class="level3">
+
+<p>
+
+nearest integer not less than <code>arg</code>
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Return value" [269-329] -->
+<h3 class="sectionedit4"><a name="example" id="example">Example</a></h3>
+<div class="level3">
+<pre class="cpp code cpp">     y <span class="sy1">=</span> <span class="nu16">6.04</span><span class="sy4">;</span>
+     x <span class="sy1">=</span> <span class="kw3">ceil</span><span class="br0">&#40;</span> y <span class="br0">&#41;</span><span class="sy4">;</span></pre>
 <p>
 
 would set x to 7.0.
 </p>
 
-<p>
-C++ also provides the following overloaded forms:
+</div>
+<!-- EDIT4 SECTION "Example" [330-417] -->
+<h3 class="sectionedit5"><a name="notes" id="notes">Notes</a></h3>
+<div class="level3">
 
-</p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;cmath&gt;</span>
-    <span class="kw4">float</span> ceil<span class="br0">&#40;</span> <span class="kw4">float</span> num <span class="br0">&#41;</span>; <span class="co1">// same as ceilf() in C99</span>
-    <span class="kw4">long</span> <span class="kw4">double</span> ceil<span class="br0">&#40;</span> <span class="kw4">long</span> <span class="kw4">double</span> num <span class="br0">&#41;</span>; <span class="co1">// same as ceill() in C99</span></pre>
 <p>
-Related Topics: <a href="floor" class="wikilink1" title="c:math:floor">floor</a>, <a href="fmod" class="wikilink1" title="c:math:fmod">fmod</a>
+
+The integer value can be always represented by the given floating point type.
 </p>
 
 </div>
-<!-- SECTION "ceil" [3-] --></div>
+<!-- EDIT5 SECTION "Notes" [418-511] -->
+<h3 class="sectionedit6"><a name="see_also" id="see_also">See also</a></h3>
+<div class="level3">
+
+<p>
+<a href="floor" class="wikilink1" title="numeric:c:floor">floor</a>, <a href="trunc" class="wikilink1" title="numeric:c:trunc">trunc</a>, <a href="round" class="wikilink1" title="numeric:c:round">round</a>
+</p>
+
+</div>
+<!-- EDIT6 SECTION "See also" [512-] --></div>
 </body>
 </html>

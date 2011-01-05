@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn"
+ lang="cn" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>cn:io:c:fopen</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:53-0700" />
+<meta name="keywords" content="cn,io,c,fopen" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/cn/io/c/fopen?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=cn:io:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/cn/io/c/fopen" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/cn/io/c/fopen" />
+<link rel="canonical" href="fopen" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='cn:io:c';var JSINFO = {"id":"cn:io:c:fopen","namespace":"cn:io:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="fopen" id="fopen">fopen</a></h2>
+<div class="level2">
+
+<p>
+语法：
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cstdio&gt;</span>
+    <span class="kw4">FILE</span> <span class="sy2">*</span><span class="kw3">fopen</span><span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>fname, <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>mode <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+fopen()打开由fname标示的文件并返回和此文件关联的文件流。mode用来决定这个文件被怎样处理（比如，为了输入，输出等）。
+</p>
+
+<p>
+如果发生错误，fopen()返回NULL。
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<th class="col0">模式</th><th class="col1">意义</th><th class="col2">已经存在</th><th class="col3">尚未存在</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">“r”</td><td class="col1">打开一个文件用来读</td><td class="col2">从开始读</td><td class="col3">错误</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">“w”</td><td class="col1">创建一个文件用来写</td><td class="col2">删除内容</td><td class="col3">创建新文件</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">“a”</td><td class="col1">附加到一个文件</td><td class="col2">写在末尾</td><td class="col3">创建新文件</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">“r+“</td><td class="col1">打开一个文件用来读写</td><td class="col2">从开始读</td><td class="col3">错误</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0">“w+“</td><td class="col1">创建一个文件用来读写</td><td class="col2">删除内容</td><td class="col3">创建新文件</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0">“a+“</td><td class="col1">打开一个文件用来读写</td><td class="col2">写在末尾</td><td class="col3">创建新文件</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [330-737] -->
+<p>
+
+你也可以选择在Windows系统中增加”b”标志以二进制方式打开一个文件。这个标志被 POSIX系统（包括Linux）忽略，所以在操作二进制文件时一直添加此标志是安全的。
+</p>
+
+<p>
+如果模式中包含”a”标志，数据将写入到文件的末尾而无视文件指针的当前位置。
+</p>
+
+<p>
+一个例子：
+</p>
+<pre class="cpp code cpp">     <span class="kw4">int</span> ch<span class="sy4">;</span>
+     <span class="kw4">FILE</span> <span class="sy2">*</span>input <span class="sy1">=</span> <span class="kw3">fopen</span><span class="br0">&#40;</span> <span class="st0">&quot;stuff&quot;</span>, <span class="st0">&quot;r&quot;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+     ch <span class="sy1">=</span> <span class="kw3">getc</span><span class="br0">&#40;</span> input <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+相关主题： <a href="fclose" class="wikilink1" title="cn:io:c:fclose">fclose</a>, <a href="fflush" class="wikilink1" title="cn:io:c:fflush">fflush</a>, <a href="fgetc" class="wikilink1" title="cn:io:c:fgetc">fgetc</a>, <a href="fputc" class="wikilink1" title="cn:io:c:fputc">fputc</a>, <a href="fread" class="wikilink1" title="cn:io:c:fread">fread</a>, <a href="freopen" class="wikilink1" title="cn:io:c:freopen">freopen</a>, <a href="fseek" class="wikilink1" title="cn:io:c:fseek">fseek</a>, <a href="fwrite" class="wikilink1" title="cn:io:c:fwrite">fwrite</a>, <a href="getc" class="wikilink1" title="cn:io:c:getc">getc</a>, <a href="getchar" class="wikilink1" title="cn:io:c:getchar">getchar</a>, <a href="setbuf" class="wikilink1" title="cn:io:c:setbuf">setbuf</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es"
+ lang="es" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>es:util:functional:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-11-13T09:39:30-0800" />
+<meta name="keywords" content="es,util,functional,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/es/util/functional/start?do=index" title="Índice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=es:util:functional" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/es/util/functional/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/es/util/functional/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='es:util:functional';var JSINFO = {"id":"es:util:functional:start","namespace":"es:util:functional"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="la_cabecera_functional" id="la_cabecera_functional">La cabecera &lt;functional&gt;</a></h2>
+<div class="level2">
+
+<p>
+
+Esta cabecera incluye varias definiciones y herramientas que permiten llevar a cabo algunas formas de <a href="http://en.wikipedia.org/wiki/es:Programación Funcional" class="interwiki iw_wp" title="http://en.wikipedia.org/wiki/es:Programación Funcional">es:Programación Funcional</a> en C++. Cada uno de los objetos y métodos en la tabla siguiente permite operar con conceptos como funciones de manera similar a como se opera con variables.
+</p>
+
+<p>
+En programación funcional en el estilo de C++ se usa una terminología basada en las matemáticas. Un <em>functor</em> o <a href="http://en.wikipedia.org/wiki/es:functoide" class="interwiki iw_wp" title="http://en.wikipedia.org/wiki/es:functoide">es:functoide</a> es un objeto (p.ej.: una instancia de una clase) que se comporta como si fuera una función, es decir, si el objeto es <code>f</code>, puede ser invocado con argumentos con la misma notación de una función: <code>x = f (a, b)</code>. Una <em>proposición</em> o <a href="http://en.wikipedia.org/wiki/es:predicado" class="interwiki iw_wp" title="http://en.wikipedia.org/wiki/es:predicado">es:predicado</a> es un tipo especial de functoide que determina la veracidad o falsedad de una proposición acerca de su argumento, por ejemplo <code>bool is_even = even (x)</code>. 
+</p>
+
+<p>
+Este índice presenta las características disponibles en la cabecera <code>&lt;functional&gt;</code>. El próximo estándar de C++, “C++0x”, introduce nuevas herramientas que en los compiladores actuales pueden encontrarse en la cabecera <code>&lt;tr1/functional&gt;</code>, y muchas de las cuales superceden a las herramientas aquí presentadas.
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="binary_function" class="wikilink1" title="es:util:functional:binary_function">binary_function</a></td><td class="col1"> Forma base de un functoide de dos argumentos </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/es/util/functional/binary_negate" class="wikilink2" title="es:util:functional:binary_negate" rel="nofollow">binary_negate</a></td><td class="col1"> </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="bind1st" class="wikilink1" title="es:util:functional:bind1st">bind1st</a></td><td class="col1"> Fija el valor del primer argumento de una función binaria </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="bind2nd" class="wikilink1" title="es:util:functional:bind2nd">bind2nd</a></td><td class="col1"> Fija el valor del segundo argumento de una función binaria </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/es/util/functional/binder1st" class="wikilink2" title="es:util:functional:binder1st" rel="nofollow">binder1st</a></td><td class="col1"> Crea un functoide usando <code>bind1st</code> </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/es/util/functional/binder2nd" class="wikilink2" title="es:util:functional:binder2nd" rel="nofollow">binder2nd</a></td><td class="col1"> Crea un functoide usando <code>bind2nd</code> </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/es/util/functional/const_mem_fun1_ref_t" class="wikilink2" title="es:util:functional:const_mem_fun1_ref_t" rel="nofollow">const_mem_fun1_ref_t</a></td><td class="col1"> </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/es/util/functional/const_mem_fun1_t" class="wikilink2" title="es:util:functional:const_mem_fun1_t" rel="nofollow">const_mem_fun1_t</a></td><td class="col1"> </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/es/util/functional/const_mem_fun_ref_t" class="wikilink2" title="es:util:functional:const_mem_fun_ref_t" rel="nofollow">const_mem_fun_ref_t</a></td><td class="col1"> </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/es/util/functional/const_mem_fun_t" class="wikilink2" title="es:util:functional:const_mem_fun_t" rel="nofollow">const_mem_fun_t</a></td><td class="col1"> </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/es/util/functional/divides" class="wikilink2" title="es:util:functional:divides" rel="nofollow">divides</a></td><td class="col1 leftalign"> Functoide que devuelve el cuociente de dos valores por el operador <code>operator/</code>  </td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="equal_to" class="wikilink1" title="es:util:functional:equal_to">equal_to</a></td><td class="col1"> Predicado que compara el primer argumento con el segundo para probar la igualdad </td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><a href="greater" class="wikilink1" title="es:util:functional:greater">greater</a></td><td class="col1"> Predicado que compara si el primer argumento es mayor que el segundo </td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/es/util/functional/greater_equal" class="wikilink2" title="es:util:functional:greater_equal" rel="nofollow">greater_equal</a></td><td class="col1"> Predicado que compara si el primer argumento es mayor o igual que el segundo </td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><a href="less" class="wikilink1" title="es:util:functional:less">less</a></td><td class="col1"> Predicado que compara si el primer argumento es menor que el segundo </td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/es/util/functional/less_equal" class="wikilink2" title="es:util:functional:less_equal" rel="nofollow">less_equal</a></td><td class="col1"> Predicado que compara si el primer argumento es menor o igual que el segundo </td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/es/util/functional/logical_and" class="wikilink2" title="es:util:functional:logical_and" rel="nofollow">logical_and</a></td><td class="col1 leftalign"> Functoide que devuelve el <em>y</em> lógico de dos valores vía <code>operator&amp;&amp;</code>  </td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/es/util/functional/logical_not" class="wikilink2" title="es:util:functional:logical_not" rel="nofollow">logical_not</a></td><td class="col1"> </td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/es/util/functional/logical_or" class="wikilink2" title="es:util:functional:logical_or" rel="nofollow">logical_or</a></td><td class="col1"> Functoide que devuelve el <em>o</em> lógico de dos valores vía <code>operator||</code> </td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/es/util/functional/mem_fun1_ref_t" class="wikilink2" title="es:util:functional:mem_fun1_ref_t" rel="nofollow">mem_fun1_ref_t</a></td><td class="col1"> </td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/es/util/functional/mem_fun1_t" class="wikilink2" title="es:util:functional:mem_fun1_t" rel="nofollow">mem_fun1_t</a></td><td class="col1"> </td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"><a href="mem_fun" class="wikilink1" title="es:util:functional:mem_fun">mem_fun</a></td><td class="col1"> Construye un functoide desde una función miembro (con tipo puntero) </td>
+	</tr>
+	<tr class="row22">
+		<td class="col0"><a href="mem_fun_ref" class="wikilink1" title="es:util:functional:mem_fun_ref">mem_fun_ref</a></td><td class="col1"> Construye un functoide desde una función miembro (con tipo referencia) </td>
+	</tr>
+	<tr class="row23">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/es/util/functional/mem_fun_ref_t" class="wikilink2" title="es:util:functional:mem_fun_ref_t" rel="nofollow">mem_fun_ref_t</a></td><td class="col1"> </td>
+	</tr>
+	<tr class="row24">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/es/util/functional/mem_fun_t" class="wikilink2" title="es:util:functional:mem_fun_t" rel="nofollow">mem_fun_t</a></td><td class="col1"> </td>
+	</tr>
+	<tr class="row25">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/es/util/functional/minus" class="wikilink2" title="es:util:functional:minus" rel="nofollow">minus</a></td><td class="col1 leftalign"> Functoide que devuelve la resta de dos valores por el operador <code>operator-</code>  </td>
+	</tr>
+	<tr class="row26">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/es/util/functional/modulus" class="wikilink2" title="es:util:functional:modulus" rel="nofollow">modulus</a></td><td class="col1 leftalign"> Functoide que devuelve el módulo de dos valores por el operador <code>operator%</code>  </td>
+	</tr>
+	<tr class="row27">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/es/util/functional/multiplies" class="wikilink2" title="es:util:functional:multiplies" rel="nofollow">multiplies</a></td><td class="col1 leftalign"> Functoide que devuelve el producto de dos valores por el operador <code>operator*</code>  </td>
+	</tr>
+	<tr class="row28">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/es/util/functional/negate" class="wikilink2" title="es:util:functional:negate" rel="nofollow">negate</a></td><td class="col1"> Predicado que niega un functoide </td>
+	</tr>
+	<tr class="row29">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/es/util/functional/not1" class="wikilink2" title="es:util:functional:not1" rel="nofollow">not1</a></td><td class="col1"> Niega una función unaria </td>
+	</tr>
+	<tr class="row30">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/es/util/functional/not2" class="wikilink2" title="es:util:functional:not2" rel="nofollow">not2</a></td><td class="col1"> Niega una función binaria </td>
+	</tr>
+	<tr class="row31">
+		<td class="col0"><a href="not_equal_to" class="wikilink1" title="es:util:functional:not_equal_to">not_equal_to</a></td><td class="col1"> Predicado que compara si el primer argumento es no-igual que el segundo </td>
+	</tr>
+	<tr class="row32">
+		<td class="col0"><a href="plus" class="wikilink1" title="es:util:functional:plus">plus</a></td><td class="col1 leftalign"> Functoide que devuelve la suma de dos valores por el operador <code>operator+</code>  </td>
+	</tr>
+	<tr class="row33">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/es/util/functional/pointer_to_binary_function" class="wikilink2" title="es:util:functional:pointer_to_binary_function" rel="nofollow">pointer_to_binary_function</a></td><td class="col1"> </td>
+	</tr>
+	<tr class="row34">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/es/util/functional/pointer_to_unary_function" class="wikilink2" title="es:util:functional:pointer_to_unary_function" rel="nofollow">pointer_to_unary_function</a></td><td class="col1"> </td>
+	</tr>
+	<tr class="row35">
+		<td class="col0"><a href="ptr_fun" class="wikilink1" title="es:util:functional:ptr_fun">ptr_fun</a></td><td class="col1"> Construye un functoide desde un puntero a función </td>
+	</tr>
+	<tr class="row36">
+		<td class="col0"><a href="unary_function" class="wikilink1" title="es:util:functional:unary_function">unary_function</a></td><td class="col1"> </td>
+	</tr>
+	<tr class="row37">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/es/util/functional/unary_negate" class="wikilink2" title="es:util:functional:unary_negate" rel="nofollow">unary_negate</a></td><td class="col1"> </td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [1207-3473] -->
+</div>
+</div>
+</body>
+</html>

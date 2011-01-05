@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cz"
+ lang="cz" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>cz:container:priority_queue:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:28-0700" />
+<meta name="keywords" content="cz,container,priority_queue,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/cz/container/priority_queue/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=cz:container:priority_queue" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/cz/container/priority_queue/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/cz/container/priority_queue/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='cz:container:priority_queue';var JSINFO = {"id":"cz:container:priority_queue:start","namespace":"cz:container:priority_queue"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="c_prioritni_fronta_priority_queues" id="c_prioritni_fronta_priority_queues">C++ Prioritní Fronta (Priority Queues)</a></h1>
+<div class="level1">
+
+<p>
+
+Prioritní fronta je podobná C++ frontě queue s tím rozdílem, že jsou prvky 
+uspořádané podle nějakého predikátu.
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/container/priority_queue/pqueue_constructors" class="wikilink2" title="cz:container:priority_queue:pqueue_constructors" rel="nofollow">Constructors</a></td><td class="col1">vytvoří novou prioritní frontu</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/container/priority_queue/empty" class="wikilink2" title="cz:container:priority_queue:empty" rel="nofollow">empty</a></td><td class="col1">true pokud je prioritní fronta prázdná</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/container/priority_queue/pop" class="wikilink2" title="cz:container:priority_queue:pop" rel="nofollow">pop</a></td><td class="col1">odstraní první prvek z prioritní fronty</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/container/priority_queue/push" class="wikilink2" title="cz:container:priority_queue:push" rel="nofollow">push</a></td><td class="col1">vloží prvek do prioritní fronty</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/container/priority_queue/size" class="wikilink2" title="cz:container:priority_queue:size" rel="nofollow">size</a></td><td class="col1">vrátí počet prvků v prioritní frontě</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/container/priority_queue/top" class="wikilink2" title="cz:container:priority_queue:top" rel="nofollow">top</a></td><td class="col1">vrátí první prvek prioritní fronty</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [189-517] -->
+</div>
+</div>
+</body>
+</html>

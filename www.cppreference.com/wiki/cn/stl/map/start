@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn"
+ lang="cn" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>cn:container:map:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:54-0700" />
+<meta name="keywords" content="cn,container,map,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/cn/container/map/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=cn:container:map" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/cn/container/map/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/cn/container/map/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='cn:container:map';var JSINFO = {"id":"cn:container:map:start","namespace":"cn:container:map"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<p>
+C++Map称为联合容器，其中的元素是(惟一)关键字及其关联值的二元组，这些元素按照关键字有序。
+</p>
+
+<p>
+例如，你可以创建一个字符串和整数的联合容器，然后在容器中插入各个月份及其天数的二元组：
+</p>
+<pre class="code"> map&lt;string, int&gt; months;
+
+ months.insert(make_pair(&quot;January&quot;, 31);
+ months.insert(make_pair(&quot;February&quot;, 28);
+ months.insert(make_pair(&quot;March&quot;, 31);
+   ...
+   
+ months.insert(make_pair(&quot;December&quot;, 31);
+
+ map&lt;string,int&gt;::iterator iter;
+ for( iter = months.begin(); iter != months.end(); ++iter ) {
+  cout &lt;&lt; iter-&gt;first &lt;&lt; &quot; has &quot; &lt;&lt; iter-&gt;second &lt;&lt; &quot; days&quot; &lt;&lt; endl;
+}
+ </pre>
+
+<p>
+你可以想象，程序的输出是：
+</p>
+<pre class="code">January has 31 days
+February has 28 days
+   ... 
+December has 31 days.</pre>
+</div>
+</body>
+</html>

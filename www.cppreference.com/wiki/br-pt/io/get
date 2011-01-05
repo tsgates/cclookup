@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="br-pt"
+ lang="br-pt" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>br-pt:io:get</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:03-0700" />
+<meta name="keywords" content="br-pt,io,get" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/br-pt/io/get?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=br-pt:io" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/br-pt/io/get" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/br-pt/io/get" />
+<link rel="canonical" href="get" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='br-pt:io';var JSINFO = {"id":"br-pt:io:get","namespace":"br-pt:io"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="get" id="get">get</a></h2>
+<div class="level2">
+
+<p>
+Sintaxe:
+</p>
+<pre class="cpp code cpp">    <span class="kw4">int</span> istream<span class="sy4">::</span><span class="me2">get</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    istream<span class="sy3">&amp;</span> istream<span class="sy4">::</span><span class="me2">get</span><span class="br0">&#40;</span> <span class="kw4">char</span><span class="sy3">&amp;</span> ch <span class="br0">&#41;</span><span class="sy4">;</span>
+    istream<span class="sy3">&amp;</span> istream<span class="sy4">::</span><span class="me2">get</span><span class="br0">&#40;</span> <span class="kw4">char</span><span class="sy2">*</span> buffer, streamsize num <span class="br0">&#41;</span><span class="sy4">;</span>
+    istream<span class="sy3">&amp;</span> istream<span class="sy4">::</span><span class="me2">get</span><span class="br0">&#40;</span> <span class="kw4">char</span><span class="sy2">*</span> buffer, streamsize num, <span class="kw4">char</span> delim <span class="br0">&#41;</span><span class="sy4">;</span>
+    istream<span class="sy3">&amp;</span> istream<span class="sy4">::</span><span class="me2">get</span><span class="br0">&#40;</span> streambuf<span class="sy3">&amp;</span> buffer <span class="br0">&#41;</span><span class="sy4">;</span>
+    istream<span class="sy3">&amp;</span> istream<span class="sy4">::</span><span class="me2">get</span><span class="br0">&#40;</span> streambuf<span class="sy3">&amp;</span> buffer, <span class="kw4">char</span> delim <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+
+A função get() é usada com streams de entrada, e:
+</p>
+<ul>
+<li class="level1"><div class="li"> lê um caracter e devolve esse valor,</div>
+</li>
+<li class="level1"><div class="li"> lê um caracter e guarda-o em ch,</div>
+</li>
+<li class="level1"><div class="li"> lê e guarda caracteres em buffer até num - 1 caracteres terem sido lidos, ou <acronym title="End of file">EOF</acronym>, ou até encontrar newline, ou o caracter delim (delim não é lido até à próxima vez que a função for invocada),</div>
+</li>
+<li class="level1"><div class="li"> ou lê e guarda caracteres em buffer até um newline, <acronym title="End of file">EOF</acronym>, ou caracter delim ser encontrado (mais uma vez, delim não é lido até ao próximo get() ).</div>
+</li>
+</ul>
+
+<p>
+Por exemplo, o código seguinte mostra os conteúdos de um ficheiro chamado
+temp.txt, caracter a caracter:
+</p>
+<pre class="cpp code cpp">     <span class="kw4">char</span> ch<span class="sy4">;</span>
+     ifstream fin<span class="br0">&#40;</span> <span class="st0">&quot;temp.txt&quot;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+     <span class="kw1">while</span><span class="br0">&#40;</span> fin.<span class="me1">get</span><span class="br0">&#40;</span>ch<span class="br0">&#41;</span> <span class="br0">&#41;</span>
+       <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> ch<span class="sy4">;</span>
+     fin.<span class="me1">close</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Tópicos Relacionados: <a href="http://www.cppreference.com/wiki/br-pt/io/gcount" class="wikilink2" title="br-pt:io:gcount" rel="nofollow">gcount</a>, <a href="getline" class="wikilink1" title="br-pt:io:getline">getline</a>, <a href="../string/getline" class="wikilink1" title="br-pt:string:getline">(C++ Strings) getline</a>, <a href="http://www.cppreference.com/wiki/br-pt/io/ignore" class="wikilink2" title="br-pt:io:ignore" rel="nofollow">ignore</a>, <a href="http://www.cppreference.com/wiki/br-pt/io/peek" class="wikilink2" title="br-pt:io:peek" rel="nofollow">peek</a>, <a href="http://www.cppreference.com/wiki/br-pt/io/put" class="wikilink2" title="br-pt:io:put" rel="nofollow">put</a>, <a href="http://www.cppreference.com/wiki/br-pt/io/read" class="wikilink2" title="br-pt:io:read" rel="nofollow">read</a>
+
+</p>
+
+</div>
+<!-- EDIT1 SECTION "get" [3-] --></div>
+</body>
+</html>

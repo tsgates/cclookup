@@ -49,3 +49,4 @@ Index the database by yourself
 
 1. download any versions of documents from 'http://www.cppreference.com/cppreference-files.tar.gz'
 2. indexing by typing './cclookup.py -u [path]'
+  ex) ./cclookup.py -u ./www.cppreference.com/wiki

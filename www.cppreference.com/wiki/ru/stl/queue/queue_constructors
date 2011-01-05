@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru"
+ lang="ru" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>ru:container:queue:queue_constructors</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:14-0700" />
+<meta name="keywords" content="ru,container,queue,queue_constructors" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/ru/container/queue/queue_constructors?do=index" title="Все страницы" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=ru:container:queue" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/ru/container/queue/queue_constructors" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/ru/container/queue/queue_constructors" />
+<link rel="canonical" href="queue_constructors" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='ru:container:queue';var JSINFO = {"id":"ru:container:queue:queue_constructors","namespace":"ru:container:queue"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="конструкторы_очереди" id="конструкторы_очереди">Конструкторы очереди</a></h2>
+<div class="level2">
+
+<p>
+Синтаксис:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;queue&gt;</span>
+    queue<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    queue<span class="br0">&#40;</span> <span class="kw4">const</span> Container<span class="sy3">&amp;</span> other <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+У очередей есть конструктор по умолчанию и конструктор копирования, который
+создает новую очередь из контейнера other.
+</p>
+
+<p>
+Например, следующий код создает очередь из строк, наполняет ее введенными
+пользователем данными и выводит обратно на экран:
+</p>
+<pre class="cpp code cpp">    queue<span class="sy1">&lt;</span>string<span class="sy1">&gt;</span> waiting_line<span class="sy4">;</span>
+    <span class="kw1">while</span><span class="br0">&#40;</span> waiting_line.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy1">&lt;</span> <span class="nu0">5</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+      <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Добро пожаловать в очередь, введите ваше имя: &quot;</span><span class="sy4">;</span>
+      string s<span class="sy4">;</span>
+      getline<span class="br0">&#40;</span> <span class="kw3">cin</span>, s <span class="br0">&#41;</span><span class="sy4">;</span>
+      waiting_line.<span class="me1">push</span><span class="br0">&#40;</span>s<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="br0">&#125;</span>
+&nbsp;
+    <span class="kw1">while</span><span class="br0">&#40;</span> <span class="sy3">!</span>waiting_line.<span class="me1">empty</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+      <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Пришла очередь: &quot;</span> <span class="sy1">&lt;&lt;</span> waiting_line.<span class="me1">front</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+      waiting_line.<span class="me1">pop</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="br0">&#125;</span></pre>
+<p>
+После запуска код может, например, вывести:
+</p>
+<pre class="code">
+Добро пожаловать в очередь, введите ваше имя: Барт
+Добро пожаловать в очередь, введите ваше имя: Милхаус
+Добро пожаловать в очередь, введите ваше имя: Ральф
+Добро пожаловать в очередь, введите ваше имя: Лиза
+Добро пожаловать в очередь, введите ваше имя: Кухарка Дорис
+Пришла очередь: Барт
+Пришла очередь: Милхаус
+Пришла очередь: Ральф
+Пришла очередь: Лиза
+Пришла очередь: Кухарка Дорис</pre>
+</div>
+<!-- EDIT1 SECTION "Конструкторы очереди" [3-] --></div>
+</body>
+</html>

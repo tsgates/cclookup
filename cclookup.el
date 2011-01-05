@@ -196,9 +196,9 @@
                    (desc (cadddr x)))
 
               (incf index)
-              (insert (format " %03d) %-10s %-50s [%15s]"
+              (insert (format " %03d) %-15s %-50s [%15s]"
                   index 
-                  (cclookup-trim key  10)
+                  (cclookup-trim key  15)
                   (cclookup-trim desc 50)
                   (cclookup-trim cat  15)))
 

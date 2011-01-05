@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr"
+ lang="fr" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>fr:string:c:strcat</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:58-0700" />
+<meta name="keywords" content="fr,string,c,strcat" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/fr/string/c/strcat?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=fr:string:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/fr/string/c/strcat" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/fr/string/c/strcat" />
+<link rel="canonical" href="strcat" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='fr:string:c';var JSINFO = {"id":"fr:string:c:strcat","namespace":"fr:string:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="strcat" id="strcat">strcat</a></h2>
+<div class="level2">
+
+<p>
+Syntaxe :
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cstring&gt;</span>
+    <span class="kw4">char</span> <span class="sy2">*</span><span class="kw3">strcat</span> <span class="br0">&#40;</span><span class="kw4">char</span> <span class="sy2">*</span>str1, <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>str2<span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+La fonction <code>strcat()</code> concatène <code>str2</code> à la fin de <code>str1</code>, et renvoie un
+pointeur vers <code>str1</code>.
+</p>
+
+<p>
+Exemple d&#039;utilisation :
+</p>
+<pre class="cpp code cpp">     <span class="kw3">printf</span><span class="br0">&#40;</span><span class="st0">&quot;Entrez votre nom : &quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+     <span class="kw3">scanf</span><span class="br0">&#40;</span><span class="st0">&quot;%s&quot;</span>, nom<span class="br0">&#41;</span><span class="sy4">;</span>
+     titre <span class="sy1">=</span> <span class="kw3">strcat</span><span class="br0">&#40;</span>nom, <span class="st0">&quot; le Grand&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+     <span class="kw3">printf</span><span class="br0">&#40;</span><span class="st0">&quot;Bonjour, %s<span class="es1">\n</span>&quot;</span>, titre<span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Remarquez que <code>stract()</code> ne réalise pas de vérification de limites, et il est donc possible
+de dépasser l&#039;espace mémoire alloué à <code>str1</code>. Pour une fonction similaire qui
+réalise une vérification de limites, consultez <code><a href="strncat" class="wikilink1" title="fr:string:c:strncat">strncat()</a></code>.
+</p>
+
+<p>
+Sujets connexes : <a href="strchr" class="wikilink1" title="fr:string:c:strchr">strchr</a>, <a href="strcmp" class="wikilink1" title="fr:string:c:strcmp">strcmp</a>, <a href="strcpy" class="wikilink1" title="fr:string:c:strcpy">strcpy</a>, <a href="strncat" class="wikilink1" title="fr:string:c:strncat">strncat</a>
+</p>
+
+<p>
+Deux autres fonctions similaires (mais non-standards) existent, il s&#039;agit de
+<a href="http://www.cppreference.com/wiki/fr/string/c/strlcpy" class="wikilink2" title="fr:string:c:strlcpy" rel="nofollow">strlcpy</a> and <a href="http://www.cppreference.com/wiki/fr/string/c/strlcat" class="wikilink2" title="fr:string:c:strlcat" rel="nofollow">strlcat</a>.
+</p>
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl"
+ lang="pl" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    pl:util:time    [C++ Reference]
+  </title>
+
+  <meta name="generator" content="DokuWiki" />
+<meta name="robots" content="noindex,follow" />
+<meta name="date" content="1969-12-31T16:00:00-0800" />
+<meta name="keywords" content="pl,util,time" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/pl/util/time?do=index" title="Indeks" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=pl:util" />
+<link rel="edit" title="Edytuj stronę" href="http://www.cppreference.com/wiki/pl/util/time?do=edit" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/pl/util/time" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/pl/util/time" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='pl:util';var JSINFO = {"id":"pl:util:time","namespace":"pl:util"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+
+  <link rel="shortcut icon" href="../../lib/tpl/custom1/images/favicon.png" />
+
+  </head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+      <div class="pagename">
+        [[<a href="http://www.cppreference.com/wiki/pl/util/time?do=backlink"  title="Odnośniki">pl:util:time</a>]]
+      </div>
+      <div class="logo">
+        <a href="http://www.cppreference.com"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">C++ Reference</a>      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+    
+    
+        <div class="breadcrumbs">
+      <span class="bchead">Jesteś tutaj: </span><a href="../../start"  title="start">C++ Reference</a> &raquo; <a href="../start"  title="pl:start">C++ Reference</a> &raquo; <a href="http://www.cppreference.com/wiki/pl/util/start"  title="pl:util:start" class="wikilink2" rel="nofollow">util</a> &raquo; <a href="time"  title="pl:util:time" class="wikilink2" rel="nofollow">time</a>    </div>
+    
+  </div>
+
+<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><a href="../../util/time" class="wikilink2" title="util:time" rel="nofollow">en</a></div></li>  <li><div class="li"><a href="../../br-pt/util/time" class="wikilink2" title="br-pt:util:time" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/util/time" class="wikilink2" title="cn:util:time" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../cz/util/time" class="wikilink2" title="cz:util:time" rel="nofollow">cz</a></div></li>  <li><div class="li"><a href="http://www.cppreference.com/wiki/de/util/time" class="wikilink2" title="de:util:time" rel="nofollow">de</a></div></li>  <li><div class="li"><a href="http://www.cppreference.com/wiki/es/util/time" class="wikilink2" title="es:util:time" rel="nofollow">es</a></div></li>  <li><div class="li"><a href="../../fr/util/time" class="wikilink2" title="fr:util:time" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../../it/util/time" class="wikilink2" title="it:util:time" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../../jp/util/time" class="wikilink2" title="jp:util:time" rel="nofollow">jp</a></div></li>  <li><div class="li"><a href="http://www.cppreference.com/wiki/lv/util/time" class="wikilink2" title="lv:util:time" rel="nofollow">lv</a></div></li>  <li><div class="li"><a href="http://www.cppreference.com/wiki/nl/util/time" class="wikilink2" title="nl:util:time" rel="nofollow">nl</a></div></li>  <li><div class="li"><span class="curid"><a href="time" class="wikilink2" title="pl:util:time" rel="nofollow">pl</a></span></div></li>  <li><div class="li"><a href="http://www.cppreference.com/wiki/ro/util/time" class="wikilink2" title="ro:util:time" rel="nofollow">ro</a></div></li>  <li><div class="li"><a href="../../ru/util/time" class="wikilink2" title="ru:util:time" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="http://www.cppreference.com/wiki/sk/util/time" class="wikilink2" title="sk:util:time" rel="nofollow">sk</a></div></li>  <li><div class="li"><a href="../../tr/util/time" class="wikilink2" title="tr:util:time" rel="nofollow">tr</a></div></li>  <li><div class="li"><a href="../../tw/util/time" class="wikilink2" title="tw:util:time" rel="nofollow">tw</a></div></li></ul></div>
+  
+  
+  <div class="page">
+
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2828341-1";
+urchinTracker();
+</script>
+    <!-- wikipage start -->
+    
+<h1 class="sectionedit1"><a name="ta_strona_jeszcze_nie_istnieje" id="ta_strona_jeszcze_nie_istnieje">Ta strona jeszcze nie istnieje</a></h1>
+<div class="level1">
+
+<p>
+
+Jesteś na stronie, która jeszcze nie istnieje. Jeśli masz wystarczające uprawnienia, możesz utworzyć tę stronę klikając <code>utwórz stronę</code>.
+</p>
+
+</div>
+
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+      <!--
+      <div class="doc">
+              </div>
+      -->
+    </div>
+
+   
+    <div class="bar" id="bar__bottom">
+      <div class="bar-left" id="bar__bottomleft">
+        <a href="http://www.cppreference.com/wiki/pl/util/time?do=edit&amp;rev="  class="action create" accesskey="e" rel="nofollow" title="Utwórz stronę">Utwórz stronę</a> &#149;
+        <a href="http://www.cppreference.com/wiki/pl/util/time?do=revisions"  class="action revs" accesskey="o" rel="nofollow" title="Poprzednie wersje">Poprzednie wersje</a>      </div>
+      <div class="bar-right" id="bar__bottomright">
+         &#149;
+         &#149;
+         &#149;
+        <a href="http://www.cppreference.com/wiki/pl/util/time?do=login&amp;sectok=d3cca5ac319124b251ecd37edf955140"  class="action login" accesskey="" rel="nofollow" title="Zaloguj">Zaloguj</a> &#149;
+        <a href="http://www.cppreference.com/wiki/pl/util/time?do=index"  class="action index" accesskey="x" rel="nofollow" title="Indeks">Indeks</a> &#149;
+        <a href="http://www.cppreference.com/wiki/pl/util/time?do=recent"  class="action recent" accesskey="r" rel="nofollow" title="Ostatnie zmiany">Ostatnie zmiany</a> &#149;
+        <a  href="http://www.cppreference.com/wiki/feed.php" title="Recent changes RSS feed">RSS</a> &#149;
+        <a href='http://creativecommons.org/licenses/by/3.0/us/' title='Creative Commons license'>cc</a> &#149;
+        <form action="../../../index.html" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="no"></div>
+</body>
+</html>

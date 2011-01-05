@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:io:getline</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:17-0700" />
+<meta name="keywords" content="jp,io,getline" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/io/getline?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp:io" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/io/getline" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/io/getline" />
+<link rel="canonical" href="getline" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp:io';var JSINFO = {"id":"jp:io:getline","namespace":"jp:io"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="getline" id="getline">getline</a></h2>
+<div class="level2">
+
+<p>
+
+文法:
+
+</p>
+<pre class="cpp code cpp">    istream<span class="sy3">&amp;</span> istream<span class="sy4">::</span><span class="me2">getline</span><span class="br0">&#40;</span> <span class="kw4">char</span><span class="sy2">*</span> バッファ, streamsize 文字数 <span class="br0">&#41;</span><span class="sy4">;</span>
+    istream<span class="sy3">&amp;</span> istream<span class="sy4">::</span><span class="me2">getline</span><span class="br0">&#40;</span> <span class="kw4">char</span><span class="sy2">*</span> バッファ, streamsize 文字数, <span class="kw4">char</span> 区切り文字 <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+getline()関数は入力ストリームに対して使用されます。”区切り文字”引数がない場合には、改行コードが区切り文字としてセットされます。getline()は次の条件を満たすまで、読み込みます。
+
+</p>
+<ul>
+<li class="level1"><div class="li"> 文字数 - 1 文字まで読み込んだ。</div>
+</li>
+<li class="level1"><div class="li"> EOFに遭遇した。</div>
+</li>
+<li class="level1"><div class="li"> 区切り文字に達するまで読み込んだ。区切り文字はバッファには格納されない。</div>
+</li>
+</ul>
+
+<p>
+
+区切り文字(通常は改行)が読み込まれない場合、入力ストリームには<a href="fail" class="wikilink1" title="jp:io:fail">fail状態</a>がセットされます。
+</p>
+
+<p>
+次のサンプルコードは、getline()関数を使用してテキストファイルから最初の99文字(1文字は終端文字のために予約されています)を表示しています。あるいは、一度に1行読み込みます。(99文字読み込むよりも、EOF/1行が優先)
+</p>
+<pre class="cpp code cpp">    ifstream fin<span class="br0">&#40;</span><span class="st0">&quot;tmp.dat&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+    <span class="kw4">int</span> MAX_LENGTH <span class="sy1">=</span> <span class="nu0">100</span><span class="sy4">;</span>
+    <span class="kw4">char</span> line<span class="br0">&#91;</span>MAX_LENGTH<span class="br0">&#93;</span><span class="sy4">;</span>
+&nbsp;
+    <span class="kw1">while</span><span class="br0">&#40;</span> fin.<span class="me1">getline</span><span class="br0">&#40;</span>line, MAX_LENGTH<span class="br0">&#41;</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+      <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;read line: &quot;</span> <span class="sy1">&lt;&lt;</span> line <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+    <span class="br0">&#125;</span></pre>
+<p>
+文字の配列ではなく、文字列として1行分読み込みたい場合には、<a href="../string/getline" class="wikilink1" title="jp:string:getline">string getline</a>関数を使用して下さい。
+</p>
+
+<p>
+Microsoftのコンパイラはでは、getlineは余計な文字を読み込むことがあります。詳しくは<a href="http://support.microsoft.com/kb/240015" class="urlextern" title="http://support.microsoft.com/kb/240015"  rel="nofollow">Microsoft/getlineのバグ</a>のドキュメントを参照してください。
+</p>
+
+<p>
+関連トピック: <a href="gcount" class="wikilink1" title="jp:io:gcount">gcount</a>, <a href="get" class="wikilink1" title="jp:io:get">get</a>, <a href="../string/getline" class="wikilink1" title="jp:string:getline">string getline</a>, <a href="ignore" class="wikilink1" title="jp:io:ignore">ignore</a>, <a href="read" class="wikilink1" title="jp:io:read">read</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

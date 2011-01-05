@@ -5,35 +5,37 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>keywords:virtual</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="generator" content="DokuWiki" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2008-10-14T15:42:05-0700" />
+<meta name="date" content="2010-10-28T18:17:02-0700" />
 <meta name="keywords" content="keywords,virtual" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/keywords/virtual?do=index" title="Index" />
+<link rel="start" href="../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/keywords/virtual?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
 <link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=keywords" />
 <link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/keywords/virtual" />
 <link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/keywords/virtual" />
-<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="canonical" href="virtual" />
+<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='keywords';var JSINFO = {"id":"keywords:virtual","namespace":"keywords"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
 
-
-
-<h2><a name="virtual" id="virtual">virtual</a></h2>
+<h2 class="sectionedit1"><a name="virtual" id="virtual">virtual</a></h2>
 <div class="level2">
 
 <p>
 Syntax:
 </p>
-<pre class="c code c++" style="font-family:monospace;">    virtual return<span class="sy0">-</span>type name<span class="br0">&#40;</span> parameter<span class="sy0">-</span>list <span class="br0">&#41;</span>;
-    virtual return<span class="sy0">-</span>type name<span class="br0">&#40;</span> parameter<span class="sy0">-</span>list <span class="br0">&#41;</span> <span class="sy0">=</span> <span class="nu19">0</span>;</pre>
+<pre class="cpp code cpp">    <span class="kw2">virtual</span> return<span class="sy2">-</span>type name<span class="br0">&#40;</span> parameter<span class="sy2">-</span>list <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw2">virtual</span> return<span class="sy2">-</span>type name<span class="br0">&#40;</span> parameter<span class="sy2">-</span>list <span class="br0">&#41;</span> <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span></pre>
 <p>
 The virtual keyword can be used to create virtual functions, which can be
 overridden by derived classes.
@@ -58,34 +60,34 @@ For example, the following code snippet shows how a child class can override a
 virtual method of its parent, and how a non-virtual method in the parent cannot
 be overridden:
 </p>
-<pre class="c code c++" style="font-family:monospace;">  class Base <span class="br0">&#123;</span>
-  public<span class="sy0">:</span>
+<pre class="cpp code cpp">  <span class="kw2">class</span> Base <span class="br0">&#123;</span>
+  <span class="kw2">public</span><span class="sy4">:</span>
    <span class="kw4">void</span> nonVirtualFunc<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
-     <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;Base: non-virtual function&quot;</span> <span class="sy0">&lt;&lt;</span> endl;
+     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Base: non-virtual function&quot;</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
    <span class="br0">&#125;</span>
-   virtual <span class="kw4">void</span> virtualFunc<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
-     <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;Base: virtual function&quot;</span> <span class="sy0">&lt;&lt;</span> endl;
+   <span class="kw2">virtual</span> <span class="kw4">void</span> virtualFunc<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Base: virtual function&quot;</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
    <span class="br0">&#125;</span>
-  <span class="br0">&#125;</span>;
+  <span class="br0">&#125;</span><span class="sy4">;</span>
 &nbsp;
-  class Child <span class="sy0">:</span> public Base <span class="br0">&#123;</span>
-  public<span class="sy0">:</span>
+  <span class="kw2">class</span> Child <span class="sy4">:</span> <span class="kw2">public</span> Base <span class="br0">&#123;</span>
+  <span class="kw2">public</span><span class="sy4">:</span>
    <span class="kw4">void</span> nonVirtualFunc<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
-     <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;Child: non-virtual function&quot;</span> <span class="sy0">&lt;&lt;</span> endl;
+     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Child: non-virtual function&quot;</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
    <span class="br0">&#125;</span>
    <span class="kw4">void</span> virtualFunc<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
-     <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;Child: virtual function&quot;</span> <span class="sy0">&lt;&lt;</span> endl;
+     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Child: virtual function&quot;</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
    <span class="br0">&#125;</span>
-  <span class="br0">&#125;</span>;
+  <span class="br0">&#125;</span><span class="sy4">;</span>
 &nbsp;
   <span class="kw4">int</span> main<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
-   Base<span class="sy0">*</span> basePointer <span class="sy0">=</span> new Child<span class="br0">&#40;</span><span class="br0">&#41;</span>;
-   basePointer<span class="sy0">-&gt;</span>nonVirtualFunc<span class="br0">&#40;</span><span class="br0">&#41;</span>;
-   basePointer<span class="sy0">-&gt;</span>virtualFunc<span class="br0">&#40;</span><span class="br0">&#41;</span>;
-   <span class="kw1">return</span> <span class="nu19">0</span>;
+   Base<span class="sy2">*</span> basePointer <span class="sy1">=</span> <span class="kw3">new</span> Child<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+   basePointer<span class="sy2">-</span><span class="sy1">&gt;</span>nonVirtualFunc<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+   basePointer<span class="sy2">-</span><span class="sy1">&gt;</span>virtualFunc<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+   <span class="kw1">return</span> <span class="nu0">0</span><span class="sy4">;</span>
   <span class="br0">&#125;</span></pre>
 <p>
-When run, the above code displays:
+When run, the following code displays:
 </p>
 <pre class="code">
   Base: non-virtual function
@@ -95,6 +97,6 @@ Related Topics: <a href="class" class="wikilink1" title="keywords:class">class</
 </p>
 
 </div>
-<!-- SECTION "virtual" [3-] --></div>
+<!-- EDIT1 SECTION "virtual" [3-] --></div>
 </body>
 </html>

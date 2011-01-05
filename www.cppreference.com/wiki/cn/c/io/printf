@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn"
+ lang="cn" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>cn:c:io:printf</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:52-0700" />
+<meta name="keywords" content="cn,c,io,printf" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/cn/c/io/printf?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=cn:c:io" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/cn/c/io/printf" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/cn/c/io/printf" />
+<link rel="canonical" href="printf" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='cn:c:io';var JSINFO = {"id":"cn:c:io:printf","namespace":"cn:c:io"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="printf#printf" class="toc">printf</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="printf#格式码" class="toc">格式码</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="printf#格式修饰符" class="toc">格式修饰符</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="printf" id="printf">printf</a></h2>
+<div class="level2">
+
+<p>
+语法：
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cstdio&gt;</span>
+    <span class="kw4">int</span> <span class="kw3">printf</span><span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>format, ... <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+<code>printf</code>函数根据<code>format</code>和其它传递给<code>printf</code>的参数打印输出到<code>stdout</code>。字符串<code>format</code>由两种类型的项组成：
+将被打印到屏幕上的字符串，和定义其它传递给<code>printf</code>的参数怎样被显示的格式化命令。基本上，你定义的格式化字符串拥有文本，还有特殊的字符映射到<code>printf</code>的其它参数。例如，这段代码
+</p>
+<pre class="cpp code cpp">     <span class="kw4">char</span> name<span class="br0">&#91;</span><span class="nu0">20</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="st0">&quot;Bob&quot;</span><span class="sy4">;</span>
+     <span class="kw4">int</span> age <span class="sy1">=</span> <span class="nu0">21</span><span class="sy4">;</span>
+     <span class="kw3">printf</span><span class="br0">&#40;</span> <span class="st0">&quot;Hello %s, you are %d years old<span class="es1">\n</span>&quot;</span>, name, age <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+显示以下输出：
+</p>
+<pre class="code">
+     Hello Bob, you are 21 years old</pre>
+<p>
+<code>%s</code>表示“插入第一个参数，字符串，就在这”。 <code>%d</code>表示第二个参数（一个整型）将被放在这里。
+</p>
+
+<p>
+<code>printf</code>的返回值是打印字符的数目，如果发生错误返回一个负值。
+</p>
+
+</div>
+<!-- EDIT1 SECTION "printf" [3-949] -->
+<h3 class="sectionedit2"><a name="格式码" id="格式码">格式码</a></h3>
+<div class="level3">
+
+<p>
+
+这里有不同的<code>%-格式码</code>代表不同的变量类型，还有选项限制变量和其它东西（whatnot）的长度。
+</p>
+<div class="table sectionedit3"><table class="inline">
+	<tr class="row0">
+		<th class="col0">码</th><th class="col1">格式</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">%c</td><td class="col1">字符</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">%d</td><td class="col1">带符号整型</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">%i</td><td class="col1">带符号整型</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">%I64d</td><td class="col1">long long (8B整型), <acronym title="Microsoft">MS</acronym>-标准</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0">%I64u</td><td class="col1">无符号long long (8B整型), <acronym title="Microsoft">MS</acronym>-标准</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0">%e</td><td class="col1">科学计数，带一小写的”e”</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0">%E</td><td class="col1">科学计数，带一大写的”E”</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0">%f</td><td class="col1">浮点型</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0">%g</td><td class="col1">使用%e或者%f, 它们更短</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0">%G</td><td class="col1">使用%E或者%f, 它们更短</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0">%o</td><td class="col1">八进制</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0">%s</td><td class="col1">字符串</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0">%u</td><td class="col1">无符号整型</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0">%x</td><td class="col1">无符号十六进制数，使用小写字母</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0">%X</td><td class="col1">无符号十六进制数，使用大写字母</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0">%p</td><td class="col1">指针</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0">%n</td><td class="col1">参数应该是一个整型指针，放置着到目前位置写入字符的数目</td>
+	</tr>
+</table></div>
+<!-- EDIT3 TABLE [1099-1671] -->
+</div>
+<!-- EDIT2 SECTION "格式码" [950-1672] -->
+<h3 class="sectionedit4"><a name="格式修饰符" id="格式修饰符">格式修饰符</a></h3>
+<div class="level3">
+
+<p>
+
+放置在%符号哦和格式化命令之间的的整数作为最小字段标示符，将会在输出中填补空格或者零来确保足够长。如果你希望填补0，在最小字段宽度修饰符的前面放置一个零：
+</p>
+<pre class="cpp code cpp">     <span class="sy2">%</span>012d</pre>
+<p>
+你可以同样将最小字段宽度放置在一个整型变量中，如果你放置*符号而不是一个数字：
+</p>
+<pre class="cpp code cpp">     <span class="kw4">int</span> width <span class="sy1">=</span> <span class="nu0">12</span><span class="sy4">;</span>
+     <span class="kw4">int</span> age <span class="sy1">=</span> <span class="nu0">100</span><span class="sy4">;</span>
+     <span class="kw3">printf</span><span class="br0">&#40;</span><span class="st0">&quot;%*d&quot;</span>, width, age<span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+你同样可以包含精度修饰符，以<code>.N</code>的形式而<code>N</code>是一些数，在格式化命令之前：
+</p>
+<pre class="cpp code cpp">     <span class="sy2">%</span>012.4d</pre>
+<p>
+精度修饰符更具不同的格式化命令有不同的意思：
+
+</p>
+<ul>
+<li class="level1"><div class="li"> 与<code>%e</code>, <code>%E</code>, 和 <code>%f</code>一起, 精度修饰符让你确定小数位数。例如， <code>%12.6f</code>将会展示一个浮点数至少有12数位宽，带小数点后6位。</div>
+</li>
+<li class="level1"><div class="li"> 与<code>%g</code> 和 <code>%G</code>一起, 精度修饰符决定显示的有效数字的最大值。</div>
+</li>
+<li class="level1"><div class="li"> 与 <code>%s</code>一起, 精度修饰符仅简单的作为最大字段长度， to complement the minimum field length that precedes the period.</div>
+</li>
+</ul>
+
+<p>
+
+与字段宽度修饰符，你可以通过使用 * 符号来用一个整型变量定义精度修饰符：
+</p>
+<pre class="cpp code cpp">     <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> msg <span class="sy1">=</span> <span class="st0">&quot;Hello printf&quot;</span><span class="sy4">;</span>
+     <span class="kw4">int</span> string_size <span class="sy1">=</span> <span class="kw3">strlen</span> <span class="br0">&#40;</span>msg<span class="br0">&#41;</span><span class="sy4">;</span>
+     <span class="kw3">printf</span><span class="br0">&#40;</span><span class="st0">&quot;msg: %.*s&quot;</span>, string_size, msg<span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+所有的<code>printf</code>输出都是右对齐的，除非你在 % 符号邮右边放置一个减号。例如，
+</p>
+<pre class="cpp code cpp">     <span class="sy2">%-</span><span class="nu17">12.4f</span></pre>
+<p>
+将会显示一个显示一个浮点数拥有最少12字符，小数点后4位，并且是左对齐的。
+</p>
+
+<p>
+你可以使用字符<code>l</code>和<code>h</code>修饰<code>%d</code>, <code>%i</code>, <code>%o</code>, <code>%u</code>, 和 <code>%x</code> 类型修饰符来表示<code>long</code> 和 <code>short</code> 数据类型（例如，<code>%hd</code>表示短整型）。
+</p>
+
+<p>
+类型修饰符 <code>%e</code>, <code>%f</code>, 和 <code>%g</code> 可以使用置前<code>l</code>字符来指示双精度。
+类型修饰符 <code>%g</code>, <code>%f</code>, 和 <code>%e</code> 可以在前面放置一个<code>#</code>字符来确保小数点会被显示，即使小数点后没有数。
+</p>
+
+<p>
+和<code>%x</code>类型修饰符一起使用<code>#</code>字符表示十六进制数将会打印一个<code>0x</code>前缀。
+</p>
+
+<p>
+和<code>%o</code>类型修饰符一起使用<code>#</code>字符表示八进制数显示时将会带一个<code>0</code>前缀。
+</p>
+
+<p>
+在类型修饰符前插入一个正号<code>+</code>将会强制正值前加一个<code>+</code>号。放置一个空格符 &#039; &#039; 将会强制正值前由一个空格符引导。
+</p>
+
+<p>
+你同样可以在输出字符串中包含 <a href="../../../escape_sequences" class="wikilink1" title="escape_sequences">constant escape sequences</a> 。
+</p>
+
+<p>
+相关主题： <a href="fprintf" class="wikilink1" title="cn:c:io:fprintf">fprintf</a>, <a href="puts" class="wikilink1" title="cn:c:io:puts">puts</a>, <a href="scanf" class="wikilink1" title="cn:c:io:scanf">scanf</a>, <a href="sprintf" class="wikilink1" title="cn:c:io:sprintf">sprintf</a>
+</p>
+
+</div>
+<!-- EDIT4 SECTION "格式修饰符" [1673-] --></div>
+</body>
+</html>

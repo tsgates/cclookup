@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it"
+ lang="it" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>it:keywords:const</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:06-0700" />
+<meta name="keywords" content="it,keywords,const" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/it/keywords/const?do=index" title="Indice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=it:keywords" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/it/keywords/const" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/it/keywords/const" />
+<link rel="canonical" href="const" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='it:keywords';var JSINFO = {"id":"it:keywords:const","namespace":"it:keywords"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Indice</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="const#const" class="toc">const</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="const#uso" class="toc">Uso</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="const#dichiarazioni" class="toc">Dichiarazioni</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="const#parametri" class="toc">Parametri</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="const#metodi" class="toc">Metodi</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="const" id="const">const</a></h2>
+<div class="level2">
+
+<p>
+
+La parola chiave <code>const</code> può essere usata per indicare al compilatore che una certa variabile non deve
+essere più modificata una volta che è stata inizializzata, oppure per dichiarare metodi di una classe che 
+non possono alterare alcuna variabile membro della stessa classe.
+</p>
+
+</div>
+<!-- EDIT1 SECTION "const" [1-299] -->
+<h2 class="sectionedit2"><a name="uso" id="uso">Uso</a></h2>
+<div class="level2">
+
+<p>
+
+Una pratica corretta nell&#039;uso di <code>const</code> è quella di usarlo per proteggere dati che non devono essere
+sovrascritti. Questo deve essere fatto nella fase di progettazione poiché forzare un <code>const</code> in un programma
+dopo che ha già raggiunto uno stadio di maturazione dello sviluppo avrebbe considerevoli effetti a cascata.
+</p>
+
+<p>
+La parola <code>const</code> può assumere molti significati, può essere usata in numerose posizioni della sintassi (anche
+in alcune piuttosto innaturali)
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Uso" [300-789] -->
+<h3 class="sectionedit3"><a name="dichiarazioni" id="dichiarazioni">Dichiarazioni</a></h3>
+<div class="level3">
+
+<p>
+
+Per capire cosa <code>const</code> sta proteggendo bisogna leggere da destra a sinistra.
+</p>
+<pre class="cpp code cpp"><span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span> str<span class="sy4">;</span> <span class="co1">// puntatore a caratteri che non possono essere cambiati (anche se il puntatore può cambiare)</span>
+<span class="kw4">char</span> <span class="kw4">const</span> <span class="sy2">*</span> str<span class="sy4">;</span> <span class="co1">// come prima, solo un modo alternativo per scriverlo</span>
+<span class="kw4">char</span> <span class="sy2">*</span> <span class="kw4">const</span> str<span class="sy4">;</span> <span class="co1">// il puntatore non può essere modificato (anche se i caratteri nel buffer possono cambiare)</span></pre>
+<p>
+Analogamente per le <em>reference</em> (non ha senso applicare un <code>const</code> a una reference, dato che il senso stesso delle reference
+è che non possono essere cambiate per riferire ad un altro oggetto):
+</p>
+<pre class="cpp code cpp"><span class="kw4">const</span> <span class="kw4">char</span> <span class="sy3">&amp;</span> str<span class="sy4">;</span> <span class="co1">// reference verso un carattere che non può essere cambiato</span>
+<span class="kw4">char</span> <span class="kw4">const</span> <span class="sy3">&amp;</span> str<span class="sy4">;</span> <span class="co1">// funziona come alla riga precedente</span></pre>
+<p>
+Finora sembra abbastanza semplice, ma costruzioni più complicate possono essere difficili da interpretare. Esempio:
+</p>
+<pre class="cpp code cpp"><span class="kw4">char</span> <span class="sy2">*</span> <span class="kw4">const</span> <span class="sy2">*</span> data<span class="sy4">;</span> <span class="co1">// puntatore ad un puntatore non modificabile che punta ad un array di caratteri</span>
+<span class="kw4">char</span> <span class="kw4">const</span> <span class="sy2">**</span> data<span class="sy4">;</span>  <span class="co1">// puntatore ad un puntatore di caratteri non modificabili</span>
+<span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">**</span> data<span class="sy4">;</span>  <span class="co1">// puntatore ad un puntatore di caratteri non modificabili</span>
+<span class="kw4">char</span> <span class="sy2">**</span> <span class="kw4">const</span> data<span class="sy4">;</span>  <span class="co1">// puntatore non modificabile che punta ad un puntatore di caratteri</span>
+<span class="kw4">char</span> <span class="sy2">*</span> <span class="kw4">const</span> <span class="sy2">*</span> <span class="kw4">const</span> data<span class="sy4">;</span> <span class="co1">// puntatore non modificabile verso un puntatore non modificabile di caratteri</span></pre>
+<p>
+Esiste tra alcuni programmatori la convinzione che sia obbligatorio mettere <code>const</code> dopo il tipo dati, ma in realtà può essere scritto sia prima che dopo il tipo, se è un tipo dati regolare e non un puntatore (e.g. “char”). Usate la forma che si adatta meglio al vostro codice e agli standard di sviluppo del codice adottati dalla vostra organizzazione semplicemente cercando di essere consistenti. Se volete che <code>const</code> si applichi al puntatore la parola chiave deve apparire dopo l&#039;asterisco.
+</p>
+
+<p>
+E&#039; inoltre una buona pratica dichiarare certi campi di un oggetto come <code>const</code> se questi esprimono una proprietà dell&#039;oggetto che non cambierà durante la vita di esso.
+
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Dichiarazioni" [790-2825] -->
+<h3 class="sectionedit4"><a name="parametri" id="parametri">Parametri</a></h3>
+<div class="level3">
+
+<p>
+
+L&#039;uso più comune di <code>const</code> è di proteggere dati da cambiamenti che potrebbero essere fatti tramite puntatori o reference
+</p>
+<pre class="cpp code cpp">   <span class="kw4">void</span> func <span class="br0">&#40;</span> <span class="kw4">const</span> MyObject <span class="sy2">*</span> data <span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// MyObject non può essere cambiato in func</span>
+   <span class="kw4">void</span> func <span class="br0">&#40;</span> <span class="kw4">const</span> MyObject <span class="sy3">&amp;</span> data <span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// MyObject non può essere cambiato in func</span></pre>
+<p>
+Notate che il posizionamento di const prima o dopo è irrilevante. Le righe seguenti sono equivalenti a quelle scritte sopra
+
+</p>
+<pre class="cpp code cpp"><span class="kw4">void</span> func <span class="br0">&#40;</span> MyObject <span class="kw4">const</span> <span class="sy2">*</span> data <span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// uguale a ( const MyObject * )</span>
+<span class="kw4">void</span> func <span class="br0">&#40;</span> MyObject <span class="kw4">const</span> <span class="sy3">&amp;</span> data <span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// uguale a ( const MyOjbect &amp; )</span></pre>
+<p>
+Posizionare <code>const</code> dopo il puntatore o la reference cambia i suoi effetti. Un <code>const</code> che segue il puntatore cambia solo il puntatore, non
+i dati che questo punta.
+</p>
+<pre class="cpp code cpp"><span class="kw4">void</span> func <span class="br0">&#40;</span> MyObject <span class="sy2">*</span> <span class="kw4">const</span> data <span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// Protezione superflua di 'data' poiché passato per valore</span></pre>
+<p>
+All&#039;interno di func siete liberi di manipolare MyObject, ma non il puntatore a MyObject. Tuttavia, siccome il puntatore è una variabile
+locale della funzione questo non è di grande utilità. Anche se cambiaste il valore del puntatore nulla verrebbe alterato al di fuori della
+funzione.
+</p>
+
+<p>
+Posizionare const dopo una reference è completamente inutile e deve essere evitato. Le reference sono già implicitamente <code>const</code>
+</p>
+<pre class="cpp code cpp"><span class="kw4">void</span> func <span class="br0">&#40;</span> MyObject <span class="sy3">&amp;</span> <span class="kw4">const</span> data <span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// protezione inutile della reference a MyObject</span></pre>
+<p>
+In questo caso const protegge la reference, che non può venir manipolata.
+</p>
+
+<p>
+A volte è utile ritornare dati privati di un oggetto preservando la loro non modificabilità al di fuori di esso.
+</p>
+<pre class="cpp code cpp"><span class="kw4">const</span> MyObject <span class="sy3">&amp;</span> MyClass<span class="sy4">::</span><span class="me2">func</span> <span class="br0">&#40;</span> MyObject <span class="sy3">&amp;</span> data <span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// l'oggetto MyObject ritornato da func non può essere cambiato</span></pre>
+</div>
+<!-- EDIT4 SECTION "Parametri" [2826-4574] -->
+<h3 class="sectionedit5"><a name="metodi" id="metodi">Metodi</a></h3>
+<div class="level3">
+
+<p>
+
+Spesso metodi di un istanza non manipolano dati interni all&#039;oggetto.
+Questi metodi (spesso chiamati <em>accessors</em>) dovrebbero essere dichiarati <code>const</code>
+</p>
+
+<p>
+L&#039;effetto di questo è che il puntatore <a href="http://www.cppreference.com/wiki/it/keywords/this" class="wikilink2" title="it:keywords:this" rel="nofollow">this</a> all&#039;interno del metodo, invece di essere definito come “MyClass *” sarà un “const MyClass *”
+così che l&#039;oggetto non può essere modificato tramite questo puntatore.
+</p>
+<pre class="cpp code cpp"><span class="kw4">void</span> MyClass<span class="sy4">::</span><span class="me2">func</span> <span class="br0">&#40;</span> MyOjbect <span class="sy3">&amp;</span> data <span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span> <span class="co1">// Questa funzione non manipola dati della classe</span></pre>
+<p>
+Da notare che dichiarare un oggetto come <code>const</code> funziona come filtro sulla sua interfaccia dato che solo i metodi dichiarati <code>const</code> possono essere chiamati. Il motivo è legato a quanto già detto: chiamare un metodo di un oggetto &#039;const&#039; significa passare implicitamente un puntatore all&#039;oggetto di tipo “const MyClass *” e quindi un puntatore di un oggetto non modificabile. 
+</p>
+<pre class="cpp code cpp"><span class="kw4">void</span> MyClass<span class="sy4">::</span><span class="me2">const_func</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span>
+<span class="kw4">void</span> MyClass<span class="sy4">::</span><span class="me2">func</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+<span class="kw4">const</span> MyClass object<span class="sy4">;</span>
+&nbsp;
+object.<span class="me1">const_func</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// ok</span>
+object.<span class="me1">func</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// non si può chiamare un metodo non-const di un oggetto const</span></pre>
+<p>
+
+Per la stessa ragione all&#039;interno di un metodo <code>const</code> si può chiamare solo altri metodi <code>const</code> dell&#039;oggetto.
+</p>
+
+<p>
+Argomenti correlati: <a href="const_cast" class="wikilink1" title="it:keywords:const_cast">const_cast</a>, <a href="mutable" class="wikilink1" title="it:keywords:mutable">mutable</a>
+
+</p>
+
+</div>
+<!-- EDIT5 SECTION "Metodi" [4575-] --></div>
+</body>
+</html>

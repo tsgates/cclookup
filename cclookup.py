@@ -31,9 +31,24 @@ def fetch_page( root, url ) :
 
     rtn = []
     for ( keyword, description ) in zip2( soup.findAll( "td" ) ) :
-        key = keyword.contents[0].contents[0]
-        url = keyword.contents[0][ "href" ]
+        # ignore newly introduced table (like traits)
+        if not keyword.a:
+            continue
+
+        # trim keyword like (constructor)
+        key = keyword.a.contents[0]
+        key = key.replace("(", "")
+        key = key.replace(")", "")
+
+        # damm, dirty url link
+        url = keyword.a[ "href" ]
+        if url.startswith("http"):
+            url = url.split("/")[-1]
+        
         des = description.contents[0]
+
+        # remove dirty chars
+        des = des.replace("&#039;", "")
 
         rtn.append( ( key.strip(), join( root, url.strip() ), des.strip() ) )
         
@@ -63,7 +78,8 @@ if __name__ == "__main__" :
     # update
     if opts.url :
         from BeautifulSoup import BeautifulSoup
-        
+
+        db   = []
         root = opts.url
 
         main = BeautifulSoup( open( join( root, "index.html" )  ) )
@@ -88,7 +104,9 @@ if __name__ == "__main__" :
             if index.find( "c++" ) != -1 \
                     or index.find( " c " ) != -1 \
                     or index.find( "keywords" ) != -1 \
-                    or index.find( "pre-processor" ) != -1 :
+                    or index.find( "pre-processor" ) != -1 \
+                    or index.find( "complex" ) != -1 \
+                    or "stl/" in link["href"]:
                 print "Indexing", url
             
                 for ( key, addr, desc ) in fetch_page( dirname( url ), url ) :
@@ -100,7 +118,9 @@ if __name__ == "__main__" :
                                      addr.encode( "ascii", "ignore" ),
                                      cat.encode( "ascii", "ignore" ), 
                                      desc.encode( "ascii", "ignore" ) ) )
-                        
+            else:
+                print "IGNR", index
+                
         # update database
         pickle.dump( db, open( opts.db, "w" ) )
 

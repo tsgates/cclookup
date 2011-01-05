@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn"
+ lang="cn" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>cn:algorithm:remove</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:54-0700" />
+<meta name="keywords" content="cn,algorithm,remove" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/cn/algorithm/remove?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=cn:algorithm" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/cn/algorithm/remove" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/cn/algorithm/remove" />
+<link rel="canonical" href="remove" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='cn:algorithm';var JSINFO = {"id":"cn:algorithm:remove","namespace":"cn:algorithm"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="remove" id="remove">remove</a></h2>
+<div class="level2">
+
+<p>
+语法:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;algorithm&gt;</span>
+    forward_iterator <span class="kw3">remove</span><span class="br0">&#40;</span> forward_iterator start, forward_iterator end, <span class="kw4">const</span> T<span class="sy3">&amp;</span> val <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+remove 算法移除 <code>[start,end)</code> 范围之内的所有与 <code>val</code> 相等的元素。
+</p>
+
+<p>
+此函数的返回值是一个迭代器，它指向不包含与 <code>val</code> 相等的元素的新序列的最后一个元素的后面。
+</p>
+
+<p>
+注意remove的实现通常并不真的从 <code>[start, end)</code> 范围内移除元素；如果在一个容器上面调用remove，在调用之后此容器的长度并不会发生改变（只通过iterators，remove并不能影响容器的长度），所有元素还是留在容器内。然而，remove将所有被 “removed” 的元素放在容器的尾部，然后返回一个区分未被删除和被删除元素的迭代器。为了从一个容器删除元素，你应该调用此容器的 erase 方法删除从返回的迭代器（iterator）处开始的元素。这通常被联合起来称作：<a href="http://en.wikipedia.org/wiki/Erase-remove_idiom" class="urlextern" title="http://en.wikipedia.org/wiki/Erase-remove_idiom"  rel="nofollow">erase-remove idiom</a>:
+</p>
+<pre class="code">container.erase(remove(container.begin(), container.end(), val), container.end());</pre>
+
+<p>
+remove 函数的时间复杂度是线性的（<a href="../../../complexity" class="wikilink1" title="complexity">linear time</a>）。
+</p>
+
+<p>
+相关话题：<a href="http://www.cppreference.com/wiki/cn/algorithm/remove_copy" class="wikilink2" title="cn:algorithm:remove_copy" rel="nofollow">remove_copy</a>, <a href="http://www.cppreference.com/wiki/cn/algorithm/remove_copy_if" class="wikilink2" title="cn:algorithm:remove_copy_if" rel="nofollow">remove_copy_if</a>, <a href="http://www.cppreference.com/wiki/cn/algorithm/remove_if" class="wikilink2" title="cn:algorithm:remove_if" rel="nofollow">remove_if</a>, <a href="http://www.cppreference.com/wiki/cn/algorithm/unique" class="wikilink2" title="cn:algorithm:unique" rel="nofollow">unique</a>, <a href="http://www.cppreference.com/wiki/cn/algorithm/unique_copy" class="wikilink2" title="cn:algorithm:unique_copy" rel="nofollow">unique_copy</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

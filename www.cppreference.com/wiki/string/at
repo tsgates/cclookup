@@ -5,68 +5,43 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>string:at</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="generator" content="DokuWiki" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2009-04-09T18:43:28-0700" />
+<meta name="date" content="2010-11-10T15:31:50-0800" />
 <meta name="keywords" content="string,at" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/string/at?do=index" title="Index" />
+<link rel="start" href="../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/string/at?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
 <link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=string" />
 <link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/string/at" />
 <link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/string/at" />
-<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="canonical" href="at" />
+<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='string';var JSINFO = {"id":"string:at","namespace":"string"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
 
-
-
-<h2><a name="at" id="at">at</a></h2>
+<h2 class="sectionedit1"><a name="page_redirected_auto" id="page_redirected_auto">Page redirected (auto)</a></h2>
 <div class="level2">
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="../redirect" class="wikilink1" title="redirect">redirect</a></td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [35-50] -->
+<p>
 
-<p>
-Syntax:
+See <a href="basic_string/at" class="wikilink1" title="string:basic_string:at"> this</a>
 </p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;string&gt;</span>
-    char<span class="sy0">&amp;</span> at<span class="br0">&#40;</span> size_type loc <span class="br0">&#41;</span>;
-    <span class="kw4">const</span> char<span class="sy0">&amp;</span> at<span class="br0">&#40;</span> size_type loc <span class="br0">&#41;</span> <span class="kw4">const</span>;</pre>
-<p>
-The at() function returns the character in the string at index
-<em>loc</em>. The at() function is safer than the [] operator, because it won&#039;t let you
-reference items past the end of the string.
-</p>
-
-<p>
-For example, consider the following code:
-</p>
-<pre class="c code c++" style="font-family:monospace;">   <span class="kw4">string</span> s<span class="br0">&#40;</span><span class="st0">&quot;abcdef&quot;</span><span class="br0">&#41;</span>;
-   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i <span class="sy0">=</span> <span class="nu19">0</span>; i <span class="sy0">&lt;</span> <span class="nu0">10</span>; i<span class="sy0">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
-     <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;Element &quot;</span> <span class="sy0">&lt;&lt;</span> i <span class="sy0">&lt;&lt;</span> <span class="st0">&quot; is &quot;</span> <span class="sy0">&lt;&lt;</span> s<span class="br0">&#91;</span>i<span class="br0">&#93;</span> <span class="sy0">&lt;&lt;</span> endl;
-   <span class="br0">&#125;</span></pre>
-<p>
-This code overruns the end of the string, producing potentially dangerous
-results. The following code would be much safer:
-</p>
-<pre class="c code c++" style="font-family:monospace;">   <span class="kw4">string</span> s<span class="br0">&#40;</span><span class="st0">&quot;abcdef&quot;</span><span class="br0">&#41;</span>;
-   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i <span class="sy0">=</span> <span class="nu19">0</span>; i <span class="sy0">&lt;</span> <span class="nu0">10</span>; i<span class="sy0">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
-     <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;Element &quot;</span> <span class="sy0">&lt;&lt;</span> i <span class="sy0">&lt;&lt;</span> <span class="st0">&quot; is &quot;</span> <span class="sy0">&lt;&lt;</span> s.<span class="me1">at</span><span class="br0">&#40;</span>i<span class="br0">&#41;</span> <span class="sy0">&lt;&lt;</span> endl;
-   <span class="br0">&#125;</span></pre>
-<p>
-Instead of attempting to read garbage values from memory, the at() function
-will realize that it is about to overrun the string and will throw an
-exception.
-</p>
-
-<p>
-Related Topics: <a href="string_operators" class="wikilink1" title="string:string_operators">[] operator</a>
-</p>
-
+<div class="noteredirect">This page has been moved, the new location is <a href="basic_string/at" class="wikilink1" title="string:basic_string:at">basic_string::at</a>.</div>
 </div>
-<!-- SECTION "at" [3-] --></div>
+</div>
 </body>
 </html>

@@ -4,37 +4,39 @@
  lang="pl" dir="ltr">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>pl:stl:queue:back</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
-<meta name="robots" content="noindex,nofollow" />
-<meta name="date" content="2009-07-11T11:20:09-0700" />
-<meta name="keywords" content="pl,stl,queue,back" />
+  <title>pl:container:queue:back</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:39-0700" />
+<meta name="keywords" content="pl,container,queue,back" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../../../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/pl/stl/queue/back?do=index" title="Indeks" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/pl/container/queue/back?do=index" title="Indeks" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
-<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=pl:stl:queue" />
-<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/pl/stl/queue/back" />
-<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/pl/stl/queue/back" />
-<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=pl:container:queue" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/pl/container/queue/back" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/pl/container/queue/back" />
+<link rel="canonical" href="back" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='pl:container:queue';var JSINFO = {"id":"pl:container:queue:back","namespace":"pl:container:queue"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
 
-
-
-<h2><a name="back" id="back">back</a></h2>
+<h2 class="sectionedit1"><a name="back" id="back">back</a></h2>
 <div class="level2">
 
 <p>
 Składnia:
 </p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;queue&gt;</span>
-    TYPE<span class="sy0">&amp;</span> back<span class="br0">&#40;</span><span class="br0">&#41;</span>;
-    <span class="kw4">const</span> TYPE<span class="sy0">&amp;</span> back<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw4">const</span>;</pre>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;queue&gt;</span>
+    T<span class="sy3">&amp;</span> back<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">const</span> T<span class="sy3">&amp;</span> back<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span></pre>
 <p>
 Metoda back() zwraca referencję do ostatniego elementu kolejki. Działa w <a href="../../../complexity" class="wikilink1" title="complexity">stałym czasie</a>.
 </p>
@@ -42,24 +44,24 @@ Metoda back() zwraca referencję do ostatniego elementu kolejki. Działa w <a hr
 <p>
 Przykładowo, poniższy kod:
 </p>
-<pre class="c code c++" style="font-family:monospace;">    queue<span class="sy0">&lt;</span>int<span class="sy0">&gt;</span> q;
+<pre class="cpp code cpp">    queue<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> q<span class="sy4">;</span>
 &nbsp;
     <span class="co1">//wypełnienie kolejki</span>
-    <span class="kw1">for</span> <span class="br0">&#40;</span><span class="kw4">int</span> i <span class="sy0">=</span> <span class="nu19">0</span>; i <span class="sy0">&lt;</span> <span class="nu0">5</span>; i<span class="sy0">++</span><span class="br0">&#41;</span>
-        q.<span class="me1">push</span><span class="br0">&#40;</span>i<span class="br0">&#41;</span>;
+    <span class="kw1">for</span> <span class="br0">&#40;</span><span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">5</span><span class="sy4">;</span> i<span class="sy2">++</span><span class="br0">&#41;</span>
+        q.<span class="me1">push</span><span class="br0">&#40;</span>i<span class="br0">&#41;</span><span class="sy4">;</span>
 &nbsp;
-    <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;Pierwszy element kolejki wynosi &quot;</span> <span class="sy0">&lt;&lt;</span> q.<span class="me1">front</span><span class="br0">&#40;</span><span class="br0">&#41;</span>
-         <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;, natomiast ostatni &quot;</span> <span class="sy0">&lt;&lt;</span> q.<span class="me1">back</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy0">&lt;&lt;</span> endl;</pre>
+    <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Pierwszy element kolejki wynosi &quot;</span> <span class="sy1">&lt;&lt;</span> q.<span class="me1">front</span><span class="br0">&#40;</span><span class="br0">&#41;</span>
+         <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;, natomiast ostatni &quot;</span> <span class="sy1">&lt;&lt;</span> q.<span class="me1">back</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
 <p>
 spowoduje wyświetlenie:
 </p>
 <pre class="code">
     Pierwszy element wynosi 0, natomiast ostatni 4</pre>
 <p>
-Tematy pokrewne: <a href="front" class="wikilink1" title="pl:stl:queue:front">front</a>
+Tematy pokrewne: <a href="front" class="wikilink1" title="pl:container:queue:front">front</a>
 </p>
 
 </div>
-<!-- SECTION "back" [3-] --></div>
+<!-- EDIT1 SECTION "back" [3-] --></div>
 </body>
 </html>

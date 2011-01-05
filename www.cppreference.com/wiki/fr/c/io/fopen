@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr"
+ lang="fr" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>fr:c:io:fopen</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:56-0700" />
+<meta name="keywords" content="fr,c,io,fopen" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/fr/c/io/fopen?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=fr:c:io" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/fr/c/io/fopen" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/fr/c/io/fopen" />
+<link rel="canonical" href="fopen" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='fr:c:io';var JSINFO = {"id":"fr:c:io:fopen","namespace":"fr:c:io"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="fopen" id="fopen">fopen</a></h2>
+<div class="level2">
+
+<p>
+Syntaxe :
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cstdio&gt;</span>
+    <span class="kw4">FILE</span> <span class="sy2">*</span><span class="kw3">fopen</span><span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>nom, <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>mode <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+
+La fonction <code>fopen()</code> ouvre un fichier désigné par <code>nom</code> et renvoie un flux associé à ce fichier.
+<code>mode</code> est utilisé pour déterminer le mode d&#039;utilisation du flux (lecture, écriture, etc).
+</p>
+
+<p>
+En cas d&#039;errreur, <code>fopen()</code> renvoie <code>NULL</code>.
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<th class="col0">Mode</th><th class="col1">Signification</th><th class="col2">Si le fichier existe</th><th class="col3">Si le fichier n&#039;existe pas</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><code>“r”</code></td><td class="col1">Ouvre un fichier en lecture</td><td class="col2">Lecture depuis le début du fichier</td><td class="col3">Erreur</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><code>“w”</code></td><td class="col1">Crée un ficher pour l&#039;écriture de données</td><td class="col2">Contenu du fichier perdu</td><td class="col3">Création du fichier</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><code>“a”</code></td><td class="col1">Ajout en fin de fichier</td><td class="col2">Écriture en fin de fichier</td><td class="col3">Création du fichier</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><code>“r+”</code></td><td class="col1">Ouvre un fichier en lecture/écriture</td><td class="col2">Lecture depuis le début du fichier</td><td class="col3">Erreur</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><code>“w+”</code></td><td class="col1">Crée un fichier pour l&#039;écriture/lecture de données</td><td class="col2">Contenu du fichier perdu</td><td class="col3">Création du fichier</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><code>“a+”</code></td><td class="col1">Ouvre un fichier en lecture/écriture</td><td class="col2">Écriture en fin de fichier</td><td class="col3">Création du fichier</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [371-1005] -->
+<p>
+
+Vous pouvez également ajouter le “flag” <code>“b”</code> pour ouvrir le fichier en mode binaire sur les <acronym title="Operating System">OS</acronym>
+basés sur Windows. Ce “flag” est ignoré sur les systèmes POSIX (incluant Linux), il est donc
+préférable de spécifier ce “flag” lorsqu&#039;on travaille avec des fichiers binaires.
+</p>
+
+<p>
+Si le <code>mode</code> contient le caractère <code>a</code>, les données seront écrites à la fin du fichier quelque
+soit la position du pointer sur le fichier.
+</p>
+
+<p>
+Voici un exemple d&#039;utilisation :
+</p>
+<pre class="cpp code cpp">     <span class="kw4">int</span> c<span class="sy4">;</span>
+     <span class="kw4">FILE</span> <span class="sy2">*</span>entree <span class="sy1">=</span> <span class="kw3">fopen</span><span class="br0">&#40;</span> <span class="st0">&quot;fichier&quot;</span>, <span class="st0">&quot;r&quot;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+     c <span class="sy1">=</span> <span class="kw3">getc</span><span class="br0">&#40;</span>entree <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Sujets connexes : <a href="fclose" class="wikilink1" title="fr:c:io:fclose">fclose</a>, <a href="fflush" class="wikilink1" title="fr:c:io:fflush">fflush</a>, <a href="fgetc" class="wikilink1" title="fr:c:io:fgetc">fgetc</a>, <a href="fputc" class="wikilink1" title="fr:c:io:fputc">fputc</a>, <a href="fread" class="wikilink1" title="fr:c:io:fread">fread</a>, <a href="freopen" class="wikilink1" title="fr:c:io:freopen">freopen</a>, <a href="fseek" class="wikilink1" title="fr:c:io:fseek">fseek</a>, <a href="fwrite" class="wikilink1" title="fr:c:io:fwrite">fwrite</a>, <a href="getc" class="wikilink1" title="fr:c:io:getc">getc</a>, <a href="getchar" class="wikilink1" title="fr:c:io:getchar">getchar</a>, <a href="setbuf" class="wikilink1" title="fr:c:io:setbuf">setbuf</a>
+
+</p>
+
+</div>
+</div>
+</body>
+</html>

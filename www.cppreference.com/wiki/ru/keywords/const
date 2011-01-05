@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru"
+ lang="ru" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>ru:keywords:const</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:13-0700" />
+<meta name="keywords" content="ru,keywords,const" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/ru/keywords/const?do=index" title="Все страницы" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=ru:keywords" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/ru/keywords/const" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/ru/keywords/const" />
+<link rel="canonical" href="const" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='ru:keywords';var JSINFO = {"id":"ru:keywords:const","namespace":"ru:keywords"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Содержание</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="const#const" class="toc">const</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="const#использование" class="toc">Использование</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="const#объявления" class="toc">Объявления</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="const#параметры" class="toc">Параметры</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="const#методы" class="toc">Методы</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="const" id="const">const</a></h2>
+<div class="level2">
+
+<p>
+Ключевое слово const может быть использовано для того, чтобы сказать
+компилятору, что определенная переменная не должна изменяться после
+инициализации.
+Это так же может быть использовано для объявления функций классов,
+которые не изменяют любые данные класса. 
+
+</p>
+
+</div>
+<!-- EDIT1 SECTION "const" [1-492] -->
+<h2 class="sectionedit2"><a name="использование" id="использование">Использование</a></h2>
+<div class="level2">
+
+<p>
+Считается хорошей практикой использовать const где это возможно для защиты данных от непреднамеренной перезаписи. Попытка втиснуть const в программу, после того, как она была написана создает каскадный эффект. Лучше применять const как можно раньше в цикле разработки
+кода. Это дает нам правильное объявление и использование const.
+</p>
+
+<p>
+Ключевое слово const может иметь многозначный смысл и быть использованным в множестве мест (даже бессмысленных мест).
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Использование" [493-1337] -->
+<h3 class="sectionedit3"><a name="объявления" id="объявления">Объявления</a></h3>
+<div class="level3">
+
+<p>
+Для понимания, что защищает const, читайте справа налево.
+
+</p>
+<pre class="cpp code cpp"><span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span> str<span class="sy4">;</span> <span class="co1">// указатель на символы которые не могут быть изменены (хотя указатель может быть перенаправлен)</span>
+<span class="kw4">char</span> <span class="kw4">const</span> <span class="sy2">*</span> str<span class="sy4">;</span> <span class="co1">// аналогично предыдущему (альтернативный способ записи)</span>
+<span class="kw4">char</span> <span class="sy2">*</span> <span class="kw4">const</span> str<span class="sy4">;</span> <span class="co1">// нельзя изменить указатель на символы (хотя сами символы могут быть изменены)</span></pre>
+<p>
+
+Аналогично для ссылок в С++ (вы не можете применить const к ссылке 
+так как ссылка не может быть перенаправлена):
+
+</p>
+<pre class="cpp code cpp"><span class="kw4">const</span> <span class="kw4">char</span> <span class="sy3">&amp;</span> str<span class="sy4">;</span> <span class="co1">// ссылка на символ который не может быть изменен</span>
+<span class="kw4">char</span> <span class="kw4">const</span> <span class="sy3">&amp;</span> str<span class="sy4">;</span> <span class="co1">// тоже, что и выше</span></pre>
+<p>
+
+Это выглядит достаточно просто, однако более запутанные расположения могут быть более сложными для интерпретации. Рассмотрим:
+
+</p>
+<pre class="cpp code cpp"><span class="kw4">char</span> <span class="sy2">*</span> <span class="kw4">const</span> <span class="sy2">*</span> data<span class="sy4">;</span> <span class="co1">// указатель на неизменяемый указатель на символы</span>
+<span class="kw4">char</span> <span class="kw4">const</span> <span class="sy2">**</span> data<span class="sy4">;</span> <span class="co1">// указатель на указатель неизменяемых символов</span>
+<span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">**</span> data<span class="sy4">;</span> <span class="co1">// указатель на указатель неизменяемых символов</span>
+<span class="kw4">char</span> <span class="sy2">**</span> <span class="kw4">const</span> data<span class="sy4">;</span> <span class="co1">// неизменяемый указатель на указатель символов</span>
+<span class="kw4">char</span> <span class="sy2">*</span> <span class="kw4">const</span> <span class="sy2">*</span> <span class="kw4">const</span> data<span class="sy4">;</span> <span class="co1">// неизменяемый указатель на неизменяемый указатель символов</span></pre>
+<p>
+
+Возможно, кто-то будет убеждать вас, что вы <strong>ДОЛЖНЫ</strong> располагать 
+const после типа, однако вы свободны располагать его как до, так и после типа, если это регулярный тип не-указатель (например, «char»). Используйте формат, который соответствует вашему существующему коду или стандартам кодирования в вашей организации. Как во всем остальном, просто будьте последовательны. Если вы хотите применить const к указателю, вы должны расположить const после звездочки.
+</p>
+
+<p>
+Также, хорошей практикой является объявлять определенные поля объекта как
+const, если это свойство объекта не изменяется за время жизни объекта.
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Объявления" [1338-4242] -->
+<h3 class="sectionedit4"><a name="параметры" id="параметры">Параметры</a></h3>
+<div class="level3">
+
+<p>
+Наиболее часто const используется для защиты данных на которые ссылаются или которые передаются по указателю:
+
+</p>
+<pre class="cpp code cpp"><span class="kw4">void</span> func <span class="br0">&#40;</span> <span class="kw4">const</span> MyObject <span class="sy2">*</span> data <span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// MyObject не может быть изменен в func</span>
+<span class="kw4">void</span> func <span class="br0">&#40;</span> <span class="kw4">const</span> MyObject <span class="sy3">&amp;</span> data <span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// MyObject не может быть изменен в func</span></pre>
+<p>
+
+Заметьте, что не важно размещается const до или после типа. Следующее эквивалентно:
+
+</p>
+<pre class="cpp code cpp"><span class="kw4">void</span> func <span class="br0">&#40;</span> MyObject <span class="kw4">const</span> <span class="sy2">*</span> data <span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// тоже что и ( const MyObject * )</span>
+<span class="kw4">void</span> func <span class="br0">&#40;</span> MyObject <span class="kw4">const</span> <span class="sy3">&amp;</span> data <span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// тоже что и ( const MyOjbect &amp; )</span></pre>
+<p>
+
+Тем не менее, размещение const после указателя или ссылки меняет то, что  именно является «const», так как const следующий за указателем защищает только указатель, а не данные на которые он указывает. 
+
+</p>
+<pre class="cpp code cpp"><span class="kw4">void</span> func <span class="br0">&#40;</span> MyObject <span class="sy2">*</span> <span class="kw4">const</span> data <span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// ненужная защита копии указателя на MyObject</span></pre>
+<p>
+
+Внутри функций, вы можете свободно манипулировать с MyObject, но не указателем на MyObject. Однако, так как значение указателя является локальным для функции (указатель был передан по значению, когда функция была вызвана), это бесполезно, так как никто вне функции не будет затронут не важно, измените вы указатель или нет.
+</p>
+
+<p>
+Размещение const после ссылки совершенно бесполезно и должно быть исключено. Ссылки не могут быть перенаправлены (т.е. они уже неявно константны)
+
+</p>
+<pre class="cpp code cpp"><span class="kw4">void</span> func <span class="br0">&#40;</span> MyObject <span class="sy3">&amp;</span> <span class="kw4">const</span> data <span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// бесполезная защита ссылки на MyObject</span></pre>
+<p>
+
+Здесь const защищает ссылку, которая в любом случае не будет изменяться.
+</p>
+
+<p>
+Иногда полезно возвратить приватные данные объекта. Однако, мы не хотим, чтобы приватными данными манипулировали вне класса.
+
+</p>
+<pre class="cpp code cpp"><span class="kw4">const</span> MyObject <span class="sy3">&amp;</span> MyClass<span class="sy4">::</span><span class="me2">func</span> <span class="br0">&#40;</span> MyObject <span class="sy3">&amp;</span> data <span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// MyObject  возвращенный func не может быть изменен</span></pre>
+</div>
+<!-- EDIT4 SECTION "Параметры" [4243-6943] -->
+<h3 class="sectionedit5"><a name="методы" id="методы">Методы</a></h3>
+<div class="level3">
+
+<p>
+Часто методы не манипулируют какими-либо данными объекта. Эти методы, так же 
+известные как <em>accessors</em>, должны быть объявлены как const. 
+Эффект от этого в том, что указатель <a href="http://www.cppreference.com/wiki/ru/keywords/this" class="wikilink2" title="ru:keywords:this" rel="nofollow">this</a> внутри метода вместо того,
+чтобы быть «MyClass *», будет теперь «const MyClass *», тем самым они
+не могут изменять объект через указатель this.
+
+</p>
+<pre class="cpp code cpp"><span class="kw4">void</span> MyClass<span class="sy4">::</span><span class="me2">func</span> <span class="br0">&#40;</span> MyOjbect <span class="sy3">&amp;</span> data <span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span> <span class="co1">// эта функция не может манипулировать с данными класса</span></pre>
+<p>
+
+Заметьте, что если вы имеете константный объект, вы можете вызывать только константные методы данного объекта. (Причина в том, что когда вы вызываете метод, вы должны передать указатель на объект, как указатель <a href="http://www.cppreference.com/wiki/ru/keywords/this" class="wikilink2" title="ru:keywords:this" rel="nofollow">this</a>. Но, если вы имеете объект «const MyClass», тогда вы можете получить только «const MyClass *», а не «MyClass *», тем самым вы не можете вызывать константные методы.)
+
+</p>
+<pre class="cpp code cpp"><span class="kw4">void</span> MyClass<span class="sy4">::</span><span class="me2">const_func</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span>
+<span class="kw4">void</span> MyClass<span class="sy4">::</span><span class="me2">func</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+<span class="kw4">const</span> MyClass object<span class="sy4">;</span>
+&nbsp;
+object.<span class="me1">const_func</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// ок</span>
+object.<span class="me1">func</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// нельзя вызвать не константную функцию для константного объекта</span></pre>
+<p>
+
+По тем же причинам, внутри константных методов, вы можете вызывать только другие константные методы объекта.
+</p>
+
+<p>
+Related Topics: <a href="http://www.cppreference.com/wiki/ru/keywords/const_cast" class="wikilink2" title="ru:keywords:const_cast" rel="nofollow">const_cast</a>, <a href="http://www.cppreference.com/wiki/ru/keywords/mutable" class="wikilink2" title="ru:keywords:mutable" rel="nofollow">mutable</a>
+</p>
+
+</div>
+<!-- EDIT5 SECTION "Методы" [6944-] --></div>
+</body>
+</html>

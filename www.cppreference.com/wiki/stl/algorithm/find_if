@@ -4,66 +4,154 @@
  lang="en" dir="ltr">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>stl:algorithm:find_if</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
+  <title>algorithm:find_if</title>
+<meta name="generator" content="DokuWiki" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2008-10-14T15:42:05-0700" />
-<meta name="keywords" content="stl,algorithm,find_if" />
+<meta name="date" content="2010-11-13T04:45:38-0800" />
+<meta name="keywords" content="algorithm,find_if" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/stl/algorithm/find_if?do=index" title="Index" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/algorithm/find_if?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
-<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=stl:algorithm" />
-<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/stl/algorithm/find_if" />
-<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/stl/algorithm/find_if" />
-<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=algorithm" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/algorithm/find_if" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/algorithm/find_if" />
+<link rel="canonical" href="find_if" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='algorithm';var JSINFO = {"id":"algorithm:find_if","namespace":"algorithm"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
 
+<ul class="toc">
+<li class="clear">
 
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="find_if#find_if" class="toc">find_if</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="find_if#parameters" class="toc">Parameters</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="find_if#return_value" class="toc">Return value</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="find_if#equivalent_function" class="toc">Equivalent function</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="find_if#example" class="toc">Example</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="find_if#complexity" class="toc">Complexity</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="find_if#see_also" class="toc">See also</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
 
-<h2><a name="find_if" id="find_if">find_if</a></h2>
+<h2 class="sectionedit1"><a name="find_if" id="find_if">find_if</a></h2>
 <div class="level2">
-
-<p>
-Syntax:
-</p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;algorithm&gt;</span>
-    iterator find_if<span class="br0">&#40;</span> iterator start<span class="sy0">,</span> iterator end<span class="sy0">,</span> UnPred up <span class="br0">&#41;</span>;</pre>
-<p>
-The find_if() function searches for the first element between start and end for
-which the unary predicate up returns true.
-</p>
-
-<p>
-If such an element is found, an iterator pointing to that element is returned.
-Otherwise, an iterator pointing to end is returned.
-</p>
-
-<p>
-For example, the following code uses find_if() and a “greater-than-zero” unary
-predicate to the first positive, non-zero number in a list of numbers:
-</p>
-<pre class="c code c++" style="font-family:monospace;">   <span class="kw4">int</span> nums<span class="br0">&#91;</span><span class="br0">&#93;</span> <span class="sy0">=</span> <span class="br0">&#123;</span> <span class="nu19">0</span><span class="sy0">,</span> <span class="sy0">-</span><span class="nu0">1</span><span class="sy0">,</span> <span class="sy0">-</span><span class="nu0">2</span><span class="sy0">,</span> <span class="sy0">-</span><span class="nu0">3</span><span class="sy0">,</span> <span class="sy0">-</span><span class="nu0">4</span><span class="sy0">,</span> <span class="nu0">342</span><span class="sy0">,</span> <span class="sy0">-</span><span class="nu0">5</span> <span class="br0">&#125;</span>;
-   <span class="kw4">int</span><span class="sy0">*</span> result;
-   <span class="kw4">int</span> start <span class="sy0">=</span> <span class="nu19">0</span>;
-   <span class="kw4">int</span> end <span class="sy0">=</span> <span class="nu0">7</span>;
+<pre class="cpp code cpp"><span class="co2">#include &lt;algorithm&gt;</span>
 &nbsp;
-   result <span class="sy0">=</span> find_if<span class="br0">&#40;</span> nums <span class="sy0">+</span> start<span class="sy0">,</span> nums <span class="sy0">+</span> end<span class="sy0">,</span> bind2nd<span class="br0">&#40;</span>greater<span class="sy0">&lt;</span>int<span class="sy0">&gt;</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">,</span> <span class="nu19">0</span><span class="br0">&#41;</span><span class="br0">&#41;</span>;
-   <span class="kw1">if</span><span class="br0">&#40;</span> <span class="sy0">*</span>result <span class="sy0">==</span> nums<span class="br0">&#91;</span>end<span class="br0">&#93;</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
-     <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;Did not find any number greater than zero&quot;</span> <span class="sy0">&lt;&lt;</span> endl;
-   <span class="br0">&#125;</span> <span class="kw1">else</span> <span class="br0">&#123;</span>
-     <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;Found a positive non-zero number: &quot;</span> <span class="sy0">&lt;&lt;</span> <span class="sy0">*</span>result <span class="sy0">&lt;&lt;</span> endl;
-   <span class="br0">&#125;</span></pre>
+<span class="kw2">template</span><span class="sy1">&lt;</span> <span class="kw2">class</span> InputIterator, <span class="kw2">class</span> UnaryPredicator <span class="sy1">&gt;</span>
+InputIterator find_if<span class="br0">&#40;</span> InputIterator first, InputIterator last, UnaryPredicator p <span class="br0">&#41;</span><span class="sy4">;</span></pre>
 <p>
-Related Topics: <a href="adjacent_find" class="wikilink1" title="stl:algorithm:adjacent_find">adjacent_find</a>, <a href="equal" class="wikilink1" title="stl:algorithm:equal">equal</a>, <a href="find" class="wikilink1" title="stl:algorithm:find">find</a>, <a href="find_end" class="wikilink1" title="stl:algorithm:find_end">find_end</a>, <a href="find_first_of" class="wikilink1" title="stl:algorithm:find_first_of">find_first_of</a>, <a href="search_n" class="wikilink1" title="stl:algorithm:search_n">search_n</a>
+Finds the first element in the given range <code>[first, last)</code>, for which unary predicate <code>p</code> is <code>true</code>.
 </p>
 
 </div>
-<!-- SECTION "find_if" [3-] --></div>
+<!-- EDIT1 SECTION "find_if" [1-309] -->
+<h3 class="sectionedit2"><a name="parameters" id="parameters">Parameters</a></h3>
+<div class="level3">
+
+<p>
+
+<code>first</code>, <code>last</code> - the range of elements to be examined
+</p>
+
+<p>
+<code>p</code> - unary predicate
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Parameters" [310-414] -->
+<h3 class="sectionedit3"><a name="return_value" id="return_value">Return value</a></h3>
+<div class="level3">
+
+<p>
+
+iterator to the found element or <code>last</code> if none found
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Return value" [415-493] -->
+<h3 class="sectionedit4"><a name="equivalent_function" id="equivalent_function">Equivalent function</a></h3>
+<div class="level3">
+<pre class="cpp code cpp"><span class="kw2">template</span><span class="sy1">&lt;</span> <span class="kw2">class</span> InputIterator, <span class="kw2">class</span> BinaryPredicator <span class="sy1">&gt;</span>
+InputIterator find<span class="br0">&#40;</span>InputIterator first, InputIterator last, BinaryPredicator p<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <span class="kw1">for</span> <span class="br0">&#40;</span><span class="sy4">;</span> first <span class="sy3">!</span><span class="sy1">=</span> last<span class="sy4">;</span> <span class="sy2">++</span>first<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        <span class="kw1">if</span> <span class="br0">&#40;</span>p<span class="br0">&#40;</span><span class="sy2">*</span>first<span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="kw1">return</span> first<span class="sy4">;</span>
+    <span class="br0">&#125;</span>
+    <span class="kw1">return</span> last<span class="sy4">;</span>
+<span class="br0">&#125;</span></pre>
+</div>
+<!-- EDIT4 SECTION "Equivalent function" [494-775] -->
+<h3 class="sectionedit5"><a name="example" id="example">Example</a></h3>
+<div class="level3">
+
+<p>
+
+The following code uses find_if() and a “greater-than-zero” unary
+predicate to find the first positive, non-zero number in a list of numbers:
+</p>
+<pre class="cpp code cpp"><span class="co2">#include &lt;algorithm&gt;</span>
+<span class="co2">#include &lt;iostream&gt;</span>
+&nbsp;
+<span class="kw4">int</span> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <span class="kw4">int</span> nums<span class="br0">&#91;</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="br0">&#123;</span> <span class="nu0">0</span>, <span class="sy2">-</span><span class="nu0">1</span>, <span class="sy2">-</span><span class="nu0">2</span>, <span class="sy2">-</span><span class="nu0">3</span>, <span class="sy2">-</span><span class="nu0">4</span>, <span class="nu0">342</span>, <span class="sy2">-</span><span class="nu0">5</span> <span class="br0">&#125;</span><span class="sy4">;</span>
+    <span class="kw4">int</span><span class="sy2">*</span> result<span class="sy4">;</span>
+    <span class="kw4">int</span> end <span class="sy1">=</span> <span class="nu0">7</span><span class="sy4">;</span>
+&nbsp;
+    result <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">find_if</span><span class="br0">&#40;</span>nums, nums <span class="sy2">+</span> end, bind2nd<span class="br0">&#40;</span>greater<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, <span class="nu0">0</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw1">if</span> <span class="br0">&#40;</span>result <span class="sy1">==</span> nums <span class="sy2">+</span> end<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Did not find any number greater than zero&quot;</span><span class="sy4">;</span>
+    <span class="br0">&#125;</span> <span class="kw1">else</span> <span class="br0">&#123;</span>
+        std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Found a positive non-zero number: &quot;</span> <span class="sy1">&lt;&lt;</span> <span class="sy2">*</span>result<span class="sy4">;</span>
+    <span class="br0">&#125;</span>
+&nbsp;
+    <span class="kw1">return</span> <span class="nu0">0</span><span class="sy4">;</span>
+<span class="br0">&#125;</span></pre>
+<p>
+Output:
+&lt;code terminal&gt;
+Did not find any number greater than zero
+&lt;code&gt;
+</p>
+
+</div>
+<!-- EDIT5 SECTION "Example" [776-1445] -->
+<h3 class="sectionedit6"><a name="complexity" id="complexity">Complexity</a></h3>
+<div class="level3">
+
+<p>
+
+linear in the distance between <code>first</code> and <code>last</code>
+</p>
+
+</div>
+<!-- EDIT6 SECTION "Complexity" [1446-1520] -->
+<h3 class="sectionedit7"><a name="see_also" id="see_also">See also</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="find" class="wikilink1" title="algorithm:find">find</a>, <a href="find_end" class="wikilink1" title="algorithm:find_end">find_end</a>, <a href="find_first_of" class="wikilink1" title="algorithm:find_first_of">find_first_of</a>, <a href="search_n" class="wikilink1" title="algorithm:search_n">search_n</a>
+</p>
+
+</div>
+<!-- EDIT7 SECTION "See also" [1521-] --></div>
 </body>
 </html>

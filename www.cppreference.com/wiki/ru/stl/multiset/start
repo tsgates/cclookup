@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru"
+ lang="ru" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>ru:container:multiset:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:15-0700" />
+<meta name="keywords" content="ru,container,multiset,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/ru/container/multiset/start?do=index" title="Все страницы" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=ru:container:multiset" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/ru/container/multiset/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/ru/container/multiset/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='ru:container:multiset';var JSINFO = {"id":"ru:container:multiset:start","namespace":"ru:container:multiset"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="c_multisets" id="c_multisets">C++ Multisets</a></h2>
+<div class="level2">
+
+<p>
+
+Контейнеры multiset похожи на множества в том, что являются ассоциативными контейнерами,
+содержащими отсортированный набор объектов, но в контейнерах multiset объекты могут дублироваться.
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="multiset_constructors" class="wikilink1" title="ru:container:multiset:multiset_constructors">Конструкторы</a></td><td class="col1">стандартные методы для создания, копирования и уничтожения контейнеров multiset</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="multiset_operators" class="wikilink1" title="ru:container:multiset:multiset_operators">Операторы</a></td><td class="col1">присваивают и сравнивают контейнеры multiset</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="begin" class="wikilink1" title="ru:container:multiset:begin">begin</a></td><td class="col1">возвращает итератор на начало контейнера multiset</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="clear" class="wikilink1" title="ru:container:multiset:clear">clear</a></td><td class="col1">удаляет все элементы из контейнера multiset</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="count" class="wikilink1" title="ru:container:multiset:count">count</a></td><td class="col1">возвращает количество элементов, соответствующих заданному ключу</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="empty" class="wikilink1" title="ru:container:multiset:empty">empty</a></td><td class="col1">истина, если в контейнере multiset нет элементов</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="end" class="wikilink1" title="ru:container:multiset:end">end</a></td><td class="col1">возвращает итератор на место после последнего элемента контейнера multiset</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="equal_range" class="wikilink1" title="ru:container:multiset:equal_range">equal_range</a></td><td class="col1">возвращает итераторы на первый элемент, соответствующий заданному ключу, и на место после последнего такого элемента</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="erase" class="wikilink1" title="ru:container:multiset:erase">erase</a></td><td class="col1">удаляет элементы из контейнера multiset</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="find" class="wikilink1" title="ru:container:multiset:find">find</a></td><td class="col1">возвращает итератор на определенный элемент</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/container/multiset/insert" class="wikilink2" title="ru:container:multiset:insert" rel="nofollow">insert</a></td><td class="col1">вставляет элементы в контейнер multiset</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/container/multiset/key_comp" class="wikilink2" title="ru:container:multiset:key_comp" rel="nofollow">key_comp</a></td><td class="col1">возвращает функцию для сравнения ключей</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/container/multiset/lower_bound" class="wikilink2" title="ru:container:multiset:lower_bound" rel="nofollow">lower_bound</a></td><td class="col1">возвращает итератор на первый элемент, больший либо равный определенному значению</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/container/multiset/max_size" class="wikilink2" title="ru:container:multiset:max_size" rel="nofollow">max_size</a></td><td class="col1">возвращает максимальное количество элементов, которое может содержать контейнер multiset</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/container/multiset/rbegin" class="wikilink2" title="ru:container:multiset:rbegin" rel="nofollow">rbegin</a></td><td class="col1">возвращает reverse_iterator на конец контейнера multiset</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/container/multiset/rend" class="wikilink2" title="ru:container:multiset:rend" rel="nofollow">rend</a></td><td class="col1">возвращает reverse_iterator на начало контейнера multiset</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/container/multiset/size" class="wikilink2" title="ru:container:multiset:size" rel="nofollow">size</a></td><td class="col1">возвращает количество элементов в контейнере multiset</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/container/multiset/swap" class="wikilink2" title="ru:container:multiset:swap" rel="nofollow">swap</a></td><td class="col1">меняется содержимым текущего контейнера multiset с другим</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/container/multiset/upper_bound" class="wikilink2" title="ru:container:multiset:upper_bound" rel="nofollow">upper_bound</a></td><td class="col1">возвращает итератор на первый элемент, больший определенного значения</td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/container/multiset/value_comp" class="wikilink2" title="ru:container:multiset:value_comp" rel="nofollow">value_comp</a></td><td class="col1">возвращает функцию для сравнения величин</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [361-2810] -->
+</div>
+</div>
+</body>
+</html>

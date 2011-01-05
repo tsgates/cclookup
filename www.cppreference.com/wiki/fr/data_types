@@ -1,0 +1,390 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr"
+ lang="fr" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>fr:data_types</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:58-0700" />
+<meta name="keywords" content="fr,data_types" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/fr/data_types?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=fr" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/fr/data_types" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/fr/data_types" />
+<link rel="canonical" href="data_types" />
+<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='fr';var JSINFO = {"id":"fr:data_types","namespace":"fr"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table des matières</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="data_types#types_de_donnees_c" class="toc">Types de données C++</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="data_types#modifieurs_de_types" class="toc">Modifieurs de types</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="data_types#taille_et_etendue_des_types" class="toc">Taille et étendue des types</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="data_types#lecture_des_declarations_de_type" class="toc">Lecture des déclarations de type</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="types_de_donnees_c" id="types_de_donnees_c">Types de données C++</a></h2>
+<div class="level2">
+
+<p>
+Les programmeurs C++ ont accès à cinq types de données en C:void, int, float, double, et char.
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<th class="col0">Type</th><th class="col1">Description</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">void</td><td class="col1">aucun type</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">int</td><td class="col1">entier</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">float</td><td class="col1">nombre à virgule flottante (décimal)</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">double</td><td class="col1">nombre à virgule flottante de précision double</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0">char</td><td class="col1">caractère</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [132-304] -->
+<p>
+
+Le C++ en définit deux de plus: bool et wchar_t.
+
+</p>
+<div class="table sectionedit3"><table class="inline">
+	<tr class="row0">
+		<th class="col0">Type</th><th class="col1">Description</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">bool</td><td class="col1">valeur booléenne; VRAI ou FAUX</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">wchar_t</td><td class="col1">caractère étendu</td>
+	</tr>
+</table></div>
+<!-- EDIT3 TABLE [357-443] -->
+</div>
+<!-- EDIT1 SECTION "Types de données C++" [1-444] -->
+<h3 class="sectionedit4"><a name="modifieurs_de_types" id="modifieurs_de_types">Modifieurs de types</a></h3>
+<div class="level3">
+
+<p>
+Plusieurs de ces types peuvent être modifiés en utilisant les mots-clés signed, unsigned, short, et long. Lorsqu&#039;un de ces modifieurs de type est utilisé seul, le type par défaut est le type entier. Une liste complète des types de données possibles suit:
+
+</p>
+<div class="table sectionedit5"><table class="inline">
+	<tr class="row0">
+		<th class="col0" colspan="4">types entiers</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0" colspan="4">bool</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0" colspan="4">char</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0" colspan="4">signed char</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0" colspan="4">unsigned char</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0" colspan="4">wchar_t</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0">short</td><td class="col1">short int</td><td class="col2">signed short</td><td class="col3">signed short int</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0" colspan="2">unsigned short</td><td class="col2" colspan="2">unsigned short int</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0">int</td><td class="col1">signed</td><td class="col2" colspan="2">signed int</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0" colspan="2">unsigned</td><td class="col2" colspan="2">unsigned int</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0">long</td><td class="col1">long int</td><td class="col2">signed long</td><td class="col3">signed long int</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0" colspan="2">unsigned long</td><td class="col2" colspan="2">unsigned long int</td>
+	</tr>
+	<tr class="row12">
+		<th class="col0" colspan="4">types à virgule flottante</th>
+	</tr>
+	<tr class="row13">
+		<td class="col0" colspan="4">float</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0" colspan="4">double</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0" colspan="4">long double</td>
+	</tr>
+	<tr class="row16">
+		<th class="col0" colspan="4">types entiers supportés optionnellement</th>
+	</tr>
+	<tr class="row17">
+		<td class="col0">long long</td><td class="col1">long long int</td><td class="col2">signed long long</td><td class="col3">signed long long int</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0" colspan="2">unsigned long long</td><td class="col2" colspan="2">unsigned long long int</td>
+	</tr>
+</table></div>
+<!-- EDIT5 TABLE [736-1268] -->
+</div>
+<!-- EDIT4 SECTION "Modifieurs de types" [445-1269] -->
+<h3 class="sectionedit6"><a name="taille_et_etendue_des_types" id="taille_et_etendue_des_types">Taille et étendue des types</a></h3>
+<div class="level3">
+
+<p>
+La taille et l&#039;étendue d&#039;un type de donnée dépend de l&#039;architecture et du compilateur. Vous pouvez utiliser l&#039;opérateur <a href="../keywords/sizeof" class="wikilink1" title="keywords:sizeof">sizeof</a> pour déterminer la taille d&#039;un type de donnée (exprimée en octets). Cependant, beaucoup d&#039;architectures implémentent les types de données d&#039;une taille standard. Les entiers sont souvent codés sur 32 bits; un caractère (char) est codé sur 8 bits, un entier court (short) sur 16 bits et un entier long sur 32 bits, le type long long est codé sur 64 bits.
+</p>
+
+<p>
+Le fichier d&#039;entête “cfloat” (ou “float.h”) défini l&#039;étendue des nombres décimaux,
+“climits” (ou “limits.h”) - celle des entiers.
+</p>
+
+<p>
+Les limites des valeurs numériques sont définies dans l&#039;entête &lt;limits&gt;. Les valeurs modèles de <a href="../limits/numeric_limits" class="wikilink1" title="limits:numeric_limits">numeric_limits</a> fournissent des représentations numériques indépendantes du système pour les types de données du C++. Utilisez la fonction appropriée en fournissant le type de donnée en paramètre comme indiqué ci-dessous. Notez que les limites numériques peuvent aussi être surchargées pour les types définis par l&#039;utilisateur.
+
+</p>
+<div class="table sectionedit7"><table class="inline">
+	<tr class="row0">
+		<th class="col0">Méthode ou<br/>
+constante</th><th class="col1">Retour</th><th class="col2">Description</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">is_specialized</td><td class="col1">bool</td><td class="col2"> </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">radix</td><td class="col1">int</td><td class="col2">base de l&#039;exposant</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">digits</td><td class="col1">int</td><td class="col2">nombre de bits utilisés dans la représentation</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">digits10</td><td class="col1">int</td><td class="col2">nombre de chiffres qui peuvent être représentés</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0">is_signed</td><td class="col1">bool</td><td class="col2">nombre signé ?</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0">is_integer</td><td class="col1">bool</td><td class="col2">nombre entier ?</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0">is_exact</td><td class="col1">bool</td><td class="col2"> </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0">min()</td><td class="col1">&lt;type&gt;</td><td class="col2">plus petit nombre représentable (non négatif)</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0">max()</td><td class="col1">&lt;type&gt;</td><td class="col2">plus grand nombre</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0">epsilon()</td><td class="col1">&lt;type&gt;</td><td class="col2">différence entre 1 et la plus petite valeur plus grande que 1</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0">round_error()</td><td class="col1">&lt;type&gt;</td><td class="col2">erreur maximum d&#039;arrondi</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0">infinity()</td><td class="col1">&lt;type&gt;</td><td class="col2">infini</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0">quiet_NaN()</td><td class="col1">&lt;type&gt;</td><td class="col2">nombre invalide ne signalant pas d&#039;erreur</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0">signaling_NaN()</td><td class="col1">&lt;type&gt;</td><td class="col2">nombre invalide signalant une erreur</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0">denorm_min()</td><td class="col1">&lt;type&gt;</td><td class="col2"> </td>
+	</tr>
+	<tr class="row16">
+		<td class="col0">min_exponent</td><td class="col1">int</td><td class="col2"> </td>
+	</tr>
+	<tr class="row17">
+		<td class="col0">min_exponent10</td><td class="col1">int</td><td class="col2"> </td>
+	</tr>
+	<tr class="row18">
+		<td class="col0">max_exponent</td><td class="col1">int</td><td class="col2"> </td>
+	</tr>
+	<tr class="row19">
+		<td class="col0">max_exponent10</td><td class="col1">int</td><td class="col2"> </td>
+	</tr>
+	<tr class="row20">
+		<td class="col0">has_infinity</td><td class="col1">bool</td><td class="col2"> </td>
+	</tr>
+	<tr class="row21">
+		<td class="col0">has_quiet_NaN</td><td class="col1">bool</td><td class="col2"> </td>
+	</tr>
+	<tr class="row22">
+		<td class="col0">has_signaling_NaN</td><td class="col1">bool</td><td class="col2"> </td>
+	</tr>
+	<tr class="row23">
+		<td class="col0">has_denorm</td><td class="col1">&lt;type&gt;_denorm_style</td><td class="col2"> </td>
+	</tr>
+	<tr class="row24">
+		<td class="col0">has_denorm_loss</td><td class="col1">bool</td><td class="col2"> </td>
+	</tr>
+	<tr class="row25">
+		<td class="col0">is_iec559</td><td class="col1">bool</td><td class="col2">conforme à l&#039;IEC-559</td>
+	</tr>
+	<tr class="row26">
+		<td class="col0">is_bounded</td><td class="col1">bool</td><td class="col2"> </td>
+	</tr>
+	<tr class="row27">
+		<td class="col0">is_modulo</td><td class="col1">bool</td><td class="col2"> </td>
+	</tr>
+	<tr class="row28">
+		<td class="col0">traps</td><td class="col1">bool</td><td class="col2"> </td>
+	</tr>
+	<tr class="row29">
+		<td class="col0">tinyness_before</td><td class="col1">bool</td><td class="col2"> </td>
+	</tr>
+	<tr class="row30">
+		<td class="col0">round_style</td><td class="col1">float_round_style { round_to_nearest, … }</td><td class="col2"> </td>
+	</tr>
+</table></div>
+<!-- EDIT7 TABLE [2401-3513] -->
+<p>
+
+L&#039;utilisation la plus commune est la vérification des limites, pour être sûr qu&#039;un nombre donnée est valide et peut être stocké. Le code suivant affiche les valeurs minimal et maximal d&#039;un entier court sur le système courant.
+
+</p>
+<pre class="cpp code cpp">  <span class="co2">#include &lt;limits&gt;</span>
+  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Maximum : &quot;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">numeric_limits</span><span class="sy1">&lt;</span><span class="kw4">short</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">max</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Minimum : &quot;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">numeric_limits</span><span class="sy1">&lt;</span><span class="kw4">short</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">min</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span></pre>
+</div>
+<!-- EDIT6 SECTION "Taille et étendue des types" [1270-3941] -->
+<h3 class="sectionedit8"><a name="lecture_des_declarations_de_type" id="lecture_des_declarations_de_type">Lecture des déclarations de type</a></h3>
+<div class="level3">
+
+<p>
+
+Les déclarations simple sont faciles à comprendre:
+</p>
+<pre class="cpp code cpp">  <span class="kw4">int</span> i</pre>
+<p>
+Mais parfois cela peut devenir plus compliqué:
+</p>
+<pre class="cpp code cpp">  <span class="kw4">double</span> <span class="sy2">**</span>d<span class="br0">&#91;</span><span class="nu0">8</span><span class="br0">&#93;</span>              <span class="co1">// hmm...</span>
+  <span class="kw4">char</span> <span class="sy2">*</span><span class="br0">&#40;</span><span class="sy2">*</span><span class="br0">&#40;</span><span class="sy2">**</span>foo <span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#91;</span><span class="nu0">8</span><span class="br0">&#93;</span><span class="br0">&#41;</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#91;</span><span class="br0">&#93;</span> <span class="co1">// argh! qu'est foo ?</span></pre>
+<p>
+Pour comprendre ces déclarations, suivez les trois règles :
+
+</p>
+<ol>
+<li class="level1"><div class="li"> Commencez au nom de la variable (<code>d</code> ou <code>foo</code> dans les exemples ci-dessus)</div>
+</li>
+<li class="level1"><div class="li"> Terminez par le type de donnée (<code>double</code> ou <code>char</code>)</div>
+</li>
+<li class="level1"><div class="li"> Allez à droite quand vous pouvez, et à gauche quand vous le devez.  (Les parenthèses ramènent à gauche.)</div>
+</li>
+</ol>
+
+<p>
+
+Par exemple:
+
+</p>
+<div class="table sectionedit9"><table class="inline">
+	<tr class="row0">
+		<th class="col0">Expression</th><th class="col1">Signifie</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <code>double **d[8];</code> </td><td class="col1"> </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <code><del>double</del> **<del>d</del>[8];</code> </td><td class="col1"> <strong>d est … double</strong> </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> <code><del>double</del> **<del>d[8]</del>;</code> </td><td class="col1"> d est <strong>un tableau de 8</strong> … double </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> <code><del>double</del> *<del>*d[8]</del>;</code> </td><td class="col1"> d est un tableau de 8 <strong>pointeurs vers</strong> … double </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> <code><del>double **d[8]</del>;</code> </td><td class="col1"> d est un tableau de 8 pointeurs vers <strong>un pointeur de</strong> double </td>
+	</tr>
+</table></div>
+<!-- EDIT9 TABLE [4554-4966] -->
+<p>
+
+Un autre exemple:
+
+</p>
+<div class="table sectionedit10"><table class="inline">
+	<tr class="row0">
+		<th class="col0">Expression</th><th class="col1">Signifie</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <code>char *(*(**foo [][8])())[]</code> </td><td class="col1"> </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <code><del>char</del> *(*(**<del>foo</del> [][8])())[]</code> </td><td class="col1"> <strong>foo est … char</strong> </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> <code><del>char</del> *(*(**<del>foo []</del>[8])())[]</code> </td><td class="col1"> foo est <strong>un tableau de </strong> … char </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> <code><del>char</del> *(*(**<del>foo [][8]</del>)())[]</code> </td><td class="col1"> foo est un tableau de <strong>tableaux de 8</strong> … char </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> <code><del>char</del> *(*(*<del>*foo [][8]</del>)())[]</code> </td><td class="col1"> foo est un tableau de tableaux de 8 <strong>pointeurs vers</strong> … char </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> <code><del>char</del> *(*<del>(**foo [][8])</del>())[]</code> </td><td class="col1"> foo est un tableau de tableaux de 8 pointeurs vers <strong>un pointeur de</strong> … char </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"> <code><del>char</del> *(*<del>(**foo [][8])()</del>)[]</code> </td><td class="col1"> foo est un tableau de tableaux de 8 pointeurs vers un pointeur de <strong>fonction retournant</strong> … char </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"> <code><del>char</del> *<del>(*(**foo [][8])())</del>[]</code> </td><td class="col1"> foo est un tableau de tableaux de 8 pointeurs vers un pointeur de fonction retournant <strong>un pointeur de</strong> … char </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"> <code><del>char</del> *<del>(*(**foo [][8])())[]</del></code> </td><td class="col1"> foo est un tableau de tableaux de 8 pointeurs vers un pointeur de fonction retournant un pointeur de <strong>tableau de</strong> … char </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"> <code><del>char *(*(**foo [][8])())[]</del></code> </td><td class="col1"> foo est un tableau de tableaux de 8 pointeurs vers un pointeur de fonction retournant un pointeur de tableau de <strong>pointeurs de</strong> char </td>
+	</tr>
+</table></div>
+<!-- EDIT10 TABLE [4987-6322] -->
+<p>
+
+Pour une explication plus détaillée en anglais, voyez la description de comment lire les déclarations en C de Steve Friedl à <a href="http://www.unixwiz.net/techtips/reading-cdecl.html" class="urlextern" title="http://www.unixwiz.net/techtips/reading-cdecl.html"  rel="nofollow">http://www.unixwiz.net/techtips/reading-cdecl.html</a>.
+</p>
+
+</div>
+<!-- EDIT8 SECTION "Lecture des déclarations de type" [3942-] --></div>
+</body>
+</html>

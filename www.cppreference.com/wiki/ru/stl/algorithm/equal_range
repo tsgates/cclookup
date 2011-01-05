@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru"
+ lang="ru" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>ru:algorithm:equal_range</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:13-0700" />
+<meta name="keywords" content="ru,algorithm,equal_range" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/ru/algorithm/equal_range?do=index" title="Все страницы" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=ru:algorithm" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/ru/algorithm/equal_range" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/ru/algorithm/equal_range" />
+<link rel="canonical" href="equal_range" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='ru:algorithm';var JSINFO = {"id":"ru:algorithm:equal_range","namespace":"ru:algorithm"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="equal_range" id="equal_range">equal_range</a></h2>
+<div class="level2">
+
+<p>
+Синтаксис:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;algorithm&gt;</span>
+    pair<span class="sy1">&lt;</span>forward_iterator,forward_iterator<span class="sy1">&gt;</span> equal_range<span class="br0">&#40;</span> forward_iterator first, forward_iterator last, <span class="kw4">const</span> T<span class="sy3">&amp;</span> val <span class="br0">&#41;</span><span class="sy4">;</span>
+    pair<span class="sy1">&lt;</span>forward_iterator,forward_iterator<span class="sy1">&gt;</span> equal_range<span class="br0">&#40;</span> forward_iterator first, forward_iterator last, <span class="kw4">const</span> T<span class="sy3">&amp;</span> val, CompFn comp <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Функция equal_range() возвращает диапазон элементов между first и last, равных val. Эта функция предполагает, что элементы между first и last расположены в порядке, определенном функцией comp, если она определена, либо оператором &lt; в ином случае.
+</p>
+
+<p>
+equal_range() можно представить как комбинацию <a href="lower_bound" class="wikilink1" title="ru:algorithm:lower_bound">lower_bound</a> и <a href="upper_bound" class="wikilink1" title="ru:algorithm:upper_bound">upper_bound</a>, так как первый из пары итераторов, которые возвращает эта функция аналогичен тому, что возвращает lower_bound, а второй аналогичен тому, что возвращает upper_bound.
+</p>
+
+<p>
+Например, следующий код использует equal_range(), чтобы определить все возможные места в упорядоченном векторе, куда можно вставить 8, сохраняя упорядоченность:
+</p>
+<pre class="cpp code cpp">   vector<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> nums<span class="sy4">;</span>
+   nums.<span class="me1">push_back</span><span class="br0">&#40;</span> <span class="sy2">-</span><span class="nu0">242</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+   nums.<span class="me1">push_back</span><span class="br0">&#40;</span> <span class="sy2">-</span><span class="nu0">1</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+   nums.<span class="me1">push_back</span><span class="br0">&#40;</span> <span class="nu0">0</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+   nums.<span class="me1">push_back</span><span class="br0">&#40;</span> <span class="nu0">5</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+   nums.<span class="me1">push_back</span><span class="br0">&#40;</span> <span class="nu0">8</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+   nums.<span class="me1">push_back</span><span class="br0">&#40;</span> <span class="nu0">8</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+   nums.<span class="me1">push_back</span><span class="br0">&#40;</span> <span class="nu0">11</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+   pair<span class="sy1">&lt;</span>vector<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">iterator</span>, vector<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">iterator</span><span class="sy1">&gt;</span> result<span class="sy4">;</span>
+   <span class="kw4">int</span> new_val <span class="sy1">=</span> <span class="nu0">8</span><span class="sy4">;</span>
+&nbsp;
+   result <span class="sy1">=</span> equal_range<span class="br0">&#40;</span> nums.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, nums.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, new_val <span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;The first place that &quot;</span> <span class="sy1">&lt;&lt;</span> new_val <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; could be inserted is before &quot;</span>
+        <span class="sy1">&lt;&lt;</span> <span class="sy2">*</span>result.<span class="me1">first</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;, and the last place that it could be inserted is before &quot;</span>
+        <span class="sy1">&lt;&lt;</span> <span class="sy2">*</span>result.<span class="me1">second</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
+<p>
+Этот код выводит:
+</p>
+<pre class="code">
+   The first place that 8 could be inserted is before 8,
+   and the last place that it could be inserted is before 11</pre>
+<p>
+Смотрите также: <a href="binary_search" class="wikilink1" title="ru:algorithm:binary_search">binary_search</a>, <a href="lower_bound" class="wikilink1" title="ru:algorithm:lower_bound">lower_bound</a>, <a href="upper_bound" class="wikilink1" title="ru:algorithm:upper_bound">upper_bound</a>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "equal_range" [3-] --></div>
+</body>
+</html>

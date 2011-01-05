@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn"
+ lang="cn" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>cn:string:string_operators</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:41-0700" />
+<meta name="keywords" content="cn,string,string_operators" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/cn/string/string_operators?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=cn:string" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/cn/string/string_operators" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/cn/string/string_operators" />
+<link rel="canonical" href="string_operators" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='cn:string';var JSINFO = {"id":"cn:string:string_operators","namespace":"cn:string"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="string_operators_操作符" id="string_operators_操作符">String operators 操作符</a></h2>
+<div class="level2">
+
+<p>
+
+Syntax:
+</p>
+
+<p>
+语法：
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;string&gt;</span>
+    <span class="kw4">bool</span> operator<span class="sy1">==</span><span class="br0">&#40;</span><span class="kw4">const</span> string<span class="sy3">&amp;</span> c1, <span class="kw4">const</span> string<span class="sy3">&amp;</span> c2<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">bool</span> operator<span class="sy3">!</span><span class="sy1">=</span><span class="br0">&#40;</span><span class="kw4">const</span> string<span class="sy3">&amp;</span> c1, <span class="kw4">const</span> string<span class="sy3">&amp;</span> c2<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">bool</span> operator<span class="sy1">&lt;</span><span class="br0">&#40;</span><span class="kw4">const</span> string<span class="sy3">&amp;</span> c1, <span class="kw4">const</span> string<span class="sy3">&amp;</span> c2<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">bool</span> operator<span class="sy1">&gt;</span><span class="br0">&#40;</span><span class="kw4">const</span> string<span class="sy3">&amp;</span> c1, <span class="kw4">const</span> string<span class="sy3">&amp;</span> c2<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">bool</span> operator<span class="sy1">&lt;=</span><span class="br0">&#40;</span><span class="kw4">const</span> string<span class="sy3">&amp;</span> c1, <span class="kw4">const</span> string<span class="sy3">&amp;</span> c2<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">bool</span> operator<span class="sy1">&gt;=</span><span class="br0">&#40;</span><span class="kw4">const</span> string<span class="sy3">&amp;</span> c1, <span class="kw4">const</span> string<span class="sy3">&amp;</span> c2<span class="br0">&#41;</span><span class="sy4">;</span>
+    string operator<span class="sy2">+</span><span class="br0">&#40;</span><span class="kw4">const</span> string<span class="sy3">&amp;</span> s1, <span class="kw4">const</span> string<span class="sy3">&amp;</span> s2 <span class="br0">&#41;</span><span class="sy4">;</span>
+    string operator<span class="sy2">+</span><span class="br0">&#40;</span><span class="kw4">const</span> Char<span class="sy2">*</span> s, <span class="kw4">const</span> string<span class="sy3">&amp;</span> s2 <span class="br0">&#41;</span><span class="sy4">;</span>
+    string operator<span class="sy2">+</span><span class="br0">&#40;</span> Char c, <span class="kw4">const</span> string<span class="sy3">&amp;</span> s2 <span class="br0">&#41;</span><span class="sy4">;</span>
+    string operator<span class="sy2">+</span><span class="br0">&#40;</span> <span class="kw4">const</span> string<span class="sy3">&amp;</span> s1, <span class="kw4">const</span> Char<span class="sy2">*</span> s <span class="br0">&#41;</span><span class="sy4">;</span>
+    string operator<span class="sy2">+</span><span class="br0">&#40;</span> <span class="kw4">const</span> string<span class="sy3">&amp;</span> s1, Char c <span class="br0">&#41;</span><span class="sy4">;</span>
+    string<span class="sy3">&amp;</span> operator<span class="sy2">+</span><span class="sy1">=</span><span class="br0">&#40;</span><span class="kw4">const</span> string<span class="sy3">&amp;</span> append<span class="br0">&#41;</span><span class="sy4">;</span>
+    string<span class="sy3">&amp;</span> operator<span class="sy2">+</span><span class="sy1">=</span><span class="br0">&#40;</span><span class="kw4">const</span> Char<span class="sy2">*</span> append<span class="br0">&#41;</span><span class="sy4">;</span>
+    string<span class="sy3">&amp;</span> operator<span class="sy2">+</span><span class="sy1">=</span><span class="br0">&#40;</span><span class="kw4">const</span> Char  append<span class="br0">&#41;</span><span class="sy4">;</span>
+    ostream<span class="sy3">&amp;</span> operator<span class="sy1">&lt;&lt;</span><span class="br0">&#40;</span> ostream<span class="sy3">&amp;</span> os, <span class="kw4">const</span> string<span class="sy3">&amp;</span> s <span class="br0">&#41;</span><span class="sy4">;</span>
+    istream<span class="sy3">&amp;</span> operator<span class="sy1">&gt;&gt;</span><span class="br0">&#40;</span> istream<span class="sy3">&amp;</span> is, string<span class="sy3">&amp;</span> s <span class="br0">&#41;</span><span class="sy4">;</span>
+    string<span class="sy3">&amp;</span> operator<span class="sy1">=</span><span class="br0">&#40;</span> <span class="kw4">const</span> string<span class="sy3">&amp;</span> s <span class="br0">&#41;</span><span class="sy4">;</span>
+    string<span class="sy3">&amp;</span> operator<span class="sy1">=</span><span class="br0">&#40;</span> <span class="kw4">const</span> Char<span class="sy2">*</span> s <span class="br0">&#41;</span><span class="sy4">;</span>
+    string<span class="sy3">&amp;</span> operator<span class="sy1">=</span><span class="br0">&#40;</span> Char ch <span class="br0">&#41;</span><span class="sy4">;</span>
+    Char<span class="sy3">&amp;</span> operator<span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#40;</span> size_type index <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">const</span> Char<span class="sy3">&amp;</span> operator<span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#40;</span> size_type index <span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span></pre>
+<p>
+C++ strings can be compared and assigned with the standard comparison
+operators: ==, !=, &lt;=, &gt;=, &lt;, &gt;, and =. Performing a comparison or assigning
+one string to another takes <a href="../../complexity" class="wikilink1" title="complexity">linear time</a>.
+</p>
+
+<p>
+C++ strings 可以通过标准运算符 ==, !=, &lt;=, &gt;=, &lt;, &gt;, 和 = 进行比较和赋值。一个string和另一个string的比较或赋值操作是<a href="../../complexity" class="wikilink1" title="complexity">线性的</a>。
+</p>
+
+<p>
+
+Two strings are equal if:
+</p>
+
+<p>
+两个strings是相等的，当：
+
+</p>
+<ol>
+<li class="level1"><div class="li"> Their size is the same, and</div>
+</li>
+<li class="level1"><div class="li"> Each member in location i in one string is equal to the the member in location i in the other string.</div>
+</li>
+</ol>
+<ol>
+<li class="level1"><div class="li"> 它们的长度一样，而且</div>
+</li>
+<li class="level1"><div class="li"> 位于其中一个string的i处的元素与另一个string的i处的元素相等。</div>
+</li>
+</ol>
+
+<p>
+Comparisons among strings are done lexicographically.
+</p>
+
+<p>
+strings 之间的比较是字典序的。
+</p>
+
+<p>
+
+In addition to the normal container operators, strings can also be concatenated
+with the + operator and fed to the <a href="../../io/start" class="wikilink1" title="io:start">C++ I/O stream classes</a> with the &lt;&lt; and &gt;&gt;
+operators.
+</p>
+
+<p>
+除了普通容器支持的运算符，strings 也可以通过 + 运算符进行连接，同时它也通过&lt;&lt; 和 &gt;&gt; 支持<a href="../../io/start" class="wikilink1" title="io:start">C++的输入/输出流</a>。
+</p>
+
+<p>
+
+For example, the following code concatenates two strings and displays the
+result:
+</p>
+
+<p>
+例如，如下所示代码连接两个strings并显示其结果：
+</p>
+<pre class="cpp code cpp">   string s1 <span class="sy1">=</span> <span class="st0">&quot;Now is the time...&quot;</span><span class="sy4">;</span>
+   string s2 <span class="sy1">=</span> <span class="st0">&quot;for all good men...&quot;</span><span class="sy4">;</span>
+   string s3 <span class="sy1">=</span> s1 <span class="sy2">+</span> s2<span class="sy4">;</span>
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;s3 is &quot;</span> <span class="sy1">&lt;&lt;</span> s3 <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
+<p>
+
+Furthermore, strings can be assigned values that are other strings, character
+arrays, or even single characters. The following code is perfectly valid:
+</p>
+
+<p>
+更进一步，strings 可以通过其它strings，字符数组，甚至是单个字符进行赋值。例如，以下代码是合法的：
+</p>
+<pre class="cpp code cpp">   <span class="kw4">char</span> ch <span class="sy1">=</span> <span class="st0">'N'</span><span class="sy4">;</span>
+   string s<span class="sy4">;</span>
+   s <span class="sy1">=</span> ch<span class="sy4">;</span></pre>
+<p>
+
+Individual characters of a string can be examined with the [] operator, which
+runs in <a href="../../complexity" class="wikilink1" title="complexity">constant time</a>.
+</p>
+
+<p>
+可以通过 [] 运算符检索string的单个字符，其复杂度是<a href="../../complexity" class="wikilink1" title="complexity">固定的</a>
+</p>
+
+<p>
+
+Related Topics: <a href="http://www.cppreference.com/wiki/cn/string/c_str" class="wikilink2" title="cn:string:c_str" rel="nofollow">c_str</a>, <a href="http://www.cppreference.com/wiki/cn/string/compare" class="wikilink2" title="cn:string:compare" rel="nofollow">compare</a>, <a href="http://www.cppreference.com/wiki/cn/string/data" class="wikilink2" title="cn:string:data" rel="nofollow">data</a>
+</p>
+
+<p>
+相关话题：<a href="http://www.cppreference.com/wiki/cn/string/c_str" class="wikilink2" title="cn:string:c_str" rel="nofollow">c_str</a>, <a href="http://www.cppreference.com/wiki/cn/string/compare" class="wikilink2" title="cn:string:compare" rel="nofollow">compare</a>, <a href="http://www.cppreference.com/wiki/cn/string/data" class="wikilink2" title="cn:string:data" rel="nofollow">data</a>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "String operators 操作符" [3-] --></div>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:keywords:static</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:20-0700" />
+<meta name="keywords" content="jp,keywords,static" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/keywords/static?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp:keywords" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/keywords/static" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/keywords/static" />
+<link rel="canonical" href="static" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp:keywords';var JSINFO = {"id":"jp:keywords:static","namespace":"jp:keywords"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="static#static" class="toc">static</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="static#永続的な保持" class="toc">永続的な保持</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="static#クラス間で共有されるデータ" class="toc">クラス間で共有されるデータ</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="static#オブジェクトを生成しないでもコールできるクラス関数" class="toc">オブジェクトを生成しないでもコールできるクラス関数</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="static#内部リンク" class="toc">内部リンク</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="static" id="static">static</a></h2>
+<div class="level2">
+
+<p>
+
+staticキーワードは以下の４つの異なる目的で使用されます:
+</p>
+<ol>
+<li class="level1"><div class="li"> 関数のローカル変数を永続化(プログラムが起動している間、関数を出入りしてもずっと同じ状態を持ち続ける)</div>
+</li>
+<li class="level1"><div class="li"> クラス間で共有されるデータ</div>
+</li>
+<li class="level1"><div class="li"> 非メンバー関数のように動作するメンバー関数</div>
+</li>
+<li class="level1"><div class="li"> 内部リンクの設定</div>
+</li>
+</ol>
+
+</div>
+<!-- EDIT1 SECTION "static" [1-394] -->
+<h3 class="sectionedit2"><a name="永続的な保持" id="永続的な保持">永続的な保持</a></h3>
+<div class="level3">
+
+<p>
+
+staticなローカル変数は、関数を抜けてもずっと値を保持し続けます。例えば以下のコードの場合には、関数内のstatic変数を使用して、その関数が今までに何回呼ばれたかどうかというのを追跡しています:
+</p>
+<pre class="cpp code cpp"><span class="kw4">void</span> foo<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+  <span class="kw4">static</span> <span class="kw4">int</span> counter <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
+  <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;foo関数は &quot;</span> <span class="sy1">&lt;&lt;</span> <span class="sy2">++</span>counter <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; 回呼ばれました<span class="es1">\n</span>&quot;</span><span class="sy4">;</span>
+<span class="br0">&#125;</span>
+&nbsp;
+<span class="kw4">int</span> main<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+  <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="sy4">;</span> <span class="sy2">++</span>i <span class="br0">&#41;</span> foo<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+<span class="br0">&#125;</span></pre>
+</div>
+<!-- EDIT2 SECTION "永続的な保持" [395-881] -->
+<h3 class="sectionedit3"><a name="クラス間で共有されるデータ" id="クラス間で共有されるデータ">クラス間で共有されるデータ</a></h3>
+<div class="level3">
+
+<p>
+
+クラスのデータメンバーとして使用すると、すべてのクラスのインスタンス間で共有される変数として使用できます。
+</p>
+<pre class="cpp code cpp"><span class="kw2">class</span> Foo <span class="br0">&#123;</span>
+<span class="kw2">public</span><span class="sy4">:</span>
+  Foo<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    <span class="sy2">++</span>numFoos<span class="sy4">;</span>
+    <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;私たちはFooクラスのインスタンスを &quot;</span> <span class="sy1">&lt;&lt;</span> numFoos <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; 個作りました<span class="es1">\n</span>&quot;</span><span class="sy4">;</span>
+  <span class="br0">&#125;</span>
+<span class="kw2">private</span><span class="sy4">:</span>
+  <span class="kw4">static</span> <span class="kw4">int</span> numFoos<span class="sy4">;</span>
+<span class="br0">&#125;</span><span class="sy4">;</span>
+&nbsp;
+<span class="kw4">int</span> Foo<span class="sy4">::</span><span class="me2">numFoos</span> <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>  <span class="co1">// numFoosのメモリを割り当てて初期化します</span>
+&nbsp;
+<span class="kw4">int</span> main<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+  Foo f1<span class="sy4">;</span>
+  Foo f2<span class="sy4">;</span>
+  Foo f3<span class="sy4">;</span>
+<span class="br0">&#125;</span></pre>
+<p>
+上記の例の場合には、staticクラス変数のnumFoosを、3つのFooクラスのインスタンス(f1, f2, f3)間で共有しています。numFoosはFooクラスがいままでに何個インスタンス化されたのか、という数をカウントします。
+</p>
+
+</div>
+<!-- EDIT3 SECTION "クラス間で共有されるデータ" [882-1697] -->
+<h3 class="sectionedit4"><a name="オブジェクトを生成しないでもコールできるクラス関数" id="オブジェクトを生成しないでもコールできるクラス関数">オブジェクトを生成しないでもコールできるクラス関数</a></h3>
+<div class="level3">
+
+<p>
+
+クラスの関数のメンバーに対して使用すると、関数は暗示的な<a href="this" class="wikilink1" title="jp:keywords:this">this</a>パラメータを受け取らなくなり、クラスに属さない関数と同じように振る舞います。これはstaticなクラス関数は、クラスのインスタンスを作成しなくても呼ぶことができるという意味です。
+</p>
+<pre class="cpp code cpp"><span class="kw2">class</span> Foo <span class="br0">&#123;</span>
+<span class="kw2">public</span><span class="sy4">:</span>
+  Foo<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    <span class="sy2">++</span>numFoos<span class="sy4">;</span>
+    <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;私たちはFooクラスのインスタンスを &quot;</span> <span class="sy1">&lt;&lt;</span> numFoos <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; 個作りました<span class="es1">\n</span>&quot;</span><span class="sy4">;</span>
+  <span class="br0">&#125;</span>
+  <span class="kw4">static</span> <span class="kw4">int</span> getNumFoos<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    <span class="kw1">return</span> numFoos<span class="sy4">;</span>
+  <span class="br0">&#125;</span>
+<span class="kw2">private</span><span class="sy4">:</span>
+  <span class="kw4">static</span> <span class="kw4">int</span> numFoos<span class="sy4">;</span>
+<span class="br0">&#125;</span><span class="sy4">;</span>
+&nbsp;
+<span class="kw4">int</span> Foo<span class="sy4">::</span><span class="me2">numFoos</span> <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>  <span class="co1">// numFoosのメモリを割り当てて初期化します</span>
+&nbsp;
+<span class="kw4">int</span> main<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+  Foo f1<span class="sy4">;</span>
+  Foo f2<span class="sy4">;</span>
+  Foo f3<span class="sy4">;</span>
+  <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;これまでに &quot;</span> <span class="sy1">&lt;&lt;</span> Foo<span class="sy4">::</span><span class="me2">getNumFoos</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; 個のFooクラスのインスタンスが作成されています<span class="es1">\n</span>&quot;</span><span class="sy4">;</span>
+<span class="br0">&#125;</span></pre>
+</div>
+<!-- EDIT4 SECTION "オブジェクトを生成しないでもコールできるクラス関数" [1698-2640] -->
+<h3 class="sectionedit5"><a name="内部リンク" id="内部リンク">内部リンク</a></h3>
+<div class="level3">
+
+<p>
+
+クラスに属さない関数やグローバル変数、グローバル定数に対して使用すると、内部リンクであると設定します。外部リンクである<a href="extern" class="wikilink1" title="jp:keywords:extern">extern</a>リンクとは逆の動作になります。内部リンクの場合には、現在のファイル内からのみ、そのデータや関数を使用できるようになります。
+</p>
+
+<p>
+関連トピック: <a href="extern" class="wikilink1" title="jp:keywords:extern">extern</a>
+</p>
+
+</div>
+<!-- EDIT5 SECTION "内部リンク" [2641-] --></div>
+</body>
+</html>

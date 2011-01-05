@@ -4,29 +4,31 @@
  lang="pl" dir="ltr">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>pl:stl:stack:start</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
-<meta name="robots" content="noindex,nofollow" />
-<meta name="date" content="2009-07-11T13:40:22-0700" />
-<meta name="keywords" content="pl,stl,stack,start" />
+  <title>pl:container:stack:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:39-0700" />
+<meta name="keywords" content="pl,container,stack,start" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../../../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/pl/stl/stack/start?do=index" title="Indeks" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/pl/container/stack/start?do=index" title="Indeks" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
-<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=pl:stl:stack" />
-<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/pl/stl/stack/start" />
-<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/pl/stl/stack/start" />
-<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=pl:container:stack" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/pl/container/stack/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/pl/container/stack/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='pl:container:stack';var JSINFO = {"id":"pl:container:stack:start","namespace":"pl:container:stack"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
 
-
-
-<h1><a name="stosy" id="stosy">Stosy</a></h1>
+<h1 class="sectionedit1"><a name="stosy" id="stosy">Stosy</a></h1>
 <div class="level1">
 
 <p>
@@ -34,27 +36,27 @@
 Szablon stosu jest adapterem kontenera, dostarczającym funkcjonalność stosu - w szczególności jest to kolejka FILO (first in, last out - pierwszy wchodzi, ostatni wychodzi).
 
 </p>
-<table class="inline">
+<div class="table sectionedit2"><table class="inline">
 	<tr class="row0">
-		<td class="col0"><a href="http://www.cppreference.com/wiki/pl/stl/stack/stack_constructors" class="wikilink2" title="pl:stl:stack:stack_constructors" rel="nofollow">Konstruktory</a></td><td class="col1">tworzą nowy stos</td>
+		<td class="col0"><a href="stack_constructors" class="wikilink1" title="pl:container:stack:stack_constructors">Konstruktory</a></td><td class="col1">tworzą nowy stos</td>
 	</tr>
 	<tr class="row1">
-		<td class="col0"><a href="empty" class="wikilink1" title="pl:stl:stack:empty">empty</a></td><td class="col1">zwraca <em>true</em> jeżeli stos jest pusty</td>
+		<td class="col0"><a href="empty" class="wikilink1" title="pl:container:stack:empty">empty</a></td><td class="col1">zwraca <em>true</em> jeżeli stos jest pusty</td>
 	</tr>
 	<tr class="row2">
-		<td class="col0"><a href="pop" class="wikilink1" title="pl:stl:stack:pop">pop</a></td><td class="col1">usuwa element znajdujący się na szczycie stosu</td>
+		<td class="col0"><a href="pop" class="wikilink1" title="pl:container:stack:pop">pop</a></td><td class="col1">usuwa element znajdujący się na szczycie stosu</td>
 	</tr>
 	<tr class="row3">
-		<td class="col0"><a href="push" class="wikilink1" title="pl:stl:stack:push">push</a></td><td class="col1">dodaje element na szczycie stosu</td>
+		<td class="col0"><a href="push" class="wikilink1" title="pl:container:stack:push">push</a></td><td class="col1">dodaje element na szczycie stosu</td>
 	</tr>
 	<tr class="row4">
-		<td class="col0"><a href="size" class="wikilink1" title="pl:stl:stack:size">size</a></td><td class="col1">zwraca liczbę elementów stosu</td>
+		<td class="col0"><a href="size" class="wikilink1" title="pl:container:stack:size">size</a></td><td class="col1">zwraca liczbę elementów stosu</td>
 	</tr>
 	<tr class="row5">
-		<td class="col0"><a href="top" class="wikilink1" title="pl:stl:stack:top">top</a></td><td class="col1">zwraca referencję do elementu na szczycie stosu</td>
+		<td class="col0"><a href="top" class="wikilink1" title="pl:container:stack:top">top</a></td><td class="col1">zwraca referencję do elementu na szczycie stosu</td>
 	</tr>
-</table>
-
+</table></div>
+<!-- EDIT2 TABLE [208-520] -->
 </div>
 </div>
 </body>

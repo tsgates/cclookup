@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn"
+ lang="cn" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>cn:preprocessor:pragma</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:40-0700" />
+<meta name="keywords" content="cn,preprocessor,pragma" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/cn/preprocessor/pragma?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=cn:preprocessor" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/cn/preprocessor/pragma" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/cn/preprocessor/pragma" />
+<link rel="canonical" href="pragma" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='cn:preprocessor';var JSINFO = {"id":"cn:preprocessor:pragma","namespace":"cn:preprocessor"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="pragma" id="pragma">#pragma</a></h2>
+<div class="level2">
+<pre class="cpp code cpp">    <span class="co2">#pragma lexems</span></pre>
+<p>
+#pragma命令赋予程序员控制编译器的能力，由于#prama的实现依赖于编译器，使用方法因编译器而异。一个选项可能完全改变程序执行顺序。
+</p>
+
+<p>
+下边列出一些编译器在所支持的操作系统中实现的一些常用的编译器自定义参数。
+</p>
+
+<p>
+pragma 也允许程序员设定特定函数，使它在主函数执行之前或者主函数退出时被调用。
+
+</p>
+<pre class="cpp code cpp"><span class="co2">#pragma startup fun() //The function must have return void type &amp; no parameters.</span>
+<span class="co2">#pragma exit fun1()</span></pre>
+</div>
+<!-- EDIT1 SECTION "#pragma" [1-577] -->
+<h3 class="sectionedit2"><a name="gnu_c_compiler_gcc_-_gnulinux_bsd_gnuhurd_gnudarwinmac_os_x_windows_mingw" id="gnu_c_compiler_gcc_-_gnulinux_bsd_gnuhurd_gnudarwinmac_os_x_windows_mingw">GNU C Compiler (GCC) - GNU/Linux, BSD, GNU/Hurd, GNU/Darwin/Mac OS X, Windows (MinGW)</a></h3>
+<div class="level3">
+
+</div>
+
+<h4><a name="redefine_extname" id="redefine_extname">redefine_extname</a></h4>
+<div class="level4">
+<pre class="cpp code cpp">    <span class="co2">#pragma redefine_extname printf prnt</span></pre>
+<p>
+
+Gives C functions a different programmer defined symbol when translated to assembly language.
+</p>
+
+</div>
+
+<h4><a name="extern_prefix" id="extern_prefix">extern_prefix</a></h4>
+<div class="level4">
+<pre class="cpp code cpp">    <span class="co2">#pragma extern_prefix ext_ // begin prefixing</span>
+    <span class="co1">// your external symbols with the assembly prefix is here</span>
+    <span class="co2">#pragma extern_prefix // end prefixing</span></pre>
+<p>
+
+Prefixes all external function assembly symbols with the string prefix. Another #pragma extern_prefix will end prefixing of externals. 
+</p>
+
+</div>
+
+<h4><a name="pack" id="pack">pack</a></h4>
+<div class="level4">
+<pre class="cpp code cpp">    <span class="co2">#pragma pack(64) // optimize all subsequent classes, unions, and structures for 64 bit code</span></pre>
+<p>
+
+Packing is an optimization method that makes the members of structures, classes, and unions align to a factor of the packing boundary. This usually makes it easier (thus faster) for the processor to access data since it&#039;s packed to align with what the processor is used to dealing with, however it costs memory by having random unnecessary garbage data inserted to align the code with the pack. the numerical value in parenthesis must be a factor of 2 (2, 4, 8, 16, 32, 64….). There are other ways to use “pack” and they&#039;re described below but above is the simplest and most common way. you can use 
+
+</p>
+<pre class="cpp code cpp"><span class="co2">#pragma pack() /* with empty parenthesis */</span></pre>
+<p>
+
+to reset the packing to the compiler default. 
+</p>
+
+<p>
+
+← #pragma pack(push) and #pragma pack(pop) are on the way, I&#039;m still researching them and their functionality. -/&gt;
+← This document is still under construction, I intend to continue adding compilers and their pragma options instead of leaving this largely blank. -GinoMan -/&gt; 
+</p>
+
+</div>
+<!-- EDIT2 SECTION "GNU C Compiler (GCC) - GNU/Linux, BSD, GNU/Hurd, GNU/Darwin/Mac OS X, Windows (MinGW)" [578-] --></div>
+</body>
+</html>

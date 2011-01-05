@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn"
+ lang="cn" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>cn:string:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:41-0700" />
+<meta name="keywords" content="cn,string,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/cn/string/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=cn:string" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/cn/string/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/cn/string/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='cn:string';var JSINFO = {"id":"cn:string:start","namespace":"cn:string"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="c_strings" id="c_strings">C++ Strings</a></h1>
+<div class="level1">
+
+<p>
+
+The string class provides a useful way to manipulate and store sequences of characters, and is defined in the <code>std</code> namespace in the <code>&lt;string&gt;</code> header file.<br/>
+
+在 <code>&lt;string&gt;</code> 头文件中的 <code>std</code> 命名空间定义的string类提供了一个有效的方法来操作和存储字符序列。
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="string_constructors" class="wikilink1" title="cn:string:string_constructors">Constructors</a></td><td class="col1">从其它字符串或字符数组生成string对象</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="string_operators" class="wikilink1" title="cn:string:string_operators">Operators</a></td><td class="col1">连接字串，字串赋值，输出到 I/O，比较字串</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/string/append" class="wikilink2" title="cn:string:append" rel="nofollow">append</a></td><td class="col1">将字符或字符串附加到字符串</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/string/assign" class="wikilink2" title="cn:string:assign" rel="nofollow">assign</a></td><td class="col1">赋值</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/string/at" class="wikilink2" title="cn:string:at" rel="nofollow">at</a></td><td class="col1">返回特定位置的字符</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/string/begin" class="wikilink2" title="cn:string:begin" rel="nofollow">begin</a></td><td class="col1">返回一个指向字符串起始位置的迭代器</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/string/c_str" class="wikilink2" title="cn:string:c_str" rel="nofollow">c_str</a></td><td class="col1">返回字符串的标准 C 字符串版本</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/string/capacity" class="wikilink2" title="cn:string:capacity" rel="nofollow">capacity</a></td><td class="col1">返回字符串所能容纳的最大字符数量</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/string/clear" class="wikilink2" title="cn:string:clear" rel="nofollow">clear</a></td><td class="col1">清除字符串中的所有字符</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/string/compare" class="wikilink2" title="cn:string:compare" rel="nofollow">compare</a></td><td class="col1">比较两个字符串</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/string/copy" class="wikilink2" title="cn:string:copy" rel="nofollow">copy</a></td><td class="col1">从一个字符串复制到数组</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/string/data" class="wikilink2" title="cn:string:data" rel="nofollow">data</a></td><td class="col1">返回指向一个字符串的第一个字符的指针</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><a href="empty" class="wikilink1" title="cn:string:empty">empty</a></td><td class="col1">若字符串为空，返回 <code>true</code></td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/string/end" class="wikilink2" title="cn:string:end" rel="nofollow">end</a></td><td class="col1">返回一个指向最后一个字符串后的迭代器</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/string/erase" class="wikilink2" title="cn:string:erase" rel="nofollow">erase</a></td><td class="col1">从字符串中删除字符</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><a href="find" class="wikilink1" title="cn:string:find">find</a></td><td class="col1">在字符串中寻找字符</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/string/find_first_not_of" class="wikilink2" title="cn:string:find_first_not_of" rel="nofollow">find_first_not_of</a></td><td class="col1">查找第一个不是该字符的位置</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/string/find_first_of" class="wikilink2" title="cn:string:find_first_of" rel="nofollow">find_first_of</a></td><td class="col1">查找第一个出现该字符的位置</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/string/find_last_not_of" class="wikilink2" title="cn:string:find_last_not_of" rel="nofollow">find_last_not_of</a></td><td class="col1">查找最后一个不是该字符的位置</td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/string/find_last_of" class="wikilink2" title="cn:string:find_last_of" rel="nofollow">find_last_of</a></td><td class="col1">查找最后一个出现该字符的位置</td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/string/getline" class="wikilink2" title="cn:string:getline" rel="nofollow">getline</a></td><td class="col1">从 I/O 流读入数据</td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/string/insert" class="wikilink2" title="cn:string:insert" rel="nofollow">insert</a></td><td class="col1">向字符串中插入字符 </td>
+	</tr>
+	<tr class="row22">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/string/length" class="wikilink2" title="cn:string:length" rel="nofollow">length</a></td><td class="col1">返回字符串长度</td>
+	</tr>
+	<tr class="row23">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/string/max_size" class="wikilink2" title="cn:string:max_size" rel="nofollow">max_size</a></td><td class="col1">返回字符串对象容纳字符的最大长度</td>
+	</tr>
+	<tr class="row24">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/string/push_back" class="wikilink2" title="cn:string:push_back" rel="nofollow">push_back</a></td><td class="col1">在字符串最后则加一个字符串</td>
+	</tr>
+	<tr class="row25">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/string/rbegin" class="wikilink2" title="cn:string:rbegin" rel="nofollow">rbegin</a></td><td class="col1">从字符串结尾返回一个反向迭代器</td>
+	</tr>
+	<tr class="row26">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/string/rend" class="wikilink2" title="cn:string:rend" rel="nofollow">rend</a></td><td class="col1">从字符串开头返回一个反向迭代器</td>
+	</tr>
+	<tr class="row27">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/string/replace" class="wikilink2" title="cn:string:replace" rel="nofollow">replace</a></td><td class="col1">在字符串中替换</td>
+	</tr>
+	<tr class="row28">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/string/reserve" class="wikilink2" title="cn:string:reserve" rel="nofollow">reserve</a></td><td class="col1">设置字符串对象的最小容量</td>
+	</tr>
+	<tr class="row29">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/string/resize" class="wikilink2" title="cn:string:resize" rel="nofollow">resize</a></td><td class="col1">重新设置字符串的容量</td>
+	</tr>
+	<tr class="row30">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/string/rfind" class="wikilink2" title="cn:string:rfind" rel="nofollow">rfind</a></td><td class="col1">查找子串最后出现的位置</td>
+	</tr>
+	<tr class="row31">
+		<td class="col0"><a href="size" class="wikilink1" title="cn:string:size">size</a></td><td class="col1">返回字符串字符的数量</td>
+	</tr>
+	<tr class="row32">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/string/substr" class="wikilink2" title="cn:string:substr" rel="nofollow">substr</a></td><td class="col1">返回一个子串</td>
+	</tr>
+	<tr class="row33">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/string/swap" class="wikilink2" title="cn:string:swap" rel="nofollow">swap</a></td><td class="col1">交换字符串内容</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [333-2081] -->
+</div>
+</div>
+</body>
+</html>

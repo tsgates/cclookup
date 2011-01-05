@@ -5,51 +5,43 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>c:io:fprintf</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
-<meta name="robots" content="index,follow" />
-<meta name="date" content="2008-12-12T01:16:44-0800" />
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="noindex,nofollow" />
+<meta name="date" content="2010-11-15T01:57:04-0800" />
 <meta name="keywords" content="c,io,fprintf" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/c/io/fprintf?do=index" title="Index" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/c/io/fprintf?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
 <link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=c:io" />
 <link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/c/io/fprintf" />
 <link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/c/io/fprintf" />
-<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="canonical" href="fprintf" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='c:io';var JSINFO = {"id":"c:io:fprintf","namespace":"c:io"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
 
-
-
-<h2><a name="fprintf" id="fprintf">fprintf</a></h2>
+<h2 class="sectionedit1"><a name="page_redirected_auto" id="page_redirected_auto">Page redirected (auto)</a></h2>
 <div class="level2">
-
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <a href="../../redirect" class="wikilink1" title="redirect">redirect</a> </td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [34-52] -->
 <p>
-Syntax:
-</p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;cstdio&gt;</span>
-    <span class="kw4">int</span> fprintf<span class="br0">&#40;</span> FILE <span class="sy0">*</span>stream<span class="sy0">,</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy0">*</span>format<span class="sy0">,</span> ... <span class="br0">&#41;</span>;</pre>
-<p>
 
-The fprintf() function sends information (the arguments) according to the
-specified format to the file indicated by stream. fprintf() works just like
-<a href="printf" class="wikilink1" title="c:io:printf">printf()</a> as far as the format goes. The return value of fprintf() is the number
-of characters outputted, or a negative number if an error occurs. An example:
+See <a href="../../io/c/fprintf" class="wikilink1" title="io:c:fprintf"> this</a>
 </p>
-<pre class="c code c++" style="font-family:monospace;">     <span class="kw4">char</span> name<span class="br0">&#91;</span><span class="br0">&#93;</span> <span class="sy0">=</span> <span class="st0">&quot;Mary&quot;</span>;
-     FILE <span class="sy0">*</span>out <span class="sy0">=</span> fopen<span class="br0">&#40;</span> <span class="st0">&quot;output.txt&quot;</span><span class="sy0">,</span> <span class="st0">&quot;w&quot;</span> <span class="br0">&#41;</span>;
-     <span class="kw1">if</span><span class="br0">&#40;</span> out <span class="sy0">!=</span> <span class="kw2">NULL</span> <span class="br0">&#41;</span>
-       fprintf<span class="br0">&#40;</span> out<span class="sy0">,</span> <span class="st0">&quot;Hello %s<span class="es0">\n</span>&quot;</span><span class="sy0">,</span> name <span class="br0">&#41;</span>;</pre>
-<p>
-Related Topics: <a href="fputc" class="wikilink1" title="c:io:fputc">fputc</a>, <a href="fputs" class="wikilink1" title="c:io:fputs">fputs</a>, <a href="fscanf" class="wikilink1" title="c:io:fscanf">fscanf</a>, <a href="printf" class="wikilink1" title="c:io:printf">printf</a>, <a href="sprintf" class="wikilink1" title="c:io:sprintf">sprintf</a>
-</p>
-
+<div class="noteredirect">This page has been moved, the new location is <a href="../../io/c/fprintf" class="wikilink1" title="io:c:fprintf">fprintf</a>.</div>
 </div>
-<!-- SECTION "fprintf" [3-] --></div>
+</div>
 </body>
 </html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru"
+ lang="ru" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>ru:c:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:12-0700" />
+<meta name="keywords" content="ru,c,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/ru/c/start?do=index" title="Все страницы" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=ru:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/ru/c/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/ru/c/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='ru:c';var JSINFO = {"id":"ru:c:start","namespace":"ru:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Содержание</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="start#стандартная_библиотека_c" class="toc">Стандартная библиотека C</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="start#функции_библиотеки_c" class="toc">Функции библиотеки C</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="start#стандартные_заголовочные_файлы_c" class="toc">Стандартные заголовочные файлы C</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="стандартная_библиотека_c" id="стандартная_библиотека_c">Стандартная библиотека C</a></h2>
+<div class="level2">
+
+<p>
+
+Программисты C++ имеют доступ к различным функциям из стандартной библиотеки C, в соответствии со стандартом <a href="http://www.open-std.org/jtc1/sc22/wg14/" class="urlextern" title="http://www.open-std.org/jtc1/sc22/wg14/"  rel="nofollow">ISO/IEC 9899:1990</a> (известным как <a href="http://en.wikipedia.org/wiki/ANSI_C" class="urlextern" title="http://en.wikipedia.org/wiki/ANSI_C"  rel="nofollow">C90</a>). Все функции в этих библиотеках находятся в <a href="../keywords/namespace" class="wikilink1" title="ru:keywords:namespace">пространстве имен</a> <strong>std</strong>.
+</p>
+
+</div>
+<!-- EDIT1 SECTION "Стандартная библиотека C" [1-539] -->
+<h3 class="sectionedit2"><a name="функции_библиотеки_c" id="функции_библиотеки_c">Функции библиотеки C</a></h3>
+<div class="level3">
+
+<p>
+
+Ниже приведен список стандартных библиотечных функций C, сгруппированных по функциональности:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/ru/%D1%81/io" class="wikilink2" title="ru:с:io" rel="nofollow">Функции C: Ввод/Вывод</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="string/start" class="wikilink1" title="ru:c:string:start">Функции C: Строки и Символы</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="math/start" class="wikilink1" title="ru:c:math:start">Функции C: Математика</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="date/start" class="wikilink1" title="ru:c:date:start">Функции C: Время и Дата</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/ru/c/mem/start" class="wikilink2" title="ru:c:mem:start" rel="nofollow">Функции C: Память</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="other/start" class="wikilink1" title="ru:c:other:start">Функции C: Прочее</a></div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT2 SECTION "Функции библиотеки C" [540-1106] -->
+<h3 class="sectionedit3"><a name="стандартные_заголовочные_файлы_c" id="стандартные_заголовочные_файлы_c">Стандартные заголовочные файлы C</a></h3>
+<div class="level3">
+
+<p>
+
+Функции представленные выше находятся в следующих заголовочных файлах:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> &lt;cassert&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;ciso646&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;csetjmp&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;cstdio&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;ctime&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cctype&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;climits&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;csignal&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;cstdlib&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;cwchar&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cerrno&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;clocale&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;cstdarg&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;cstring&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;cwctype&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cfloat&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;cmath&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;cstddef&gt;</div>
+</li>
+</ul>
+
+<p>
+
+когда вы подключаете заголовочные файлы стандартной библиотеки C, то предпочтительней использовать обозначение <code>cfile</code> вместо <code>file.h</code>.  К примеру ван надо испозовать заголовочный файл <code>stdio.h</code>, для этого вам надо использовать следующую команду:
+</p>
+<pre class="cpp code cpp">  <span class="co2">#include &lt;cstdio&gt;</span></pre>
+<p>
+Если вы объявите заголовочный файл как <code>file.h</code> возможно он будет работать, но это в основном предназначено для обратной совместимости. Разница между <code>cfile</code> и <code>file.h</code> в том что функции подключенные <code>сfile</code> окажутся в глобальном пространстве имен, а функции подключенные через <code>file.h</code> в пространстве имен <strong>std</strong>.
+</p>
+
+<p>
+Смотри также: <a href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1124.pdf" class="urlextern" title="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1124.pdf"  rel="nofollow">The 2005 C99 working paper</a> из <a href="http://www.open-std.org/jtc1/sc22/wg14/www/standards.html" class="urlextern" title="http://www.open-std.org/jtc1/sc22/wg14/www/standards.html"  rel="nofollow">Approved Standards of working group 14</a>.
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Стандартные заголовочные файлы C" [1107-] --></div>
+</body>
+</html>

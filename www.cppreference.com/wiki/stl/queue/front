@@ -4,47 +4,104 @@
  lang="en" dir="ltr">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>stl:queue:front</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
+  <title>container:queue:front</title>
+<meta name="generator" content="DokuWiki" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2008-10-25T05:54:47-0700" />
-<meta name="keywords" content="stl,queue,front" />
+<meta name="date" content="2010-10-28T18:17:34-0700" />
+<meta name="keywords" content="container,queue,front" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/stl/queue/front?do=index" title="Index" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/container/queue/front?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
-<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=stl:queue" />
-<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/stl/queue/front" />
-<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/stl/queue/front" />
-<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=container:queue" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/container/queue/front" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/container/queue/front" />
+<link rel="canonical" href="front" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='container:queue';var JSINFO = {"id":"container:queue:front","namespace":"container:queue"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
 
+<ul class="toc">
+<li class="clear">
 
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="front#queuefront" class="toc">queue::front</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="front#parameters" class="toc">Parameters</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="front#return_value" class="toc">Return value</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="front#complexity" class="toc">Complexity</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="front#see_also" class="toc">See also</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
 
-<h2><a name="front" id="front">front</a></h2>
+<h2 class="sectionedit1"><a name="queuefront" id="queuefront">queue::front</a></h2>
 <div class="level2">
 
 <p>
 Syntax:
 </p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;queue&gt;</span>
-    TYPE<span class="sy0">&amp;</span> front<span class="br0">&#40;</span><span class="br0">&#41;</span>;
-    <span class="kw4">const</span> TYPE<span class="sy0">&amp;</span> front<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw4">const</span>;</pre>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;queue&gt;</span>
+    value_type<span class="sy3">&amp;</span> front<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">const</span> value_type<span class="sy3">&amp;</span> front<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span></pre>
 <p>
-The front() function returns a reference to the first element of the queue, and
-runs in <a href="../../complexity" class="wikilink1" title="complexity">constant time</a>.
-</p>
-
-<p>
-Related Topics: <a href="back" class="wikilink1" title="stl:queue:back">back</a>
+Returns reference to the first element in the container.
 </p>
 
 </div>
-<!-- SECTION "front" [3-] --></div>
+<!-- EDIT1 SECTION "queue::front" [1-189] -->
+<h3 class="sectionedit2"><a name="parameters" id="parameters">Parameters</a></h3>
+<div class="level3">
+
+<p>
+
+(none)
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Parameters" [190-217] -->
+<h3 class="sectionedit3"><a name="return_value" id="return_value">Return value</a></h3>
+<div class="level3">
+
+<p>
+
+reference to the first element
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Return value" [218-271] -->
+<h3 class="sectionedit4"><a name="complexity" id="complexity">Complexity</a></h3>
+<div class="level3">
+
+<p>
+
+constant
+</p>
+
+</div>
+<!-- EDIT4 SECTION "Complexity" [272-301] -->
+<h3 class="sectionedit5"><a name="see_also" id="see_also">See also</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="back" class="wikilink1" title="container:queue:back">back</a>
+</p>
+
+</div>
+<!-- EDIT5 SECTION "See also" [302-] --></div>
 </body>
 </html>

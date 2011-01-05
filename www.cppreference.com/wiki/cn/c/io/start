@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn"
+ lang="cn" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>cn:c:io:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:50-0700" />
+<meta name="keywords" content="cn,c,io,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/cn/c/io/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=cn:c:io" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/cn/c/io/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/cn/c/io/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='cn:c:io';var JSINFO = {"id":"cn:c:io:start","namespace":"cn:c:io"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="标准c输入输出" id="标准c输入输出">标准C输入/输出</a></h1>
+<div class="level1">
+
+<p>
+
+这些函数提供了对于 <a href="../../../io/start" class="wikilink1" title="io:start">C++基于流的输入输出类</a> 的另外一种选择。
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="clearerr" class="wikilink1" title="cn:c:io:clearerr">clearerr</a></td><td class="col1">清除错误标志</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="fclose" class="wikilink1" title="cn:c:io:fclose">fclose</a></td><td class="col1">关闭一个文件</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="feof" class="wikilink1" title="cn:c:io:feof">feof</a></td><td class="col1">如果在文件尾返回true</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="ferror" class="wikilink1" title="cn:c:io:ferror">ferror</a></td><td class="col1">检查文件错误</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="fflush" class="wikilink1" title="cn:c:io:fflush">fflush</a></td><td class="col1">将内容写入输出缓冲区</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="fgetc" class="wikilink1" title="cn:c:io:fgetc">fgetc</a></td><td class="col1">从流中得到一个字符</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="fgetpos" class="wikilink1" title="cn:c:io:fgetpos">fgetpos</a></td><td class="col1">得到文件位置指示器</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="fgets" class="wikilink1" title="cn:c:io:fgets">fgets</a></td><td class="col1">从流中得到一串字符</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="fopen" class="wikilink1" title="cn:c:io:fopen">fopen</a></td><td class="col1">打开一个文件</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="fprintf" class="wikilink1" title="cn:c:io:fprintf">fprintf</a></td><td class="col1">向文件中打印格式化输出</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="fputc" class="wikilink1" title="cn:c:io:fputc">fputc</a></td><td class="col1">向文件中写入一个字符</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="fputs" class="wikilink1" title="cn:c:io:fputs">fputs</a></td><td class="col1">向文件中写入字符串</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><a href="fread" class="wikilink1" title="cn:c:io:fread">fread</a></td><td class="col1">从文件中读</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><a href="freopen" class="wikilink1" title="cn:c:io:freopen">freopen</a></td><td class="col1">用一个不同的名字打开一个已经存在的流</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><a href="fscanf" class="wikilink1" title="cn:c:io:fscanf">fscanf</a></td><td class="col1">从文件中读入格式化输入</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><a href="fseek" class="wikilink1" title="cn:c:io:fseek">fseek</a></td><td class="col1">移动至文件中特定位置</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><a href="fsetpos" class="wikilink1" title="cn:c:io:fsetpos">fsetpos</a></td><td class="col1">移动至文件中特定位置</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><a href="ftell" class="wikilink1" title="cn:c:io:ftell">ftell</a></td><td class="col1">返回当前的文件位置指示器</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"><a href="fwrite" class="wikilink1" title="cn:c:io:fwrite">fwrite</a></td><td class="col1">写入文件</td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"><a href="getc" class="wikilink1" title="cn:c:io:getc">getc</a></td><td class="col1">从文件读入一个字符</td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"><a href="getchar" class="wikilink1" title="cn:c:io:getchar">getchar</a></td><td class="col1">从标准输入中读入一个字符</td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"><a href="gets" class="wikilink1" title="cn:c:io:gets">gets</a></td><td class="col1">从标准输入中读入字符串</td>
+	</tr>
+	<tr class="row22">
+		<td class="col0"><a href="perror" class="wikilink1" title="cn:c:io:perror">perror</a></td><td class="col1">在标准错误上显示当前错误的字符串版本</td>
+	</tr>
+	<tr class="row23">
+		<td class="col0"><a href="printf" class="wikilink1" title="cn:c:io:printf">printf</a></td><td class="col1">向标准输出写入格式化输出</td>
+	</tr>
+	<tr class="row24">
+		<td class="col0"><a href="putc" class="wikilink1" title="cn:c:io:putc">putc</a></td><td class="col1">向流中写入一个字符</td>
+	</tr>
+	<tr class="row25">
+		<td class="col0"><a href="putchar" class="wikilink1" title="cn:c:io:putchar">putchar</a></td><td class="col1">向标准输出写一个字符</td>
+	</tr>
+	<tr class="row26">
+		<td class="col0"><a href="puts" class="wikilink1" title="cn:c:io:puts">puts</a></td><td class="col1">向标准输出写字符串</td>
+	</tr>
+	<tr class="row27">
+		<td class="col0"><a href="remove" class="wikilink1" title="cn:c:io:remove">remove</a></td><td class="col1">移除一个文件</td>
+	</tr>
+	<tr class="row28">
+		<td class="col0"><a href="rename" class="wikilink1" title="cn:c:io:rename">rename</a></td><td class="col1">重命名一个文件</td>
+	</tr>
+	<tr class="row29">
+		<td class="col0"><a href="rewind" class="wikilink1" title="cn:c:io:rewind">rewind</a></td><td class="col1">移动文件位置指示符到文件的开头</td>
+	</tr>
+	<tr class="row30">
+		<td class="col0"><a href="scanf" class="wikilink1" title="cn:c:io:scanf">scanf</a></td><td class="col1">从标准输入读入格式化输入</td>
+	</tr>
+	<tr class="row31">
+		<td class="col0"><a href="setbuf" class="wikilink1" title="cn:c:io:setbuf">setbuf</a></td><td class="col1">为特定的流设置缓冲区</td>
+	</tr>
+	<tr class="row32">
+		<td class="col0"><a href="setvbuf" class="wikilink1" title="cn:c:io:setvbuf">setvbuf</a></td><td class="col1">为特定的流设置缓冲区及其大小</td>
+	</tr>
+	<tr class="row33">
+		<td class="col0"><a href="snprintf" class="wikilink1" title="cn:c:io:snprintf">snprintf</a></td><td class="col1">向缓冲区写入格式化输出 (具有边界检测）</td>
+	</tr>
+	<tr class="row34">
+		<td class="col0"><a href="sprintf" class="wikilink1" title="cn:c:io:sprintf">sprintf</a></td><td class="col1">向缓冲区写入格式化输出</td>
+	</tr>
+	<tr class="row35">
+		<td class="col0"><a href="sscanf" class="wikilink1" title="cn:c:io:sscanf">sscanf</a></td><td class="col1">从缓冲区中读入格式化输入</td>
+	</tr>
+	<tr class="row36">
+		<td class="col0"><a href="tmpfile" class="wikilink1" title="cn:c:io:tmpfile">tmpfile</a></td><td class="col1">返回一个临时文件指针</td>
+	</tr>
+	<tr class="row37">
+		<td class="col0"><a href="tmpnam" class="wikilink1" title="cn:c:io:tmpnam">tmpnam</a></td><td class="col1">返回一个独一无二的文件名</td>
+	</tr>
+	<tr class="row38">
+		<td class="col0"><a href="ungetc" class="wikilink1" title="cn:c:io:ungetc">ungetc</a></td><td class="col1">将字符写回流中</td>
+	</tr>
+	<tr class="row39">
+		<td class="col0"><a href="vprintf_vfprintf_vsprintf" class="wikilink1" title="cn:c:io:vprintf_vfprintf_vsprintf">vprintf, vfprintf, and vsprintf</a></td><td class="col1">根据变量列表写入格式化输出</td>
+	</tr>
+	<tr class="row40">
+		<td class="col0"><a href="vscanf_vfscanf_vsscanf" class="wikilink1" title="cn:c:io:vscanf_vfscanf_vsscanf">vscanf, vfscanf, and vsscanf</a></td><td class="col1">根据变量列表从标准输入中得到格式化输入</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [136-2080] -->
+</div>
+</div>
+</body>
+</html>

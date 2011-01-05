@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="tw"
+ lang="tw" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>tw:keywords:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:11-0700" />
+<meta name="keywords" content="tw,keywords,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/tw/keywords/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=tw:keywords" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/tw/keywords/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/tw/keywords/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='tw:keywords';var JSINFO = {"id":"tw:keywords:start","namespace":"tw:keywords"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="c_keywords" id="c_keywords">C++ Keywords</a></h1>
+<div class="level1">
+
+<p>
+
+This is a list of reserved keywords in C++.  Since they are used by the language, these keywords are not
+available for re-definition (or overloading) by programmers.
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<th class="col0">Keyword</th><th class="col1">Description</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/alternative_operators" class="wikilink2" title="tw:alternative_operators" rel="nofollow">and</a></td><td class="col1">alternative to &amp;&amp; operator</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/alternative_operators" class="wikilink2" title="tw:alternative_operators" rel="nofollow">and_eq</a></td><td class="col1">alternative to &amp;= operator</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/asm" class="wikilink2" title="tw:keywords:asm" rel="nofollow">asm</a></td><td class="col1">insert an assembly instruction</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/auto" class="wikilink2" title="tw:keywords:auto" rel="nofollow">auto</a></td><td class="col1">declare a local variable</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/alternative_operators" class="wikilink2" title="tw:alternative_operators" rel="nofollow">bitand</a></td><td class="col1">alternative to bitwise &amp; operator</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/alternative_operators" class="wikilink2" title="tw:alternative_operators" rel="nofollow">bitor</a></td><td class="col1">alternative to | operator</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/bool" class="wikilink2" title="tw:keywords:bool" rel="nofollow">bool</a></td><td class="col1">declare a boolean variable</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/break" class="wikilink2" title="tw:keywords:break" rel="nofollow">break</a></td><td class="col1">break out of a loop</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/case" class="wikilink2" title="tw:keywords:case" rel="nofollow">case</a></td><td class="col1">a block of code in a switch statement</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/catch" class="wikilink2" title="tw:keywords:catch" rel="nofollow">catch</a></td><td class="col1">handles exceptions from throw</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/char" class="wikilink2" title="tw:keywords:char" rel="nofollow">char</a></td><td class="col1">declare a character variable</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/class" class="wikilink2" title="tw:keywords:class" rel="nofollow">class</a></td><td class="col1">declare a class</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/alternative_operators" class="wikilink2" title="tw:alternative_operators" rel="nofollow">compl</a></td><td class="col1">alternative to ~ operator</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/const" class="wikilink2" title="tw:keywords:const" rel="nofollow">const</a></td><td class="col1">declare immutable data or functions that do not change data</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/const_cast" class="wikilink2" title="tw:keywords:const_cast" rel="nofollow">const_cast</a></td><td class="col1">cast from const variables</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/continue" class="wikilink2" title="tw:keywords:continue" rel="nofollow">continue</a></td><td class="col1">bypass iterations of a loop</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/default" class="wikilink2" title="tw:keywords:default" rel="nofollow">default</a></td><td class="col1">default handler in a case statement</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/delete" class="wikilink2" title="tw:keywords:delete" rel="nofollow">delete</a></td><td class="col1">make dynamic memory available</td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/do" class="wikilink2" title="tw:keywords:do" rel="nofollow">do</a></td><td class="col1">looping construct</td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/double" class="wikilink2" title="tw:keywords:double" rel="nofollow">double</a></td><td class="col1">declare a double precision floating-point variable</td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/dynamic_cast" class="wikilink2" title="tw:keywords:dynamic_cast" rel="nofollow">dynamic_cast</a></td><td class="col1">perform runtime casts</td>
+	</tr>
+	<tr class="row22">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/else" class="wikilink2" title="tw:keywords:else" rel="nofollow">else</a></td><td class="col1">alternate case for an if statement</td>
+	</tr>
+	<tr class="row23">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/enum" class="wikilink2" title="tw:keywords:enum" rel="nofollow">enum</a></td><td class="col1">create enumeration types</td>
+	</tr>
+	<tr class="row24">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/explicit" class="wikilink2" title="tw:keywords:explicit" rel="nofollow">explicit</a></td><td class="col1">only use constructors when they exactly match</td>
+	</tr>
+	<tr class="row25">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/export" class="wikilink2" title="tw:keywords:export" rel="nofollow">export</a></td><td class="col1">allows template definitions to be separated from their declarations</td>
+	</tr>
+	<tr class="row26">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/extern" class="wikilink2" title="tw:keywords:extern" rel="nofollow">extern</a></td><td class="col1">tell the compiler about variables defined elsewhere</td>
+	</tr>
+	<tr class="row27">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/false" class="wikilink2" title="tw:keywords:false" rel="nofollow">false</a></td><td class="col1">a constant representing the boolean false value</td>
+	</tr>
+	<tr class="row28">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/float" class="wikilink2" title="tw:keywords:float" rel="nofollow">float</a></td><td class="col1">declare a floating-point variable</td>
+	</tr>
+	<tr class="row29">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/for" class="wikilink2" title="tw:keywords:for" rel="nofollow">for</a></td><td class="col1">looping construct</td>
+	</tr>
+	<tr class="row30">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/friend" class="wikilink2" title="tw:keywords:friend" rel="nofollow">friend</a></td><td class="col1">grant non-member function access to private data</td>
+	</tr>
+	<tr class="row31">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/goto" class="wikilink2" title="tw:keywords:goto" rel="nofollow">goto</a></td><td class="col1">jump to a different part of the program</td>
+	</tr>
+	<tr class="row32">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/if" class="wikilink2" title="tw:keywords:if" rel="nofollow">if</a></td><td class="col1">execute code based on the result of a test</td>
+	</tr>
+	<tr class="row33">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/inline" class="wikilink2" title="tw:keywords:inline" rel="nofollow">inline</a></td><td class="col1">optimize calls to short functions</td>
+	</tr>
+	<tr class="row34">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/int" class="wikilink2" title="tw:keywords:int" rel="nofollow">int</a></td><td class="col1">declare an integer variable</td>
+	</tr>
+	<tr class="row35">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/long" class="wikilink2" title="tw:keywords:long" rel="nofollow">long</a></td><td class="col1">declare a long integer variable</td>
+	</tr>
+	<tr class="row36">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/mutable" class="wikilink2" title="tw:keywords:mutable" rel="nofollow">mutable</a></td><td class="col1">override a const variable</td>
+	</tr>
+	<tr class="row37">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/namespace" class="wikilink2" title="tw:keywords:namespace" rel="nofollow">namespace</a></td><td class="col1">partition the global namespace by defining a scope</td>
+	</tr>
+	<tr class="row38">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/new" class="wikilink2" title="tw:keywords:new" rel="nofollow">new</a></td><td class="col1">allocate dynamic memory for a new variable</td>
+	</tr>
+	<tr class="row39">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/alternative_operators" class="wikilink2" title="tw:alternative_operators" rel="nofollow">not</a></td><td class="col1">alternative to ! operator</td>
+	</tr>
+	<tr class="row40">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/alternative_operators" class="wikilink2" title="tw:alternative_operators" rel="nofollow">not_eq</a></td><td class="col1">alternative to != operator</td>
+	</tr>
+	<tr class="row41">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/operator" class="wikilink2" title="tw:keywords:operator" rel="nofollow">operator</a></td><td class="col1">create overloaded operator functions</td>
+	</tr>
+	<tr class="row42">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/alternative_operators" class="wikilink2" title="tw:alternative_operators" rel="nofollow">or</a></td><td class="col1">alternative to || operator</td>
+	</tr>
+	<tr class="row43">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/alternative_operators" class="wikilink2" title="tw:alternative_operators" rel="nofollow">or_eq</a></td><td class="col1">alternative to |= operator</td>
+	</tr>
+	<tr class="row44">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/private" class="wikilink2" title="tw:keywords:private" rel="nofollow">private</a></td><td class="col1">declare private members of a class</td>
+	</tr>
+	<tr class="row45">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/protected" class="wikilink2" title="tw:keywords:protected" rel="nofollow">protected</a></td><td class="col1">declare protected members of a class</td>
+	</tr>
+	<tr class="row46">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/public" class="wikilink2" title="tw:keywords:public" rel="nofollow">public</a></td><td class="col1">declare public members of a class</td>
+	</tr>
+	<tr class="row47">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/register" class="wikilink2" title="tw:keywords:register" rel="nofollow">register</a></td><td class="col1">request that a variable be optimized for speed</td>
+	</tr>
+	<tr class="row48">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/reinterpret_cast" class="wikilink2" title="tw:keywords:reinterpret_cast" rel="nofollow">reinterpret_cast</a></td><td class="col1">change the type of a variable</td>
+	</tr>
+	<tr class="row49">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/return" class="wikilink2" title="tw:keywords:return" rel="nofollow">return</a></td><td class="col1">return from a function</td>
+	</tr>
+	<tr class="row50">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/short" class="wikilink2" title="tw:keywords:short" rel="nofollow">short</a></td><td class="col1">declare a short integer variable</td>
+	</tr>
+	<tr class="row51">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/signed" class="wikilink2" title="tw:keywords:signed" rel="nofollow">signed</a></td><td class="col1">modify variable type declarations</td>
+	</tr>
+	<tr class="row52">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/sizeof" class="wikilink2" title="tw:keywords:sizeof" rel="nofollow">sizeof</a></td><td class="col1">return the size of a variable or type</td>
+	</tr>
+	<tr class="row53">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/static" class="wikilink2" title="tw:keywords:static" rel="nofollow">static</a></td><td class="col1">create permanent storage for a variable</td>
+	</tr>
+	<tr class="row54">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/static_cast" class="wikilink2" title="tw:keywords:static_cast" rel="nofollow">static_cast</a></td><td class="col1">perform a nonpolymorphic cast</td>
+	</tr>
+	<tr class="row55">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/struct" class="wikilink2" title="tw:keywords:struct" rel="nofollow">struct</a></td><td class="col1">define a new structure</td>
+	</tr>
+	<tr class="row56">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/switch" class="wikilink2" title="tw:keywords:switch" rel="nofollow">switch</a></td><td class="col1">execute code based on different possible values for a variable</td>
+	</tr>
+	<tr class="row57">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/template" class="wikilink2" title="tw:keywords:template" rel="nofollow">template</a></td><td class="col1">create generic functions</td>
+	</tr>
+	<tr class="row58">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/this" class="wikilink2" title="tw:keywords:this" rel="nofollow">this</a></td><td class="col1">a pointer to the current object</td>
+	</tr>
+	<tr class="row59">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/throw" class="wikilink2" title="tw:keywords:throw" rel="nofollow">throw</a></td><td class="col1">throws an exception</td>
+	</tr>
+	<tr class="row60">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/true" class="wikilink2" title="tw:keywords:true" rel="nofollow">true</a></td><td class="col1">a constant representing the boolean true value</td>
+	</tr>
+	<tr class="row61">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/try" class="wikilink2" title="tw:keywords:try" rel="nofollow">try</a></td><td class="col1">execute code that can throw an exception</td>
+	</tr>
+	<tr class="row62">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/typedef" class="wikilink2" title="tw:keywords:typedef" rel="nofollow">typedef</a></td><td class="col1">create a new type name from an existing type</td>
+	</tr>
+	<tr class="row63">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/typeid" class="wikilink2" title="tw:keywords:typeid" rel="nofollow">typeid</a></td><td class="col1">describes an object</td>
+	</tr>
+	<tr class="row64">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/typename" class="wikilink2" title="tw:keywords:typename" rel="nofollow">typename</a></td><td class="col1">declare a class or undefined type</td>
+	</tr>
+	<tr class="row65">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/union" class="wikilink2" title="tw:keywords:union" rel="nofollow">union</a></td><td class="col1">a structure that assigns multiple variables to the same memory location</td>
+	</tr>
+	<tr class="row66">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/unsigned" class="wikilink2" title="tw:keywords:unsigned" rel="nofollow">unsigned</a></td><td class="col1">declare an unsigned integer variable</td>
+	</tr>
+	<tr class="row67">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/using" class="wikilink2" title="tw:keywords:using" rel="nofollow">using</a></td><td class="col1">import complete or partial namespaces into the current scope</td>
+	</tr>
+	<tr class="row68">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/virtual" class="wikilink2" title="tw:keywords:virtual" rel="nofollow">virtual</a></td><td class="col1">create a function that can be overridden by a derived class</td>
+	</tr>
+	<tr class="row69">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/void" class="wikilink2" title="tw:keywords:void" rel="nofollow">void</a></td><td class="col1">declare functions or data with no associated data type</td>
+	</tr>
+	<tr class="row70">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/volatile" class="wikilink2" title="tw:keywords:volatile" rel="nofollow">volatile</a></td><td class="col1">warn the compiler about variables that can be modified unexpectedly</td>
+	</tr>
+	<tr class="row71">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/wchar_t" class="wikilink2" title="tw:keywords:wchar_t" rel="nofollow">wchar_t</a></td><td class="col1">declare a wide-character variable</td>
+	</tr>
+	<tr class="row72">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/keywords/while" class="wikilink2" title="tw:keywords:while" rel="nofollow">while</a></td><td class="col1">looping construct</td>
+	</tr>
+	<tr class="row73">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/alternative_operators" class="wikilink2" title="tw:alternative_operators" rel="nofollow">xor</a></td><td class="col1">alternative to ^ operator</td>
+	</tr>
+	<tr class="row74">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/alternative_operators" class="wikilink2" title="tw:alternative_operators" rel="nofollow">xor_eq</a></td><td class="col1">alternative to ^= operator</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [202-4271] -->
+</div>
+</div>
+</body>
+</html>

@@ -4,115 +4,331 @@
  lang="en" dir="ltr">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>c:math:start</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
+  <title>numeric:c:start</title>
+<meta name="generator" content="DokuWiki" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2008-12-13T06:21:49-0800" />
-<meta name="keywords" content="c,math,start" />
+<meta name="date" content="2010-10-28T18:17:32-0700" />
+<meta name="keywords" content="numeric,c,start" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/c/math/start?do=index" title="Index" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/numeric/c/start?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
-<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=c:math" />
-<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/c/math/start" />
-<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/c/math/start" />
-<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=numeric:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/numeric/c/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/numeric/c/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='numeric:c';var JSINFO = {"id":"numeric:c:start","namespace":"numeric:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
 
-
-
-<h1><a name="standard_c_math" id="standard_c_math">Standard C Math</a></h1>
+<h1 class="sectionedit1"><a name="c_math_operations" id="c_math_operations">C Math operations</a></h1>
 <div class="level1">
-<table class="inline">
-	<tr class="row0">
-		<td class="col0"><a href="abs" class="wikilink1" title="c:math:abs">abs</a></td><td class="col1">absolute value</td>
-	</tr>
-	<tr class="row1">
-		<td class="col0"><a href="acos" class="wikilink1" title="c:math:acos">acos</a></td><td class="col1">arc cosine</td>
-	</tr>
-	<tr class="row2">
-		<td class="col0"><a href="asin" class="wikilink1" title="c:math:asin">asin</a></td><td class="col1">arc sine</td>
-	</tr>
-	<tr class="row3">
-		<td class="col0"><a href="atan" class="wikilink1" title="c:math:atan">atan</a></td><td class="col1">arc tangent</td>
-	</tr>
-	<tr class="row4">
-		<td class="col0"><a href="atan2" class="wikilink1" title="c:math:atan2">atan2</a></td><td class="col1">arc tangent, using signs to determine quadrants</td>
-	</tr>
-	<tr class="row5">
-		<td class="col0"><a href="ceil" class="wikilink1" title="c:math:ceil">ceil</a></td><td class="col1">the smallest integer not less than a certain value</td>
-	</tr>
-	<tr class="row6">
-		<td class="col0"><a href="cos" class="wikilink1" title="c:math:cos">cos</a></td><td class="col1">cosine</td>
-	</tr>
-	<tr class="row7">
-		<td class="col0"><a href="cosh" class="wikilink1" title="c:math:cosh">cosh</a></td><td class="col1">hyperbolic cosine</td>
-	</tr>
-	<tr class="row8">
-		<td class="col0"><a href="div" class="wikilink1" title="c:math:div">div</a></td><td class="col1">returns the quotient and remainder of a division</td>
-	</tr>
-	<tr class="row9">
-		<td class="col0"><a href="exp" class="wikilink1" title="c:math:exp">exp</a></td><td class="col1">returns “e” raised to a given power</td>
-	</tr>
-	<tr class="row10">
-		<td class="col0"><a href="fabs" class="wikilink1" title="c:math:fabs">fabs</a></td><td class="col1">absolute value for floating-point numbers</td>
-	</tr>
-	<tr class="row11">
-		<td class="col0"><a href="floor" class="wikilink1" title="c:math:floor">floor</a></td><td class="col1">returns the largest integer not greater than a given value</td>
-	</tr>
-	<tr class="row12">
-		<td class="col0"><a href="fmod" class="wikilink1" title="c:math:fmod">fmod</a></td><td class="col1">returns the remainder of a division</td>
-	</tr>
-	<tr class="row13">
-		<td class="col0"><a href="frexp" class="wikilink1" title="c:math:frexp">frexp</a></td><td class="col1">decomposes a number into scientific notation</td>
-	</tr>
-	<tr class="row14">
-		<td class="col0"><a href="labs" class="wikilink1" title="c:math:labs">labs</a></td><td class="col1">absolute value for long integers</td>
-	</tr>
-	<tr class="row15">
-		<td class="col0"><a href="ldexp" class="wikilink1" title="c:math:ldexp">ldexp</a></td><td class="col1">computes a number in scientific notation</td>
-	</tr>
-	<tr class="row16">
-		<td class="col0"><a href="ldiv" class="wikilink1" title="c:math:ldiv">ldiv</a></td><td class="col1">returns the quotient and remainder of a division, in long integer form</td>
-	</tr>
-	<tr class="row17">
-		<td class="col0"><a href="log" class="wikilink1" title="c:math:log">log</a></td><td class="col1">natural logarithm (to base e)</td>
-	</tr>
-	<tr class="row18">
-		<td class="col0"><a href="log10" class="wikilink1" title="c:math:log10">log10</a></td><td class="col1">common logarithm (to base 10)</td>
-	</tr>
-	<tr class="row19">
-		<td class="col0"><a href="modf" class="wikilink1" title="c:math:modf">modf</a></td><td class="col1">decomposes a number into integer and fractional parts</td>
-	</tr>
-	<tr class="row20">
-		<td class="col0"><a href="pow" class="wikilink1" title="c:math:pow">pow</a></td><td class="col1">returns a given number raised to another number</td>
-	</tr>
-	<tr class="row21">
-		<td class="col0"><a href="sin" class="wikilink1" title="c:math:sin">sin</a></td><td class="col1">sine</td>
-	</tr>
-	<tr class="row22">
-		<td class="col0"><a href="sinh" class="wikilink1" title="c:math:sinh">sinh</a></td><td class="col1">hyperbolic sine</td>
-	</tr>
-	<tr class="row23">
-		<td class="col0"><a href="sqrt" class="wikilink1" title="c:math:sqrt">sqrt</a></td><td class="col1">square root</td>
-	</tr>
-	<tr class="row24">
-		<td class="col0"><a href="tan" class="wikilink1" title="c:math:tan">tan</a></td><td class="col1">tangent</td>
-	</tr>
-	<tr class="row25">
-		<td class="col0"><a href="tanh" class="wikilink1" title="c:math:tanh">tanh</a></td><td class="col1">hyperbolic tangent</td>
-	</tr>
-</table>
 
 </div>
 
-<h5><a name="compiling_with_gcc" id="compiling_with_gcc">Compiling with gcc</a></h5>
+<h4><a name="functions" id="functions">Functions</a></h4>
+<div class="level4">
+
+</div>
+
+<h5><a name="basic_operations" id="basic_operations">Basic operations</a></h5>
 <div class="level5">
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="abs" class="wikilink1" title="numeric:c:abs"> abs(int)</a><br/>
+<a href="abs" class="wikilink1" title="numeric:c:abs">labs</a> <br/>
+<a href="abs" class="wikilink1" title="numeric:c:abs">llabs</a> </td><td class="col1"> absolute value of an integral value</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="fabs" class="wikilink1" title="numeric:c:fabs">abs(float)</a><br/>
+<a href="fabs" class="wikilink1" title="numeric:c:fabs"> fabs</a></td><td class="col1"> absolute value of an floating point value</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="div" class="wikilink1" title="numeric:c:div"> div</a><br/>
+<a href="div" class="wikilink1" title="numeric:c:div"> ldiv</a></td><td class="col1"> the quotient and remainder of a division</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="fmod" class="wikilink1" title="numeric:c:fmod">fmod</a></td><td class="col1"> remainder of the division operation </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/numeric/c/remainder" class="wikilink2" title="numeric:c:remainder" rel="nofollow">remainder</a> </td><td class="col1"> signed remainder of the division operation (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature) </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/numeric/c/remquo" class="wikilink2" title="numeric:c:remquo" rel="nofollow">remquo</a> </td><td class="col1"> <a href="../../todo" class="wikilink1" title="todo">todo</a> (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature) </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/numeric/c/fma" class="wikilink2" title="numeric:c:fma" rel="nofollow">fma</a></td><td class="col1"> fused multiply-add operation (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/numeric/c/fmax" class="wikilink2" title="numeric:c:fmax" rel="nofollow">fmax</a></td><td class="col1"> smaller of the two floating point values (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/numeric/c/fmin" class="wikilink2" title="numeric:c:fmin" rel="nofollow">fmin</a></td><td class="col1"> bigger of the two floating point values (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/numeric/c/fdim" class="wikilink2" title="numeric:c:fdim" rel="nofollow">fdim</a></td><td class="col1"> absolute difference of the two floating point values (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/numeric/c/nan" class="wikilink2" title="numeric:c:nan" rel="nofollow"> nan</a><br/>
+<a href="http://www.cppreference.com/wiki/numeric/c/nan" class="wikilink2" title="numeric:c:nan" rel="nofollow"> nanf</a><br/>
+<a href="http://www.cppreference.com/wiki/numeric/c/nan" class="wikilink2" title="numeric:c:nan" rel="nofollow"> nanl</a> </td><td class="col1"> not-a-number (NaN) (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [79-889] -->
+</div>
+
+<h5><a name="exponential_functions" id="exponential_functions">Exponential functions</a></h5>
+<div class="level5">
+<div class="table sectionedit3"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="exp" class="wikilink1" title="numeric:c:exp">exp</a> </td><td class="col1"> returns <em>e</em> raised to the given power</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/numeric/c/exp2" class="wikilink2" title="numeric:c:exp2" rel="nofollow">exp2</a> </td><td class="col1"> returns <em>2</em> raised to the given power (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/numeric/c/expm1" class="wikilink2" title="numeric:c:expm1" rel="nofollow">expm1</a> </td><td class="col1"> returns <em>e</em> raised to the given power, minus one (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="log" class="wikilink1" title="numeric:c:log">log</a> </td><td class="col1"> natural logarithm (to base <em>e</em>)</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="log10" class="wikilink1" title="numeric:c:log10">log10</a> </td><td class="col1"> common logarithm (to base <em>10</em>)</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/numeric/c/log1p" class="wikilink2" title="numeric:c:log1p" rel="nofollow">log1p</a> </td><td class="col1"> natural logarithm (to base <em>e</em>) of 1 plus the given number (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/numeric/c/ilogb" class="wikilink2" title="numeric:c:ilogb" rel="nofollow">ilogb</a> </td><td class="col1"> extracts exponent of the number (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/numeric/c/logb" class="wikilink2" title="numeric:c:logb" rel="nofollow">logb</a> </td><td class="col1"> extracts exponent of the number (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</td>
+	</tr>
+</table></div>
+<!-- EDIT3 TABLE [918-1452] -->
+</div>
+
+<h5><a name="power_functions" id="power_functions">Power functions</a></h5>
+<div class="level5">
+<div class="table sectionedit4"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="sqrt" class="wikilink1" title="numeric:c:sqrt">sqrt</a> </td><td class="col1"> square root </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="cbrt" class="wikilink1" title="numeric:c:cbrt">cbrt</a> </td><td class="col1"> cubic root (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/numeric/c/hypot" class="wikilink2" title="numeric:c:hypot" rel="nofollow">hypot</a> </td><td class="col1"> square root of the sum of the squares of two given numbers (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature) </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="pow" class="wikilink1" title="numeric:c:pow">pow</a> </td><td class="col1"> returns the given number raised to the given power</td>
+	</tr>
+</table></div>
+<!-- EDIT4 TABLE [1475-1703] -->
+</div>
+
+<h5><a name="trigonometric_functions" id="trigonometric_functions">Trigonometric functions</a></h5>
+<div class="level5">
+<div class="table sectionedit5"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="sin" class="wikilink1" title="numeric:c:sin">sin</a></td><td class="col1">sine</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="cos" class="wikilink1" title="numeric:c:cos">cos</a></td><td class="col1">cosine</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="tan" class="wikilink1" title="numeric:c:tan">tan</a></td><td class="col1">tangent</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="asin" class="wikilink1" title="numeric:c:asin">asin</a></td><td class="col1">arc sine</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="acos" class="wikilink1" title="numeric:c:acos">acos</a></td><td class="col1">arc cosine</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="atan" class="wikilink1" title="numeric:c:atan">atan</a></td><td class="col1">arc tangent</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="atan2" class="wikilink1" title="numeric:c:atan2">atan2</a></td><td class="col1">arc tangent, using signs to determine quadrants</td>
+	</tr>
+</table></div>
+<!-- EDIT5 TABLE [1734-1908] -->
+</div>
+
+<h5><a name="hyperbolic_functions" id="hyperbolic_functions">Hyperbolic functions</a></h5>
+<div class="level5">
+<div class="table sectionedit6"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="sinh" class="wikilink1" title="numeric:c:sinh">sinh</a></td><td class="col1">hyperbolic sine</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="cosh" class="wikilink1" title="numeric:c:cosh">cosh</a></td><td class="col1">hyperbolic cosine</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="tanh" class="wikilink1" title="numeric:c:tanh">tanh</a></td><td class="col1">hyperbolic tangent</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="asinh" class="wikilink1" title="numeric:c:asinh">asinh</a></td><td class="col1">hyperbolic arc sine (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="acosh" class="wikilink1" title="numeric:c:acosh">acosh</a></td><td class="col1">hyperbolic arc cosine (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="atanh" class="wikilink1" title="numeric:c:atanh">atanh</a></td><td class="col1">hyperbolic arc tangent (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</td>
+	</tr>
+</table></div>
+<!-- EDIT6 TABLE [1937-2186] -->
+</div>
+
+<h5><a name="error_and_gamma_functions" id="error_and_gamma_functions">Error and gamma functions</a></h5>
+<div class="level5">
+<div class="table sectionedit7"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/numeric/c/erf" class="wikilink2" title="numeric:c:erf" rel="nofollow">erf</a></td><td class="col1"> error function (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature) </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/numeric/c/erfc" class="wikilink2" title="numeric:c:erfc" rel="nofollow">erfc</a></td><td class="col1"> complementary error function (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature) </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/numeric/c/lgamma" class="wikilink2" title="numeric:c:lgamma" rel="nofollow">lgamma</a></td><td class="col1"> natural logarithm of the gamma function (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature) </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/numeric/c/tgamma" class="wikilink2" title="numeric:c:tgamma" rel="nofollow">tgamma</a></td><td class="col1"> gamma function (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature) </td>
+	</tr>
+</table></div>
+<!-- EDIT7 TABLE [2219-2456] -->
+</div>
+
+<h5><a name="nearest_integer_floating_point_operations" id="nearest_integer_floating_point_operations">Nearest integer floating point operations</a></h5>
+<div class="level5">
+<div class="table sectionedit8"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="ceil" class="wikilink1" title="numeric:c:ceil">ceil</a> </td><td class="col1"> nearest integer not less than the given value</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="floor" class="wikilink1" title="numeric:c:floor">floor</a> </td><td class="col1"> nearest integer not greater than the given value</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="trunc" class="wikilink1" title="numeric:c:trunc">trunc</a> </td><td class="col1"> nearest integer not greater in magnitude than the given value (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature) </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="round" class="wikilink1" title="numeric:c:round"> round</a><br/>
+<a href="round" class="wikilink1" title="numeric:c:round"> lround</a><br/>
+<a href="round" class="wikilink1" title="numeric:c:round"> llround</a></td><td class="col1"> nearest integer, rounding away from zero in halfway cases (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature) </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/numeric/c/nearbyint" class="wikilink2" title="numeric:c:nearbyint" rel="nofollow">nearbyint</a></td><td class="col1"> nearest integer using current rounding mode (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature) </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/numeric/c/rint" class="wikilink2" title="numeric:c:rint" rel="nofollow"> rint</a> <br/>
+<a href="http://www.cppreference.com/wiki/numeric/c/rint" class="wikilink2" title="numeric:c:rint" rel="nofollow"> lrint</a><br/>
+<a href="http://www.cppreference.com/wiki/numeric/c/rint" class="wikilink2" title="numeric:c:rint" rel="nofollow"> llrint</a></td><td class="col1"> nearest integer using current rounding mode with <br/>
+exception if the result differs (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature) </td>
+	</tr>
+</table></div>
+<!-- EDIT8 TABLE [2505-3114] -->
+</div>
+
+<h5><a name="floating_point_manipulation_functions" id="floating_point_manipulation_functions">Floating point manipulation functions</a></h5>
+<div class="level5">
+<div class="table sectionedit9"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="frexp" class="wikilink1" title="numeric:c:frexp">frexp</a></td><td class="col1">decomposes a number into scientific notation</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="ldexp" class="wikilink1" title="numeric:c:ldexp">ldexp</a></td><td class="col1">computes a number in scientific notation</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="modf" class="wikilink1" title="numeric:c:modf">modf</a></td><td class="col1">decomposes a number into integer and fractional parts</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/numeric/c/scalbn" class="wikilink2" title="numeric:c:scalbn" rel="nofollow"> scalbn, scalbln</a> </td><td class="col1"> <a href="../../todo" class="wikilink1" title="todo">todo</a> (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/numeric/c/nextafter" class="wikilink2" title="numeric:c:nextafter" rel="nofollow">nextafter</a></td><td class="col1"> next representable floating point value (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/numeric/c/nexttoward" class="wikilink2" title="numeric:c:nexttoward" rel="nofollow">nexttoward</a></td><td class="col1"> next representable floating point value towards the given value (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/numeric/c/copysign" class="wikilink2" title="numeric:c:copysign" rel="nofollow">copysign</a></td><td class="col1"> copies the sign of a floating point value (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</td>
+	</tr>
+</table></div>
+<!-- EDIT9 TABLE [3159-3657] -->
+</div>
+
+<h5><a name="classification" id="classification">Classification</a></h5>
+<div class="level5">
+<div class="table sectionedit10"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="fpclassify" class="wikilink1" title="numeric:c:fpclassify">fpclassify</a> </td><td class="col1"> categorizes the given floating point value (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="isfinite" class="wikilink1" title="numeric:c:isfinite">isfinite</a> </td><td class="col1"> checks if the given number has finite value (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="isinf" class="wikilink1" title="numeric:c:isinf">isinf</a> </td><td class="col1"> checks if the given number is infinite (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="isnan" class="wikilink1" title="numeric:c:isnan">isnan</a> </td><td class="col1"> checks if the given number is NaN(<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="isnormal" class="wikilink1" title="numeric:c:isnormal">isnormal</a> </td><td class="col1"> checks if the given number is normal (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="signbit" class="wikilink1" title="numeric:c:signbit">signbit</a> </td><td class="col1"> checks if the given number is negative (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</td>
+	</tr>
+</table></div>
+<!-- EDIT10 TABLE [3679-4136] -->
+</div>
+
+<h4><a name="macro_constants" id="macro_constants">Macro constants</a></h4>
+<div class="level4">
+<div class="table sectionedit11"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="huge_val" class="wikilink1" title="numeric:c:huge_val">HUGE_VAL</a> </td><td class="col1"> indicates value too big to be representable (infinity) by <code>double</code> </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="huge_valf" class="wikilink1" title="numeric:c:huge_valf">HUGE_VALF</a> </td><td class="col1"> indicates value too big to be representable (infinity) by <code>float</code> (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature) </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="huge_vall" class="wikilink1" title="numeric:c:huge_vall">HUGE_VALL</a> </td><td class="col1"> indicates value too big to be representable (infinity) by <code>long double</code> (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature) </td>
+	</tr>
+</table></div>
+<!-- EDIT11 TABLE [4161-4469] -->
+</div>
+
+<h5><a name="classification1" id="classification1">Classification</a></h5>
+<div class="level5">
+<div class="table sectionedit12"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/numeric/c/fp_infinite" class="wikilink2" title="numeric:c:fp_infinite" rel="nofollow">FP_INFINITE</a> </td><td class="col1"> indicates infinite floating point value (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature) </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/numeric/c/fp_nan" class="wikilink2" title="numeric:c:fp_nan" rel="nofollow">FP_NAN</a> </td><td class="col1"> indicates not-a-number (NaN) (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature) </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/numeric/c/fp_normal" class="wikilink2" title="numeric:c:fp_normal" rel="nofollow">FP_NORMAL</a> </td><td class="col1"> indicates normal number (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature) </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/numeric/c/fp_subnormal" class="wikilink2" title="numeric:c:fp_subnormal" rel="nofollow">FP_SUBNORMAL</a> </td><td class="col1"> indicates subnormal number (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature) </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/numeric/c/fp_zero" class="wikilink2" title="numeric:c:fp_zero" rel="nofollow">FP_ZERO</a> </td><td class="col1"> indicates zero (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature) </td>
+	</tr>
+</table></div>
+<!-- EDIT12 TABLE [4491-4825] -->
+</div>
+<!-- EDIT1 SECTION "C Math operations" [1-4826] -->
+<h3 class="sectionedit13"><a name="notes" id="notes">Notes</a></h3>
+<div class="level3">
 
 <p>
 
@@ -120,6 +336,6 @@ In order to use some of the above functions, certain versions of the gcc compile
 </p>
 
 </div>
-</div>
+<!-- EDIT13 SECTION "Notes" [4827-] --></div>
 </body>
 </html>

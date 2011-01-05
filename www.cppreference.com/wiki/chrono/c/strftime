@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>chrono:c:strftime</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-11-07T16:00:06-0800" />
+<meta name="keywords" content="chrono,c,strftime" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/chrono/c/strftime?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=chrono:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/chrono/c/strftime" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/chrono/c/strftime" />
+<link rel="canonical" href="strftime" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='chrono:c';var JSINFO = {"id":"chrono:c:strftime","namespace":"chrono:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="strftime#strftime" class="toc">strftime</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="strftime#parameters" class="toc">Parameters</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="strftime#return_value" class="toc">Return value</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="strftime#see_also" class="toc">See also</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="strftime" id="strftime">strftime</a></h2>
+<div class="level2">
+<pre class="cpp code cpp"><span class="co2">#include &lt;ctime&gt;</span>
+&nbsp;
+<span class="kw4">size_t</span> <span class="kw3">strftime</span><span class="br0">&#40;</span> <span class="kw4">char</span> <span class="sy2">*</span>buffer, <span class="kw4">size_t</span> buf_size, <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>format, <span class="kw4">struct</span> <span class="kw4">tm</span> <span class="sy2">*</span><span class="kw3">time</span> <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Prints the date and time information from a given <code>tm</code> object to a character string according to specified format. Up to <code>buf_size</code> characters are written.
+</p>
+
+</div>
+<!-- EDIT1 SECTION "strftime" [1-305] -->
+<h3 class="sectionedit2"><a name="parameters" id="parameters">Parameters</a></h3>
+<div class="level3">
+
+<p>
+
+<code>buffer</code> - pointer to a character string to write the data information to
+</p>
+
+<p>
+<code>buf_size</code> - size of the <code>buffer</code> in bytes
+</p>
+
+<p>
+<code>format</code> - pointer to a character string specifying how to format the time and date string. The format can contain any combination of regular characters and following format specifiers:
+
+</p>
+<div class="table sectionedit3"><table class="inline">
+	<tr class="row0">
+		<th class="col0">Code</th><th class="col1">Meaning</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><code>%a</code> </td><td class="col1"> abbreviated weekday name (e.g. Fri) *</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><code>%A</code> </td><td class="col1"> full weekday name (e.g. Friday) *</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><code>%b</code> </td><td class="col1"> abbreviated month name (e.g. Oct) *</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><code>%B</code> </td><td class="col1"> full month name (e.g. October) *</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><code>%c</code> </td><td class="col1"> the standard date and time string (Sun Oct 17 04:41:13 2010)*</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><code>%d</code> </td><td class="col1"> day of the month, as a number (1-31)</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><code>%H</code> </td><td class="col1"> hour, 24 hour format (00-23)</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><code>%I</code> </td><td class="col1"> hour, 12 hour format (1-12)</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><code>%j</code> </td><td class="col1"> day of the year, as a number (1-366)</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><code>%m</code> </td><td class="col1"> month as a number (1-12). Note: some versions of Microsoft Visual C++ may use values that range from 0-11.</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><code>%M</code> </td><td class="col1"> minute as a number (0-59)</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><code>%p</code> </td><td class="col1"> locale&#039;s equivalent of AM or PM</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><code>%S</code> </td><td class="col1"> second as a number (0-59)</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><code>%U</code> </td><td class="col1"> week of the year, (0-53), where week 1 has the first Sunday</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><code>%w</code> </td><td class="col1"> weekday as a decimal (0-6), where Sunday is 0</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><code>%W</code> </td><td class="col1"> week of the year, (0-53), where week 1 has the first Monday</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><code>%x</code> </td><td class="col1"> date representation</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"><code>%X</code> </td><td class="col1"> time representation</td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"><code>%y</code> </td><td class="col1"> year in decimal, without the century (0-99)</td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"><code>%Y</code> </td><td class="col1"> year in decimal, with the century</td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"><code>%Z</code> </td><td class="col1"> time zone name</td>
+	</tr>
+	<tr class="row22">
+		<td class="col0"><code>%%</code> </td><td class="col1"> a percent sign</td>
+	</tr>
+</table></div>
+<!-- EDIT3 TABLE [640-1735] -->
+<p>
+
+* - locale dependant
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Parameters" [306-1758] -->
+<h3 class="sectionedit4"><a name="return_value" id="return_value">Return value</a></h3>
+<div class="level3">
+
+<p>
+
+number of characters put into <code>buffer</code> including the terminating <code>NULL</code> character on success. If the <code>buffer</code> was too small for the formatted string, <code>0</code> is returned and the contents of <code>buffer</code> are undefined.
+</p>
+
+</div>
+<!-- EDIT4 SECTION "Return value" [1759-2001] -->
+<h3 class="sectionedit5"><a name="see_also" id="see_also">See also</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="gmtime" class="wikilink1" title="chrono:c:gmtime">gmtime</a>, <a href="localtime" class="wikilink1" title="chrono:c:localtime">localtime</a>, <a href="time" class="wikilink1" title="chrono:c:time">time</a>
+</p>
+
+</div>
+<!-- EDIT5 SECTION "See also" [2002-] --></div>
+</body>
+</html>

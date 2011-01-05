@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr"
+ lang="fr" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>fr:io:c:sprintf</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:59-0700" />
+<meta name="keywords" content="fr,io,c,sprintf" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/fr/io/c/sprintf?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=fr:io:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/fr/io/c/sprintf" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/fr/io/c/sprintf" />
+<link rel="canonical" href="sprintf" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='fr:io:c';var JSINFO = {"id":"fr:io:c:sprintf","namespace":"fr:io:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="sprintf" id="sprintf">sprintf</a></h2>
+<div class="level2">
+
+<p>
+Syntaxe :
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cstdio&gt;</span>
+    <span class="kw4">int</span> <span class="kw3">sprintf</span><span class="br0">&#40;</span><span class="kw4">char</span> <span class="sy2">*</span>buf, <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>format, ... <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+
+La fonction <code>sprintf()</code> fonctionne exactement de la même manière que <code><a href="printf" class="wikilink1" title="fr:io:c:printf">printf()</a></code>
+à la différence que les données sont écrite dans la chaîne de caractères <code>buf</code>.
+</p>
+
+<p>
+La valeur de retour est le nombre de caractères écrits dans la chaîne.
+</p>
+
+<p>
+Exemple d&#039;utilisation :
+</p>
+<pre class="cpp code cpp">     <span class="kw4">char</span> string<span class="br0">&#91;</span><span class="nu0">50</span><span class="br0">&#93;</span><span class="sy4">;</span>
+     <span class="kw4">int</span> nb_de_fichier <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
+&nbsp;
+     <span class="kw3">sprintf</span><span class="br0">&#40;</span>string, <span class="st0">&quot;fichier.%d&quot;</span>, nb_de_fichier <span class="br0">&#41;</span><span class="sy4">;</span>
+     nb_de_fichier <span class="sy2">++</span><span class="sy4">;</span>
+     fichier <span class="sy1">=</span> <span class="kw3">fopen</span><span class="br0">&#40;</span>string, <span class="st0">&quot;w&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Remarquez que <code>sprintf()</code> fait l&#039;opération inverse d&#039;une fonction comme <code>atoi()</code>
+(ou <code>sscanf()</code>) – là où <code>atoi()</code> convertit une chaîne de caractères en nombre,
+<code>sprintf()</code> peut être utilisée pour convertir un nombre en une chaîne de caractères.
+</p>
+
+<p>
+Par exemple, le code ci-dessous utilise <code>sprintf()</code> pour convertir un entier en
+une chaîne de caractères :
+</p>
+<pre class="cpp code cpp">     <span class="kw4">char</span> res<span class="br0">&#91;</span><span class="nu0">100</span><span class="br0">&#93;</span><span class="sy4">;</span>
+     <span class="kw4">int</span> nb <span class="sy1">=</span> <span class="nu0">24</span><span class="sy4">;</span>
+     <span class="kw3">sprintf</span><span class="br0">&#40;</span>res, <span class="st0">&quot;%d&quot;</span>, nb<span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Ce code est similaire sauf qu&#039;il convertit un nombre à virgule flottante en une
+chaîne de caractères :
+</p>
+<pre class="cpp code cpp">     <span class="kw4">char</span> res<span class="br0">&#91;</span><span class="nu0">100</span><span class="br0">&#93;</span><span class="sy4">;</span>
+     <span class="kw4">float</span> nb <span class="sy1">=</span> <span class="nu16">3.14159</span><span class="sy4">;</span>
+     <span class="kw3">sprintf</span><span class="br0">&#40;</span>res, <span class="st0">&quot;%f&quot;</span>, nb<span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Attention, cette fonction ne vérifie pas la taille des données écrite et peut provoquer un dépassement de tampon.
+<code><a href="../../c/io/snprintf" class="wikilink1" title="fr:c:io:snprintf">snprintf()</a></code> est une alternative plus sûre à cette fonction.
+</p>
+
+<p>
+Sujets connexes : <a href="../../c/io/snprintf" class="wikilink1" title="fr:c:io:snprintf">snprintf</a>, <a href="../../c/string/atof" class="wikilink1" title="fr:c:string:atof">atof</a>, <a href="../../c/string/atoi" class="wikilink1" title="fr:c:string:atoi">atoi</a>, <a href="../../c/string/atol" class="wikilink1" title="fr:c:string:atol">atol</a>, <a href="fprintf" class="wikilink1" title="fr:io:c:fprintf">fprintf</a>, <a href="printf" class="wikilink1" title="fr:io:c:printf">printf</a>
+
+</p>
+
+</div>
+</div>
+</body>
+</html>

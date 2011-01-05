@@ -1,0 +1,270 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:keywords:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:19-0700" />
+<meta name="keywords" content="jp,keywords,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/keywords/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp:keywords" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/keywords/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/keywords/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp:keywords';var JSINFO = {"id":"jp:keywords:start","namespace":"jp:keywords"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="c_キーワード" id="c_キーワード">C++ キーワード</a></h1>
+<div class="level1">
+
+<p>
+
+C++の予約語のリストになります。これらの名前はC++自身が使用しているため、変数名として使用するなど、プログラマーが再定義したり、オーバーロードすることはできません。
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<th class="col0">キーワード</th><th class="col1">説明</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="../alternative_operators" class="wikilink1" title="jp:alternative_operators">and</a></td><td class="col1">&amp;&amp;演算子の別名です</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="../alternative_operators" class="wikilink1" title="jp:alternative_operators">and_eq</a></td><td class="col1">&amp;=演算子の別名です</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="asm" class="wikilink1" title="jp:keywords:asm">asm</a></td><td class="col1">アセンブリ命令を挿入します</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="auto" class="wikilink1" title="jp:keywords:auto">auto</a></td><td class="col1">ローカル変数の宣言をします</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="../alternative_operators" class="wikilink1" title="jp:alternative_operators">bitand</a></td><td class="col1">ビット&amp;演算子の別名です</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="../alternative_operators" class="wikilink1" title="jp:alternative_operators">bitor</a></td><td class="col1">|演算子の別名です</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="bool" class="wikilink1" title="jp:keywords:bool">bool</a></td><td class="col1">ブーリアン型の変数の宣言をします</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="break" class="wikilink1" title="jp:keywords:break">break</a></td><td class="col1">ループから抜けます</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="case" class="wikilink1" title="jp:keywords:case">case</a></td><td class="col1">switch文内のコードブロックです</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="catch" class="wikilink1" title="jp:keywords:catch">catch</a></td><td class="col1">throwで投げられた例外を処理します</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="char" class="wikilink1" title="jp:keywords:char">char</a></td><td class="col1">char型の変数の宣言をします</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><a href="class" class="wikilink1" title="jp:keywords:class">class</a></td><td class="col1">クラスの宣言をします</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><a href="../alternative_operators" class="wikilink1" title="jp:alternative_operators">compl</a></td><td class="col1">~演算子の別名です</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><a href="const" class="wikilink1" title="jp:keywords:const">const</a></td><td class="col1">変更されないデータの宣言をします / 関数がデータを変更しないことを宣言します</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><a href="const_cast" class="wikilink1" title="jp:keywords:const_cast">const_cast</a></td><td class="col1">const変数からキャストします</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><a href="continue" class="wikilink1" title="jp:keywords:continue">continue</a></td><td class="col1">ループの繰り返しを１つバイパスします</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><a href="default" class="wikilink1" title="jp:keywords:default">default</a></td><td class="col1">switch文で、どれにも当てはまらなかった場合のコードブロックです</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"><a href="delete" class="wikilink1" title="jp:keywords:delete">delete</a></td><td class="col1">動的メモリを解放して、再利用できるようにします</td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"><a href="do" class="wikilink1" title="jp:keywords:do">do</a></td><td class="col1">ループ命令です</td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"><a href="double" class="wikilink1" title="jp:keywords:double">double</a></td><td class="col1">倍精度浮動小数点数型の変数を宣言します</td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"><a href="dynamic_cast" class="wikilink1" title="jp:keywords:dynamic_cast">dynamic_cast</a></td><td class="col1">実行時のキャストを行います</td>
+	</tr>
+	<tr class="row22">
+		<td class="col0"><a href="else" class="wikilink1" title="jp:keywords:else">else</a></td><td class="col1">if文で、条件に当てはまらなかった場合のコードブロックです</td>
+	</tr>
+	<tr class="row23">
+		<td class="col0"><a href="enum" class="wikilink1" title="jp:keywords:enum">enum</a></td><td class="col1">列挙型を作成します</td>
+	</tr>
+	<tr class="row24">
+		<td class="col0"><a href="explicit" class="wikilink1" title="jp:keywords:explicit">explicit</a></td><td class="col1">完全に明示されたものとマッチしたコンストラクタだけが使用されるようになります</td>
+	</tr>
+	<tr class="row25">
+		<td class="col0"><a href="export" class="wikilink1" title="jp:keywords:export">export</a></td><td class="col1">テンプレート宣言と定義を分離できるようにします</td>
+	</tr>
+	<tr class="row26">
+		<td class="col0"><a href="extern" class="wikilink1" title="jp:keywords:extern">extern</a></td><td class="col1">コンパイラに対して、変数がどこか外部の別のソースコードで宣言されていると伝えます</td>
+	</tr>
+	<tr class="row27">
+		<td class="col0"><a href="false" class="wikilink1" title="jp:keywords:false">false</a></td><td class="col1">ブーリアン型の偽値を表す定数です</td>
+	</tr>
+	<tr class="row28">
+		<td class="col0"><a href="float" class="wikilink1" title="jp:keywords:float">float</a></td><td class="col1">浮動小数点数型の変数を宣言します</td>
+	</tr>
+	<tr class="row29">
+		<td class="col0"><a href="for" class="wikilink1" title="jp:keywords:for">for</a></td><td class="col1">ループ命令です</td>
+	</tr>
+	<tr class="row30">
+		<td class="col0"><a href="friend" class="wikilink1" title="jp:keywords:friend">friend</a></td><td class="col1">メンバーではない関数が、privateのデータにアクセスするのを許可します</td>
+	</tr>
+	<tr class="row31">
+		<td class="col0"><a href="goto" class="wikilink1" title="jp:keywords:goto">goto</a></td><td class="col1">プログラムの他の部分にジャンプします</td>
+	</tr>
+	<tr class="row32">
+		<td class="col0"><a href="if" class="wikilink1" title="jp:keywords:if">if</a></td><td class="col1">条件テストの結果によって、コードを実行するかどうか決定します</td>
+	</tr>
+	<tr class="row33">
+		<td class="col0"><a href="inline" class="wikilink1" title="jp:keywords:inline">inline</a></td><td class="col1">短い関数に対する呼び出しを最適化します</td>
+	</tr>
+	<tr class="row34">
+		<td class="col0"><a href="int" class="wikilink1" title="jp:keywords:int">int</a></td><td class="col1">整数型の変数を宣言します</td>
+	</tr>
+	<tr class="row35">
+		<td class="col0"><a href="long" class="wikilink1" title="jp:keywords:long">long</a></td><td class="col1">ロング整数型の変数を宣言します</td>
+	</tr>
+	<tr class="row36">
+		<td class="col0"><a href="mutable" class="wikilink1" title="jp:keywords:mutable">mutable</a></td><td class="col1">const宣言された変数をオーバーライドします</td>
+	</tr>
+	<tr class="row37">
+		<td class="col0"><a href="namespace" class="wikilink1" title="jp:keywords:namespace">namespace</a></td><td class="col1">グローバルな名前空間を指定したスコープで分割します</td>
+	</tr>
+	<tr class="row38">
+		<td class="col0"><a href="new" class="wikilink1" title="jp:keywords:new">new</a></td><td class="col1">新しい変数に対して動的にメモリを割り当てます</td>
+	</tr>
+	<tr class="row39">
+		<td class="col0"><a href="../alternative_operators" class="wikilink1" title="jp:alternative_operators">not</a></td><td class="col1">!演算子の別名です</td>
+	</tr>
+	<tr class="row40">
+		<td class="col0"><a href="../alternative_operators" class="wikilink1" title="jp:alternative_operators">not_eq</a></td><td class="col1">!=演算子の別名です</td>
+	</tr>
+	<tr class="row41">
+		<td class="col0"><a href="operator" class="wikilink1" title="jp:keywords:operator">operator</a></td><td class="col1">演算子オーバーロード関数を作成します</td>
+	</tr>
+	<tr class="row42">
+		<td class="col0"><a href="../alternative_operators" class="wikilink1" title="jp:alternative_operators">or</a></td><td class="col1">||演算子の別名です</td>
+	</tr>
+	<tr class="row43">
+		<td class="col0"><a href="../alternative_operators" class="wikilink1" title="jp:alternative_operators">or_eq</a></td><td class="col1">|=演算子の別名です</td>
+	</tr>
+	<tr class="row44">
+		<td class="col0"><a href="private" class="wikilink1" title="jp:keywords:private">private</a></td><td class="col1">classのprivateメンバーの宣言をします</td>
+	</tr>
+	<tr class="row45">
+		<td class="col0"><a href="protected" class="wikilink1" title="jp:keywords:protected">protected</a></td><td class="col1">classのprotectedメンバーの宣言をします</td>
+	</tr>
+	<tr class="row46">
+		<td class="col0"><a href="public" class="wikilink1" title="jp:keywords:public">public</a></td><td class="col1">classのpublicメンバーの宣言をします</td>
+	</tr>
+	<tr class="row47">
+		<td class="col0"><a href="register" class="wikilink1" title="jp:keywords:register">register</a></td><td class="col1">変数の実装を、速度優先で最適化するように要望します</td>
+	</tr>
+	<tr class="row48">
+		<td class="col0"><a href="reinterpret_cast" class="wikilink1" title="jp:keywords:reinterpret_cast">reinterpret_cast</a></td><td class="col1">変数の型を変更します</td>
+	</tr>
+	<tr class="row49">
+		<td class="col0"><a href="return" class="wikilink1" title="jp:keywords:return">return</a></td><td class="col1">関数から戻ります</td>
+	</tr>
+	<tr class="row50">
+		<td class="col0"><a href="short" class="wikilink1" title="jp:keywords:short">short</a></td><td class="col1">short整数型の変数の宣言をします</td>
+	</tr>
+	<tr class="row51">
+		<td class="col0"><a href="signed" class="wikilink1" title="jp:keywords:signed">signed</a></td><td class="col1">正と負をとる変数の型の宣言をします</td>
+	</tr>
+	<tr class="row52">
+		<td class="col0"><a href="sizeof" class="wikilink1" title="jp:keywords:sizeof">sizeof</a></td><td class="col1">変数や型のサイズを返します</td>
+	</tr>
+	<tr class="row53">
+		<td class="col0"><a href="static" class="wikilink1" title="jp:keywords:static">static</a></td><td class="col1">変数に対して恒久的なメモリエリアを作成します</td>
+	</tr>
+	<tr class="row54">
+		<td class="col0"><a href="static_cast" class="wikilink1" title="jp:keywords:static_cast">static_cast</a></td><td class="col1">非ポリモーフィックなキャストを行います</td>
+	</tr>
+	<tr class="row55">
+		<td class="col0"><a href="struct" class="wikilink1" title="jp:keywords:struct">struct</a></td><td class="col1">新しい構造体を定義します</td>
+	</tr>
+	<tr class="row56">
+		<td class="col0"><a href="switch" class="wikilink1" title="jp:keywords:switch">switch</a></td><td class="col1">変数の値によって異なるコードブロックを実行します</td>
+	</tr>
+	<tr class="row57">
+		<td class="col0"><a href="template" class="wikilink1" title="jp:keywords:template">template</a></td><td class="col1">ジェネリック関数を作成します</td>
+	</tr>
+	<tr class="row58">
+		<td class="col0"><a href="this" class="wikilink1" title="jp:keywords:this">this</a></td><td class="col1">現在のオブジェクトに対するポインタです</td>
+	</tr>
+	<tr class="row59">
+		<td class="col0"><a href="throw" class="wikilink1" title="jp:keywords:throw">throw</a></td><td class="col1">例外を投げます</td>
+	</tr>
+	<tr class="row60">
+		<td class="col0"><a href="true" class="wikilink1" title="jp:keywords:true">true</a></td><td class="col1">ブーリアン型の真値を表す定数です</td>
+	</tr>
+	<tr class="row61">
+		<td class="col0"><a href="try" class="wikilink1" title="jp:keywords:try">try</a></td><td class="col1">例外を受け取ることができるコードの実行を開始します</td>
+	</tr>
+	<tr class="row62">
+		<td class="col0"><a href="typedef" class="wikilink1" title="jp:keywords:typedef">typedef</a></td><td class="col1">既存の型名に対して、新しい型名を作成します</td>
+	</tr>
+	<tr class="row63">
+		<td class="col0"><a href="typeid" class="wikilink1" title="jp:keywords:typeid">typeid</a></td><td class="col1">オブジェクトに対する記述です</td>
+	</tr>
+	<tr class="row64">
+		<td class="col0"><a href="typename" class="wikilink1" title="jp:keywords:typename">typename</a></td><td class="col1">クラスや、未定義の型の宣言をします</td>
+	</tr>
+	<tr class="row65">
+		<td class="col0"><a href="union" class="wikilink1" title="jp:keywords:union">union</a></td><td class="col1">同じメモリ位置に対して複数の変数を割り当てる構造体です</td>
+	</tr>
+	<tr class="row66">
+		<td class="col0"><a href="unsigned" class="wikilink1" title="jp:keywords:unsigned">unsigned</a></td><td class="col1">負の値を取らない整数の変数を宣言します</td>
+	</tr>
+	<tr class="row67">
+		<td class="col0"><a href="using" class="wikilink1" title="jp:keywords:using">using</a></td><td class="col1">名前空間の全体もしくは一部を現在のスコープ内に取り込みます</td>
+	</tr>
+	<tr class="row68">
+		<td class="col0"><a href="virtual" class="wikilink1" title="jp:keywords:virtual">virtual</a></td><td class="col1">導出クラスがオーバーライドできる関数を作成します</td>
+	</tr>
+	<tr class="row69">
+		<td class="col0"><a href="void" class="wikilink1" title="jp:keywords:void">void</a></td><td class="col1">関数の引数や返り値、データなどが、どのデータ型でもないという宣言をします</td>
+	</tr>
+	<tr class="row70">
+		<td class="col0"><a href="volatile" class="wikilink1" title="jp:keywords:volatile">volatile</a></td><td class="col1">コンパイラに対して、変数が外部から変更されるという警告をします</td>
+	</tr>
+	<tr class="row71">
+		<td class="col0"><a href="wchar_t" class="wikilink1" title="jp:keywords:wchar_t">wchar_t</a></td><td class="col1">ワイド文字型の変数の宣言をします</td>
+	</tr>
+	<tr class="row72">
+		<td class="col0"><a href="while" class="wikilink1" title="jp:keywords:while">while</a></td><td class="col1">ループ命令です</td>
+	</tr>
+	<tr class="row73">
+		<td class="col0"><a href="../alternative_operators" class="wikilink1" title="jp:alternative_operators">xor</a></td><td class="col1">^演算子の別名です</td>
+	</tr>
+	<tr class="row74">
+		<td class="col0"><a href="../alternative_operators" class="wikilink1" title="jp:alternative_operators">xor_eq</a></td><td class="col1">^=演算子の別名です</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [284-5633] -->
+</div>
+</div>
+</body>
+</html>

@@ -5,21 +5,25 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>keywords:casting_comparison</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="generator" content="DokuWiki" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2009-06-25T10:15:55-0700" />
+<meta name="date" content="2010-10-28T18:17:02-0700" />
 <meta name="keywords" content="keywords,casting_comparison" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/keywords/casting_comparison?do=index" title="Index" />
+<link rel="start" href="../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/keywords/casting_comparison?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
 <link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=keywords" />
 <link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/keywords/casting_comparison" />
 <link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/keywords/casting_comparison" />
-<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="canonical" href="casting_comparison" />
+<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='keywords';var JSINFO = {"id":"keywords:casting_comparison","namespace":"keywords"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
@@ -42,9 +46,7 @@
 </div>
 <!-- TOC END -->
 
-
-
-<h2><a name="a_comparison_of_the_c_casting_operators" id="a_comparison_of_the_c_casting_operators">A comparison of the C++ casting operators</a></h2>
+<h2 class="sectionedit1"><a name="a_comparison_of_the_c_casting_operators" id="a_comparison_of_the_c_casting_operators">A comparison of the C++ casting operators</a></h2>
 <div class="level2">
 
 <p>
@@ -69,16 +71,16 @@ The purpose of these new casting operators is to provide better type checking.  
 </p>
 
 </div>
-<!-- SECTION "A comparison of the C++ casting operators" [1-428] -->
-<h3><a name="deficiencies_of_the_old_c-style_cast" id="deficiencies_of_the_old_c-style_cast">Deficiencies of the old C-style cast</a></h3>
+<!-- EDIT1 SECTION "A comparison of the C++ casting operators" [1-428] -->
+<h3 class="sectionedit2"><a name="deficiencies_of_the_old_c-style_cast" id="deficiencies_of_the_old_c-style_cast">Deficiencies of the old C-style cast</a></h3>
 <div class="level3">
 
 <p>
 
 Two forms of the C-style cast are supported in C++:
 </p>
-<pre class="c code c++" style="font-family:monospace;">  <span class="kw4">int</span> age <span class="sy0">=</span> <span class="br0">&#40;</span><span class="kw4">int</span><span class="br0">&#41;</span> sqrt<span class="br0">&#40;</span> foo <span class="sy0">/</span> <span class="nu16">3.25</span> <span class="br0">&#41;</span>;
-  <span class="kw4">int</span> age <span class="sy0">=</span> <span class="kw4">int</span><span class="br0">&#40;</span> sqrt<span class="br0">&#40;</span>foo<span class="sy0">/</span><span class="nu16">3.25</span> <span class="br0">&#41;</span> <span class="br0">&#41;</span>;</pre>
+<pre class="cpp code cpp">  <span class="kw4">int</span> age <span class="sy1">=</span> <span class="br0">&#40;</span><span class="kw4">int</span><span class="br0">&#41;</span> <span class="kw3">sqrt</span><span class="br0">&#40;</span> foo <span class="sy2">/</span> <span class="nu16">3.25</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+  <span class="kw4">int</span> age <span class="sy1">=</span> <span class="kw4">int</span><span class="br0">&#40;</span> <span class="kw3">sqrt</span><span class="br0">&#40;</span>foo<span class="sy2">/</span><span class="nu16">3.25</span> <span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span></pre>
 <p>
 However, using the same syntax for a variety of different casting operations can make the intent of the programmer unclear.
 </p>
@@ -89,11 +91,12 @@ Furthermore, it can be difficult to find a specific type of cast in a large code
 
 <p>
 Finally, the generality of the C-style cast can be overkill for situations where all that is needed is a simple conversion.  The ability to select between several different casting operators of differing degrees of power can prevent programmers from inadvertently casting to an incorrect type. 
+
 </p>
 
 </div>
-<!-- SECTION "Deficiencies of the old C-style cast" [429-1125] -->
-<h3><a name="different_operators_for_different_uses" id="different_operators_for_different_uses">Different operators for different uses</a></h3>
+<!-- EDIT2 SECTION "Deficiencies of the old C-style cast" [429-1124] -->
+<h3 class="sectionedit3"><a name="different_operators_for_different_uses" id="different_operators_for_different_uses">Different operators for different uses</a></h3>
 <div class="level3">
 
 <p>
@@ -104,7 +107,7 @@ The four casting operators in C++ can be used in different cases, where each is 
 <p>
 <a href="static_cast" class="wikilink1" title="keywords:static_cast">static_cast</a> is the most useful cast. 
 It can be used to perform any implicit cast. When an implicit conversion loses some information, some compilers will produce warnings, and static_cast will eliminate these warnings. Making implicit conversion through static_cast is also useful to resolve ambiguity or to clarify the conversion presence.
-It also can be used to call an unary constructor, declared as <a href="explicit" class="wikilink1" title="keywords:explicit">explicit</a>.
+It also can be used to call a unary constructor, declared as <a href="explicit" class="wikilink1" title="keywords:explicit">explicit</a>.
 It also can be used to cast up and down a class hierarchy, like dynamic_cast, except that no runtime checking is performed.
 </p>
 
@@ -130,6 +133,6 @@ Related links:  <a href="http://www.acm.org/crossroads/xrds3-1/ovp3-1.html" clas
 </p>
 
 </div>
-<!-- SECTION "Different operators for different uses" [1126-] --></div>
+<!-- EDIT3 SECTION "Different operators for different uses" [1125-] --></div>
 </body>
 </html>

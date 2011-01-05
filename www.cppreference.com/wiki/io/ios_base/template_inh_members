@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>io:ios_base:template_inh_members</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="noindex,nofollow" />
+<meta name="date" content="2010-11-18T08:06:22-0800" />
+<meta name="keywords" content="io,ios_base,template_inh_members" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/io/ios_base/template_inh_members?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=io:ios_base" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/io/ios_base/template_inh_members" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/io/ios_base/template_inh_members" />
+<link rel="canonical" href="template_inh_members" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='io:ios_base';var JSINFO = {"id":"io:ios_base:template_inh_members","namespace":"io:ios_base"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<p>
+<br/>
+
+</p>
+<hr />
+
+<h3 class="sectionedit1"><a name="inherited_from_ios_base" id="inherited_from_ios_base">Inherited from ios_base</a></h3>
+<div class="level3">
+
+<p>
+
+See <a href="start" class="wikilink1" title="io:ios_base:start">ios_base</a>
+</p>
+
+</div>
+
+<h4><a name="member_functions" id="member_functions">Member functions</a></h4>
+<div class="level4">
+
+</div>
+
+<h5><a name="formatting" id="formatting">Formatting</a></h5>
+<div class="level5">
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <a href="flags" class="wikilink1" title="io:ios_base:flags">flags</a> </td><td class="col1"> manages format flags </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <a href="setf" class="wikilink1" title="io:ios_base:setf">setf</a> </td><td class="col1"> sets specific format flag </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <a href="unsetf" class="wikilink1" title="io:ios_base:unsetf">unsetf</a> </td><td class="col1"> clears specific format flag </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> <a href="precision" class="wikilink1" title="io:ios_base:precision">precision</a> </td><td class="col1"> manages decimal precision of floating point operations </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> <a href="width" class="wikilink1" title="io:ios_base:width">width</a> </td><td class="col1"> manages field width </td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [109-342] -->
+</div>
+
+<h5><a name="locales" id="locales">Locales</a></h5>
+<div class="level5">
+<div class="table sectionedit3"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <a href="imbue" class="wikilink1" title="io:ios_base:imbue">imbue</a> </td><td class="col1"> sets locale </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <a href="getloc" class="wikilink1" title="io:ios_base:getloc">getloc</a> </td><td class="col1"> returns current locale </td>
+	</tr>
+</table></div>
+<!-- EDIT3 TABLE [357-424] -->
+</div>
+
+<h5><a name="internal_extensible_array" id="internal_extensible_array">Internal extensible array</a></h5>
+<div class="level5">
+<div class="table sectionedit4"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <a href="xalloc" class="wikilink1" title="io:ios_base:xalloc">xalloc</a> </td><td class="col1"> allocates element of the internal extensible array </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <a href="iword" class="wikilink1" title="io:ios_base:iword">iword</a> </td><td class="col1"> returns reference to specific element of internal extensible array </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <a href="pword" class="wikilink1" title="io:ios_base:pword">pword</a> </td><td class="col1"> returns reference to specific element of internal extensible array </td>
+	</tr>
+</table></div>
+<!-- EDIT4 TABLE [457-690] -->
+</div>
+
+<h5><a name="miscellaneous" id="miscellaneous">Miscellaneous</a></h5>
+<div class="level5">
+<div class="table sectionedit5"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <a href="register_callback" class="wikilink1" title="io:ios_base:register_callback">register_callback</a> </td><td class="col1"> registers event callback function </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <a href="sync_with_stdio" class="wikilink1" title="io:ios_base:sync_with_stdio">sync_with_stdio</a> </td><td class="col1"> sets whether C++ and C IO libraries are interoperable </td>
+	</tr>
+</table></div>
+<!-- EDIT5 TABLE [711-852] -->
+</div>
+
+<h4><a name="member_types" id="member_types">Member types</a></h4>
+<div class="level4">
+<div class="table sectionedit6"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Member type </th><th class="col1"> Definition </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <a href="http://www.cppreference.com/wiki/io/ios_base/event" class="wikilink2" title="io:ios_base:event" rel="nofollow">event</a> </td><td class="col1"> specifies event type </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <a href="http://www.cppreference.com/wiki/io/ios_base/event_callback" class="wikilink2" title="io:ios_base:event_callback" rel="nofollow">event_callback</a> </td><td class="col1"> callback function type </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> <a href="http://www.cppreference.com/wiki/io/ios_base/fmtflags" class="wikilink2" title="io:ios_base:fmtflags" rel="nofollow">fmtflags</a> </td><td class="col1"> formatting flags </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> <a href="iostate" class="wikilink1" title="io:ios_base:iostate">iostate</a> </td><td class="col1"> stream state </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> <a href="openmode" class="wikilink1" title="io:ios_base:openmode">openmode</a> </td><td class="col1"> opening mode </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> <a href="http://www.cppreference.com/wiki/io/ios_base/seekdir" class="wikilink2" title="io:ios_base:seekdir" rel="nofollow">seekdir</a> </td><td class="col1"> seeking direction </td>
+	</tr>
+</table></div>
+<!-- EDIT6 TABLE [874-1122] -->
+</div>
+
+<h5><a name="member_classes" id="member_classes">Member classes</a></h5>
+<div class="level5">
+<div class="table sectionedit7"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <a href="http://www.cppreference.com/wiki/io/ios_base/failure" class="wikilink2" title="io:ios_base:failure" rel="nofollow">failure</a> </td><td class="col1"> stream exception </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <a href="init" class="wikilink1" title="io:ios_base:init">Init</a> </td><td class="col1"> initializes standard streams </td>
+	</tr>
+</table></div>
+<!-- EDIT7 TABLE [1144-1222] -->
+</div>
+<!-- EDIT1 SECTION "Inherited from ios_base" [11-] --></div>
+</body>
+</html>

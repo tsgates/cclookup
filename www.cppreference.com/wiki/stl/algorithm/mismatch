@@ -4,67 +4,162 @@
  lang="en" dir="ltr">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>stl:algorithm:mismatch</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
+  <title>algorithm:mismatch</title>
+<meta name="generator" content="DokuWiki" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2009-04-21T16:51:06-0700" />
-<meta name="keywords" content="stl,algorithm,mismatch" />
+<meta name="date" content="2010-11-13T04:34:27-0800" />
+<meta name="keywords" content="algorithm,mismatch" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/stl/algorithm/mismatch?do=index" title="Index" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/algorithm/mismatch?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
-<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=stl:algorithm" />
-<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/stl/algorithm/mismatch" />
-<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/stl/algorithm/mismatch" />
-<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=algorithm" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/algorithm/mismatch" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/algorithm/mismatch" />
+<link rel="canonical" href="mismatch" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='algorithm';var JSINFO = {"id":"algorithm:mismatch","namespace":"algorithm"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
 
+<ul class="toc">
+<li class="clear">
 
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="mismatch#mismatch" class="toc">mismatch</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="mismatch#parameters" class="toc">Parameters</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="mismatch#return_value" class="toc">Return value</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="mismatch#equivalent_function" class="toc">Equivalent function</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="mismatch#complexity" class="toc">Complexity</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="mismatch#see_also" class="toc">See also</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
 
-<h2><a name="mismatch" id="mismatch">mismatch</a></h2>
+<h2 class="sectionedit1"><a name="mismatch" id="mismatch">mismatch</a></h2>
 <div class="level2">
-
-<p>
-Syntax:
-</p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;algorithm&gt;</span>
-    pair <span class="sy0">&lt;</span>iterator1<span class="sy0">,</span>iterator2<span class="sy0">&gt;</span> mismatch<span class="br0">&#40;</span> iterator start1<span class="sy0">,</span> iterator end1<span class="sy0">,</span> iterator start2 <span class="br0">&#41;</span>;
-    pair <span class="sy0">&lt;</span>iterator1<span class="sy0">,</span>iterator2<span class="sy0">&gt;</span> mismatch<span class="br0">&#40;</span> iterator start1<span class="sy0">,</span> iterator end1<span class="sy0">,</span> iterator start2<span class="sy0">,</span> BinPred p <span class="br0">&#41;</span>;</pre>
-<p>
-The mismatch() function compares the elements in the range defined by
-[start1,end1) to the elements in a range of the same size starting at start2.
-</p>
-
-<p>
-The return value of <code>mismatch()</code> is either:
-</p>
-<ul>
-<li class="level1"><div class="li"> The first location where the two ranges differ.</div>
-</li>
-<li class="level1"><div class="li"> If the ranges are equal, <code>end1</code> and the corresponding element in second range.</div>
-</li>
-</ul>
-
+<pre class="cpp code cpp"><span class="co2">#include &lt;algorithm&gt;</span>
+&nbsp;
+<span class="kw2">template</span><span class="sy1">&lt;</span> <span class="kw2">class</span> InputIterator1, <span class="kw2">class</span> InputIterator2 <span class="sy1">&gt;</span>
+std<span class="sy4">::</span><span class="me2">pair</span><span class="sy1">&lt;</span> InputIterator1, InputIterator2 <span class="sy1">&gt;</span>
+    mismatch<span class="br0">&#40;</span> InputIterator1 first1,
+              InputIterator1 last1,
+              InputIterator2 first2 <span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+<span class="kw2">template</span><span class="sy1">&lt;</span> <span class="kw2">class</span> InputIterator1, <span class="kw2">class</span> InputIterator2, <span class="kw2">class</span> BinaryPredicate <span class="sy1">&gt;</span>
+std<span class="sy4">::</span><span class="me2">pair</span><span class="sy1">&lt;</span> InputIterator1, InputIterator2 <span class="sy1">&gt;</span>
+    mismatch<span class="br0">&#40;</span> InputIterator1 first1,
+              InputIterator1 last1,
+              InputIterator2 first2,
+              BinaryPredicate p <span class="br0">&#41;</span><span class="sy4">;</span></pre>
 <p>
 
-If the optional binary predicate <code>p</code> is given, then it is used to compare
-elements from the two ranges.
+<br/>
+
 </p>
 
 <p>
-The <code>mismatch()</code> algorithm runs in <a href="../../complexity" class="wikilink1" title="complexity">linear time</a>.
-</p>
-
-<p>
-Related Topics: <a href="equal" class="wikilink1" title="stl:algorithm:equal">equal</a>, <a href="find" class="wikilink1" title="stl:algorithm:find">find</a>, <a href="lexicographical_compare" class="wikilink1" title="stl:algorithm:lexicographical_compare">lexicographical_compare</a>, <a href="search" class="wikilink1" title="stl:algorithm:search">search</a>
+Returns the first mismatching pair of elements from two ranges: one defined by <code>[first1, last1)</code> and another starting at <code>first2</code>. One version of the function uses <code>operator==</code> to compare the elements, another uses the given binary predicate <code>p</code>.
 </p>
 
 </div>
-<!-- SECTION "mismatch" [3-] --></div>
+<!-- EDIT1 SECTION "mismatch" [1-815] -->
+<h3 class="sectionedit2"><a name="parameters" id="parameters">Parameters</a></h3>
+<div class="level3">
+
+<p>
+
+<code>first1</code>, <code>last1</code> - the first range of the elements to be compared
+</p>
+
+<p>
+<code>first2</code> - beginning of the second range of the elements to be compared
+</p>
+
+<p>
+<code>p</code> - binary predicate which returns <code>true</code> if the elements should be treated as equal
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Parameters" [816-1074] -->
+<h3 class="sectionedit3"><a name="return_value" id="return_value">Return value</a></h3>
+<div class="level3">
+
+<p>
+
+<code>pair</code> with iterators to first two differing elements, or, if no different elements found, pair with <code>last1</code> and corresponding iterator from the second range
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Return value" [1075-1259] -->
+<h3 class="sectionedit4"><a name="equivalent_function" id="equivalent_function">Equivalent function</a></h3>
+<div class="level3">
+
+<p>
+
+First version:
+
+</p>
+<pre class="cpp code cpp"><span class="kw2">template</span><span class="sy1">&lt;</span><span class="kw2">class</span> InputIterator1, <span class="kw2">class</span> InputIterator2<span class="sy1">&gt;</span>
+std<span class="sy4">::</span><span class="me2">pair</span><span class="sy1">&lt;</span>InputIterator1, InputIterator2<span class="sy1">&gt;</span>
+    mismatch<span class="br0">&#40;</span>InputIterator1 first1, InputIterator1 last1, InputIterator2 first2<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <span class="kw1">for</span> <span class="br0">&#40;</span><span class="sy4">;</span> first1 <span class="sy3">!</span><span class="sy1">=</span> last1<span class="sy4">;</span> <span class="sy2">++</span>first1, <span class="sy2">++</span>first2<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        <span class="kw1">if</span> <span class="br0">&#40;</span><span class="sy2">*</span>first1 <span class="sy3">!</span><span class="sy1">=</span> <span class="sy2">*</span>first2<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+            <span class="kw1">return</span> std<span class="sy4">::</span><span class="me2">make_pair</span><span class="br0">&#40;</span>first1, first2<span class="br0">&#41;</span><span class="sy4">;</span>
+        <span class="br0">&#125;</span>
+    <span class="br0">&#125;</span>
+    <span class="kw1">return</span> std<span class="sy4">::</span><span class="me2">make_pair</span><span class="br0">&#40;</span>first1, first2<span class="br0">&#41;</span><span class="sy4">;</span>
+<span class="br0">&#125;</span></pre>
+<p>
+Second version:
+
+</p>
+<pre class="cpp code cpp"><span class="kw2">template</span><span class="sy1">&lt;</span><span class="kw2">class</span> InputIterator1, <span class="kw2">class</span> InputIterator2, <span class="kw2">class</span> BinaryPredicate<span class="sy1">&gt;</span>
+    std<span class="sy4">::</span><span class="me2">pair</span><span class="sy1">&lt;</span>InputIterator1, InputIterator2<span class="sy1">&gt;</span>
+        mismatch<span class="br0">&#40;</span>InputIterator1 first1, InputIterator1 last1, InputIterator2 first2, BinaryPredicate p<span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+        <span class="kw1">for</span> <span class="br0">&#40;</span><span class="sy4">;</span> first1 <span class="sy3">!</span><span class="sy1">=</span> last1<span class="sy4">;</span> <span class="sy2">++</span>first1, <span class="sy2">++</span>first2<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+            <span class="kw1">if</span> <span class="br0">&#40;</span><span class="sy3">!</span>p<span class="br0">&#40;</span><span class="sy2">*</span>first1, <span class="sy2">*</span>first2<span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+                <span class="kw1">return</span> std<span class="sy4">::</span><span class="me2">make_pair</span><span class="br0">&#40;</span>first1, first2<span class="br0">&#41;</span><span class="sy4">;</span>
+            <span class="br0">&#125;</span>
+        <span class="br0">&#125;</span>
+        <span class="kw1">return</span> std<span class="sy4">::</span><span class="me2">make_pair</span><span class="br0">&#40;</span>first1, first2<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="br0">&#125;</span></pre>
+</div>
+<!-- EDIT4 SECTION "Equivalent function" [1260-2185] -->
+<h3 class="sectionedit5"><a name="complexity" id="complexity">Complexity</a></h3>
+<div class="level3">
+
+<p>
+
+linear in the distance between <code>first1</code> and <code>last1</code>
+</p>
+
+</div>
+<!-- EDIT5 SECTION "Complexity" [2186-2262] -->
+<h3 class="sectionedit6"><a name="see_also" id="see_also">See also</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="equal" class="wikilink1" title="algorithm:equal">equal</a>, <a href="find" class="wikilink1" title="algorithm:find">find</a>, <a href="lexicographical_compare" class="wikilink1" title="algorithm:lexicographical_compare">lexicographical_compare</a>, <a href="search" class="wikilink1" title="algorithm:search">search</a>
+</p>
+
+</div>
+<!-- EDIT6 SECTION "See also" [2263-] --></div>
 </body>
 </html>

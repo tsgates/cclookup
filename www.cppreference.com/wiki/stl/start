@@ -4,103 +4,82 @@
  lang="en" dir="ltr">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>stl:start</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
+  <title>container:start</title>
+<meta name="generator" content="DokuWiki" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2009-06-10T23:42:29-0700" />
-<meta name="keywords" content="stl,start" />
+<meta name="date" content="2010-11-10T17:09:20-0800" />
+<meta name="keywords" content="container,start" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/stl/start?do=index" title="Index" />
+<link rel="start" href="../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/container/start?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
-<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=stl" />
-<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/stl/start" />
-<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/stl/start" />
-<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=container" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/container/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/container/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='container';var JSINFO = {"id":"container:start","namespace":"container"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
-<!-- TOC START -->
-<div class="toc">
-<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
-<div id="toc__inside">
 
-<ul class="toc">
-<li class="clear">
-
-<ul class="toc">
-<li class="level2"><div class="li"><span class="li"><a href="start#c_standard_template_library" class="toc">C++ Standard Template Library</a></span></div>
-<ul class="toc">
-<li class="level3"><div class="li"><span class="li"><a href="start#data_structures" class="toc">Data Structures</a></span></div></li>
-<li class="level3"><div class="li"><span class="li"><a href="start#algorithms" class="toc">Algorithms</a></span></div></li>
-<li class="level3"><div class="li"><span class="li"><a href="start#iterators" class="toc">Iterators</a></span></div></li>
-<li class="level3"><div class="li"><span class="li"><a href="start#function_objects" class="toc">Function Objects</a></span></div></li>
-<li class="level3"><div class="li"><span class="li"><a href="start#memory" class="toc">Memory</a></span></div></li>
-<li class="level3"><div class="li"><span class="li"><a href="start#utility" class="toc">Utility</a></span></div></li></ul>
-</li></ul>
-</li></ul>
-</div>
-</div>
-<!-- TOC END -->
-
-
-
-<h2><a name="c_standard_template_library" id="c_standard_template_library">C++ Standard Template Library</a></h2>
+<h2 class="sectionedit1"><a name="containers_library" id="containers_library">Containers library</a></h2>
 <div class="level2">
 
 <p>
 
-The C++ STL (Standard Template Library) is a generic collection of class
+The Containers library is a generic collection of class
 templates and algorithms that allow programmers to easily implement standard
-data structures like queues, lists, and stacks.
+data structures like queues, lists and stacks.
 </p>
-
-</div>
-<!-- SECTION "C++ Standard Template Library" [1-240] -->
-<h3><a name="data_structures" id="data_structures">Data Structures</a></h3>
-<div class="level3">
 
 <p>
-
-The C++ STL provides programmers with the following constructs, grouped into
-three categories:
+Three kinds of containers are provided:
 
 </p>
 <ul>
-<li class="level1"><div class="li"> Sequences</div>
+<li class="level1"><div class="li"> Sequence Containers</div>
 <ul>
-<li class="level2"><div class="li"> <a href="vector/start" class="wikilink1" title="stl:vector:start">C++ Vectors</a></div>
+<li class="level2"><div class="li"> <a href="http://www.cppreference.com/wiki/container/array/start" class="wikilink1" title="container:array:start"> array</a> (<a href="../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</div>
 </li>
-<li class="level2"><div class="li"> <a href="list/start" class="wikilink1" title="stl:list:start">C++ Lists</a></div>
+<li class="level2"><div class="li"> <a href="vector/start" class="wikilink1" title="container:vector:start"> vector</a></div>
 </li>
-<li class="level2"><div class="li"> <a href="deque/start" class="wikilink1" title="stl:deque:start">C++ Double-Ended Queues</a></div>
+<li class="level2"><div class="li"> <a href="deque/start" class="wikilink1" title="container:deque:start"> deque</a></div>
 </li>
-</ul>
+<li class="level2"><div class="li"> <a href="list/start" class="wikilink1" title="container:list:start"> list</a></div>
 </li>
-<li class="level1"><div class="li"> Container Adapters</div>
-<ul>
-<li class="level2"><div class="li"> <a href="stack/start" class="wikilink1" title="stl:stack:start">C++ Stacks</a></div>
-</li>
-<li class="level2"><div class="li"> <a href="queue/start" class="wikilink1" title="stl:queue:start">C++ Queues</a></div>
-</li>
-<li class="level2"><div class="li"> <a href="priority_queue/start" class="wikilink1" title="stl:priority_queue:start">C++ Priority Queues</a></div>
+<li class="level2"><div class="li"> <a href="http://www.cppreference.com/wiki/container/forward_list/start" class="wikilink1" title="container:forward_list:start"> forward_list</a> (<a href="../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</div>
 </li>
 </ul>
 </li>
 <li class="level1"><div class="li"> Associative Containers</div>
 <ul>
-<li class="level2"><div class="li"> <a href="bitset/start" class="wikilink1" title="stl:bitset:start">C++ Bitsets</a></div>
+<li class="level2"><div class="li"> <a href="set/start" class="wikilink1" title="container:set:start">set</a></div>
 </li>
-<li class="level2"><div class="li"> <a href="map/start" class="wikilink1" title="stl:map:start">C++ Maps</a></div>
+<li class="level2"><div class="li"> <a href="multiset/start" class="wikilink1" title="container:multiset:start">multiset</a></div>
 </li>
-<li class="level2"><div class="li"> <a href="multimap/start" class="wikilink1" title="stl:multimap:start">C++ Multimaps</a></div>
+<li class="level2"><div class="li"> <a href="map/start" class="wikilink1" title="container:map:start">map</a></div>
 </li>
-<li class="level2"><div class="li"> <a href="set/start" class="wikilink1" title="stl:set:start">C++ Sets</a></div>
+<li class="level2"><div class="li"> <a href="multimap/start" class="wikilink1" title="container:multimap:start">multimap</a></div>
 </li>
-<li class="level2"><div class="li"> <a href="multiset/start" class="wikilink1" title="stl:multiset:start">C++ Multisets</a></div>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Unordered Associative Containers</div>
+<ul>
+<li class="level2"><div class="li"> <a href="../container/unordered_set/start" class="wikilink1" title="container:unordered_set:start"> unordered_set</a> (<a href="../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</div>
+</li>
+<li class="level2"><div class="li"> <a href="../container/unordered_multiset/start" class="wikilink1" title="container:unordered_multiset:start"> unordered_multiset</a> (<a href="../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</div>
+</li>
+<li class="level2"><div class="li"> <a href="http://www.cppreference.com/wiki/container/unordered_map/start" class="wikilink2" title="container:unordered_map:start" rel="nofollow"> unordered_map</a> (<a href="../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</div>
+</li>
+<li class="level2"><div class="li"> <a href="http://www.cppreference.com/wiki/container/unordered_multimap/start" class="wikilink2" title="container:unordered_multimap:start" rel="nofollow"> unordered_multimap</a> (<a href="../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</div>
 </li>
 </ul>
 </li>
@@ -108,11 +87,43 @@ three categories:
 
 <p>
 
+<br/>
+
+In addition, the several container adaptors are provided.<br/>
+
+They can be considered containers, but don&#039;t meet all the requirements of them.
+
+</p>
+<ul>
+<li class="level1"><div class="li"> Container Adapters</div>
+<ul>
+<li class="level2"><div class="li"> <a href="stack/start" class="wikilink1" title="container:stack:start">stack</a></div>
+</li>
+<li class="level2"><div class="li"> <a href="queue/start" class="wikilink1" title="container:queue:start">queue</a></div>
+</li>
+<li class="level2"><div class="li"> <a href="priority_queue/start" class="wikilink1" title="container:priority_queue:start">priority queue</a></div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Others</div>
+<ul>
+<li class="level2"><div class="li"> <a href="bitset/start" class="wikilink1" title="stl:bitset:start">bitset</a></div>
+</li>
+<li class="level2"><div class="li"> <a href="../valarray/start" class="wikilink1" title="valarray:start">valarray</a></div>
+</li>
+</ul>
+</li>
+</ul>
+
+<p>
+
+<br/>
+
 The idea behind the C++ STL is that the hard part of using complex data
 structures has already been completed. If a programmer would like to use a
 stack of integers, all one has to do is use this code:
 </p>
-<pre class="c code c++" style="font-family:monospace;">  stack<span class="sy0">&lt;</span>int<span class="sy0">&gt;</span> myStack;</pre>
+<pre class="cpp code cpp">std<span class="sy4">::</span><span class="me2">stack</span><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> my_stack<span class="sy4">;</span></pre>
 <p>
 With minimal effort, one can now <a href="stack/push" class="wikilink1" title="stl:stack:push">push</a> and
 <a href="stack/pop" class="wikilink1" title="stl:stack:pop">pop</a> integers onto this stack.  Through the magic of C++
@@ -122,60 +133,176 @@ of the data in the stack.
 </p>
 
 </div>
-<!-- SECTION "Data Structures" [241-1350] -->
-<h3><a name="algorithms" id="algorithms">Algorithms</a></h3>
-<div class="level3">
+
+<h4><a name="member_function_table" id="member_function_table">Member function table</a></h4>
+<div class="level4">
 
 <p>
 
-In addition, the STL also provides a bunch of useful
-<a href="algorithm/start" class="wikilink1" title="stl:algorithm:start">algorithms</a> – such as <a href="algorithm/binary_search" class="wikilink1" title="stl:algorithm:binary_search">binary_search</a>,
-<a href="algorithm/sort" class="wikilink1" title="stl:algorithm:sort">sort</a>, and <a href="algorithm/for_each" class="wikilink1" title="stl:algorithm:for_each">for_each</a> – that can
-be  used on a variety of containers or data structures.
+<a href="../todo" class="wikilink1" title="todo">todo</a>
 </p>
 
 </div>
-<!-- SECTION "Algorithms" [1351-1621] -->
-<h3><a name="iterators" id="iterators">Iterators</a></h3>
-<div class="level3">
-
+<div class="level2">
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0" colspan="2"> </td><th class="col2 centeralign" colspan="5">  Sequence containers  </th><th class="col7 centeralign" colspan="4">  Associative containers  </th><th class="col11 centeralign" colspan="4">  Unordered associative containers  </th><th class="col15 centeralign" colspan="3">  Container adaptors  </th>
+	</tr>
+	<tr class="row1">
+		<th class="col0" colspan="2"> Headers </th><th class="col2 centeralign">  <sub><code>&lt;array&gt;</code></sub>  </th><th class="col3 centeralign">  <sub><code>&lt;vector&gt;</code></sub>  </th><th class="col4 centeralign">  <sub><code>&lt;deque&gt;</code></sub>  </th><th class="col5 centeralign">  <sub><code>&lt;forward_list&gt;</code></sub>  </th><th class="col6 centeralign">  <sub><code>&lt;list&gt;</code></sub>  </th><th class="col7 centeralign" colspan="2">  <sub><code>&lt;set&gt;</code></sub>  </th><th class="col9 centeralign" colspan="2">  <sub><code>&lt;map&gt;</code></sub>  </th><th class="col11 centeralign" colspan="2">  <sub><code>&lt;unordered_set&gt;</code></sub>  </th><th class="col13 centeralign" colspan="2">   <sub><code>&lt;unordered_map&gt;</code></sub>  </th><th class="col15"> <sub><code>&lt;stack&gt;</code></sub> </th><th class="col16 centeralign" colspan="2">  <sub><code>&lt;queue&gt;</code></sub>  </th>
+	</tr>
+	<tr class="row2">
+		<th class="col0" colspan="2"> </th><th class="col2 centeralign">  <a href="http://www.cppreference.com/wiki/container/array/start" class="wikilink1" title="container:array:start">**</a><br/>
+<sub>array *</sub>  </th><th class="col3 centeralign">  <a href="vector/start" class="wikilink1" title="container:vector:start"> **</a><br/>
+<sub>vector</sub>  </th><th class="col4 centeralign">  <a href="deque/start" class="wikilink1" title="container:deque:start">**</a><br/>
+<sub>deque</sub>  </th><th class="col5 centeralign">  <a href="http://www.cppreference.com/wiki/container/forward_list/start" class="wikilink1" title="container:forward_list:start">**</a><br/>
+<sub>forward_<br/>
+list *</sub>  </th><th class="col6 centeralign">  <a href="list/start" class="wikilink1" title="container:list:start">**</a><br/>
+<sub>list</sub>  </th><th class="col7 centeralign">  <a href="set/start" class="wikilink1" title="container:set:start">**</a><br/>
+<sub>set</sub>  </th><th class="col8 centeralign">  <a href="multiset/start" class="wikilink1" title="container:multiset:start">**</a><br/>
+<sub>multiset</sub>  </th><th class="col9 centeralign">  <a href="map/start" class="wikilink1" title="container:map:start">**</a><br/>
+<sub>map</sub>  </th><th class="col10 centeralign">  <a href="multimap/start" class="wikilink1" title="container:multimap:start">**</a><br/>
+<sub>multimap</sub>  </th><th class="col11 centeralign">  <a href="../container/unordered_set/start" class="wikilink1" title="container:unordered_set:start"> **</a><br/>
+<sub>unordered_<br/>
+set *</sub>  </th><th class="col12 centeralign">  <a href="../container/unordered_multiset/start" class="wikilink1" title="container:unordered_multiset:start">**</a><br/>
+<sub>unordered_<br/>
+multiset *</sub>  </th><th class="col13 centeralign">  <a href="http://www.cppreference.com/wiki/container/unordered_map/start" class="wikilink2" title="container:unordered_map:start" rel="nofollow">**</a><br/>
+<sub>unordered_<br/>
+map *</sub>  </th><th class="col14 centeralign">  <a href="http://www.cppreference.com/wiki/container/unordered_multimap/start" class="wikilink2" title="container:unordered_multimap:start" rel="nofollow">**</a><br/>
+<sub>unordered_<br/>
+multimap *</sub>  </th><th class="col15 centeralign">  <a href="stack/start" class="wikilink1" title="container:stack:start">**</a><br/>
+<sub>stack</sub>  </th><th class="col16 centeralign">  <a href="queue/start" class="wikilink1" title="container:queue:start">**</a><br/>
+<sub>queue</sub>  </th><th class="col17 centeralign">  <a href="priority_queue/start" class="wikilink1" title="container:priority_queue:start">**</a><br/>
+<sub>priority_<br/>
+queue</sub>  </th>
+	</tr>
+	<tr class="row3">
+		<th class="col0" rowspan="4"> iterators </th><td class="col1"> <sub>begin<br/>
+cbegin*</sub> </td><td class="col2"> <a href="http://www.cppreference.com/wiki/container/array/begin" class="wikilink1" title="container:array:begin">begin</a><br/>
+<a href="http://www.cppreference.com/wiki/container/array/begin" class="wikilink1" title="container:array:begin"> cbegin</a>* </td><td class="col3"> <a href="vector/begin" class="wikilink1" title="container:vector:begin">begin</a><br/>
+<a href="vector/begin" class="wikilink1" title="container:vector:begin"> cbegin</a>* </td><td class="col4"> <a href="deque/begin" class="wikilink1" title="container:deque:begin">begin</a><br/>
+<a href="deque/begin" class="wikilink1" title="container:deque:begin"> cbegin</a>* </td><td class="col5"> <a href="http://www.cppreference.com/wiki/container/forward_list/begin" class="wikilink1" title="container:forward_list:begin">begin</a><br/>
+<a href="http://www.cppreference.com/wiki/container/forward_list/begin" class="wikilink1" title="container:forward_list:begin"> cbegin</a>* </td><td class="col6"> <a href="list/begin" class="wikilink1" title="container:list:begin">begin</a><br/>
+<a href="list/begin" class="wikilink1" title="container:list:begin"> cbegin</a>* </td><td class="col7"> <a href="set/begin" class="wikilink1" title="container:set:begin">begin</a><br/>
+<a href="set/begin" class="wikilink1" title="container:set:begin"> cbegin</a>* </td><td class="col8"> <a href="multiset/begin" class="wikilink1" title="container:multiset:begin">begin</a><br/>
+<a href="multiset/begin" class="wikilink1" title="container:multiset:begin"> cbegin</a>* </td><td class="col9"> <a href="map/begin" class="wikilink1" title="container:map:begin">begin</a><br/>
+<a href="map/begin" class="wikilink1" title="container:map:begin"> cbegin</a>* </td><td class="col10"> <a href="multimap/begin" class="wikilink1" title="container:multimap:begin">begin</a><br/>
+<a href="multimap/begin" class="wikilink1" title="container:multimap:begin"> cbegin</a>* </td><td class="col11"> <a href="../container/unordered_set/begin" class="wikilink1" title="container:unordered_set:begin">begin</a><br/>
+<a href="../container/unordered_set/begin" class="wikilink1" title="container:unordered_set:begin"> cbegin</a>* </td><td class="col12"> <a href="../container/unordered_multiset/begin" class="wikilink1" title="container:unordered_multiset:begin">begin</a><br/>
+<a href="../container/unordered_multiset/begin" class="wikilink1" title="container:unordered_multiset:begin"> cbegin</a>* </td><td class="col13"> <a href="../container/unordered_map/begin" class="wikilink1" title="container:unordered_map:begin">begin</a><br/>
+<a href="../container/unordered_map/begin" class="wikilink1" title="container:unordered_map:begin"> cbegin</a>* </td><td class="col14"> <a href="../container/unordered_multimap/begin" class="wikilink1" title="container:unordered_multimap:begin">begin</a><br/>
+<a href="../container/unordered_multimap/begin" class="wikilink1" title="container:unordered_multimap:begin"> cbegin</a>* </td><td class="col15 centeralign">  -  </td><td class="col16 centeralign">  -  </td><td class="col17 centeralign">  -  </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> <sub>end<br/>
+cend*</sub> </td><td class="col1"> <a href="http://www.cppreference.com/wiki/container/array/end" class="wikilink1" title="container:array:end">end</a><br/>
+<a href="http://www.cppreference.com/wiki/container/array/end" class="wikilink1" title="container:array:end"> cend</a>* </td><td class="col2"> <a href="vector/end" class="wikilink1" title="container:vector:end">end</a><br/>
+<a href="vector/end" class="wikilink1" title="container:vector:end"> cend</a>* </td><td class="col3"> <a href="deque/end" class="wikilink1" title="container:deque:end">end</a><br/>
+<a href="deque/end" class="wikilink1" title="container:deque:end"> cend</a>* </td><td class="col4"> <a href="http://www.cppreference.com/wiki/container/forward_list/end" class="wikilink1" title="container:forward_list:end">end</a><br/>
+<a href="http://www.cppreference.com/wiki/container/forward_list/end" class="wikilink1" title="container:forward_list:end"> cend</a>* </td><td class="col5"> <a href="list/end" class="wikilink1" title="container:list:end">end</a><br/>
+<a href="list/end" class="wikilink1" title="container:list:end"> cend</a>* </td><td class="col6"> <a href="set/end" class="wikilink1" title="container:set:end">end</a><br/>
+<a href="set/end" class="wikilink1" title="container:set:end"> cend</a>* </td><td class="col7"> <a href="multiset/end" class="wikilink1" title="container:multiset:end">end</a><br/>
+<a href="multiset/end" class="wikilink1" title="container:multiset:end"> cend</a>* </td><td class="col8"> <a href="map/end" class="wikilink1" title="container:map:end">end</a><br/>
+<a href="map/end" class="wikilink1" title="container:map:end"> cend</a>* </td><td class="col9"> <a href="multimap/end" class="wikilink1" title="container:multimap:end">end</a><br/>
+<a href="multimap/end" class="wikilink1" title="container:multimap:end"> cend</a>* </td><td class="col10"> <a href="../container/unordered_set/end" class="wikilink1" title="container:unordered_set:end">end</a><br/>
+<a href="../container/unordered_set/end" class="wikilink1" title="container:unordered_set:end"> cend</a>* </td><td class="col11"> <a href="../container/unordered_multiset/end" class="wikilink1" title="container:unordered_multiset:end">end</a><br/>
+<a href="../container/unordered_multiset/end" class="wikilink1" title="container:unordered_multiset:end"> cend</a>* </td><td class="col12"> <a href="../container/unordered_map/end" class="wikilink1" title="container:unordered_map:end">end</a><br/>
+<a href="../container/unordered_map/end" class="wikilink1" title="container:unordered_map:end"> cend</a>* </td><td class="col13"> <a href="../container/unordered_multimap/end" class="wikilink1" title="container:unordered_multimap:end">end</a><br/>
+<a href="../container/unordered_multimap/end" class="wikilink1" title="container:unordered_multimap:end"> cend</a>* </td><td class="col14 centeralign">  -  </td><td class="col15 centeralign">  -  </td><td class="col16 centeralign">  -  </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> <sub>rbegin<br/>
+crbegin*</sub> </td><td class="col1"> <a href="http://www.cppreference.com/wiki/container/array/rbegin" class="wikilink1" title="container:array:rbegin">rbegin</a><br/>
+<a href="http://www.cppreference.com/wiki/container/array/rbegin" class="wikilink1" title="container:array:rbegin"> crbegin</a>* </td><td class="col2"> <a href="vector/rbegin" class="wikilink1" title="container:vector:rbegin">rbegin</a><br/>
+<a href="vector/rbegin" class="wikilink1" title="container:vector:rbegin"> crbegin</a>* </td><td class="col3"> <a href="deque/rbegin" class="wikilink1" title="container:deque:rbegin">rbegin</a><br/>
+<a href="deque/rbegin" class="wikilink1" title="container:deque:rbegin"> crbegin</a>* </td><td class="col4 centeralign">  -  </td><td class="col5"> <a href="list/rbegin" class="wikilink1" title="container:list:rbegin">rbegin</a><br/>
+<a href="list/rbegin" class="wikilink1" title="container:list:rbegin"> crbegin</a>* </td><td class="col6"> <a href="set/rbegin" class="wikilink1" title="container:set:rbegin">rbegin</a><br/>
+<a href="set/rbegin" class="wikilink1" title="container:set:rbegin"> crbegin</a>* </td><td class="col7"> <a href="multiset/rbegin" class="wikilink1" title="container:multiset:rbegin">rbegin</a><br/>
+<a href="multiset/rbegin" class="wikilink1" title="container:multiset:rbegin"> crbegin</a>* </td><td class="col8"> <a href="map/rbegin" class="wikilink1" title="container:map:rbegin">rbegin</a><br/>
+<a href="map/rbegin" class="wikilink1" title="container:map:rbegin"> crbegin</a>* </td><td class="col9"> <a href="multimap/rbegin" class="wikilink1" title="container:multimap:rbegin">rbegin</a><br/>
+<a href="multimap/rbegin" class="wikilink1" title="container:multimap:rbegin"> crbegin</a>* </td><td class="col10 centeralign">  -  </td><td class="col11 centeralign">  -  </td><td class="col12 centeralign">  -  </td><td class="col13 centeralign">  -  </td><td class="col14 centeralign">  -  </td><td class="col15 centeralign">  -  </td><td class="col16 centeralign">  -  </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> <sub>rend<br/>
+crend*</sub> </td><td class="col1"> <a href="http://www.cppreference.com/wiki/container/array/rend" class="wikilink1" title="container:array:rend">rend</a><br/>
+<a href="http://www.cppreference.com/wiki/container/array/rend" class="wikilink1" title="container:array:rend"> crend</a>* </td><td class="col2"> <a href="vector/rend" class="wikilink1" title="container:vector:rend">rend</a><br/>
+<a href="vector/rend" class="wikilink1" title="container:vector:rend"> crend</a>* </td><td class="col3"> <a href="deque/rend" class="wikilink1" title="container:deque:rend">rend</a><br/>
+<a href="deque/rend" class="wikilink1" title="container:deque:rend"> crend</a>* </td><td class="col4 centeralign">  -  </td><td class="col5"> <a href="list/rend" class="wikilink1" title="container:list:rend">rend</a><br/>
+<a href="list/rend" class="wikilink1" title="container:list:rend"> crend</a>* </td><td class="col6"> <a href="set/rend" class="wikilink1" title="container:set:rend">rend</a><br/>
+<a href="set/rend" class="wikilink1" title="container:set:rend"> crend</a>* </td><td class="col7"> <a href="multiset/rend" class="wikilink1" title="container:multiset:rend">rend</a><br/>
+<a href="multiset/rend" class="wikilink1" title="container:multiset:rend"> crend</a>* </td><td class="col8"> <a href="map/rend" class="wikilink1" title="container:map:rend">rend</a><br/>
+<a href="map/rend" class="wikilink1" title="container:map:rend"> crend</a>* </td><td class="col9"> <a href="multimap/rend" class="wikilink1" title="container:multimap:rend">rend</a><br/>
+<a href="multimap/rend" class="wikilink1" title="container:multimap:rend"> crend</a>* </td><td class="col10 centeralign">  -  </td><td class="col11 centeralign">  -  </td><td class="col12 centeralign">  -  </td><td class="col13 centeralign">  -  </td><td class="col14 centeralign">  -  </td><td class="col15 centeralign">  -  </td><td class="col16 centeralign">  -  </td>
+	</tr>
+	<tr class="row7">
+		<th class="col0" rowspan="4"> element<br/>
+access </th><td class="col1"> <sub>at</sub> </td><td class="col2"> </td><td class="col3"> </td><td class="col4"> </td><td class="col5"> </td><td class="col6"> </td><td class="col7"> </td><td class="col8"> </td><td class="col9"> </td><td class="col10"> </td><td class="col11"> </td><td class="col12"> </td><td class="col13"> </td><td class="col14"> </td><td class="col15"> </td><td class="col16"> </td><td class="col17"> </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"> <sub>operator[]</sub> </td><td class="col1"> </td><td class="col2"> </td><td class="col3"> </td><td class="col4"> </td><td class="col5"> </td><td class="col6"> </td><td class="col7"> </td><td class="col8"> </td><td class="col9"> </td><td class="col10"> </td><td class="col11"> </td><td class="col12"> </td><td class="col13"> </td><td class="col14"> </td><td class="col15"> </td><td class="col16"> </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"> <sub>front</sub> </td><td class="col1"> <a href="array/front" class="wikilink1" title="container:array:front">front</a> </td><td class="col2"> <a href="vector/front" class="wikilink1" title="container:vector:front">front</a> </td><td class="col3"> <a href="deque/front" class="wikilink1" title="container:deque:front">front</a> </td><td class="col4"> <a href="forward_list/front" class="wikilink1" title="container:forward_list:front">front</a> </td><td class="col5"> <a href="list/front" class="wikilink1" title="container:list:front">front</a> </td><td class="col6 centeralign">  -  </td><td class="col7 centeralign">  -  </td><td class="col8 centeralign">  -  </td><td class="col9 centeralign">  -  </td><td class="col10 centeralign">  -  </td><td class="col11 centeralign">  -  </td><td class="col12 centeralign">  -  </td><td class="col13 centeralign">  -  </td><td class="col14"> </td><td class="col15"> </td><td class="col16"> </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"> <sub>back</sub> </td><td class="col1"> <a href="array/back" class="wikilink1" title="container:array:back">back</a> </td><td class="col2"> <a href="vector/back" class="wikilink1" title="container:vector:back">back</a> </td><td class="col3"> <a href="deque/back" class="wikilink1" title="container:deque:back">back</a> </td><td class="col4 centeralign">  -  </td><td class="col5"> <a href="list/back" class="wikilink1" title="container:list:back">back</a> </td><td class="col6 centeralign">  -  </td><td class="col7 centeralign">  -  </td><td class="col8 centeralign">  -  </td><td class="col9 centeralign">  -  </td><td class="col10 centeralign">  -  </td><td class="col11 centeralign">  -  </td><td class="col12 centeralign">  -  </td><td class="col13 centeralign">  -  </td><td class="col14"> </td><td class="col15"> </td><td class="col16"> </td>
+	</tr>
+	<tr class="row11">
+		<th class="col0" rowspan="7"> capacity </th><td class="col1"> <sub>empty</sub> </td><td class="col2"> <a href="http://www.cppreference.com/wiki/container/array/empty" class="wikilink1" title="container:array:empty">empty</a> </td><td class="col3"> <a href="vector/empty" class="wikilink1" title="container:vector:empty">empty</a> </td><td class="col4"> <a href="deque/empty" class="wikilink1" title="container:deque:empty">empty</a> </td><td class="col5"> <a href="http://www.cppreference.com/wiki/container/forward_list/empty" class="wikilink1" title="container:forward_list:empty">empty</a> </td><td class="col6"> <a href="list/empty" class="wikilink1" title="container:list:empty">empty</a> </td><td class="col7"> <a href="set/empty" class="wikilink1" title="container:set:empty">empty</a> </td><td class="col8"> <a href="multiset/empty" class="wikilink1" title="container:multiset:empty">empty</a> </td><td class="col9"> <a href="map/empty" class="wikilink1" title="container:map:empty">empty</a> </td><td class="col10"> <a href="multimap/empty" class="wikilink1" title="container:multimap:empty">empty</a> </td><td class="col11"> <a href="../container/unordered_set/empty" class="wikilink1" title="container:unordered_set:empty">empty</a> </td><td class="col12"> <a href="../container/unordered_multiset/empty" class="wikilink1" title="container:unordered_multiset:empty">empty</a> </td><td class="col13"> <a href="../container/unordered_map/empty" class="wikilink1" title="container:unordered_map:empty">empty</a> </td><td class="col14"> <a href="../container/unordered_multimap/empty" class="wikilink1" title="container:unordered_multimap:empty">empty</a> </td><td class="col15"> <a href="stack/empty" class="wikilink1" title="container:stack:empty">empty</a> </td><td class="col16"> <a href="queue/empty" class="wikilink1" title="container:queue:empty">empty</a> </td><td class="col17"> <a href="priority_queue/empty" class="wikilink1" title="container:priority_queue:empty">empty</a> </td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"> <sub>size</sub> </td><td class="col1"> <a href="http://www.cppreference.com/wiki/container/array/size" class="wikilink1" title="container:array:size">size</a> </td><td class="col2"> <a href="vector/size" class="wikilink1" title="container:vector:size">size</a> </td><td class="col3"> <a href="deque/size" class="wikilink1" title="container:deque:size">size</a> </td><td class="col4"> <a href="http://www.cppreference.com/wiki/container/forward_list/size" class="wikilink1" title="container:forward_list:size">size</a> </td><td class="col5"> <a href="list/size" class="wikilink1" title="container:list:size">size</a> </td><td class="col6"> <a href="set/size" class="wikilink1" title="container:set:size">size</a> </td><td class="col7"> <a href="multiset/size" class="wikilink1" title="container:multiset:size">size</a> </td><td class="col8"> <a href="map/size" class="wikilink1" title="container:map:size">size</a> </td><td class="col9"> <a href="multimap/size" class="wikilink1" title="container:multimap:size">size</a> </td><td class="col10"> <a href="../container/unordered_set/size" class="wikilink1" title="container:unordered_set:size">size</a> </td><td class="col11"> <a href="../container/unordered_multiset/size" class="wikilink1" title="container:unordered_multiset:size">size</a> </td><td class="col12"> <a href="../container/unordered_map/size" class="wikilink1" title="container:unordered_map:size">size</a> </td><td class="col13"> <a href="../container/unordered_multimap/size" class="wikilink1" title="container:unordered_multimap:size">size</a> </td><td class="col14"> <a href="stack/size" class="wikilink1" title="container:stack:size">size</a> </td><td class="col15"> <a href="queue/size" class="wikilink1" title="container:queue:size">size</a> </td><td class="col16"> <a href="priority_queue/size" class="wikilink1" title="container:priority_queue:size">size</a> </td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"> <sub>max_size</sub> </td><td class="col1"> <a href="http://www.cppreference.com/wiki/container/array/max_size" class="wikilink1" title="container:array:max_size">max_size</a> </td><td class="col2"> <a href="vector/max_size" class="wikilink1" title="container:vector:max_size">max_size</a> </td><td class="col3"> <a href="deque/max_size" class="wikilink1" title="container:deque:max_size">max_size</a> </td><td class="col4"> <a href="http://www.cppreference.com/wiki/container/forward_list/max_size" class="wikilink1" title="container:forward_list:max_size">max_size</a> </td><td class="col5"> <a href="list/max_size" class="wikilink1" title="container:list:max_size">max_size</a> </td><td class="col6"> <a href="set/max_size" class="wikilink1" title="container:set:max_size">max_size</a> </td><td class="col7"> <a href="multiset/max_size" class="wikilink1" title="container:multiset:max_size">max_size</a> </td><td class="col8"> <a href="map/max_size" class="wikilink1" title="container:map:max_size">max_size</a> </td><td class="col9"> <a href="multimap/max_size" class="wikilink1" title="container:multimap:max_size">max_size</a> </td><td class="col10"> <a href="../container/unordered_set/max_size" class="wikilink1" title="container:unordered_set:max_size">max_size</a> </td><td class="col11"> <a href="../container/unordered_multiset/max_size" class="wikilink1" title="container:unordered_multiset:max_size">max_size</a> </td><td class="col12"> <a href="../container/unordered_map/max_size" class="wikilink1" title="container:unordered_map:max_size">max_size</a> </td><td class="col13"> <a href="../container/unordered_multimap/max_size" class="wikilink1" title="container:unordered_multimap:max_size">max_size</a> </td><td class="col14 centeralign">  -  </td><td class="col15 centeralign">  -  </td><td class="col16 centeralign">  -  </td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"> <sub>resize</sub> </td><td class="col1 centeralign">  -  </td><td class="col2"> </td><td class="col3"> </td><td class="col4"> </td><td class="col5"> </td><td class="col6"> </td><td class="col7"> </td><td class="col8"> </td><td class="col9"> </td><td class="col10"> </td><td class="col11"> </td><td class="col12"> </td><td class="col13"> </td><td class="col14"> </td><td class="col15"> </td><td class="col16"> </td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"> <sub>capacity</sub> </td><td class="col1 centeralign">  -  </td><td class="col2"> </td><td class="col3"> </td><td class="col4"> </td><td class="col5"> </td><td class="col6"> </td><td class="col7"> </td><td class="col8"> </td><td class="col9"> </td><td class="col10"> </td><td class="col11"> </td><td class="col12"> </td><td class="col13"> </td><td class="col14"> </td><td class="col15"> </td><td class="col16"> </td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"> <sub>reserve</sub> </td><td class="col1 centeralign">  -  </td><td class="col2"> </td><td class="col3"> </td><td class="col4"> </td><td class="col5"> </td><td class="col6"> </td><td class="col7"> </td><td class="col8"> </td><td class="col9"> </td><td class="col10"> </td><td class="col11"> </td><td class="col12"> </td><td class="col13"> </td><td class="col14"> </td><td class="col15"> </td><td class="col16"> </td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"> <sub>shrink_to_fit*</sub> </td><td class="col1 centeralign">  -  </td><td class="col2"> <a href="http://www.cppreference.com/wiki/container/vector/shrink_to_fit" class="wikilink1" title="container:vector:shrink_to_fit">shrink_to_fit</a> </td><td class="col3"> <a href="http://www.cppreference.com/wiki/container/deque/shrink_to_fit" class="wikilink1" title="container:deque:shrink_to_fit">shrink_to_fit</a> </td><td class="col4 centeralign">  -  </td><td class="col5 centeralign">  -  </td><td class="col6 centeralign">  -  </td><td class="col7 centeralign">  -  </td><td class="col8 centeralign">  -  </td><td class="col9 centeralign">  -  </td><td class="col10 centeralign">  -  </td><td class="col11 centeralign">  -  </td><td class="col12 centeralign">  -  </td><td class="col13 centeralign">  -  </td><td class="col14 centeralign">  -  </td><td class="col15 centeralign">  -  </td><td class="col16 centeralign">  -  </td>
+	</tr>
+	<tr class="row18">
+		<th class="col0" rowspan="8"> modifiers </th><td class="col1"> <sub>clear</sub> </td><td class="col2 centeralign">  -  </td><td class="col3"> </td><td class="col4"> </td><td class="col5"> </td><td class="col6"> </td><td class="col7"> </td><td class="col8"> </td><td class="col9"> </td><td class="col10"> </td><td class="col11"> </td><td class="col12"> </td><td class="col13"> </td><td class="col14"> </td><td class="col15"> </td><td class="col16"> </td><td class="col17"> </td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"> <sub>insert</sub> </td><td class="col1 centeralign">  -  </td><td class="col2"> </td><td class="col3"> </td><td class="col4"> </td><td class="col5"> </td><td class="col6"> </td><td class="col7"> </td><td class="col8"> </td><td class="col9"> </td><td class="col10"> </td><td class="col11"> </td><td class="col12"> </td><td class="col13"> </td><td class="col14"> </td><td class="col15"> </td><td class="col16"> </td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"> <sub>erase</sub> </td><td class="col1 centeralign">  -  </td><td class="col2"> </td><td class="col3"> </td><td class="col4"> </td><td class="col5"> </td><td class="col6"> </td><td class="col7"> </td><td class="col8"> </td><td class="col9"> </td><td class="col10"> </td><td class="col11"> </td><td class="col12"> </td><td class="col13"> </td><td class="col14"> </td><td class="col15"> </td><td class="col16"> </td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"> <sub>push_front</sub> </td><td class="col1 centeralign">  -  </td><td class="col2 centeralign">  -  </td><td class="col3"> <a href="deque/push_front" class="wikilink1" title="container:deque:push_front">push_front</a> </td><td class="col4"> <a href="http://www.cppreference.com/wiki/container/forward_list/push_front" class="wikilink1" title="container:forward_list:push_front">push_front</a> </td><td class="col5"> <a href="list/push_front" class="wikilink1" title="container:list:push_front">push_front</a> </td><td class="col6 centeralign">  -  </td><td class="col7 centeralign">  -  </td><td class="col8 centeralign">  -  </td><td class="col9 centeralign">  -  </td><td class="col10 centeralign">  -  </td><td class="col11 centeralign">  -  </td><td class="col12 centeralign">  -  </td><td class="col13 centeralign">  -  </td><td class="col14"> </td><td class="col15"> </td><td class="col16"> </td>
+	</tr>
+	<tr class="row22">
+		<td class="col0"> <sub>pop_front</sub> </td><td class="col1 centeralign">  -  </td><td class="col2 centeralign">  -  </td><td class="col3"> <a href="deque/pop_front" class="wikilink1" title="container:deque:pop_front">pop_front</a> </td><td class="col4"> <a href="http://www.cppreference.com/wiki/container/forward_list/pop_front" class="wikilink1" title="container:forward_list:pop_front">pop_front</a> </td><td class="col5"> <a href="list/pop_front" class="wikilink1" title="container:list:pop_front">pop_front</a> </td><td class="col6 centeralign">  -  </td><td class="col7 centeralign">  -  </td><td class="col8 centeralign">  -  </td><td class="col9 centeralign">  -  </td><td class="col10 centeralign">  -  </td><td class="col11 centeralign">  -  </td><td class="col12 centeralign">  -  </td><td class="col13 centeralign">  -  </td><td class="col14"> </td><td class="col15"> </td><td class="col16"> </td>
+	</tr>
+	<tr class="row23">
+		<td class="col0"> <sub>push_back</sub> </td><td class="col1 centeralign">  -  </td><td class="col2"> <a href="vector/push_back" class="wikilink1" title="container:vector:push_back">push_back</a> </td><td class="col3"> <a href="deque/push_back" class="wikilink1" title="container:deque:push_back">push_back</a> </td><td class="col4"> - </td><td class="col5"> <a href="list/push_back" class="wikilink1" title="container:list:push_back">push_back</a> </td><td class="col6 centeralign">  -  </td><td class="col7 centeralign">  -  </td><td class="col8 centeralign">  -  </td><td class="col9 centeralign">  -  </td><td class="col10 centeralign">  -  </td><td class="col11 centeralign">  -  </td><td class="col12 centeralign">  -  </td><td class="col13 centeralign">  -  </td><td class="col14"> </td><td class="col15"> </td><td class="col16"> </td>
+	</tr>
+	<tr class="row24">
+		<td class="col0"> <sub>pop_back</sub> </td><td class="col1 centeralign">  -  </td><td class="col2"> <a href="vector/pop_back" class="wikilink1" title="container:vector:pop_back">pop_back</a> </td><td class="col3"> <a href="deque/pop_back" class="wikilink1" title="container:deque:pop_back">pop_back</a> </td><td class="col4"> - </td><td class="col5"> <a href="list/pop_back" class="wikilink1" title="container:list:pop_back">pop_back</a> </td><td class="col6 centeralign">  -  </td><td class="col7 centeralign">  -  </td><td class="col8 centeralign">  -  </td><td class="col9 centeralign">  -  </td><td class="col10 centeralign">  -  </td><td class="col11 centeralign">  -  </td><td class="col12 centeralign">  -  </td><td class="col13 centeralign">  -  </td><td class="col14"> </td><td class="col15"> </td><td class="col16"> </td>
+	</tr>
+	<tr class="row25">
+		<td class="col0"> <sub>swap</sub> </td><td class="col1"> <a href="http://www.cppreference.com/wiki/container/array/swap" class="wikilink1" title="container:array:swap">swap</a> </td><td class="col2"> <a href="vector/swap" class="wikilink1" title="container:vector:swap">swap</a> </td><td class="col3"> <a href="deque/swap" class="wikilink1" title="container:deque:swap">swap</a> </td><td class="col4"> <a href="http://www.cppreference.com/wiki/container/forward_list/swap" class="wikilink1" title="container:forward_list:swap">swap</a> </td><td class="col5"> <a href="list/swap" class="wikilink1" title="container:list:swap">swap</a> </td><td class="col6"> <a href="set/swap" class="wikilink1" title="container:set:swap">swap</a> </td><td class="col7"> <a href="multiset/swap" class="wikilink1" title="container:multiset:swap">swap</a> </td><td class="col8"> <a href="map/swap" class="wikilink1" title="container:map:swap">swap</a> </td><td class="col9"> <a href="multimap/swap" class="wikilink1" title="container:multimap:swap">swap</a> </td><td class="col10"> <a href="../container/unordered_set/swap" class="wikilink1" title="container:unordered_set:swap">swap</a> </td><td class="col11"> <a href="../container/unordered_multiset/swap" class="wikilink1" title="container:unordered_multiset:swap">swap</a> </td><td class="col12"> <a href="../container/unordered_map/swap" class="wikilink1" title="container:unordered_map:swap">swap</a> </td><td class="col13"> <a href="../container/unordered_multimap/swap" class="wikilink1" title="container:unordered_multimap:swap">swap</a> </td><td class="col14"> <a href="http://www.cppreference.com/wiki/container/stack/swap" class="wikilink1" title="container:stack:swap">swap</a>* </td><td class="col15"> <a href="http://www.cppreference.com/wiki/container/queue/swap" class="wikilink1" title="container:queue:swap">swap</a>* </td><td class="col16"> <a href="http://www.cppreference.com/wiki/container/priority_queue/swap" class="wikilink1" title="container:priority_queue:swap">swap</a>* </td>
+	</tr>
+	<tr class="row26">
+		<th class="col0"> allocator </th><td class="col1"> <sub>get_allocator</sub> </td><td class="col2 centeralign">  -  </td><td class="col3"> <a href="http://www.cppreference.com/wiki/container/vector/get_allocator" class="wikilink1" title="container:vector:get_allocator">get_allocator</a> </td><td class="col4"> <a href="http://www.cppreference.com/wiki/container/deque/get_allocator" class="wikilink1" title="container:deque:get_allocator">get_allocator</a> </td><td class="col5"> <a href="http://www.cppreference.com/wiki/container/forward_list/get_allocator" class="wikilink1" title="container:forward_list:get_allocator">get_allocator</a> </td><td class="col6"> <a href="http://www.cppreference.com/wiki/container/list/get_allocator" class="wikilink1" title="container:list:get_allocator">get_allocator</a> </td><td class="col7"> <a href="http://www.cppreference.com/wiki/container/set/get_allocator" class="wikilink1" title="container:set:get_allocator">get_allocator</a> </td><td class="col8"> <a href="http://www.cppreference.com/wiki/container/multiset/get_allocator" class="wikilink1" title="container:multiset:get_allocator">get_allocator</a> </td><td class="col9"> <a href="http://www.cppreference.com/wiki/container/map/get_allocator" class="wikilink1" title="container:map:get_allocator">get_allocator</a> </td><td class="col10"> <a href="http://www.cppreference.com/wiki/container/multimap/get_allocator" class="wikilink1" title="container:multimap:get_allocator">get_allocator</a> </td><td class="col11"> <a href="../container/unordered_set/get_allocator" class="wikilink1" title="container:unordered_set:get_allocator">get_allocator</a> </td><td class="col12"> <a href="../container/unordered_multiset/get_allocator" class="wikilink1" title="container:unordered_multiset:get_allocator">get_allocator</a> </td><td class="col13"> <a href="../container/unordered_map/get_allocator" class="wikilink1" title="container:unordered_map:get_allocator">get_allocator</a> </td><td class="col14"> <a href="../container/unordered_multimap/get_allocator" class="wikilink1" title="container:unordered_multimap:get_allocator">get_allocator</a> </td><td class="col15"> </td><td class="col16"> </td><td class="col17"> </td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [2002-9532] -->
 <p>
-
-<a href="iterators" class="wikilink1" title="stl:iterators">C++ Iterators</a> provide a generic way of iterating over the STL data structures.
-</p>
-
-</div>
-<!-- SECTION "Iterators" [1622-1725] -->
-<h3><a name="function_objects" id="function_objects">Function Objects</a></h3>
-<div class="level3">
-
-<p>
-
-The <a href="functional/start" class="wikilink1" title="stl:functional:start">&lt;functional&gt; header file</a> defines methods related to the creation of function objects.
-</p>
-
-</div>
-<!-- SECTION "Function Objects" [1726-1862] -->
-<h3><a name="memory" id="memory">Memory</a></h3>
-<div class="level3">
-
-<p>
-
-The <a href="memory/start" class="wikilink1" title="stl:memory:start">&lt;memory&gt; header file</a> provides simple memory management structures like <a href="memory/auto_ptr" class="wikilink1" title="stl:memory:auto_ptr">auto_ptr</a>.
-</p>
-
-</div>
-<!-- SECTION "Memory" [1863-1995] -->
-<h3><a name="utility" id="utility">Utility</a></h3>
-<div class="level3">
-
-<p>
-
-There are several generic utility methods like <a href="utility/make_pair" class="wikilink1" title="stl:utility:make_pair">make_pair</a> in the <a href="utility/start" class="wikilink1" title="stl:utility:start">&lt;utility&gt; header file</a>.
+<strong>*</strong> - <a href="../c_0x" class="wikilink1" title="c_0x">C++0x</a> features
 
 </p>
 
 </div>
-<!-- SECTION "Utility" [1996-] --></div>
+</div>
 </body>
 </html>

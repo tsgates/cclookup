@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cz"
+ lang="cz" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>cz:io:c:fclose</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:28-0700" />
+<meta name="keywords" content="cz,io,c,fclose" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/cz/io/c/fclose?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=cz:io:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/cz/io/c/fclose" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/cz/io/c/fclose" />
+<link rel="canonical" href="fclose" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='cz:io:c';var JSINFO = {"id":"cz:io:c:fclose","namespace":"cz:io:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="fclose" id="fclose">fclose</a></h2>
+<div class="level2">
+
+<p>
+Syntaxe:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cstdio&gt;</span>
+    <span class="kw4">int</span> <span class="kw3">fclose</span><span class="br0">&#40;</span> <span class="kw4">FILE</span> <span class="sy2">*</span>stream <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+
+Funkce fclose() uzavře daný souborový proud a uvolní paměť všech bufferů spojených s proudem.
+fclose() vrací 0 při úspěchu a <acronym title="End of file">EOF</acronym> v ostatních případech.
+</p>
+
+<p>
+Příbuzná témata: <a href="http://www.cppreference.com/wiki/cz/io/c/fflush" class="wikilink2" title="cz:io:c:fflush" rel="nofollow">fflush</a>, <a href="http://www.cppreference.com/wiki/cz/io/c/fopen" class="wikilink2" title="cz:io:c:fopen" rel="nofollow">fopen</a>, <a href="http://www.cppreference.com/wiki/cz/io/c/freopen" class="wikilink2" title="cz:io:c:freopen" rel="nofollow">freopen</a>, <a href="http://www.cppreference.com/wiki/cz/io/c/setbuf" class="wikilink2" title="cz:io:c:setbuf" rel="nofollow">setbuf</a>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "fclose" [3-] --></div>
+</body>
+</html>

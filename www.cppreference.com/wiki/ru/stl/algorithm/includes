@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru"
+ lang="ru" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>ru:algorithm:includes</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:13-0700" />
+<meta name="keywords" content="ru,algorithm,includes" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/ru/algorithm/includes?do=index" title="Все страницы" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=ru:algorithm" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/ru/algorithm/includes" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/ru/algorithm/includes" />
+<link rel="canonical" href="includes" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='ru:algorithm';var JSINFO = {"id":"ru:algorithm:includes","namespace":"ru:algorithm"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="includes" id="includes">includes</a></h2>
+<div class="level2">
+
+<p>
+Синтаксис:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;algorithm&gt;</span>
+&nbsp;
+    <span class="kw2">template</span><span class="sy1">&lt;</span> <span class="kw2">typename</span> InIterA, <span class="kw2">typename</span> InIterB <span class="sy1">&gt;</span>
+    <span class="kw4">bool</span> includes<span class="br0">&#40;</span> InIterA start1, InIterA end1, InIterB start2, InIterB end2 <span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+    <span class="kw2">template</span><span class="sy1">&lt;</span> <span class="kw2">typename</span> InIterA, <span class="kw2">typename</span> InIterB, <span class="kw2">typename</span> StrictWeakOrdering <span class="sy1">&gt;</span>
+    <span class="kw4">bool</span> includes<span class="br0">&#40;</span> InIterA start1, InIterA end1, InIterB start2, InIterB end2, StrictWeakOrdering cmp <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Алгоритм includes() возвращает <code>true</code>, если каждый элемент из диапазона [start2,end2) есть в диапазоне [start1,end1). Оба диапазона должны быть отсортированы по возрастанию. Не существует требования, чтобы каждый элемент из диапазона [start1,end1) или [start2,end2) был уникальным (встречался только один раз). Если какой-либо элемент встречается <em>n</em> раз в диапазоне [start2,end2), то в диапазоне [start1,end1) он должен встречаться тоже <em>n</em> раз.
+</p>
+
+<p>
+По умолчанию для сравнения элементов используется оператор &lt;. Если точность мала, используется объект-функция cmp.
+</p>
+
+<p>
+includes() работает за <a href="../../../complexity" class="wikilink1" title="complexity">линейное время</a>.
+</p>
+<pre class="cpp code cpp"> <span class="co2">#include &lt;iostream&gt;</span>
+ <span class="co2">#include &lt;vector&gt;</span>
+ <span class="co2">#include &lt;list&gt;</span>
+ <span class="co2">#include &lt;algorithm&gt;</span>
+&nbsp;
+ <span class="kw4">int</span> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+ <span class="br0">&#123;</span>
+   std<span class="sy4">::</span><span class="me2">vector</span><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> vec<span class="sy4">;</span>
+   <span class="kw1">for</span> <span class="br0">&#40;</span><span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="sy4">;</span> <span class="sy2">++</span>i<span class="br0">&#41;</span>
+     vec.<span class="me1">push_back</span><span class="br0">&#40;</span>i<span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+   std<span class="sy4">::</span><span class="me2">list</span><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> lst<span class="sy4">;</span>
+   lst.<span class="me1">push_back</span><span class="br0">&#40;</span><span class="nu0">2</span><span class="br0">&#41;</span><span class="sy4">;</span>
+   lst.<span class="me1">push_back</span><span class="br0">&#40;</span><span class="nu0">4</span><span class="br0">&#41;</span><span class="sy4">;</span>
+   lst.<span class="me1">push_back</span><span class="br0">&#40;</span><span class="nu0">6</span><span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+   <span class="kw1">if</span> <span class="br0">&#40;</span>std<span class="sy4">::</span><span class="me2">includes</span><span class="br0">&#40;</span>vec.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, vec.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, lst.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, lst.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+     std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;lst is a subset of vec.&quot;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+   <span class="kw1">else</span>
+     std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;lst is NOT a subset of vec.&quot;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+&nbsp;
+   <span class="kw1">return</span> <span class="nu0">0</span><span class="sy4">;</span>
+ <span class="br0">&#125;</span></pre>
+<p>
+Смотрите также: <a href="set_difference" class="wikilink1" title="ru:algorithm:set_difference">set_difference</a>, <a href="set_intersection" class="wikilink1" title="ru:algorithm:set_intersection">set_intersection</a>, <a href="set_symmetric_difference" class="wikilink1" title="ru:algorithm:set_symmetric_difference">set_symmetric_difference</a>, <a href="set_union" class="wikilink1" title="ru:algorithm:set_union">set_union</a>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "includes" [3-] --></div>
+</body>
+</html>

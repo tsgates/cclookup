@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="br-pt"
+ lang="br-pt" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>br-pt:keywords:if</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:03-0700" />
+<meta name="keywords" content="br-pt,keywords,if" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/br-pt/keywords/if?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=br-pt:keywords" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/br-pt/keywords/if" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/br-pt/keywords/if" />
+<link rel="canonical" href="if" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='br-pt:keywords';var JSINFO = {"id":"br-pt:keywords:if","namespace":"br-pt:keywords"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="if" id="if">if</a></h2>
+<div class="level2">
+
+<p>
+Syntax:
+</p>
+<pre class="cpp code cpp">    <span class="kw1">if</span><span class="br0">&#40;</span> conditionA <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+      statement<span class="sy2">-</span>listA<span class="sy4">;</span>
+    <span class="br0">&#125;</span>
+    <span class="kw1">else</span> <span class="kw1">if</span><span class="br0">&#40;</span> conditionB <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+      statement<span class="sy2">-</span>listB<span class="sy4">;</span>
+    <span class="br0">&#125;</span>
+    ...
+    <span class="kw1">else</span> <span class="br0">&#123;</span>
+      statement<span class="sy2">-</span>listN<span class="sy4">;</span>
+    <span class="br0">&#125;</span></pre>
+<p>
+
+A construção if é um mecanismo de ramificação que permite que o código a ser executado
+sob diferentes condições. As condições são avaliadas em ordem, e os
+lista de instrução da primeira condição para avaliar a verdade é executado. Se não
+condições de avaliar a verdade e uma declaração é mais presente, então o
+lista de instruções dentro do bloco else será executado. Todos os blocos mais
+são opcionais.
+</p>
+
+<p>
+Tópico relacionado: <a href="else" class="wikilink1" title="br-pt:keywords:else">else</a>, <a href="http://www.cppreference.com/wiki/br-pt/keywords/for" class="wikilink2" title="br-pt:keywords:for" rel="nofollow">for</a>, <a href="http://www.cppreference.com/wiki/br-pt/keywords/switch" class="wikilink2" title="br-pt:keywords:switch" rel="nofollow">switch</a>, <a href="http://www.cppreference.com/wiki/br-pt/keywords/while" class="wikilink2" title="br-pt:keywords:while" rel="nofollow">while</a>
+
+</p>
+
+</div>
+</div>
+</body>
+</html>

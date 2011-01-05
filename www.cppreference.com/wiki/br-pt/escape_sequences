@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="br-pt"
+ lang="br-pt" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>br-pt:escape_sequences</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:04-0700" />
+<meta name="keywords" content="br-pt,escape_sequences" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/br-pt/escape_sequences?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=br-pt" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/br-pt/escape_sequences" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/br-pt/escape_sequences" />
+<link rel="canonical" href="escape_sequences" />
+<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='br-pt';var JSINFO = {"id":"br-pt:escape_sequences","namespace":"br-pt"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="constantes_para_sequencias_de_escape" id="constantes_para_sequencias_de_escape">Constantes para sequências de escape</a></h2>
+<div class="level2">
+
+<p>
+
+As seguintes sequências de escape podem ser usadas para definir certos caractéres especiais dentro de strings:
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<th class="col0 centeralign">  Sequência de Escape  </th><th class="col1 centeralign">  Descrição  </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">\&#039;</td><td class="col1">Apóstrofo</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">\”</td><td class="col1">Aspas</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">\\</td><td class="col1">Contrabarra</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">\nnn</td><td class="col1">Número octal (nnn)</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0">\0</td><td class="col1">Carácter Null (na verdade apenas o octal número 0)</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0">\a</td><td class="col1">Sinal audível</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0">\b</td><td class="col1">Backspace</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0">\f</td><td class="col1">Próxima página</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0">\n</td><td class="col1">Nova linha</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0">\r</td><td class="col1">Retorno do carro</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0">\t</td><td class="col1">Tabulação horizontal</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0">\v</td><td class="col1">Tabulação Vertical</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0">\xnn</td><td class="col1">Número hexadecimal (nn)</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [164-516] -->
+<p>
+
+An example of this is contained in the following code (which assumes that the
+newline character generates complete newlines, on Unix systems):
+</p>
+
+<p>
+Um examplo disso está contido no seguinte código (o qual assume que o 
+carácter &#039;Nova linha&#039; gera uma nova linha completa, ou seja, nos sistemas Unix):
+</p>
+<pre class="cpp code cpp">    <span class="kw3">printf</span><span class="br0">&#40;</span> <span class="st0">&quot;Isto<span class="es1">\n</span>é<span class="es1">\n</span>um<span class="es1">\n</span>teste<span class="es1">\n</span><span class="es1">\n</span>Ela disse, <span class="es1">\&quot;</span>Como você está?<span class="es1">\&quot;</span><span class="es1">\n</span>&quot;</span> <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+o qual irá exibir
+</p>
+<pre class="code">
+    Isto
+    é
+    um
+    teste
+
+    Ela disse, "Como você está?"</pre>
+</div>
+</div>
+</body>
+</html>

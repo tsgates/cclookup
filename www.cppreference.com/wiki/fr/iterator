@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr"
+ lang="fr" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    fr:iterator    [C++ Reference]
+  </title>
+
+  <meta name="generator" content="DokuWiki" />
+<meta name="robots" content="noindex,follow" />
+<meta name="date" content="1969-12-31T16:00:00-0800" />
+<meta name="keywords" content="fr,iterator" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/fr/iterator?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=fr" />
+<link rel="edit" title="Modifier cette page" href="http://www.cppreference.com/wiki/fr/iterator?do=edit" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/fr/iterator" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/fr/iterator" />
+<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='fr';var JSINFO = {"id":"fr:iterator","namespace":"fr"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@tseed=1289693594" ></script>
+
+  <link rel="shortcut icon" href="../lib/tpl/custom1/images/favicon.png" />
+
+  </head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+      <div class="pagename">
+        [[<a href="http://www.cppreference.com/wiki/fr/iterator?do=backlink"  title="Liens vers cette page">fr:iterator</a>]]
+      </div>
+      <div class="logo">
+        <a href="http://www.cppreference.com"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">C++ Reference</a>      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+    
+    
+        <div class="breadcrumbs">
+      <span class="bchead">Vous êtes ici: </span><a href="../start"  title="start">C++ Reference</a> &raquo; <a href="start"  title="fr:start">C++ Reference</a> &raquo; <a href="iterator"  title="fr:iterator" class="wikilink2" rel="nofollow">iterator</a>    </div>
+    
+  </div>
+
+<div class="plugin_translation"><span>Traductions de cette page<sup><a href="../localization" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><a href="../iterator" class="wikilink2" title="iterator" rel="nofollow">en</a></div></li>  <li><div class="li"><a href="http://www.cppreference.com/wiki/br-pt/iterator" class="wikilink2" title="br-pt:iterator" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../cn/iterator" class="wikilink2" title="cn:iterator" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="http://www.cppreference.com/wiki/cz/iterator" class="wikilink2" title="cz:iterator" rel="nofollow">cz</a></div></li>  <li><div class="li"><a href="../de/iterator" class="wikilink2" title="de:iterator" rel="nofollow">de</a></div></li>  <li><div class="li"><a href="http://www.cppreference.com/wiki/es/iterator" class="wikilink2" title="es:iterator" rel="nofollow">es</a></div></li>  <li><div class="li"><span class="curid"><a href="iterator" class="wikilink2" title="fr:iterator" rel="nofollow">fr</a></span></div></li>  <li><div class="li"><a href="../it/iterator" class="wikilink2" title="it:iterator" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../jp/iterator" class="wikilink2" title="jp:iterator" rel="nofollow">jp</a></div></li>  <li><div class="li"><a href="http://www.cppreference.com/wiki/lv/iterator" class="wikilink2" title="lv:iterator" rel="nofollow">lv</a></div></li>  <li><div class="li"><a href="http://www.cppreference.com/wiki/nl/iterator" class="wikilink2" title="nl:iterator" rel="nofollow">nl</a></div></li>  <li><div class="li"><a href="http://www.cppreference.com/wiki/pl/iterator" class="wikilink2" title="pl:iterator" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="http://www.cppreference.com/wiki/ro/iterator" class="wikilink2" title="ro:iterator" rel="nofollow">ro</a></div></li>  <li><div class="li"><a href="../ru/iterator" class="wikilink2" title="ru:iterator" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="http://www.cppreference.com/wiki/sk/iterator" class="wikilink2" title="sk:iterator" rel="nofollow">sk</a></div></li>  <li><div class="li"><a href="http://www.cppreference.com/wiki/tr/iterator" class="wikilink2" title="tr:iterator" rel="nofollow">tr</a></div></li>  <li><div class="li"><a href="http://www.cppreference.com/wiki/tw/iterator" class="wikilink2" title="tw:iterator" rel="nofollow">tw</a></div></li></ul></div>
+  
+  
+  <div class="page">
+
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2828341-1";
+urchinTracker();
+</script>
+    <!-- wikipage start -->
+    
+<h1 class="sectionedit1"><a name="cette_page_n_existe_pas_encore" id="cette_page_n_existe_pas_encore">Cette page n&#039;existe pas encore</a></h1>
+<div class="level1">
+
+<p>
+
+Vous avez suivi un lien vers une page qui n&#039;existe pas encore. Si vos droits sont suffisants, vous pouvez utiliser le bouton ou le lien « Créer cette page ».
+</p>
+
+</div>
+
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+      <!--
+      <div class="doc">
+              </div>
+      -->
+    </div>
+
+   
+    <div class="bar" id="bar__bottom">
+      <div class="bar-left" id="bar__bottomleft">
+        <a href="http://www.cppreference.com/wiki/fr/iterator?do=edit&amp;rev="  class="action create" accesskey="e" rel="nofollow" title="Créer cette page">Créer cette page</a> &#149;
+        <a href="http://www.cppreference.com/wiki/fr/iterator?do=revisions"  class="action revs" accesskey="o" rel="nofollow" title="Anciennes révisions">Anciennes révisions</a>      </div>
+      <div class="bar-right" id="bar__bottomright">
+         &#149;
+         &#149;
+         &#149;
+        <a href="http://www.cppreference.com/wiki/fr/iterator?do=login&amp;sectok=d3cca5ac319124b251ecd37edf955140"  class="action login" accesskey="" rel="nofollow" title="Connexion">Connexion</a> &#149;
+        <a href="http://www.cppreference.com/wiki/fr/iterator?do=index"  class="action index" accesskey="x" rel="nofollow" title="Index">Index</a> &#149;
+        <a href="http://www.cppreference.com/wiki/fr/iterator?do=recent"  class="action recent" accesskey="r" rel="nofollow" title="Derniers changements">Derniers changements</a> &#149;
+        <a  href="http://www.cppreference.com/wiki/feed.php" title="Recent changes RSS feed">RSS</a> &#149;
+        <a href='http://creativecommons.org/licenses/by/3.0/us/' title='Creative Commons license'>cc</a> &#149;
+        <form action="../../index.html" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="no"></div>
+</body>
+</html>

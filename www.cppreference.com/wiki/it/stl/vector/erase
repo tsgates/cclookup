@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it"
+ lang="it" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>it:container:vector:erase</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:08-0700" />
+<meta name="keywords" content="it,container,vector,erase" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/it/container/vector/erase?do=index" title="Indice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=it:container:vector" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/it/container/vector/erase" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/it/container/vector/erase" />
+<link rel="canonical" href="erase" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='it:container:vector';var JSINFO = {"id":"it:container:vector:erase","namespace":"it:container:vector"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="erase" id="erase">erase</a></h2>
+<div class="level2">
+
+<p>
+Sintassi:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;vector&gt;</span>
+    iterator erase<span class="br0">&#40;</span> iterator loc <span class="br0">&#41;</span><span class="sy4">;</span>
+    iterator erase<span class="br0">&#40;</span> iterator start, iterator end <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+La funzione erase() cancella l&#039;elemento alla posizione <em>loc</em>, oppure gli elementi alle posizioni indicate
+dagli iteratori <em>start</em> e <em>end</em> (includendo <em>start</em>, ma con esclusione di <em>end</em>). Il valore ritornato
+è un iteratore che indica l&#039;ultimo elemento eliminato. 
+</p>
+
+<p>
+La prima forma di erase() (cancellazione di elemento specifico) gira in <a href="../../../complexity" class="wikilink1" title="complexity">tempo costante</a> per
+le liste e in <a href="../../../complexity" class="wikilink1" title="complexity">tempo lineare</a> per i vettori, dequeue e stringhe. La seconda forma invece
+gira sempre in <a href="../../../complexity" class="wikilink1" title="complexity">linear time</a>.
+</p>
+
+<p>
+Esempio:
+</p>
+<pre class="cpp code cpp">    <span class="co1">// Create a vector, load it with the first ten characters of the alphabet</span>
+    vector<span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span> alphas<span class="sy4">;</span>
+    <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i<span class="sy1">=</span><span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+      alphas.<span class="me1">push_back</span><span class="br0">&#40;</span> i <span class="sy2">+</span> <span class="nu0">65</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="br0">&#125;</span>
+    <span class="kw4">int</span> size <span class="sy1">=</span> alphas.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    vector<span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">iterator</span> startIterator<span class="sy4">;</span>
+    vector<span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">iterator</span> tempIterator<span class="sy4">;</span>
+    <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i<span class="sy1">=</span><span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> size<span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+      startIterator <span class="sy1">=</span> alphas.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+      alphas.<span class="me1">erase</span><span class="br0">&#40;</span> startIterator <span class="br0">&#41;</span><span class="sy4">;</span>
+      <span class="co1">// Display the vector</span>
+      <span class="kw1">for</span><span class="br0">&#40;</span> tempIterator <span class="sy1">=</span> alphas.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> tempIterator <span class="sy3">!</span><span class="sy1">=</span> alphas.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> tempIterator<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="sy2">*</span>tempIterator<span class="sy4">;</span>
+      <span class="br0">&#125;</span>
+      <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+    <span class="br0">&#125;</span></pre>
+<p>
+Il programma produrrebe l&#039;output seguente:
+</p>
+<pre class="code">
+    BCDEFGHIJ
+    CDEFGHIJ
+    DEFGHIJ
+    EFGHIJ
+    FGHIJ
+    GHIJ
+    HIJ
+    IJ
+    J</pre>
+<p>
+Nel prossimo esempio erase() viene chiamata con 2 iteratori per eliminare un intero
+range di elementi da un vettore:
+</p>
+<pre class="cpp code cpp">    <span class="co1">// create a vector, load it with the first ten characters of the alphabet</span>
+    vector<span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span> alphas<span class="sy4">;</span>
+    <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i<span class="sy1">=</span><span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+      alphas.<span class="me1">push_back</span><span class="br0">&#40;</span> i <span class="sy2">+</span> <span class="nu0">65</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="br0">&#125;</span>
+    <span class="co1">// display the complete vector</span>
+    <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> alphas.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+      <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> alphas<span class="br0">&#91;</span>i<span class="br0">&#93;</span><span class="sy4">;</span>
+    <span class="br0">&#125;</span>
+    <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+&nbsp;
+    <span class="co1">// use erase to remove all but the first two and last three elements</span>
+    <span class="co1">// of the vector</span>
+    alphas.<span class="me1">erase</span><span class="br0">&#40;</span> alphas.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy2">+</span><span class="nu0">2</span>, alphas.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy2">-</span><span class="nu0">3</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="co1">// display the modified vector</span>
+    <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> alphas.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+      <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> alphas<span class="br0">&#91;</span>i<span class="br0">&#93;</span><span class="sy4">;</span>
+    <span class="br0">&#125;</span>
+    <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
+<p>
+Una volta compilato il codice produrrebbe questo output:
+</p>
+<pre class="code">
+    ABCDEFGHIJ
+    ABHIJ</pre>
+<p>
+<strong>Con tutti i tipi di contenitori dovete essere caute nell&#039;inserimento o cancellazione di elementi, perché è un&#039;operazione che
+potrebbe ritornare iteratori invalidi</strong>
+</p>
+
+<p>
+Ecco un esempio che funziona per std::vector. In particolare vector::erase() invalida tutti gli iteratori (e puntatori) che seguono
+l&#039;elemento che viene cancellato.
+L&#039;esempio elimina alcuni elementi a seconda di una condizione (le lettere B e D verranno cancellate)
+</p>
+<pre class="cpp code cpp"><span class="co2">#include &lt;iostream&gt;</span>
+<span class="co2">#include &lt;vector&gt;</span>
+<span class="co2">#include &lt;iterator&gt;</span>
+&nbsp;
+<span class="kw2">using</span> <span class="kw2">namespace</span> std<span class="sy4">;</span>
+&nbsp;
+<span class="kw4">int</span> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    vector<span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span> alphas<span class="sy4">;</span>
+    <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i<span class="sy1">=</span><span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+      alphas.<span class="me1">push_back</span><span class="br0">&#40;</span> i <span class="sy2">+</span> <span class="nu0">65</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="br0">&#125;</span>
+&nbsp;
+    vector<span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">iterator</span> iter <span class="sy1">=</span> alphas.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw1">while</span><span class="br0">&#40;</span> iter <span class="sy3">!</span><span class="sy1">=</span> alphas.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+      <span class="kw1">if</span> <span class="br0">&#40;</span><span class="sy2">*</span>iter <span class="sy1">==</span> <span class="st0">'B'</span> <span class="sy3">||</span> <span class="sy2">*</span>iter <span class="sy1">==</span> <span class="st0">'D'</span><span class="br0">&#41;</span>
+        iter <span class="sy1">=</span> alphas.<span class="me1">erase</span><span class="br0">&#40;</span> iter <span class="br0">&#41;</span><span class="sy4">;</span>
+      <span class="kw1">else</span>
+        <span class="sy2">++</span>iter<span class="sy4">;</span>
+    <span class="br0">&#125;</span>
+&nbsp;
+    copy<span class="br0">&#40;</span>alphas.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, alphas.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, ostream_iterator<span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span><span class="br0">&#40;</span><span class="kw3">cout</span>, <span class="st0">&quot;&quot;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+&nbsp;
+<span class="br0">&#125;</span></pre>
+<p>
+L&#039;output del programma è il seguente
+</p>
+<pre class="code">
+    ACEFGHIJ</pre>
+<p>
+
+Argomenti correlati: <a href="clear" class="wikilink1" title="it:container:vector:clear">clear</a>, <a href="insert" class="wikilink1" title="it:container:vector:insert">insert</a>, <a href="pop_back" class="wikilink1" title="it:container:vector:pop_back">pop_back</a>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "erase" [3-] --></div>
+</body>
+</html>

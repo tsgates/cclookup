@@ -1,0 +1,388 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn"
+ lang="cn" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>cn:data_types</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:53-0700" />
+<meta name="keywords" content="cn,data_types" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/cn/data_types?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=cn" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/cn/data_types" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/cn/data_types" />
+<link rel="canonical" href="data_types" />
+<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='cn';var JSINFO = {"id":"cn:data_types","namespace":"cn"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="data_types#c_数据类型" class="toc">C++数据类型</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="data_types#类型修饰符" class="toc">类型修饰符</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="data_types#数据类型长度与取值范围" class="toc">数据类型长度与取值范围</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="data_types#理解数据类型声明" class="toc">理解数据类型声明</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="c_数据类型" id="c_数据类型">C++数据类型</a></h2>
+<div class="level2">
+
+<p>
+C++一般会接触到五种C数据类型: void, int, float, double, char.
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<th class="col0">数据类型</th><th class="col1">描述</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">void</td><td class="col1">没有具体的数据类型</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">int</td><td class="col1">整型</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">float</td><td class="col1">浮点型</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">double</td><td class="col1">双精度浮点型</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0">char</td><td class="col1">字符</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [102-231] -->
+<p>
+
+作为补充，C++增加了两种类型：bool 和 wchar_t.
+
+</p>
+<div class="table sectionedit3"><table class="inline">
+	<tr class="row0">
+		<th class="col0">数据类型</th><th class="col1">描述</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">bool</td><td class="col1">布尔型, true或者false</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">wchar_t</td><td class="col1">宽字符</td>
+	</tr>
+</table></div>
+<!-- EDIT3 TABLE [294-369] -->
+</div>
+<!-- EDIT1 SECTION "C++数据类型" [1-369] -->
+<h3 class="sectionedit4"><a name="类型修饰符" id="类型修饰符">类型修饰符</a></h3>
+<div class="level3">
+
+<p>
+
+前述类型中的一些可以使用signed, unsigned, short, long等关键字进行修饰。当这些关键字单独使用的时候，（被修饰的）基础数据类型假定为int。以下是可能的数据类型的完整列表（等价的类型列在一行中）。
+
+</p>
+<div class="table sectionedit5"><table class="inline">
+	<tr class="row0">
+		<th class="col0" colspan="4">整数类型</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0" colspan="4">bool</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0" colspan="4">char</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0" colspan="4">signed char</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0" colspan="4">unsigned char</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0" colspan="4">wchar_t</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0">short</td><td class="col1">short int</td><td class="col2">signed short</td><td class="col3">signed short int</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0" colspan="2">unsigned short</td><td class="col2" colspan="2">unsigned short int</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0">int</td><td class="col1">signed</td><td class="col2" colspan="2">signed int</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0" colspan="2">unsigned</td><td class="col2" colspan="2">unsigned int</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0">long</td><td class="col1">long int</td><td class="col2">signed long</td><td class="col3">signed long int</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0" colspan="2">unsigned long</td><td class="col2" colspan="2">unsigned long int</td>
+	</tr>
+	<tr class="row12">
+		<th class="col0" colspan="4">浮点型</th>
+	</tr>
+	<tr class="row13">
+		<td class="col0" colspan="4">float</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0" colspan="4">double</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0" colspan="4">long double</td>
+	</tr>
+	<tr class="row16">
+		<th class="col0" colspan="4">（编译器）可选支持的整数类型</th>
+	</tr>
+	<tr class="row17">
+		<td class="col0">long long</td><td class="col1">long long int</td><td class="col2">signed long long</td><td class="col3">signed long long int</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0" colspan="2">unsigned long long</td><td class="col2" colspan="2">unsigned long long int</td>
+	</tr>
+</table></div>
+<!-- EDIT5 TABLE [666-1182] -->
+</div>
+<!-- EDIT4 SECTION "类型修饰符" [370-1182] -->
+<h3 class="sectionedit6"><a name="数据类型长度与取值范围" id="数据类型长度与取值范围">数据类型长度与取值范围</a></h3>
+<div class="level3">
+
+<p>
+
+数据类型的长度和取值范围是与编译器架构相关的。可以使用<a href="../keywords/sizeof" class="wikilink1" title="keywords:sizeof">sizeof</a>操作符检测数据类型的长度（通常表述为字节数）。好在许多编译器都将数据类型长度实现为一种标准。整型和浮点型通常是32位，字符是8位，双精度(double)类型一般是64位。bool类型一般实现为8位，long long类型是64位。头文件”cfloat” (或者 “float.h”)定义了浮点型的长度和取值范围，头文件”climits” (或者 “limits.h”)定义了整型的长度和取值范围。
+</p>
+
+<p>
+头文件&lt;limits&gt;定义了数值的取值范围。模板化的<a href="../limits/numeric_limits" class="wikilink1" title="limits:numeric_limits">numeric_limits</a>提供了系统相关的C++数据类型的数值范围。请选用适当的方法，同时提供如下表所示的数据类型作为模板参数。请注意，numeric_limits对于用户自定义类型是可以重载的。
+
+</p>
+<div class="table sectionedit7"><table class="inline">
+	<tr class="row0">
+		<th class="col0">方法或<br/>
+常量</th><th class="col1">返回值</th><th class="col2">描述</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">is_specialized</td><td class="col1">bool</td><td class="col2"> </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">radix</td><td class="col1">int</td><td class="col2">base of exponent</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">digits</td><td class="col1">int</td><td class="col2">number of radix digits in mantissa</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">digits10</td><td class="col1">int</td><td class="col2">number of base 10 digits in mantissa</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0">is_signed</td><td class="col1">bool</td><td class="col2"> </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0">is_integer</td><td class="col1">bool</td><td class="col2"> </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0">is_exact</td><td class="col1">bool</td><td class="col2"> </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0">min()</td><td class="col1">&lt;type&gt;</td><td class="col2">smallest number that can be respresented (not the most negative)</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0">max()</td><td class="col1">&lt;type&gt;</td><td class="col2">largest number</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0">epsilon()</td><td class="col1">&lt;type&gt;</td><td class="col2">inherent representation error value</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0">round_error()</td><td class="col1">&lt;type&gt;</td><td class="col2">maximum rounding adjustment possible</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0">infinity()</td><td class="col1">&lt;type&gt;</td><td class="col2"> </td>
+	</tr>
+	<tr class="row13">
+		<td class="col0">quiet_NaN()</td><td class="col1">&lt;type&gt;</td><td class="col2">invalid number that does not signal floating point error</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0">signaling_NaN()</td><td class="col1">&lt;type&gt;</td><td class="col2">invalid number that signals floating point error</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0">denorm_min()</td><td class="col1">&lt;type&gt;</td><td class="col2"> </td>
+	</tr>
+	<tr class="row16">
+		<td class="col0">min_exponent</td><td class="col1">int</td><td class="col2"> </td>
+	</tr>
+	<tr class="row17">
+		<td class="col0">min_exponent10</td><td class="col1">int</td><td class="col2"> </td>
+	</tr>
+	<tr class="row18">
+		<td class="col0">max_exponent</td><td class="col1">int</td><td class="col2"> </td>
+	</tr>
+	<tr class="row19">
+		<td class="col0">max_exponent10</td><td class="col1">int</td><td class="col2"> </td>
+	</tr>
+	<tr class="row20">
+		<td class="col0">has_infinity</td><td class="col1">bool</td><td class="col2"> </td>
+	</tr>
+	<tr class="row21">
+		<td class="col0">has_quiet_NaN</td><td class="col1">bool</td><td class="col2"> </td>
+	</tr>
+	<tr class="row22">
+		<td class="col0">has_signaling_NaN</td><td class="col1">bool</td><td class="col2"> </td>
+	</tr>
+	<tr class="row23">
+		<td class="col0">has_denorm</td><td class="col1">&lt;type&gt;_denorm_style</td><td class="col2"> </td>
+	</tr>
+	<tr class="row24">
+		<td class="col0">has_denorm_loss</td><td class="col1">bool</td><td class="col2"> </td>
+	</tr>
+	<tr class="row25">
+		<td class="col0">is_iec559</td><td class="col1">bool</td><td class="col2">conforms to IEC-559</td>
+	</tr>
+	<tr class="row26">
+		<td class="col0">is_bounded</td><td class="col1">bool</td><td class="col2"> </td>
+	</tr>
+	<tr class="row27">
+		<td class="col0">is_modulo</td><td class="col1">bool</td><td class="col2"> </td>
+	</tr>
+	<tr class="row28">
+		<td class="col0">traps</td><td class="col1">bool</td><td class="col2"> </td>
+	</tr>
+	<tr class="row29">
+		<td class="col0">tinyness_before</td><td class="col1">bool</td><td class="col2"> </td>
+	</tr>
+	<tr class="row30">
+		<td class="col0">round_style</td><td class="col1">float_round_style { round_to_nearest, … }</td><td class="col2"> </td>
+	</tr>
+</table></div>
+<!-- EDIT7 TABLE [2086-3152] -->
+<p>
+
+最常见的用途是越界检查，即检测某种数据型类能够保存的最小值和最大值。以下代码输出了所在系统中short的最大值和最小值。
+
+</p>
+<pre class="cpp code cpp">  <span class="co2">#include &lt;limits&gt;</span>
+  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Maximum short value: &quot;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">numeric_limits</span><span class="sy1">&lt;</span><span class="kw4">short</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">max</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+  std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Minimum short value: &quot;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">numeric_limits</span><span class="sy1">&lt;</span><span class="kw4">short</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">min</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span></pre>
+</div>
+<!-- EDIT6 SECTION "数据类型长度与取值范围" [1183-3539] -->
+<h3 class="sectionedit8"><a name="理解数据类型声明" id="理解数据类型声明">理解数据类型声明</a></h3>
+<div class="level3">
+
+<p>
+
+简单的数据类型声明是非常易于理解的：
+</p>
+<pre class="cpp code cpp">  <span class="kw4">int</span> i</pre>
+<p>
+然而，一些极度复杂的类型声明就难于分析了：
+</p>
+<pre class="cpp code cpp">  <span class="kw4">double</span> <span class="sy2">**</span>d<span class="br0">&#91;</span><span class="nu0">8</span><span class="br0">&#93;</span>              <span class="co1">// 嗯？...</span>
+  <span class="kw4">char</span> <span class="sy2">*</span><span class="br0">&#40;</span><span class="sy2">*</span><span class="br0">&#40;</span><span class="sy2">**</span>foo <span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#91;</span><span class="nu0">8</span><span class="br0">&#93;</span><span class="br0">&#41;</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#91;</span><span class="br0">&#93;</span> <span class="co1">// 啊！foo是什么类型？</span></pre>
+<p>
+为了理解复杂声明，请遵循以下三条规则：
+
+</p>
+<ol>
+<li class="level1"><div class="li"> 从变量名开始(上述例子中分别是<code>d</code>和<code>foo</code>)</div>
+</li>
+<li class="level1"><div class="li"> 到数据类型结束(上述例子中分别是<code>double</code> 和 <code>char</code> )</div>
+</li>
+<li class="level1"><div class="li"> 先尽量往右看，直到必须往左的时候才往左看。(如：遇到括号)</div>
+</li>
+</ol>
+
+<p>
+
+举例:
+
+</p>
+<div class="table sectionedit9"><table class="inline">
+	<tr class="row0">
+		<th class="col0">Expression</th><th class="col1">Meaning</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <code>double **d[8];</code> </td><td class="col1"> </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <code><del>double</del> **<del>d</del>[8];</code> </td><td class="col1"> <strong>d is … double</strong> </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> <code><del>double</del> **<del>d[8]</del>;</code> </td><td class="col1"> d is <strong>an array of 8</strong> … double </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> <code><del>double</del> *<del>*d[8]</del>;</code> </td><td class="col1"> d is an array of 8 <strong>pointer to</strong> … double </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> <code><del>double **d[8]</del>;</code> </td><td class="col1"> d is an array of 8 pointer to <strong>pointer to</strong> double </td>
+	</tr>
+</table></div>
+<!-- EDIT9 TABLE [4134-4523] -->
+<p>
+
+另一个例子:
+
+</p>
+<div class="table sectionedit10"><table class="inline">
+	<tr class="row0">
+		<th class="col0">Expression</th><th class="col1">Meaning</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <code>char *(*(**foo [][8])())[]</code> </td><td class="col1"> </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <code><del>char</del> *(*(**<del>foo</del> [][8])())[]</code> </td><td class="col1"> <strong>foo is … char</strong> </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> <code><del>char</del> *(*(**<del>foo []</del>[8])())[]</code> </td><td class="col1"> foo is <strong>an array of</strong> … char </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> <code><del>char</del> *(*(**<del>foo [][8]</del>)())[]</code> </td><td class="col1"> foo is an array of <strong>an array of 8</strong> … char </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> <code><del>char</del> *(*(*<del>*foo [][8]</del>)())[]</code> </td><td class="col1"> foo is an array of an array of 8 <strong>pointer to</strong> … char </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> <code><del>char</del> *(*<del>(**foo [][8])</del>())[]</code> </td><td class="col1"> foo is an array of an array of 8 pointer to <strong>pointer to</strong> … char </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"> <code><del>char</del> *(*<del>(**foo [][8])()</del>)[]</code> </td><td class="col1"> foo is an array of an array of 8 pointer to pointer to <strong>function returning</strong> … char </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"> <code><del>char</del> *<del>(*(**foo [][8])())</del>[]</code> </td><td class="col1"> foo is an array of an array of 8 pointer to pointer to function returning <strong>pointer to</strong> … char </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"> <code><del>char</del> *<del>(*(**foo [][8])())[]</del></code> </td><td class="col1"> foo is an array of an array of 8 pointer to pointer to function returning pointer to <strong>array of</strong> … char </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"> <code><del>char *(*(**foo [][8])())[]</del></code> </td><td class="col1"> foo is an array of an array of 8 pointer to pointer to function returning pointer to array of <strong>pointer to</strong> char </td>
+	</tr>
+</table></div>
+<!-- EDIT10 TABLE [4543-5785] -->
+<p>
+
+更详尽的解释，请点击以下链接查看Steve Friedl关于怎样理解C声明的大作：<a href="http://www.unixwiz.net/techtips/reading-cdecl.html" class="urlextern" title="http://www.unixwiz.net/techtips/reading-cdecl.html"  rel="nofollow">http://www.unixwiz.net/techtips/reading-cdecl.html</a>。
+
+</p>
+
+</div>
+<!-- EDIT8 SECTION "理解数据类型声明" [3540-] --></div>
+</body>
+</html>

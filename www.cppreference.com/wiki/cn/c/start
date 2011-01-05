@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn"
+ lang="cn" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>cn:c:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:49-0700" />
+<meta name="keywords" content="cn,c,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/cn/c/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=cn:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/cn/c/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/cn/c/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='cn:c';var JSINFO = {"id":"cn:c:start","namespace":"cn:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="start#标准c库" class="toc">标准C库</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="start#c库函数" class="toc">C库函数</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="start#标准c头文件" class="toc">标准C头文件</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="标准c库" id="标准c库">标准C库</a></h2>
+<div class="level2">
+
+<p>
+
+C++程序员可以使用各种标准C库中的函数，定义在<a href="http://www.open-std.org/jtc1/sc22/wg14/" class="urlextern" title="http://www.open-std.org/jtc1/sc22/wg14/"  rel="nofollow">ISO/IEC 9899:1990</a> (公认为<a href="http://en.wikipedia.org/wiki/ANSI_C" class="urlextern" title="http://en.wikipedia.org/wiki/ANSI_C"  rel="nofollow">C90</a>). 这些库中所有的函数定义在 <strong>std</strong> <a href="http://www.cppreference.com/wiki/keywords/%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4" class="wikilink2" title="keywords:命名空间" rel="nofollow">命名空间</a>.
+</p>
+
+</div>
+<!-- EDIT1 SECTION "标准C库" [1-277] -->
+<h3 class="sectionedit2"><a name="c库函数" id="c库函数">C库函数</a></h3>
+<div class="level3">
+
+<p>
+
+下列是一个标准C库函数的列表，粗略的根据功能分组：
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="io/start" class="wikilink1" title="cn:c:io:start">标准C输入/输出</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="string/start" class="wikilink1" title="cn:c:string:start">标准C字符串和字符</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="math/start" class="wikilink1" title="cn:c:math:start">标准C数学函数</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="date/start" class="wikilink1" title="cn:c:date:start">标准C时间与日期</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="mem/start" class="wikilink1" title="cn:c:mem:start">标准C内存</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="other/start" class="wikilink1" title="cn:c:other:start">其它标准C函数</a></div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT2 SECTION "C库函数" [278-611] -->
+<h3 class="sectionedit3"><a name="标准c头文件" id="标准c头文件">标准C头文件</a></h3>
+<div class="level3">
+
+<p>
+
+上面所说的函数定义在下列18个头文件中：
+
+</p>
+<ul>
+<li class="level1"><div class="li"> &lt;cassert&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;ciso646&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;csetjmp&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;cstdio&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;ctime&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cctype&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;climits&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;csignal&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;cstdlib&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;cwchar&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cerrno&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;clocale&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;cstdarg&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;cstring&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;cwctype&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cfloat&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;cmath&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;cstddef&gt;</div>
+</li>
+</ul>
+
+<p>
+
+当为标准C库包含头文件时，推荐使用包含<code>cfile</code>方式取代<code>file.h</code>方式。例如，  包含<code>stdio.h</code> 头文件使用这个命令：
+</p>
+<pre class="cpp code cpp">  <span class="co2">#include &lt;cstdio&gt;</span></pre>
+<p>
+<code>file.h</code>方式可以使用，但它主要是为了向后兼容性。   <code>cfile</code> 和 <code>file.h</code> 方式的区别是通过 <code>file.h</code> 方式包含进来的函数出现在全局命名空间，而不是在 <strong>std</strong> 命名空间中。
+</p>
+
+<p>
+参见: <a href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1124.pdf" class="urlextern" title="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1124.pdf"  rel="nofollow">The 2005 C99 working paper</a> 来自 <a href="http://www.open-std.org/jtc1/sc22/wg14/www/standards.html" class="urlextern" title="http://www.open-std.org/jtc1/sc22/wg14/www/standards.html"  rel="nofollow">Approved Standards of working group 14</a>.
+</p>
+
+</div>
+<!-- EDIT3 SECTION "标准C头文件" [612-] --></div>
+</body>
+</html>

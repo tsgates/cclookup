@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:keywords:new</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:20-0700" />
+<meta name="keywords" content="jp,keywords,new" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/keywords/new?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp:keywords" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/keywords/new" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/keywords/new" />
+<link rel="canonical" href="new" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp:keywords';var JSINFO = {"id":"jp:keywords:new","namespace":"jp:keywords"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="new" id="new">new</a></h2>
+<div class="level2">
+
+<p>
+文法:
+</p>
+<pre class="cpp code cpp">    ポインタ <span class="sy1">=</span> <span class="kw3">new</span> 型<span class="sy4">;</span>
+    ポインタ <span class="sy1">=</span> <span class="kw3">new</span> 型<span class="br0">&#40;</span> 初期化子 <span class="br0">&#41;</span><span class="sy4">;</span>
+    ポインタ <span class="sy1">=</span> <span class="kw3">new</span> タイプ<span class="br0">&#91;</span>サイズ<span class="br0">&#93;</span><span class="sy4">;</span>
+    ポインタ <span class="sy1">=</span> <span class="kw3">new</span><span class="br0">&#40;</span> 引数リスト <span class="br0">&#41;</span> 型...</pre>
+<p>
+
+new演算子(C++だけで有効です)は、指定された型の変数を保持するのに必要なメモリを割り当てて、そのメモリへのポインタを返します。
+オプションとしては追加の初期化子を使用すると、メモリの初期化を行うことができます。もしもタイプがクラスの場合にはコンストラクタへ渡す引数になります。
+</p>
+
+<p>
+配列の確保に関してはブラケット([])でサイズを渡すことによって行うことができます。ただし、この場合には初期化子を与えることはできませんので、デフォルトのコンストラクタが確保されます。
+</p>
+
+<p>
+オーバーロードされたバージョンのnew()を作成すると、任意のフォーマットで変数の数を渡すのに使用することができます(自信なし)。
+もっとも便利に使われるのは、使用可能なメモリがなかった時に例外を投げなくなるという”nothrow”という引数です:
+</p>
+<pre class="cpp code cpp">    Foo <span class="sy2">*</span>foo<span class="sy4">;</span> <span class="co1">// Fooはクラスで、fooはFooクラスのオブジェクトへのポインタ</span>
+    foo <span class="sy1">=</span> <span class="kw3">new</span><span class="br0">&#40;</span>nothrow<span class="br0">&#41;</span> Foo<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw3">assert</span><span class="br0">&#40;</span> foo <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+代わりに、クラスのnew()関数をオーバロードして、任意の引数を渡せるようになります:
+</p>
+<pre class="cpp code cpp">    <span class="kw2">class</span> Base <span class="br0">&#123;</span>
+    <span class="kw2">public</span><span class="sy4">:</span>
+      Base<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> <span class="br0">&#125;</span>
+&nbsp;
+      <span class="kw4">void</span> <span class="sy2">*</span>operator <span class="kw3">new</span><span class="br0">&#40;</span> <span class="kw4">size_t</span> size, string str <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;新しいオブジェクト '&quot;</span> <span class="sy1">&lt;&lt;</span> str <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;' のための &quot;</span> <span class="sy1">&lt;&lt;</span> size <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; バイトのメモリ割り当てのログ&quot;</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+        <span class="kw1">return</span> <span class="kw3">malloc</span><span class="br0">&#40;</span> size <span class="br0">&#41;</span><span class="sy4">;</span>
+      <span class="br0">&#125;</span>
+&nbsp;
+      <span class="kw4">int</span> var<span class="sy4">;</span>
+      <span class="kw4">double</span> var2<span class="sy4">;</span>
+    <span class="br0">&#125;</span><span class="sy4">;</span>
+&nbsp;
+    ...
+&nbsp;
+    <span class="me1">Base</span><span class="sy2">*</span> b <span class="sy1">=</span> <span class="kw3">new</span> <span class="br0">&#40;</span><span class="st0">&quot;Baseのインスタンス1&quot;</span><span class="br0">&#41;</span> Base<span class="sy4">;</span></pre>
+<p>
+もし、intが4バイトで、doubleが8バイトの場合には、上記のコードを実行すると下記のように出力されます。
+</p>
+<pre class="cpp code cpp">    新しいオブジェクト <span class="st0">'Baseのインスタンス1'</span> のための <span class="nu0">12</span> バイトのメモリ割り当てのログ</pre>
+<p>
+newで確保したメモリは<a href="delete" class="wikilink1" title="jp:keywords:delete">delete</a>演算子で開放します。もしも配列のバージョンのnew演算子を使用した場合には、配列バージョンのdelete演算子を使用してください。
+</p>
+
+<p>
+関連トピック: <a href="delete" class="wikilink1" title="jp:keywords:delete">delete</a>, <a href="../c/mem/free" class="wikilink1" title="jp:c:mem:free">free</a>, <a href="../c/mem/malloc" class="wikilink1" title="jp:c:mem:malloc">malloc</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

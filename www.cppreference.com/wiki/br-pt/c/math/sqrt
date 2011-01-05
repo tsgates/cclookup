@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="br-pt"
+ lang="br-pt" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>br-pt:numeric:c:sqrt</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:03-0700" />
+<meta name="keywords" content="br-pt,numeric,c,sqrt" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/br-pt/numeric/c/sqrt?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=br-pt:numeric:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/br-pt/numeric/c/sqrt" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/br-pt/numeric/c/sqrt" />
+<link rel="canonical" href="sqrt" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='br-pt:numeric:c';var JSINFO = {"id":"br-pt:numeric:c:sqrt","namespace":"br-pt:numeric:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="sqrt" id="sqrt">sqrt</a></h2>
+<div class="level2">
+
+<p>
+Sintaxe:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cmath&gt;</span>
+    <span class="kw4">double</span> <span class="kw3">sqrt</span><span class="br0">&#40;</span> <span class="kw4">double</span> num <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+
+A função sqrt() devolve a raiz quadrada de num. Se num é negativo,
+ocorre um erro de domínio (domain error).
+</p>
+
+<p>
+O C++ também fornece as seguintes formas sobre-carregadas (overload):
+
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cmath&gt;</span>
+    <span class="kw4">float</span> <span class="kw3">sqrt</span><span class="br0">&#40;</span> <span class="kw4">float</span> num <span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// igual a sqrtf() em C99</span>
+    <span class="kw4">long</span> <span class="kw4">double</span> <span class="kw3">sqrt</span><span class="br0">&#40;</span> <span class="kw4">long</span> <span class="kw4">double</span> num <span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// igual a sqrtl() em C99</span></pre>
+<p>
+Tópicos Relacionados: <a href="exp" class="wikilink1" title="br-pt:numeric:c:exp">exp</a>, <a href="log" class="wikilink1" title="br-pt:numeric:c:log">log</a>, <a href="pow" class="wikilink1" title="br-pt:numeric:c:pow">pow</a>
+
+</p>
+
+</div>
+<!-- EDIT1 SECTION "sqrt" [3-] --></div>
+</body>
+</html>

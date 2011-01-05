@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:numeric:complex:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:23-0700" />
+<meta name="keywords" content="jp,numeric,complex,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/numeric/complex/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp:numeric:complex" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/numeric/complex/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/numeric/complex/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp:numeric:complex';var JSINFO = {"id":"jp:numeric:complex:start","namespace":"jp:numeric:complex"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="c_複素数" id="c_複素数">C++ 複素数</a></h1>
+<div class="level1">
+
+<p>
+
+<code>complex</code>クラスは複素数を扱う便利なクラスです。<code>&lt;complex&gt;</code>ヘッダファイルの<code>std</code>名前空間で標準テンプレートクラスとして定義されています。
+</p>
+<pre class="cpp code cpp"> <span class="kw2">template</span><span class="sy1">&lt;</span><span class="kw2">typename</span> Num<span class="sy1">&gt;</span>
+ <span class="kw4">struct</span> complex<span class="sy4">;</span></pre>
+<p>
+テンプレートの型引数<code>Num</code>は、複素数を構成する実部と虚部の両方に使用される型です。これは実数型(<code>float</code>,<code>double</code>,<code>long double</code>)の何れかであることが期待されます。
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/numeric/complex/complex_constructors" class="wikilink2" title="jp:numeric:complex:complex_constructors" rel="nofollow">コンストラクタ</a></td><td class="col1">実部と虚部または他の複素数から複素数を作成します</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/numeric/complex/complex_operators" class="wikilink2" title="jp:numeric:complex:complex_operators" rel="nofollow">演算子</a></td><td class="col1">複素数の算術演算，等価比較，複素数の入出力</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/numeric/complex/abs" class="wikilink2" title="jp:numeric:complex:abs" rel="nofollow">abs</a></td><td class="col1">絶対値</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/numeric/complex/arg" class="wikilink2" title="jp:numeric:complex:arg" rel="nofollow">arg</a></td><td class="col1">偏角</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/numeric/complex/conj" class="wikilink2" title="jp:numeric:complex:conj" rel="nofollow">conj</a></td><td class="col1">複素共役</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/numeric/complex/cos" class="wikilink2" title="jp:numeric:complex:cos" rel="nofollow">cos</a></td><td class="col1">余弦（コサイン）</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/numeric/complex/cosh" class="wikilink2" title="jp:numeric:complex:cosh" rel="nofollow">cosh</a></td><td class="col1">双曲線余弦（ハイパボリックコサイン）</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/numeric/complex/exp" class="wikilink2" title="jp:numeric:complex:exp" rel="nofollow">exp</a></td><td class="col1">指数関数</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/numeric/complex/imag" class="wikilink2" title="jp:numeric:complex:imag" rel="nofollow">imag</a></td><td class="col1">虚部</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/numeric/complex/log" class="wikilink2" title="jp:numeric:complex:log" rel="nofollow">log</a></td><td class="col1">自然対数</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/numeric/complex/log10" class="wikilink2" title="jp:numeric:complex:log10" rel="nofollow">log10</a></td><td class="col1">常用対数</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/numeric/complex/norm" class="wikilink2" title="jp:numeric:complex:norm" rel="nofollow">norm</a></td><td class="col1">絶対値の二乗</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/numeric/complex/polar" class="wikilink2" title="jp:numeric:complex:polar" rel="nofollow">polar</a></td><td class="col1">極形式の複素数を作成する</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/numeric/complex/pow" class="wikilink2" title="jp:numeric:complex:pow" rel="nofollow">pow</a></td><td class="col1">複素数の累乗，または複素数乗</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/numeric/complex/real" class="wikilink2" title="jp:numeric:complex:real" rel="nofollow">real</a></td><td class="col1">実部</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/numeric/complex/sin" class="wikilink2" title="jp:numeric:complex:sin" rel="nofollow">sin</a></td><td class="col1">正弦（サイン）</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/numeric/complex/sinh" class="wikilink2" title="jp:numeric:complex:sinh" rel="nofollow">sinh</a></td><td class="col1">双曲線正弦（ハイパボリックサイン）</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/numeric/complex/sqrt" class="wikilink2" title="jp:numeric:complex:sqrt" rel="nofollow">sqrt</a></td><td class="col1">平方根</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/numeric/complex/tan" class="wikilink2" title="jp:numeric:complex:tan" rel="nofollow">tan</a></td><td class="col1">正接（タンジェント）</td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/numeric/complex/tanh" class="wikilink2" title="jp:numeric:complex:tanh" rel="nofollow">tanh</a></td><td class="col1">双曲線正接（ハイパボリックタンジェント）</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [521-1370] -->
+</div>
+</div>
+</body>
+</html>

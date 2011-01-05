@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru"
+ lang="ru" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>ru:string:replace</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:13-0700" />
+<meta name="keywords" content="ru,string,replace" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/ru/string/replace?do=index" title="Все страницы" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=ru:string" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/ru/string/replace" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/ru/string/replace" />
+<link rel="canonical" href="replace" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='ru:string';var JSINFO = {"id":"ru:string:replace","namespace":"ru:string"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="replace" id="replace">replace</a></h2>
+<div class="level2">
+
+<p>
+Синтаксис:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;string&gt;</span>
+    string<span class="sy3">&amp;</span> replace<span class="br0">&#40;</span> size_type index, size_type num, <span class="kw4">const</span> string<span class="sy3">&amp;</span> str <span class="br0">&#41;</span><span class="sy4">;</span>
+    string<span class="sy3">&amp;</span> replace<span class="br0">&#40;</span> size_type index1, size_type num1, <span class="kw4">const</span> string<span class="sy3">&amp;</span> str, size_type index2, size_type num2 <span class="br0">&#41;</span><span class="sy4">;</span>
+    string<span class="sy3">&amp;</span> replace<span class="br0">&#40;</span> size_type index, size_type num, <span class="kw4">const</span> Char<span class="sy2">*</span> str <span class="br0">&#41;</span><span class="sy4">;</span>
+    string<span class="sy3">&amp;</span> replace<span class="br0">&#40;</span> size_type index, size_type num1, <span class="kw4">const</span> Char<span class="sy2">*</span> str, size_type num2 <span class="br0">&#41;</span><span class="sy4">;</span>
+    string<span class="sy3">&amp;</span> replace<span class="br0">&#40;</span> size_type index, size_type num1, size_type num2, Char ch<span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+    string<span class="sy3">&amp;</span> replace<span class="br0">&#40;</span> iterator start, iterator end, <span class="kw4">const</span> string<span class="sy3">&amp;</span> str <span class="br0">&#41;</span><span class="sy4">;</span>
+    string<span class="sy3">&amp;</span> replace<span class="br0">&#40;</span> iterator start, iterator end, <span class="kw4">const</span> Char<span class="sy2">*</span> str <span class="br0">&#41;</span><span class="sy4">;</span>
+    string<span class="sy3">&amp;</span> replace<span class="br0">&#40;</span> iterator start, iterator end, <span class="kw4">const</span> Char<span class="sy2">*</span> str, size_type num <span class="br0">&#41;</span><span class="sy4">;</span>
+    string<span class="sy3">&amp;</span> replace<span class="br0">&#40;</span> iterator start, iterator end, size_type num, Char ch <span class="br0">&#41;</span><span class="sy4">;</span>
+    string<span class="sy3">&amp;</span> replace<span class="br0">&#40;</span> iterator start, iterator end, input_iterator start2, input_iterator end2 <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Метод <code>replace</code> выполняет следующие действия:
+</p>
+<ul>
+<li class="level1"><div class="li"> заменяет <code>num</code> символов текущей строки символами из строки <code>str</code>, начиная с индекса <code>index</code>,</div>
+</li>
+<li class="level1"><div class="li"> заменяет <code>num1</code> символов текущей строки (начиная с индекса <code>index1</code>) символами строки <code>str</code> в количестве <code>num2</code>, начиная с индекса <code>index2</code>,</div>
+</li>
+<li class="level1"><div class="li"> заменяет <code>num</code> символов текущей строки символами из строки <code>str</code>, начиная с индекса <code>index</code> строки <code>str</code> (в отличие от первого варианта перегрузки, в данном случае строка передается как указатель на массив символов),</div>
+</li>
+<li class="level1"><div class="li"> заменяет <code>num1</code> символов текущей строки (начиная с индекса <code>index1</code>) символами строки <code>str</code> в количестве <code>num2</code>, начиная с индекса <code>index2</code> (строка передается как указатель на массив символов),</div>
+</li>
+<li class="level1"><div class="li"> заменяет <code>num1</code> символов текущей строки (начиная с индекса <code>index</code>) символами <code>ch</code> в количестве <code>num2</code>,</div>
+</li>
+<li class="level1"><div class="li"> заменяет символы в текущей строки начиная со <code>start</code> до <code>end</code> символами из строки <code>str</code> в количестве <code>num</code>,</div>
+</li>
+<li class="level1"><div class="li"> заменяет символы текущей строки начиная со <code>start</code> до <code>end</code> символами ch в количестве num.</div>
+</li>
+</ul>
+
+<p>
+
+Например, следующий код выводит строку «They say he carved it himself…find your soul-mate, Homer.» :
+</p>
+<pre class="cpp code cpp">     string s <span class="sy1">=</span> <span class="st0">&quot;They say he carved it himself...from a BIGGER spoon&quot;</span><span class="sy4">;</span>
+     string s2 <span class="sy1">=</span> <span class="st0">&quot;find your soul-mate, Homer.&quot;</span><span class="sy4">;</span>
+     s.<span class="me1">replace</span><span class="br0">&#40;</span> <span class="nu0">32</span>, s.<span class="me1">length</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy2">-</span> <span class="nu0">32</span>, s2 <span class="br0">&#41;</span><span class="sy4">;</span>
+     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> s <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
+</div>
+
+<h4><a name="замена_всех_вхождений" id="замена_всех_вхождений">Замена всех вхождений</a></h4>
+<div class="level4">
+
+<p>
+
+Метод replace может так же использоваться для замены всех вхождений одной строки в другую.
+</p>
+
+<p>
+Например:
+</p>
+<pre class="cpp code cpp">string<span class="sy3">&amp;</span> replaceAll<span class="br0">&#40;</span>string<span class="sy3">&amp;</span> context, <span class="kw4">const</span> string<span class="sy3">&amp;</span> from, <span class="kw4">const</span> string<span class="sy3">&amp;</span> to<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <span class="kw4">size_t</span> lookHere <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
+    <span class="kw4">size_t</span> foundHere<span class="sy4">;</span>
+    <span class="kw1">while</span><span class="br0">&#40;</span><span class="br0">&#40;</span>foundHere <span class="sy1">=</span> context.<span class="me1">find</span><span class="br0">&#40;</span>from, lookHere<span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="sy3">!</span><span class="sy1">=</span> string<span class="sy4">::</span><span class="me2">npos</span><span class="br0">&#41;</span>
+    <span class="br0">&#123;</span>
+          context.<span class="me1">replace</span><span class="br0">&#40;</span>foundHere, from.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, to<span class="br0">&#41;</span><span class="sy4">;</span>
+          lookHere <span class="sy1">=</span> foundHere <span class="sy2">+</span> to.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="br0">&#125;</span>
+    <span class="kw1">return</span> context<span class="sy4">;</span>
+<span class="br0">&#125;</span></pre>
+<p>
+
+Смотрите также: <a href="insert" class="wikilink1" title="ru:string:insert">insert</a>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "replace" [3-] --></div>
+</body>
+</html>

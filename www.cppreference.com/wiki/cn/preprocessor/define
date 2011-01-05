@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn"
+ lang="cn" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>cn:preprocessor:define</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:40-0700" />
+<meta name="keywords" content="cn,preprocessor,define" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/cn/preprocessor/define?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=cn:preprocessor" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/cn/preprocessor/define" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/cn/preprocessor/define" />
+<link rel="canonical" href="define" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='cn:preprocessor';var JSINFO = {"id":"cn:preprocessor:define","namespace":"cn:preprocessor"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="define" id="define">#define</a></h2>
+<div class="level2">
+
+<p>
+
+语法:
+
+</p>
+<pre class="cpp code cpp">    <span class="co2">#define 宏名称 替代字符串</span></pre>
+<p>
+#define命令对整个文件产生替换效果，也就是说，编译器遍历所整个文件,所有”宏名称”都被替换为”替代字符串”。”替代字符串”以换行符结束。
+</p>
+
+<p>
+这里#define的一个典型的应用(至少在C语言中):
+
+</p>
+<pre class="cpp code cpp">     <span class="co2">#define TRUE 1</span>
+     <span class="co2">#define FALSE 0</span>
+     ...
+     <span class="kw4">int</span> done <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
+     <span class="kw1">while</span><span class="br0">&#40;</span> done <span class="sy3">!</span><span class="sy1">=</span> TRUE <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        ...
+     <span class="br0">&#125;</span></pre>
+<p>
+#define命令的另一个特性就是它可以使用参数，这使它作为一个伪函数生成器更加强大，请看下边的代码:
+
+</p>
+<pre class="cpp code cpp">     <span class="co2">#define absolute_value( x ) ( ((x) &lt; 0) ? -(x) : (x) )</span>
+     ...
+     <span class="kw4">int</span> num <span class="sy1">=</span> <span class="sy2">-</span><span class="nu0">1</span><span class="sy4">;</span>
+     <span class="kw1">while</span><span class="br0">&#40;</span> absolute_value<span class="br0">&#40;</span> num <span class="br0">&#41;</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        ...
+     <span class="br0">&#125;</span></pre>
+<p>
+在复杂的宏定义中充分使用括号是一个非常明智的选择，请注意上边的这个例子，变量“x”总是出现在只包含他自己的括号中，所以，在和0比较之前，或者乘-1之前，他会被正确的计算。另外，为了防止被其他代码影响，整个宏也包含在括号之中。如果你不认真对待的话，就会有代码被编译器错误编译的风险。这里有一个使用#define命令生成通用递增loop循环语句的例子，循环中打印出整数型的1到20。
+
+</p>
+<pre class="cpp code cpp">   <span class="co2">#define count_up( v, low, high ) \
+     for( (v) = (low); (v) &lt;= (high); (v)++ )</span>
+&nbsp;
+   ...
+&nbsp;
+   <span class="kw4">int</span> i<span class="sy4">;</span>
+   count_up<span class="br0">&#40;</span> i, <span class="nu0">1</span>, <span class="nu0">20</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     <span class="kw3">printf</span><span class="br0">&#40;</span> <span class="st0">&quot;i is %d<span class="es1">\n</span>&quot;</span>, i <span class="br0">&#41;</span><span class="sy4">;</span>
+   <span class="br0">&#125;</span></pre>
+<p>
+相关主题: <a href="sharp" class="wikilink1" title="cn:preprocessor:sharp"># and ##</a>, <a href="preprocessor_if" class="wikilink1" title="cn:preprocessor:preprocessor_if">#if,...,#endif</a>, <a href="undef" class="wikilink1" title="cn:preprocessor:undef">#undef</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>chrono:c:time</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-11-07T15:57:40-0800" />
+<meta name="keywords" content="chrono,c,time" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/chrono/c/time?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=chrono:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/chrono/c/time" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/chrono/c/time" />
+<link rel="canonical" href="time" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='chrono:c';var JSINFO = {"id":"chrono:c:time","namespace":"chrono:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="time#time" class="toc">time</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="time#parameters" class="toc">Parameters</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="time#return_value" class="toc">Return value</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="time#see_also" class="toc">See also</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="time" id="time">time</a></h2>
+<div class="level2">
+<pre class="cpp code cpp"><span class="co2">#include &lt;ctime&gt;</span>
+&nbsp;
+<span class="kw4">time_t</span> <span class="kw3">time</span><span class="br0">&#40;</span> <span class="kw4">time_t</span> <span class="sy2">*</span><span class="kw3">time</span> <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Gets the time since epoch as a <code>time_t</code> object.
+</p>
+
+</div>
+<!-- EDIT1 SECTION "time" [1-133] -->
+<h3 class="sectionedit2"><a name="parameters" id="parameters">Parameters</a></h3>
+<div class="level3">
+
+<p>
+
+<code>time</code> - pointer to a <code>time_t</code> object to store the time in. If <code>NULL</code> is passed instead, the argument is not used.
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Parameters" [134-275] -->
+<h3 class="sectionedit3"><a name="return_value" id="return_value">Return value</a></h3>
+<div class="level3">
+
+<p>
+
+time since epoch as a <code>time_t</code> object on success, <code>-1</code> on error.
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Return value" [276-367] -->
+<h3 class="sectionedit4"><a name="see_also" id="see_also">See also</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="asctime" class="wikilink1" title="chrono:c:asctime">asctime</a>, <a href="clock" class="wikilink1" title="chrono:c:clock">clock</a>, <a href="ctime" class="wikilink1" title="chrono:c:ctime">ctime</a>, <a href="difftime" class="wikilink1" title="chrono:c:difftime">difftime</a>, <a href="gmtime" class="wikilink1" title="chrono:c:gmtime">gmtime</a>, <a href="localtime" class="wikilink1" title="chrono:c:localtime">localtime</a>, <a href="mktime" class="wikilink1" title="chrono:c:mktime">mktime</a>, <a href="strftime" class="wikilink1" title="chrono:c:strftime">strftime</a>
+
+</p>
+
+</div>
+<!-- EDIT4 SECTION "See also" [368-] --></div>
+</body>
+</html>

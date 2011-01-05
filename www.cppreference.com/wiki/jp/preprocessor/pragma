@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:preprocessor:pragma</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:18-0700" />
+<meta name="keywords" content="jp,preprocessor,pragma" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/preprocessor/pragma?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp:preprocessor" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/preprocessor/pragma" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/preprocessor/pragma" />
+<link rel="canonical" href="pragma" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp:preprocessor';var JSINFO = {"id":"jp:preprocessor:pragma","namespace":"jp:preprocessor"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="pragma" id="pragma">#pragma</a></h2>
+<div class="level2">
+<pre class="cpp code cpp">    <span class="co2">#pragma 語彙</span></pre>
+<p>
+#pragmaコマンドは、コンパイラに対して特殊なことをするように伝えるというのを可能にします。#pragmaコマンドは実装依存であるため、コンパイラによって使える語彙などはさまざまんです。プログラムの実行をトレースするようなオプションもある場合があるでしょう。
+</p>
+
+<p>
+これからいくつかpragma命令について説明していきますが、あるコンパイラファミリーの、あるOSに限定されたものであり、実装されているもののごく一部です。
+</p>
+
+<p>
+pragmaは、main()関数が呼ばれる前、もしくは終了後に何か関数を呼び出したい場合にも使用されます。
+</p>
+<pre class="cpp code cpp"><span class="co2">#pragma startup fun() //この関数の返り値の型はvoidでパラメータは持ってはいけません</span>
+<span class="co2">#pragma exit fun1()</span></pre>
+</div>
+<!-- EDIT1 SECTION "#pragma" [1-921] -->
+<h3 class="sectionedit2"><a name="gnu_c_コンパイラ_gcc_-_gnulinux_bsd_gnuhurd_gnudarwinmac_os_x_windows_mingw" id="gnu_c_コンパイラ_gcc_-_gnulinux_bsd_gnuhurd_gnudarwinmac_os_x_windows_mingw">GNU C コンパイラ (GCC) - GNU/Linux, BSD, GNU/Hurd, GNU/Darwin/Mac OS X, Windows (MinGW)</a></h3>
+<div class="level3">
+
+</div>
+
+<h4><a name="redefine_extname" id="redefine_extname">redefine_extname</a></h4>
+<div class="level4">
+<pre class="cpp code cpp">    <span class="co2">#pragma redefine_extname printf prnt</span></pre>
+<p>
+
+アセンブリ言語に変換される段階で、C言語の関数名を指定された別のシンボルに置き換えます。
+</p>
+
+</div>
+
+<h4><a name="extern_prefix" id="extern_prefix">extern_prefix</a></h4>
+<div class="level4">
+<pre class="cpp code cpp">    <span class="co2">#pragma extern_prefix ext_ // プリフィックス付与スタート</span>
+    <span class="co1">// ここで定義された外部に公開された(external)シンボルはアセンブリレベルでプリフィックスが付与されます</span>
+    <span class="co2">#pragma extern_prefix // プリフィックス付与終了</span></pre>
+<p>
+すべての外部に公開された関数のアセンブリシンボルに対して、指定された文字列のプリフィックスを与えます。#pragma extern_prefixが現れると、そこで外部に公開されたシンボルに対するプリフィックスの付与は終了します。
+</p>
+
+</div>
+
+<h4><a name="pack" id="pack">pack</a></h4>
+<div class="level4">
+<pre class="cpp code cpp">    <span class="co2">#pragma pack(64) // この宣言以降に宣言されるクラス、共用体、構造体は64ビットコードに対して最適化されます</span></pre>
+<p>
+
+パッキングというのは最適化の手法の一つで、構造体やクラス、共用体のメンバー変数がパッキングの境界に並ぶようになるというものです。これを行うと、プロセッサがデータを取り扱うビット数の単位に配列されてパックされるようになるため、データアクセスが簡単になって、結果として高速になります。欠点としては不要なゴミデータがパックされるときのすきまに割り当てられるようになるために、メモリのコストが増加するというものがあります。packの引数と指定される数値は、2のn乗の数値(2, 3, 8, 16, 32, 64….)でなければなりません。”pack”には別の使用法があり、それについては後から説明しますが(説明未完)、上記のサンプルコードの使い方がもっともシンプルで、かつ一般的な方法になります。また、この命令は以下のように書くこともできます:
+</p>
+<pre class="cpp code cpp"><span class="co2">#pragma pack() /* 空のカッコ */</span></pre>
+<p>
+
+こうすると、コンパイラのデフォルトのパッキング規則にリセットされます。
+</p>
+
+<p>
+← #pragma pack(push) and #pragma pack(pop) are on the way, I&#039;m still researching them and their functionality. -/&gt;
+← This document is still under construction, I intend to continue adding compilers and their pragma options instead of leaving this largely blank. -GinoMan -/&gt; 
+</p>
+
+</div>
+<!-- EDIT2 SECTION "GNU C コンパイラ (GCC) - GNU/Linux, BSD, GNU/Hurd, GNU/Darwin/Mac OS X, Windows (MinGW)" [922-] --></div>
+</body>
+</html>

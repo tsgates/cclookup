@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es"
+ lang="es" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>es:c:other:srand</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:31-0700" />
+<meta name="keywords" content="es,c,other,srand" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/es/c/other/srand?do=index" title="Índice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=es:c:other" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/es/c/other/srand" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/es/c/other/srand" />
+<link rel="canonical" href="srand" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='es:c:other';var JSINFO = {"id":"es:c:other:srand","namespace":"es:c:other"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Tabla de Contenidos</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="srand#srand" class="toc">srand</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="srand#escogiendo_semillas" class="toc">Escogiendo Semillas</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="srand#topicos_relacionados" class="toc">Tópicos Relacionados</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="srand" id="srand">srand</a></h2>
+<div class="level2">
+
+<p>
+Sintaxis:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cstdlib&gt;</span>
+    <span class="kw4">void</span> <span class="kw3">srand</span><span class="br0">&#40;</span> <span class="kw4">unsigned</span> seed <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+La función <code>srand()</code> establece la “semilla” o valor inicial utilizado por el generador <code><a href="rand" class="wikilink1" title="es:c:other:rand">rand()</a></code>. Por cada valor posible de la semilla, el generador arrojará repetidamente un listado específico de valores “aleatorios”. 
+</p>
+<pre class="cpp code cpp">     <span class="kw3">srand</span><span class="br0">&#40;</span> <span class="kw3">time</span><span class="br0">&#40;</span><span class="nu0">0</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+     <span class="kw1">for</span><span class="br0">&#40;</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span>
+       <span class="kw3">printf</span><span class="br0">&#40;</span> <span class="st0">&quot;Random number #%d: %d<span class="es1">\n</span>&quot;</span>, i, <span class="kw3">rand</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+</div>
+<!-- EDIT1 SECTION "srand" [1-468] -->
+<h3 class="sectionedit2"><a name="escogiendo_semillas" id="escogiendo_semillas">Escogiendo Semillas</a></h3>
+<div class="level3">
+
+<p>
+Dado que la secuencia generada es siempre la misma para un valor fijo de la semilla, <code>srand()</code> debiera ser llamada con un argumento cambiante y que no dependa de la compilación. Ejemplos de semillas incluyen:
+</p>
+
+<p>
+<strong>Usar el tiempo del reloj del sistema como es provisto por <code>time</code>:</strong>
+
+</p>
+<pre class="cpp code cpp"><span class="co2">#include &lt;ctime&gt;</span>
+<span class="kw3">srand</span> <span class="br0">&#40;</span> <span class="kw3">time</span> <span class="br0">&#40;</span><span class="nu0">0</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+<strong>Usar el identificador de proceso en sistemas POSIX:</strong>
+
+</p>
+<pre class="cpp code cpp"><span class="co2">#include &lt;unistd.h&gt;</span>
+<span class="kw3">srand</span> <span class="br0">&#40;</span> getpid<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+<strong>Si ya se ha recibido entrada de datos del usuario, usar alguna combinación de valores ingresados:</strong>
+
+</p>
+<pre class="cpp code cpp"><span class="co2">#include &lt;iostream&gt;</span>
+<span class="kw4">int</span> a, b<span class="sy4">;</span>
+std<span class="sy4">::</span><span class="kw3">cin</span><span class="sy1">&gt;&gt;</span> a<span class="sy1">&gt;&gt;</span> b<span class="sy4">;</span>
+<span class="kw3">srand</span> <span class="br0">&#40;</span> a<span class="sy3">^</span>b <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+</div>
+<!-- EDIT2 SECTION "Escogiendo Semillas" [469-1141] -->
+<h3 class="sectionedit3"><a name="topicos_relacionados" id="topicos_relacionados">Tópicos Relacionados</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> <code><a href="rand" class="wikilink1" title="es:c:other:rand">rand</a></code></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/es/c/date/time" class="wikilink2" title="es:c:date:time" rel="nofollow">time (Tiempo Estándar en C)</a></div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT3 SECTION "Tópicos Relacionados" [1142-] --></div>
+</body>
+</html>

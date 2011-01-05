@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es"
+ lang="es" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>es:keywords:const_cast</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:32-0700" />
+<meta name="keywords" content="es,keywords,const_cast" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/es/keywords/const_cast?do=index" title="Índice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=es:keywords" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/es/keywords/const_cast" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/es/keywords/const_cast" />
+<link rel="canonical" href="const_cast" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='es:keywords';var JSINFO = {"id":"es:keywords:const_cast","namespace":"es:keywords"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="const_cast" id="const_cast">const_cast</a></h2>
+<div class="level2">
+
+<p>
+Sintaxis:
+</p>
+<pre class="cpp code cpp">    T <span class="kw2">const_cast</span><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> <span class="br0">&#40;</span>object<span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+La palabra clave <code>const_cast</code> se usa para realizar una conversión que remueve las calificaciones <a href="const" class="wikilink1" title="es:keywords:const">const</a> y/o <a href="http://www.cppreference.com/wiki/es/keywords/volatile" class="wikilink2" title="es:keywords:volatile" rel="nofollow">volatile</a> de un objeto. El tipo de datos destino es el mismo tipo de datos de la fuente, excepto que no tenga las mismas calificaciones const o volatile. <code>T</code> debe ser un tipo de datos referencia o puntero.
+</p>
+
+</div>
+<!-- EDIT1 SECTION "const_cast" [1-404] -->
+<h3 class="sectionedit2"><a name="ejemplo" id="ejemplo">Ejemplo</a></h3>
+<div class="level3">
+
+<p>
+El siguiente ejemplo usa <code>const_cast</code> para remover la calificación <a href="const" class="wikilink1" title="es:keywords:const">const</a> de un objeto temporalmente con el objeto de llamar a una función miembro no-constante:
+</p>
+<pre class="cpp code cpp"><span class="kw2">class</span> Foo <span class="br0">&#123;</span>
+<span class="kw2">public</span><span class="sy4">:</span>
+  <span class="kw4">void</span> func<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span><span class="br0">&#125;</span> <span class="co1">// esta función miembro es no-constante</span>
+<span class="br0">&#125;</span><span class="sy4">;</span>
+&nbsp;
+<span class="kw4">void</span> someFunction<span class="br0">&#40;</span> <span class="kw4">const</span> Foo<span class="sy3">&amp;</span> f <span class="br0">&#41;</span>  <span class="br0">&#123;</span>
+  f.<span class="me1">func</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>      <span class="co1">// error de compilación:</span>
+                 <span class="co1">// tratar de llamar a función no-constante Foo::func</span>
+                 <span class="co1">// desde un objeto constante f</span>
+  Foo <span class="sy3">&amp;</span>fRef <span class="sy1">=</span> <span class="kw2">const_cast</span><span class="sy1">&lt;</span>Foo<span class="sy3">&amp;</span><span class="sy1">&gt;</span><span class="br0">&#40;</span>f<span class="br0">&#41;</span><span class="sy4">;</span>
+                 <span class="co1">// fRef es un alias a f</span>
+                 <span class="co1">// pero no tiene la calificación const</span>
+  fRef.<span class="me1">func</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>   <span class="co1">// ahora sí se puede</span>
+<span class="br0">&#125;</span></pre>
+<p>
+Tópicos Relacionados: <a href="const" class="wikilink1" title="es:keywords:const">const</a>, <a href="http://www.cppreference.com/wiki/es/keywords/dynamic_cast" class="wikilink2" title="es:keywords:dynamic_cast" rel="nofollow">dynamic_cast</a>, <a href="reinterpret_cast" class="wikilink1" title="es:keywords:reinterpret_cast">reinterpret_cast</a>, <a href="static_cast" class="wikilink1" title="es:keywords:static_cast">static_cast</a>, <a href="http://www.cppreference.com/wiki/es/keywords/casting_comparison" class="wikilink2" title="es:keywords:casting_comparison" rel="nofollow">casting_comparison</a>
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Ejemplo" [405-] --></div>
+</body>
+</html>

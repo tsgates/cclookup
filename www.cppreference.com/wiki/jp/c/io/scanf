@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:c:io:scanf</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:22-0700" />
+<meta name="keywords" content="jp,c,io,scanf" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/c/io/scanf?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp:c:io" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/c/io/scanf" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/c/io/scanf" />
+<link rel="canonical" href="scanf" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp:c:io';var JSINFO = {"id":"jp:c:io:scanf","namespace":"jp:c:io"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="scanf" id="scanf">scanf</a></h2>
+<div class="level2">
+
+<p>
+
+文法
+
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cstdio&gt;</span>
+    <span class="kw4">int</span> <span class="kw3">scanf</span><span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>フォーマット, ... <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+scanf()関数は、標準入力読み込んで、渡されたフォーマット西多賀って、他の引数として渡された変数にデータを保存します。入出力は逆ですが、printf()と非常に良く似ています。
+</p>
+
+<p>
+フォーマット文字列は、下記のような制御文字、ホワイトスペース文字、ホワイトスペース以外の文字で構成されます。制御文字は%記号で始まります。以下のような種類があります:
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<th class="col0">制御文字</th><th class="col1">説明</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">%c</td><td class="col1">1文字</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">%d</td><td class="col1">10進数の数値</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">%i</td><td class="col1">数値</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">%e, %f, %g</td><td class="col1">浮動小数点数</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0">%lf</td><td class="col1">倍精度の浮動小数点数(double)</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0">%o</td><td class="col1">8進数</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0">%s</td><td class="col1">文字列</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0">%x</td><td class="col1">16進数</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0">%p</td><td class="col1">ポインタ</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0">%n</td><td class="col1">この制御文字に来るまでに標準入力から読み込まれた文字数</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0">%u</td><td class="col1">符号なしの数値</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0">%[ ]</td><td class="col1">カッコ内に含まれる文字の集合</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0">%%</td><td class="col1">%記号</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [606-989] -->
+<p>
+
+scanf()は、フォーマットで指定された文字にマッチさせながら、入力を読み込んでいきます。制御文字が読み込まれると、次の変数に値が格納されます。ホワイトスペース(タブ、スペースなど)はスキップされます。ホワイトスペース以外の文字は、入力と一致すると捨てられます。もしも%記号と制御文字の間に数値が記入されると、その文字数の文字だけが変数に変換されます。%[ ]制御文字で指定される文字集合が見つかった場合には、ブラケットの中に登場する文字だけが変数に格納されます。scanf()の返り値は読み込みに成功して、値が割り当てられた変数の数です。エラーが発生した場合にはEOFが返されます。
+</p>
+
+<p>
+以下の短いコード片はint, float, doubleの変数の値をユーザが標準入力にタイプした情報から読み込みます。scanf()に渡す変数の引数はポインタを渡します。それぞれの変数名の前にアンパサンド(&amp;)を付けます:
+</p>
+<pre class="cpp code cpp">   <span class="kw4">int</span> i<span class="sy4">;</span>
+   <span class="kw4">float</span> f<span class="sy4">;</span>
+   <span class="kw4">double</span> d<span class="sy4">;</span>
+&nbsp;
+   <span class="kw3">printf</span><span class="br0">&#40;</span> <span class="st0">&quot;数値を入力してください: &quot;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+   <span class="kw3">scanf</span><span class="br0">&#40;</span> <span class="st0">&quot;%d&quot;</span>, <span class="sy3">&amp;</span>i <span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+   <span class="kw3">printf</span><span class="br0">&#40;</span> <span class="st0">&quot;浮動小数点数を入力してください: &quot;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+   <span class="kw3">scanf</span><span class="br0">&#40;</span> <span class="st0">&quot;%f&quot;</span>, <span class="sy3">&amp;</span>f <span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+   <span class="kw3">printf</span><span class="br0">&#40;</span> <span class="st0">&quot;倍精度浮動小数点数を入力してください: &quot;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+   <span class="kw3">scanf</span><span class="br0">&#40;</span> <span class="st0">&quot;%lf&quot;</span>, <span class="sy3">&amp;</span>d <span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+   <span class="kw3">printf</span><span class="br0">&#40;</span> <span class="st0">&quot;あなたが入力したのは %d, %f, %f です。<span class="es1">\n</span>&quot;</span>, i, f, d <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+関連トピック: <a href="fgets" class="wikilink1" title="jp:c:io:fgets">fgets</a>, <a href="fscanf" class="wikilink1" title="jp:c:io:fscanf">fscanf</a>, <a href="printf" class="wikilink1" title="jp:c:io:printf">printf</a>, <a href="sscanf" class="wikilink1" title="jp:c:io:sscanf">sscanf</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

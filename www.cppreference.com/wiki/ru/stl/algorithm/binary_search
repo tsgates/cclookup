@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru"
+ lang="ru" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>ru:algorithm:binary_search</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:13-0700" />
+<meta name="keywords" content="ru,algorithm,binary_search" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/ru/algorithm/binary_search?do=index" title="Все страницы" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=ru:algorithm" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/ru/algorithm/binary_search" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/ru/algorithm/binary_search" />
+<link rel="canonical" href="binary_search" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='ru:algorithm';var JSINFO = {"id":"ru:algorithm:binary_search","namespace":"ru:algorithm"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="binary_search" id="binary_search">binary_search</a></h2>
+<div class="level2">
+
+<p>
+Синтаксис:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;algorithm&gt;</span>
+    <span class="kw4">bool</span> binary_search<span class="br0">&#40;</span> forward_iterator start, forward_iterator end, <span class="kw4">const</span> T<span class="sy3">&amp;</span> val <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">bool</span> binary_search<span class="br0">&#40;</span> forward_iterator start, forward_iterator end, <span class="kw4">const</span> T<span class="sy3">&amp;</span> val, Comp f <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Функция binary_search() просматривает элементы от <code>start</code> до <code>end</code> в поисках значения <code>val</code>. Просматриваемые элементы между <code>start</code> и <code>end</code> должны быть упорядочены по возрастанию, что определено оператором &lt;. Обратите внимание, что бинарный поиск не будет работать, пока просматриваемые элементы не будут упорядочены.
+</p>
+
+<p>
+Только оператор &lt; должен быть определен для значений. Два значения <code>a</code> и <code>b</code> равны, если истинно выражение <code>!(a&lt;b) &amp;&amp; !(b&lt;a)</code>.
+</p>
+
+<p>
+Если значение <code>val</code> найдено, binary_search() возвращает истину, иначе ложь.
+Если функция <code>f</code> определена, то она используется для сравнения элементов вместо оператора &lt;.
+</p>
+
+<p>
+binary_search() работает за <a href="http://www.cppreference.com/wiki/ru/complexity" class="wikilink2" title="ru:complexity" rel="nofollow">логарифмическое время</a>.
+</p>
+
+<p>
+Например, следующий код использует binary_search(), чтобы определить, есть ли числа 0-9 в массиве целых чисел (nums[] должен быть упорядочен по возрастанию):
+</p>
+<pre class="cpp code cpp">   <span class="kw4">int</span> nums<span class="br0">&#91;</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="br0">&#123;</span> <span class="sy2">-</span><span class="nu0">242</span>, <span class="sy2">-</span><span class="nu0">1</span>, <span class="nu0">0</span>, <span class="nu0">5</span>, <span class="nu0">8</span>, <span class="nu0">9</span>, <span class="nu0">11</span> <span class="br0">&#125;</span><span class="sy4">;</span>
+   <span class="kw4">int</span> start <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
+   <span class="kw4">int</span> end <span class="sy1">=</span> <span class="nu0">7</span><span class="sy4">;</span>
+&nbsp;
+   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     <span class="kw1">if</span><span class="br0">&#40;</span> binary_search<span class="br0">&#40;</span> nums<span class="sy2">+</span>start, nums<span class="sy2">+</span>end, i <span class="br0">&#41;</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+       <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;nums[] contains &quot;</span> <span class="sy1">&lt;&lt;</span> i <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+     <span class="br0">&#125;</span> <span class="kw1">else</span> <span class="br0">&#123;</span>
+       <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;nums[] DOES NOT contain &quot;</span> <span class="sy1">&lt;&lt;</span> i <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+     <span class="br0">&#125;</span>
+   <span class="br0">&#125;</span></pre>
+<p>
+Этот код выводит:
+</p>
+<pre class="code">
+   nums[] contains 0
+   nums[] DOES NOT contain 1
+   nums[] DOES NOT contain 2
+   nums[] DOES NOT contain 3
+   nums[] DOES NOT contain 4
+   nums[] contains 5
+   nums[] DOES NOT contain 6
+   nums[] DOES NOT contain 7
+   nums[] contains 8
+   nums[] contains 9</pre>
+<p>
+Смотрите также: <a href="equal_range" class="wikilink1" title="ru:algorithm:equal_range">equal_range</a>, <a href="lower_bound" class="wikilink1" title="ru:algorithm:lower_bound">lower_bound</a>, <a href="partial_sort" class="wikilink1" title="ru:algorithm:partial_sort">partial_sort</a>, <a href="partial_sort_copy" class="wikilink1" title="ru:algorithm:partial_sort_copy">partial_sort_copy</a>, <a href="sort" class="wikilink1" title="ru:algorithm:sort">sort</a>, <a href="stable_sort" class="wikilink1" title="ru:algorithm:stable_sort">stable_sort</a>, <a href="upper_bound" class="wikilink1" title="ru:algorithm:upper_bound">upper_bound</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

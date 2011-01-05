@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="br-pt"
+ lang="br-pt" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>br-pt:string:c:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:03-0700" />
+<meta name="keywords" content="br-pt,string,c,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/br-pt/string/c/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=br-pt:string:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/br-pt/string/c/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/br-pt/string/c/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='br-pt:string:c';var JSINFO = {"id":"br-pt:string:c:start","namespace":"br-pt:string:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="string_e_caracter_em_c_padrao" id="string_e_caracter_em_c_padrao">String e Caracter em C Padrão</a></h1>
+<div class="level1">
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="atof" class="wikilink1" title="br-pt:string:c:atof">atof</a></td><td class="col1"> converte um string para um double </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/string/c/atoi" class="wikilink2" title="br-pt:string:c:atoi" rel="nofollow">atoi</a></td><td class="col1"> converte um string para um inteiro </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/string/c/atol" class="wikilink2" title="br-pt:string:c:atol" rel="nofollow">atol</a></td><td class="col1"> converte um string para um long </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/string/c/isalnum" class="wikilink2" title="br-pt:string:c:isalnum" rel="nofollow">isalnum</a></td><td class="col1"> verdadeiro se um caracter é alfanumérico </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="isalpha" class="wikilink1" title="br-pt:string:c:isalpha">isalpha</a></td><td class="col1"> verdadeiro se um caracter é alfabético </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/string/c/iscntrl" class="wikilink2" title="br-pt:string:c:iscntrl" rel="nofollow">iscntrl</a></td><td class="col1"> verdadeiro se um caracter é um caracter de controle </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/string/c/isdigit" class="wikilink2" title="br-pt:string:c:isdigit" rel="nofollow">isdigit</a></td><td class="col1"> verdadeiro se um caracter é um dígito </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/string/c/isgraph" class="wikilink2" title="br-pt:string:c:isgraph" rel="nofollow">isgraph</a> </td><td class="col1"> verdadeiro se um caracter é um caracter gráfico </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/string/c/islower" class="wikilink2" title="br-pt:string:c:islower" rel="nofollow">islower</a> </td><td class="col1"> verdadeiro se é um caracter minúsculo </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/string/c/isprint" class="wikilink2" title="br-pt:string:c:isprint" rel="nofollow">isprint</a> </td><td class="col1"> verdadeiro se um personagem é um caracter imprimível </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/string/c/ispunct" class="wikilink2" title="br-pt:string:c:ispunct" rel="nofollow">ispunct</a> </td><td class="col1"> verdadeiro se um personagem pontuação </td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/string/c/isspace" class="wikilink2" title="br-pt:string:c:isspace" rel="nofollow">isspace</a> </td><td class="col1"> verdadeiro se um personagem é um caracter de espaço </td>
+	</tr>
+	<tr class="row12">
+		<td class="col0 leftalign"><a href="http://www.cppreference.com/wiki/br-pt/string/c/isupper" class="wikilink2" title="br-pt:string:c:isupper" rel="nofollow">isupper</a>  </td><td class="col1"> verdadeiro se é um caracter maiúsculo </td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/string/c/isxdigit" class="wikilink2" title="br-pt:string:c:isxdigit" rel="nofollow">isxdigit</a> </td><td class="col1"> verdadeiro se um caractere é um caractere hexadecimal </td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/string/c/memchr" class="wikilink2" title="br-pt:string:c:memchr" rel="nofollow">memchr</a> </td><td class="col1"> pesquisa um vetor pela primeira ocorrência de um caractere </td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/string/c/memcmp" class="wikilink2" title="br-pt:string:c:memcmp" rel="nofollow">memcmp</a> </td><td class="col1"> compara dois buffers </td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/string/c/memcpy" class="wikilink2" title="br-pt:string:c:memcpy" rel="nofollow">memcpy</a> </td><td class="col1"> copia um buffer para outro </td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/string/c/memmove" class="wikilink2" title="br-pt:string:c:memmove" rel="nofollow">memmove</a> </td><td class="col1"> move um buffer para outro </td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/string/c/memset" class="wikilink2" title="br-pt:string:c:memset" rel="nofollow">memset</a> </td><td class="col1"> preenche um buffer com um caractere </td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/string/c/strcat" class="wikilink2" title="br-pt:string:c:strcat" rel="nofollow">strcat</a> </td><td class="col1"> concatena duas strings </td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/string/c/strchr" class="wikilink2" title="br-pt:string:c:strchr" rel="nofollow">strchr</a> </td><td class="col1"> encontra a primeira ocorrência de um caractere em uma string </td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/string/c/strcmp" class="wikilink2" title="br-pt:string:c:strcmp" rel="nofollow">strcmp</a> </td><td class="col1"> compara duas strings </td>
+	</tr>
+	<tr class="row22">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/string/c/strcoll" class="wikilink2" title="br-pt:string:c:strcoll" rel="nofollow">strcoll</a> </td><td class="col1"> compara duas strings de acordo com a localidade </td>
+	</tr>
+	<tr class="row23">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/string/c/strcpy" class="wikilink2" title="br-pt:string:c:strcpy" rel="nofollow">strcpy</a> </td><td class="col1"> copia uma string para outra </td>
+	</tr>
+	<tr class="row24">
+		<td class="col0"><a href="strcspn" class="wikilink1" title="br-pt:string:c:strcspn">strcspn</a> </td><td class="col1"> busca uma seqüência de caracteres em outra </td>
+	</tr>
+	<tr class="row25">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/string/c/strerror" class="wikilink2" title="br-pt:string:c:strerror" rel="nofollow">strerror</a> </td><td class="col1"> retorna uma versão em texto de um determinado código de erro </td>
+	</tr>
+	<tr class="row26">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/string/c/strlen" class="wikilink2" title="br-pt:string:c:strlen" rel="nofollow">strlen</a></td><td class="col1"> retorna o comprimento de um dado string </td>
+	</tr>
+	<tr class="row27">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/string/c/strncat" class="wikilink2" title="br-pt:string:c:strncat" rel="nofollow">strncat</a></td><td class="col1"> concatena uma certa quantidade de caracteres de duas strings </td>
+	</tr>
+	<tr class="row28">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/string/c/strncmp" class="wikilink2" title="br-pt:string:c:strncmp" rel="nofollow">strncmp</a></td><td class="col1"> compara uma certa quantidade de caracteres de duas strings </td>
+	</tr>
+	<tr class="row29">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/string/c/strncpy" class="wikilink2" title="br-pt:string:c:strncpy" rel="nofollow">strncpy</a></td><td class="col1"> copia uma determinada quantidade de caracteres de uma string para outra </td>
+	</tr>
+	<tr class="row30">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/string/c/strpbrk" class="wikilink2" title="br-pt:string:c:strpbrk" rel="nofollow">strpbrk</a></td><td class="col1"> encontra a primeira localização de qualquer caractere em uma string, em outra string </td>
+	</tr>
+	<tr class="row31">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/string/c/strrchr" class="wikilink2" title="br-pt:string:c:strrchr" rel="nofollow">strrchr</a></td><td class="col1"> encontrar a última ocorrência de um caractere em uma </td>
+	</tr>
+	<tr class="row32">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/string/c/strspn" class="wikilink2" title="br-pt:string:c:strspn" rel="nofollow">strspn</a></td><td class="col1"> retorna o comprimento de uma subseqüência de caracteres de uma string </td>
+	</tr>
+	<tr class="row33">
+		<td class="col0"><a href="strstr" class="wikilink1" title="br-pt:string:c:strstr">strstr</a></td><td class="col1"> encontra a primeira ocorrência de uma subseqüência de caracteres </td>
+	</tr>
+	<tr class="row34">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/string/c/strtod" class="wikilink2" title="br-pt:string:c:strtod" rel="nofollow">strtod</a></td><td class="col1"> converte uma string para um double </td>
+	</tr>
+	<tr class="row35">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/string/c/strtok" class="wikilink2" title="br-pt:string:c:strtok" rel="nofollow">strtok</a></td><td class="col1"> encontra o próximo token em uma string </td>
+	</tr>
+	<tr class="row36">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/string/c/strtol" class="wikilink2" title="br-pt:string:c:strtol" rel="nofollow">strtol</a></td><td class="col1"> converte uma string para um long </td>
+	</tr>
+	<tr class="row37">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/string/c/strtoul" class="wikilink2" title="br-pt:string:c:strtoul" rel="nofollow">strtoul</a></td><td class="col1"> converte uma string para um unsigned long </td>
+	</tr>
+	<tr class="row38">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/string/c/strxfrm" class="wikilink2" title="br-pt:string:c:strxfrm" rel="nofollow">strxfrm</a></td><td class="col1"> converte um substring para que ele possa ser usado por funções de comparação de string </td>
+	</tr>
+	<tr class="row39">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/string/c/tolower" class="wikilink2" title="br-pt:string:c:tolower" rel="nofollow">tolower</a></td><td class="col1"> converte um caractere em minúsculas </td>
+	</tr>
+	<tr class="row40">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/br-pt/string/c/toupper" class="wikilink2" title="br-pt:string:c:toupper" rel="nofollow">toupper</a></td><td class="col1"> converte um caractere para maiúscula </td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [53-2616] -->
+</div>
+</div>
+</body>
+</html>

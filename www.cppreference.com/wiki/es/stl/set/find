@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es"
+ lang="es" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>es:container:set:find</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:32-0700" />
+<meta name="keywords" content="es,container,set,find" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/es/container/set/find?do=index" title="Índice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=es:container:set" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/es/container/set/find" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/es/container/set/find" />
+<link rel="canonical" href="find" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='es:container:set';var JSINFO = {"id":"es:container:set:find","namespace":"es:container:set"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Tabla de Contenidos</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="find#find" class="toc">find</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="find#ejemplo" class="toc">Ejemplo</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="find#topicos_relacionados" class="toc">Tópicos Relacionados</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="find" id="find">find</a></h2>
+<div class="level2">
+
+<p>
+Sintaxis:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;set&gt;</span>
+    <span class="kw4">typedef</span> std<span class="sy4">::</span><span class="me2">set</span><span class="sy1">&lt;</span> ... <span class="sy1">&gt;</span> Set<span class="sy4">;</span>
+    Set<span class="sy4">::</span><span class="me2">iterator</span>        find<span class="br0">&#40;</span> <span class="kw4">const</span> Set<span class="sy4">::</span><span class="me2">key_type</span><span class="sy3">&amp;</span> key <span class="br0">&#41;</span><span class="sy4">;</span>
+    Set<span class="sy4">::</span><span class="me2">const_iterator</span>  find<span class="br0">&#40;</span> <span class="kw4">const</span> Set<span class="sy4">::</span><span class="me2">key_type</span><span class="sy3">&amp;</span> key <span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span></pre>
+<p>
+La función método <code>find()</code> busca un objeto de valor <em>key</em> en el <a href="start" class="wikilink1" title="es:container:set:start">set</a> y devuelve un iterador apuntando a su posición; o, si no se encuentra, devuelve <code><a href="end" class="wikilink1" title="es:container:set:end">un iterador apuntando al final</a></code>. <code>find()</code> se ejecuta en <a href="../../complexity" class="wikilink1" title="es:complexity">tiempo logarítmico</a>.
+</p>
+
+</div>
+<!-- EDIT1 SECTION "find" [1-490] -->
+<h3 class="sectionedit2"><a name="ejemplo" id="ejemplo">Ejemplo</a></h3>
+<div class="level3">
+
+<p>
+
+En el siguiente ejemplo se usa <code>find()</code> para determinar comprobar que el elemento <em>15</em> existe en un set con los números de 10 a 20.
+</p>
+<pre class="cpp code cpp">    <span class="co1">// Crear un set de números</span>
+    set<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> conjunto<span class="sy4">;</span>
+    <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">short</span> i<span class="sy1">=</span><span class="nu0">10</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">20</span><span class="sy4">;</span> <span class="sy2">++</span>i <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        conjunto.<span class="me1">insert</span><span class="br0">&#40;</span> i <span class="br0">&#41;</span><span class="sy4">;</span>
+        <span class="br0">&#125;</span>
+    <span class="co1">// A este punto conjunto: { 10 11 12 13 14 15 16 17 18 19 20 }</span>
+    <span class="co1">// Buscamos el valor</span>
+    set<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">iterator</span> buscado <span class="sy1">=</span> conjunto.<span class="me1">find</span><span class="br0">&#40;</span><span class="nu0">15</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;El valor '15' se ha encontrado: &quot;</span> <span class="sy1">&lt;&lt;</span> <span class="sy2">*</span>buscado <span class="sy1">&lt;&lt;</span>  endl<span class="sy4">;</span></pre>
+</div>
+<!-- EDIT2 SECTION "Ejemplo" [491-1011] -->
+<h3 class="sectionedit3"><a name="topicos_relacionados" id="topicos_relacionados">Tópicos Relacionados</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> <code><a href="count" class="wikilink1" title="es:container:set:count">count</a></code> – cuenta las ocurrencias de un valor en el set</div>
+</li>
+<li class="level1"><div class="li"> Algoritmos genéricos <a href="../algorithm/find" class="wikilink1" title="es:stl:algorithm:find">find</a> y <a href="../algorithm/count" class="wikilink1" title="es:stl:algorithm:count">count</a></div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT3 SECTION "Tópicos Relacionados" [1012-] --></div>
+</body>
+</html>

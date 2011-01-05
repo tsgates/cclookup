@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>io:c:fopen</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:00-0700" />
+<meta name="keywords" content="io,c,fopen" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/io/c/fopen?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=io:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/io/c/fopen" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/io/c/fopen" />
+<link rel="canonical" href="fopen" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='io:c';var JSINFO = {"id":"io:c:fopen","namespace":"io:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="fopen#fopen" class="toc">fopen</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="fopen#parameters" class="toc">Parameters</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="fopen#return_value" class="toc">Return value</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="fopen#example" class="toc">Example</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="fopen#see_also" class="toc">See also</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="fopen" id="fopen">fopen</a></h2>
+<div class="level2">
+
+<p>
+Syntax:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cstdio&gt;</span>
+    <span class="kw4">FILE</span> <span class="sy2">*</span><span class="kw3">fopen</span><span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>fname, <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>mode <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Opens a file indicated by <code>fname</code> and returns a file stream associated with that file. <code>mode</code> is used to determine the file access mode.
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<th class="col0">Mode</th><th class="col1">Meaning</th><th class="col2">Explanation</th><th class="col3">Already Exists</th><th class="col4">Does Not Exist</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><code>“r”</code> </td><td class="col1"> read </td><td class="col2"> Open a file for reading</td><td class="col3">read from start</td><td class="col4">error</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><code>“w”</code> </td><td class="col1"> write </td><td class="col2"> Create a file for writing</td><td class="col3">destroy contents</td><td class="col4">create new</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><code>“a”</code> </td><td class="col1"> append </td><td class="col2"> Append to a file</td><td class="col3">write to end</td><td class="col4">create new</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><code>“r+”</code> </td><td class="col1"> read extended </td><td class="col2"> Open a file for read/write</td><td class="col3">read from start</td><td class="col4">error</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><code>“w+”</code> </td><td class="col1"> write extended </td><td class="col2"> Create a file for read/write</td><td class="col3">destroy contents</td><td class="col4">create new</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><code>“a+”</code> </td><td class="col1"> append extended </td><td class="col2"> Open a file for read/write</td><td class="col3">write to end</td><td class="col4">create new</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [262-766] -->
+<p>
+
+You can also optionally specify the “b” flag to open a file in binary mode on Windows systems. This flag is ignored on POSIX systems (including Linux), so it&#039;s safe to always specify this flag when operating on binary files.
+</p>
+
+<p>
+On the append file access modes, data is written to the end of the file regardless of the current position of the file pointer. 
+</p>
+
+</div>
+<!-- EDIT1 SECTION "fopen" [1-1123] -->
+<h3 class="sectionedit3"><a name="parameters" id="parameters">Parameters</a></h3>
+<div class="level3">
+
+<p>
+
+<code>fname</code> - file name to associate the file stream to
+</p>
+
+<p>
+<code>mode</code> - file access mode
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Parameters" [1124-1227] -->
+<h3 class="sectionedit4"><a name="return_value" id="return_value">Return value</a></h3>
+<div class="level3">
+
+<p>
+
+file stream on success, <code>NULL</code> otherwise
+</p>
+
+</div>
+<!-- EDIT4 SECTION "Return value" [1228-1293] -->
+<h3 class="sectionedit5"><a name="example" id="example">Example</a></h3>
+<div class="level3">
+<pre class="cpp code cpp">     <span class="kw4">int</span> ch<span class="sy4">;</span>
+     <span class="kw4">FILE</span> <span class="sy2">*</span>input <span class="sy1">=</span> <span class="kw3">fopen</span><span class="br0">&#40;</span> <span class="st0">&quot;stuff&quot;</span>, <span class="st0">&quot;r&quot;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+     ch <span class="sy1">=</span> <span class="kw3">getc</span><span class="br0">&#40;</span> input <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+</div>
+<!-- EDIT5 SECTION "Example" [1294-1406] -->
+<h3 class="sectionedit6"><a name="see_also" id="see_also">See also</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="fclose" class="wikilink1" title="io:c:fclose">fclose</a>, <a href="fflush" class="wikilink1" title="io:c:fflush">fflush</a>, <a href="freopen" class="wikilink1" title="io:c:freopen">freopen</a>
+</p>
+
+</div>
+<!-- EDIT6 SECTION "See also" [1407-] --></div>
+</body>
+</html>

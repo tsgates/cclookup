@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it"
+ lang="it" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    it:container    [C++ Reference]
+  </title>
+
+  <meta name="generator" content="DokuWiki" />
+<meta name="robots" content="noindex,follow" />
+<meta name="date" content="1969-12-31T16:00:00-0800" />
+<meta name="keywords" content="it,container" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/it/container?do=index" title="Indice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=it" />
+<link rel="edit" title="Modifica questa pagina" href="http://www.cppreference.com/wiki/it/container?do=edit" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/it/container" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/it/container" />
+<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='it';var JSINFO = {"id":"it:container","namespace":"it"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@tseed=1289693594" ></script>
+
+  <link rel="shortcut icon" href="../lib/tpl/custom1/images/favicon.png" />
+
+  </head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+      <div class="pagename">
+        [[<a href="http://www.cppreference.com/wiki/it/container?do=backlink"  title="Backlinks">it:container</a>]]
+      </div>
+      <div class="logo">
+        <a href="http://www.cppreference.com"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">C++ Reference</a>      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+    
+    
+        <div class="breadcrumbs">
+      <span class="bchead">Ti trovi qui: </span><a href="../start"  title="start">C++ Reference</a> &raquo; <a href="start"  title="it:start">C++ Reference (Italiano)</a> &raquo; <a href="container"  title="it:container" class="wikilink2" rel="nofollow">container</a>    </div>
+    
+  </div>
+
+<div class="plugin_translation"><span>Traduzioni di questa pagina<sup><a href="../localization" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><a href="../container" class="wikilink2" title="container" rel="nofollow">en</a></div></li>  <li><div class="li"><a href="../br-pt/container" class="wikilink2" title="br-pt:container" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../cn/container" class="wikilink2" title="cn:container" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../cz/container" class="wikilink2" title="cz:container" rel="nofollow">cz</a></div></li>  <li><div class="li"><a href="../de/container" class="wikilink2" title="de:container" rel="nofollow">de</a></div></li>  <li><div class="li"><a href="../es/container" class="wikilink2" title="es:container" rel="nofollow">es</a></div></li>  <li><div class="li"><a href="../fr/container" class="wikilink2" title="fr:container" rel="nofollow">fr</a></div></li>  <li><div class="li"><span class="curid"><a href="container" class="wikilink2" title="it:container" rel="nofollow">it</a></span></div></li>  <li><div class="li"><a href="../jp/container" class="wikilink2" title="jp:container" rel="nofollow">jp</a></div></li>  <li><div class="li"><a href="../lv/container" class="wikilink2" title="lv:container" rel="nofollow">lv</a></div></li>  <li><div class="li"><a href="http://www.cppreference.com/wiki/nl/container" class="wikilink2" title="nl:container" rel="nofollow">nl</a></div></li>  <li><div class="li"><a href="../pl/container" class="wikilink2" title="pl:container" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="http://www.cppreference.com/wiki/ro/container" class="wikilink2" title="ro:container" rel="nofollow">ro</a></div></li>  <li><div class="li"><a href="../ru/container" class="wikilink2" title="ru:container" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../sk/container" class="wikilink2" title="sk:container" rel="nofollow">sk</a></div></li>  <li><div class="li"><a href="../tr/container" class="wikilink2" title="tr:container" rel="nofollow">tr</a></div></li>  <li><div class="li"><a href="../tw/container" class="wikilink2" title="tw:container" rel="nofollow">tw</a></div></li></ul></div>
+  
+  
+  <div class="page">
+
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2828341-1";
+urchinTracker();
+</script>
+    <!-- wikipage start -->
+    
+<h1 class="sectionedit1"><a name="questo_argomento_non_esiste_ancora" id="questo_argomento_non_esiste_ancora">Questo argomento non esiste ancora</a></h1>
+<div class="level1">
+
+<p>
+
+Hai seguito un collegamento ad un argomento che non è ancora stato creato. Se vuoi puoi crearlo tu stesso usando il pulsante <code>Crea questa pagina</code>.
+</p>
+
+</div>
+
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+      <!--
+      <div class="doc">
+              </div>
+      -->
+    </div>
+
+   
+    <div class="bar" id="bar__bottom">
+      <div class="bar-left" id="bar__bottomleft">
+        <a href="http://www.cppreference.com/wiki/it/container?do=edit&amp;rev="  class="action create" accesskey="e" rel="nofollow" title="Crea questa pagina">Crea questa pagina</a> &#149;
+        <a href="http://www.cppreference.com/wiki/it/container?do=revisions"  class="action revs" accesskey="o" rel="nofollow" title="Revisioni precedenti">Revisioni precedenti</a>      </div>
+      <div class="bar-right" id="bar__bottomright">
+         &#149;
+         &#149;
+         &#149;
+        <a href="http://www.cppreference.com/wiki/it/container?do=login&amp;sectok=d3cca5ac319124b251ecd37edf955140"  class="action login" accesskey="" rel="nofollow" title="Entra">Entra</a> &#149;
+        <a href="http://www.cppreference.com/wiki/it/container?do=index"  class="action index" accesskey="x" rel="nofollow" title="Indice">Indice</a> &#149;
+        <a href="http://www.cppreference.com/wiki/it/container?do=recent"  class="action recent" accesskey="r" rel="nofollow" title="Ultime modifiche">Ultime modifiche</a> &#149;
+        <a  href="http://www.cppreference.com/wiki/feed.php" title="Recent changes RSS feed">RSS</a> &#149;
+        <a href='http://creativecommons.org/licenses/by/3.0/us/' title='Creative Commons license'>cc</a> &#149;
+        <form action="../../index.html" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="no"></div>
+</body>
+</html>

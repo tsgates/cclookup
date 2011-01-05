@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru"
+ lang="ru" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>ru:container:bitset:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:16-0700" />
+<meta name="keywords" content="ru,container,bitset,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/ru/container/bitset/start?do=index" title="Все страницы" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=ru:container:bitset" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/ru/container/bitset/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/ru/container/bitset/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='ru:container:bitset';var JSINFO = {"id":"ru:container:bitset:start","namespace":"ru:container:bitset"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="c_bitsets" id="c_bitsets">C++ Bitsets</a></h1>
+<div class="level1">
+
+<p>
+
+C++ Bitsets представляют программисту набор бит в виде структуры данных. 
+К битовым множествам могут быть применены различные операторы, такие как
+логическое И, ИЛИ, и т.д.
+</p>
+
+<p>
+Размер битовых множеств в С++ является фиксированным на момент компиляции, так же 
+размер является шаблонным параметром битовых множеств. Если вы хотите использовать 
+битовые множества размер которых может изменяться в процессе выполнения, вы можете
+использовать <a href="http://www.boost.org/doc/libs/release/libs/dynamic_bitset/dynamic_bitset.html" class="urlextern" title="http://www.boost.org/doc/libs/release/libs/dynamic_bitset/dynamic_bitset.html"  rel="nofollow">dynamic_bitset</a>
+из библиотеки <a href="http://www.boost.org/" class="urlextern" title="http://www.boost.org/"  rel="nofollow">Boost</a>.
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/container/bitset/bitset_constructors" class="wikilink2" title="ru:container:bitset:bitset_constructors" rel="nofollow">Constructors</a></td><td class="col1">создает новое битовое множество</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/container/bitset/bitset_operators" class="wikilink2" title="ru:container:bitset:bitset_operators" rel="nofollow">Operators</a></td><td class="col1">сравнивают и устанавливают битовые множества </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="any" class="wikilink1" title="ru:container:bitset:any">any</a></td><td class="col1">истина, если хотябу один бит установлен</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/container/bitset/count" class="wikilink2" title="ru:container:bitset:count" rel="nofollow">count</a></td><td class="col1">возвращает число установленных бит</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/container/bitset/flip" class="wikilink2" title="ru:container:bitset:flip" rel="nofollow">flip</a></td><td class="col1">разворачивает битовое множество</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/container/bitset/none" class="wikilink2" title="ru:container:bitset:none" rel="nofollow">none</a></td><td class="col1">истина, если ни один из битов не установлен</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/container/bitset/reset" class="wikilink2" title="ru:container:bitset:reset" rel="nofollow">reset</a></td><td class="col1">устанавливает один или все биты в ноль</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/container/bitset/set" class="wikilink2" title="ru:container:bitset:set" rel="nofollow">set</a></td><td class="col1">устанавливает один или все биты</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/container/bitset/size" class="wikilink2" title="ru:container:bitset:size" rel="nofollow">size</a></td><td class="col1"> количество битов, которое битовое множество может содержать</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/container/bitset/test" class="wikilink2" title="ru:container:bitset:test" rel="nofollow">test</a></td><td class="col1">возвращает значение данного бита</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/container/bitset/to_string" class="wikilink2" title="ru:container:bitset:to_string" rel="nofollow">to_string</a></td><td class="col1">строковое представление битового множества</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/container/bitset/to_ulong" class="wikilink2" title="ru:container:bitset:to_ulong" rel="nofollow">to_ulong</a></td><td class="col1">возвращает целочисленное представление битового множества</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [982-2095] -->
+</div>
+<!-- EDIT1 SECTION "C++ Bitsets" [1-2095] -->
+<h3 class="sectionedit3"><a name="примечание" id="примечание">Примечание:</a></h3>
+<div class="level3">
+
+<p>
+
+Bit set is missing two boolean queries to complement <code><a href="any" class="wikilink1" title="ru:container:bitset:any">any()</a></code> и <code><a href="http://www.cppreference.com/wiki/ru/container/bitset/none" class="wikilink2" title="ru:container:bitset:none" rel="nofollow">none()</a></code>: <code>all()</code> и <code>some()</code>.
+
+</p>
+<ul>
+<li class="level1"><div class="li"> all: <code>(~bitset).none()</code></div>
+</li>
+<li class="level1"><div class="li"> some: <code>(~bitset).any()</code></div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT3 SECTION "Примечание:" [2096-] --></div>
+</body>
+</html>

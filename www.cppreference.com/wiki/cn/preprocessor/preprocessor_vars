@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn"
+ lang="cn" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>cn:preprocessor:preprocessor_vars</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:40-0700" />
+<meta name="keywords" content="cn,preprocessor,preprocessor_vars" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/cn/preprocessor/preprocessor_vars?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=cn:preprocessor" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/cn/preprocessor/preprocessor_vars" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/cn/preprocessor/preprocessor_vars" />
+<link rel="canonical" href="preprocessor_vars" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='cn:preprocessor';var JSINFO = {"id":"cn:preprocessor:preprocessor_vars","namespace":"cn:preprocessor"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="预定义变量" id="预定义变量">预定义变量</a></h2>
+<div class="level2">
+
+<p>
+
+语法:
+
+</p>
+<pre class="cpp code cpp">    __LINE__
+    __FILE__
+    __DATE__
+    __TIME__
+    __cplusplus
+    __STDC__</pre>
+<p>
+以下预定义变量可能因编译器而异，一般的理解为：
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>__LINE__</code> 和 <code>__FILE__</code> 变量记录了编译器的当前处理行和当前处理文件。</div>
+</li>
+<li class="level1"><div class="li"> <code>__DATE__</code> 变量包含当前文件被编译的日期，格式为：月/日/年。</div>
+</li>
+<li class="level1"><div class="li"> <code>__TIME__</code> 变量包含当前文件被编译的时间，格式为：时:分:秒。</div>
+</li>
+<li class="level1"><div class="li"> <code>__cplusplus</code> 变量只有在C++程序中才被定义；一些老编译器也可以为<code>c_plusplus</code>。</div>
+</li>
+<li class="level1"><div class="li"> <code>__STDC__</code> 变量在编译C程序的时候被定义，许多编译器在编译C++代码时也会定义此变量。</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT1 SECTION "预定义变量" [1-738] -->
+<h3 class="sectionedit2"><a name="gcc特有变量" id="gcc特有变量">GCC特有变量</a></h3>
+<div class="level3">
+
+<p>
+
+以下是GCC特有变量。While they are not specifically preprocessor macros they are <a href="http://gcc.gnu.org/onlinedocs/gcc/Function-Names.html" class="urlextern" title="http://gcc.gnu.org/onlinedocs/gcc/Function-Names.html"  rel="nofollow">magic</a> and can be used the same way:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>__func__</code> contains the bare name of the function</div>
+</li>
+<li class="level1"><div class="li"> <code>__FUNCTION__</code> is another name for <code>__func__</code></div>
+</li>
+<li class="level1"><div class="li"> The <code>__PRETTY_FUNCTION__</code> contains the type signature of the function as well as its bare name. </div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT2 SECTION "GCC特有变量" [739-] --></div>
+</body>
+</html>

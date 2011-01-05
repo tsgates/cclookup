@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="br-pt"
+ lang="br-pt" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>br-pt:container:vector:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:04-0700" />
+<meta name="keywords" content="br-pt,container,vector,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/br-pt/container/vector/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=br-pt:container:vector" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/br-pt/container/vector/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/br-pt/container/vector/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='br-pt:container:vector';var JSINFO = {"id":"br-pt:container:vector:start","namespace":"br-pt:container:vector"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<p>
+<strong>&lt;vector&gt;</strong>
+</p>
+
+<p>
+O container std::vector é um arranjo e generaliza o conceito dum vector em C. Pode ser acessado através de índices para o elementos assim como em C (através de uma sobrecarga do operador adequado) e sua memória é alocada de forma contígua. Entretanto, diferente dum vetor em C, o tamanho do container é dinâmico com gerenciamento automático e há uma flexibilidade maior para adicionar elementos. Além de conhecer seu tamanho atual, uma instância de std::vector também conhece quantos elementos ainda pode alocar antes de precisar de redimensionamento: a alocação é feita em blocos e não para cada elemento, e é possível definir manualmente qual o tamanho do bloco. Diferente dum vetor em C, std::vector fornece o método at para acessar elementos pelo índice, mas com tratamento de exceções para o caso de índices inválidos (valores negativos ou acima do tamanho atual do container).
+</p>
+
+<p>
+Para inserções no meio do container std::list é mais eficiente. Enquanto std::vector fornece inserção eficiente no final do container, std::deque fornece inserção eficiente tanto no começo quanto no final do container.[7] Além de inserção eficiente no final, pontos positivos do std::vector incluem acesso em tempo constante a qualquer elemento através do índice e iteração em tempo linear.[8]
+</p>
+
+<p>
+Sendo um container genérico, pode ser especializado para diferentes tipos de dado. Entretanto, desaconselha-se especializá-lo para o tipo booleano nativo, bool,[1] cuja especialização já consta na biblioteca padrão.
+</p>
+
+<p>
+
+Tirado de <a href="http://pt.wikipedia.org/wiki/Biblioteca_padr%C3%A3o_do_C%2B%2B" class="urlextern" title="http://pt.wikipedia.org/wiki/Biblioteca_padr%C3%A3o_do_C%2B%2B"  rel="nofollow">http://pt.wikipedia.org/wiki/Biblioteca_padr%C3%A3o_do_C%2B%2B</a>
+</p>
+</div>
+</body>
+</html>

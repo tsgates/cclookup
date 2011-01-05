@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>string:basic_string:insert</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-11-10T05:52:07-0800" />
+<meta name="keywords" content="string,basic_string,insert" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/string/basic_string/insert?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=string:basic_string" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/string/basic_string/insert" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/string/basic_string/insert" />
+<link rel="canonical" href="insert" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='string:basic_string';var JSINFO = {"id":"string:basic_string:insert","namespace":"string:basic_string"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="insert#basic_stringinsert" class="toc">basic_string::insert</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="insert#parameters" class="toc">Parameters</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="insert#return_value" class="toc">Return value</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="insert#see_also" class="toc">See also</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="basic_stringinsert" id="basic_stringinsert">basic_string::insert</a></h2>
+<div class="level2">
+<pre class="cpp code cpp">iterator insert<span class="br0">&#40;</span> iterator pos, Char ch <span class="br0">&#41;</span><span class="sy4">;</span>                                 <span class="co1">//1</span>
+<span class="kw4">void</span> insert<span class="br0">&#40;</span> iterator pos, size_type count, Char ch <span class="br0">&#41;</span><span class="sy4">;</span>                    <span class="co1">//2</span>
+basic_string<span class="sy3">&amp;</span> insert<span class="br0">&#40;</span> size_type index, size_type count, Char ch <span class="br0">&#41;</span><span class="sy4">;</span>        <span class="co1">//3</span>
+basic_string<span class="sy3">&amp;</span> insert<span class="br0">&#40;</span> size_type index, <span class="kw4">const</span> Char<span class="sy2">*</span> s <span class="br0">&#41;</span><span class="sy4">;</span>                   <span class="co1">//4</span>
+basic_string<span class="sy3">&amp;</span> insert<span class="br0">&#40;</span> size_type index, <span class="kw4">const</span> Char<span class="sy2">*</span> s, size_type count <span class="br0">&#41;</span><span class="sy4">;</span>  <span class="co1">//5</span>
+basic_string<span class="sy3">&amp;</span> insert<span class="br0">&#40;</span> size_type index, <span class="kw4">const</span> basic_string<span class="sy3">&amp;</span> str <span class="br0">&#41;</span><span class="sy4">;</span>         <span class="co1">//6</span>
+basic_string<span class="sy3">&amp;</span> insert<span class="br0">&#40;</span> size_type index, <span class="kw4">const</span> basic_string<span class="sy3">&amp;</span> str,           <span class="co1">//7</span>
+                      size_type index_str, size_type count <span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+<span class="kw2">template</span><span class="sy1">&lt;</span> <span class="kw2">class</span> InputIterator <span class="sy1">&gt;</span>
+<span class="kw4">void</span> insert<span class="br0">&#40;</span> iterator i, InputIterator first, InputIterator last <span class="br0">&#41;</span><span class="sy4">;</span>       <span class="co1">//8</span></pre>
+<p>
+Inserts characters to the string
+</p>
+
+<p>
+1) inserts character <code>ch</code> before the character pointed by <code>pos</code>
+</p>
+
+<p>
+2) inserts <code>count</code> copies of character <code>ch</code> before the element pointed to by <code>pos</code>
+</p>
+
+<p>
+3) inserts <code>count</code> copies of character <code>ch</code> at the position <code>index</code>
+</p>
+
+<p>
+4) inserts character string <code>s</code> at the position <code>index</code>
+</p>
+
+<p>
+5) inserts <code>count</code> characters from the character string <code>s</code> at the position <code>index</code>
+</p>
+
+<p>
+6) inserts string <code>str</code> at the position <code>index</code>
+</p>
+
+<p>
+7) inserts a string, obtained by <code>str.substr( index_str, count )</code> at the position <code>index</code>
+</p>
+
+<p>
+8) inserts characters from range <code>[first, last)</code>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "basic_string::insert" [1-1387] -->
+<h3 class="sectionedit2"><a name="parameters" id="parameters">Parameters</a></h3>
+<div class="level3">
+
+<p>
+
+<code>pos</code> - iterator before which the content will be inserted
+</p>
+
+<p>
+<code>index</code> - position at which the content will be inserted
+</p>
+
+<p>
+<code>ch</code> - character to be inserted
+</p>
+
+<p>
+<code>s</code> - character string to be inserted
+</p>
+
+<p>
+<code>str</code> - string to be inserted
+</p>
+
+<p>
+<code>first</code>, <code>last</code> - range defining characters to be inserted
+</p>
+
+<p>
+<code>count</code> - number of characters to be inserted
+</p>
+
+<p>
+<code>index_str</code> - position at the other string to take the characters from
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Parameters" [1388-1825] -->
+<h3 class="sectionedit3"><a name="return_value" id="return_value">Return value</a></h3>
+<div class="level3">
+
+<p>
+
+1) iterator to the inserted character
+</p>
+
+<p>
+2, 8) none
+</p>
+
+<p>
+3-7) resulting string
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Return value" [1826-1921] -->
+<h3 class="sectionedit4"><a name="see_also" id="see_also">See also</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="replace" class="wikilink1" title="string:basic_string:replace">replace</a>
+</p>
+
+</div>
+<!-- EDIT4 SECTION "See also" [1922-] --></div>
+</body>
+</html>

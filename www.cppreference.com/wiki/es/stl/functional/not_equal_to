@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es"
+ lang="es" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>es:util:functional:not_equal_to</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:32-0700" />
+<meta name="keywords" content="es,util,functional,not_equal_to" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/es/util/functional/not_equal_to?do=index" title="Índice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=es:util:functional" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/es/util/functional/not_equal_to" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/es/util/functional/not_equal_to" />
+<link rel="canonical" href="not_equal_to" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='es:util:functional';var JSINFO = {"id":"es:util:functional:not_equal_to","namespace":"es:util:functional"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Tabla de Contenidos</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="level1"><div class="li"><span class="li"><a href="not_equal_to#not_equal_to" class="toc">not_equal_to</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="not_equal_to#detalles" class="toc">Detalles</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="not_equal_to#topicos_relacionados" class="toc">Tópicos Relacionados</a></span></div></li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h1 class="sectionedit1"><a name="not_equal_to" id="not_equal_to">not_equal_to</a></h1>
+<div class="level1">
+
+<p>
+Sintaxis:
+</p>
+<pre class="cpp code cpp"><span class="kw2">template</span> <span class="sy1">&lt;</span><span class="kw2">typename</span> T<span class="sy1">&gt;</span> <span class="kw4">struct</span> not_equal_to
+<span class="sy4">:</span> <span class="kw2">public</span> std<span class="sy4">::</span><span class="me2">binary_function</span> <span class="sy1">&lt;</span>T,T,<span class="kw4">bool</span><span class="sy1">&gt;</span>
+<span class="br0">&#123;</span>
+  <span class="kw4">bool</span> operator<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#40;</span><span class="kw4">const</span> T<span class="sy3">&amp;</span> x, <span class="kw4">const</span> T<span class="sy3">&amp;</span> y<span class="br0">&#41;</span> <span class="kw4">const</span> <span class="br0">&#123;</span> <span class="kw1">return</span> x<span class="sy3">!</span><span class="sy1">=</span>y<span class="sy4">;</span> <span class="br0">&#125;</span>
+<span class="br0">&#125;</span><span class="sy4">;</span></pre><ul>
+<li class="level1"><div class="li"> <code>not_equal-to</code> hereda de <code><a href="binary_function" class="wikilink1" title="es:util:functional:binary_function">binary_function</a></code>.</div>
+</li>
+<li class="level1"><div class="li"> <code>T</code> es un tipo de datos que soporte el operador de igualdad <code>operator==</code> (ver <a href="not_equal_to#detalles" title="es:util:functional:not_equal_to &crarr;" class="wikilink1">Detalles</a>).</div>
+</li>
+</ul>
+
+<p>
+
+<code>not_equal_to</code> es un <a href="http://en.wikipedia.org/wiki/es:Predicado" class="interwiki iw_wp" title="http://en.wikipedia.org/wiki/es:Predicado">predicado</a> binario que determina si dos objetos de un tipo de datos <code>T</code> son no-iguales según el operador <code>operator!=</code>. En otras palabras, si <em>x</em> e <em>y</em> son dos objetos del tipo de datos <code>T</code>, las siguientes invocaciones son equivalentes:
+</p>
+<pre class="cpp code cpp"><span class="kw4">bool</span> r1<span class="sy1">=</span> x<span class="sy3">!</span><span class="sy1">=</span>y<span class="sy4">;</span>
+<span class="kw4">bool</span> r2<span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">not_equal_to</span><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> <span class="br0">&#40;</span>x,y<span class="br0">&#41;</span><span class="sy4">;</span></pre>
+</div>
+<!-- EDIT1 SECTION "not_equal_to" [1-727] -->
+<h2 class="sectionedit2"><a name="detalles" id="detalles">Detalles</a></h2>
+<div class="level2">
+
+<p>
+
+<code>not_equal_to</code> ejecuta la comparación usando explícitamente el operador <code>operator!=</code>. No se utiliza la forma lógicamente equivalente y con menos prerequisitos ”<code>!(x==y)</code>”, aunque ésta puede implementarse para T por medio de la utilidad <em>rel_ops</em>.
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Detalles" [728-1009] -->
+<h2 class="sectionedit3"><a name="topicos_relacionados" id="topicos_relacionados">Tópicos Relacionados</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> <code><a href="equal_to" class="wikilink1" title="es:util:functional:equal_to">equal_to</a></code> – predicado que compara si dos objetos son iguales.</div>
+</li>
+<li class="level1"><div class="li"> <code><a href="less" class="wikilink1" title="es:util:functional:less">less</a></code>, <code><a href="greater" class="wikilink1" title="es:util:functional:greater">greater</a></code>, <code><a href="http://www.cppreference.com/wiki/es/util/functional/less_equal" class="wikilink2" title="es:util:functional:less_equal" rel="nofollow">less_equal</a></code>. <code><a href="http://www.cppreference.com/wiki/es/util/functional/greater_equal" class="wikilink2" title="es:util:functional:greater_equal" rel="nofollow">greater_equal</a></code> – predicados que comparan por menor, mayor y las otras relaciones.</div>
+</li>
+<li class="level1"><div class="li"> <code><a href="binary_function" class="wikilink1" title="es:util:functional:binary_function">binary_function</a></code> – el tipo de functoide modelado por equal_to</div>
+</li>
+<li class="level1"><div class="li"> <code><a href="http://www.cppreference.com/wiki/es/util/utilities/rel_ops" class="wikilink2" title="es:util:utilities:rel_ops" rel="nofollow">rel_ops</a></code> – cómo definir operadores relacionales automáticamente para un tipo de datos</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT3 SECTION "Tópicos Relacionados" [1010-] --></div>
+</body>
+</html>

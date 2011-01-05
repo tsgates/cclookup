@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="tw"
+ lang="tw" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>tw:c:other:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:11-0700" />
+<meta name="keywords" content="tw,c,other,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/tw/c/other/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=tw:c:other" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/tw/c/other/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/tw/c/other/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='tw:c:other';var JSINFO = {"id":"tw:c:other:start","namespace":"tw:c:other"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="其它標準_c_函式" id="其它標準_c_函式">其它標準 C 函式</a></h1>
+<div class="level1">
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/c/other/abort" class="wikilink2" title="tw:c:other:abort" rel="nofollow">abort</a></td><td class="col1">終止程式</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/c/other/assert" class="wikilink2" title="tw:c:other:assert" rel="nofollow">assert</a></td><td class="col1">若運算式的值非真，則終止程式</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/c/other/atexit" class="wikilink2" title="tw:c:other:atexit" rel="nofollow">atexit</a></td><td class="col1">設定程式終止時要呼叫的函式</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/c/other/bsearch" class="wikilink2" title="tw:c:other:bsearch" rel="nofollow">bsearch</a></td><td class="col1">執行二元搜尋</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/c/other/exit" class="wikilink2" title="tw:c:other:exit" rel="nofollow">exit</a></td><td class="col1">終上程式</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/c/other/getenv" class="wikilink2" title="tw:c:other:getenv" rel="nofollow">getenv</a></td><td class="col1">取得環境變數</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/c/other/longjmp" class="wikilink2" title="tw:c:other:longjmp" rel="nofollow">longjmp</a></td><td class="col1">start execution at a certain point in the program</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/c/other/putenv" class="wikilink2" title="tw:c:other:putenv" rel="nofollow">putenv</a></td><td class="col1">add/modify the environmental settings</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/c/other/qsort" class="wikilink2" title="tw:c:other:qsort" rel="nofollow">qsort</a></td><td class="col1">執行快速排序</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/c/other/raise" class="wikilink2" title="tw:c:other:raise" rel="nofollow">raise</a></td><td class="col1">send a signal to the program</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/c/other/rand" class="wikilink2" title="tw:c:other:rand" rel="nofollow">rand</a></td><td class="col1">傳回一個偽亂數</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/c/other/setjmp" class="wikilink2" title="tw:c:other:setjmp" rel="nofollow">setjmp</a></td><td class="col1">set execution to start at a certain point</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/c/other/signal" class="wikilink2" title="tw:c:other:signal" rel="nofollow">signal</a></td><td class="col1">register a function as a signal handler</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/c/other/srand" class="wikilink2" title="tw:c:other:srand" rel="nofollow">srand</a></td><td class="col1">initialize the random number generator</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/c/other/system" class="wikilink2" title="tw:c:other:system" rel="nofollow">system</a></td><td class="col1">have the default command interpreter execute a command</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/c/other/va_arg" class="wikilink2" title="tw:c:other:va_arg" rel="nofollow">va_arg</a></td><td class="col1">use variable length parameter lists</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [44-762] -->
+</div>
+</div>
+</body>
+</html>

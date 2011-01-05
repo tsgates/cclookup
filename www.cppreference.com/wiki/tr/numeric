@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="tr"
+ lang="tr" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    tr:numeric    [C++ Reference]
+  </title>
+
+  <meta name="generator" content="DokuWiki" />
+<meta name="robots" content="noindex,follow" />
+<meta name="date" content="1969-12-31T16:00:00-0800" />
+<meta name="keywords" content="tr,numeric" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/tr/numeric?do=index" title="İndeks" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=tr" />
+<link rel="edit" title="Sayfayı düzenle" href="http://www.cppreference.com/wiki/tr/numeric?do=edit" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/tr/numeric" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/tr/numeric" />
+<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='tr';var JSINFO = {"id":"tr:numeric","namespace":"tr"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@tseed=1289693594" ></script>
+
+  <link rel="shortcut icon" href="../lib/tpl/custom1/images/favicon.png" />
+
+  </head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+      <div class="pagename">
+        [[<a href="http://www.cppreference.com/wiki/tr/numeric?do=backlink"  title="Geri linkler">tr:numeric</a>]]
+      </div>
+      <div class="logo">
+        <a href="http://www.cppreference.com"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">C++ Reference</a>      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+    
+    
+        <div class="breadcrumbs">
+      <span class="bchead">Buradasınız: </span><a href="../start"  title="start">C++ Reference</a> &raquo; <a href="start"  title="tr:start">C++ Reference</a> &raquo; <a href="numeric"  title="tr:numeric" class="wikilink2" rel="nofollow">numeric</a>    </div>
+    
+  </div>
+
+<div class="plugin_translation"><span>Translations of this page<sup><a href="../localization" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><a href="../numeric" class="wikilink2" title="numeric" rel="nofollow">en</a></div></li>  <li><div class="li"><a href="../br-pt/numeric" class="wikilink2" title="br-pt:numeric" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../cn/numeric" class="wikilink2" title="cn:numeric" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../cz/numeric" class="wikilink2" title="cz:numeric" rel="nofollow">cz</a></div></li>  <li><div class="li"><a href="http://www.cppreference.com/wiki/de/numeric" class="wikilink2" title="de:numeric" rel="nofollow">de</a></div></li>  <li><div class="li"><a href="../es/numeric" class="wikilink2" title="es:numeric" rel="nofollow">es</a></div></li>  <li><div class="li"><a href="../fr/numeric" class="wikilink2" title="fr:numeric" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="http://www.cppreference.com/wiki/it/numeric" class="wikilink2" title="it:numeric" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../jp/numeric" class="wikilink2" title="jp:numeric" rel="nofollow">jp</a></div></li>  <li><div class="li"><a href="../lv/numeric" class="wikilink2" title="lv:numeric" rel="nofollow">lv</a></div></li>  <li><div class="li"><a href="http://www.cppreference.com/wiki/nl/numeric" class="wikilink2" title="nl:numeric" rel="nofollow">nl</a></div></li>  <li><div class="li"><a href="../pl/numeric" class="wikilink2" title="pl:numeric" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="http://www.cppreference.com/wiki/ro/numeric" class="wikilink2" title="ro:numeric" rel="nofollow">ro</a></div></li>  <li><div class="li"><a href="../ru/numeric" class="wikilink2" title="ru:numeric" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="http://www.cppreference.com/wiki/sk/numeric" class="wikilink2" title="sk:numeric" rel="nofollow">sk</a></div></li>  <li><div class="li"><span class="curid"><a href="numeric" class="wikilink2" title="tr:numeric" rel="nofollow">tr</a></span></div></li>  <li><div class="li"><a href="http://www.cppreference.com/wiki/tw/numeric" class="wikilink2" title="tw:numeric" rel="nofollow">tw</a></div></li></ul></div>
+  
+  
+  <div class="page">
+
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2828341-1";
+urchinTracker();
+</script>
+    <!-- wikipage start -->
+    
+<h1 class="sectionedit1"><a name="bu_baslık_henuez_mevcut_degil" id="bu_baslık_henuez_mevcut_degil">Bu başlık henüz mevcut değil</a></h1>
+<div class="level1">
+
+<p>
+
+Henüz mevcut olmayan bir başlığın linkiyle geldiniz. <code>bu sayfayı oluştur</code> tuşuna tıklayarak sayfayı oluşturabilirsiniz.
+</p>
+
+</div>
+
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+      <!--
+      <div class="doc">
+              </div>
+      -->
+    </div>
+
+   
+    <div class="bar" id="bar__bottom">
+      <div class="bar-left" id="bar__bottomleft">
+        <a href="http://www.cppreference.com/wiki/tr/numeric?do=edit&amp;rev="  class="action create" accesskey="e" rel="nofollow" title="Bu sayfayı oluştur">Bu sayfayı oluştur</a> &#149;
+        <a href="http://www.cppreference.com/wiki/tr/numeric?do=revisions"  class="action revs" accesskey="o" rel="nofollow" title="Eski sürümler">Eski sürümler</a>      </div>
+      <div class="bar-right" id="bar__bottomright">
+         &#149;
+         &#149;
+         &#149;
+        <a href="http://www.cppreference.com/wiki/tr/numeric?do=login&amp;sectok=d3cca5ac319124b251ecd37edf955140"  class="action login" accesskey="" rel="nofollow" title="Giriş yap">Giriş yap</a> &#149;
+        <a href="http://www.cppreference.com/wiki/tr/numeric?do=index"  class="action index" accesskey="x" rel="nofollow" title="İndeks">İndeks</a> &#149;
+        <a href="http://www.cppreference.com/wiki/tr/numeric?do=recent"  class="action recent" accesskey="r" rel="nofollow" title="En son değişiklikler">En son değişiklikler</a> &#149;
+        <a  href="http://www.cppreference.com/wiki/feed.php" title="Recent changes RSS feed">RSS</a> &#149;
+        <a href='http://creativecommons.org/licenses/by/3.0/us/' title='Creative Commons license'>cc</a> &#149;
+        <form action="../../index.html" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="no"></div>
+</body>
+</html>

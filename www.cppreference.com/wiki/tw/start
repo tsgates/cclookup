@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="tw"
+ lang="tw" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>tw:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-11-08T14:37:41-0800" />
+<meta name="keywords" content="tw,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/tw/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=tw" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/tw/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/tw/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='tw';var JSINFO = {"id":"tw:start","namespace":"tw"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="c_參考資料" id="c_參考資料">C++ 參考資料</a></h2>
+<div class="level2">
+<table class="columns-plugin" style="width:100%">
+<tr><td class="first" style="width:50%;vertical-align:top;">
+
+<p>
+<strong>一般性主題</strong>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="about/faq" class="wikilink1" title="tw:about:faq">常見問答集</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="preprocessor/start" class="wikilink1" title="tw:preprocessor:start">Pre-processor指令</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="operator_precedence" class="wikilink1" title="tw:operator_precedence">運算子優先順序</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="escape_sequences" class="wikilink1" title="tw:escape_sequences">跳脫字</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="ascii" class="wikilink1" title="tw:ascii">ASCII 列表</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="data_types" class="wikilink1" title="tw:data_types">資料型態</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="keywords/start" class="wikilink1" title="tw:keywords:start">關鍵字</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="header_files/start" class="wikilink1" title="tw:header_files:start">標頭檔</a></div>
+</li>
+</ul>
+
+<p>
+
+<strong>標準 C 函式庫</strong>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="c/start" class="wikilink1" title="tw:c:start">概觀</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="io/c/start" class="wikilink1" title="tw:io:c:start">Standard C I/O</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/tw/string/c/start" class="wikilink2" title="tw:string:c:start" rel="nofollow">Standard C String &amp; Character</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/tw/numeric/c/start" class="wikilink2" title="tw:numeric:c:start" rel="nofollow">Standard C Math</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/tw/chrono/c/start" class="wikilink2" title="tw:chrono:c:start" rel="nofollow">Standard C Time &amp; Date</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/tw/memory/c/start" class="wikilink2" title="tw:memory:c:start" rel="nofollow">Standard C Memory</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="c/other/start" class="wikilink1" title="tw:c:other:start">Other standard C functions</a></div>
+</li>
+</ul>
+</td><td class="last">
+
+<p>
+<strong>一般 C++</strong>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/tw/string/start" class="wikilink2" title="tw:string:start" rel="nofollow">C++ Strings</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/tw/io/start" class="wikilink2" title="tw:io:start" rel="nofollow">C++ I/O</a></div>
+<ul>
+<li class="level2"><div class="li"> <a href="http://www.cppreference.com/wiki/tw/io/sstream/start" class="wikilink2" title="tw:io:sstream:start" rel="nofollow">C++ String Streams</a></div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/tw/exception/start" class="wikilink2" title="tw:exception:start" rel="nofollow">C++ Exceptions</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/tw/complex/start" class="wikilink2" title="tw:complex:start" rel="nofollow">Complex Numbers</a></div>
+</li>
+</ul>
+
+<p>
+
+<strong>C++ 標準模板庫(STL, Standard Template Library)</strong>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="stl/start" class="wikilink1" title="tw:stl:start">概觀</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/tw/stl/algorithm/start" class="wikilink2" title="tw:stl:algorithm:start" rel="nofollow">C++ Algorithms</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="stl/vector/start" class="wikilink1" title="tw:stl:vector:start">C++ Vectors</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/tw/stl/deque/start" class="wikilink2" title="tw:stl:deque:start" rel="nofollow">C++ Double-Ended Queues</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/tw/stl/list/start" class="wikilink2" title="tw:stl:list:start" rel="nofollow">C++ Lists</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/tw/stl/priority_queue/start" class="wikilink2" title="tw:stl:priority_queue:start" rel="nofollow">C++ Priority Queues</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/tw/stl/queue/start" class="wikilink2" title="tw:stl:queue:start" rel="nofollow">C++ Queues</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/tw/stl/stack/start" class="wikilink2" title="tw:stl:stack:start" rel="nofollow">C++ Stacks</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/tw/stl/set/start" class="wikilink2" title="tw:stl:set:start" rel="nofollow">C++ Sets</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/tw/stl/multiset/start" class="wikilink2" title="tw:stl:multiset:start" rel="nofollow">C++ Multisets</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/tw/stl/map/start" class="wikilink2" title="tw:stl:map:start" rel="nofollow">C++ Maps</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/tw/stl/multimap/start" class="wikilink2" title="tw:stl:multimap:start" rel="nofollow">C++ Multimaps</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/tw/stl/bitset/start" class="wikilink2" title="tw:stl:bitset:start" rel="nofollow">C++ Bitsets</a></div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/tw/stl/iterators" class="wikilink2" title="tw:stl:iterators" rel="nofollow">Iterators</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/tw/stl/functional/start" class="wikilink2" title="tw:stl:functional:start" rel="nofollow">Function objects/adapters</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="stl/utility/start" class="wikilink1" title="tw:stl:utility:start">General utilities</a></div>
+</li>
+</ul>
+</td></tr></table>
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:c:io:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:22-0700" />
+<meta name="keywords" content="jp,c,io,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/c/io/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp:c:io" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/c/io/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/c/io/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp:c:io';var JSINFO = {"id":"jp:c:io:start","namespace":"jp:c:io"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="標準c_入出力" id="標準c_入出力">標準C 入出力</a></h1>
+<div class="level1">
+
+<p>
+
+これらの関数は、<a href="../../io/start" class="wikilink1" title="jp:io:start">C++のストリームをベースとしたIOクラス</a>と同じような機能を提供します。
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="clearerr" class="wikilink1" title="jp:c:io:clearerr">clearerr</a></td><td class="col1">エラーをクリアします</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="fclose" class="wikilink1" title="jp:c:io:fclose">fclose</a></td><td class="col1">ファイルを閉じます</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="feof" class="wikilink1" title="jp:c:io:feof">feof</a></td><td class="col1">ファイルの終端に到達していたらtrueを返します</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="ferror" class="wikilink1" title="jp:c:io:ferror">ferror</a></td><td class="col1">ファイルがエラーを出しているか確認します</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="fflush" class="wikilink1" title="jp:c:io:fflush">fflush</a></td><td class="col1">出力バッファにたまっている内容を書き出します</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="fgetc" class="wikilink1" title="jp:c:io:fgetc">fgetc</a></td><td class="col1">ストリームから文字を取得します</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="fgetpos" class="wikilink1" title="jp:c:io:fgetpos">fgetpos</a></td><td class="col1">ファイル内の位置を取得します</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="fgets" class="wikilink1" title="jp:c:io:fgets">fgets</a></td><td class="col1">ストリームから文字列を取得します</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="fopen" class="wikilink1" title="jp:c:io:fopen">fopen</a></td><td class="col1">ファイルを開きます</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="fprintf" class="wikilink1" title="jp:c:io:fprintf">fprintf</a></td><td class="col1">フォーマット済みの文字列をファイルに出力します</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="fputc" class="wikilink1" title="jp:c:io:fputc">fputc</a></td><td class="col1">文字をファイルに書き出します</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="fputs" class="wikilink1" title="jp:c:io:fputs">fputs</a></td><td class="col1">文字列をファイルに書き出します</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><a href="fread" class="wikilink1" title="jp:c:io:fread">fread</a></td><td class="col1">ファイルから読み込みます</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><a href="freopen" class="wikilink1" title="jp:c:io:freopen">freopen</a></td><td class="col1">既存のストリームを別の名前で開きます</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><a href="fscanf" class="wikilink1" title="jp:c:io:fscanf">fscanf</a></td><td class="col1">特定のフォーマットに従って、ファイルから読み込みます</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><a href="fseek" class="wikilink1" title="jp:c:io:fseek">fseek</a></td><td class="col1">ファイルのアクセス位置を特定の場所に移動します</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><a href="fsetpos" class="wikilink1" title="jp:c:io:fsetpos">fsetpos</a></td><td class="col1">ファイルのアクセス位置を特定の場所に移動します</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><a href="ftell" class="wikilink1" title="jp:c:io:ftell">ftell</a></td><td class="col1">現在のファイルのアクセス位置を返します</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"><a href="fwrite" class="wikilink1" title="jp:c:io:fwrite">fwrite</a></td><td class="col1">ファイルに書き込みます</td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"><a href="getc" class="wikilink1" title="jp:c:io:getc">getc</a></td><td class="col1">ファイルから文字を読み込みます</td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"><a href="getchar" class="wikilink1" title="jp:c:io:getchar">getchar</a></td><td class="col1">標準入力から文字を読み込みます</td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"><a href="gets" class="wikilink1" title="jp:c:io:gets">gets</a></td><td class="col1">標準入力から文字列を読み込みます</td>
+	</tr>
+	<tr class="row22">
+		<td class="col0"><a href="perror" class="wikilink1" title="jp:c:io:perror">perror</a></td><td class="col1">現在のエラーコードを人の読める文字列形式にして、標準エラー出力に表示します</td>
+	</tr>
+	<tr class="row23">
+		<td class="col0"><a href="printf" class="wikilink1" title="jp:c:io:printf">printf</a></td><td class="col1">フォーマット済みの文字列を標準出力に書き出します</td>
+	</tr>
+	<tr class="row24">
+		<td class="col0"><a href="putc" class="wikilink1" title="jp:c:io:putc">putc</a></td><td class="col1">文字をストリームに書き出します</td>
+	</tr>
+	<tr class="row25">
+		<td class="col0"><a href="putchar" class="wikilink1" title="jp:c:io:putchar">putchar</a></td><td class="col1">文字を標準出力に書き出します</td>
+	</tr>
+	<tr class="row26">
+		<td class="col0"><a href="puts" class="wikilink1" title="jp:c:io:puts">puts</a></td><td class="col1">文字列を標準出力に書き出します</td>
+	</tr>
+	<tr class="row27">
+		<td class="col0"><a href="remove" class="wikilink1" title="jp:c:io:remove">remove</a></td><td class="col1">ファイルを削除します</td>
+	</tr>
+	<tr class="row28">
+		<td class="col0"><a href="rename" class="wikilink1" title="jp:c:io:rename">rename</a></td><td class="col1">ファイルをリネームします</td>
+	</tr>
+	<tr class="row29">
+		<td class="col0"><a href="rewind" class="wikilink1" title="jp:c:io:rewind">rewind</a></td><td class="col1">ファイルのアクセス位置をファイルの先頭に移動します</td>
+	</tr>
+	<tr class="row30">
+		<td class="col0"><a href="scanf" class="wikilink1" title="jp:c:io:scanf">scanf</a></td><td class="col1">特定のフォーマットに従って、標準入力から読み込みます</td>
+	</tr>
+	<tr class="row31">
+		<td class="col0"><a href="setbuf" class="wikilink1" title="jp:c:io:setbuf">setbuf</a></td><td class="col1">指定されたストリームのバッファを設定します</td>
+	</tr>
+	<tr class="row32">
+		<td class="col0"><a href="setvbuf" class="wikilink1" title="jp:c:io:setvbuf">setvbuf</a></td><td class="col1">指定されたストリームのバッファとサイズを設定します</td>
+	</tr>
+	<tr class="row33">
+		<td class="col0"><a href="snprintf" class="wikilink1" title="jp:c:io:snprintf">snprintf</a></td><td class="col1">フォーマット済みの文字列をバッファに書き出します。境界チェックを行います</td>
+	</tr>
+	<tr class="row34">
+		<td class="col0"><a href="sprintf" class="wikilink1" title="jp:c:io:sprintf">sprintf</a></td><td class="col1">フォーマット済みの文字列をバッファに書き出します</td>
+	</tr>
+	<tr class="row35">
+		<td class="col0"><a href="sscanf" class="wikilink1" title="jp:c:io:sscanf">sscanf</a></td><td class="col1">バッファの文字列から、特定のフォーマットに従って読み込みます</td>
+	</tr>
+	<tr class="row36">
+		<td class="col0"><a href="tmpfile" class="wikilink1" title="jp:c:io:tmpfile">tmpfile</a></td><td class="col1">一時ファイルへのポインタを返します</td>
+	</tr>
+	<tr class="row37">
+		<td class="col0"><a href="tmpnam" class="wikilink1" title="jp:c:io:tmpnam">tmpnam</a></td><td class="col1">重複のない、ユニークなファイル名を返します</td>
+	</tr>
+	<tr class="row38">
+		<td class="col0"><a href="ungetc" class="wikilink1" title="jp:c:io:ungetc">ungetc</a></td><td class="col1">文字をストリームに戻します</td>
+	</tr>
+	<tr class="row39">
+		<td class="col0"><a href="vprintf_vfprintf_vsprintf" class="wikilink1" title="jp:c:io:vprintf_vfprintf_vsprintf">vprintf, vfprintf, vsprintf</a></td><td class="col1">引数リストを使って、フォーマット済みの文字列を書き出します</td>
+	</tr>
+	<tr class="row40">
+		<td class="col0"><a href="vscanf_vfscanf_vsscanf" class="wikilink1" title="jp:c:io:vscanf_vfscanf_vsscanf">vscanf, vfscanf, and vsscanf</a></td><td class="col1">引数リストを使って、特定のフォーマットに従って標準入力から読み込みます</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [175-3220] -->
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:container:list:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:23-0700" />
+<meta name="keywords" content="jp,container,list,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/container/list/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp:container:list" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/container/list/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/container/list/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp:container:list';var JSINFO = {"id":"jp:container:list:start","namespace":"jp:container:list"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="c_リスト" id="c_リスト">C++ リスト</a></h1>
+<div class="level1">
+
+<p>
+
+リストは連続した要素をリンクドリストとして所持します。
+<a href="../vector/start" class="wikilink1" title="jp:stl:vector:start">ベクタ</a>と比較して、挿入と削除が早く、ランダムアクセスが遅いです。
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="list_constructors" class="wikilink1" title="jp:container:list:list_constructors">コンストラクタ</a></td><td class="col1">リストを生成しいくつかのデータで初期化します。</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="list_operators" class="wikilink1" title="jp:container:list:list_operators">演算子</a></td><td class="col1">リストの比較、割り付けをします</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="assign" class="wikilink1" title="jp:container:list:assign">assign</a></td><td class="col1">リストに要素を割り付けます</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="back" class="wikilink1" title="jp:container:list:back">back</a></td><td class="col1">リストの最後の要素への参照を返却します</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="begin" class="wikilink1" title="jp:container:list:begin">begin</a></td><td class="col1">リストの先頭を指し示すiteratorを返却します</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="clear" class="wikilink1" title="jp:container:list:clear">clear</a></td><td class="col1">リストから全ての要素を取り除きます</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="empty" class="wikilink1" title="jp:container:list:empty">empty</a></td><td class="col1">リストの要素がなければ真(true)を返却します</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="end" class="wikilink1" title="jp:container:list:end">end</a></td><td class="col1">リストの最後の要素の1つ先を指し示すイテレータを返却します</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="erase" class="wikilink1" title="jp:container:list:erase">erase</a></td><td class="col1">リストから要素を取り除きます</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="front" class="wikilink1" title="jp:container:list:front">front</a></td><td class="col1">リストの先頭の要素への参照を返却します</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="insert" class="wikilink1" title="jp:container:list:insert">insert</a></td><td class="col1">リストに要素を挿入します</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="max_size" class="wikilink1" title="jp:container:list:max_size">max_size</a></td><td class="col1">リストが保持できる要素の最大数を返却します</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><a href="merge" class="wikilink1" title="jp:container:list:merge">merge</a></td><td class="col1">2つのリストを統合します</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><a href="pop_back" class="wikilink1" title="jp:container:list:pop_back">pop_back</a></td><td class="col1">リストの最後の要素を取り除きます</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><a href="pop_front" class="wikilink1" title="jp:container:list:pop_front">pop_front</a></td><td class="col1">リストの最初の要素を取り除きます</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><a href="push_back" class="wikilink1" title="jp:container:list:push_back">push_back</a></td><td class="col1">リストの最後尾に要素を追加します</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><a href="push_front" class="wikilink1" title="jp:container:list:push_front">push_front</a></td><td class="col1">リストの先頭に要素を追加します</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><a href="rbegin" class="wikilink1" title="jp:container:list:rbegin">rbegin</a></td><td class="col1">リストの最後尾を指し示すreverse_iteratorを返却します</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"><a href="remove" class="wikilink1" title="jp:container:list:remove">remove</a></td><td class="col1">リストから要素を取り除きます</td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"><a href="remove_if" class="wikilink1" title="jp:container:list:remove_if">remove_if</a></td><td class="col1">リストから条件に一致した要素を取り除きます</td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"><a href="rend" class="wikilink1" title="jp:container:list:rend">rend</a></td><td class="col1">リストの先頭を指し示すreverse_iteratorを返却します</td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"><a href="resize" class="wikilink1" title="jp:container:list:resize">resize</a></td><td class="col1">リストのサイズを変更します</td>
+	</tr>
+	<tr class="row22">
+		<td class="col0"><a href="reverse" class="wikilink1" title="jp:container:list:reverse">reverse</a></td><td class="col1">リストの順番を逆にします</td>
+	</tr>
+	<tr class="row23">
+		<td class="col0"><a href="size" class="wikilink1" title="jp:container:list:size">size</a></td><td class="col1">リストに含まれる項目数を返却します</td>
+	</tr>
+	<tr class="row24">
+		<td class="col0"><a href="sort" class="wikilink1" title="jp:container:list:sort">sort</a></td><td class="col1">リストを昇順ソートします</td>
+	</tr>
+	<tr class="row25">
+		<td class="col0"><a href="splice" class="wikilink1" title="jp:container:list:splice">splice</a></td><td class="col1">2つのリストを<a href="../../../complexity" class="wikilink1" title="complexity">定数時間</a>で統合します</td>
+	</tr>
+	<tr class="row26">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/container/list/swap" class="wikilink2" title="jp:container:list:swap" rel="nofollow">swap</a></td><td class="col1">別のリストと中身を取り替えます</td>
+	</tr>
+	<tr class="row27">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/container/list/unique" class="wikilink2" title="jp:container:list:unique" rel="nofollow">unique</a></td><td class="col1">連続な重複した要素を取り除きます</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [235-2124] -->
+</div>
+</div>
+</body>
+</html>

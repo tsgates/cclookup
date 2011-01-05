@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:io:c:printf</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:18-0700" />
+<meta name="keywords" content="jp,io,c,printf" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/io/c/printf?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp:io:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/io/c/printf" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/io/c/printf" />
+<link rel="canonical" href="printf" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp:io:c';var JSINFO = {"id":"jp:io:c:printf","namespace":"jp:io:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="printf" id="printf">printf</a></h2>
+<div class="level2">
+
+<p>
+
+文法:
+
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cstdio&gt;</span>
+    <span class="kw4">int</span> <span class="kw3">printf</span><span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>フォーマット, ... <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+printf()関数は、パラメータで渡されたフォーマットと、それ以外の引数に従って、標準出力に出力します。文字列フォーマットは2種類の要素を含んでいます。一つは文字列で、そのままスクリーンに出力されます。もう一つがフォーマットコマンドで、printf()に渡された他の引数をどのように出力するか定義します。通常は、表示したい文字列を含むフォーマット文字列の中に、他の引数と対応する”特殊文字”を埋め込んでしようします。例えば、下記のコードがあったとすると、
+</p>
+<pre class="cpp code cpp">     <span class="kw4">char</span> name<span class="br0">&#91;</span><span class="nu0">20</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="st0">&quot;ボブ&quot;</span><span class="sy4">;</span>
+     <span class="kw4">int</span> age <span class="sy1">=</span> <span class="nu0">21</span><span class="sy4">;</span>
+     <span class="kw3">printf</span><span class="br0">&#40;</span> <span class="st0">&quot;こんにちわ %s。あなたは %d 歳です。<span class="es1">\n</span>&quot;</span>, name, age <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+
+以下のように表示されます:
+</p>
+<pre class="code">
+     こんにちわ ボブ。あなたは 21 歳です。</pre>
+<p>
+%sは、”最初の引数をここに文字列として挿入しなさい”という意味になります。%dは2番目の引数の数値をここに配置しなさいという意味になります。これらの%コードは引数のタイプごとに定義されています。変数の長さ制限などもオプションで指定できます。
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<th class="col0">コード</th><th class="col1">フォーマット</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">%c</td><td class="col1">文字列</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">%d</td><td class="col1">符号付き整数</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">%i</td><td class="col1">符号付き整数</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">%e</td><td class="col1">小文字”e”を使用した科学的記数法</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0">%E</td><td class="col1">大文字”E”を使用した科学的記数法</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0">%f</td><td class="col1">浮動小数点数</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0">%g</td><td class="col1">%eか%fのどちらか短い方</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0">%G</td><td class="col1">%Eか%fのどちらか短い方</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0">%o</td><td class="col1">8進数</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0">%s</td><td class="col1">文字列</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0">%u</td><td class="col1">符号なし整数</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0">%x</td><td class="col1">小文字の文字列を使用した、符号なし16進数</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0">%X</td><td class="col1">大文字の文字列を使用した、符号なし16進数</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0">%p</td><td class="col1">ポインタ</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0">%n</td><td class="col1">引数に数値へのポインタを指定すると、%nが登場するまでに出力した文字数を格納します</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [1386-2004] -->
+<p>
+
+%記号とフォーマットコマンドの間に整数を入れると、最短の出力文字数幅を指定することができます。指定された長さに満たない場合には、指定された長さになるまでスペースかゼロが追加されます。もしもゼロを使用したい場合には、文字数指定の数値の前にゼロを入れてください。
+</p>
+<pre class="cpp code cpp">     <span class="sy2">%</span>012d</pre>
+<p>
+文字数を変数で指定したい場合には、数値の代わりに*記号を入れます:
+</p>
+<pre class="cpp code cpp">     <span class="kw4">int</span> width <span class="sy1">=</span> <span class="nu0">12</span><span class="sy4">;</span>
+     <span class="kw4">int</span> age <span class="sy1">=</span> <span class="nu0">100</span><span class="sy4">;</span>
+     <span class="kw3">printf</span><span class="br0">&#40;</span><span class="st0">&quot;%*d&quot;</span>, width, age<span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+有効数字の修飾子を付けることができます。指定する場合には.Nという形式(Nは数値)で、フォーマットコマンドの直前に設定します:
+</p>
+<pre class="cpp code cpp">     <span class="sy2">%</span>012.4d</pre>
+<p>
+フォーマットコマンドによっては、精度指定は異なる意味を持ちます:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> %e, %E, %fの場合は、数字を入れたいスペースの数の指定になります。例えば、%12.6fの場合には最低12文字のスペースの幅で、そのうち、小数点以下の文字数が6文字になります。</div>
+</li>
+<li class="level1"><div class="li"> %g, %Gの場合には精度指定は、有意な数値の桁数の最大値の指定になります。</div>
+</li>
+<li class="level1"><div class="li"> %sの場合には、単純に最大のフィールド長指定として動作します。ピリオドの前の最小フィールド長の動作の補足をします。</div>
+</li>
+</ul>
+
+<p>
+
+フィールド長指定があるところでは、*記号とint型の変数を指定して、精度修飾子に入る値を指定することができます:
+</p>
+<pre class="cpp code cpp">     <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> msg <span class="sy1">=</span> <span class="st0">&quot;Hello printf&quot;</span><span class="sy4">;</span>
+     <span class="kw4">int</span> string_size <span class="sy1">=</span> <span class="kw3">strlen</span> <span class="br0">&#40;</span>msg<span class="br0">&#41;</span><span class="sy4">;</span>
+     <span class="kw3">printf</span><span class="br0">&#40;</span><span class="st0">&quot;メッセージ: %.*s&quot;</span>, string_size, msg<span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+%記号の前にマイナス記号を付けない限りは、printf()の出力はすべて右寄せになります。
+</p>
+
+<p>
+サンプル:
+</p>
+<pre class="cpp code cpp">     <span class="sy2">%-</span><span class="nu17">12.4f</span></pre>
+<p>
+この場合には、最低12文字の幅で浮動小数点数が表示されます。実際に数値が入るのは4桁で、左寄せで表示されます。
+</p>
+
+<p>
+%d, %i, %o, %u, %xの型指定子の場合には、&#039;l&#039;あるいは&#039;h&#039;の文字を修飾子として設定することで、long型、もしくはshort型のデータ型であるということを明示することができます。例えば、%hdと指定すると、short型の整数の意味になります。
+</p>
+
+<p>
+%e, %f, %gの型指定子の場合には、それぞれの文字のlを付けると、double型の変数が渡されるということを指定できます。%g, %g, %e型指定子は&#039;#&#039;という記号をe, f, gの文字の前に入れることができます。この場合は、小数点以下の数値がなくても強制的にピリオドを表示します。
+</p>
+
+<p>
+
+%xの型指定子の場合、&#039;#&#039;文字をxの前に設定すると、16進数の前に&#039;0x&#039;というプリフィックスが表示されます。
+</p>
+
+<p>
+%oの型指定子の場合、&#039;#&#039;文字をoの前に設定すると、8進数の前に&#039;0&#039;というプリフィックスが表示されます。
+</p>
+
+<p>
+プラス記号&#039;+&#039;を型指定文字の前に入れると、正の数の場合に、&#039;+&#039;を表示するようになります。また空白文字&#039; &#039;を指定すると、正の整数時に空白文字１文字を強制的に出力するようになります。
+</p>
+
+<p>
+printf()の出力文字の中には<a href="../../escape_sequences" class="wikilink1" title="jp:escape_sequences">エスケープシーケンス</a>を指定することができます。
+</p>
+
+<p>
+printf()の返り値は出力した文字数になります。もしエラーが発生した場合には負の数になります。
+</p>
+
+<p>
+関連トピック: <a href="fprintf" class="wikilink1" title="jp:io:c:fprintf">fprintf</a>, <a href="puts" class="wikilink1" title="jp:io:c:puts">puts</a>, <a href="scanf" class="wikilink1" title="jp:io:c:scanf">scanf</a>, <a href="sprintf" class="wikilink1" title="jp:io:c:sprintf">sprintf</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

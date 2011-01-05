@@ -1,0 +1,293 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>types:integer</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:12-0700" />
+<meta name="keywords" content="types,integer" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/types/integer?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=types" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/types/integer" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/types/integer" />
+<link rel="canonical" href="integer" />
+<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='types';var JSINFO = {"id":"types:integer","namespace":"types"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="integer_types" id="integer_types">Integer types</a></h2>
+<div class="level2">
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature </td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [26-47] -->
+<p>
+
+In &lt;cstdint&gt; header:
+</p>
+
+</div>
+
+<h5><a name="types" id="types">Types</a></h5>
+<div class="level5">
+<div class="table sectionedit3"><table class="inline">
+	<tr class="row0">
+		<td class="col0 leftalign"> <code>int8_t</code>         </td><td class="col1"> signed integer type with width of 8 bits </td><td class="col2"></td>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> <code>int16_t</code>        </td><td class="col1"> signed integer type with width of 16 bits </td><td class="col2"></td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> <code>int32_t</code>        </td><td class="col1"> signed integer type with width of 32 bits </td><td class="col2"></td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> <code>int64_t</code>        </td><td class="col1"> signed integer type with width of 64 bits </td><td class="col2"></td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> <code>int_fast8_t</code>    </td><td class="col1"> fastest signed integer type with width of at least 8 bits </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 leftalign"> <code>int_fast16_t</code>   </td><td class="col1"> fastest signed integer type with width of at least 16 bits </td><td class="col2"></td>
+	</tr>
+	<tr class="row6">
+		<td class="col0 leftalign"> <code>int_fast32_t</code>   </td><td class="col1"> fastest signed integer type with width of at least 32 bits </td><td class="col2"></td>
+	</tr>
+	<tr class="row7">
+		<td class="col0 leftalign"> <code>int_fast64_t</code>   </td><td class="col1"> fastest signed integer type with width of at least 64 bits </td><td class="col2"></td>
+	</tr>
+	<tr class="row8">
+		<td class="col0 leftalign"> <code>int_least8_t</code>   </td><td class="col1"> signed integer type with width of at least 8 bits </td><td class="col2"></td>
+	</tr>
+	<tr class="row9">
+		<td class="col0 leftalign"> <code>int_least16_t</code>  </td><td class="col1"> signed integer type with width of at least 16 bits </td><td class="col2"></td>
+	</tr>
+	<tr class="row10">
+		<td class="col0 leftalign"> <code>int_least32_t</code>  </td><td class="col1"> signed integer type with width of at least 32 bits </td><td class="col2"></td>
+	</tr>
+	<tr class="row11">
+		<td class="col0 leftalign"> <code>int_least64_t</code>  </td><td class="col1"> signed integer type with width of at least 64 bits </td><td class="col2"></td>
+	</tr>
+	<tr class="row12">
+		<td class="col0 leftalign"> <code>int_max_t</code>      </td><td class="col1"> maximum width integer type </td><td class="col2"></td>
+	</tr>
+	<tr class="row13">
+		<td class="col0 leftalign"> <code>int_ptr_t</code>      </td><td class="col1"> integer type capable of holding a pointer</td><td class="col2"></td>
+	</tr>
+	<tr class="row14">
+		<td class="col0 leftalign"> <code>uint8_t</code>        </td><td class="col1"> unsigned integer type with width of 8 bits </td><td class="col2"></td>
+	</tr>
+	<tr class="row15">
+		<td class="col0 leftalign"> <code>uint16_t</code>       </td><td class="col1"> unsigned integer type with width of 16 bits </td><td class="col2"></td>
+	</tr>
+	<tr class="row16">
+		<td class="col0 leftalign"> <code>uint32_t</code>       </td><td class="col1"> unsigned integer type with width of 32 bits </td><td class="col2"></td>
+	</tr>
+	<tr class="row17">
+		<td class="col0 leftalign"> <code>uint64_t</code>       </td><td class="col1"> unsigned integer type with width of 64 bits </td><td class="col2"></td>
+	</tr>
+	<tr class="row18">
+		<td class="col0 leftalign"> <code>uint_fast8_t</code>   </td><td class="col1"> fastest unsigned integer type with width of at least 8 bits </td><td class="col2"></td>
+	</tr>
+	<tr class="row19">
+		<td class="col0 leftalign"> <code>uint_fast16_t</code>  </td><td class="col1"> fastest unsigned integer type with width of at least 16 bits </td><td class="col2"></td>
+	</tr>
+	<tr class="row20">
+		<td class="col0 leftalign"> <code>uint_fast32_t</code>  </td><td class="col1"> fastest unsigned integer type with width of at least 32 bits </td><td class="col2"></td>
+	</tr>
+	<tr class="row21">
+		<td class="col0 leftalign"> <code>uint_fast64_t</code>  </td><td class="col1"> fastest unsigned integer type with width of at least 64 bits </td><td class="col2"></td>
+	</tr>
+	<tr class="row22">
+		<td class="col0 leftalign"> <code>uint_least8_t</code>  </td><td class="col1"> unsigned integer type with width of at least 8 bits </td><td class="col2"></td>
+	</tr>
+	<tr class="row23">
+		<td class="col0"> <code>uint_least16_t</code> </td><td class="col1"> unsigned integer type with width of at least 16 bits </td><td class="col2"></td>
+	</tr>
+	<tr class="row24">
+		<td class="col0"> <code>uint_least32_t</code> </td><td class="col1"> unsigned integer type with width of at least 32 bits </td><td class="col2"></td>
+	</tr>
+	<tr class="row25">
+		<td class="col0"> <code>uint_least64_t</code> </td><td class="col1"> unsigned integer type with width of at least 64 bits </td><td class="col2"></td>
+	</tr>
+	<tr class="row26">
+		<td class="col0 leftalign"> <code>uint_max_t</code>     </td><td class="col1"> maximum width unsigned integer type </td><td class="col2"></td>
+	</tr>
+	<tr class="row27">
+		<td class="col0 leftalign"> <code>uint_ptr_t</code>     </td><td class="col1"> unsigned integer type capable of holding a pointer</td><td class="col2"></td>
+	</tr>
+</table></div>
+<!-- EDIT3 TABLE [82-2170] -->
+</div>
+
+<h5><a name="macro_constants" id="macro_constants">Macro constants</a></h5>
+<div class="level5">
+
+<p>
+
+Signed integers : minimum value
+
+</p>
+<div class="table sectionedit4"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <code>INT8_MIN</code> </td><td class="col1"> minimum value of an object of type <code>int8_t</code> </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <code>INT16_MIN</code> </td><td class="col1"> minimum value of an object of type <code>int16_t</code> </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <code>INT32_MIN</code> </td><td class="col1"> minimum value of an object of type <code>int32_t</code> </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> <code>INT64_MIN</code> </td><td class="col1"> minimum value of an object of type <code>int64_t</code> </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> <code>INT_FAST8_MIN</code> </td><td class="col1"> minimum value of an object of type <code>int_fast8_t</code> </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> <code>INT_FAST16_MIN</code> </td><td class="col1"> minimum value of an object of type <code>int_fast16_t</code> </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> <code>INT_FAST32_MIN</code> </td><td class="col1"> minimum value of an object of type <code>int_fast32_t</code> </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"> <code>INT_FAST64_MIN</code> </td><td class="col1"> minimum value of an object of type <code>int_fast64_t</code> </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"> <code>INT_LEAST8_MIN</code> </td><td class="col1"> minimum value of an object of type <code>int_least8_t</code> </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"> <code>INT_LEAST16_MIN</code> </td><td class="col1"> minimum value of an object of type <code>int_least16_t</code> </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"> <code>INT_LEAST32_MIN</code> </td><td class="col1"> minimum value of an object of type <code>int_least32_t</code> </td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"> <code>INT_LEAST64_MIN</code> </td><td class="col1"> minimum value of an object of type <code>int_least64_t</code> </td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"> <code>INT_PTR_MIN</code> </td><td class="col1"> minimum value of an object of type <code>int_ptr_t</code> </td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"> <code>INT_MAX_MIN</code> </td><td class="col1"> minimum value of an object of type <code>int_max_t</code> </td>
+	</tr>
+</table></div>
+<!-- EDIT4 TABLE [2226-3253] -->
+<p>
+
+Signed integers : maximum value
+
+</p>
+<div class="table sectionedit5"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <code>INT8_MAX</code> </td><td class="col1"> maximum value of an object of type <code>int8_t</code> </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <code>INT16_MAX</code> </td><td class="col1"> maximum value of an object of type <code>int16_t</code> </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <code>INT32_MAX</code> </td><td class="col1"> maximum value of an object of type <code>int32_t</code> </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> <code>INT64_MAX</code> </td><td class="col1"> maximum value of an object of type <code>int64_t</code> </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> <code>INT_FAST8_MAX</code> </td><td class="col1"> maximum value of an object of type <code>int_fast8_t</code> </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> <code>INT_FAST16_MAX</code> </td><td class="col1"> maximum value of an object of type <code>int_fast16_t</code> </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> <code>INT_FAST32_MAX</code> </td><td class="col1"> maximum value of an object of type <code>int_fast32_t</code> </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"> <code>INT_FAST64_MAX</code> </td><td class="col1"> maximum value of an object of type <code>int_fast64_t</code> </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"> <code>INT_LEAST8_MAX</code> </td><td class="col1"> maximum value of an object of type <code>int_least8_t</code> </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"> <code>INT_LEAST16_MAX</code> </td><td class="col1"> maximum value of an object of type <code>int_least16_t</code> </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"> <code>INT_LEAST32_MAX</code> </td><td class="col1"> maximum value of an object of type <code>int_least32_t</code> </td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"> <code>INT_LEAST64_MAX</code> </td><td class="col1"> maximum value of an object of type <code>int_least64_t</code> </td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"> <code>INT_PTR_MAX</code> </td><td class="col1"> maximum value of an object of type <code>int_ptr_t</code> </td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"> <code>INT_MAX_MAX</code> </td><td class="col1"> maximum value of an object of type <code>int_max_t</code> </td>
+	</tr>
+</table></div>
+<!-- EDIT5 TABLE [3288-4315] -->
+<p>
+
+Unsigned integers : maximum value (minimum value is implicitly <code>0</code>):
+
+</p>
+<div class="table sectionedit6"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <code>UINT8_MAX</code> </td><td class="col1"> maximum value of an object of type <code>uint8_t</code> </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <code>UINT16_MAX</code> </td><td class="col1"> maximum value of an object of type <code>uint16_t</code> </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <code>UINT32_MAX</code> </td><td class="col1"> maximum value of an object of type <code>uint32_t</code> </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> <code>UINT64_MAX</code> </td><td class="col1"> maximum value of an object of type <code>uint64_t</code> </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> <code>UINT_FAST8_MAX</code> </td><td class="col1"> maximum value of an object of type <code>uint_fast8_t</code> </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> <code>UINT_FAST16_MAX</code> </td><td class="col1"> maximum value of an object of type <code>uint_fast16_t</code> </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> <code>UINT_FAST32_MAX</code> </td><td class="col1"> maximum value of an object of type <code>uint_fast32_t</code> </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"> <code>UINT_FAST64_MAX</code> </td><td class="col1"> maximum value of an object of type <code>uint_fast64_t</code> </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"> <code>UINT_LEAST8_MAX</code> </td><td class="col1"> maximum value of an object of type <code>uint_least8_t</code> </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"> <code>UINT_LEAST16_MAX</code> </td><td class="col1"> maximum value of an object of type <code>uint_least16_t</code> </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"> <code>UINT_LEAST32_MAX</code> </td><td class="col1"> maximum value of an object of type <code>uint_least32_t</code> </td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"> <code>UINT_LEAST64_MAX</code> </td><td class="col1"> maximum value of an object of type <code>uint_least64_t</code> </td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"> <code>UINT_PTR_MAX</code> </td><td class="col1"> maximum value of an object of type <code>uint_ptr_t</code> </td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"> <code>UINT_MAX_MAX</code> </td><td class="col1"> maximum value of an object of type <code>uint_max_t</code> </td>
+	</tr>
+</table></div>
+<!-- EDIT6 TABLE [4389-5444] -->
+</div>
+</div>
+</body>
+</html>

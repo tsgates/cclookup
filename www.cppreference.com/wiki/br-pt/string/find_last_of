@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="br-pt"
+ lang="br-pt" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>br-pt:string:find_last_of</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:02-0700" />
+<meta name="keywords" content="br-pt,string,find_last_of" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/br-pt/string/find_last_of?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=br-pt:string" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/br-pt/string/find_last_of" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/br-pt/string/find_last_of" />
+<link rel="canonical" href="find_last_of" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='br-pt:string';var JSINFO = {"id":"br-pt:string:find_last_of","namespace":"br-pt:string"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="find_last_of" id="find_last_of">find_last_of</a></h2>
+<div class="level2">
+
+<p>
+Sintaxe:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;string&gt;</span>
+    size_type find_last_of<span class="br0">&#40;</span> <span class="kw4">const</span> string<span class="sy3">&amp;</span> str, size_type index <span class="sy1">=</span> npos <span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span>
+    size_type find_last_of<span class="br0">&#40;</span> <span class="kw4">const</span> Char<span class="sy2">*</span> str, size_type index <span class="sy1">=</span> npos <span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span>
+    size_type find_last_of<span class="br0">&#40;</span> <span class="kw4">const</span> Char<span class="sy2">*</span> str, size_type index, size_type num <span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span>
+    size_type find_last_of<span class="br0">&#40;</span> Char ch, size_type index <span class="sy1">=</span> npos <span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span></pre>
+<p>
+
+A função find_last_of():
+
+</p>
+<ul>
+<li class="level1"><div class="li"> faz uma pesquisa do fim para o início a partir de index, devolvendo a posição do primeiro caracter da string actual que corresponde a um caracter de str, ou string::npos se nada for encontrado,</div>
+</li>
+<li class="level1"><div class="li"> faz uma pesquisa do fim para o início na string actual, começando em index, por qualquer dos primeiros num caracteres em str, devolvendo a posição na string actual do primeiro caracter encontrado, ou string::npos se nenhum corresponder,</div>
+</li>
+<li class="level1"><div class="li"> ou faz uma pesquisa do fim para o início a partir de index, devolvendo a posição da primeira ocorrência de ch na string actual, ou string::npos se nada for encontrado.</div>
+</li>
+</ul>
+
+<p>
+
+Tópicos Relacionados: <a href="find" class="wikilink1" title="br-pt:string:find">find</a>, <a href="find_first_not_of" class="wikilink1" title="br-pt:string:find_first_not_of">find_first_not_of</a>, <a href="find_first_of" class="wikilink1" title="br-pt:string:find_first_of">find_first_of</a>, <a href="find_last_not_of" class="wikilink1" title="br-pt:string:find_last_not_of">find_last_not_of</a>, <a href="rfind" class="wikilink1" title="br-pt:string:rfind">rfind</a>
+
+</p>
+
+</div>
+<!-- EDIT1 SECTION "find_last_of" [3-] --></div>
+</body>
+</html>

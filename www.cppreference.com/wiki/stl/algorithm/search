@@ -4,59 +4,165 @@
  lang="en" dir="ltr">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>stl:algorithm:search</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
+  <title>algorithm:search</title>
+<meta name="generator" content="DokuWiki" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2008-10-14T15:42:06-0700" />
-<meta name="keywords" content="stl,algorithm,search" />
+<meta name="date" content="2010-11-13T05:04:09-0800" />
+<meta name="keywords" content="algorithm,search" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/stl/algorithm/search?do=index" title="Index" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/algorithm/search?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
-<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=stl:algorithm" />
-<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/stl/algorithm/search" />
-<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/stl/algorithm/search" />
-<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=algorithm" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/algorithm/search" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/algorithm/search" />
+<link rel="canonical" href="search" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='algorithm';var JSINFO = {"id":"algorithm:search","namespace":"algorithm"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
 
+<ul class="toc">
+<li class="clear">
 
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="search#search" class="toc">search</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="search#parameters" class="toc">Parameters</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="search#return_value" class="toc">Return value</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="search#equivalent_function" class="toc">Equivalent function</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="search#complexity" class="toc">Complexity</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="search#see_also" class="toc">See also</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
 
-<h2><a name="search" id="search">search</a></h2>
+<h2 class="sectionedit1"><a name="search" id="search">search</a></h2>
 <div class="level2">
-
+<pre class="cpp code cpp"><span class="co2">#include &lt;algorithm&gt;</span>
+&nbsp;
+<span class="kw2">template</span><span class="sy1">&lt;</span> <span class="kw2">class</span> ForwardIterator1, <span class="kw2">class</span> ForwardIterator2 <span class="sy1">&gt;</span>
+ForwardIterator1 search<span class="br0">&#40;</span> ForwardIterator1 first, ForwardIterator1 last,
+                         ForwardIterator2 s_first, ForwardIterator2 s_last <span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+<span class="kw2">template</span><span class="sy1">&lt;</span> <span class="kw2">class</span> ForwardIterator1, <span class="kw2">class</span> ForwardIterator2, <span class="kw2">class</span> BinaryPredicate <span class="sy1">&gt;</span>
+ForwardIterator1 search<span class="br0">&#40;</span> ForwardIterator1 first, ForwardIterator1 last,
+                         ForwardIterator2 s_first, ForwardIterator2 s_last, BinaryPredicate p <span class="br0">&#41;</span><span class="sy4">;</span></pre>
 <p>
-Syntax:
-</p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;algorithm&gt;</span>
-    iterator search<span class="br0">&#40;</span> iterator start1<span class="sy0">,</span> iterator end1<span class="sy0">,</span> iterator start2<span class="sy0">,</span> iterator end2 <span class="br0">&#41;</span>;
-    iterator search<span class="br0">&#40;</span> iterator start1<span class="sy0">,</span> iterator end1<span class="sy0">,</span> iterator start2<span class="sy0">,</span> iterator end2<span class="sy0">,</span> BinPred p <span class="br0">&#41;</span>;</pre>
-<p>
-The search() algorithm looks for the elements [start2,end2) in the range
-[start1,end1). If the optional binary predicate p is provided, then it is used
-to perform comparisons between elements.
-</p>
-
-<p>
-If search() finds a matching subrange, then it returns an iterator to the
-beginning of that matching subrange. If no match is found, an iterator pointing
-to end1 is returned.
-</p>
-
-<p>
-In the worst case, search() runs in quadratic time, on average, it runs in
-<a href="../../complexity" class="wikilink1" title="complexity">linear time</a>.
-</p>
-
-<p>
-Related Topics: <a href="equal" class="wikilink1" title="stl:algorithm:equal">equal</a>, <a href="find" class="wikilink1" title="stl:algorithm:find">find</a>, <a href="lexicographical_compare" class="wikilink1" title="stl:algorithm:lexicographical_compare">lexicographical_compare</a>, <a href="mismatch" class="wikilink1" title="stl:algorithm:mismatch">mismatch</a>, <a href="search_n" class="wikilink1" title="stl:algorithm:search_n">search_n</a>
+Searches for the first subsequence of elements <code>[s_first, s_last)</code> in the range <code>[first, last)</code>. One version of the function uses <code>operator==</code> to compare the elements, another uses the given binary predicate <code>p</code>.
 </p>
 
 </div>
-<!-- SECTION "search" [3-] --></div>
+<!-- EDIT1 SECTION "search" [1-746] -->
+<h3 class="sectionedit2"><a name="parameters" id="parameters">Parameters</a></h3>
+<div class="level3">
+
+<p>
+
+<code>first</code>, <code>last</code> - forward iterators defining the range to be analyzed
+</p>
+
+<p>
+<code>s_first</code>, <code>s_last</code> - forward iterators defining the sequence to be searched for
+</p>
+
+<p>
+<code>p</code> - binary predicate which returns <code>true</code> if the elements should be treated as equal
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Parameters" [747-1019] -->
+<h3 class="sectionedit3"><a name="return_value" id="return_value">Return value</a></h3>
+<div class="level3">
+
+<p>
+
+iterator to the beginning of last subsequence <code>[s_first, s_last)</code> in range <code>[first, last)</code>. If no such subsequence is found, <code>last</code> is returned.
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Return value" [1020-1193] -->
+<h3 class="sectionedit4"><a name="equivalent_function" id="equivalent_function">Equivalent function</a></h3>
+<div class="level3">
+
+<p>
+
+First version:
+</p>
+<pre class="cpp code cpp"><span class="kw2">template</span><span class="sy1">&lt;</span><span class="kw2">class</span> ForwardIterator1, <span class="kw2">class</span> ForwardIterator2<span class="sy1">&gt;</span>
+ForwardIterator1 search<span class="br0">&#40;</span>ForwardIterator1 first, ForwardIterator1 last,
+                        ForwardIterator2 s_first, ForwardIterator2 s_last<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    ForwardIterator1 t_last <span class="sy1">=</span> first<span class="sy4">;</span>
+    std<span class="sy4">::</span><span class="me2">advance</span><span class="br0">&#40;</span>t_last, std<span class="sy4">::</span><span class="me2">distance</span><span class="br0">&#40;</span>first, last<span class="br0">&#41;</span> <span class="sy2">-</span> std<span class="sy4">::</span><span class="me2">distance</span><span class="br0">&#40;</span>s_first <span class="sy2">-</span> s_last<span class="br0">&#41;</span> <span class="sy2">+</span> <span class="nu0">1</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw1">for</span> <span class="br0">&#40;</span><span class="sy4">;</span> first <span class="sy3">!</span><span class="sy1">=</span> t_last<span class="sy4">;</span> <span class="sy2">++</span>first<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        ForwardIterator1 it <span class="sy1">=</span> first<span class="sy4">;</span>
+        ForwardIterator2 s_it <span class="sy1">=</span> s_first<span class="sy4">;</span>
+        <span class="kw1">while</span> <span class="br0">&#40;</span><span class="sy2">*</span>it <span class="sy1">==</span> <span class="sy2">*</span>s_it<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+            <span class="sy2">++</span>it<span class="sy4">;</span> <span class="sy2">++</span>s_it<span class="sy4">;</span>
+            <span class="kw1">if</span> <span class="br0">&#40;</span>s_it <span class="sy1">==</span> s_last<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+                <span class="kw1">return</span> first<span class="sy4">;</span>
+            <span class="br0">&#125;</span>
+        <span class="br0">&#125;</span>
+    <span class="br0">&#125;</span>
+    <span class="kw1">return</span> last<span class="sy4">;</span>
+<span class="br0">&#125;</span></pre>
+<p>
+Second version:
+
+</p>
+<pre class="cpp code cpp"><span class="kw2">template</span><span class="sy1">&lt;</span><span class="kw2">class</span> ForwardIterator1, <span class="kw2">class</span> ForwardIterator2, <span class="kw2">class</span> BinaryPredicate<span class="sy1">&gt;</span>
+ForwardIterator1 search<span class="br0">&#40;</span>ForwardIterator1 first, ForwardIterator1 last,
+                        ForwardIterator2 s_first, ForwardIterator2 s_last, BinaryPredicate p<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+&nbsp;
+    ForwardIterator1 t_last <span class="sy1">=</span> first<span class="sy4">;</span>
+    std<span class="sy4">::</span><span class="me2">advance</span><span class="br0">&#40;</span>t_last, std<span class="sy4">::</span><span class="me2">distance</span><span class="br0">&#40;</span>first, last<span class="br0">&#41;</span> <span class="sy2">-</span> std<span class="sy4">::</span><span class="me2">distance</span><span class="br0">&#40;</span>s_first <span class="sy2">-</span> s_last<span class="br0">&#41;</span> <span class="sy2">+</span> <span class="nu0">1</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw1">for</span> <span class="br0">&#40;</span><span class="sy4">;</span> first <span class="sy3">!</span><span class="sy1">=</span> t_last<span class="sy4">;</span> <span class="sy2">++</span>first<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        ForwardIterator1 it <span class="sy1">=</span> first<span class="sy4">;</span>
+        ForwardIterator2 s_it <span class="sy1">=</span> s_first<span class="sy4">;</span>
+        <span class="kw1">while</span> <span class="br0">&#40;</span>p<span class="br0">&#40;</span><span class="sy2">*</span>it, <span class="sy2">*</span>s_it<span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+            <span class="sy2">++</span>it<span class="sy4">;</span> <span class="sy2">++</span>s_it<span class="sy4">;</span>
+            <span class="kw1">if</span> <span class="br0">&#40;</span>s_it <span class="sy1">==</span> s_last<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+                <span class="kw1">return</span> first<span class="sy4">;</span>
+            <span class="br0">&#125;</span>
+        <span class="br0">&#125;</span>
+    <span class="br0">&#125;</span>
+    <span class="kw1">return</span> last<span class="sy4">;</span>
+<span class="br0">&#125;</span></pre>
+</div>
+<!-- EDIT4 SECTION "Equivalent function" [1194-2577] -->
+<h3 class="sectionedit5"><a name="complexity" id="complexity">Complexity</a></h3>
+<div class="level3">
+
+<p>
+
+does at most <code>S*(N-S+1)</code> comparisons where <code>S = distance(s_first, s_last)</code> and <code>N = distance(first, last)</code> comparisons.
+</p>
+
+</div>
+<!-- EDIT5 SECTION "Complexity" [2578-2724] -->
+<h3 class="sectionedit6"><a name="see_also" id="see_also">See also</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="find_end" class="wikilink1" title="algorithm:find_end">find_end</a>, <a href="equal" class="wikilink1" title="algorithm:equal">equal</a>, <a href="find" class="wikilink1" title="algorithm:find">find</a>, <a href="lexicographical_compare" class="wikilink1" title="algorithm:lexicographical_compare">lexicographical_compare</a>, <a href="mismatch" class="wikilink1" title="algorithm:mismatch">mismatch</a>, <a href="search_n" class="wikilink1" title="algorithm:search_n">search_n</a>
+</p>
+
+</div>
+<!-- EDIT6 SECTION "See also" [2725-] --></div>
 </body>
 </html>

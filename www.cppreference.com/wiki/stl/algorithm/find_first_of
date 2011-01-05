@@ -4,70 +4,193 @@
  lang="en" dir="ltr">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>stl:algorithm:find_first_of</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
+  <title>algorithm:find_first_of</title>
+<meta name="generator" content="DokuWiki" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2008-10-14T15:42:05-0700" />
-<meta name="keywords" content="stl,algorithm,find_first_of" />
+<meta name="date" content="2010-11-13T04:57:36-0800" />
+<meta name="keywords" content="algorithm,find_first_of" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/stl/algorithm/find_first_of?do=index" title="Index" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/algorithm/find_first_of?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
-<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=stl:algorithm" />
-<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/stl/algorithm/find_first_of" />
-<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/stl/algorithm/find_first_of" />
-<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=algorithm" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/algorithm/find_first_of" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/algorithm/find_first_of" />
+<link rel="canonical" href="find_first_of" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='algorithm';var JSINFO = {"id":"algorithm:find_first_of","namespace":"algorithm"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
 
+<ul class="toc">
+<li class="clear">
 
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="find_first_of#find_first_of" class="toc">find_first_of</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="find_first_of#parameters" class="toc">Parameters</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="find_first_of#return_value" class="toc">Return value</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="find_first_of#equivalent_function" class="toc">Equivalent function</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="find_first_of#example" class="toc">Example</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="find_first_of#complexity" class="toc">Complexity</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="find_first_of#see_also" class="toc">See also</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
 
-<h2><a name="find_first_of" id="find_first_of">find_first_of</a></h2>
+<h2 class="sectionedit1"><a name="find_first_of" id="find_first_of">find_first_of</a></h2>
 <div class="level2">
-
-<p>
-Syntax:
-</p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;algorithm&gt;</span>
-    iterator find_first_of<span class="br0">&#40;</span> iterator start<span class="sy0">,</span> iterator end<span class="sy0">,</span> iterator find_start<span class="sy0">,</span> iterator find_end <span class="br0">&#41;</span>;
-    iterator find_first_of<span class="br0">&#40;</span> iterator start<span class="sy0">,</span> iterator end<span class="sy0">,</span> iterator find_start<span class="sy0">,</span> iterator find_end<span class="sy0">,</span> BinPred bp <span class="br0">&#41;</span>;</pre>
-<p>
-The find_first_of() function searches for the first occurence of any element
-between find_start and find_end. The data that are searched are those between
-start and end.
-</p>
-
-<p>
-If any element between find_start and find_end is found, an iterator pointing
-to that element is returned. Otherwise, an iterator pointing to end is
-returned.
-</p>
-
-<p>
-For example, the following code searches for a 9, 4, or 7 in an array of
-integers:
-</p>
-<pre class="c code c++" style="font-family:monospace;">   <span class="kw4">int</span> nums<span class="br0">&#91;</span><span class="br0">&#93;</span> <span class="sy0">=</span> <span class="br0">&#123;</span> <span class="nu19">0</span><span class="sy0">,</span> <span class="nu0">1</span><span class="sy0">,</span> <span class="nu0">2</span><span class="sy0">,</span> <span class="nu0">3</span><span class="sy0">,</span> <span class="nu0">4</span><span class="sy0">,</span> <span class="nu0">5</span><span class="sy0">,</span> <span class="nu0">6</span><span class="sy0">,</span> <span class="nu0">7</span><span class="sy0">,</span> <span class="nu0">8</span><span class="sy0">,</span> <span class="nu0">9</span><span class="sy0">,</span> <span class="nu0">10</span> <span class="br0">&#125;</span>;
-   <span class="kw4">int</span><span class="sy0">*</span> result;
-   <span class="kw4">int</span> start <span class="sy0">=</span> <span class="nu19">0</span>;
-   <span class="kw4">int</span> end <span class="sy0">=</span> <span class="nu0">10</span>;
+<pre class="cpp code cpp"><span class="co2">#include &lt;algorithm&gt;</span>
 &nbsp;
-   <span class="kw4">int</span> targets<span class="br0">&#91;</span><span class="br0">&#93;</span> <span class="sy0">=</span> <span class="br0">&#123;</span> <span class="nu0">9</span><span class="sy0">,</span> <span class="nu0">4</span><span class="sy0">,</span> <span class="nu0">7</span> <span class="br0">&#125;</span>;
-   result <span class="sy0">=</span> find_first_of<span class="br0">&#40;</span> nums <span class="sy0">+</span> start<span class="sy0">,</span> nums <span class="sy0">+</span> end<span class="sy0">,</span> targets <span class="sy0">+</span> <span class="nu19">0</span><span class="sy0">,</span> targets <span class="sy0">+</span> <span class="nu0">2</span> <span class="br0">&#41;</span>;
-   <span class="kw1">if</span><span class="br0">&#40;</span> <span class="sy0">*</span>result <span class="sy0">==</span> nums<span class="br0">&#91;</span>end<span class="br0">&#93;</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
-     <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;Did not find any of { 9, 4, 7 }&quot;</span> <span class="sy0">&lt;&lt;</span> endl;
-   <span class="br0">&#125;</span> <span class="kw1">else</span> <span class="br0">&#123;</span>
-     <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;Found a matching target: &quot;</span> <span class="sy0">&lt;&lt;</span> <span class="sy0">*</span>result <span class="sy0">&lt;&lt;</span> endl;
-   <span class="br0">&#125;</span></pre>
+<span class="kw2">template</span><span class="sy1">&lt;</span> <span class="kw2">class</span> ForwardIterator1, <span class="kw2">class</span> ForwardIterator2 <span class="sy1">&gt;</span>
+ForwardIterator1 find_first_of<span class="br0">&#40;</span> ForwardIterator1 first, ForwardIterator1 last,
+                                ForwardIterator2 s_first, ForwardIterator2 s_last <span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+<span class="kw2">template</span><span class="sy1">&lt;</span> <span class="kw2">class</span> ForwardIterator1, <span class="kw2">class</span> ForwardIterator2, <span class="kw2">class</span> BinaryPredicate <span class="sy1">&gt;</span>
+ForwardIterator1 find_first_of<span class="br0">&#40;</span> ForwardIterator1 first, ForwardIterator1 last,
+                                ForwardIterator2 s_first, ForwardIterator2 s_last, BinaryPredicate p <span class="br0">&#41;</span><span class="sy4">;</span></pre>
 <p>
-Related Topics: <a href="adjacent_find" class="wikilink1" title="stl:algorithm:adjacent_find">adjacent_find</a>, <a href="find" class="wikilink1" title="stl:algorithm:find">find</a>, <a href="find_end" class="wikilink1" title="stl:algorithm:find_end">find_end</a>, <a href="find_if" class="wikilink1" title="stl:algorithm:find_if">find_if</a>, <a href="../../c/string/strpbrk" class="wikilink1" title="c:string:strpbrk">strpbrk</a>
+Searches the range <code>[first, last)</code> for any of the elements in the range <code>[s_first, s_last)</code>. One version of the function uses <code>operator==</code> to compare the elements, another uses the given binary predicate <code>p</code>.
 </p>
 
 </div>
-<!-- SECTION "find_first_of" [3-] --></div>
+<!-- EDIT1 SECTION "find_first_of" [1-776] -->
+<h3 class="sectionedit2"><a name="parameters" id="parameters">Parameters</a></h3>
+<div class="level3">
+
+<p>
+
+<code>first</code>, <code>last</code> - forward iterators defining the range to be analyzed
+</p>
+
+<p>
+<code>s_first</code>, <code>s_last</code> - forward iterators defining the elements to be searched for
+</p>
+
+<p>
+<code>p</code> - binary predicate which returns <code>true</code> if the elements should be treated as equal
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Parameters" [777-1049] -->
+<h3 class="sectionedit3"><a name="return_value" id="return_value">Return value</a></h3>
+<div class="level3">
+
+<p>
+
+iterator to the element found. If no such element is found, <code>last</code> is returned.
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Return value" [1050-1154] -->
+<h3 class="sectionedit4"><a name="equivalent_function" id="equivalent_function">Equivalent function</a></h3>
+<div class="level3">
+
+<p>
+
+First version:
+
+</p>
+<pre class="cpp code cpp"><span class="kw2">template</span><span class="sy1">&lt;</span><span class="kw2">class</span> ForwardIterator1, <span class="kw2">class</span> ForwardIterator2<span class="sy1">&gt;</span>
+ForwardIterator1 find_first_of<span class="br0">&#40;</span>ForwardIterator1 first, ForwardIterator1 last,
+                               ForwardIterator2 s_first, ForwardIterator2 s_last<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <span class="kw1">for</span> <span class="br0">&#40;</span><span class="sy4">;</span> first <span class="sy3">!</span><span class="sy1">=</span> last<span class="sy4">;</span> <span class="sy2">++</span>first<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        <span class="kw1">for</span> <span class="br0">&#40;</span>ForwardIterator2 it <span class="sy1">=</span> sfirst<span class="sy4">;</span> it <span class="sy3">!</span><span class="sy1">=</span> s_last<span class="sy4">;</span> <span class="sy2">++</span>it<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+            <span class="kw1">if</span> <span class="br0">&#40;</span><span class="sy2">*</span>first <span class="sy1">==</span> <span class="sy2">*</span>it<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+                <span class="kw1">return</span> first<span class="sy4">;</span>
+            <span class="br0">&#125;</span>
+        <span class="br0">&#125;</span>
+    <span class="br0">&#125;</span>
+    <span class="kw1">return</span> last<span class="sy4">;</span>
+<span class="br0">&#125;</span></pre>
+<p>
+Second version:
+
+</p>
+<pre class="cpp code cpp"><span class="kw2">template</span><span class="sy1">&lt;</span><span class="kw2">class</span> ForwardIterator1, <span class="kw2">class</span> ForwardIterator2, <span class="kw2">class</span> BinaryPredicate<span class="sy1">&gt;</span>
+ForwardIterator1 find_first_of<span class="br0">&#40;</span>ForwardIterator1 first, ForwardIterator1 last,
+                               ForwardIterator2 s_first, ForwardIterator2 s_last, BinaryPredicate p<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <span class="kw1">for</span> <span class="br0">&#40;</span><span class="sy4">;</span> first <span class="sy3">!</span><span class="sy1">=</span> last<span class="sy4">;</span> <span class="sy2">++</span>first<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        <span class="kw1">for</span> <span class="br0">&#40;</span>ForwardIterator2 it <span class="sy1">=</span> sfirst<span class="sy4">;</span> it <span class="sy3">!</span><span class="sy1">=</span> s_last<span class="sy4">;</span> <span class="sy2">++</span>it<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+            <span class="kw1">if</span> <span class="br0">&#40;</span>p<span class="br0">&#40;</span><span class="sy2">*</span>first, <span class="sy2">*</span>it<span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+                <span class="kw1">return</span> first<span class="sy4">;</span>
+            <span class="br0">&#125;</span>
+        <span class="br0">&#125;</span>
+    <span class="br0">&#125;</span>
+    <span class="kw1">return</span> last<span class="sy4">;</span>
+<span class="br0">&#125;</span></pre>
+</div>
+<!-- EDIT4 SECTION "Equivalent function" [1155-2157] -->
+<h3 class="sectionedit5"><a name="example" id="example">Example</a></h3>
+<div class="level3">
+
+<p>
+
+The following code searches for a 9, 4, or 7 in an array of
+integers:
+</p>
+<pre class="cpp code cpp"><span class="co2">#include &lt;algorithm&gt;</span>
+<span class="co2">#include &lt;iostream&gt;</span>
+&nbsp;
+<span class="kw4">int</span> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <span class="kw4">int</span> nums<span class="br0">&#91;</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="br0">&#123;</span> <span class="nu0">0</span>, <span class="nu0">1</span>, <span class="nu0">2</span>, <span class="nu0">3</span>, <span class="nu0">4</span>, <span class="nu0">5</span>, <span class="nu0">6</span>, <span class="nu0">7</span>, <span class="nu0">8</span>, <span class="nu0">9</span>, <span class="nu0">10</span> <span class="br0">&#125;</span><span class="sy4">;</span>
+    <span class="kw4">int</span><span class="sy2">*</span> result<span class="sy4">;</span>
+    <span class="kw4">int</span> end <span class="sy1">=</span> <span class="nu0">10</span><span class="sy4">;</span>
+&nbsp;
+    <span class="kw4">int</span> targets<span class="br0">&#91;</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="br0">&#123;</span> <span class="nu0">9</span>, <span class="nu0">4</span>, <span class="nu0">7</span> <span class="br0">&#125;</span><span class="sy4">;</span>
+    <span class="kw4">int</span> target_end<span class="sy4">;</span>
+&nbsp;
+    result <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">find_first_of</span><span class="br0">&#40;</span>nums, nums <span class="sy2">+</span> end, targets, targets <span class="sy2">+</span> targets_end<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw1">if</span> <span class="br0">&#40;</span><span class="sy2">*</span>result <span class="sy1">==</span> nums<span class="br0">&#91;</span>end<span class="br0">&#93;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;any of { 9, 4, 7 } not found&quot;</span><span class="sy4">;</span>
+    <span class="br0">&#125;</span> <span class="kw1">else</span> <span class="br0">&#123;</span>
+        std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;found a match at &quot;</span> <span class="sy1">&lt;&lt;</span> result <span class="sy2">-</span> nums<span class="sy4">;</span>
+    <span class="br0">&#125;</span>
+&nbsp;
+    <span class="kw1">return</span> <span class="nu0">0</span><span class="sy4">;</span>
+<span class="br0">&#125;</span></pre>
+<p>
+Output:
+
+</p>
+<pre class="code">
+found a match at 4</pre>
+</div>
+<!-- EDIT5 SECTION "Example" [2158-2783] -->
+<h3 class="sectionedit6"><a name="complexity" id="complexity">Complexity</a></h3>
+<div class="level3">
+
+<p>
+
+does at most <code>N*S</code> comparisons where <code>N = std::distance(first, last)</code>, <code>&#039;S = std::distance(s_first, s_last)</code>.
+</p>
+
+</div>
+<!-- EDIT6 SECTION "Complexity" [2784-2920] -->
+<h3 class="sectionedit7"><a name="see_also" id="see_also">See also</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="find" class="wikilink1" title="algorithm:find">find</a>, <a href="find_if" class="wikilink1" title="algorithm:find_if">find_if</a>
+</p>
+
+</div>
+<!-- EDIT7 SECTION "See also" [2921-] --></div>
 </body>
 </html>

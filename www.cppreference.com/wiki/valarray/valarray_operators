@@ -5,61 +5,135 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>valarray:valarray_operators</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="generator" content="DokuWiki" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2009-06-08T17:37:40-0700" />
+<meta name="date" content="2010-10-28T18:17:16-0700" />
 <meta name="keywords" content="valarray,valarray_operators" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/valarray/valarray_operators?do=index" title="Index" />
+<link rel="start" href="../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/valarray/valarray_operators?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
 <link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=valarray" />
 <link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/valarray/valarray_operators" />
 <link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/valarray/valarray_operators" />
-<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="canonical" href="valarray_operators" />
+<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='valarray';var JSINFO = {"id":"valarray:valarray_operators","namespace":"valarray"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
 
+<ul class="toc">
+<li class="clear">
 
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="valarray_operators#valarray_operators" class="toc">Valarray operators</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="valarray_operators#parameters" class="toc">Parameters</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="valarray_operators#return_value" class="toc">Return value</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="valarray_operators#example" class="toc">Example</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="valarray_operators#complexity" class="toc">Complexity</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="valarray_operators#see_also" class="toc">See also</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
 
-<h2><a name="valarray_operators" id="valarray_operators">Valarray operators</a></h2>
+<h2 class="sectionedit1"><a name="valarray_operators" id="valarray_operators">Valarray operators</a></h2>
 <div class="level2">
 
 <p>
 Syntax:
 </p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;valarray&gt;</span>
-    valarray<span class="sy0">&amp;</span> operator<span class="sy0">=</span><span class="br0">&#40;</span> <span class="kw4">const</span> valarray<span class="sy0">&amp;</span> v <span class="br0">&#41;</span>; <span class="co1">// copy v</span>
-    valarray<span class="sy0">&amp;</span> operator<span class="sy0">=</span><span class="br0">&#40;</span> <span class="kw4">const</span> T<span class="sy0">&amp;</span> val <span class="br0">&#41;</span>; <span class="co1">// assign val to every element</span>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;valarray&gt;</span>
+    valarray<span class="sy3">&amp;</span> operator<span class="sy1">=</span><span class="br0">&#40;</span> <span class="kw4">const</span> valarray<span class="sy3">&amp;</span> v <span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// copy v</span>
+    valarray<span class="sy3">&amp;</span> operator<span class="sy1">=</span><span class="br0">&#40;</span> <span class="kw4">const</span> T<span class="sy3">&amp;</span> val <span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// assign val to every element</span>
 &nbsp;
-    TYPE operator<span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#40;</span> size_t index <span class="br0">&#41;</span> <span class="kw4">const</span>;
-    TYPE<span class="sy0">&amp;</span> operator<span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#40;</span> size_t index <span class="br0">&#41;</span>;
+    T operator<span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#40;</span> <span class="kw4">size_t</span> index <span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span>
+    T<span class="sy3">&amp;</span> operator<span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#40;</span> <span class="kw4">size_t</span> index <span class="br0">&#41;</span><span class="sy4">;</span>
 &nbsp;
-    valarray operator<span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#40;</span> slice s <span class="br0">&#41;</span> <span class="kw4">const</span>;
-    slice_array<span class="sy0">&lt;</span>TYPE<span class="sy0">&gt;</span> operator<span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#40;</span> slice s <span class="br0">&#41;</span>;
+    valarray operator<span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#40;</span> slice s <span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span>
+    slice_array<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> operator<span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#40;</span> slice s <span class="br0">&#41;</span><span class="sy4">;</span>
 &nbsp;
-    valarray operator<span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#40;</span> <span class="kw4">const</span> gslice<span class="sy0">&amp;</span> s <span class="br0">&#41;</span> <span class="kw4">const</span>;
-    gslice_array<span class="sy0">&lt;</span>TYPE<span class="sy0">&gt;</span> operator<span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#40;</span> <span class="kw4">const</span> gslice<span class="sy0">&amp;</span> s <span class="br0">&#41;</span>;
+    valarray operator<span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#40;</span> <span class="kw4">const</span> gslice<span class="sy3">&amp;</span> s <span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span>
+    gslice_array<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> operator<span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#40;</span> <span class="kw4">const</span> gslice<span class="sy3">&amp;</span> s <span class="br0">&#41;</span><span class="sy4">;</span>
 &nbsp;
-    valarray operator<span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#40;</span> <span class="kw4">const</span> valarray<span class="sy0">&lt;</span>bool<span class="sy0">&gt;&amp;</span> mask <span class="br0">&#41;</span> <span class="kw4">const</span>;
-    mask_array<span class="sy0">&lt;</span>TYPE<span class="sy0">&gt;</span> operator<span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#40;</span> <span class="kw4">const</span> valarray<span class="sy0">&lt;</span>bool<span class="sy0">&gt;&amp;</span> mask <span class="br0">&#41;</span>;
+    valarray operator<span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#40;</span> <span class="kw4">const</span> valarray<span class="sy1">&lt;</span><span class="kw4">bool</span><span class="sy1">&gt;</span><span class="sy3">&amp;</span> mask <span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span>
+    mask_array<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> operator<span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#40;</span> <span class="kw4">const</span> valarray<span class="sy1">&lt;</span><span class="kw4">bool</span><span class="sy1">&gt;</span><span class="sy3">&amp;</span> mask <span class="br0">&#41;</span><span class="sy4">;</span>
 &nbsp;
-    valarray operator<span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#40;</span> <span class="kw4">const</span> valarray<span class="sy0">&lt;</span>size_t<span class="sy0">&gt;&amp;</span> indirect <span class="br0">&#41;</span> <span class="kw4">const</span>;
-    indirect_array<span class="sy0">&lt;</span>TYPE<span class="sy0">&gt;</span> operator<span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#40;</span> <span class="kw4">const</span> valarray<span class="sy0">&lt;</span>size_t<span class="sy0">&gt;&amp;</span> indirect <span class="br0">&#41;</span>;
+    valarray operator<span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#40;</span> <span class="kw4">const</span> valarray<span class="sy1">&lt;</span><span class="kw4">size_t</span><span class="sy1">&gt;</span><span class="sy3">&amp;</span> indirect <span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span>
+    indirect_array<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span> operator<span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#40;</span> <span class="kw4">const</span> valarray<span class="sy1">&lt;</span><span class="kw4">size_t</span><span class="sy1">&gt;</span><span class="sy3">&amp;</span> indirect <span class="br0">&#41;</span><span class="sy4">;</span>
 &nbsp;
-    valarray<span class="sy0">&amp;</span> operator<span class="sy0">=</span><span class="br0">&#40;</span> <span class="kw4">const</span> slice_array<span class="sy0">&amp;</span> s <span class="br0">&#41;</span>;
-    valarray<span class="sy0">&amp;</span> operator<span class="sy0">=</span><span class="br0">&#40;</span> <span class="kw4">const</span> gslice_array<span class="sy0">&amp;</span> g <span class="br0">&#41;</span>;
-    valarray<span class="sy0">&amp;</span> operator<span class="sy0">=</span><span class="br0">&#40;</span> <span class="kw4">const</span> mask_array<span class="sy0">&amp;</span> mask <span class="br0">&#41;</span>;
-    valarray<span class="sy0">&amp;</span> operator<span class="sy0">=</span><span class="br0">&#40;</span> <span class="kw4">const</span> indirect_array<span class="sy0">&amp;</span> i <span class="br0">&#41;</span>;</pre>
+    valarray<span class="sy3">&amp;</span> operator<span class="sy1">=</span><span class="br0">&#40;</span> <span class="kw4">const</span> slice_array<span class="sy3">&amp;</span> s <span class="br0">&#41;</span><span class="sy4">;</span>
+    valarray<span class="sy3">&amp;</span> operator<span class="sy1">=</span><span class="br0">&#40;</span> <span class="kw4">const</span> gslice_array<span class="sy3">&amp;</span> g <span class="br0">&#41;</span><span class="sy4">;</span>
+    valarray<span class="sy3">&amp;</span> operator<span class="sy1">=</span><span class="br0">&#40;</span> <span class="kw4">const</span> mask_array<span class="sy3">&amp;</span> mask <span class="br0">&#41;</span><span class="sy4">;</span>
+    valarray<span class="sy3">&amp;</span> operator<span class="sy1">=</span><span class="br0">&#40;</span> <span class="kw4">const</span> indirect_array<span class="sy3">&amp;</span> i <span class="br0">&#41;</span><span class="sy4">;</span></pre>
 <p>
-A valarray can be assigned to another of the same size. The assignment operator will copied each element from one array to the other as expected. However, if the arrays are of different sizes, the result it undefined. It is unwise to expect any errors or exception handling to occur because of mismatched array sizes or exceeding bounds of the valarray. Valarrays are optimized for speed and their implementation is machine and compiler specific.
+A valarray can be assigned to another of the same size. The assignment operator will copied each element from one array to the other as expected. However, if the arrays are of different sizes, the result is undefined. It is unwise to expect any errors or exception handling to occur because of mismatched array sizes or exceeding bounds of the valarray. Valarrays are optimized for speed and their implementation is machine and compiler specific.
 </p>
 
 </div>
-<!-- SECTION "Valarray operators" [3-] --></div>
+<!-- EDIT1 SECTION "Valarray operators" [2-1381] -->
+<h3 class="sectionedit2"><a name="parameters" id="parameters">Parameters</a></h3>
+<div class="level3">
+
+<p>
+
+todo
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Parameters" [1382-1407] -->
+<h3 class="sectionedit3"><a name="return_value" id="return_value">Return value</a></h3>
+<div class="level3">
+
+<p>
+
+todo
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Return value" [1408-1435] -->
+<h3 class="sectionedit4"><a name="example" id="example">Example</a></h3>
+<div class="level3">
+
+<p>
+
+todo
+</p>
+
+</div>
+<!-- EDIT4 SECTION "Example" [1436-1458] -->
+<h3 class="sectionedit5"><a name="complexity" id="complexity">Complexity</a></h3>
+<div class="level3">
+
+<p>
+
+todo
+</p>
+
+</div>
+<!-- EDIT5 SECTION "Complexity" [1459-1484] -->
+<h3 class="sectionedit6"><a name="see_also" id="see_also">See also</a></h3>
+<div class="level3">
+
+<p>
+
+todo
+
+</p>
+
+</div>
+<!-- EDIT6 SECTION "See also" [1485-] --></div>
 </body>
 </html>

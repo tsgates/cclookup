@@ -1,0 +1,370 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it"
+ lang="it" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>it:operator_precedence</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:08-0700" />
+<meta name="keywords" content="it,operator_precedence" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/it/operator_precedence?do=index" title="Indice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=it" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/it/operator_precedence" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/it/operator_precedence" />
+<link rel="canonical" href="operator_precedence" />
+<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='it';var JSINFO = {"id":"it:operator_precedence","namespace":"it"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Indice</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="operator_precedence#precedenza_negli_operatori_c" class="toc">Precedenza negli operatori C++</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="operator_precedence#ordine_di_valutazione_e_side_effect" class="toc">Ordine di valutazione e side effect</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="operator_precedence#overloading_degli_operatori" class="toc">Overloading degli operatori</a></span></div></li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="precedenza_negli_operatori_c" id="precedenza_negli_operatori_c">Precedenza negli operatori C++</a></h2>
+<div class="level2">
+
+<p>
+
+Gli operatori in cima alla lista sono valutati per primi.  Gli operatori all&#039;interno del gruppo hanno la stessa precedenza.  Tutti gli operatori hanno asscociazione da sinistra a destra se non scritto diversamente.
+</p>
+
+<p>
+<br/>
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<th class="col0 centeralign">  Precedenza  </th><th class="col1 centeralign">  Operatore  </th><th class="col2 centeralign">  Descrizione  </th><th class="col3 centeralign">  Esempio  </th><th class="col4 centeralign">  Sovrascrivibile  </th><th class="col5 centeralign">  Associazione  </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> 1 </td><td class="col1"><code>::</code> </td><td class="col2">Operatore di scope resolution </td><td class="col3"><code>Class::age = 2;</code> </td><td class="col4">no </td><td class="col5">da sinistra a destra </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0" rowspan="12"> 2 </td><td class="col1"><code>()</code> </td><td class="col2">Chiamata di una funzione </td><td class="col3"><code>printf(“Hello world\n”);</code> </td><td class="col4">SI </td><td class="col5" rowspan="12">da sinistra a destra </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><code>()</code> </td><td class="col1">Inizializzazione di un membro </td><td class="col2"><code>c_tor(int x, int y) : _x(x), _y(y * 10) {}</code> </td><td class="col3">SI </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><code>[]</code> </td><td class="col1">Accesso ad un array </td><td class="col2"><code>array[4] = 2;</code> </td><td class="col3">SI </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><code>-&gt;</code> </td><td class="col1">Accesso ad un membro da un puntatore </td><td class="col2"><code>ptr-&gt;age = 34;</code> </td><td class="col3">SI </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><code>.</code> </td><td class="col1">Accesso ad un membro da un oggetto </td><td class="col2"><code>obj.age = 34;</code> </td><td class="col3">no </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><code>++</code> </td><td class="col1">Post-incremento </td><td class="col2"><code>for (int i = 0; i &lt; 10; i++) cout &lt;&lt; i;</code> </td><td class="col3">SI </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><code>--</code> </td><td class="col1">Post-decremento </td><td class="col2"><code>for (int i = 10; i &gt; 0; i--) cout &lt;&lt; i;</code> </td><td class="col3">SI </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><code>dynamic_cast</code> </td><td class="col1">Conversione di tipo runtime-checked </td><td class="col2"><code>Y&amp; y = dynamic_cast&lt;Y&amp;&gt;(x);</code> </td><td class="col3">no </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><code>static_cast</code> </td><td class="col1">Conversione di tipo unchecked </td><td class="col2"><code>Y&amp; y = static_cast&lt;Y&amp;&gt;(x);</code> </td><td class="col3">no </td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><code>reinterpret_cast</code> </td><td class="col1">Conversione di tipo reinterpretata </td><td class="col2"><code>int const* p = reinterpret_cast&lt;int const*&gt;(0x1234);</code> </td><td class="col3">no </td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><code>const_cast</code> </td><td class="col1">Cast away/Add constness </td><td class="col2"><code>int* q = const_cast&lt;int*&gt;(p);</code> </td><td class="col3">no </td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><code>typeid</code> </td><td class="col1">Recuperare tipo variabile </td><td class="col2"><code>std::type_info const&amp; t = typeid(x);</code> </td><td class="col3">no </td>
+	</tr>
+	<tr class="row14">
+		<td class="col0" rowspan="16"> 3 </td><td class="col1"><code>!</code> </td><td class="col2">Negazione logica </td><td class="col3" rowspan="2"><code>if (!done) ...</code> </td><td class="col4" rowspan="2">SI </td><td class="col5" rowspan="16">da destra a sinistra </td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><code>not</code> </td><td class="col1">Forma alternativa per <code>!</code> </td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><code>~</code> </td><td class="col1">Complemento bit a bit </td><td class="col2" rowspan="2"><code>flags = ~flags;</code> </td><td class="col3" rowspan="2">SI </td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><code>compl</code> </td><td class="col1">Forma alternativa per <code>~</code> </td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"><code>++</code> </td><td class="col1">Pre-incremento </td><td class="col2"><code>for (i = 0; i &lt; 10; ++i) cout &lt;&lt; i;</code> </td><td class="col3">SI </td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"><code>--</code> </td><td class="col1">Pre-decremento </td><td class="col2"><code>for (i = 10; i &gt; 0; --i) cout &lt;&lt; i;</code> </td><td class="col3">SI </td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"><code>-</code> </td><td class="col1">Riduzione di 1 </td><td class="col2"><code>int i = -1;</code> </td><td class="col3">SI </td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"><code>+</code> </td><td class="col1">Aggiunta di 1 </td><td class="col2"><code>int i = +1;</code> </td><td class="col3">SI </td>
+	</tr>
+	<tr class="row22">
+		<td class="col0"><code>*</code> </td><td class="col1">Dereferenziazione </td><td class="col2"><code>int data = *intPtr;</code> </td><td class="col3">SI </td>
+	</tr>
+	<tr class="row23">
+		<td class="col0"><code>&amp;</code> </td><td class="col1">Indirizzo di… </td><td class="col2"><code>int *intPtr = &amp;data;</code> </td><td class="col3">SI </td>
+	</tr>
+	<tr class="row24">
+		<td class="col0"><code>sizeof</code> </td><td class="col1">Size del tipo dell&#039;operando in bytes </td><td class="col2"><code>size_t s = sizeof(int);</code> </td><td class="col3">no </td>
+	</tr>
+	<tr class="row25">
+		<td class="col0"><code>new</code> </td><td class="col1">Allocazione dinamica della memoria </td><td class="col2"><code>long* pVar = new long; </code> </td><td class="col3">SI </td>
+	</tr>
+	<tr class="row26">
+		<td class="col0"><code>new []</code> </td><td class="col1">Allocazione dinamica della memoria di un array </td><td class="col2"><code>long* array = new long[20];</code> </td><td class="col3">SI </td>
+	</tr>
+	<tr class="row27">
+		<td class="col0"><code>delete</code> </td><td class="col1">Deallocazione della memoria </td><td class="col2"><code>delete pVar;</code> </td><td class="col3">SI </td>
+	</tr>
+	<tr class="row28">
+		<td class="col0"><code>delete []</code> </td><td class="col1">Deallocazione della memoria di un array </td><td class="col2"><code>delete [] array;</code> </td><td class="col3">SI </td>
+	</tr>
+	<tr class="row29">
+		<td class="col0"><code>(type)</code> </td><td class="col1">Cast verso un tipo specifico </td><td class="col2"><code>int i = (int)floatNum;</code> </td><td class="col3">SI </td>
+	</tr>
+	<tr class="row30">
+		<td class="col0" rowspan="2"> 4 </td><td class="col1"><code>-&gt;*</code> </td><td class="col2">Selettore di un puntatore </td><td class="col3"><code>ptr-&gt;*var = 24;</code> </td><td class="col4">SI </td><td class="col5" rowspan="2">da sinistra a destra </td>
+	</tr>
+	<tr class="row31">
+		<td class="col0"><code>.*</code> </td><td class="col1">Selettore di un oggetto </td><td class="col2"><code>obj.*var = 24;</code> </td><td class="col3">no </td>
+	</tr>
+	<tr class="row32">
+		<td class="col0" rowspan="3"> 5 </td><td class="col1"><code>*</code> </td><td class="col2">Moltiplicazione </td><td class="col3"><code>int i = 2 * 4;</code> </td><td class="col4">SI </td><td class="col5" rowspan="3">da sinistra a destra </td>
+	</tr>
+	<tr class="row33">
+		<td class="col0"><code>/</code> </td><td class="col1">Divisione </td><td class="col2"><code>float f = 10.0 / 3.0;</code> </td><td class="col3">SI </td>
+	</tr>
+	<tr class="row34">
+		<td class="col0"><code>%</code> </td><td class="col1">Modulo </td><td class="col2"><code>int rem = 4 % 3;</code> </td><td class="col3">SI </td>
+	</tr>
+	<tr class="row35">
+		<td class="col0" rowspan="2"> 6 </td><td class="col1"><code>+</code> </td><td class="col2">Addizione </td><td class="col3"><code>int i = 2 + 3;</code> </td><td class="col4">SI </td><td class="col5" rowspan="2">da sinistra a destra </td>
+	</tr>
+	<tr class="row36">
+		<td class="col0"><code>-</code> </td><td class="col1">Sottrazione </td><td class="col2"><code>int i = 5 - 1;</code> </td><td class="col3">SI </td>
+	</tr>
+	<tr class="row37">
+		<td class="col0" rowspan="2"> 7 </td><td class="col1"><code>&lt;&lt;</code> </td><td class="col2">Shift di bit a sinistra </td><td class="col3"><code>int flags = 33 &lt;&lt; 1;</code> </td><td class="col4">SI </td><td class="col5" rowspan="2">da sinistra a destra </td>
+	</tr>
+	<tr class="row38">
+		<td class="col0"><code>&gt;&gt;</code> </td><td class="col1">Shift di bit a destra </td><td class="col2"><code>int flags = 33 &gt;&gt; 1;</code> </td><td class="col3">SI </td>
+	</tr>
+	<tr class="row39">
+		<td class="col0" rowspan="4"> 8 </td><td class="col1"><code>&lt;</code> </td><td class="col2">Comparazione less-than </td><td class="col3"><code>if (i &lt; 42) ...</code> </td><td class="col4">SI </td><td class="col5" rowspan="4">da sinistra a destra </td>
+	</tr>
+	<tr class="row40">
+		<td class="col0"><code>&lt;=</code> </td><td class="col1">Comparazione less-than-or-equal-to </td><td class="col2"><code>if (i &lt;= 42) ...</code> </td><td class="col3">SI </td>
+	</tr>
+	<tr class="row41">
+		<td class="col0"><code>&gt;</code> </td><td class="col1">Comparazione greater-than </td><td class="col2"><code>if (i &gt; 42) ...</code> </td><td class="col3">SI </td>
+	</tr>
+	<tr class="row42">
+		<td class="col0"><code>&gt;=</code> </td><td class="col1">Comparazione greater-than-or-equal-to </td><td class="col2"><code>if (i &gt;= 42) ...</code> </td><td class="col3">SI </td>
+	</tr>
+	<tr class="row43">
+		<td class="col0" rowspan="4"> 9 </td><td class="col1"><code>==</code> </td><td class="col2">Comparazione equal-to </td><td class="col3" rowspan="2"><code>if (i == 42) ...</code> </td><td class="col4" rowspan="2">SI </td><td class="col5" rowspan="4">da sinistra a destra</td>
+	</tr>
+	<tr class="row44">
+		<td class="col0"><code>eq</code> </td><td class="col1 leftalign">Forma alternativa per ==  </td>
+	</tr>
+	<tr class="row45">
+		<td class="col0"><code>!=</code> </td><td class="col1">Comparazione not-equal-to </td><td class="col2" rowspan="2"><code>if (i != 42) ...</code> </td><td class="col3" rowspan="2">SI </td>
+	</tr>
+	<tr class="row46">
+		<td class="col0"><code>not_eq</code> </td><td class="col1 leftalign">Forma alternativa per !=  </td>
+	</tr>
+	<tr class="row47">
+		<td class="col0" rowspan="2">10 </td><td class="col1"><code>&amp;</code> </td><td class="col2">AND di bit</td><td class="col3" rowspan="2"><code>flags = flags &amp; 42;</code> </td><td class="col4" rowspan="2">SI </td><td class="col5" rowspan="2">da sinistra a destra </td>
+	</tr>
+	<tr class="row48">
+		<td class="col0"><code>bitand</code> </td><td class="col1 leftalign">Forma alternativa per &amp;  </td>
+	</tr>
+	<tr class="row49">
+		<td class="col0" rowspan="2">11 </td><td class="col1"><code>^</code> </td><td class="col2">OR esclusivo di bit (XOR) </td><td class="col3" rowspan="2"><code>flags = flags ^ 42;</code> </td><td class="col4" rowspan="2">SI </td><td class="col5" rowspan="2">da sinistra a destra </td>
+	</tr>
+	<tr class="row50">
+		<td class="col0"><code>xor</code> </td><td class="col1 leftalign">Forma alternativa per ^  </td>
+	</tr>
+	<tr class="row51">
+		<td class="col0" rowspan="2">12 </td><td class="col1"><code>|</code> </td><td class="col2">OR inclusivo di bit </td><td class="col3" rowspan="2"><code>flags = flags | 42;</code> </td><td class="col4" rowspan="2">SI </td><td class="col5" rowspan="2">da sinistra a destra </td>
+	</tr>
+	<tr class="row52">
+		<td class="col0"><code>bitor</code> </td><td class="col1">Forma alternativa per | </td>
+	</tr>
+	<tr class="row53">
+		<td class="col0" rowspan="2">13 </td><td class="col1"><code>&amp;&amp;</code> </td><td class="col2">AND logico </td><td class="col3" rowspan="2"><code>if (conditionA &amp;&amp; conditionB) ...</code> </td><td class="col4" rowspan="2">SI </td><td class="col5" rowspan="2">da sinistra a destra </td>
+	</tr>
+	<tr class="row54">
+		<td class="col0"><code>and</code> </td><td class="col1 leftalign">Forma alternativa per &amp;&amp;  </td>
+	</tr>
+	<tr class="row55">
+		<td class="col0" rowspan="2">14 </td><td class="col1"><code>||</code> </td><td class="col2">OR logico </td><td class="col3" rowspan="2"><code>if (conditionA || conditionB) ...</code> </td><td class="col4" rowspan="2">SI </td><td class="col5" rowspan="2">da sinistra a destra </td>
+	</tr>
+	<tr class="row56">
+		<td class="col0"><code>or</code> </td><td class="col1">Forma alternativa per || </td>
+	</tr>
+	<tr class="row57">
+		<td class="col0">15 </td><td class="col1"><code>? :</code> </td><td class="col2">Condizionale ternario (if-then-else) </td><td class="col3"><code>int i = a &gt; b ? a : b;</code> </td><td class="col4">no </td><td class="col5">da destra a sinistra </td>
+	</tr>
+	<tr class="row58">
+		<td class="col0" rowspan="14">16 </td><td class="col1"><code>=</code> </td><td class="col2">Operatore di assegnamento </td><td class="col3"><code>int a = b;</code> </td><td class="col4">SI </td><td class="col5" rowspan="14">da destra a sinistra</td>
+	</tr>
+	<tr class="row59">
+		<td class="col0"><code>+=</code> </td><td class="col1">Incremento e assegnazione </td><td class="col2"><code>a += 3;</code> </td><td class="col3">SI </td>
+	</tr>
+	<tr class="row60">
+		<td class="col0"><code>-=</code> </td><td class="col1">Decremento e assegnazione </td><td class="col2"><code>b -= 4;</code> </td><td class="col3">SI </td>
+	</tr>
+	<tr class="row61">
+		<td class="col0"><code>*=</code> </td><td class="col1">Moltiplicazione e assegnazione </td><td class="col2"><code>a *= 5;</code> </td><td class="col3">SI </td>
+	</tr>
+	<tr class="row62">
+		<td class="col0"><code>/=</code> </td><td class="col1">Divisione e assegnazione </td><td class="col2"><code>a /= 2;</code> </td><td class="col3">SI </td>
+	</tr>
+	<tr class="row63">
+		<td class="col0"><code>%=</code> </td><td class="col1">Modulo e assegnazione </td><td class="col2"><code>a %= 3;</code> </td><td class="col3">SI </td>
+	</tr>
+	<tr class="row64">
+		<td class="col0"><code>&amp;=</code> </td><td class="col1">AND di bit e assegnazione </td><td class="col2" rowspan="2"><code>flags &amp;= new_flags;</code> </td><td class="col3" rowspan="2">SI </td>
+	</tr>
+	<tr class="row65">
+		<td class="col0"><code>and_eq</code> </td><td class="col1 leftalign">Forma alternativa per &amp;=  </td>
+	</tr>
+	<tr class="row66">
+		<td class="col0"><code>^=</code> </td><td class="col1">XOR di bit e assegnazione </td><td class="col2" rowspan="2"><code>flags ^= new_flags;</code> </td><td class="col3" rowspan="2">SI </td>
+	</tr>
+	<tr class="row67">
+		<td class="col0"><code>xor_eq</code> </td><td class="col1 leftalign">Forma alternativa per ^=  </td>
+	</tr>
+	<tr class="row68">
+		<td class="col0"><code>|=</code> </td><td class="col1">OR di bit e assegnazione </td><td class="col2" rowspan="2"><code>flags |= new_flags;</code> </td><td class="col3" rowspan="2">SI </td>
+	</tr>
+	<tr class="row69">
+		<td class="col0"><code>or_eq</code> </td><td class="col1">Forma alternativa per |= </td>
+	</tr>
+	<tr class="row70">
+		<td class="col0"><code>&lt;&lt;=</code> </td><td class="col1">Shift di bit a sinistra e assegnazione </td><td class="col2"><code>flags &lt;&lt;= 2;</code> </td><td class="col3">SI </td>
+	</tr>
+	<tr class="row71">
+		<td class="col0"><code>&gt;&gt;=</code> </td><td class="col1">Shift di bit a destra e assegnazione </td><td class="col2"><code>flags &gt;&gt;= 2;</code> </td><td class="col3">SI </td>
+	</tr>
+	<tr class="row72">
+		<td class="col0">17 </td><td class="col1"><code>throw</code> </td><td class="col2">throw exception </td><td class="col3"><code>throw EClass(“Message”);</code> </td><td class="col4">no </td><td class="col5"> </td>
+	</tr>
+	<tr class="row73">
+		<td class="col0">18 </td><td class="col1"><code>,</code> </td><td class="col2">Operatore di valutazione sequenziale </td><td class="col3"><code>for (i = 0, j = 0; i &lt; 10; i++, j++) ...</code> </td><td class="col4">SI </td><td class="col5">da sinistra a destra </td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [264-6068] -->
+</div>
+<!-- EDIT1 SECTION "Precedenza negli operatori C++" [1-6069] -->
+<h2 class="sectionedit3"><a name="ordine_di_valutazione_e_side_effect" id="ordine_di_valutazione_e_side_effect">Ordine di valutazione e side effect</a></h2>
+<div class="level2">
+
+<p>
+Un aspetto importante del C++ in relazione alla precedenza degli operatori è l&#039;ordine di valutazione e l&#039;ordine dei side effect nelle espressioni.
+In molte circostanze l&#039;ordine di come avvengono le cose non è specificato.
+Per esempio in <code>f() + g()</code> ,quale fra <code>f()</code> o <code>g()</code> è chiamato prima non è specificato.
+Se almeno una funzione ha side effect, il risultato può differire in funzione del compilatorem,delle differenti versioni dello stesso compilatore o fra diversi accessi allo stesso compilatore.
+</p>
+
+<p>
+In più l&#039;effetto di certe espressioni non è definita.
+Per esempio, considerando il codice seguente:
+</p>
+<pre class="cpp code cpp">    <span class="kw4">float</span> x <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
+    x <span class="sy1">=</span> x <span class="sy2">/</span> <span class="sy2">++</span>x<span class="sy4">;</span></pre>
+<p>
+Il valore di x e il resto del comportamento del programma dopo la valutazione dell&#039;espressione non è definito.
+Il programma è semanticamente ill-formed:
+x è modificato doppiamente fra due punti consecutivi.
+</p>
+
+<p>
+Espressioni come quella scritta sopra devono essere evitate.
+Quando c&#039;è un dubbio, rompere l&#039;espressione più grande in sotto-espressioni per assicurare che la valutazione sia corretta.
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Ordine di valutazione e side effect" [6070-7182] -->
+<h2 class="sectionedit4"><a name="overloading_degli_operatori" id="overloading_degli_operatori">Overloading degli operatori</a></h2>
+<div class="level2">
+
+<p>
+
+L&#039;overloading degli operatori può essere molto utile e molto pericoloso.
+Da una parte l&#039;overload delgi operatori per una classe creata può aiutare il trasporto e la leggibilità del codice.
+Dall&#039;altra parte si potrebbe sovraccaricare un operatore in modo da rendere offuscato o rovinare il proprio programma.Fai Attenzione!
+In particolare mai eseguire l&#039;overload di <code>&amp;&amp;</code>, <code>||</code> o <code>,</code>.
+Nel contesto overloaded si perde la garanzia che loperando sinistro sia valutato prima del secondo e che ci sia una sequenza di punti fra di loro.
+</p>
+
+<p>
+Ci sono due modi per sovraccaricare un operatore: global function o class member.
+</p>
+
+<p>
+Esempio di overloading con una global function:
+
+</p>
+<pre class="cpp code cpp">     ostream<span class="sy3">&amp;</span> operator <span class="sy1">&lt;&lt;</span><span class="br0">&#40;</span>ostream<span class="sy3">&amp;</span> os, <span class="kw4">const</span> myClass<span class="sy3">&amp;</span> rhs<span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+
+Ma per raggiungere qualsiasi dato private all&#039;interno della classe definita dall&#039;utente, si deve dichiarare la global function come friend all&#039;interno della definizione della classe.
+</p>
+
+<p>
+Esempio:
+
+</p>
+<pre class="cpp code cpp">     <span class="kw2">class</span> myClass <span class="br0">&#123;</span>
+&nbsp;
+       <span class="co1">// Gives the operator &lt;&lt; function access to 'myData'</span>
+       <span class="co1">// (this declaration should not go in public, private or protected)</span>
+       <span class="kw2">friend</span> ostream<span class="sy3">&amp;</span> operator <span class="sy1">&lt;&lt;</span><span class="br0">&#40;</span>ostream<span class="sy3">&amp;</span> lhs, <span class="kw4">const</span> myClass<span class="sy3">&amp;</span> rhs<span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+       <span class="kw2">private</span><span class="sy4">:</span>
+         <span class="kw4">int</span> myData<span class="sy4">;</span>
+     <span class="br0">&#125;</span></pre>
+<p>
+L&#039;overloading con una classe può essere eseguito come segue:
+
+</p>
+<pre class="cpp code cpp">     <span class="kw2">class</span> myClass <span class="br0">&#123;</span>
+&nbsp;
+       <span class="kw2">public</span><span class="sy4">:</span>
+         <span class="co1">// The left hand side of this operator becomes '*this'.</span>
+         <span class="kw4">int</span> operator <span class="sy2">+</span><span class="br0">&#40;</span><span class="kw4">const</span> myClass<span class="sy3">&amp;</span> rhs<span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+       <span class="kw2">private</span><span class="sy4">:</span>
+         <span class="kw4">int</span> myData<span class="sy4">;</span>
+     <span class="br0">&#125;</span></pre>
+</div>
+<!-- EDIT4 SECTION "Overloading degli operatori" [7183-] --></div>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:iterator:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:24-0700" />
+<meta name="keywords" content="jp,iterator,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/iterator/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp:iterator" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/iterator/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/iterator/start" />
+<link rel="canonical" href="iterators" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp:iterator';var JSINFO = {"id":"jp:iterator:start","namespace":"jp:iterator"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="iterators#c_イテレータ" class="toc">C++ イテレータ</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="iterators#イテレータの分類" class="toc">イテレータの分類</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="iterators#補助イテレータ関数" class="toc">補助イテレータ関数</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="c_イテレータ" id="c_イテレータ">C++ イテレータ</a></h2>
+<div class="level2">
+
+<p>
+
+イテレータはシーケンスの要素にアクセスするために用いられ、ポインタと似た用途で用いることができます。
+たとえばベクタの要素を一つ一つたどるのにイテレータを利用することができます。
+</p>
+
+<p>
+次のコードはイテレータを生成し、ベクタとともにイテレータを使用する方法を示しています：
+</p>
+<pre class="cpp code cpp">    vector<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> the_vector<span class="sy4">;</span>
+    vector<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">iterator</span> the_iterator<span class="sy4">;</span>
+&nbsp;
+    <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i<span class="sy1">=</span><span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> the_vector.<span class="me1">push_back</span><span class="br0">&#40;</span>i<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">int</span> total <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
+    the_iterator <span class="sy1">=</span> the_vector.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw1">while</span><span class="br0">&#40;</span> the_iterator <span class="sy3">!</span><span class="sy1">=</span> the_vector.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+      total <span class="sy2">+</span><span class="sy1">=</span> <span class="sy2">*</span>the_iterator<span class="sy4">;</span>
+      <span class="sy2">++</span>the_iterator<span class="sy4">;</span>
+    <span class="br0">&#125;</span>
+&nbsp;
+    <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Total=&quot;</span> <span class="sy1">&lt;&lt;</span> total <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
+<p>
+ここで注目したいのは、コンテナ内の要素にイテレータを逆参照することによってアクセスできる点です。
+</p>
+
+<p>
+NOTES: 古い値を利用しないのであれば、後置インクリメント演算子（<code>iter++</code>）よりも前置インクリメント演算子（<code>++iter</code>）を用いるべきです。<br/>
+
+後置インクリメントは一般的には下記の様に実装されています：
+
+</p>
+<pre class="cpp code cpp">  Iter operator<span class="sy2">++</span><span class="br0">&#40;</span><span class="kw4">int</span><span class="br0">&#41;</span>
+  <span class="br0">&#123;</span>
+    Iter tmp<span class="br0">&#40;</span><span class="sy2">*</span><span class="kw3">this</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// store the old value in a temporary object</span>
+    <span class="sy2">++*</span><span class="kw3">this</span><span class="sy4">;</span>         <span class="co1">// call pre-increment</span>
+    <span class="kw1">return</span> tmp<span class="sy4">;</span>      <span class="co1">// return the old value</span>
+  <span class="br0">&#125;</span></pre>
+<p>
+明らかに前置インクリメントよりも効率的ではありません。
+</p>
+
+<p>
+<br/>
+
+
+</p>
+
+</div>
+<!-- EDIT1 SECTION "C++ イテレータ" [1-1492] -->
+<h3 class="sectionedit2"><a name="イテレータの分類" id="イテレータの分類">イテレータの分類</a></h3>
+<div class="level3">
+
+<p>
+すべてのイテレータが同じ機能を持っているわけではありません。読み込みと書き込みでは求められる機能は異なります。<br/>
+
+ランダムアクセスは <code>vector</code> に対しては効果的で便利ですが、一方で <code>list</code> に対しては高負荷な操作です。<br/>
+
+このような理由から、イテレータはそれぞれの機能によって5つに分類されます：
+
+</p>
+<div class="table sectionedit3"><table class="inline">
+	<tr class="row0">
+		<th class="col0">イテレータのカテゴリ</th><th class="col1">内容</th><th class="col2">提供元</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">input_iterator</td><td class="col1">前方向に値を読み込む。イテレータ自身はインクリメント、比較、逆参照可能。</td><td class="col2">istream</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">output_iterator</td><td class="col1">前方向に値を書き込む。イテレータ自身はインクリメント、比較、逆参照可能。</td><td class="col2">ostream, inserter</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">forward_iterator</td><td class="col1">前方向に値を読み書きする。これはinputイテレータとoutputoイテレータの機能を合わせたものにイテレータの値を格納する機能を追加したものである。</td><td class="col2"> </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">bidirectional_iterator</td><td class="col1">前後方向に値を読み書きする。forwardイテレータと似ているが、インクリメントもデクリメントもできる。</td><td class="col2">list, map, multimap, set, multiset</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0">random_access_iterator</td><td class="col1">ランダムアクセスで読み書きする。もっとも強力なイテレータで、両方向イテレータにポインタの演算とポインタの比較の機能を追加したものである。</td><td class="col2">array, deque, string, vector</td>
+	</tr>
+</table></div>
+<!-- EDIT3 TABLE [1953-2966] -->
+<p>
+
+STLコンテナは各々一つのイテレータの分類と結びついていて、<a href="../../stl/algorithm/start" class="wikilink1" title="stl:algorithm:start">STLアルゴリズム</a>は特定のカテゴリのイテレータを利用している。
+</p>
+
+<p>
+たとえば、<a href="../../stl/vector/start" class="wikilink1" title="stl:vector:start">ベクタ</a>はランダムアクセスイテレータと結びついている。これはベクタではランダムアクセスを必要とするアルゴリズムを利用することができることを意味している。
+ランダムアクセスイテレータは他のイテレータの機能を包含しているので、ベクタは他のイテレータと結びついたアルゴリズムを利用することもできる。
+</p>
+<pre class="cpp code cpp">    vector<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> the_vector<span class="br0">&#40;</span><span class="nu0">10</span><span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+    <span class="co1">// generate_n requires output_iterator</span>
+    generate_n<span class="br0">&#40;</span>the_vector.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, <span class="nu0">5</span>, <span class="kw3">rand</span><span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+    <span class="co1">// fill requires forward_iterator</span>
+    fill<span class="br0">&#40;</span>the_vector.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy2">+</span><span class="nu0">5</span>, the_vector.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, <span class="nu0">100</span><span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+    <span class="co1">// random_shuffle requires random_access_iterator</span>
+    random_shuffle<span class="br0">&#40;</span>the_vector.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, the_vector.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+    <span class="co1">// copy requires input_iterator</span>
+    copy<span class="br0">&#40;</span>the_vector.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, the_vector.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, ostream_iterator<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">&#40;</span><span class="kw3">cout</span>, <span class="st0">&quot; &quot;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+    <span class="co1">// reverse_copy requires bidirectional_iterator</span>
+    reverse_copy<span class="br0">&#40;</span>the_vector.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, the_vector.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, ostream_iterator<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">&#40;</span><span class="kw3">cout</span>, <span class="st0">&quot; &quot;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+
+<br/>
+
+
+</p>
+
+</div>
+<!-- EDIT2 SECTION "イテレータの分類" [1493-4238] -->
+<h3 class="sectionedit4"><a name="補助イテレータ関数" id="補助イテレータ関数">補助イテレータ関数</a></h3>
+<div class="level3">
+
+<p>
+<code>&lt;iterator&gt;</code>ヘッダファイルには2つの補助関数が定義されている。
+
+</p>
+<pre class="cpp code cpp">  <span class="kw4">void</span> advance<span class="br0">&#40;</span> input_iterator<span class="sy3">&amp;</span> pos, Dist n <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+
+<code>advance()</code>では<code>pos</code>が<code>n</code>要素分前方向（または後方向）に移動することができます。<br/>
+
+両方向イテレータないしランダムアクセスイテレータでは<code>n</code>は後方向に移動するために負になってもかまいません。<br/>
+
+ランダムアクセスイテレータでは、<code>advance()</code>は一定時間で動作します。（単純に<code>pos</code>+=<code>n</code>を呼ぶだけ）<br/>
+
+他のイテレータでは<code>advance()</code>は線形複雑度で更新されます。（<code>++pos</code>が<code>n</code>回呼び出される）
+</p>
+<pre class="cpp code cpp">  <span class="kw2">typename</span> iterator_traits<span class="sy1">&lt;</span>input_iterator<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">difference_type</span>
+  distance<span class="br0">&#40;</span> input_iterator pos1, input_iterator pos2 <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+
+<code>distance()</code>は2つのイテレータ間の距離を返します。<br/>
+
+ランダムアクセスイテレータでは<code>distance()</code>は一定時間で動作します。（単純に<code>pos2</code> - <code>pos1</code>を返す）<br/>
+
+他のイテレータでは<code>distance()</code>は線形時間で動作します。（<code>pos1</code>が<code>pos2</code>に到達するまでインクリメントを繰り返し、インクリメントの回数を返す）
+</p>
+
+<p>
+<br/>
+
+<br/>
+
+関連トピック：<a href="http://www.oreillynet.com/pub/a/network/2005/10/18/what-is-iterator-in-c-plus-plus.html" class="urlextern" title="http://www.oreillynet.com/pub/a/network/2005/10/18/what-is-iterator-in-c-plus-plus.html"  rel="nofollow">http://www.oreillynet.com/pub/a/network/2005/10/18/what-is-iterator-in-c-plus-plus.html</a>
+
+</p>
+
+</div>
+<!-- EDIT4 SECTION "補助イテレータ関数" [4239-] --></div>
+</body>
+</html>

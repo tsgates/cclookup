@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn"
+ lang="cn" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>cn:numeric:c:sin</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:54-0700" />
+<meta name="keywords" content="cn,numeric,c,sin" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/cn/numeric/c/sin?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=cn:numeric:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/cn/numeric/c/sin" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/cn/numeric/c/sin" />
+<link rel="canonical" href="sin" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='cn:numeric:c';var JSINFO = {"id":"cn:numeric:c:sin","namespace":"cn:numeric:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="sin" id="sin">sin</a></h2>
+<div class="level2">
+
+<p>
+语法：
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cmath&gt;</span>
+    <span class="kw4">double</span> <span class="kw3">sin</span><span class="br0">&#40;</span> <span class="kw4">double</span> arg <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+
+函数 sin() 返回 <code>arg</code> 的正弦，其中<code>arg</code>以弧度给出。sin() 的返回值将在[-1,1]范围内。如果<code>arg</code>是无穷大，sin()将返回NAN并抛出浮点异常。、
+</p>
+
+<p>
+C++ 同样提供了下列重载形式：
+
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cmath&gt;</span>
+    <span class="kw4">float</span> <span class="kw3">sin</span><span class="br0">&#40;</span> <span class="kw4">float</span> arg <span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// same as sinf() in C99</span>
+    <span class="kw4">long</span> <span class="kw4">double</span> <span class="kw3">sin</span><span class="br0">&#40;</span> <span class="kw4">long</span> <span class="kw4">double</span> arg <span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// same as sinl() in C99</span></pre>
+<p>
+一个可能的方法是 <a href="http://en.wikipedia.org/wiki/Small_angle_approximation" class="urlextern" title="http://en.wikipedia.org/wiki/Small_angle_approximation"  rel="nofollow">使用泰勒级数近似正弦函数</a> 利用 sin(x) = x - x<sup>3</sup>/3! + x<sup>5</sup>/5! - x<sup>7</sup>/7! + … 的事实产生下列代码：
+</p>
+<pre class="cpp code cpp"><span class="kw4">long</span> factrl<span class="br0">&#40;</span><span class="kw4">int</span> n<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+  <span class="kw4">long</span> la <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
+  <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">2</span><span class="sy4">;</span> i <span class="sy1">&lt;=</span> n<span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> la <span class="sy2">*</span><span class="sy1">=</span> i<span class="sy4">;</span>
+  <span class="kw1">return</span> la<span class="sy4">;</span>
+<span class="br0">&#125;</span>
+&nbsp;
+<span class="kw4">float</span> sin2<span class="br0">&#40;</span><span class="kw4">float</span> x<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+  <span class="kw4">int</span> i<span class="sy4">;</span>
+  <span class="kw4">float</span> y<span class="sy1">=</span>x ,r<span class="sy1">=</span>x<span class="sy4">;</span>
+  <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i<span class="sy1">=</span><span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    y <span class="sy2">*</span><span class="sy1">=</span> <span class="sy2">-</span>x<span class="sy2">*</span>x<span class="sy4">;</span>
+    r <span class="sy2">+</span><span class="sy1">=</span> <span class="nu16">1.0</span> <span class="sy2">/</span> factrl<span class="br0">&#40;</span> <span class="nu0">1</span><span class="sy2">+</span><span class="nu0">2</span><span class="sy2">*</span><span class="br0">&#40;</span>i<span class="sy2">+</span><span class="nu0">1</span><span class="br0">&#41;</span> <span class="br0">&#41;</span> <span class="sy2">*</span> y<span class="sy4">;</span>
+  <span class="br0">&#125;</span>
+  <span class="kw1">return</span> r<span class="sy4">;</span>
+<span class="br0">&#125;</span>
+&nbsp;
+<span class="kw4">float</span> <span class="kw3">sin</span><span class="br0">&#40;</span><span class="kw4">float</span> theta<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+  <span class="kw4">float</span> sign <span class="sy1">=</span> <span class="nu0">1</span>, x <span class="sy1">=</span> theta<span class="sy2">/</span>M_PI<span class="sy4">;</span>
+  <span class="kw1">if</span> <span class="br0">&#40;</span>x <span class="sy1">&lt;</span> <span class="nu16">0.0</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    sign <span class="sy1">=</span> <span class="sy2">-</span><span class="nu0">1</span><span class="sy4">;</span>
+    x <span class="sy1">=</span> <span class="sy2">-</span>x<span class="sy4">;</span>
+  <span class="br0">&#125;</span>
+  <span class="kw4">int</span> i <span class="sy1">=</span> <span class="kw2">static_cast</span><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">&#40;</span>x<span class="sy2">+</span><span class="nu16">0.5</span><span class="br0">&#41;</span><span class="sy4">;</span>
+  <span class="kw4">float</span> a <span class="sy1">=</span> x<span class="sy2">-</span>i<span class="sy4">;</span>
+  <span class="kw1">if</span><span class="br0">&#40;</span> <span class="br0">&#40;</span>i<span class="sy2">-</span>i<span class="sy2">/</span><span class="nu0">2</span><span class="sy2">*</span><span class="nu0">2</span><span class="br0">&#41;</span> <span class="sy3">!</span><span class="sy1">=</span> <span class="nu0">0</span> <span class="br0">&#41;</span> sign <span class="sy1">=</span> <span class="sy2">-</span>sign<span class="sy4">;</span>
+  <span class="kw1">return</span> sign <span class="sy2">*</span> sin2<span class="br0">&#40;</span>a<span class="sy2">*</span>M_PI<span class="br0">&#41;</span><span class="sy4">;</span>
+<span class="br0">&#125;</span></pre>
+<p>
+相关主题： <a href="acos" class="wikilink1" title="cn:numeric:c:acos">acos</a>, <a href="asin" class="wikilink1" title="cn:numeric:c:asin">asin</a>, <a href="atan" class="wikilink1" title="cn:numeric:c:atan">atan</a>, <a href="atan2" class="wikilink1" title="cn:numeric:c:atan2">atan2</a>, <a href="cos" class="wikilink1" title="cn:numeric:c:cos">cos</a>, <a href="cosh" class="wikilink1" title="cn:numeric:c:cosh">cosh</a>, <a href="sinh" class="wikilink1" title="cn:numeric:c:sinh">sinh</a>, <a href="tan" class="wikilink1" title="cn:numeric:c:tan">tan</a>, <a href="tanh" class="wikilink1" title="cn:numeric:c:tanh">tanh</a>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "sin" [3-] --></div>
+</body>
+</html>

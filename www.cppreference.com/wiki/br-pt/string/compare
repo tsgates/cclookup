@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="br-pt"
+ lang="br-pt" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>br-pt:string:compare</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:02-0700" />
+<meta name="keywords" content="br-pt,string,compare" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/br-pt/string/compare?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=br-pt:string" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/br-pt/string/compare" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/br-pt/string/compare" />
+<link rel="canonical" href="compare" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='br-pt:string';var JSINFO = {"id":"br-pt:string:compare","namespace":"br-pt:string"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="compare" id="compare">compare</a></h2>
+<div class="level2">
+
+<p>
+Sintaxe:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;string&gt;</span>
+    <span class="kw4">int</span> compare<span class="br0">&#40;</span> <span class="kw4">const</span> string<span class="sy3">&amp;</span> str <span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span>
+    <span class="kw4">int</span> compare<span class="br0">&#40;</span> <span class="kw4">const</span> Char<span class="sy2">*</span> str <span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span>
+    <span class="kw4">int</span> compare<span class="br0">&#40;</span> size_type index, size_type length, <span class="kw4">const</span> string<span class="sy3">&amp;</span> str <span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span>
+    <span class="kw4">int</span> compare<span class="br0">&#40;</span> size_type index, size_type length, <span class="kw4">const</span> string<span class="sy3">&amp;</span> str, size_type index2, size_type length2 <span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span>
+    <span class="kw4">int</span> compare<span class="br0">&#40;</span> size_type index, size_type length, <span class="kw4">const</span> Char<span class="sy2">*</span> str, size_type length2 <span class="sy1">=</span> npos <span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span></pre>
+<p>
+A função compare() compara str à string actual de várias maneiras, devolvendo
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<th class="col0 leftalign">Valor devolvido   </th><th class="col1">Caso</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign">menor que zero    </td><td class="col1">this &lt; str</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign">zero              </td><td class="col1">this == str</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign">maior que zero    </td><td class="col1">this &gt; str</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [534-656] -->
+<p>
+
+As várias funções:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> comparam str à string actual,</div>
+</li>
+<li class="level1"><div class="li"> comparam str a uma substring da string actual, começando em index para length caracteres,</div>
+</li>
+<li class="level1"><div class="li"> comparam uma substring de str a uma substring da string actual, onde index2 e length2 referem-se a str, e index e length referem-se à string actual,</div>
+</li>
+<li class="level1"><div class="li"> ou comparam uma substring de str a uma substring da string actual, onde a substring de str começa em zero e tem comprimento length2, e a substring da string actual começa em index e tem length caracteres.</div>
+</li>
+</ul>
+
+<p>
+
+Por exemplo, o código seguinte usa compare() para comparar quatro strings entre si:
+</p>
+<pre class="cpp code cpp">   string names<span class="br0">&#91;</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="br0">&#123;</span><span class="st0">&quot;Homer&quot;</span>, <span class="st0">&quot;Marge&quot;</span>, <span class="st0">&quot;3-eyed fish&quot;</span>, <span class="st0">&quot;inanimate carbon rod&quot;</span><span class="br0">&#125;</span><span class="sy4">;</span>
+&nbsp;
+   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">4</span><span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> j <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> j <span class="sy1">&lt;</span> <span class="nu0">4</span><span class="sy4">;</span> j<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+       <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> names<span class="br0">&#91;</span>i<span class="br0">&#93;</span>.<span class="me1">compare</span><span class="br0">&#40;</span> names<span class="br0">&#91;</span>j<span class="br0">&#93;</span> <span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; &quot;</span><span class="sy4">;</span>
+     <span class="br0">&#125;</span>
+     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+   <span class="br0">&#125;</span></pre>
+<p>
+Dados do código acima foram usados para gerar esta tabela, que mostra como as
+várias strings se comparam entre si:
+
+</p>
+<div class="table sectionedit3"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> </th><th class="col1"> Homer </th><th class="col2"> Marge </th><th class="col3"> 3-eyed fish </th><th class="col4"> inanimate carbon rod </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">“Homer”.compare( x )</td><td class="col1">0</td><td class="col2">-1</td><td class="col3">1</td><td class="col4">-1</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">“Marge”.compare( x )</td><td class="col1">1</td><td class="col2">0</td><td class="col3">1</td><td class="col4">-1</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">“3-eyed fish”.compare( x )</td><td class="col1">-1</td><td class="col2">-1</td><td class="col3">0</td><td class="col4">-1</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">“inanimate carbon rod”.compare( x )</td><td class="col1">1</td><td class="col2">1</td><td class="col3">1</td><td class="col4">0</td>
+	</tr>
+</table></div>
+<!-- EDIT3 TABLE [1630-1837] -->
+<p>
+
+Tópicos Relacionados: <a href="string_operators" class="wikilink1" title="br-pt:string:string_operators">String_operators</a>
+
+</p>
+
+</div>
+</div>
+</body>
+</html>

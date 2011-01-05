@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>types:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-11-01T13:20:45-0700" />
+<meta name="keywords" content="types,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/types/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=types" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/types/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/types/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='types';var JSINFO = {"id":"types:start","namespace":"types"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="start#standard_types_and_their_properties" class="toc">Standard types and their properties</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="start#types" class="toc">Types</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="start#numeric_limits" class="toc">Numeric limits</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="start#macro_constants" class="toc">Macro constants</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="standard_types_and_their_properties" id="standard_types_and_their_properties">Standard types and their properties</a></h2>
+<div class="level2">
+
+</div>
+<!-- EDIT1 SECTION "Standard types and their properties" [1-47] -->
+<h3 class="sectionedit2"><a name="types" id="types">Types</a></h3>
+<div class="level3">
+
+<p>
+
+In <code>&lt;stddef&gt;</code> header:
+
+</p>
+<div class="table sectionedit3"><table class="inline">
+	<tr class="row0">
+		<td class="col0 leftalign"> <code>ptrdiff_t</code>  </td><td class="col1"> signed integer type returned after substracting two pointers </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> <code>size_t</code>     </td><td class="col1"> unsigned integer type returned by <code>sizeof</code> </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> <code>nullptr_t</code>  </td><td class="col1"> the type of <code>NULL</code> pointer object (<code>nullptr</code>) (<a href="../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> <code>max_align_t</code></td><td class="col1"> the type which has the alignment supported in every context (<a href="../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature) </td>
+	</tr>
+</table></div>
+<!-- EDIT3 TABLE [88-428] -->
+<p>
+
+Also, several <a href="integer" class="wikilink1" title="types:integer"> fixed width integer types </a> are defined to enhance portability of applications (<a href="../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature) 
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Types" [48-558] -->
+<h3 class="sectionedit4"><a name="numeric_limits" id="numeric_limits">Numeric limits</a></h3>
+<div class="level3">
+
+<p>
+
+The <a href="limits" class="wikilink1" title="types:limits"> numeric_limits</a> class template defines common implementation-defined properties of fundamental types.
+</p>
+
+</div>
+<!-- EDIT4 SECTION "Numeric limits" [559-701] -->
+<h3 class="sectionedit5"><a name="macro_constants" id="macro_constants">Macro constants</a></h3>
+<div class="level3">
+
+<p>
+
+In <code>&lt;cstdint&gt;</code> header:
+
+</p>
+<div class="table sectionedit6"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <code>PTRDIFF_MIN</code> </td><td class="col1"> minimum value of object of <code>ptrdiff_t</code> type (<a href="../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature) </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <code>PTRDIFF_MAX</code> </td><td class="col1"> maximum value of object of <code>ptrdiff_t</code> type (<a href="../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature) </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> <code>SIZE_MAX</code>    </td><td class="col1"> maximum value of object of <code>size_t</code> type (<a href="../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature) </td>
+	</tr>
+</table></div>
+<!-- EDIT6 TABLE [753-1016] -->
+<p>
+
+In <code>&lt;climits&gt;</code> header:
+
+</p>
+<div class="table sectionedit7"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <code>CHAR_BIT</code> </td><td class="col1"> </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <code>SCHAR_MIN</code> </td><td class="col1"> </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <code>SCHAR_MAX</code> </td><td class="col1"> </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> <code>UCHAR_MIN</code> </td><td class="col1"> </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> <code>UCHAR_MAX</code> </td><td class="col1"> </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> <code>CHAR_MIN</code> </td><td class="col1"> </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> <code>CHAR_MAX</code> </td><td class="col1"> </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"> <code><acronym title="Megabyte">MB</acronym>_LEN_MAX</code> </td><td class="col1"> </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"> <code>CHAR_MIN</code> </td><td class="col1"> </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"> <code>CHAR_MAX</code> </td><td class="col1"> </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"> <code>SHRT_MIN</code> </td><td class="col1"> </td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"> <code>SHRT_MAX</code> </td><td class="col1"> </td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"> <code>USHRT_MIN</code> </td><td class="col1"> </td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"> <code>USHRT_MAX</code> </td><td class="col1"> </td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"> <code>INT_MIN</code> </td><td class="col1"> </td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"> <code>INT_MAX</code> </td><td class="col1"> </td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"> <code>UINT_MAX</code> </td><td class="col1"> </td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"> <code>LONG_MIN</code> </td><td class="col1"> </td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"> <code>LONG_MAX</code> </td><td class="col1"> </td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"> <code>ULONG_MAX</code> </td><td class="col1"> </td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"> <code>LLONG_MIN</code> </td><td class="col1"> (<a href="../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"> <code>LLONG_MAX</code> </td><td class="col1"> (<a href="../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</td>
+	</tr>
+	<tr class="row22">
+		<td class="col0"> <code>ULLONG_MAX</code> </td><td class="col1"> (<a href="../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</td>
+	</tr>
+</table></div>
+<!-- EDIT7 TABLE [1044-1551] -->
+<p>
+
+<a href="../todo" class="wikilink1" title="todo">todo</a>
+
+</p>
+
+</div>
+<!-- EDIT5 SECTION "Macro constants" [702-] --></div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de"
+ lang="de" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>de:container:list:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:26-0700" />
+<meta name="keywords" content="de,container,list,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/de/container/list/start?do=index" title="Übersicht" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=de:container:list" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/de/container/list/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/de/container/list/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='de:container:list';var JSINFO = {"id":"de:container:list:start","namespace":"de:container:list"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="c_listen" id="c_listen">C++ Listen</a></h1>
+<div class="level1">
+
+<p>
+Listen sind sequenzielle Container, in denen Elemente im Format einer <a href="http://de.wikipedia.org/wiki/Verkettete_Liste" class="urlextern" title="http://de.wikipedia.org/wiki/Verkettete_Liste"  rel="nofollow">verketteten Liste</a> gespeichert werden.
+Im Vergleich zu <a href="../../../stl/vector/start" class="wikilink1" title="stl:vector:start">Vektoren</a> erlauben sie schnelles Einfügen und Löschen von Elementen aber keinen <a href="http://de.wikipedia.org/wiki/Wahlfreier_Zugriff" class="urlextern" title="http://de.wikipedia.org/wiki/Wahlfreier_Zugriff"  rel="nofollow">wahlfreien Zugriff</a>.
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="list_constructors" class="wikilink1" title="de:container:list:list_constructors">Konstruktoren</a></td><td class="col1">Erstellung und Initialisierung neuer Listen</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/de/container/list/list_operators" class="wikilink2" title="de:container:list:list_operators" rel="nofollow">Operatoren</a></td><td class="col1">Zuweisung und Vergleich von Listen</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/de/container/list/assign" class="wikilink2" title="de:container:list:assign" rel="nofollow">assign</a></td><td class="col1">Inhalt zuweisen</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="back" class="wikilink1" title="de:container:list:back">back</a></td><td class="col1">Gibt eine Referenz auf das letzte Element in der Liste zurück</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/de/container/list/begin" class="wikilink2" title="de:container:list:begin" rel="nofollow">begin</a></td><td class="col1">Gibt einen Iterator auf das erste Element in der Liste zurück</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="clear" class="wikilink1" title="de:container:list:clear">clear</a></td><td class="col1">Entfernt alle Elemente aus der Liste</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/de/container/list/empty" class="wikilink2" title="de:container:list:empty" rel="nofollow">empty</a></td><td class="col1">Prüft, ob die Liste Elemente beinhaltet</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/de/container/list/end" class="wikilink2" title="de:container:list:end" rel="nofollow">end</a></td><td class="col1">Gibt einen Iterator zurück, der hinter das letzte Element der Liste zeigt</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/de/container/list/erase" class="wikilink2" title="de:container:list:erase" rel="nofollow">erase</a></td><td class="col1">Entfernt Elemente aus der Liste</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/de/container/list/front" class="wikilink2" title="de:container:list:front" rel="nofollow">front</a></td><td class="col1">Gibt eine Referenz auf das erste Element in der Liste zurück</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/de/container/list/insert" class="wikilink2" title="de:container:list:insert" rel="nofollow">insert</a></td><td class="col1">Fügt Elemente in die Liste ein</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/de/container/list/max_size" class="wikilink2" title="de:container:list:max_size" rel="nofollow">max_size</a></td><td class="col1">Gibt die maximale Anzahl von Elementen zurück, die in einer Liste gespeichert werden können</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/de/container/list/merge" class="wikilink2" title="de:container:list:merge" rel="nofollow">merge</a></td><td class="col1">Vereinigt zwei Listen</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><a href="pop_back" class="wikilink1" title="de:container:list:pop_back">pop_back</a></td><td class="col1">Entfernt das letzte Element der Liste</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/de/container/list/pop_front" class="wikilink2" title="de:container:list:pop_front" rel="nofollow">pop_front</a></td><td class="col1">Entfernt das erste Element der Liste</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><a href="push_back" class="wikilink1" title="de:container:list:push_back">push_back</a></td><td class="col1">Fügt ein Element an das Ende der Liste an</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/de/container/list/push_front" class="wikilink2" title="de:container:list:push_front" rel="nofollow">push_front</a></td><td class="col1">Fügt ein Element an den Beginn der Liste an</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/de/container/list/rbegin" class="wikilink2" title="de:container:list:rbegin" rel="nofollow">rbegin</a></td><td class="col1">Gibt einen Rückwärtsiterator auf das letzte Element zurück</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/de/container/list/remove" class="wikilink2" title="de:container:list:remove" rel="nofollow">remove</a></td><td class="col1">Entfernt Elemente bestimmten Wertes aus der Liste</td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/de/container/list/remove_if" class="wikilink2" title="de:container:list:remove_if" rel="nofollow">remove_if</a></td><td class="col1">Entfernt Elemente, die eine bestimmte Bedingung erfüllen, aus der Liste</td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/de/container/list/rend" class="wikilink2" title="de:container:list:rend" rel="nofollow">rend</a></td><td class="col1">Gibt einen Rückwärtsiterator zurück, der vor das erste Element zeigt</td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/de/container/list/resize" class="wikilink2" title="de:container:list:resize" rel="nofollow">resize</a></td><td class="col1">Ändert die Größe der Liste</td>
+	</tr>
+	<tr class="row22">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/de/container/list/reverse" class="wikilink2" title="de:container:list:reverse" rel="nofollow">reverse</a></td><td class="col1">Kehrt die Reihenfolge der Liste um</td>
+	</tr>
+	<tr class="row23">
+		<td class="col0"><a href="size" class="wikilink1" title="de:container:list:size">size</a></td><td class="col1">Gibt die Anzahl Elemente in der Liste zurück</td>
+	</tr>
+	<tr class="row24">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/de/container/list/sort" class="wikilink2" title="de:container:list:sort" rel="nofollow">sort</a></td><td class="col1">Sortiert die Liste</td>
+	</tr>
+	<tr class="row25">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/de/container/list/splice" class="wikilink2" title="de:container:list:splice" rel="nofollow">splice</a></td><td class="col1">Verschiebt Elemente aus einer Liste in eine andere</td>
+	</tr>
+	<tr class="row26">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/de/container/list/swap" class="wikilink2" title="de:container:list:swap" rel="nofollow">swap</a></td><td class="col1">Tauscht den Inhalt zweier Listen</td>
+	</tr>
+	<tr class="row27">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/de/container/list/unique" class="wikilink2" title="de:container:list:unique" rel="nofollow">unique</a></td><td class="col1">Entfernt aufeinander folgende gleiche Elemente</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [379-2082] -->
+</div>
+</div>
+</body>
+</html>

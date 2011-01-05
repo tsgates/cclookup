@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it"
+ lang="it" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>it:preprocessor:preprocessor_if</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:07-0700" />
+<meta name="keywords" content="it,preprocessor,preprocessor_if" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/it/preprocessor/preprocessor_if?do=index" title="Indice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=it:preprocessor" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/it/preprocessor/preprocessor_if" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/it/preprocessor/preprocessor_if" />
+<link rel="canonical" href="preprocessor_if" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='it:preprocessor';var JSINFO = {"id":"it:preprocessor:preprocessor_if","namespace":"it:preprocessor"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="espressioni_condizionali_del_preprocessore" id="espressioni_condizionali_del_preprocessore">Espressioni condizionali del Preprocessore</a></h2>
+<div class="level2">
+<pre class="cpp code cpp"><span class="co2">#if, #ifdef, #ifndef, #else, #elif, #endif</span></pre>
+<p>
+Questo sei comandi del preprocessore gli conferiscono capacità di eseguire controlli logici di base. 
+Durante il processo di compilazione questi comandi permettono di decidere quali linee di codice devono
+essere incluse oppure omesse.
+</p>
+<pre class="cpp code cpp">     <span class="co2">#if expression</span></pre>
+<p>
+Se il valore dell&#039;espressione è vero allora il codice che segue immediatamente viene compilato.
+</p>
+<pre class="cpp code cpp">     <span class="co2">#ifdef macro</span></pre>
+<p>
+Se la macro è stata definita con un <a href="define" class="wikilink1" title="it:preprocessor:define">#define</a> allora il codice che segue immediatamente 
+il comando viene compilato
+</p>
+<pre class="cpp code cpp">     <span class="co2">#ifndef macro</span></pre>
+<p>
+Questo esempio compila il codice immediatamente seguente se la macro <strong>non</strong> è stata definita
+</p>
+
+<p>
+Note: il comand #elif è una contrazione della più comune parola chiave &#039;elseif&#039; e funziona
+come essa. Potete usare anche “defined” o ”!defined” dopo un #if per controllare la definizione
+di una macro
+</p>
+
+<p>
+Alcnuni esempi:
+
+</p>
+<pre class="cpp code cpp">     <span class="co2">#ifdef DEBUG</span>
+       <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;This is the test version, i=&quot;</span> <span class="sy1">&lt;&lt;</span> i <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+     <span class="co2">#else</span>
+       <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;This is the production version!&quot;</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+     <span class="co2">#endif</span></pre>
+<p>
+definendo la macro DEBUG il programma include la riga di debug &#039;cout&#039; che, una volta risolto
+il problema, può essere di nuovo esclusa senza modificare il codice (soprattutto se i messaggi
+di debug sparsi nell&#039;applicazione sono molti).
+</p>
+
+<p>
+Argomenti correlati: <a href="define" class="wikilink1" title="it:preprocessor:define">#define</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

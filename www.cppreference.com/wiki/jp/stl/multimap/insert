@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:container:multimap:insert</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:24-0700" />
+<meta name="keywords" content="jp,container,multimap,insert" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/container/multimap/insert?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp:container:multimap" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/container/multimap/insert" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/container/multimap/insert" />
+<link rel="canonical" href="insert" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp:container:multimap';var JSINFO = {"id":"jp:container:multimap:insert","namespace":"jp:container:multimap"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="insert" id="insert">insert</a></h2>
+<div class="level2">
+
+<p>
+Syntax:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;map&gt;</span>
+    iterator insert<span class="br0">&#40;</span> iterator pos, <span class="kw4">const</span> T<span class="sy3">&amp;</span> val <span class="br0">&#41;</span><span class="sy4">;</span>
+    iterator insert<span class="br0">&#40;</span> <span class="kw4">const</span> T<span class="sy3">&amp;</span> val <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">void</span> insert<span class="br0">&#40;</span> input_iterator start, input_iterator end <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+insert()関数は、次の動作をします。 
+
+</p>
+<ul>
+<li class="level1"><div class="li"> “pos”で指定された要素の後に、値を挿入します(挿入時には、”pos”が使われますが、すぐにマップは並び替えられます)。挿入した要素を指すイテレータを返します。</div>
+</li>
+<li class="level1"><div class="li"> 値をマルチマップに挿入すると、その要素を指すイテレータが返されます。</div>
+</li>
+<li class="level1"><div class="li"> イテレータの指す”start”から”end”までの要素を挿入します。</div>
+</li>
+</ul>
+
+<p>
+
+たとえば、次のコードでは、insert()関数を使い、&lt;name, ID&gt;の組をもつ社員のマルチマップを作っています。
+</p>
+<pre class="cpp code cpp">    multimap<span class="sy1">&lt;</span>string,<span class="kw4">int</span><span class="sy1">&gt;</span> m<span class="sy4">;</span>
+&nbsp;
+    <span class="kw4">int</span> employeeID <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
+    m.<span class="me1">insert</span><span class="br0">&#40;</span> pair<span class="sy1">&lt;</span>string,<span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">&#40;</span><span class="st0">&quot;Bob Smith&quot;</span>,employeeID<span class="sy2">++</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+    m.<span class="me1">insert</span><span class="br0">&#40;</span> pair<span class="sy1">&lt;</span>string,<span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">&#40;</span><span class="st0">&quot;Bob Thompson&quot;</span>,employeeID<span class="sy2">++</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+    m.<span class="me1">insert</span><span class="br0">&#40;</span> pair<span class="sy1">&lt;</span>string,<span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">&#40;</span><span class="st0">&quot;Bob Smithey&quot;</span>,employeeID<span class="sy2">++</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+    m.<span class="me1">insert</span><span class="br0">&#40;</span> pair<span class="sy1">&lt;</span>string,<span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">&#40;</span><span class="st0">&quot;Bob Smith&quot;</span>,employeeID<span class="sy2">++</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+    <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Number of employees named 'Bob Smith': &quot;</span> <span class="sy1">&lt;&lt;</span> m.<span class="me1">count</span><span class="br0">&#40;</span><span class="st0">&quot;Bob Smith&quot;</span><span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+    <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Number of employees named 'Bob Thompson': &quot;</span> <span class="sy1">&lt;&lt;</span> m.<span class="me1">count</span><span class="br0">&#40;</span><span class="st0">&quot;Bob Thompson&quot;</span><span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+    <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Number of employees named 'Bob Smithey': &quot;</span> <span class="sy1">&lt;&lt;</span> m.<span class="me1">count</span><span class="br0">&#40;</span><span class="st0">&quot;Bob Smithey&quot;</span><span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+&nbsp;
+    <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Employee list: &quot;</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+    <span class="kw1">for</span><span class="br0">&#40;</span> multimap<span class="sy1">&lt;</span>string, <span class="kw4">int</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">iterator</span> iter <span class="sy1">=</span> m.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> iter <span class="sy3">!</span><span class="sy1">=</span> m.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="sy2">++</span>iter <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+      <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; Name: &quot;</span> <span class="sy1">&lt;&lt;</span> iter<span class="sy2">-</span><span class="sy1">&gt;</span>first <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;, ID #&quot;</span> <span class="sy1">&lt;&lt;</span> iter<span class="sy2">-</span><span class="sy1">&gt;</span>second <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+    <span class="br0">&#125;</span></pre>
+<p>
+実行時に、上記のコードは、次の出力を生成します。
+</p>
+<pre class="code">
+  Number of employees named 'Bob Smith': 2
+  Number of employees named 'Bob Thompson': 1
+  Number of employees named 'Bob Smithey': 1
+  Employee list:
+   Name: Bob Smith, ID #0
+   Name: Bob Smith, ID #3
+   Name: Bob Smithey, ID #2
+   Name: Bob Thompson, ID #1</pre>
+</div>
+<!-- EDIT1 SECTION "insert" [3-] --></div>
+</body>
+</html>

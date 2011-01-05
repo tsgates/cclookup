@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>string:c:memset</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:08-0700" />
+<meta name="keywords" content="string,c,memset" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/string/c/memset?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=string:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/string/c/memset" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/string/c/memset" />
+<link rel="canonical" href="memset" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='string:c';var JSINFO = {"id":"string:c:memset","namespace":"string:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="memset#memset" class="toc">memset</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="memset#parameters" class="toc">Parameters</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="memset#return_value" class="toc">Return value</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="memset#see_also" class="toc">See also</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="memset" id="memset">memset</a></h2>
+<div class="level2">
+
+<p>
+Syntax:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cstring&gt;</span>
+    <span class="kw4">void</span><span class="sy2">*</span> <span class="kw3">memset</span><span class="br0">&#40;</span> <span class="kw4">void</span><span class="sy2">*</span> dest, <span class="kw4">int</span> ch, <span class="kw4">size_t</span> count <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Fills a memory buffer with a byte value. This function is optimized and is faster than filling the same array using <code>for</code> loop.
+</p>
+
+</div>
+<!-- EDIT1 SECTION "memset" [1-250] -->
+<h3 class="sectionedit2"><a name="parameters" id="parameters">Parameters</a></h3>
+<div class="level3">
+
+<p>
+
+<code>dest</code> - pointer to the start of the buffer to fill
+</p>
+
+<p>
+<code>ch</code> - byte value to fill
+</p>
+
+<p>
+<code>count</code> - number of bytes to write
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Parameters" [251-392] -->
+<h3 class="sectionedit3"><a name="return_value" id="return_value">Return value</a></h3>
+<div class="level3">
+
+<p>
+
+<code>dest</code>
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Return value" [393-424] -->
+<h3 class="sectionedit4"><a name="see_also" id="see_also">See also</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="memcmp" class="wikilink1" title="string:c:memcmp">memcmp</a>, <a href="memcpy" class="wikilink1" title="string:c:memcpy">memcpy</a>, <a href="memmove" class="wikilink1" title="string:c:memmove">memmove</a>
+</p>
+
+</div>
+<!-- EDIT4 SECTION "See also" [425-] --></div>
+</body>
+</html>

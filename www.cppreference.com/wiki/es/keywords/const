@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es"
+ lang="es" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>es:keywords:const</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-11-09T08:26:05-0800" />
+<meta name="keywords" content="es,keywords,const" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/es/keywords/const?do=index" title="Índice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=es:keywords" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/es/keywords/const" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/es/keywords/const" />
+<link rel="canonical" href="const" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='es:keywords';var JSINFO = {"id":"es:keywords:const","namespace":"es:keywords"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Tabla de Contenidos</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="const#const" class="toc">const</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="const#variables_const" class="toc">Variables const</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="const#declaraciones_compuestas" class="toc">Declaraciones Compuestas</a></span></div></li>
+</ul>
+</li>
+<li class="level2"><div class="li"><span class="li"><a href="const#parametros" class="toc">Parámetros</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="const#valor_de_retorno_constante" class="toc">Valor de Retorno Constante</a></span></div></li>
+</ul>
+</li>
+<li class="level2"><div class="li"><span class="li"><a href="const#funciones_miembto" class="toc">Funciones Miembto</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="const#topicos_relacionados" class="toc">Tópicos Relacionados</a></span></div></li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="const" id="const">const</a></h2>
+<div class="level2">
+
+<p>
+
+La <a href="start" class="wikilink1" title="es:keywords:start">palabra clave</a> <code>const</code> indica al compilador que el valor de una variable no cambiará después de ser inicializada. También se usa para indicar que ciertas funciones miembro de una <a href="http://www.cppreference.com/wiki/es/keywords/class" class="wikilink2" title="es:keywords:class" rel="nofollow">clase</a> no alterarán datos internos de ésta.
+</p>
+
+</div>
+<!-- EDIT1 SECTION "const" [1-267] -->
+<h2 class="sectionedit2"><a name="variables_const" id="variables_const">Variables const</a></h2>
+<div class="level2">
+
+<p>
+
+La palabra clave <code>const</code> en el marco de la declaración de una variable sirve el propósito de indicar que esta variable no puede ser modificada. Se puede usar de varias maneras para proteger distintas partes de una declaración de variable compuesta (por ejemplo, un puntero).
+</p>
+
+<p>
+La declaración básica usando <code>const</code> es como sigue:
+</p>
+<pre class="cpp code cpp"><span class="kw4">const</span> <span class="kw4">double</span> p <span class="sy1">=</span> <span class="nu16">3.1415</span><span class="sy4">;</span>
+...
+<span class="me1">p</span> <span class="sy1">=</span> <span class="kw3">sin</span><span class="br0">&#40;</span><span class="nu16">1.45</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// Esta línea produce un error de compilación</span></pre>
+<p>
+Una vez <em>p</em> ha sido declarada, su valor no puede modificarse; cualquier intento de modificar el valor de la variable directamente (vía una función o un operador de asignación) conduce a un error en la compilación.
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Variables const" [268-967] -->
+<h3 class="sectionedit3"><a name="declaraciones_compuestas" id="declaraciones_compuestas">Declaraciones Compuestas</a></h3>
+<div class="level3">
+
+<p>
+
+Hasta aquí es bastante sencillo; sin embargo una vez que se empieza a trabajar con <em>declaraciones compuestas</em>, el uso de <code>const</code> se complica un poco. Un buen ejemplo es la declaración de punteros a variables, donde hay una diferencia semántica importante entre declarar <em>el valor apuntado</em> como constante o declarar <em>el apuntador</em> como constante.
+</p>
+<pre class="cpp code cpp"><span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span> str<span class="sy4">;</span> <span class="co1">// (1) Un puntero a caracteres que no pueden ser cambiados</span>
+<span class="kw4">char</span> <span class="kw4">const</span> <span class="sy2">*</span> str<span class="sy4">;</span> <span class="co1">// Una alternativa a (1)</span>
+<span class="kw4">char</span> <span class="sy2">*</span> <span class="kw4">const</span> str<span class="sy4">;</span> <span class="co1">// (2) Un puntero que no puede ser cambiado apuntando a caracteres</span></pre>
+<p>
+Estas declaraciones son más claras leyéndolas de derecha a izquierda como se recomienda en <a href="../data_types" class="wikilink1" title="es:data_types">tipos de datos</a>. En la expresión <code>(1)</code>, el puntero puede ser cambiado, pero no se puede modificar los objetos (<code>char</code>) a los que apunta. En la expresión <code>(2)</code>, los caracteres pueden ser cambiados, pero no se puede cambiar el valor propio del puntero.
+</p>
+
+<p>
+Las referencias en C++ operan de una forma parecida, con la salvedad de considerar que una referencia no puede ser redireccionada, por tanto la referencia en sí ya es <code>const</code>:
+</p>
+<pre class="cpp code cpp"><span class="kw4">const</span> <span class="kw4">char</span> <span class="sy3">&amp;</span> str<span class="sy4">;</span> <span class="co1">// (3) referencia a un caracter que no puede ser modificado</span>
+<span class="kw4">char</span> <span class="kw4">const</span> <span class="sy3">&amp;</span> str<span class="sy4">;</span> <span class="co1">// ídem</span></pre>
+<p>
+A esto pueden seguir declaraciones incluso más complejas como las siguientes (recordando leer de derecha a izquierda):
+</p>
+<pre class="cpp code cpp"><span class="kw4">char</span> <span class="sy2">*</span> <span class="kw4">const</span> <span class="sy2">*</span> data<span class="sy4">;</span> <span class="co1">// (4) Puntero a un puntero constante a caracteres</span>
+<span class="kw4">char</span> <span class="kw4">const</span> <span class="sy2">**</span> data<span class="sy4">;</span> <span class="co1">// (5) Puntero a un puntero a caracteres constantes</span>
+<span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">**</span> data<span class="sy4">;</span> <span class="co1">// (5) Ídem</span>
+<span class="kw4">char</span> <span class="sy2">**</span> <span class="kw4">const</span> data<span class="sy4">;</span> <span class="co1">// (6) Puntero constante a un puntero a caracteres</span>
+<span class="kw4">char</span> <span class="sy2">*</span> <span class="kw4">const</span> <span class="sy2">*</span> <span class="kw4">const</span> data<span class="sy4">;</span> <span class="co1">// (7) Puntero constante a un puntero constante a caracteres</span></pre>
+<p>
+…Y así sucesivamente.
+</p>
+
+<p>
+Una regla rápida es que si se desea que el <em>puntero</em> sea constante, la palabra clave <code>const</code> debe <em>venir después</em> que el puntero. Más allá de esta regla, basta con ser consistente en las declaraciones de las variables y usar el estilo y esquema de código institucional de la empresa, si es que se trabaja para alguna.
+</p>
+<hr />
+
+<p>
+
+Es una buena práctica usar <code>const</code> desde etapas tempranas del desarrollo de un programa para indicar entidades que, conceptual u operacionalmente, no pueden o deben cambiar, protegiendo estos datos de modificaciones accidentales. Intentar forzar <code>const</code> cuando el desarrollo se encuentra ya en una fase avanzada conduce a un efecto de cascada de variables que no se pueden modificar, además de diversas frustraciones. 
+</p>
+
+<p>
+<img src="../../lib/images/smileys/fixme.gif" class="middle" alt="FIXME" /> It is also good practice to declare certain fields of an object to be const if it is a property of the object that does not change over the life of the object.
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Declaraciones Compuestas" [968-3697] -->
+<h2 class="sectionedit4"><a name="parametros" id="parametros">Parámetros</a></h2>
+<div class="level2">
+
+<p>
+
+El uso más común de <code>const</code> es el de proteger datos que son apuntados o referenciados cuando se cambia de alcance:
+</p>
+<pre class="cpp code cpp"><span class="kw4">void</span> func <span class="br0">&#40;</span> <span class="kw4">const</span> MyObject <span class="sy2">*</span> pointer <span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// MyObject no puede ser modificado por func</span>
+<span class="kw4">void</span> func <span class="br0">&#40;</span> MyObject <span class="kw4">const</span> <span class="sy2">*</span> pointer <span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// Análogo a lo anterior</span>
+<span class="kw4">void</span> func <span class="br0">&#40;</span> <span class="kw4">const</span> MyObject <span class="sy3">&amp;</span> data <span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// MyObject no puede ser modificado por func</span>
+<span class="kw4">void</span> func <span class="br0">&#40;</span> MyObject <span class="kw4">const</span> <span class="sy3">&amp;</span> data <span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// Análogo a lo anterior</span></pre>
+<p>
+Dentro de las funciones aquí declaradas, las siguientes instrucciones serían inválidas:
+</p>
+<pre class="cpp code cpp">data<span class="sy1">=</span> function_that_returns_MyObject<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+<span class="sy2">*</span>pointer<span class="sy1">=</span> data<span class="sy4">;</span></pre>
+<p>
+
+Es importante observar que colocar <code>const</code> antes o después de la referencia o puntero cambia la protección. Al igual que con las declaraciones de variables, <code>const</code> después de un puntero sólo protege el puntero, no los datos apuntados por éste:
+</p>
+<pre class="cpp code cpp"><span class="kw4">void</span> func <span class="br0">&#40;</span> MyObject <span class="sy2">*</span> <span class="kw4">const</span> pointer <span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// Pointer es constante, lo que sería innecesario (ver notas)</span></pre>
+<p>
+Dentro del cuerpo de <code>func</code>, será posible manipular el objeto apuntado por <code>pointer</code> vía la sintaxis de puntero (<code>*pointer</code>). Sin embargo, no será posible modificar el valor mismo del puntero (por ejemplo, para apuntarlo a otro objeto). Esto podría ser innecesario ya que al ser pasado <code>pointer</code> de manera local, si es cambiado las funciones que llamaron a <code>func</code> no pueden ver el cambio.
+</p>
+
+<p>
+En comparación, colocar <code>const</code> después de una referencia es fútil – las referencias ya son de por sí constantes.
+
+</p>
+<pre class="cpp code cpp"><span class="kw4">void</span> func <span class="br0">&#40;</span> MyObject <span class="sy3">&amp;</span> <span class="kw4">const</span> data <span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// Protección sinsentido de data</span></pre>
+</div>
+<!-- EDIT4 SECTION "Parámetros" [3698-5321] -->
+<h3 class="sectionedit5"><a name="valor_de_retorno_constante" id="valor_de_retorno_constante">Valor de Retorno Constante</a></h3>
+<div class="level3">
+
+<p>
+
+A veces resulta útil retornar referencias constantes a un objeto (en particular cuando se trabaja con <a href="const#funciones_miembro" title="es:keywords:const &crarr;" class="wikilink1">Funciones Miembro</a>). Cuando no queremos que la función que nos llamó sea capaz de modificar el objeto:
+
+</p>
+<pre class="cpp code cpp"><span class="kw4">const</span> MyObject <span class="sy3">&amp;</span> MyClass<span class="sy4">::</span><span class="me2">miembro</span> <span class="br0">&#40;</span> MyObject <span class="sy3">&amp;</span> data <span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// el objeto retornado por miembro no puede ser modificado</span></pre>
+<p>
+Esto debe usarse con cuidado, ya que el compilador escogerá, si se trata de asignar un valor retornado de esta función, realizar una copia a una variable. En otras palabras las dos líneas marcadas a continuación tienen distintos efectos.
+</p>
+<pre class="cpp code cpp">MyObject ob<span class="sy4">;</span>
+MyClass a<span class="sy4">;</span>
+...
+<span class="me1">MyObject</span> valor <span class="sy1">=</span> a.<span class="me1">miembro</span><span class="br0">&#40;</span>ob<span class="br0">&#41;</span><span class="sy4">;</span>  <span class="co1">// (1) valor es un objeto diferente que puede ser modificado</span>
+MyObject <span class="kw4">const</span><span class="sy3">&amp;</span> referencia <span class="sy1">=</span> a.<span class="me1">miembro</span><span class="br0">&#40;</span>ob<span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// (2) referencia no puede ser modificado</span></pre>
+<p>
+En <code>(1)</code>, se produce una copia del objeto no modificable a una nueva variable, la cual sí puede ser modificada; por supuesto, estos cambios no afectan a <code>a</code>. En <code>(2)</code>, estamos operando directamente con el <code>MyObject</code> retornado desde <code>a</code>, por lo que no podemos modificar su valor.
+</p>
+
+</div>
+<!-- EDIT5 SECTION "Valor de Retorno Constante" [5322-6467] -->
+<h2 class="sectionedit6"><a name="funciones_miembto" id="funciones_miembto">Funciones Miembto</a></h2>
+<div class="level2">
+
+<p>
+
+Hay circunstancias en las que una función miembro, por diseño, no cambiará variables miembro del objeto. Este tipo de miembros son llamados <em>accessors</em> o <em>getters</em> y deben declararse como <code>const</code> a continuación de la lista de argumentos. El efecto de esta declaración es que el puntero interno <code><a href="this" class="wikilink1" title="es:keywords:this">this</a></code> cambia de tipo, desde un “MyClass *” a un “const MyClass *”, por lo que ya no puede modificar el valor del objeto.
+</p>
+<pre class="cpp code cpp"><span class="kw4">void</span> MyClass<span class="sy4">::</span><span class="me2">accesor</span> <span class="br0">&#40;</span> MyOjbect <span class="sy3">&amp;</span> data <span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span> <span class="co1">// esta función no cambia datos de la clase</span></pre>
+<p>
+Cuando se tiene un objeto constante (o una referencia a un objeto constante), sólo es posible llamar a aquellas funciones miembro que han sido declaradas como <code>const</code>. La razón de esto es que un objeto constante tiene un puntero <code><a href="this" class="wikilink1" title="es:keywords:this">this</a></code> constante. Esta limitación es parte clave de las técnicas de encapsulación y protección de datos en el diseño de una clase.
+</p>
+<pre class="cpp code cpp"><span class="kw4">void</span> MyClass<span class="sy4">::</span><span class="me2">const_func</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span>
+<span class="kw4">void</span> MyClass<span class="sy4">::</span><span class="me2">func</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+<span class="kw4">const</span> MyClass object<span class="sy4">;</span>
+&nbsp;
+object.<span class="me1">const_func</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// bien; miembro constante no cambiará un objeto que puede o no ser cambiado</span>
+object.<span class="me1">func</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// mal; miembro no-constante trataría de cambiar un objeto constante</span></pre>
+</div>
+<!-- EDIT6 SECTION "Funciones Miembto" [6468-7707] -->
+<h2 class="sectionedit7"><a name="topicos_relacionados" id="topicos_relacionados">Tópicos Relacionados</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/es/keywords/mutable" class="wikilink2" title="es:keywords:mutable" rel="nofollow">mutable</a> – declarar una variable que puede ser cambiada por miembros <code>const</code></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/es/keywords/volatile" class="wikilink2" title="es:keywords:volatile" rel="nofollow">volatile</a> – declarar una variable que puede ser cambiada desde fuera del programa</div>
+</li>
+<li class="level1"><div class="li"> <a href="const_cast" class="wikilink1" title="es:keywords:const_cast">const_cast</a> – remover temporalmente la propiedad constante de una variable</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT7 SECTION "Tópicos Relacionados" [7708-] --></div>
+</body>
+</html>

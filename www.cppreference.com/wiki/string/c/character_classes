@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>string:c:character_classes</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:07-0700" />
+<meta name="keywords" content="string,c,character_classes" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/string/c/character_classes?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=string:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/string/c/character_classes" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/string/c/character_classes" />
+<link rel="canonical" href="character_classes" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='string:c';var JSINFO = {"id":"string:c:character_classes","namespace":"string:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="character_classes" id="character_classes">Character classes</a></h2>
+<div class="level2">
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<th class="col0"><acronym title="American Standard Code for Information Interchange">ASCII</acronym> values <br/>
+(hex) </th><th class="col1"> characters </th><th class="col2 leftalign"> <a href="iscntrl" class="wikilink1" title="string:c:iscntrl">iscntrl</a>  </th><th class="col3"> <a href="isprint" class="wikilink1" title="string:c:isprint">isprint</a> </th><th class="col4"> <a href="isspace" class="wikilink1" title="string:c:isspace">isspace</a> </th><th class="col5"> <a href="isgraph" class="wikilink1" title="string:c:isgraph">isgraph</a> </th><th class="col6"> <a href="ispunct" class="wikilink1" title="string:c:ispunct">ispunct</a> </th><th class="col7"> <a href="isalnum" class="wikilink1" title="string:c:isalnum">isalnum</a> </th><th class="col8 leftalign"> <a href="isalpha" class="wikilink1" title="string:c:isalpha">isalpha</a>  </th><th class="col9"> <a href="isupper" class="wikilink1" title="string:c:isupper">isupper</a> </th><th class="col10"> <a href="islower" class="wikilink1" title="string:c:islower">islower</a> </th><th class="col11"> <a href="isdigit" class="wikilink1" title="string:c:isdigit">isdigit</a> </th><th class="col12"> <a href="isxdigit" class="wikilink1" title="string:c:isxdigit">isxdigit</a> </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> 0  - 8  <br/>
+(<code>0x00-0x08</code>) </td><td class="col1 leftalign"> control codes (<code>NUL</code>, etc.)                      </td><td class="col2 centeralign">  X  </td><td class="col3 leftalign">     </td><td class="col4 leftalign">     </td><td class="col5 leftalign">     </td><td class="col6 leftalign">     </td><td class="col7 leftalign">     </td><td class="col8 leftalign">     </td><td class="col9 leftalign">     </td><td class="col10 leftalign">     </td><td class="col11 leftalign">     </td><td class="col12 leftalign">     </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> 9  - 13 <br/>
+(<code>0x09-0x0D</code>) </td><td class="col1"> whitespace characters <br/>
+(\t&#039;,&#039;\f&#039;,&#039;\v&#039;,&#039;\n&#039;,&#039;\r&#039;) </td><td class="col2 centeralign">  X  </td><td class="col3 leftalign">     </td><td class="col4 centeralign">  X  </td><td class="col5 leftalign">     </td><td class="col6 leftalign">     </td><td class="col7 leftalign">     </td><td class="col8 leftalign">     </td><td class="col9 leftalign">     </td><td class="col10 leftalign">     </td><td class="col11 leftalign">     </td><td class="col12 leftalign">     </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> 14 - 31 <br/>
+(<code>0x0E-0x1F</code>) </td><td class="col1 leftalign"> control codes                                      </td><td class="col2 centeralign">  X  </td><td class="col3 leftalign">     </td><td class="col4 leftalign">     </td><td class="col5 leftalign">     </td><td class="col6 leftalign">     </td><td class="col7 leftalign">     </td><td class="col8 leftalign">     </td><td class="col9 leftalign">     </td><td class="col10 leftalign">     </td><td class="col11 leftalign">     </td><td class="col12 leftalign">     </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> 32      <br/>
+(<code>0x20</code>)      </td><td class="col1 leftalign"> space                                              </td><td class="col2 leftalign">     </td><td class="col3 centeralign">  X  </td><td class="col4 centeralign">  X  </td><td class="col5 leftalign">     </td><td class="col6 leftalign">     </td><td class="col7 leftalign">     </td><td class="col8 leftalign">     </td><td class="col9 leftalign">     </td><td class="col10 leftalign">     </td><td class="col11 leftalign">     </td><td class="col12 leftalign">     </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> 33 - 47 <br/>
+(<code>0x21-0x2F</code>) </td><td class="col1 leftalign"> <code>!”#$%&amp;&#039;()*+,-./</code>                                </td><td class="col2 leftalign">     </td><td class="col3 centeralign">  X  </td><td class="col4 leftalign">     </td><td class="col5 centeralign">  X  </td><td class="col6 centeralign">  X  </td><td class="col7 leftalign">     </td><td class="col8 leftalign">     </td><td class="col9 leftalign">     </td><td class="col10 leftalign">     </td><td class="col11 leftalign">     </td><td class="col12 leftalign">     </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> 48 - 57 <br/>
+(<code>0x30-0x39</code>) </td><td class="col1 leftalign"> <code>01234567890</code>                                    </td><td class="col2 leftalign">     </td><td class="col3 centeralign">  X  </td><td class="col4 leftalign">     </td><td class="col5 centeralign">  X  </td><td class="col6 leftalign">     </td><td class="col7 centeralign">  X  </td><td class="col8 leftalign">     </td><td class="col9 leftalign">     </td><td class="col10 leftalign">     </td><td class="col11 centeralign">  X  </td><td class="col12 centeralign">  X  </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"> 58 - 64 <br/>
+(<code>0x3a-0x40</code>) </td><td class="col1 leftalign"> <code>:;⇔?@</code>                                        </td><td class="col2 leftalign">     </td><td class="col3 centeralign">  X  </td><td class="col4 leftalign">     </td><td class="col5 centeralign">  X  </td><td class="col6 centeralign">  X  </td><td class="col7 leftalign">     </td><td class="col8 leftalign">     </td><td class="col9 leftalign">     </td><td class="col10 leftalign">     </td><td class="col11 leftalign">     </td><td class="col12 leftalign">     </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"> 65 - 70 <br/>
+(<code>0x41-0x46</code>) </td><td class="col1 leftalign"> <code>ABCDEF</code>                                         </td><td class="col2 leftalign">     </td><td class="col3 centeralign">  X  </td><td class="col4 leftalign">     </td><td class="col5 centeralign">  X  </td><td class="col6 leftalign">     </td><td class="col7 centeralign">  X  </td><td class="col8 centeralign">  X  </td><td class="col9 centeralign">  X  </td><td class="col10 leftalign">     </td><td class="col11 leftalign">     </td><td class="col12 centeralign">  X  </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"> 71 - 90 <br/>
+(<code>0x47-0x5A</code>) </td><td class="col1 leftalign"> <code>GHIJKLMNOPQRSTUVWXYZ</code>                           </td><td class="col2 leftalign">     </td><td class="col3 centeralign">  X  </td><td class="col4 leftalign">     </td><td class="col5 centeralign">  X  </td><td class="col6 leftalign">     </td><td class="col7 centeralign">  X  </td><td class="col8 centeralign">  X  </td><td class="col9 centeralign">  X  </td><td class="col10 leftalign">     </td><td class="col11 leftalign">     </td><td class="col12 leftalign">     </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"> 91 - 96 <br/>
+(<code>0x5B-0x60</code>) </td><td class="col1 leftalign"> <code>[\]^_`</code>                        </td><td class="col2 leftalign">     </td><td class="col3 centeralign">  X  </td><td class="col4 leftalign">     </td><td class="col5 centeralign">  X  </td><td class="col6 centeralign">  X  </td><td class="col7 leftalign">     </td><td class="col8 leftalign">     </td><td class="col9 leftalign">     </td><td class="col10 leftalign">     </td><td class="col11 leftalign">     </td><td class="col12 leftalign">     </td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"> 97 -102 <br/>
+(<code>0x61-0x66</code>) </td><td class="col1 leftalign"> <code>abcdef</code>                                         </td><td class="col2 leftalign">     </td><td class="col3 centeralign">  X  </td><td class="col4 leftalign">     </td><td class="col5 centeralign">  X  </td><td class="col6 leftalign">     </td><td class="col7 centeralign">  X  </td><td class="col8 centeralign">  X  </td><td class="col9 leftalign">     </td><td class="col10 centeralign">  X  </td><td class="col11 leftalign">     </td><td class="col12 centeralign">  X  </td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"> 103-122 <br/>
+(<code>0x67-0x7A</code>) </td><td class="col1 leftalign"> <code>ghijklmnopqrstuvwxyz</code>                           </td><td class="col2 leftalign">     </td><td class="col3 centeralign">  X  </td><td class="col4 leftalign">     </td><td class="col5 centeralign">  X  </td><td class="col6 leftalign">     </td><td class="col7 centeralign">  X  </td><td class="col8 centeralign">  X  </td><td class="col9 leftalign">     </td><td class="col10 centeralign">  X  </td><td class="col11 leftalign">     </td><td class="col12 leftalign">     </td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"> 123-126 <br/>
+(<code>0x7B-0x7E</code>) </td><td class="col1 leftalign"> <code>{|}~</code>                          </td><td class="col2 leftalign">     </td><td class="col3 centeralign">  X  </td><td class="col4 leftalign">     </td><td class="col5 centeralign">  X  </td><td class="col6 centeralign">  X  </td><td class="col7 leftalign">     </td><td class="col8 leftalign">     </td><td class="col9 leftalign">     </td><td class="col10 leftalign">     </td><td class="col11 leftalign">     </td><td class="col12 leftalign">     </td>
+	</tr>
+	<tr class="row14">
+		<td class="col0 leftalign"> 127     <br/>
+(<code>0x7F</code>)      </td><td class="col1 leftalign"> backspace character (<code>DEL</code>)                      </td><td class="col2 centeralign">  X  </td><td class="col3 leftalign">     </td><td class="col4 leftalign">     </td><td class="col5 leftalign">     </td><td class="col6 leftalign">     </td><td class="col7 leftalign">     </td><td class="col8 leftalign">     </td><td class="col9 leftalign">     </td><td class="col10 leftalign">     </td><td class="col11 leftalign">     </td><td class="col12 leftalign">     </td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [30-2324] -->
+</div>
+</div>
+</body>
+</html>

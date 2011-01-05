@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cz"
+ lang="cz" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>cz:about:faq</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:27-0700" />
+<meta name="keywords" content="cz,about,faq" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/cz/about/faq?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=cz:about" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/cz/about/faq" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/cz/about/faq" />
+<link rel="canonical" href="faq" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='cz:about';var JSINFO = {"id":"cz:about:faq","namespace":"cz:about"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="faq#casto_kladene_otazky_faq" class="toc">Často Kladené Otázky (FAQ)</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="faq#mohu_ziskat_kopii_techto_stranek" class="toc">Mohu získat kopii těchto stránek?</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="faq#mohu_tyto_stranky_odkazovatsiritprekladatvlozit_vlastni_verzi_necehoatd" class="toc">Mohu tyto stránky [odkazovat/šířit/překládat/vložit vlastní verzi něčeho/atd.] ?</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="faq#co_tohle_je_wiki_mohu_tady_neco_zmenit" class="toc">Co?  Tohle je Wiki?  Mohu tady něco změnit?</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="faq#na_kterem_wiki_systemu_bezi_tahle_stranka" class="toc">Na kterém wiki systému běží tahle stránka?</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="faq#pro_koho_jsou_tyto_stranky_urcene" class="toc">Pro koho jsou tyto stránky určené?</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="faq#obsahuji_tyto_stranky_kompletni_seznam_toho_co_mohu_s_c_delat" class="toc">Obsahují tyto stránky kompletní seznam toho, co mohu s C++ dělat?</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="faq#nektery_z_prikladu_na_techto_strankach_nefunguje_na_mem_systemu_co_s_tim_je" class="toc">Některý z příkladů na těchto stránkách nefunguje na mém systému. Co s tím je?</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="faq#dostali_jste_chybove_hlaseni_na_nasem_webu" class="toc">Dostali jste chybové hlášení na našem webu?</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="faq#co_se_deje_s_timto_webem" class="toc">Co se děje s tímto webem?</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="casto_kladene_otazky_faq" id="casto_kladene_otazky_faq">Často Kladené Otázky (FAQ)</a></h2>
+<div class="level2">
+
+</div>
+<!-- EDIT1 SECTION "Často Kladené Otázky (FAQ)" [1-41] -->
+<h3 class="sectionedit2"><a name="mohu_ziskat_kopii_techto_stranek" id="mohu_ziskat_kopii_techto_stranek">Mohu získat kopii těchto stránek?</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="http://www.cppreference.com/cppreference-files.tar.gz" class="urlextern" title="http://www.cppreference.com/cppreference-files.tar.gz"  rel="nofollow">Zde je zabalená verze těchto stránek (tar.gz)</a>, která je denně aktualizovaná.
+</p>
+
+<p>
+Alternativně je dostupná plně indexovaná a textově prohledavatelná verze Windows <acronym title="HyperText Markup Language">HTML</acronym> nápovědy (.chm), kde je obsah Wiki stránek (od února 2009). Nápověda funguje na mnoha verzích systému Windows, včetně těch nejnovějších verzí bez nutnosti instalace dalšího software. Díky indexaci této nápovědy může být použita v širokém rozsahu <em>Integrovaného Vývojářského Prostředí (IDE)</em> které podporuje soubor nápovědy .chm, například pro přístup k funkcím a šablon pomocí klíčových slov.
+</p>
+
+<p>
+Stažení nápovědy je možné zde: <a href="http://www.cppreference.com/wiki/_media/about/cppreferencecom_feb09.zip" class="media mediafile mf_zip" title="about:cppreferencecom_feb09.zip">cppreferencecom_feb09.zip</a>
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Mohu získat kopii těchto stránek?" [42-840] -->
+<h3 class="sectionedit3"><a name="mohu_tyto_stranky_odkazovatsiritprekladatvlozit_vlastni_verzi_necehoatd" id="mohu_tyto_stranky_odkazovatsiritprekladatvlozit_vlastni_verzi_necehoatd">Mohu tyto stránky [odkazovat/šířit/překládat/vložit vlastní verzi něčeho/atd.] ?</a></h3>
+<div class="level3">
+
+<p>
+
+Jistě, určitě by to bylo dobré! Veškerý obsah je licencován pod licencí <a href="http://creativecommons.org/licenses/by/3.0/cz/" class="urlextern" title="http://creativecommons.org/licenses/by/3.0/cz/"  rel="nofollow">&quot;Creative Commons Attribution 3.0 license&quot;</a>.
+</p>
+
+<p>
+Vše co očekáváme je pouze vložený odkaz, který by měl směřovat zpět na stránky cppreference.com, aby lidé věděli, kde získat nejvíce aktuálního obsahu.
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Mohu tyto stránky [odkazovat/šířit/překládat/vložit vlastní verzi něčeho/atd.] ?" [841-1288] -->
+<h3 class="sectionedit4"><a name="co_tohle_je_wiki_mohu_tady_neco_zmenit" id="co_tohle_je_wiki_mohu_tady_neco_zmenit">Co?  Tohle je Wiki?  Mohu tady něco změnit?</a></h3>
+<div class="level3">
+
+<p>
+
+Samozřejmě. Pokud vidíte, že je něco spatně, tak to opravte.  Pokud byste rádi přidali obsah, ujistěte se že zde takový obsah ještě není a poté editujte nebo přidávejte.  
+</p>
+
+<p>
+Budťe mírní při úpravách, a <em>myslete, než něco napíšete</em>.
+</p>
+
+</div>
+<!-- EDIT4 SECTION "Co?  Tohle je Wiki?  Mohu tady něco změnit?" [1289-1604] -->
+<h3 class="sectionedit5"><a name="na_kterem_wiki_systemu_bezi_tahle_stranka" id="na_kterem_wiki_systemu_bezi_tahle_stranka">Na kterém wiki systému běží tahle stránka?</a></h3>
+<div class="level3">
+
+<p>
+
+cppreference.com je poskytovaná <a href="http://www.dokuwiki.org" class="urlextern" title="http://www.dokuwiki.org"  rel="nofollow">DokuWiki</a>.
+</p>
+
+</div>
+<!-- EDIT5 SECTION "Na kterém wiki systému běží tahle stránka?" [1605-1734] -->
+<h3 class="sectionedit6"><a name="pro_koho_jsou_tyto_stranky_urcene" id="pro_koho_jsou_tyto_stranky_urcene">Pro koho jsou tyto stránky určené?</a></h3>
+<div class="level3">
+
+<p>
+
+Nejsou zde žádné tutoriály ve stylu “Úvod do programování”. Tahle stránka je určena
+pro použití více či méně zkušeným C++ programátorům, kteří mají dobrý úmysl
+a jednoduše se potřebují podívat na syntaxi. Pokud se zajímáte o učení jazyka
+C nebo C++, zkuste jednu z těchto stránek:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="http://www.howstuffworks.com/c.htm" class="urlextern" title="http://www.howstuffworks.com/c.htm"  rel="nofollow">How C Programming Works</a></div>
+</li>
+<li class="level2"><div class="li"> <a href="http://www.its.strath.ac.uk/courses/c/" class="urlextern" title="http://www.its.strath.ac.uk/courses/c/"  rel="nofollow">C Programming</a></div>
+</li>
+<li class="level2"><div class="li"> <a href="http://www.cplusplus.com/doc/tutorial/" class="urlextern" title="http://www.cplusplus.com/doc/tutorial/"  rel="nofollow">C++ Language Tutorial</a></div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT6 SECTION "Pro koho jsou tyto stránky určené?" [1735-2302] -->
+<h3 class="sectionedit7"><a name="obsahuji_tyto_stranky_kompletni_seznam_toho_co_mohu_s_c_delat" id="obsahuji_tyto_stranky_kompletni_seznam_toho_co_mohu_s_c_delat">Obsahují tyto stránky kompletní seznam toho, co mohu s C++ dělat?</a></h3>
+<div class="level3">
+
+<p>
+
+Jen málo věcí v životě je jednoznačných. Mnoho C++ kompilerů má dodatečnou nebo i chybějící
+funkcionalitu. Pokud nemůžete najít to co zde hledáte, tak nezoufejte.
+Pokuste se najít odpověd na google.
+</p>
+
+</div>
+<!-- EDIT7 SECTION "Obsahují tyto stránky kompletní seznam toho, co mohu s C++ dělat?" [2303-2600] -->
+<h3 class="sectionedit8"><a name="nektery_z_prikladu_na_techto_strankach_nefunguje_na_mem_systemu_co_s_tim_je" id="nektery_z_prikladu_na_techto_strankach_nefunguje_na_mem_systemu_co_s_tim_je">Některý z příkladů na těchto stránkách nefunguje na mém systému. Co s tím je?</a></h3>
+<div class="level3">
+
+<p>
+
+Většina zdrojových kódů byla kompilována pod linuxem (Red Hat, Debian, nebo
+Ubuntu) pomocí <a href="http://gcc.gnu.org" class="urlextern" title="http://gcc.gnu.org"  rel="nofollow">GNU Compiler Collection</a>. Protože tyto stránky jsou pouze 
+referenční specifikací pro jazyk C++, ne každý kompilátor bude podporovat všechny zde zmíněné funkce. Na příklad:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> Hlavičkové soubory změna jako blázen. Pro vkládání nezbytné podpory pro <a href="http://www.cppreference.com/wiki/cz/stl/vector/start" class="wikilink2" title="cz:stl:vector:start" rel="nofollow">vektory</a>, pravděpodobně budete muset použít jednu z následujících hlaviček:</div>
+</li>
+</ul>
+<pre class="cpp code cpp">      <span class="co2">#include &lt;vector&gt;</span>
+      <span class="co2">#include &lt;Vector&gt;</span>
+      <span class="co2">#include &lt;vector.h&gt;</span></pre>
+<p>
+
+(První z nich by měl fungovat, podle specifikace, a kompilátor by to měl pochopit jako referenci na reálný vektorový hlavičkový soubor.)
+</p>
+<ul>
+<li class="level1"><div class="li"> Další záležitost hlavičkových souborů je, že novější kompilátory mohou použít více platformově nezávislé příkazy ke vkládání standardních C knihoven. Například, mohly byste použít: </div>
+</li>
+</ul>
+<pre class="cpp code cpp">      <span class="co2">#include &lt;cstdio&gt;</span></pre>
+<p>
+
+namísto
+
+</p>
+<pre class="cpp code cpp">      <span class="co2">#include &lt;stdio.h&gt;</span></pre><ul>
+<li class="level1"><div class="li"> Všechny kódy na těchto stránkách předpokládají, že byl použit správný jmenný prostor (namespace). Pokud je Váš kompilátor trochu starší, pak byste se mohly vyhnout použitím jednoduchých příkazů jako:</div>
+</li>
+</ul>
+<pre class="cpp code cpp">      <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;hello world!&quot;</span><span class="sy4">;</span></pre>
+<p>
+
+Nicméně, novější kompilátory také požadují použití:
+
+</p>
+<pre class="cpp code cpp">      std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;hello world!&quot;</span><span class="sy4">;</span></pre>
+<p>
+
+nebo deklarování jmeného prostoru použitím příkazu “using namespace”.
+</p>
+<ul>
+<li class="level1"><div class="li"> Populárnější kompilátory určitě (jako zakoupený kompilátor Microsoft Visual C++) mají přidanou alternativní nebo dodatečnou funkcionalitu C++ Standard Template Library. například, MFC ve Visual C++ poskytuje řetězce typu “CString”, které mají funkcionalitu řetězců ale nejsou zahrnuty v C++ STL.</div>
+</li>
+</ul>
+
+<p>
+
+…Seznam by mohl pokračovat dál a dál. Jinými slovy, výsledky se mohou lišit.
+</p>
+
+</div>
+<!-- EDIT8 SECTION "Některý z příkladů na těchto stránkách nefunguje na mém systému. Co s tím je?" [2601-4601] -->
+<h3 class="sectionedit9"><a name="dostali_jste_chybove_hlaseni_na_nasem_webu" id="dostali_jste_chybove_hlaseni_na_nasem_webu">Dostali jste chybové hlášení na našem webu?</a></h3>
+<div class="level3">
+
+<p>
+
+Pokud jste zde nalezli chybové hlášení či chybu, prosím neomezujte se a opravte to. Nebo nás kontaktujte na <a href="mailto:&#x63;&#x6f;&#x6d;&#x6d;&#x65;&#x6e;&#x74;&#x73;&#x40;&#x63;&#x70;&#x70;&#x72;&#x65;&#x66;&#x65;&#x72;&#x65;&#x6e;&#x63;&#x65;&#x2e;&#x63;&#x6f;&#x6d;" class="mail JSnocheck" title="&#x63;&#x6f;&#x6d;&#x6d;&#x65;&#x6e;&#x74;&#x73;&#x40;&#x63;&#x70;&#x70;&#x72;&#x65;&#x66;&#x65;&#x72;&#x65;&#x6e;&#x63;&#x65;&#x2e;&#x63;&#x6f;&#x6d;">&#x63;&#x6f;&#x6d;&#x6d;&#x65;&#x6e;&#x74;&#x73;&#x40;&#x63;&#x70;&#x70;&#x72;&#x65;&#x66;&#x65;&#x72;&#x65;&#x6e;&#x63;&#x65;&#x2e;&#x63;&#x6f;&#x6d;</a>.
+</p>
+
+</div>
+<!-- EDIT9 SECTION "Dostali jste chybové hlášení na našem webu?" [4602-4804] -->
+<h3 class="sectionedit10"><a name="co_se_deje_s_timto_webem" id="co_se_deje_s_timto_webem">Co se děje s tímto webem?</a></h3>
+<div class="level3">
+
+<p>
+
+Uvažujte nad tím jako nad prospěšnou prací, od programátorů, pro programátory.
+</p>
+
+</div>
+<!-- EDIT10 SECTION "Co se děje s tímto webem?" [4805-] --></div>
+</body>
+</html>

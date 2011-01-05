@@ -5,62 +5,64 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>keywords:for</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="generator" content="DokuWiki" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2008-10-14T15:42:04-0700" />
+<meta name="date" content="2010-10-28T18:17:01-0700" />
 <meta name="keywords" content="keywords,for" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/keywords/for?do=index" title="Index" />
+<link rel="start" href="../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/keywords/for?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
 <link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=keywords" />
 <link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/keywords/for" />
 <link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/keywords/for" />
-<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="canonical" href="for" />
+<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='keywords';var JSINFO = {"id":"keywords:for","namespace":"keywords"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
 
-
-
-<h2><a name="for" id="for">for</a></h2>
+<h2 class="sectionedit1"><a name="for" id="for">for</a></h2>
 <div class="level2">
 
 <p>
 Syntax:
 </p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="kw1">for</span><span class="br0">&#40;</span> initialization; test<span class="sy0">-</span>condition; increment <span class="br0">&#41;</span> <span class="br0">&#123;</span>
-    statement<span class="sy0">-</span>list;
+<pre class="cpp code cpp">    <span class="kw1">for</span><span class="br0">&#40;</span> initialization<span class="sy4">;</span> test<span class="sy2">-</span>condition<span class="sy4">;</span> increment <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    statement<span class="sy2">-</span>list<span class="sy4">;</span>
     <span class="br0">&#125;</span></pre>
 <p>
 
 The for construct is a general looping mechanism consisting of 4 parts:
 </p>
-<pre class="c code c++" style="font-family:monospace;">  <span class="nu19">1.</span> the initialization<span class="sy0">,</span> which consists of <span class="nu19">0</span> or more comma<span class="sy0">-</span>delimited variable
+<pre class="cpp code cpp">  <span class="nu0">1</span>. <span class="me1">the</span> initialization, which consists of <span class="nu0">0</span> or more comma<span class="sy2">-</span>delimited variable
      initialization statements
-  <span class="nu19">2.</span> the test<span class="sy0">-</span>condition<span class="sy0">,</span> which is evaluated to determine <span class="kw1">if</span> the execution of
+  <span class="nu0">2</span>. <span class="me1">the</span> test<span class="sy2">-</span>condition, which is evaluated to determine <span class="kw1">if</span> the execution of
      the <span class="kw1">for</span> loop will <span class="kw1">continue</span>
-  <span class="nu19">3.</span> the increment<span class="sy0">,</span> which consists of <span class="nu19">0</span> or more comma<span class="sy0">-</span>delimited statements that
+  <span class="nu0">3</span>. <span class="me1">the</span> increment, which consists of <span class="nu0">0</span> or more comma<span class="sy2">-</span>delimited statements that
      increment variables
-  <span class="nu19">4.</span> and the statement<span class="sy0">-</span>list<span class="sy0">,</span> which consists of <span class="nu19">0</span> or more statements that will
-     be executed each time the loop is executed.</pre>
+  <span class="nu0">4</span>. <span class="me1">and</span> the statement<span class="sy2">-</span>list, which consists of <span class="nu0">0</span> or more statements that will
+     be executed each <span class="kw3">time</span> the loop is executed.</pre>
 <p>
 
 For example:
 </p>
-<pre class="c code c++" style="font-family:monospace;">     <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i <span class="sy0">=</span> <span class="nu19">0</span>; i <span class="sy0">&lt;</span> <span class="nu0">10</span>; i<span class="sy0">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
-       <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;i is &quot;</span> <span class="sy0">&lt;&lt;</span> i <span class="sy0">&lt;&lt;</span> endl;
+<pre class="cpp code cpp">     <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+       <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;i is &quot;</span> <span class="sy1">&lt;&lt;</span> i <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
      <span class="br0">&#125;</span>
-     <span class="kw4">int</span> j<span class="sy0">,</span> k;
-     <span class="kw1">for</span><span class="br0">&#40;</span> j <span class="sy0">=</span> <span class="nu19">0</span><span class="sy0">,</span> k <span class="sy0">=</span> <span class="nu0">10</span>;
-          j <span class="sy0">&lt;</span> k;
-          j<span class="sy0">++,</span> k<span class="sy0">--</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
-       <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;j is &quot;</span> <span class="sy0">&lt;&lt;</span> j <span class="sy0">&lt;&lt;</span> <span class="st0">&quot; and k is &quot;</span> <span class="sy0">&lt;&lt;</span> k <span class="sy0">&lt;&lt;</span> endl;
+     <span class="kw4">int</span> j, k<span class="sy4">;</span>
+     <span class="kw1">for</span><span class="br0">&#40;</span> j <span class="sy1">=</span> <span class="nu0">0</span>, k <span class="sy1">=</span> <span class="nu0">10</span><span class="sy4">;</span>
+          j <span class="sy1">&lt;</span> k<span class="sy4">;</span>
+          j<span class="sy2">++</span>, k<span class="sy2">--</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+       <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;j is &quot;</span> <span class="sy1">&lt;&lt;</span> j <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; and k is &quot;</span> <span class="sy1">&lt;&lt;</span> k <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
      <span class="br0">&#125;</span>
-     <span class="kw1">for</span><span class="br0">&#40;</span> ; ; <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     <span class="kw1">for</span><span class="br0">&#40;</span> <span class="sy4">;</span> <span class="sy4">;</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
        <span class="co1">// loop forever!</span>
      <span class="br0">&#125;</span></pre>
 <p>
@@ -68,6 +70,6 @@ Related Topics: <a href="break" class="wikilink1" title="keywords:break">break</
 </p>
 
 </div>
-<!-- SECTION "for" [3-] --></div>
+<!-- EDIT1 SECTION "for" [3-] --></div>
 </body>
 </html>

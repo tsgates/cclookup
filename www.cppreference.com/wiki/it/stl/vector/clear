@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it"
+ lang="it" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>it:container:vector:clear</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:08-0700" />
+<meta name="keywords" content="it,container,vector,clear" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/it/container/vector/clear?do=index" title="Indice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=it:container:vector" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/it/container/vector/clear" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/it/container/vector/clear" />
+<link rel="canonical" href="clear" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='it:container:vector';var JSINFO = {"id":"it:container:vector:clear","namespace":"it:container:vector"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="clear" id="clear">clear</a></h2>
+<div class="level2">
+
+<p>
+Sintassi:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;vector&gt;</span>
+    <span class="kw4">void</span> clear<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+La funzione clear() cancella tutti gli elementi nel vettore e implica la chiamata di tutti i
+<a href="http://www.cppreference.com/wiki/it/destructor/start" class="wikilink2" title="it:destructor:start" rel="nofollow">distruttori</a> degli oggetti contenuti in esso
+</p>
+
+<p>
+Dopo la chiamata a clear() una chiamata a <a href="size" class="wikilink1" title="it:container:vector:size">size</a> ritornerebbe zero. Tuttavia la <a href="capacity" class="wikilink1" title="it:container:vector:capacity">capacity</a> non
+viene cambiata e il vettore in realtà non dealloca memoria
+</p>
+
+<p>
+Se avete bisogno di svuotare un vettore da tutti gli elementi contenuti e di azzerare anche la sua
+capacità potete usare il cosiddetto &#039;swap trick&#039;:
+</p>
+<pre class="cpp code cpp">    std<span class="sy4">::</span><span class="me2">vector</span> aVector<span class="sy4">;</span>
+    <span class="br0">&#91;</span>...<span class="br0">&#93;</span>
+    aVector.<span class="me1">swap</span><span class="br0">&#40;</span> std<span class="sy4">::</span><span class="me2">vector</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Questo codice crea un nuovo vettore vuoto che prende con <a href="swap" class="wikilink1" title="it:container:vector:swap">swap</a> il posto del vettore
+che volete svuotare.
+</p>
+
+<p>
+clear() gira in <a href="../../../complexity" class="wikilink1" title="complexity">linear time</a>.
+</p>
+
+<p>
+Argomenti collegati: <a href="erase" class="wikilink1" title="it:container:vector:erase">erase</a> <a href="swap" class="wikilink1" title="it:container:vector:swap">swap</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

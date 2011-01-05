@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:numeric:c:div</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:23-0700" />
+<meta name="keywords" content="jp,numeric,c,div" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/numeric/c/div?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp:numeric:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/numeric/c/div" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/numeric/c/div" />
+<link rel="canonical" href="div" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp:numeric:c';var JSINFO = {"id":"jp:numeric:c:div","namespace":"jp:numeric:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="div" id="div">div</a></h2>
+<div class="level2">
+
+<p>
+
+文法:
+
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cstdlib&gt;</span>
+    <span class="kw4">div_t</span> <span class="kw3">div</span><span class="br0">&#40;</span> <span class="kw4">int</span> 被除数, <span class="kw4">int</span> 除数 <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+div()関数は、<code>被除数</code> / <code>除数</code> という割り算を計算し、商と剰余を返します。cstdlibヘッダでdiv_t構造体が定義されています。これは以下のような要素を少なくとも持っています:
+
+</p>
+<pre class="cpp code cpp">     <span class="kw4">int</span> quot<span class="sy4">;</span>   <span class="co1">// 商</span>
+     <span class="kw4">int</span> rem<span class="sy4">;</span>    <span class="co1">// 剰余</span></pre>
+<p>
+例えば、以下のようなコードは、x/yの商と剰余を表示します:
+</p>
+<pre class="cpp code cpp">     <span class="kw4">div_t</span> temp<span class="sy4">;</span>
+     temp <span class="sy1">=</span> <span class="kw3">div</span><span class="br0">&#40;</span> x, y <span class="br0">&#41;</span><span class="sy4">;</span>
+     <span class="kw3">printf</span><span class="br0">&#40;</span> <span class="st0">&quot;%d を %d で割ると、商が %d で、剰余が %d です。<span class="es1">\n</span>&quot;</span>,
+             x, y, temp.<span class="me1">quot</span>, temp.<span class="me1">rem</span> <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+C++では以下のオーバーロード版も提供されます:
+
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cstdlib&gt;</span>
+    <span class="kw4">ldiv_t</span> <span class="kw3">div</span><span class="br0">&#40;</span> <span class="kw4">long</span> 被除数, <span class="kw4">long</span> 除数 <span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// ldiv()と同じです</span></pre>
+<p>
+関連トピック: <a href="ldiv" class="wikilink1" title="jp:numeric:c:ldiv">ldiv</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

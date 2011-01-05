@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es"
+ lang="es" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>es:algorithm:lexicographical_compare</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:32-0700" />
+<meta name="keywords" content="es,algorithm,lexicographical_compare" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/es/algorithm/lexicographical_compare?do=index" title="Índice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=es:algorithm" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/es/algorithm/lexicographical_compare" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/es/algorithm/lexicographical_compare" />
+<link rel="canonical" href="lexicographical_compare" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='es:algorithm';var JSINFO = {"id":"es:algorithm:lexicographical_compare","namespace":"es:algorithm"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="lexicographical_compare" id="lexicographical_compare">lexicographical_compare</a></h2>
+<div class="level2">
+
+<p>
+Sintaxis:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;algorithm&gt;</span>
+    <span class="kw4">bool</span> lexicographical_compare<span class="br0">&#40;</span> input_iterator inicio1, input_iterator fin1, input_iterator2 inicio2, input_iterator2 end2 <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">bool</span> lexicographical_compare<span class="br0">&#40;</span> input_iterator inicio1, input_iterator fin1, input_iterator2 inicio2, input_iterator2 end2, BinaryPredicate p <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+La función <code>lexicographical_compare()</code> compara elemento a elemento dos rangos, el primero empezando en <code>inicio1</code> y el segundo en <code>inicio2</code> y devuelve <a href="../../../keywords/true" class="wikilink1" title="keywords:true">verdadero</a> si el primer rango es lexicográficamente menor al segundo.
+</p>
+
+<p>
+Si el concepto de “lexicográficamente menor” suena difícil de entender, puede ser de ayuda saber que la ”<a href="http://en.wikipedia.org/wiki/es:orden lexicográfico" class="interwiki iw_wp" title="http://en.wikipedia.org/wiki/es:orden lexicográfico">orden lexicográfico</a>” corresponde a cómo se ordenan las palabras en un diccionario: el orden de las letras en el abecedario determina el orden de las palabras letra-a-letra, y una palabra que contiene un prefijo es siempre posterior (mayor) a la palabra del prefijoen particular.
+</p>
+
+<p>
+<img src="../../../lib/images/smileys/fixme.gif" class="middle" alt="FIXME" />: ejemplo.
+</p>
+
+<p>
+<code>lexicographical_compare()</code> corre en <a href="../../complexity" class="wikilink1" title="es:complexity">tiempo lineal</a>.
+</p>
+
+<p>
+La función relacionada <code><a href="http://www.cppreference.com/wiki/es/algorithm/lexicographical_compare_3way" class="wikilink2" title="es:algorithm:lexicographical_compare_3way" rel="nofollow">lexicographical_compare_3way</a></code> es similar pero devuelve la <em>dirección</em> de la relación (cuál rango es menor que el otro).
+</p>
+
+<p>
+Tópicos Relacionados: <a href="equal" class="wikilink1" title="es:algorithm:equal">equal</a>, <a href="http://www.cppreference.com/wiki/es/algorithm/lexicographical_compare_3way" class="wikilink2" title="es:algorithm:lexicographical_compare_3way" rel="nofollow">lexicographical_compare_3way</a>, <a href="mismatch" class="wikilink1" title="es:algorithm:mismatch">mismatch</a>, <a href="http://www.cppreference.com/wiki/es/algorithm/search" class="wikilink2" title="es:algorithm:search" rel="nofollow">search</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

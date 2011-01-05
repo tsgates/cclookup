@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:io:sstream:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:17-0700" />
+<meta name="keywords" content="jp,io,sstream,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/io/sstream/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp:io:sstream" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/io/sstream/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/io/sstream/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp:io:sstream';var JSINFO = {"id":"jp:io:sstream:start","namespace":"jp:io:sstream"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="c_文字列ストリーム" id="c_文字列ストリーム">C++ 文字列ストリーム</a></h1>
+<div class="level1">
+
+<p>
+
+文字列ストリームは &lt;iostream&gt; ライブラリや &lt;fstream&gt; ライブラリと似ていますが、文字列ストリームはストリームではなく文字列に対して入出力ができるという点で異なります。
+&lt;sstream&gt; ライブラリは標準Cライブラリでの <a href="../../c/io/sscanf" class="wikilink1" title="jp:c:io:sscanf">sscanf</a> や <a href="../../c/io/sprintf" class="wikilink1" title="jp:c:io:sprintf">sprintf</a>に似た機能を提供します。
+</p>
+
+<p>
+&lt;sstream&gt; では下記の3つの主要クラスが利用可能です：
+
+</p>
+<ul>
+<li class="level1"><div class="li"> stringstream - 入出力を可能にします</div>
+</li>
+<li class="level1"><div class="li"> istringstream - 入力のみ可能にします</div>
+</li>
+<li class="level1"><div class="li"> ostringstream - 出力のみ可能にします</div>
+</li>
+</ul>
+
+<p>
+
+文字列ストリームは実際iostreamのサブクラスなので、iostreamで利用可能な関数はすべてstringstreamでも利用可能です。
+詳細は<a href="../start" class="wikilink1" title="jp:io:start">C++ I/O 関数</a>で確認してください。
+</p>
+
+<p>
+さらに、文字列ストリームは下記の関数も提供します：
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="constructors" class="wikilink1" title="jp:io:sstream:constructors">コンストラクタ</a></td><td class="col1">新しい文字列ストリームを作成します</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="operators" class="wikilink1" title="jp:io:sstream:operators">演算子</a></td><td class="col1">文字列ストリームに読み書きします</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="rdbuf" class="wikilink1" title="jp:io:sstream:rdbuf">rdbuf</a></td><td class="col1">文字列ストリームのためのバッファを取得します</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="str" class="wikilink1" title="jp:io:sstream:str">str</a></td><td class="col1">ストリームの文字列を取得／設定します</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [950-1261] -->
+</div>
+</div>
+</body>
+</html>

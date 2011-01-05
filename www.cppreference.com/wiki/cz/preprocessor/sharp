@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cz"
+ lang="cz" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>cz:preprocessor:sharp</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:27-0700" />
+<meta name="keywords" content="cz,preprocessor,sharp" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/cz/preprocessor/sharp?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=cz:preprocessor" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/cz/preprocessor/sharp" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/cz/preprocessor/sharp" />
+<link rel="canonical" href="sharp" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='cz:preprocessor';var JSINFO = {"id":"cz:preprocessor:sharp","namespace":"cz:preprocessor"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="a" id="a"># a ##</a></h2>
+<div class="level2">
+
+<p>
+
+Operátory preprocesoru # a ## jsou používány s příkazem preprocesoru <a href="http://www.cppreference.com/wiki/cz/preprocessor/define" class="wikilink2" title="cz:preprocessor:define" rel="nofollow">#define</a>
+</p>
+
+<p>
+Použití:
+</p>
+<ul>
+<li class="level1"><div class="li"> # způsobí že první argument za # bude navrácený jako string v uvozovkách. </div>
+</li>
+<li class="level1"><div class="li"> ## řetězí to co je před ## s tím co následuje.</div>
+</li>
+</ul>
+
+<p>
+
+Například, příkaz:
+
+</p>
+<pre class="cpp code cpp">     <span class="co2">#define to_string( s ) # s</span></pre>
+<p>
+kompilátor pouze přehodí řetězec z parametru a vrátí jako výsledek:
+
+</p>
+<pre class="cpp code cpp">     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> to_string<span class="br0">&#40;</span> Hello World<span class="sy3">!</span> <span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
+<p>
+a vyhodnotí se takto:
+
+</p>
+<pre class="cpp code cpp">     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Hello World!&quot;</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
+<p>
+Příklad použití příkazu ## :
+
+</p>
+<pre class="cpp code cpp">     <span class="co2">#define concatenate( a, b ) a ## b</span>
+     ...
+     <span class="kw4">int</span> xy <span class="sy1">=</span> <span class="nu0">10</span><span class="sy4">;</span>
+     ...</pre>
+<p>
+Tento kód převede první parametr k druhému a vrátí jako výsledek
+
+</p>
+<pre class="cpp code cpp">     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> concatenate<span class="br0">&#40;</span> x, y <span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
+<p>
+do tvaru
+</p>
+<pre class="cpp code cpp">     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> xy <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
+<p>
+který mimochodem zobrazí &#039;10&#039; na standardní výstup.
+</p>
+
+<p>
+Související: <a href="http://www.cppreference.com/wiki/cz/preprocessor/define" class="wikilink2" title="cz:preprocessor:define" rel="nofollow">#define</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

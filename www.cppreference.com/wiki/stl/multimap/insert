@@ -4,71 +4,119 @@
  lang="en" dir="ltr">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>stl:multimap:insert</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
+  <title>container:multimap:insert</title>
+<meta name="generator" content="DokuWiki" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2008-10-14T15:42:07-0700" />
-<meta name="keywords" content="stl,multimap,insert" />
+<meta name="date" content="2010-10-28T18:17:35-0700" />
+<meta name="keywords" content="container,multimap,insert" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/stl/multimap/insert?do=index" title="Index" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/container/multimap/insert?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
-<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=stl:multimap" />
-<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/stl/multimap/insert" />
-<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/stl/multimap/insert" />
-<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=container:multimap" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/container/multimap/insert" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/container/multimap/insert" />
+<link rel="canonical" href="insert" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='container:multimap';var JSINFO = {"id":"container:multimap:insert","namespace":"container:multimap"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
 
+<ul class="toc">
+<li class="clear">
 
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="insert#insert" class="toc">insert</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="insert#parameters" class="toc">Parameters</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="insert#return_value" class="toc">Return value</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="insert#example" class="toc">Example</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="insert#complexity" class="toc">Complexity</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="insert#see_also" class="toc">See also</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
 
-<h2><a name="insert" id="insert">insert</a></h2>
+<h2 class="sectionedit1"><a name="insert" id="insert">insert</a></h2>
 <div class="level2">
 
 <p>
 Syntax:
 </p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;map&gt;</span>
-    iterator insert<span class="br0">&#40;</span> iterator pos<span class="sy0">,</span> <span class="kw4">const</span> TYPE<span class="sy0">&amp;</span> val <span class="br0">&#41;</span>;
-    iterator insert<span class="br0">&#40;</span> <span class="kw4">const</span> TYPE<span class="sy0">&amp;</span> val <span class="br0">&#41;</span>;
-    <span class="kw4">void</span> insert<span class="br0">&#40;</span> input_iterator start<span class="sy0">,</span> input_iterator end <span class="br0">&#41;</span>;</pre>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;map&gt;</span>
+    iterator insert<span class="br0">&#40;</span> iterator pos, <span class="kw4">const</span> T<span class="sy3">&amp;</span> val <span class="br0">&#41;</span><span class="sy4">;</span>
+    iterator insert<span class="br0">&#40;</span> <span class="kw4">const</span> T<span class="sy3">&amp;</span> val <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">void</span> insert<span class="br0">&#40;</span> input_iterator start, input_iterator end <span class="br0">&#41;</span><span class="sy4">;</span></pre>
 <p>
 The function insert() either:
 
 </p>
 <ul>
-<li class="level1"><div class="li">inserts val after the element at pos (where pos is really just a suggestion as to where val should go, since multimaps are ordered), and returns an iterator to that element.</div>
+<li class="level1"><div class="li"> inserts <code>val</code> after the element at pos (where pos is really just a suggestion as to where val should go, since multimaps are ordered), and returns an iterator to that element.</div>
 </li>
-<li class="level1"><div class="li"> inserts val into the multimap, returning an iterator to the element inserted.</div>
+<li class="level1"><div class="li"> inserts <code>val</code> into the multimap, returning an iterator to the element inserted.</div>
 </li>
 <li class="level1"><div class="li"> inserts a range of elements from start to end.</div>
 </li>
 </ul>
 
+</div>
+<!-- EDIT1 SECTION "insert" [2-562] -->
+<h3 class="sectionedit2"><a name="parameters" id="parameters">Parameters</a></h3>
+<div class="level3">
+
 <p>
 
-For example, the following code uses the insert() function to add several
+todo
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Parameters" [563-588] -->
+<h3 class="sectionedit3"><a name="return_value" id="return_value">Return value</a></h3>
+<div class="level3">
+
+<p>
+
+todo
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Return value" [589-616] -->
+<h3 class="sectionedit4"><a name="example" id="example">Example</a></h3>
+<div class="level3">
+
+<p>
+
+The following code uses the insert() function to add several
 &lt;name,ID&gt; pairs to a employee multimap:
 </p>
-<pre class="c code c++" style="font-family:monospace;">    multimap<span class="sy0">&lt;</span>string<span class="sy0">,</span>int<span class="sy0">&gt;</span> m;
+<pre class="cpp code cpp">    multimap<span class="sy1">&lt;</span>string,<span class="kw4">int</span><span class="sy1">&gt;</span> m<span class="sy4">;</span>
 &nbsp;
-    <span class="kw4">int</span> employeeID <span class="sy0">=</span> <span class="nu19">0</span>;
-    m.<span class="me1">insert</span><span class="br0">&#40;</span> pair<span class="sy0">&lt;</span>string<span class="sy0">,</span>int<span class="sy0">&gt;</span><span class="br0">&#40;</span><span class="st0">&quot;Bob Smith&quot;</span><span class="sy0">,</span>employeeID<span class="sy0">++</span><span class="br0">&#41;</span> <span class="br0">&#41;</span>;
-    m.<span class="me1">insert</span><span class="br0">&#40;</span> pair<span class="sy0">&lt;</span>string<span class="sy0">,</span>int<span class="sy0">&gt;</span><span class="br0">&#40;</span><span class="st0">&quot;Bob Thompson&quot;</span><span class="sy0">,</span>employeeID<span class="sy0">++</span><span class="br0">&#41;</span> <span class="br0">&#41;</span>;
-    m.<span class="me1">insert</span><span class="br0">&#40;</span> pair<span class="sy0">&lt;</span>string<span class="sy0">,</span>int<span class="sy0">&gt;</span><span class="br0">&#40;</span><span class="st0">&quot;Bob Smithey&quot;</span><span class="sy0">,</span>employeeID<span class="sy0">++</span><span class="br0">&#41;</span> <span class="br0">&#41;</span>;
-    m.<span class="me1">insert</span><span class="br0">&#40;</span> pair<span class="sy0">&lt;</span>string<span class="sy0">,</span>int<span class="sy0">&gt;</span><span class="br0">&#40;</span><span class="st0">&quot;Bob Smith&quot;</span><span class="sy0">,</span>employeeID<span class="sy0">++</span><span class="br0">&#41;</span> <span class="br0">&#41;</span>;
+    <span class="kw4">int</span> employeeID <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
+    m.<span class="me1">insert</span><span class="br0">&#40;</span> pair<span class="sy1">&lt;</span>string,<span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">&#40;</span><span class="st0">&quot;Bob Smith&quot;</span>,employeeID<span class="sy2">++</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+    m.<span class="me1">insert</span><span class="br0">&#40;</span> pair<span class="sy1">&lt;</span>string,<span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">&#40;</span><span class="st0">&quot;Bob Thompson&quot;</span>,employeeID<span class="sy2">++</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+    m.<span class="me1">insert</span><span class="br0">&#40;</span> pair<span class="sy1">&lt;</span>string,<span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">&#40;</span><span class="st0">&quot;Bob Smithey&quot;</span>,employeeID<span class="sy2">++</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+    m.<span class="me1">insert</span><span class="br0">&#40;</span> pair<span class="sy1">&lt;</span>string,<span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">&#40;</span><span class="st0">&quot;Bob Smith&quot;</span>,employeeID<span class="sy2">++</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
 &nbsp;
-    <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;Number of employees named 'Bob Smith': &quot;</span> <span class="sy0">&lt;&lt;</span> m.<span class="me1">count</span><span class="br0">&#40;</span><span class="st0">&quot;Bob Smith&quot;</span><span class="br0">&#41;</span> <span class="sy0">&lt;&lt;</span> endl;
-    <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;Number of employees named 'Bob Thompson': &quot;</span> <span class="sy0">&lt;&lt;</span> m.<span class="me1">count</span><span class="br0">&#40;</span><span class="st0">&quot;Bob Thompson&quot;</span><span class="br0">&#41;</span> <span class="sy0">&lt;&lt;</span> endl;
-    <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;Number of employees named 'Bob Smithey': &quot;</span> <span class="sy0">&lt;&lt;</span> m.<span class="me1">count</span><span class="br0">&#40;</span><span class="st0">&quot;Bob Smithey&quot;</span><span class="br0">&#41;</span> <span class="sy0">&lt;&lt;</span> endl;
+    <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Number of employees named 'Bob Smith': &quot;</span> <span class="sy1">&lt;&lt;</span> m.<span class="me1">count</span><span class="br0">&#40;</span><span class="st0">&quot;Bob Smith&quot;</span><span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+    <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Number of employees named 'Bob Thompson': &quot;</span> <span class="sy1">&lt;&lt;</span> m.<span class="me1">count</span><span class="br0">&#40;</span><span class="st0">&quot;Bob Thompson&quot;</span><span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+    <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Number of employees named 'Bob Smithey': &quot;</span> <span class="sy1">&lt;&lt;</span> m.<span class="me1">count</span><span class="br0">&#40;</span><span class="st0">&quot;Bob Smithey&quot;</span><span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
 &nbsp;
-    <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;Employee list: &quot;</span> <span class="sy0">&lt;&lt;</span> endl;
-    <span class="kw1">for</span><span class="br0">&#40;</span> multimap<span class="sy0">&lt;</span>string<span class="sy0">,</span> int<span class="sy0">&gt;::</span><span class="me2">iterator</span> iter <span class="sy0">=</span> m.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span>; iter <span class="sy0">!=</span> m.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span>; <span class="sy0">++</span>iter <span class="br0">&#41;</span> <span class="br0">&#123;</span>
-      <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot; Name: &quot;</span> <span class="sy0">&lt;&lt;</span> iter<span class="sy0">-&gt;</span>first <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;, ID #&quot;</span> <span class="sy0">&lt;&lt;</span> iter<span class="sy0">-&gt;</span>second <span class="sy0">&lt;&lt;</span> endl;
+    <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Employee list: &quot;</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+    <span class="kw1">for</span><span class="br0">&#40;</span> multimap<span class="sy1">&lt;</span>string, <span class="kw4">int</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">iterator</span> iter <span class="sy1">=</span> m.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> iter <span class="sy3">!</span><span class="sy1">=</span> m.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="sy2">++</span>iter <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+      <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; Name: &quot;</span> <span class="sy1">&lt;&lt;</span> iter<span class="sy2">-</span><span class="sy1">&gt;</span>first <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;, ID #&quot;</span> <span class="sy1">&lt;&lt;</span> iter<span class="sy2">-</span><span class="sy1">&gt;</span>second <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
     <span class="br0">&#125;</span></pre>
 <p>
 When run, the above code produces the following output:
@@ -83,6 +131,26 @@ When run, the above code produces the following output:
    Name: Bob Smithey, ID #2
    Name: Bob Thompson, ID #1</pre>
 </div>
-<!-- SECTION "insert" [3-] --></div>
+<!-- EDIT4 SECTION "Example" [617-1872] -->
+<h3 class="sectionedit5"><a name="complexity" id="complexity">Complexity</a></h3>
+<div class="level3">
+
+<p>
+
+todo
+</p>
+
+</div>
+<!-- EDIT5 SECTION "Complexity" [1873-1898] -->
+<h3 class="sectionedit6"><a name="see_also" id="see_also">See also</a></h3>
+<div class="level3">
+
+<p>
+
+operator []
+</p>
+
+</div>
+<!-- EDIT6 SECTION "See also" [1899-] --></div>
 </body>
 </html>

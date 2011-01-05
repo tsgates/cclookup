@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cz"
+ lang="cz" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>cz:util:utility:pair</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:28-0700" />
+<meta name="keywords" content="cz,util,utility,pair" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/cz/util/utility/pair?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=cz:util:utility" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/cz/util/utility/pair" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/cz/util/utility/pair" />
+<link rel="canonical" href="pair" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='cz:util:utility';var JSINFO = {"id":"cz:util:utility:pair","namespace":"cz:util:utility"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="pair" id="pair">pair</a></h2>
+<div class="level2">
+
+<p>
+
+Syntaxe:
+
+</p>
+<pre class="cpp code cpp">  pair<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+  pair<span class="br0">&#40;</span> <span class="kw4">const</span> T1 <span class="sy3">&amp;</span>a, <span class="kw4">const</span> T2 <span class="sy3">&amp;</span>b <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Struktura dvojice je způsob, jak ukládat dva kusy stejnorodých dat.
+</p>
+
+<p>
+Tyto dvojice dat mohou být přístupná jako pole pomocí <code>first</code> a <code>second</code>.
+</p>
+
+<p>
+Párové dvojice mohou být porovnávány na shodnost operátorem <code>==</code>.  Operátor <code>&lt;</code> je také definován pro párové dvojice; dané dvě tvojice <code>x</code> a <code>y</code>, operátor <code>&lt;</code> vrátí:
+</p>
+<pre class="cpp code cpp">x.<span class="me1">first</span> <span class="sy1">&lt;</span> y.<span class="me1">first</span> <span class="sy3">||</span> <span class="br0">&#40;</span><span class="br0">&#40;</span>y.<span class="me1">first</span> <span class="sy1">==</span> x.<span class="me1">first</span><span class="br0">&#41;</span> <span class="sy3">&amp;&amp;</span> x.<span class="me1">second</span> <span class="sy1">&lt;</span> y.<span class="me1">second</span><span class="br0">&#41;</span></pre>
+<p>
+<a href="make_pair" class="wikilink1" title="cz:util:utility:make_pair">make_pair</a> může být použita jako zkratka při vytváření explicitně výlučných dvojic specifikovaným pro dvě části dat.
+</p>
+
+<p>
+Související: <a href="make_pair" class="wikilink1" title="cz:util:utility:make_pair">make_pair</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

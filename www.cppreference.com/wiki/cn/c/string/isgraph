@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn"
+ lang="cn" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>cn:c:string:isgraph</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:52-0700" />
+<meta name="keywords" content="cn,c,string,isgraph" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/cn/c/string/isgraph?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=cn:c:string" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/cn/c/string/isgraph" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/cn/c/string/isgraph" />
+<link rel="canonical" href="isgraph" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='cn:c:string';var JSINFO = {"id":"cn:c:string:isgraph","namespace":"cn:c:string"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="isgraph" id="isgraph">isgraph</a></h2>
+<div class="level2">
+
+<p>
+语法：
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cctype&gt;</span>
+    <span class="kw4">int</span> <span class="kw3">isgraph</span><span class="br0">&#40;</span> <span class="kw4">int</span> ch <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+
+如果参数是任何一个除了空格（如果你能看到这个字符，isgraph()将返回非零值）之外的可打印字符，函数isgraph()将返回非零值。否则，返回零。
+</p>
+
+<p>
+相关主题： <a href="isalnum" class="wikilink1" title="cn:c:string:isalnum">isalnum</a>, <a href="isalpha" class="wikilink1" title="cn:c:string:isalpha">isalpha</a>, <a href="iscntrl" class="wikilink1" title="cn:c:string:iscntrl">iscntrl</a>, <a href="isdigit" class="wikilink1" title="cn:c:string:isdigit">isdigit</a>, <a href="isprint" class="wikilink1" title="cn:c:string:isprint">isprint</a>, <a href="ispunct" class="wikilink1" title="cn:c:string:ispunct">ispunct</a>, <a href="isspace" class="wikilink1" title="cn:c:string:isspace">isspace</a>, <a href="isxdigit" class="wikilink1" title="cn:c:string:isxdigit">isxdigit</a>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "isgraph" [3-] --></div>
+</body>
+</html>

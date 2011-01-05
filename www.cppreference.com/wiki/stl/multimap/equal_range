@@ -4,67 +4,137 @@
  lang="en" dir="ltr">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>stl:multimap:equal_range</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
+  <title>container:multimap:equal_range</title>
+<meta name="generator" content="DokuWiki" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2008-10-14T15:42:07-0700" />
-<meta name="keywords" content="stl,multimap,equal_range" />
+<meta name="date" content="2010-10-28T18:17:34-0700" />
+<meta name="keywords" content="container,multimap,equal_range" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/stl/multimap/equal_range?do=index" title="Index" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/container/multimap/equal_range?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
-<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=stl:multimap" />
-<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/stl/multimap/equal_range" />
-<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/stl/multimap/equal_range" />
-<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=container:multimap" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/container/multimap/equal_range" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/container/multimap/equal_range" />
+<link rel="canonical" href="equal_range" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='container:multimap';var JSINFO = {"id":"container:multimap:equal_range","namespace":"container:multimap"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
 
+<ul class="toc">
+<li class="clear">
 
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="equal_range#equal_range" class="toc">equal_range</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="equal_range#parameters" class="toc">Parameters</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="equal_range#return_value" class="toc">Return value</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="equal_range#example" class="toc">Example</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="equal_range#complexity" class="toc">Complexity</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="equal_range#see_also" class="toc">See also</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
 
-<h2><a name="equal_range" id="equal_range">equal_range</a></h2>
+<h2 class="sectionedit1"><a name="equal_range" id="equal_range">equal_range</a></h2>
 <div class="level2">
 
 <p>
 Syntax:
 </p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;map&gt;</span>
-    pair<span class="sy0">&lt;</span>iterator<span class="sy0">,</span> iterator<span class="sy0">&gt;</span> equal_range<span class="br0">&#40;</span> <span class="kw4">const</span> key_type<span class="sy0">&amp;</span> key <span class="br0">&#41;</span>;</pre>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;map&gt;</span>
+    pair<span class="sy1">&lt;</span>iterator, iterator<span class="sy1">&gt;</span> equal_range<span class="br0">&#40;</span> <span class="kw4">const</span> key_type<span class="sy3">&amp;</span> key <span class="br0">&#41;</span><span class="sy4">;</span>
+    pair<span class="sy1">&lt;</span>const_iterator, const_iterator<span class="sy1">&gt;</span> equal_range<span class="br0">&#40;</span> <span class="kw4">const</span> key_type<span class="sy3">&amp;</span> key <span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span></pre>
 <p>
 The function equal_range() returns two iterators - one to the first element
 that contains key, another to a point just after the last element that contains
 key.
 </p>
 
+</div>
+<!-- EDIT1 SECTION "equal_range" [2-377] -->
+<h3 class="sectionedit2"><a name="parameters" id="parameters">Parameters</a></h3>
+<div class="level3">
+
 <p>
-For example, here is a hypothetical input-configuration loader using multimaps,
+
+todo
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Parameters" [378-403] -->
+<h3 class="sectionedit3"><a name="return_value" id="return_value">Return value</a></h3>
+<div class="level3">
+
+<p>
+
+todo
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Return value" [404-431] -->
+<h3 class="sectionedit4"><a name="example" id="example">Example</a></h3>
+<div class="level3">
+
+<p>
+
+Here is a hypothetical input-configuration loader using multimaps,
 strings and equal_range():
 </p>
-<pre class="c code c++" style="font-family:monospace;">  multimap<span class="sy0">&lt;</span>string<span class="sy0">,</span>pair<span class="sy0">&lt;</span>int<span class="sy0">,</span>int<span class="sy0">&gt;</span> <span class="sy0">&gt;</span> input_config;
+<pre class="cpp code cpp">  multimap<span class="sy1">&lt;</span>string,pair<span class="sy1">&lt;</span><span class="kw4">int</span>,<span class="kw4">int</span><span class="sy1">&gt;</span> <span class="sy1">&gt;</span> input_config<span class="sy4">;</span>
 &nbsp;
   <span class="co1">// read configuration from file &quot;input.conf&quot; to input_config</span>
-  readConfigFile<span class="br0">&#40;</span> input_config<span class="sy0">,</span> <span class="st0">&quot;input.conf&quot;</span> <span class="br0">&#41;</span>;
+  readConfigFile<span class="br0">&#40;</span> input_config, <span class="st0">&quot;input.conf&quot;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
 &nbsp;
-  pair<span class="sy0">&lt;</span>multimap<span class="sy0">&lt;</span>string<span class="sy0">,</span>pair<span class="sy0">&lt;</span>int<span class="sy0">,</span>int<span class="sy0">&gt;</span> <span class="sy0">&gt;::</span><span class="me2">iterator</span><span class="sy0">,</span>multimap<span class="sy0">&lt;</span>string<span class="sy0">,</span>pair<span class="sy0">&lt;</span>int<span class="sy0">,</span>int<span class="sy0">&gt;</span> <span class="sy0">&gt;::</span><span class="me2">iterator</span><span class="sy0">&gt;</span> ii;
-  multimap<span class="sy0">&lt;</span>string<span class="sy0">,</span>pair<span class="sy0">&lt;</span>int<span class="sy0">,</span>int<span class="sy0">&gt;</span> <span class="sy0">&gt;::</span><span class="me2">iterator</span> i;
+  pair<span class="sy1">&lt;</span>multimap<span class="sy1">&lt;</span>string,pair<span class="sy1">&lt;</span><span class="kw4">int</span>,<span class="kw4">int</span><span class="sy1">&gt;</span> <span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">iterator</span>,multimap<span class="sy1">&lt;</span>string,pair<span class="sy1">&lt;</span><span class="kw4">int</span>,<span class="kw4">int</span><span class="sy1">&gt;</span> <span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">iterator</span><span class="sy1">&gt;</span> ii<span class="sy4">;</span>
+  multimap<span class="sy1">&lt;</span>string,pair<span class="sy1">&lt;</span><span class="kw4">int</span>,<span class="kw4">int</span><span class="sy1">&gt;</span> <span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">iterator</span> i<span class="sy4">;</span>
 &nbsp;
-  ii <span class="sy0">=</span> input_config.<span class="me1">equal_range</span><span class="br0">&#40;</span><span class="st0">&quot;key&quot;</span><span class="br0">&#41;</span>;         <span class="co1">// keyboard key-bindings</span>
+  ii <span class="sy1">=</span> input_config.<span class="me1">equal_range</span><span class="br0">&#40;</span><span class="st0">&quot;key&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>         <span class="co1">// keyboard key-bindings</span>
   <span class="co1">// we can iterate over a range just like with begin() and end()</span>
-  <span class="kw1">for</span><span class="br0">&#40;</span> i <span class="sy0">=</span> ii.<span class="me1">first</span>; i <span class="sy0">!=</span> ii.<span class="me1">second</span>; <span class="sy0">++</span>i <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+  <span class="kw1">for</span><span class="br0">&#40;</span> i <span class="sy1">=</span> ii.<span class="me1">first</span><span class="sy4">;</span> i <span class="sy3">!</span><span class="sy1">=</span> ii.<span class="me1">second</span><span class="sy4">;</span> <span class="sy2">++</span>i <span class="br0">&#41;</span> <span class="br0">&#123;</span>
     <span class="co1">// add a key binding with this key and output</span>
-    bindkey<span class="br0">&#40;</span>i<span class="sy0">-&gt;</span>second.<span class="me1">first</span><span class="sy0">,</span> i<span class="sy0">-&gt;</span>second.<span class="me1">second</span><span class="br0">&#41;</span>;
+    bindkey<span class="br0">&#40;</span>i<span class="sy2">-</span><span class="sy1">&gt;</span>second.<span class="me1">first</span>, i<span class="sy2">-</span><span class="sy1">&gt;</span>second.<span class="me1">second</span><span class="br0">&#41;</span><span class="sy4">;</span>
   <span class="br0">&#125;</span>
 &nbsp;
-  ii <span class="sy0">=</span> input_config.<span class="me1">equal_range</span><span class="br0">&#40;</span><span class="st0">&quot;joyb&quot;</span><span class="br0">&#41;</span>;        <span class="co1">// joystick button key-bindings</span>
-  <span class="kw1">for</span><span class="br0">&#40;</span> i <span class="sy0">=</span> ii.<span class="me1">first</span>; i <span class="sy0">!=</span> ii.<span class="me1">second</span>; <span class="sy0">++</span>i <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+  ii <span class="sy1">=</span> input_config.<span class="me1">equal_range</span><span class="br0">&#40;</span><span class="st0">&quot;joyb&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>        <span class="co1">// joystick button key-bindings</span>
+  <span class="kw1">for</span><span class="br0">&#40;</span> i <span class="sy1">=</span> ii.<span class="me1">first</span><span class="sy4">;</span> i <span class="sy3">!</span><span class="sy1">=</span> ii.<span class="me1">second</span><span class="sy4">;</span> <span class="sy2">++</span>i <span class="br0">&#41;</span> <span class="br0">&#123;</span>
     <span class="co1">// add a key binding with this joystick button and output</span>
-    bindjoyb<span class="br0">&#40;</span>i<span class="sy0">-&gt;</span>second.<span class="me1">first</span><span class="sy0">,</span> i<span class="sy0">-&gt;</span>second.<span class="me1">second</span><span class="br0">&#41;</span>;
+    bindjoyb<span class="br0">&#40;</span>i<span class="sy2">-</span><span class="sy1">&gt;</span>second.<span class="me1">first</span>, i<span class="sy2">-</span><span class="sy1">&gt;</span>second.<span class="me1">second</span><span class="br0">&#41;</span><span class="sy4">;</span>
   <span class="br0">&#125;</span></pre>
 </div>
-<!-- SECTION "equal_range" [3-] --></div>
+<!-- EDIT4 SECTION "Example" [432-1404] -->
+<h3 class="sectionedit5"><a name="complexity" id="complexity">Complexity</a></h3>
+<div class="level3">
+
+<p>
+
+logarithmic
+</p>
+
+</div>
+<!-- EDIT5 SECTION "Complexity" [1405-1437] -->
+<h3 class="sectionedit6"><a name="see_also" id="see_also">See also</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="upper_bound" class="wikilink1" title="container:multimap:upper_bound">upper_bound</a>, <a href="lower_bound" class="wikilink1" title="container:multimap:lower_bound">lower_bound</a>
+</p>
+
+</div>
+<!-- EDIT6 SECTION "See also" [1438-] --></div>
 </body>
 </html>

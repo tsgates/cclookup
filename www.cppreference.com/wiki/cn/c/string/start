@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn"
+ lang="cn" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>cn:c:string:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:52-0700" />
+<meta name="keywords" content="cn,c,string,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/cn/c/string/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=cn:c:string" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/cn/c/string/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/cn/c/string/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='cn:c:string';var JSINFO = {"id":"cn:c:string:start","namespace":"cn:c:string"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="标准c字符串和字符" id="标准c字符串和字符">标准C字符串和字符</a></h1>
+<div class="level1">
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="atof" class="wikilink1" title="cn:c:string:atof">atof</a></td><td class="col1">将字符串转换成浮点数</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="atoi" class="wikilink1" title="cn:c:string:atoi">atoi</a></td><td class="col1">将字符串转换成整数</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="atol" class="wikilink1" title="cn:c:string:atol">atol</a></td><td class="col1">将字符串转换成长整型数</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="isalnum" class="wikilink1" title="cn:c:string:isalnum">isalnum</a></td><td class="col1">当字母或数字字符时, 返回真值</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="isalpha" class="wikilink1" title="cn:c:string:isalpha">isalpha</a></td><td class="col1">当字母字符时, 返回真值 </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="iscntrl" class="wikilink1" title="cn:c:string:iscntrl">iscntrl</a></td><td class="col1">当控制字符时, 返回真值</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="isdigit" class="wikilink1" title="cn:c:string:isdigit">isdigit</a></td><td class="col1">当数字字符时, 返回真值</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="isgraph" class="wikilink1" title="cn:c:string:isgraph">isgraph</a></td><td class="col1">当非空格可打印字符时, 返回真值</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="islower" class="wikilink1" title="cn:c:string:islower">islower</a></td><td class="col1">当小写字母字符时, 返回真值</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="isprint" class="wikilink1" title="cn:c:string:isprint">isprint</a></td><td class="col1">当可打印字符时, 返回真值</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="ispunct" class="wikilink1" title="cn:c:string:ispunct">ispunct</a></td><td class="col1">当标点字符时, 返回真值 </td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="isspace" class="wikilink1" title="cn:c:string:isspace">isspace</a></td><td class="col1">当空格字符时, 返回真值</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><a href="isupper" class="wikilink1" title="cn:c:string:isupper">isupper</a></td><td class="col1">当大写字母字符时, 返回真值</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><a href="isxdigit" class="wikilink1" title="cn:c:string:isxdigit">isxdigit</a></td><td class="col1">当十六进制字符时, 返回真值</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><a href="memchr" class="wikilink1" title="cn:c:string:memchr">memchr</a></td><td class="col1">在一数组中查找给定字符第一次出现的位置</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><a href="memcmp" class="wikilink1" title="cn:c:string:memcmp">memcmp</a></td><td class="col1">比较两个缓冲区</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><a href="memcpy" class="wikilink1" title="cn:c:string:memcpy">memcpy</a></td><td class="col1">拷贝一缓冲区内容到另一个</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><a href="memmove" class="wikilink1" title="cn:c:string:memmove">memmove</a></td><td class="col1">同memcpy, 但两个缓冲区内存地址可以重叠</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"><a href="memset" class="wikilink1" title="cn:c:string:memset">memset</a></td><td class="col1">用给定字符填充缓冲区</td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"><a href="strcat" class="wikilink1" title="cn:c:string:strcat">strcat</a></td><td class="col1">连接两个字符串</td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"><a href="strchr" class="wikilink1" title="cn:c:string:strchr">strchr</a></td><td class="col1">在字符串中搜索给定字符第一次出现的位置</td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"><a href="strcmp" class="wikilink1" title="cn:c:string:strcmp">strcmp</a></td><td class="col1">比较两个字符串</td>
+	</tr>
+	<tr class="row22">
+		<td class="col0"><a href="strcoll" class="wikilink1" title="cn:c:string:strcoll">strcoll</a></td><td class="col1">根据当前locale比较两个字符串</td>
+	</tr>
+	<tr class="row23">
+		<td class="col0"><a href="strcpy" class="wikilink1" title="cn:c:string:strcpy">strcpy</a></td><td class="col1">拷贝一个字符串到另一个</td>
+	</tr>
+	<tr class="row24">
+		<td class="col0"><a href="strcspn" class="wikilink1" title="cn:c:string:strcspn">strcspn</a></td><td class="col1">在字符串中搜索另一字符串中任意一字符</td>
+	</tr>
+	<tr class="row25">
+		<td class="col0"><a href="strerror" class="wikilink1" title="cn:c:string:strerror">strerror</a></td><td class="col1">返回错误码对应的文本信息</td>
+	</tr>
+	<tr class="row26">
+		<td class="col0"><a href="strlen" class="wikilink1" title="cn:c:string:strlen">strlen</a></td><td class="col1">返回给定字符串长度</td>
+	</tr>
+	<tr class="row27">
+		<td class="col0"><a href="strncat" class="wikilink1" title="cn:c:string:strncat">strncat</a></td><td class="col1">连接第二个字符串中至多指定数量的字符到第一个字符串</td>
+	</tr>
+	<tr class="row28">
+		<td class="col0"><a href="strncmp" class="wikilink1" title="cn:c:string:strncmp">strncmp</a></td><td class="col1">比较两个字符串指定数量的字符</td>
+	</tr>
+	<tr class="row29">
+		<td class="col0"><a href="strncpy" class="wikilink1" title="cn:c:string:strncpy">strncpy</a></td><td class="col1">从一字符串中拷贝指定数量的字符到另一字符串</td>
+	</tr>
+	<tr class="row30">
+		<td class="col0"><a href="strpbrk" class="wikilink1" title="cn:c:string:strpbrk">strpbrk</a></td><td class="col1">查找另一字符串中任意一字符在此字符串中第一次出现的位置指针</td>
+	</tr>
+	<tr class="row31">
+		<td class="col0"><a href="strrchr" class="wikilink1" title="cn:c:string:strrchr">strrchr</a></td><td class="col1">查找某字符在字符串中末次出现的位置</td>
+	</tr>
+	<tr class="row32">
+		<td class="col0"><a href="strspn" class="wikilink1" title="cn:c:string:strspn">strspn</a></td><td class="col1">returns the length of a substring of characters of a string</td>
+	</tr>
+	<tr class="row33">
+		<td class="col0"><a href="strstr" class="wikilink1" title="cn:c:string:strstr">strstr</a></td><td class="col1">在一字符串中查找指定的子串首次出现的位置</td>
+	</tr>
+	<tr class="row34">
+		<td class="col0"><a href="strtod" class="wikilink1" title="cn:c:string:strtod">strtod</a></td><td class="col1">将字符串转换成双精度浮点数</td>
+	</tr>
+	<tr class="row35">
+		<td class="col0"><a href="strtok" class="wikilink1" title="cn:c:string:strtok">strtok</a></td><td class="col1">查找字符串中下一个标记</td>
+	</tr>
+	<tr class="row36">
+		<td class="col0"><a href="strtol" class="wikilink1" title="cn:c:string:strtol">strtol</a></td><td class="col1">将字符串转换成长整型</td>
+	</tr>
+	<tr class="row37">
+		<td class="col0"><a href="strtoul" class="wikilink1" title="cn:c:string:strtoul">strtoul</a></td><td class="col1">将字符串转换成无符号长整型数 </td>
+	</tr>
+	<tr class="row38">
+		<td class="col0"><a href="strxfrm" class="wikilink1" title="cn:c:string:strxfrm">strxfrm</a></td><td class="col1">转换子串, 使其可以用于字符串比较</td>
+	</tr>
+	<tr class="row39">
+		<td class="col0"><a href="tolower" class="wikilink1" title="cn:c:string:tolower">tolower</a></td><td class="col1">将字符转换成小写</td>
+	</tr>
+	<tr class="row40">
+		<td class="col0"><a href="toupper" class="wikilink1" title="cn:c:string:toupper">toupper</a></td><td class="col1">将字符转换成大写</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [48-2289] -->
+</div>
+</div>
+</body>
+</html>

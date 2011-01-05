@@ -5,65 +5,43 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>c:string:atoi</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
-<meta name="robots" content="index,follow" />
-<meta name="date" content="2009-02-18T14:51:07-0800" />
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="noindex,nofollow" />
+<meta name="date" content="2010-11-15T04:22:12-0800" />
 <meta name="keywords" content="c,string,atoi" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/c/string/atoi?do=index" title="Index" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/c/string/atoi?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
 <link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=c:string" />
 <link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/c/string/atoi" />
 <link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/c/string/atoi" />
-<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="canonical" href="atoi" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='c:string';var JSINFO = {"id":"c:string:atoi","namespace":"c:string"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
 
-
-
-<h2><a name="atoi" id="atoi">atoi</a></h2>
+<h2 class="sectionedit1"><a name="page_redirected_auto" id="page_redirected_auto">Page redirected (auto)</a></h2>
 <div class="level2">
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <a href="../../redirect" class="wikilink1" title="redirect">redirect</a> </td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [34-52] -->
+<p>
 
-<p>
-Syntax:
+See <a href="../../string/c/atoi" class="wikilink1" title="string:c:atoi"> this</a>
 </p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;cstdlib&gt;</span>
-    <span class="kw4">int</span> atoi<span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy0">*</span>str <span class="br0">&#41;</span>;</pre>
-<p>
-The atoi function converts <code>str</code> into an integer, and returns that integer. <code>str</code>
-should start with whitespace or some sort of number, and atoi will stop
-reading from <code>str</code> as soon as a non-numerical character has been read. For
-example:
-</p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="kw4">int</span> i;
-    i <span class="sy0">=</span> atoi<span class="br0">&#40;</span> <span class="st0">&quot;512&quot;</span> <span class="br0">&#41;</span>;
-    i <span class="sy0">=</span> atoi<span class="br0">&#40;</span> <span class="st0">&quot;512.035&quot;</span> <span class="br0">&#41;</span>;
-    i <span class="sy0">=</span> atoi<span class="br0">&#40;</span> <span class="st0">&quot;   512.035&quot;</span> <span class="br0">&#41;</span>;
-    i <span class="sy0">=</span> atoi<span class="br0">&#40;</span> <span class="st0">&quot;   512+34&quot;</span> <span class="br0">&#41;</span>;
-    i <span class="sy0">=</span> atoi<span class="br0">&#40;</span> <span class="st0">&quot;   512 bottles of beer on the wall&quot;</span> <span class="br0">&#41;</span>;</pre>
-<p>
-All five of the above assignments to the variable <code>i</code> would result in it being
-set to 512.
-</p>
-
-<p>
-If the conversion cannot be performed, then atoi will return zero:
-</p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="kw4">int</span> i <span class="sy0">=</span> atoi<span class="br0">&#40;</span> <span class="st0">&quot; does not work: 512&quot;</span> <span class="br0">&#41;</span>;  <span class="co1">// results in i == 0</span></pre>
-<p>
-You can use <a href="../io/sprintf" class="wikilink1" title="c:io:sprintf">sprintf</a> to convert a number into a string.
-</p>
-
-<p>
-Related Topics: <a href="atof" class="wikilink1" title="c:string:atof">atof</a>, <a href="atol" class="wikilink1" title="c:string:atol">atol</a>, <a href="../io/sprintf" class="wikilink1" title="c:io:sprintf">sprintf</a>
-</p>
-
+<div class="noteredirect">This page has been moved, the new location is <a href="../../string/c/atoi" class="wikilink1" title="string:c:atoi">atoi, atol, atoll</a>.</div>
 </div>
-<!-- SECTION "atoi" [3-] --></div>
+</div>
 </body>
 </html>

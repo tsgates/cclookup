@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it"
+ lang="it" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>it:keywords:extern</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:07-0700" />
+<meta name="keywords" content="it,keywords,extern" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/it/keywords/extern?do=index" title="Indice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=it:keywords" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/it/keywords/extern" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/it/keywords/extern" />
+<link rel="canonical" href="extern" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='it:keywords';var JSINFO = {"id":"it:keywords:extern","namespace":"it:keywords"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="extern" id="extern">extern</a></h2>
+<div class="level2">
+
+<p>
+
+Nella dichiarazione di varibili la parola <code>extern</code> è usata per indicare al compilatore che un riferimento ad una variabile è da ricercare al di fuori dello scope corrente. Le variabili dichiarate con <code>extern</code> non ricevono un&#039;allocazione, ma per esse vengono generati riferimenti che dovranno essere risolti in fase di linking con il codice oggetto dove vengono effettivamente allocate e inizializzate.
+</p>
+
+<p>
+Un uso tipico di <code>extern</code> è quello di fare in modo che una variabile sia accessibile da più funzioni il cui codice è in diversi file. 
+</p>
+
+<p>
+Applicato alla dichiarazione di funzioni la parola <code>extern</code> unita ai literal “C” o “C++” indica al compilatore di cambiare il <em>name mangling</em> nella generazione dei riferimenti simbolici del codice oggetto. Questo è necessario quando si vuole linkare il proprio codice C++ ad una libreria scritta e compilata in C e viceversa:
+</p>
+<pre class="cpp code cpp"><span class="kw4">extern</span> <span class="st0">&quot;C&quot;</span> <span class="kw4">int</span> plain_c_func<span class="br0">&#40;</span><span class="kw4">int</span> param<span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+la funzione <code>plain_c_func</code> il cui codice oggetto è stato creato con un compilatore C può così essere invocata dal nostro codice C++
+</p>
+
+<p>
+Si veda: <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/1996/N0950.asc" class="urlextern" title="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/1996/N0950.asc"  rel="nofollow">extern &quot;LANG&quot; Linkage issues</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="br-pt"
+ lang="br-pt" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>br-pt:header_files:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:04-0700" />
+<meta name="keywords" content="br-pt,header_files,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/br-pt/header_files/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=br-pt:header_files" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/br-pt/header_files/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/br-pt/header_files/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='br-pt:header_files';var JSINFO = {"id":"br-pt:header_files:start","namespace":"br-pt:header_files"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="start#c_header_files" class="toc">C++ Header Files</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="start#containers" class="toc">Containers</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="start#general" class="toc">General</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="start#c_strings" class="toc">C++ Strings</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="start#c_streams_e_inputoutput" class="toc">C++ Streams e Input/Output</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="start#numerics" class="toc">Numerics</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="start#language_support" class="toc">Language Support</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="start#c_standard_library" class="toc">C Standard Library</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="c_header_files" id="c_header_files">C++ Header Files</a></h2>
+<div class="level2">
+
+<p>
+
+Esta página lista os vários &#039;header files&#039; que estão disponíveis no padrão C++, agrupados por tópico.
+</p>
+
+</div>
+<!-- EDIT1 SECTION "C++ Header Files" [1-137] -->
+<h3 class="sectionedit2"><a name="containers" id="containers">Containers</a></h3>
+<div class="level3">
+<div class="table sectionedit3"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="../../stl/bitset/start" class="wikilink1" title="stl:bitset:start">&lt;bitset&gt;</a></td><td class="col1">Provê a classe contêiner especializada <a href="../../stl/bitset/start" class="wikilink1" title="stl:bitset:start">std::bitset</a>, um array de bit.</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="../../stl/deque/start" class="wikilink1" title="stl:deque:start">&lt;deque&gt;</a></td><td class="col1">Provê a classe template para o contêiner <a href="../../stl/deque/start" class="wikilink1" title="stl:deque:start">std::deque</a>, uma fila dupla.</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="../../stl/list/start" class="wikilink1" title="stl:list:start">&lt;list&gt;</a></td><td class="col1">Provê a classe template para o contêiner <a href="../../stl/list/start" class="wikilink1" title="stl:list:start">std::list</a>, uma lista duplamente ligada.</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="../../stl/map/start" class="wikilink1" title="stl:map:start">&lt;map&gt;</a></td><td class="col1">Provê a classe template para o contêiner <a href="../../stl/map/start" class="wikilink1" title="stl:map:start">std::map</a> e <a href="../../stl/multimap/start" class="wikilink1" title="stl:multimap:start">std::multimap</a>, um mapa e um multimapa associativo.</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="../../stl/queue/start" class="wikilink1" title="stl:queue:start">&lt;queue&gt;</a></td><td class="col1">Provê o adaptador de classe para o contêiner <a href="../../stl/queue/start" class="wikilink1" title="stl:queue:start">std::queue</a>, uma fila simples.</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="../../stl/set/start" class="wikilink1" title="stl:set:start">&lt;set&gt;</a></td><td class="col1">Provê a classe template para o contêiner <a href="../../stl/set/start" class="wikilink1" title="stl:set:start">std::set</a> and <a href="../../stl/multiset/start" class="wikilink1" title="stl:multiset:start">std::multiset</a>, container associativo ordenado ou conjunto.</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="../../stl/stack/start" class="wikilink1" title="stl:stack:start">&lt;stack&gt;</a></td><td class="col1">Provê o adaptador de classe para o contêiner <a href="../../stl/stack/start" class="wikilink1" title="stl:stack:start">std::stack</a>, uma pilha.</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="../../stl/vector/start" class="wikilink1" title="stl:vector:start">&lt;vector&gt;</a></td><td class="col1">Provê a classe template para o contêiner <a href="../../stl/vector/start" class="wikilink1" title="stl:vector:start">std::vector</a>, um array dinâmico.</td>
+	</tr>
+</table></div>
+<!-- EDIT3 TABLE [158-1172] -->
+</div>
+<!-- EDIT2 SECTION "Containers" [138-1173] -->
+<h3 class="sectionedit4"><a name="general" id="general">General</a></h3>
+<div class="level3">
+<div class="table sectionedit5"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="../../stl/algorithm/start" class="wikilink1" title="stl:algorithm:start">&lt;algorithm&gt;</a></td><td class="col1">Provê definições de vários algorítmos para contêiner.</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="../../stl/functional/start" class="wikilink1" title="stl:functional:start">&lt;functional&gt;</a></td><td class="col1">Provê vários objetos de função, projetados para uso com algorítmos padrões.</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="../../stl/iterators" class="wikilink1" title="stl:iterators">&lt;iterator&gt;</a></td><td class="col1">Provê classes e templates para trabalhar com iterators.</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/lib/locale" class="wikilink2" title="lib:locale" rel="nofollow">&lt;locale&gt;</a></td><td class="col1">Provê classes e templates para trabalhar com locales.</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="../../stl/memory/start" class="wikilink1" title="stl:memory:start">&lt;memory&gt;</a></td><td class="col1">Provê facilidades para o gerenciamento de memória em C++, incluindo a classe template <a href="../../stl/memory/auto_ptr" class="wikilink1" title="stl:memory:auto_ptr">std::auto_ptr</a>.</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="../../exception/start" class="wikilink1" title="exception:start">&lt;stdexcept&gt;</a></td><td class="col1">Contém excessões padrões para excessões assim como std::logic_error e std::runtime_error, ambas derivadas de std::exception.</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="../../stl/utility/start" class="wikilink1" title="stl:utility:start">&lt;utility&gt;</a></td><td class="col1">Provê a classe template <a href="../../stl/utility/pair" class="wikilink1" title="stl:utility:pair">std::pair</a>, para trabalhar com pares (tuplas de dois membros) de objetos.</td>
+	</tr>
+</table></div>
+<!-- EDIT5 TABLE [1191-2030] -->
+</div>
+<!-- EDIT4 SECTION "General" [1174-2031] -->
+<h3 class="sectionedit6"><a name="c_strings" id="c_strings">C++ Strings</a></h3>
+<div class="level3">
+<div class="table sectionedit7"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="../../string/start" class="wikilink1" title="string:start">&lt;string&gt;</a></td><td class="col1">Provê a classe e templates para o padrão C++ string.</td>
+	</tr>
+</table></div>
+<!-- EDIT7 TABLE [2053-2130] -->
+</div>
+<!-- EDIT6 SECTION "C++ Strings" [2032-2131] -->
+<h3 class="sectionedit8"><a name="c_streams_e_inputoutput" id="c_streams_e_inputoutput">C++ Streams e Input/Output</a></h3>
+<div class="level3">
+<div class="table sectionedit9"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="../../io/start" class="wikilink1" title="io:start">&lt;fstream&gt;</a></td><td class="col1">Provê facilidades de entrada e saída para arquivo.</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="../../io/start" class="wikilink1" title="io:start">&lt;ios&gt;</a></td><td class="col1">Provê vários tipos e funções básicas para operação de iostreams.</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="../../io/start" class="wikilink1" title="io:start">&lt;iostream&gt;</a></td><td class="col1">Provê os fundamentos para entrada e saída em C++.</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="../../io/start" class="wikilink1" title="io:start">&lt;iosfwd&gt;</a></td><td class="col1">Provê declarações  I/O-related class templates.</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="../../io/start" class="wikilink1" title="io:start">&lt;iomanip&gt;</a></td><td class="col1">Provê facilidades para manipular o formato de saída, assim como a base usada na formatação valores inteiros e a precisão de ponto flutuante.</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="../../io/sstream/start" class="wikilink1" title="io:sstream:start">&lt;istream&gt;</a></td><td class="col1">Provê o template de classe std::istream e outras classes para suporte a entrada.</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="../../io/sstream/start" class="wikilink1" title="io:sstream:start">&lt;ostream&gt;</a></td><td class="col1">Provê o template de classe std::ostream e outras classes para suporte a saída.</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="../../io/sstream/start" class="wikilink1" title="io:sstream:start">&lt;sstream&gt;</a></td><td class="col1">Provê o template de classe std::sstream e outras classes para suporte a manipulação de string.</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0">&lt;streambuf&gt;</td><td class="col1"> </td>
+	</tr>
+</table></div>
+<!-- EDIT9 TABLE [2168-2998] -->
+</div>
+<!-- EDIT8 SECTION "C++ Streams e Input/Output" [2132-2999] -->
+<h3 class="sectionedit10"><a name="numerics" id="numerics">Numerics</a></h3>
+<div class="level3">
+<div class="table sectionedit11"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="../../complex/start" class="wikilink1" title="complex:start">&lt;complex&gt;</a></td><td class="col1">Provê uma classe template std::complex e funções associativas para trabalhar com números complexos.</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="../../numeric/start" class="wikilink1" title="numeric:start">&lt;numeric&gt;</a></td><td class="col1">Provê algorítmos para o processamento numérico.</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="../../valarray/start" class="wikilink1" title="valarray:start">&lt;valarray&gt;</a></td><td class="col1">Provê um template de classe para std::valarray, uma classe de array para processamento numérico otimizado.</td>
+	</tr>
+</table></div>
+<!-- EDIT11 TABLE [3018-3358] -->
+</div>
+<!-- EDIT10 SECTION "Numerics" [3000-3359] -->
+<h3 class="sectionedit12"><a name="language_support" id="language_support">Language Support</a></h3>
+<div class="level3">
+<div class="table sectionedit13"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="../../exception/start" class="wikilink1" title="exception:start">&lt;exception&gt;</a></td><td class="col1">Provê vários tipos e funções relacionadas com a manipulação de excessão, incluindo std::exception, a classe base para todas as excessões acionadas acionadas pela biblioteca padrão.</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="../../limits/start" class="wikilink1" title="limits:start">&lt;limits&gt;</a></td><td class="col1">Provê o template da classe <a href="../../limits/numeric_limits" class="wikilink1" title="limits:numeric_limits">std::numeric_limits</a>, usado para descrever propriedades dos tipos numéricos fundamentais.</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/new/start" class="wikilink2" title="new:start" rel="nofollow">&lt;new&gt;</a></td><td class="col1">Provê os operadores new e delete e outras funções e tipos compondo o gerenciamento fundamental de memória de C++.</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="../../typeinfo/start" class="wikilink1" title="typeinfo:start">&lt;typeinfo&gt;</a></td><td class="col1">Provê facilidades para trabalhar com informações de tipo em tempo de execução de C++.</td>
+	</tr>
+</table></div>
+<!-- EDIT13 TABLE [3386-4024] -->
+</div>
+<!-- EDIT12 SECTION "Language Support" [3360-4025] -->
+<h3 class="sectionedit14"><a name="c_standard_library" id="c_standard_library">C Standard Library</a></h3>
+<div class="level3">
+
+<p>
+
+Cada header da <a href="../../c/start" class="wikilink1" title="c:start">biblioteca padrão C</a> é incluído no padrão C++
+sob um nome diferente, geralmente pela remoção do .h, 
+e adição do &#039;c&#039; no início, por exemplo <code>time.h</code> vira <code>ctime</code>. 
+A única diferença entre estes headers e o header tradicional do 
+padrão C é que esses são colocados no namespace <code>std::</code> sempre 
+que possível (embora apenas poucos compiladores façam isso). 
+No C <acronym title="International Organization for Standardization">ISO</acronym>, é permitido que funções da biblioteca padrão sejam 
+implementadas por macros, as quais não são permitidas pelo C++ <acronym title="International Organization for Standardization">ISO</acronym>.
+
+</p>
+<ul>
+<li class="level1"><div class="li"> &lt;cassert&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cctype&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cerrno&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cfloat&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;climits&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cmath&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;csetjmp&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;csignal&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cstdlib&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cstddef&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cstdarg&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cstdio&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cstring&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;ctime&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cwchar&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cwctype&gt;</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT14 SECTION "C Standard Library" [4026-] --></div>
+</body>
+</html>

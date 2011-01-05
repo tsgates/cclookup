@@ -1,0 +1,315 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr"
+ lang="fr" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>fr:c:io:printf</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:56-0700" />
+<meta name="keywords" content="fr,c,io,printf" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/fr/c/io/printf?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=fr:c:io" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/fr/c/io/printf" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/fr/c/io/printf" />
+<link rel="canonical" href="printf" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='fr:c:io';var JSINFO = {"id":"fr:c:io:printf","namespace":"fr:c:io"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table des matières</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="printf#printf" class="toc">printf</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="printf#codes_de_formattage" class="toc">Codes de formattage</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="printf#modificateurs_de_format" class="toc">Modificateurs de format</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="printf" id="printf">printf</a></h2>
+<div class="level2">
+
+<p>
+Syntaxe :
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cstdio&gt;</span>
+    <span class="kw4">int</span> <span class="kw3">printf</span><span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>format, ... <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+La fonction <code>printf</code> envoie une chaîne de caractères vers <code>stdout</code>, formatée selon <code>format</code> et d&#039;autres
+arguments passés à <code>printf</code>.
+</p>
+
+<p>
+La chaîne de charactère <code>format</code> est composée de deux types d&#039;objets :
+
+</p>
+<ul>
+<li class="level1"><div class="li"> Des caractères qui vont être imprimés à l&#039;écran</div>
+</li>
+<li class="level1"><div class="li"> Des commandes de formattage définissant comment les autres arguments passés à <code>printf</code> vont être affichés.</div>
+</li>
+</ul>
+
+<p>
+
+En résumé, il s&#039;agit de spécifier une chaîne de caractères contenant du texte ainsi que des caractères
+spéciaux. Ces caractères spéciaux correspondent aux arguments supplémentaires fournis à la fonction
+<code>printf</code>.
+</p>
+
+<p>
+Par exemple, le code suivant :
+</p>
+<pre class="cpp code cpp">     <span class="kw4">char</span> name<span class="br0">&#91;</span><span class="nu0">20</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="st0">&quot;Robert&quot;</span><span class="sy4">;</span>
+     <span class="kw4">int</span> age <span class="sy1">=</span> <span class="nu0">21</span><span class="sy4">;</span>
+     <span class="kw3">printf</span><span class="br0">&#40;</span> <span class="st0">&quot;Bonjour %s, vous avez %d ans.<span class="es1">\n</span>&quot;</span>, name, age <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+affiche à l&#039;écran la sortie suivante :
+</p>
+<pre class="code">
+     Bonjour Robert, vous avez 21 ans.</pre>
+<p>
+Le <code>%s</code> signifie, “Insère le premier argument, une chaîne de caractères, à cet endroit.”<br/>
+
+Le <code>%d</code> indique que le second argument, un nombre entier, doit être placé à cet emplacement.<br/>
+
+</p>
+
+<p>
+La valeur retournée par la fonction <code>printf</code> est le nombre de caractères imprimés, ou un nombre négatif en cas d&#039;erreur.
+</p>
+
+</div>
+<!-- EDIT1 SECTION "printf" [1-1327] -->
+<h3 class="sectionedit2"><a name="codes_de_formattage" id="codes_de_formattage">Codes de formattage</a></h3>
+<div class="level3">
+
+<p>
+
+Il existe différents %-codes selon le type de variable, ainsi que des options pour
+limiter la longueur des variables, ou modifier la façon de les afficher.
+
+</p>
+<div class="table sectionedit3"><table class="inline">
+	<tr class="row0">
+		<th class="col0">Code</th><th class="col1">Format</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">%c</td><td class="col1">caractère</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">%d</td><td class="col1">entier signé</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">%i</td><td class="col1">entier non signé</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">%I64d</td><td class="col1">entier signé très très long (8 octets), spécifique à <acronym title="Microsoft">MS</acronym></td>
+	</tr>
+	<tr class="row5">
+		<td class="col0">%I64u</td><td class="col1">entier non signé très très long (8octets), spécifique à <acronym title="Microsoft">MS</acronym></td>
+	</tr>
+	<tr class="row6">
+		<td class="col0">%e</td><td class="col1">notation scientifique, utilisant “e” minuscule</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0">%E</td><td class="col1">notation scientifique, utilisant “E” majuscule</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0">%f</td><td class="col1">nombre flottant</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0">%g</td><td class="col1">utilise %e ou %f, en fonction de celui qui est le plus court</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0">%G</td><td class="col1">utilise %E ou %f, en fonction de celui qui est le plus court</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0">%o</td><td class="col1">nombre octal</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0">%s</td><td class="col1">une chaîne de caractères</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0">%u</td><td class="col1">entier non signé</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0">%x</td><td class="col1">nombre hexadécimal, utilisant des lettres minuscules</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0">%X</td><td class="col1">nombre hexadécimal, utilisant des lettres majuscules</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0">%p</td><td class="col1">un pointeur</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0">%n</td><td class="col1">l&#039;argument doit être un pointeur vers un entier dans lequel sera placé le nombre de caractères écrits jusqu&#039;à présent</td>
+	</tr>
+</table></div>
+<!-- EDIT3 TABLE [1516-2322] -->
+</div>
+<!-- EDIT2 SECTION "Codes de formattage" [1328-2323] -->
+<h3 class="sectionedit4"><a name="modificateurs_de_format" id="modificateurs_de_format">Modificateurs de format</a></h3>
+<div class="level3">
+
+</div>
+
+<h4><a name="alignement" id="alignement">Alignement</a></h4>
+<div class="level4">
+
+<p>
+
+Un entier placé entre <code>%</code> et la dénomination du format agit comme un modificateur 
+de largeur minimum ; <code>printf</code> va compléter avec des espaces ou des <code>0</code> pour atteindre
+la longueur spécifiée. Pour compléter avec des zéros, il vous faut l&#039;indiquer en
+plaçant un &#039;0&#039; avant le modificateur de largeur comme ceci :
+</p>
+<pre class="cpp code cpp">     <span class="sy2">%</span>012d</pre>
+<p>
+Vous pouvez également préciser la largeur minimum du champ dans une variable entière
+si, à la place du nombre vous mettez un <code>*</code> :
+</p>
+<pre class="cpp code cpp">     <span class="kw4">int</span> largeur <span class="sy1">=</span> <span class="nu0">12</span><span class="sy4">;</span>
+     <span class="kw4">int</span> age <span class="sy1">=</span> <span class="nu0">100</span><span class="sy4">;</span>
+     <span class="kw3">printf</span><span class="br0">&#40;</span><span class="st0">&quot;%*d&quot;</span>, largeur, age<span class="br0">&#41;</span><span class="sy4">;</span></pre>
+</div>
+
+<h4><a name="precision" id="precision">Précision</a></h4>
+<div class="level4">
+
+<p>
+
+Vous pouvez également spécifier la précision, en insérant un <code>.N</code> (où <code>N</code> est un nombre)
+avant la commande de format :
+</p>
+<pre class="cpp code cpp">     <span class="sy2">%</span>012.4d</pre>
+<p>
+Le modificateur de précision peut signifier différentes choses selon la commande de formatage
+utilisée :
+
+</p>
+<ul>
+<li class="level1"><div class="li"> Avec <code>%e</code>, <code>%E</code>, et <code>%f</code>, le modificateur de précision vous laisse choisir le nombre de décimales du nombre. Par exemple, <code>%12.6f</code> affichera un nombre flottant d&#039;une largeur de 12 caractères au moins dont 6 pour la partie décimale.</div>
+</li>
+<li class="level1"><div class="li"> Avec <code>%g</code> et <code>%G</code>, le modificateur de précision vous laisse le choix du nombre maximum de chiffres significatifs à afficher.</div>
+</li>
+<li class="level1"><div class="li"> Avec <code>%s</code>, le modificateur de précision agit simplement comme une largeur maximale, en complément de la largeur minimal qui précède le point (<code>.</code>).</div>
+</li>
+</ul>
+
+<p>
+
+Comme avec les modificateur de largeur, vous pouvez utiliser des
+variables entière pour le modificateur de précision en utilisant
+<code>*</code> :
+</p>
+<pre class="cpp code cpp">     <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> msg <span class="sy1">=</span> <span class="st0">&quot;Bonjour printf&quot;</span><span class="sy4">;</span>
+     <span class="kw4">int</span> taille_msg <span class="sy1">=</span> <span class="kw3">strlen</span><span class="br0">&#40;</span>msg<span class="br0">&#41;</span><span class="sy4">;</span>
+     <span class="kw3">printf</span><span class="br0">&#40;</span><span class="st0">&quot;msg: %.*s&quot;</span>, taille_msg, msg<span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Toutes les affichages de <code>printf</code> sont justifiés à droite, sauf si vous indiquez le
+contraire en ajoutant un signe moins (<code>-</code>) juste après le signe <code>%</code>. Par exemple :
+</p>
+<pre class="cpp code cpp">     <span class="sy2">%-</span><span class="nu17">12.4f</span></pre>
+<p>
+va afficher un nombre à virgule flottant e avec un minimum de 12 caractères (dont
+4 décimales) et justifié à gauche.
+</p>
+
+</div>
+
+<h4><a name="types_de_donnees_short_long" id="types_de_donnees_short_long">Types de données short &amp; long</a></h4>
+<div class="level4">
+
+<p>
+
+Vous pouvez ajouter les paramètres <code>l</code> et <code>h</code> aux codes de formatage suivants :
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>%d</code></div>
+</li>
+<li class="level1"><div class="li"> <code>%i</code></div>
+</li>
+<li class="level1"><div class="li"> <code>%o</code></div>
+</li>
+<li class="level1"><div class="li"> <code>%u</code></div>
+</li>
+<li class="level1"><div class="li"> <code>%x</code></div>
+</li>
+</ul>
+
+<p>
+
+Pour spécifier un type de donnée plus grand (<code>long</code>) ou plus petit (<code>short</code>) que
+le type de données usuel. Par exemple, <code>%hd</code> signifie affiche un <code>short int</code>.
+</p>
+
+<p>
+Les codes de formatage <code>%e</code>, <code>%f</code>, et <code>%g</code> peuvent également être précédés par un <code>l</code> pour
+indiquer l&#039;affichage d&#039;un <code>double</code>.
+</p>
+
+</div>
+
+<h4><a name="diverses_options" id="diverses_options">Diverses options</a></h4>
+<div class="level4">
+
+<p>
+
+Les codes de formatage <code>%g</code>, <code>%f</code>, et <code>%e</code>  peuvent être précédés d&#039;un <code>#</code> pour
+forcer l&#039;affichage du point décimal, même si le nombre n&#039;a pas de partie décimale.
+</p>
+
+<p>
+L&#039;utilisation du caractère <code>#</code> avec le code de formatage <code>%x</code> indique que le nombre hexadécimal
+sera affiché avec le préfixe <code>0x</code>.
+</p>
+
+<p>
+L&#039;utilisation du caractère <code>#</code> avec le code de formatage <code>%o</code> indique que le nombre octal sera
+affiché avec le préfixe <code>0</code>.
+</p>
+
+<p>
+L&#039;insertion d&#039;un caractère <code>+</code> dans le code de formatage forcera l&#039;affichage d&#039;un <code>+</code>
+avant les valeurs positives.
+</p>
+
+<p>
+L&#039;insertion d&#039;un espace &#039; &#039; dans le code de formatage forcera l&#039;affichage d&#039;un espace
+avant une valeur positive.
+</p>
+
+<p>
+Vous pouvez également inclure des <a href="../../escape_sequences" class="wikilink1" title="fr:escape_sequences">séquences d&#039;échappement</a> dans la chaîne de sortie.
+</p>
+
+<p>
+Sujets connexes : <a href="fprintf" class="wikilink1" title="fr:c:io:fprintf">fprintf</a>, <a href="puts" class="wikilink1" title="fr:c:io:puts">puts</a>, <a href="scanf" class="wikilink1" title="fr:c:io:scanf">scanf</a>, <a href="sprintf" class="wikilink1" title="fr:c:io:sprintf">sprintf</a>
+</p>
+
+</div>
+<!-- EDIT4 SECTION "Modificateurs de format" [2324-] --></div>
+</body>
+</html>

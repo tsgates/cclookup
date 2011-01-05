@@ -5,53 +5,43 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>io:precision</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="generator" content="DokuWiki" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2009-05-01T14:55:50-0700" />
+<meta name="date" content="2010-11-12T03:14:48-0800" />
 <meta name="keywords" content="io,precision" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/io/precision?do=index" title="Index" />
+<link rel="start" href="../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/io/precision?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
 <link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=io" />
 <link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/io/precision" />
 <link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/io/precision" />
-<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="canonical" href="precision" />
+<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='io';var JSINFO = {"id":"io:precision","namespace":"io"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
 
-
-
-<h2><a name="precision" id="precision">precision</a></h2>
+<h2 class="sectionedit1"><a name="page_redirected_auto" id="page_redirected_auto">Page redirected (auto)</a></h2>
 <div class="level2">
-
-<p>
-Syntax:
-</p>
-<pre class="c code c++" style="font-family:monospace;">    streamsize ostream<span class="sy0">::</span><span class="me2">precision</span><span class="br0">&#40;</span><span class="br0">&#41;</span>;
-    streamsize ostream<span class="sy0">::</span><span class="me2">precision</span><span class="br0">&#40;</span>streamsize p<span class="br0">&#41;</span>;</pre>
-<p>
-
-The precision() function either sets or returns the current number of digits that is displayed for floating-point variables.
-For example, the following code sets the precision of the cout stream to 5:
-</p>
-<pre class="c code c++" style="font-family:monospace;">     <span class="kw4">float</span> num <span class="sy0">=</span> <span class="nu16">314.15926535</span>;
-     <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a>.<span class="me1">precision</span><span class="br0">&#40;</span> <span class="nu0">5</span> <span class="br0">&#41;</span>;
-     <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> num;</pre>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="../redirect" class="wikilink1" title="redirect">redirect</a></td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [34-49] -->
 <p>
 
-This code displays the following output:
+See <a href="ios_base/precision" class="wikilink1" title="io:ios_base:precision"> this</a>
 </p>
-<pre class="c code c++" style="font-family:monospace;">     <span class="nu16">314.16</span></pre>
-<p>
-Related Topics: <a href="fill" class="wikilink1" title="io:fill">fill</a>, <a href="width" class="wikilink1" title="io:width">width</a>
-</p>
-
+<div class="noteredirect">This page has been moved, the new location is <a href="ios_base/precision" class="wikilink1" title="io:ios_base:precision">ios_base::precision</a>.</div>
 </div>
-<!-- SECTION "precision" [3-] --></div>
+</div>
 </body>
 </html>

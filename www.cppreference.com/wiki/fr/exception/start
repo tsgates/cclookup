@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr"
+ lang="fr" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>fr:language:exception:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:01-0700" />
+<meta name="keywords" content="fr,language,exception,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/fr/language/exception/start?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=fr:language:exception" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/fr/language/exception/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/fr/language/exception/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='fr:language:exception';var JSINFO = {"id":"fr:language:exception:start","namespace":"fr:language:exception"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table des matières</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="start#exceptions" class="toc">Exceptions</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="start#traitement" class="toc">Traitement</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="start#exceptions_standards" class="toc">Exceptions Standards</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="exceptions" id="exceptions">Exceptions</a></h2>
+<div class="level2">
+
+</div>
+<!-- EDIT1 SECTION "Exceptions" [1-23] -->
+<h3 class="sectionedit2"><a name="traitement" id="traitement">Traitement</a></h3>
+<div class="level3">
+
+<p>
+Le fichier d&#039;en-tête <code>&lt;exception&gt;</code> fournit des fonction et des classes pour la gestion des exception. Une des classes de base est <code>exception</code>:
+</p>
+<pre class="cpp code cpp"><span class="kw2">class</span> exception
+<span class="br0">&#123;</span>
+<span class="kw2">public</span><span class="sy4">:</span>
+    exception<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw1">throw</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    exception<span class="br0">&#40;</span><span class="kw4">const</span> exception<span class="sy3">&amp;</span><span class="br0">&#41;</span> <span class="kw1">throw</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    exception<span class="sy3">&amp;</span> operator<span class="sy1">=</span><span class="br0">&#40;</span><span class="kw4">const</span> exception<span class="sy3">&amp;</span><span class="br0">&#41;</span> <span class="kw1">throw</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw2">virtual</span> ~exception<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw1">throw</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw2">virtual</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>what<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw4">const</span> <span class="kw1">throw</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+<span class="br0">&#125;</span><span class="sy4">;</span></pre>
+</div>
+<!-- EDIT2 SECTION "Traitement" [24-440] -->
+<h3 class="sectionedit3"><a name="exceptions_standards" id="exceptions_standards">Exceptions Standards</a></h3>
+<div class="level3">
+
+<p>
+Le fichier d&#039;en-tête <code>&lt;stdexcept&gt;</code> fournit une petite hiérarchie de classes d&#039;exception qui peuvent être <a href="../keywords/throw" class="wikilink1" title="fr:keywords:throw">lancées (throw)</a> ou  <a href="../keywords/catch" class="wikilink1" title="fr:keywords:catch">attrapées (catch)</a>:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>exception</code></div>
+<ul>
+<li class="level2"><div class="li"> <code>logic_error</code></div>
+<ul>
+<li class="level3"><div class="li"> <code>domain_error</code></div>
+</li>
+<li class="level3"><div class="li"> <code>invalid_argument</code></div>
+</li>
+<li class="level3"><div class="li"> <code>length_error</code></div>
+</li>
+<li class="level3"><div class="li"> <code>out_of_range</code></div>
+</li>
+</ul>
+</li>
+<li class="level2"><div class="li"> <code>runtime_error</code></div>
+<ul>
+<li class="level3"><div class="li"> <code>range_error</code></div>
+</li>
+<li class="level3"><div class="li"> <code>overflow_error</code></div>
+</li>
+<li class="level3"><div class="li"> <code>underflow_error</code></div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+<p>
+
+Les exceptions <em>logic_error</em> sont lancées quand le programme rencontre une erreur interne provoquée par l&#039;utilisation erronée d&#039;une fonction. Elles sont évitables au moment du codage.
+</p>
+
+<p>
+Les exceptions <em>runtime_error</em> sont lancées par une erreur indépendante du programme lui même et ne peuvent être évitées directement lors de la création du programme.
+
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Exceptions Standards" [441-] --></div>
+</body>
+</html>

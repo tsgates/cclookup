@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn"
+ lang="cn" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>cn:keywords:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:53-0700" />
+<meta name="keywords" content="cn,keywords,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/cn/keywords/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=cn:keywords" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/cn/keywords/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/cn/keywords/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='cn:keywords';var JSINFO = {"id":"cn:keywords:start","namespace":"cn:keywords"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<p>
+<strong>C/C++ Keywords</strong>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> asm 插入一个汇编指令. </div>
+</li>
+<li class="level1"><div class="li"> auto 声明一个本地变量. </div>
+</li>
+<li class="level1"><div class="li"> bool 声明一个布尔型变量. </div>
+</li>
+<li class="level1"><div class="li"> break 结束一个循环. </div>
+</li>
+<li class="level1"><div class="li"> case 一个switch语句的一部分. </div>
+</li>
+<li class="level1"><div class="li"> catch 处理 thrown 产生的异常. </div>
+</li>
+<li class="level1"><div class="li"> char 声明一个字符型变量. </div>
+</li>
+<li class="level1"><div class="li"> class 声明一个类. </div>
+</li>
+<li class="level1"><div class="li"> const 声明一个常量. </div>
+</li>
+<li class="level1"><div class="li"> const_cast 从一个const变量中抛出.  </div>
+</li>
+<li class="level1"><div class="li"> continue 在循环中间断循环. </div>
+</li>
+<li class="level1"><div class="li"> default 是一个case语句中的缺省项. </div>
+</li>
+<li class="level1"><div class="li"> delete 释放内存. </div>
+</li>
+<li class="level1"><div class="li"> do 构造循环体. </div>
+</li>
+<li class="level1"><div class="li"> double 声明一个双精度浮点变量. </div>
+</li>
+<li class="level1"><div class="li"> dynamic_cast 动态投射. </div>
+</li>
+<li class="level1"><div class="li"> else 是一个if语句中的预备条件. </div>
+</li>
+<li class="level1"><div class="li"> enum 创建列举类型. </div>
+</li>
+<li class="level1"><div class="li"> explicit 仅用在构造器的正确匹配. </div>
+</li>
+<li class="level1"><div class="li"> extern 告诉编译器在别的地方变量已经被定义过了. </div>
+</li>
+<li class="level1"><div class="li"> false 属于布尔值. </div>
+</li>
+<li class="level1"><div class="li"> float 声明一个浮点型变量. </div>
+</li>
+<li class="level1"><div class="li"> for 构造循环. </div>
+</li>
+<li class="level1"><div class="li"> friend 允许非函数成员使用私有数据. </div>
+</li>
+<li class="level1"><div class="li"> goto 跳转到程序的其它地方. </div>
+</li>
+<li class="level1"><div class="li"> if 从一次判断的结果处执行代码. </div>
+</li>
+<li class="level1"><div class="li"> inline 定义一个函数为内联. </div>
+</li>
+<li class="level1"><div class="li"> int 声明一个整型变量. </div>
+</li>
+<li class="level1"><div class="li"> long 声明一个长整型变量. </div>
+</li>
+<li class="level1"><div class="li"> mutable 忽略const变量. </div>
+</li>
+<li class="level1"><div class="li"> namespace 用一个定义的范围划分命名空间. </div>
+</li>
+<li class="level1"><div class="li"> new 允许动态存储一个新变量. </div>
+</li>
+<li class="level1"><div class="li"> operator 创建重载函数. </div>
+</li>
+<li class="level1"><div class="li"> private 在一个类中声明私有成员. </div>
+</li>
+<li class="level1"><div class="li"> protected 在一个类中声明被保护成员. </div>
+</li>
+<li class="level1"><div class="li"> public 在一个类中声明公共成员. </div>
+</li>
+<li class="level1"><div class="li"> register 定义一个寄存器变量. </div>
+</li>
+<li class="level1"><div class="li"> reinterpret_cast 改变一个变量的类型. </div>
+</li>
+<li class="level1"><div class="li"> return 从一个函数中返回. </div>
+</li>
+<li class="level1"><div class="li"> short 声明一个短整型变量. </div>
+</li>
+<li class="level1"><div class="li"> signed 修改变量类型声明. </div>
+</li>
+<li class="level1"><div class="li"> sizeof 返回一个变量或类型的长度. </div>
+</li>
+<li class="level1"><div class="li"> static 给一个变量创建永久的存储空间. </div>
+</li>
+<li class="level1"><div class="li"> static_cast 执行一个非多态性cast. </div>
+</li>
+<li class="level1"><div class="li"> struct 创建一个新结构体. </div>
+</li>
+<li class="level1"><div class="li"> switch 让一个变量在不同的判断下执行不同的代码. </div>
+</li>
+<li class="level1"><div class="li"> template 创建一个给特殊函数. </div>
+</li>
+<li class="level1"><div class="li"> this 指向当前对象. </div>
+</li>
+<li class="level1"><div class="li"> throw 抛出一个异常. </div>
+</li>
+<li class="level1"><div class="li"> true 布尔类型的一个值. </div>
+</li>
+<li class="level1"><div class="li"> try 执行一个被throw 抛出的异常. </div>
+</li>
+<li class="level1"><div class="li"> typedef 从现有的类型中创建一个新类型. </div>
+</li>
+<li class="level1"><div class="li"> typeid 描述一个对象. </div>
+</li>
+<li class="level1"><div class="li"> typename 声明一个类或未定义的类型. </div>
+</li>
+<li class="level1"><div class="li"> union 一个结构体在当前位置分配给多个变量相同的内存. </div>
+</li>
+<li class="level1"><div class="li"> unsigned 声明一个无符号整型变量. </div>
+</li>
+<li class="level1"><div class="li"> using 用来输入一个namespace. </div>
+</li>
+<li class="level1"><div class="li"> virtual 创建一个不被已构成类有限考虑的函数. </div>
+</li>
+<li class="level1"><div class="li"> void 声明函数或数据是无关联数据类型. </div>
+</li>
+<li class="level1"><div class="li"> volatile 警告编译器有关的变量可能被出乎意料的修改. </div>
+</li>
+<li class="level1"><div class="li"> wchar_t 声明一个带有宽度的字符型变量. </div>
+</li>
+<li class="level1"><div class="li"> while 用来构成循环. </div>
+</li>
+</ul>
+</div>
+</body>
+</html>

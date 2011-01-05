@@ -5,49 +5,43 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>c:io:snprintf</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
-<meta name="robots" content="index,follow" />
-<meta name="date" content="2008-11-11T05:16:38-0800" />
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="noindex,nofollow" />
+<meta name="date" content="2010-11-15T01:59:51-0800" />
 <meta name="keywords" content="c,io,snprintf" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/c/io/snprintf?do=index" title="Index" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/c/io/snprintf?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
 <link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=c:io" />
 <link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/c/io/snprintf" />
 <link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/c/io/snprintf" />
-<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="canonical" href="snprintf" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='c:io';var JSINFO = {"id":"c:io:snprintf","namespace":"c:io"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
 
-
-
-<h2><a name="snprintf" id="snprintf">snprintf</a></h2>
+<h2 class="sectionedit1"><a name="page_redirected_auto" id="page_redirected_auto">Page redirected (auto)</a></h2>
 <div class="level2">
-
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <a href="../../redirect" class="wikilink1" title="redirect">redirect</a> </td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [34-52] -->
 <p>
-Syntax:
-</p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;cstdio&gt;</span>
-    <span class="kw4">int</span> snprintf<span class="br0">&#40;</span> <span class="kw4">char</span> <span class="sy0">*</span>buffer<span class="sy0">,</span> <span class="kw4">int</span> buff_size<span class="sy0">,</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy0">*</span>format<span class="sy0">,</span> ... <span class="br0">&#41;</span>;</pre>
-<p>
 
-The snprintf() function is just like sprintf(), except that the length of the buffer is given. This prevents buffer overflows.
+See <a href="../../io/c/snprintf" class="wikilink1" title="io:c:snprintf"> this</a>
 </p>
-
-<p>
-The return value is the number of characters written. If the output was truncated due to buff_size limit then the return value is the number of characters (not including the trailing &#039;\0&#039;) which would have been written to the final string if enough space had been available.
-</p>
-
-<p>
-Related Topics: <a href="sprintf" class="wikilink1" title="c:io:sprintf">sprintf</a>, <a href="../string/atof" class="wikilink1" title="c:string:atof">atof</a>, <a href="../string/atoi" class="wikilink1" title="c:string:atoi">atoi</a>, <a href="../string/atol" class="wikilink1" title="c:string:atol">atol</a>, <a href="fprintf" class="wikilink1" title="c:io:fprintf">fprintf</a>, <a href="printf" class="wikilink1" title="c:io:printf">printf</a>
-</p>
-
+<div class="noteredirect">This page has been moved, the new location is <a href="../../io/c/snprintf" class="wikilink1" title="io:c:snprintf">snprintf</a>.</div>
 </div>
-<!-- SECTION "snprintf" [3-] --></div>
+</div>
 </body>
 </html>

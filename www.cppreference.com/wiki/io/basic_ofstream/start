@@ -1,0 +1,486 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>io:basic_ofstream:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="noindex,nofollow" />
+<meta name="date" content="2010-11-18T06:38:13-0800" />
+<meta name="keywords" content="io,basic_ofstream,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/io/basic_ofstream/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=io:basic_ofstream" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/io/basic_ofstream/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/io/basic_ofstream/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='io:basic_ofstream';var JSINFO = {"id":"io:basic_ofstream:start","namespace":"io:basic_ofstream"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="start#basic_ofstream" class="toc">basic_ofstream</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="start#section" class="toc"></a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="start#inherited_from_basic_ostream" class="toc">Inherited from basic_ostream</a></span></div></li>
+</ul>
+</li>
+<li class="level2"><div class="li"><span class="li"><a href="start#section1" class="toc"></a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="start#inherited_from_basic_ios" class="toc">Inherited from basic_ios</a></span></div></li>
+</ul>
+</li>
+<li class="level2"><div class="li"><span class="li"><a href="start#section2" class="toc"></a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="start#inherited_from_ios_base" class="toc">Inherited from ios_base</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="start#see_also" class="toc">See also</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="basic_ofstream" id="basic_ofstream">basic_ofstream</a></h2>
+<div class="level2">
+
+<p>
+
+<img src="http://www.cppreference.com/wiki/lib/exe/fetch.php?hash=f77f54&amp;media=http%3A%2F%2Fchart.apis.google.com%2Fchart%3Fcht%3Dgv%253Adot%26chl%3Ddigraph%2520inheritance%2520%257B%250A%2520%2520graph%2520%255Bdpi%253D%252255%2522%252C%2520label%253D%2522Inheritance%2520diagram%2522%255D%250A%2520%2520node%2520%255Bshape%2520%253D%2520box%252C%2520fontsize%253D14%255D%253B%2520%2520%2520%2520%2520%250A%2509%250A%2520%2520base%2520%255Blabel%2520%253D%2520%2522ios_base%2522%255D%253B%2520%250A%2520%2520ios%2520%255Blabel%2520%253D%2520%2522basic_ios%253CChar%252C%2520Traits%2520%253E%2522%255D%253B%2520%250A%2520%2520ist%2520%255Blabel%2520%253D%2520%2522basic_istream%253CChar%252C%2520Traits%253E%2522%255D%253B%250A%2520%2520ofst%2520%255Blabel%2520%253D%2520%2522basic_ofstream%253CChar%252C%2520Traits%253E%2522%252C%2520style%253Dfilled%255D%253B%250A%250A%2520%2520base%2520-%253E%2520ios%253B%250A%2520%2520ios%2520-%253E%2520ist%253B%250A%2520%2520ist%2520-%253E%2520ofst%253B%250A%257D" class="mediaright" alt=""/>
+</p>
+<pre class="cpp code cpp"><span class="co2">#include &lt;fstream&gt;</span>
+&nbsp;
+<span class="kw2">template</span><span class="sy1">&lt;</span>
+    <span class="kw2">class</span> Char,
+    <span class="kw2">class</span> Traits <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">char_traits</span><span class="sy1">&lt;</span>Char<span class="sy1">&gt;</span>
+<span class="sy1">&gt;</span> <span class="kw2">class</span> basic_ofstream<span class="sy4">;</span>         <span class="co1">//inherits std::basic_ostream&lt;Char, Traits&gt;</span></pre>
+<p>
+The class template <code>basic_ofstream</code> provides support for output operations on file based streams. It directly inherits <a href="../basic_ostream/start" class="wikilink1" title="io:basic_ostream:start">basic_ostream</a> class and therefore indirectly inherits members of <a href="../ios_base/start" class="wikilink1" title="io:ios_base:start">ios_base</a> and <a href="../basic_ios/start" class="wikilink1" title="io:basic_ios:start">basic_ios</a> classes. Two specializations for common character types are also defined:
+</p>
+<pre class="cpp code cpp"><span class="kw4">typedef</span> basic_ofstream<span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span> ofstream<span class="sy4">;</span>
+<span class="kw4">typedef</span> basic_ofstream<span class="sy1">&lt;</span><span class="kw4">wchar_t</span><span class="sy1">&gt;</span> wofstream<span class="sy4">;</span></pre>
+<p>
+<br/>
+
+
+</p>
+
+</div>
+
+<h4><a name="member_types" id="member_types">Member types</a></h4>
+<div class="level4">
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Member type </th><th class="col1"> Definition </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <code>char_type</code> </td><td class="col1"> <code>Traits::char_type</code> </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <code>int_type</code> </td><td class="col1"> <code>Traits::int_type</code> </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> <code>pos_type</code> </td><td class="col1"> <code>Traits::pos_type</code> </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> <code>off_type</code> </td><td class="col1"> <code>Traits::off_type</code> </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> <code>state_type</code> </td><td class="col1"> <code>Traits::state_type</code> </td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [1023-1257] -->
+</div>
+
+<h4><a name="member_functions" id="member_functions">Member functions</a></h4>
+<div class="level4">
+<div class="table sectionedit3"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <a href="http://www.cppreference.com/wiki/io/basic_ofstream/basic_ifstream" class="wikilink2" title="io:basic_ofstream:basic_ifstream" rel="nofollow"> (constructor) </a> </td><td class="col1"> constructs the file stream </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <a href="http://www.cppreference.com/wiki/io/basic_ofstream/operator_as" class="wikilink2" title="io:basic_ofstream:operator_as" rel="nofollow"> operator= </a> </td><td class="col1"> assigns the file stream (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature) </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <a href="http://www.cppreference.com/wiki/io/basic_ofstream/swap" class="wikilink2" title="io:basic_ofstream:swap" rel="nofollow">swap</a> </td><td class="col1"> swaps the file streams (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature) </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> <a href="http://www.cppreference.com/wiki/io/basic_ofstream/rdbuf" class="wikilink2" title="io:basic_ofstream:rdbuf" rel="nofollow">rdbuf</a> </td><td class="col1"> returns the underlying <code>basic_filebuf</code> object </td>
+	</tr>
+</table></div>
+<!-- EDIT3 TABLE [1284-1555] -->
+</div>
+
+<h5><a name="file_operations" id="file_operations">File operations</a></h5>
+<div class="level5">
+<div class="table sectionedit4"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <a href="is_open" class="wikilink1" title="io:basic_ofstream:is_open">is_open</a> </td><td class="col1"> checks if the stream has an associated file </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <a href="open" class="wikilink1" title="io:basic_ofstream:open">open</a> </td><td class="col1"> opens a file and associates it with the stream </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <a href="close" class="wikilink1" title="io:basic_ofstream:close">close</a> </td><td class="col1"> closes the associated file </td>
+	</tr>
+</table></div>
+<!-- EDIT4 TABLE [1578-1744] -->
+</div>
+<div class="level2">
+
+</div>
+<div class="plugin_include_content" id="plugin_include__io:basic_ostream:template_inh_members">
+
+<p>
+<br/>
+
+</p>
+<hr />
+<!-- EDIT1 SECTION "basic_ofstream" [1-10] -->
+<h3 class="sectionedit5"><a name="inherited_from_basic_ostream" id="inherited_from_basic_ostream">Inherited from basic_ostream</a></h3>
+<div class="level3">
+
+<p>
+
+See <a href="../basic_ostream/start" class="wikilink1" title="io:basic_ostream:start">basic_ostream</a>
+</p>
+
+</div>
+
+<h4><a name="member_functions1" id="member_functions1">Member functions</a></h4>
+<div class="level4">
+
+</div>
+
+<h5><a name="formatted_input" id="formatted_input">Formatted input</a></h5>
+<div class="level5">
+<div class="table sectionedit6"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <a href="http://www.cppreference.com/wiki/io/basic_ostream/operator_lt_lt" class="wikilink2" title="io:basic_ostream:operator_lt_lt" rel="nofollow"> operator&lt;&lt;</a> </td><td class="col1"> inserts formatted data </td>
+	</tr>
+</table></div>
+<!-- EDIT6 TABLE [123-183] -->
+</div>
+
+<h5><a name="unformatted_input" id="unformatted_input">Unformatted input</a></h5>
+<div class="level5">
+<div class="table sectionedit7"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <a href="../basic_ostream/put" class="wikilink1" title="io:basic_ostream:put">put</a> </td><td class="col1"> inserts a character </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <a href="../basic_ostream/write" class="wikilink1" title="io:basic_ostream:write">write</a> </td><td class="col1"> inserts blocks of characters </td>
+	</tr>
+</table></div>
+<!-- EDIT7 TABLE [208-286] -->
+</div>
+
+<h5><a name="positioning" id="positioning">Positioning</a></h5>
+<div class="level5">
+<div class="table sectionedit8"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <a href="../basic_ostream/tellp" class="wikilink1" title="io:basic_ostream:tellp">tellp</a> </td><td class="col1"> returns the output position indicator </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <a href="../basic_ostream/seekp" class="wikilink1" title="io:basic_ostream:seekp">seekp</a> </td><td class="col1"> sets the output position indicator </td>
+	</tr>
+</table></div>
+<!-- EDIT8 TABLE [305-409] -->
+</div>
+
+<h5><a name="miscellaneous" id="miscellaneous">Miscellaneous</a></h5>
+<div class="level5">
+<div class="table sectionedit9"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <a href="../basic_ostream/flush" class="wikilink1" title="io:basic_ostream:flush">flush</a> </td><td class="col1"> synchronizes with the underlying storage device </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <a href="http://www.cppreference.com/wiki/io/basic_ostream/sentry" class="wikilink2" title="io:basic_ostream:sentry" rel="nofollow">sentry</a> </td><td class="col1"> <a href="http://www.cppreference.com/wiki/io/basic_ostream/todo" class="wikilink2" title="io:basic_ostream:todo" rel="nofollow">todo</a> </td>
+	</tr>
+</table></div>
+<!-- EDIT9 TABLE [430-520] -->
+</div>
+<div class="secedit">
+<form class="button btn_incledit" method="post" action="http://www.cppreference.com/wiki/io/basic_ofstream/doku.php"><div class="no">
+<input type="hidden" name="do" value="edit" /><input type="hidden" name="redirect_id" value="io:basic_ofstream:start" /><input type="hidden" name="id" value="io:basic_ostream:template_inh_members" /><input type="submit" value="Edit (io:basic_ostream:template_inh_members)" class="button" title="io:basic_ostream:template_inh_members"/>
+</div></form>
+</div>
+</div>
+<div class="level2">
+
+</div>
+<div class="level2">
+
+</div>
+<div class="plugin_include_content" id="plugin_include__io:basic_ios:template_inh_members">
+
+<p>
+<br/>
+
+</p>
+<hr />
+
+<h3 class="sectionedit10"><a name="inherited_from_basic_ios" id="inherited_from_basic_ios">Inherited from basic_ios</a></h3>
+<div class="level3">
+
+<p>
+
+See <a href="../basic_ios/start" class="wikilink1" title="io:basic_ios:start">basic_ios</a>
+</p>
+
+</div>
+
+<h4><a name="member_functions2" id="member_functions2">Member functions</a></h4>
+<div class="level4">
+
+</div>
+
+<h5><a name="state_functions" id="state_functions">State functions</a></h5>
+<div class="level5">
+<div class="table sectionedit11"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <a href="../basic_ios/good" class="wikilink1" title="io:basic_ios:good">good</a> </td><td class="col1"> checks if no error has occurred i.e. I/O operations are available </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <a href="../basic_ios/eof" class="wikilink1" title="io:basic_ios:eof">eof</a> </td><td class="col1"> checks if end-of-file has been reached </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <a href="../basic_ios/fail" class="wikilink1" title="io:basic_ios:fail">fail</a> </td><td class="col1"> checks if a recoverable error has occurred </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> <a href="../basic_ios/bad" class="wikilink1" title="io:basic_ios:bad">bad</a> </td><td class="col1"> checks if a non-recoverable error has occurred </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> <a href="../basic_ios/operator_neg" class="wikilink1" title="io:basic_ios:operator_neg"> operator !</a> </td><td class="col1"> checks if an error has occurred (synonym of <a href="../basic_ios/fail" class="wikilink1" title="io:basic_ios:fail">fail</a>) </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> <a href="../basic_ios/operator_bool" class="wikilink1" title="io:basic_ios:operator_bool"> operator bool</a> </td><td class="col1"> checks if no error has occurred (synonym of <a href="../basic_ios/good" class="wikilink1" title="io:basic_ios:good">good</a>) </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> <a href="http://www.cppreference.com/wiki/io/basic_ios/rdstate" class="wikilink2" title="io:basic_ios:rdstate" rel="nofollow">rdstate</a> </td><td class="col1"> returns state flags </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"> <a href="http://www.cppreference.com/wiki/io/basic_ios/setstate" class="wikilink2" title="io:basic_ios:setstate" rel="nofollow">setstate</a> </td><td class="col1"> sets state flags </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"> <a href="../basic_ios/clear" class="wikilink1" title="io:basic_ios:clear">clear</a> </td><td class="col1"> clears error and eof flags </td>
+	</tr>
+</table></div>
+<!-- EDIT11 TABLE [115-668] -->
+</div>
+
+<h5><a name="formatting" id="formatting">Formatting</a></h5>
+<div class="level5">
+<div class="table sectionedit12"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <a href="http://www.cppreference.com/wiki/io/basic_ios/copyfmt" class="wikilink2" title="io:basic_ios:copyfmt" rel="nofollow">copyfmt</a> </td><td class="col1"> copies formatting information </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <a href="../basic_ios/fill" class="wikilink1" title="io:basic_ios:fill">fill</a> </td><td class="col1"> manages the fill character </td>
+	</tr>
+</table></div>
+<!-- EDIT12 TABLE [686-775] -->
+</div>
+
+<h5><a name="miscellaneous1" id="miscellaneous1">Miscellaneous</a></h5>
+<div class="level5">
+<div class="table sectionedit13"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <a href="http://www.cppreference.com/wiki/io/basic_ios/exceptions" class="wikilink2" title="io:basic_ios:exceptions" rel="nofollow">exceptions</a> </td><td class="col1"> manages exception mask </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <a href="http://www.cppreference.com/wiki/io/basic_ios/imbue" class="wikilink2" title="io:basic_ios:imbue" rel="nofollow">imbue</a> </td><td class="col1"> sets the locale </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <a href="http://www.cppreference.com/wiki/io/basic_ios/rdbuf" class="wikilink2" title="io:basic_ios:rdbuf" rel="nofollow">rdbuf</a> </td><td class="col1"> manages associated stream buffer </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> <a href="http://www.cppreference.com/wiki/io/basic_ios/tie" class="wikilink2" title="io:basic_ios:tie" rel="nofollow">tie</a> </td><td class="col1"> manages tied stream </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> <a href="http://www.cppreference.com/wiki/io/basic_ios/narrow" class="wikilink2" title="io:basic_ios:narrow" rel="nofollow">narrow</a> </td><td class="col1"> narrows characters </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> <a href="http://www.cppreference.com/wiki/io/basic_ios/widen" class="wikilink2" title="io:basic_ios:widen" rel="nofollow">widen</a> </td><td class="col1"> widens characters </td>
+	</tr>
+</table></div>
+<!-- EDIT13 TABLE [796-1024] -->
+</div>
+<div class="secedit">
+<form class="button btn_incledit" method="post" action="http://www.cppreference.com/wiki/io/basic_ofstream/doku.php"><div class="no">
+<input type="hidden" name="do" value="edit" /><input type="hidden" name="redirect_id" value="io:basic_ofstream:start" /><input type="hidden" name="id" value="io:basic_ios:template_inh_members" /><input type="submit" value="Edit (io:basic_ios:template_inh_members)" class="button" title="io:basic_ios:template_inh_members"/>
+</div></form>
+</div>
+</div>
+<div class="level2">
+
+</div>
+<div class="level2">
+
+</div>
+<div class="plugin_include_content" id="plugin_include__io:ios_base:template_inh_members">
+
+<p>
+<br/>
+
+</p>
+<hr />
+
+<h3 class="sectionedit14"><a name="inherited_from_ios_base" id="inherited_from_ios_base">Inherited from ios_base</a></h3>
+<div class="level3">
+
+<p>
+
+See <a href="../ios_base/start" class="wikilink1" title="io:ios_base:start">ios_base</a>
+</p>
+
+</div>
+
+<h4><a name="member_functions3" id="member_functions3">Member functions</a></h4>
+<div class="level4">
+
+</div>
+
+<h5><a name="formatting1" id="formatting1">Formatting</a></h5>
+<div class="level5">
+<div class="table sectionedit15"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <a href="../ios_base/flags" class="wikilink1" title="io:ios_base:flags">flags</a> </td><td class="col1"> manages format flags </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <a href="../ios_base/setf" class="wikilink1" title="io:ios_base:setf">setf</a> </td><td class="col1"> sets specific format flag </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <a href="../ios_base/unsetf" class="wikilink1" title="io:ios_base:unsetf">unsetf</a> </td><td class="col1"> clears specific format flag </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> <a href="../ios_base/precision" class="wikilink1" title="io:ios_base:precision">precision</a> </td><td class="col1"> manages decimal precision of floating point operations </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> <a href="../ios_base/width" class="wikilink1" title="io:ios_base:width">width</a> </td><td class="col1"> manages field width </td>
+	</tr>
+</table></div>
+<!-- EDIT15 TABLE [109-342] -->
+</div>
+
+<h5><a name="locales" id="locales">Locales</a></h5>
+<div class="level5">
+<div class="table sectionedit16"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <a href="../ios_base/imbue" class="wikilink1" title="io:ios_base:imbue">imbue</a> </td><td class="col1"> sets locale </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <a href="../ios_base/getloc" class="wikilink1" title="io:ios_base:getloc">getloc</a> </td><td class="col1"> returns current locale </td>
+	</tr>
+</table></div>
+<!-- EDIT16 TABLE [357-424] -->
+</div>
+
+<h5><a name="internal_extensible_array" id="internal_extensible_array">Internal extensible array</a></h5>
+<div class="level5">
+<div class="table sectionedit17"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <a href="../ios_base/xalloc" class="wikilink1" title="io:ios_base:xalloc">xalloc</a> </td><td class="col1"> allocates element of the internal extensible array </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <a href="../ios_base/iword" class="wikilink1" title="io:ios_base:iword">iword</a> </td><td class="col1"> returns reference to specific element of internal extensible array </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <a href="../ios_base/pword" class="wikilink1" title="io:ios_base:pword">pword</a> </td><td class="col1"> returns reference to specific element of internal extensible array </td>
+	</tr>
+</table></div>
+<!-- EDIT17 TABLE [457-690] -->
+</div>
+
+<h5><a name="miscellaneous2" id="miscellaneous2">Miscellaneous</a></h5>
+<div class="level5">
+<div class="table sectionedit18"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <a href="../ios_base/register_callback" class="wikilink1" title="io:ios_base:register_callback">register_callback</a> </td><td class="col1"> registers event callback function </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <a href="../ios_base/sync_with_stdio" class="wikilink1" title="io:ios_base:sync_with_stdio">sync_with_stdio</a> </td><td class="col1"> manages synchronization settings </td>
+	</tr>
+</table></div>
+<!-- EDIT18 TABLE [711-831] -->
+</div>
+
+<h4><a name="member_types1" id="member_types1">Member types</a></h4>
+<div class="level4">
+<div class="table sectionedit19"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Member type </th><th class="col1"> Definition </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <a href="http://www.cppreference.com/wiki/io/ios_base/event" class="wikilink2" title="io:ios_base:event" rel="nofollow">event</a> </td><td class="col1"> specifies event type </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <a href="http://www.cppreference.com/wiki/io/ios_base/event_callback" class="wikilink2" title="io:ios_base:event_callback" rel="nofollow">event_callback</a> </td><td class="col1"> callback function type </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> <a href="http://www.cppreference.com/wiki/io/ios_base/fmtflags" class="wikilink2" title="io:ios_base:fmtflags" rel="nofollow">fmtflags</a> </td><td class="col1"> formatting flags </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> <a href="../ios_base/iostate" class="wikilink1" title="io:ios_base:iostate">iostate</a> </td><td class="col1"> stream state </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> <a href="../ios_base/openmode" class="wikilink1" title="io:ios_base:openmode">openmode</a> </td><td class="col1"> opening mode </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> <a href="http://www.cppreference.com/wiki/io/ios_base/seekdir" class="wikilink2" title="io:ios_base:seekdir" rel="nofollow">seekdir</a> </td><td class="col1"> seeking direction </td>
+	</tr>
+</table></div>
+<!-- EDIT19 TABLE [853-1101] -->
+</div>
+
+<h5><a name="member_classes" id="member_classes">Member classes</a></h5>
+<div class="level5">
+<div class="table sectionedit20"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <a href="http://www.cppreference.com/wiki/io/ios_base/failure" class="wikilink2" title="io:ios_base:failure" rel="nofollow">failure</a> </td><td class="col1"> stream exception </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <a href="../ios_base/init" class="wikilink1" title="io:ios_base:init">Init</a> </td><td class="col1"> initializes standard streams </td>
+	</tr>
+</table></div>
+<!-- EDIT20 TABLE [1123-1201] -->
+</div>
+<div class="secedit">
+<form class="button btn_incledit" method="post" action="http://www.cppreference.com/wiki/io/basic_ofstream/doku.php"><div class="no">
+<input type="hidden" name="do" value="edit" /><input type="hidden" name="redirect_id" value="io:basic_ofstream:start" /><input type="hidden" name="id" value="io:ios_base:template_inh_members" /><input type="submit" value="Edit (io:ios_base:template_inh_members)" class="button" title="io:ios_base:template_inh_members"/>
+</div></form>
+</div>
+</div>
+<div class="level2">
+
+</div>
+<!-- EDIT14 SECTION "Inherited from ios_base" [11-1946] -->
+<h3 class="sectionedit21"><a name="see_also" id="see_also">See also</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="../basic_ifstream/start" class="wikilink1" title="io:basic_ifstream:start">basic_ifstream</a>, <a href="../basic_fstream/start" class="wikilink1" title="io:basic_fstream:start">basic_fstream</a>
+
+</p>
+
+</div>
+<!-- EDIT21 SECTION "See also" [1947-] --></div>
+</body>
+</html>

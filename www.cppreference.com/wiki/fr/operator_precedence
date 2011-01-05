@@ -1,0 +1,416 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr"
+ lang="fr" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>fr:operator_precedence</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:58-0700" />
+<meta name="keywords" content="fr,operator_precedence" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/fr/operator_precedence?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=fr" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/fr/operator_precedence" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/fr/operator_precedence" />
+<link rel="canonical" href="operator_precedence" />
+<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='fr';var JSINFO = {"id":"fr:operator_precedence","namespace":"fr"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table des matières</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="operator_precedence#precedence_des_operateurs_c" class="toc">Précédence des opérateurs C++</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="operator_precedence#ordre_d_evaluation_et_effets_de_bords" class="toc">Ordre d&#039;évaluation et effets de bords</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="operator_precedence#surcharge_des_operateurs" class="toc">Surcharge des opérateurs</a></span></div></li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="precedence_des_operateurs_c" id="precedence_des_operateurs_c">Précédence des opérateurs C++</a></h2>
+<div class="level2">
+
+<p>
+
+Les opérateurs en haut de la liste sont évalués en premiers. Les opérateurs à l&#039;intérieur d&#039;un même groupe partagent la même précédence. Tout les opérateurs ont une associativité de gauche à droite sauf exception.
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<th class="col0 centeralign">  Opérateur  </th><th class="col1 centeralign">  Description  </th><th class="col2 centeralign">  Exemple  </th><th class="col3 centeralign">  Surchargeable  </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 centeralign" colspan="4">  <em class="u"><strong>Groupe 1</strong></em> <br/>
+(pas d&#039;associativité)   </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><code>::</code></td><td class="col1">Opérateur de résolution</td><td class="col2">Class::age = 2;</td><td class="col3">NON</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 centeralign" colspan="4">  <em class="u"><strong>Groupe 2</strong></em>  </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><code>()</code></td><td class="col1">Appel de fonction</td><td class="col2">isdigit(&#039;1&#039;)</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><code>()</code></td><td class="col1">Initialisation de membre</td><td class="col2"> c_tor(int x, int y) : _x(x), _y(y*10){};</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><code>[]</code></td><td class="col1">Accès à l&#039;élément d&#039;un tableau</td><td class="col2">array[4] = 2;</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><code>-&gt;</code></td><td class="col1">Accès à un membre depuis un pointeur</td><td class="col2">ptr-&gt;age = 34;</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><code>.</code></td><td class="col1">Accès à un membre depuis un objet</td><td class="col2">obj.age = 34;</td><td class="col3">NON</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><code>++</code></td><td class="col1">Post-incrémentation</td><td class="col2">for( int i = 0; i &lt; 10; i++ ) cout &lt;&lt; i;</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><code>--</code></td><td class="col1">Post-décrémentation</td><td class="col2">for( int i = 10; i &gt; 0; i-- ) cout &lt;&lt; i;</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><code>const_cast</code></td><td class="col1">Transtypage</td><td class="col2">const_cast&lt;type_vers&gt;(type_de);</td><td class="col3">NON</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><code>dynamic_cast</code></td><td class="col1">Transtypage</td><td class="col2">dynamic_cast&lt;type_vers&gt;(type_de);</td><td class="col3">NON</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><code>static_cast</code></td><td class="col1">Transtypage</td><td class="col2">static_cast&lt;type_vers&gt;(type_de);</td><td class="col3">NON</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><code>reinterpret_cast</code></td><td class="col1">Transtypage</td><td class="col2">reinterpret_cast&lt;type_vers&gt;(type_de);</td><td class="col3">NON</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><code>typeid</code></td><td class="col1">Information sur le type</td><td class="col2">cout « typeid(var).name(); <br/>
+cout « typeid(type).name();</td><td class="col3">NON</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0 centeralign" colspan="4">  <strong>Groupe 3</strong><br/>
+(associativité droite-à-gauche)  </td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><code>!</code></td><td class="col1">Négation logique</td><td class="col2">if( !fini ) …</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"><code>not</code></td><td class="col1" colspan="3">Autre notation pour ! </td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"><code>~</code></td><td class="col1">Complément bit à bit</td><td class="col2">drapeaux = ~drapeaux;</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"><code>compl</code></td><td class="col1" colspan="3">Autre notation pour ~ </td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"><code>++</code></td><td class="col1">Pré-incrémentation</td><td class="col2">for( i = 0; i &lt; 10; ++i ) cout &lt;&lt; i;</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row22">
+		<td class="col0"><code>--</code></td><td class="col1">Pré-décrémentation</td><td class="col2">for( i = 10; i &gt; 0; --i ) cout &lt;&lt; i;</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row23">
+		<td class="col0"><code>-</code></td><td class="col1">Moins unaire</td><td class="col2">int i = -1;</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row24">
+		<td class="col0"><code>+</code></td><td class="col1">Plus unaire</td><td class="col2">int i = +1;</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row25">
+		<td class="col0"><code>*</code></td><td class="col1">Déréferenciation</td><td class="col2">int data = *intPtr;</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row26">
+		<td class="col0"><code>&amp;</code></td><td class="col1">Adresse de</td><td class="col2">int *intPtr = &amp;data;</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row27">
+		<td class="col0"><code>new</code></td><td class="col1">Allocation dynamique de mémoire</td><td class="col2">long *pVar = new long; <br/>
+MyClass *ptr = new MyClass(args);</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row28">
+		<td class="col0"><code>new []</code></td><td class="col1">Allocation dynamique de mémoire pour tableau</td><td class="col2">long *array = new long[n];</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row29">
+		<td class="col0"><code>delete</code></td><td class="col1">Désallocation de mémoire</td><td class="col2"> delete pVar;</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row30">
+		<td class="col0"><code>delete []</code></td><td class="col1">Désallocation de mémoire d&#039;un tableau</td><td class="col2"> delete [] array;</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row31">
+		<td class="col0"><code>(type)</code></td><td class="col1">Transtypage vers un type donné</td><td class="col2">int i = (int) floatNum;</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row32">
+		<td class="col0"><code>sizeof</code></td><td class="col1">Taille d&#039;un objet ou d&#039;un type</td><td class="col2">int size = sizeof floatNum; <br/>
+int size = sizeof(float);</td><td class="col3">NON</td>
+	</tr>
+	<tr class="row33">
+		<td class="col0 centeralign" colspan="4">  <strong>Groupe 4</strong>  </td>
+	</tr>
+	<tr class="row34">
+		<td class="col0"><code>-&gt;*</code></td><td class="col1">Accès à un membre pointé depuis un pointeur</td><td class="col2">ptr-&gt;*var = 24;</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row35">
+		<td class="col0"><code>.*</code></td><td class="col1">Accès à un membre pointé</td><td class="col2">obj.*var = 24;</td><td class="col3">NON</td>
+	</tr>
+	<tr class="row36">
+		<td class="col0 centeralign" colspan="4">  <strong>Groupe 5</strong>  </td>
+	</tr>
+	<tr class="row37">
+		<td class="col0"><code>*</code></td><td class="col1">Multiplication</td><td class="col2">int i = 2 * 4;</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row38">
+		<td class="col0"><code>/</code></td><td class="col1">Division</td><td class="col2">float f = 10.0 / 3.0;</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row39">
+		<td class="col0"><code>%</code></td><td class="col1">Modulo</td><td class="col2">int rem = 4 % 3;</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row40">
+		<td class="col0 centeralign" colspan="4">  <strong>Groupe 6</strong>  </td>
+	</tr>
+	<tr class="row41">
+		<td class="col0"><code>+</code></td><td class="col1">Addition</td><td class="col2">int i = 2 + 3;</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row42">
+		<td class="col0"><code>-</code></td><td class="col1">Soustraction</td><td class="col2">int i = 5 - 1;</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row43">
+		<td class="col0 centeralign" colspan="4">  <strong>Groupe 7</strong>  </td>
+	</tr>
+	<tr class="row44">
+		<td class="col0"><code>&lt;&lt;</code></td><td class="col1">Décalage binaire à gauche</td><td class="col2">int drapeaux = 33 &lt;&lt; 1;</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row45">
+		<td class="col0"><code>&gt;&gt;</code></td><td class="col1">Décalage binaire à droite</td><td class="col2">int drapeaux = 33 &gt;&gt; 1;</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row46">
+		<td class="col0 centeralign" colspan="4">  <strong>Groupe 8</strong>  </td>
+	</tr>
+	<tr class="row47">
+		<td class="col0"><code>&lt;</code></td><td class="col1">Comparaison inférieur à</td><td class="col2">if( i &lt; 42 ) …</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row48">
+		<td class="col0"><code>&lt;=</code></td><td class="col1">Comparaison inférieur ou égal à</td><td class="col2">if( i &lt;= 42 ) ...</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row49">
+		<td class="col0"><code>&gt;</code></td><td class="col1">Comparaison supérieur à</td><td class="col2">if( i &gt; 42 ) …</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row50">
+		<td class="col0"><code>&gt;=</code></td><td class="col1">Comparaison supérieur ou égal à</td><td class="col2">if( i &gt;= 42 ) ...</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row51">
+		<td class="col0 centeralign" colspan="4">  <strong>Groupe 9</strong>  </td>
+	</tr>
+	<tr class="row52">
+		<td class="col0"><code>==</code></td><td class="col1">Comparaison égal à</td><td class="col2">if( i == 42 ) ...</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row53">
+		<td class="col0"><code>eq</code></td><td class="col1" colspan="3">Autre notation pour == </td>
+	</tr>
+	<tr class="row54">
+		<td class="col0"><code>!=</code></td><td class="col1">Comparaison non égal à</td><td class="col2">if( i != 42 ) …</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row55">
+		<td class="col0"><code>not_eq</code></td><td class="col1" colspan="3">Autre notation pour != </td>
+	</tr>
+	<tr class="row56">
+		<td class="col0 centeralign" colspan="4">  <strong>Groupe 10</strong>  </td>
+	</tr>
+	<tr class="row57">
+		<td class="col0"><code>&amp;</code></td><td class="col1">ET bit à bit</td><td class="col2">drapeaux = drapeaux &amp; 42;</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row58">
+		<td class="col0"><code>bitand</code></td><td class="col1" colspan="3">Autre notation pour &amp; </td>
+	</tr>
+	<tr class="row59">
+		<td class="col0 centeralign" colspan="4">  <strong>Groupe 11</strong>  </td>
+	</tr>
+	<tr class="row60">
+		<td class="col0"><code>^</code></td><td class="col1">OU exclusif bit à bit (XOR)</td><td class="col2">drapeaux = drapeaux ^ 42;</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row61">
+		<td class="col0"><code>xor</code></td><td class="col1" colspan="3">Autre notation pour ^ </td>
+	</tr>
+	<tr class="row62">
+		<td class="col0 centeralign" colspan="4">  <strong>Groupe 12</strong>  </td>
+	</tr>
+	<tr class="row63">
+		<td class="col0"><code>|</code></td><td class="col1">OU inclusif bit à bit (normal)</td><td class="col2">drapeaux = drapeaux | 42;</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row64">
+		<td class="col0"><code>bitor</code></td><td class="col1" colspan="3">Autre notation pour | </td>
+	</tr>
+	<tr class="row65">
+		<td class="col0 centeralign" colspan="4">  <strong>Groupe 13</strong>  </td>
+	</tr>
+	<tr class="row66">
+		<td class="col0"><code>&amp;&amp;</code></td><td class="col1">ET logique</td><td class="col2">if( conditionA &amp;&amp; conditionB ) …</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row67">
+		<td class="col0"><code>and</code></td><td class="col1" colspan="3">Autre notation pour &amp;&amp; </td>
+	</tr>
+	<tr class="row68">
+		<td class="col0 centeralign" colspan="4">  <strong>Groupe 14</strong>  </td>
+	</tr>
+	<tr class="row69">
+		<td class="col0"><code>||</code></td><td class="col1">OU logique</td><td class="col2">if( conditionA || conditionB ) ...</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row70">
+		<td class="col0"><code>or</code></td><td class="col1" colspan="3">Autre notation pour || </td>
+	</tr>
+	<tr class="row71">
+		<td class="col0 centeralign" colspan="4">  <strong>Groupe 15</strong><br/>
+(associativité droite-à-gauche)  </td>
+	</tr>
+	<tr class="row72">
+		<td class="col0"><code>? :</code></td><td class="col1">Condition ternaire (si-alors-sinon)</td><td class="col2">int i = (a &gt; b) ? a : b;</td><td class="col3">NON</td>
+	</tr>
+	<tr class="row73">
+		<td class="col0 centeralign" colspan="4">  <strong>Groupe 16</strong><br/>
+(associativité droite-à-gauche)  </td>
+	</tr>
+	<tr class="row74">
+		<td class="col0"><code>=</code></td><td class="col1">Opérateur d&#039;assignement</td><td class="col2">int a = b;</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row75">
+		<td class="col0"><code>+=</code></td><td class="col1">Incrémenter et assigner</td><td class="col2">a += 3;</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row76">
+		<td class="col0"><code>-=</code></td><td class="col1">Décrémenter et assigner</td><td class="col2">b -= 4;</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row77">
+		<td class="col0"><code>*=</code></td><td class="col1">Multiplier et assigner</td><td class="col2">a *= 5;</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row78">
+		<td class="col0"><code>/=</code></td><td class="col1">Diviser et assigner</td><td class="col2">a /= 2;</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row79">
+		<td class="col0"><code>%=</code></td><td class="col1">Modulo et assigner</td><td class="col2">a %= 3;</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row80">
+		<td class="col0"><code>&amp;=</code></td><td class="col1">ET bit à bit et assigner</td><td class="col2">drapeaux &amp;= nouveaux_drapeaux;</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row81">
+		<td class="col0"><code>and_eq</code></td><td class="col1" colspan="3">Autre notation pour &amp;= </td>
+	</tr>
+	<tr class="row82">
+		<td class="col0"><code>^=</code></td><td class="col1">OU exclusif bit à bit (XOR) et assigner</td><td class="col2">drapeaux ^= nouveaux_drapeaux;</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row83">
+		<td class="col0"><code>xor_eq</code></td><td class="col1" colspan="3">Autre notation pour ^= </td>
+	</tr>
+	<tr class="row84">
+		<td class="col0"><code>|=</code></td><td class="col1">OU normal bit à bit et assigner</td><td class="col2">drapeaux |= nouveaux_drapeaux;</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row85">
+		<td class="col0"><code>or_eq</code></td><td class="col1" colspan="3">Autre notation pour |= </td>
+	</tr>
+	<tr class="row86">
+		<td class="col0"><code>&lt;&lt;=</code></td><td class="col1">Décalage binaire à gauche et assigner</td><td class="col2">drapeaux &lt;&lt;= 2;</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row87">
+		<td class="col0"><code>&gt;&gt;=</code></td><td class="col1">Décalage binaire à droite et assigner</td><td class="col2">drapeaux &gt;&gt;= 2;</td><td class="col3">OUI</td>
+	</tr>
+	<tr class="row88">
+		<td class="col0 centeralign" colspan="4">  <strong>Groupe 17</strong>  </td>
+	</tr>
+	<tr class="row89">
+		<td class="col0"><code>throw</code></td><td class="col1">Lever une exception</td><td class="col2">throw EClass(“Message”);</td><td class="col3">NON</td>
+	</tr>
+	<tr class="row90">
+		<td class="col0 centeralign" colspan="4">  <strong>Groupe 18</strong>  </td>
+	</tr>
+	<tr class="row91">
+		<td class="col0"><code>,</code></td><td class="col1">Opérateur d&#039;évaluation séquentielle</td><td class="col2">for( i = 0, j = 0; i &lt; 10; i++, j++ ) …</td><td class="col3">OUI</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [273-5295] -->
+</div>
+<!-- EDIT1 SECTION "Précédence des opérateurs C++" [1-5297] -->
+<h2 class="sectionedit3"><a name="ordre_d_evaluation_et_effets_de_bords" id="ordre_d_evaluation_et_effets_de_bords">Ordre d&#039;évaluation et effets de bords</a></h2>
+<div class="level2">
+
+<p>
+
+L&#039;un des aspects importants du C++ qui est relié à la précédence des opérateurs est l&#039;ordre d&#039;évaluation et l&#039;ordre des effets de bords dans les expressions. Dans certaines circonstances, l&#039;ordre dans lequel les choses se passent n&#039;est pas défini. Par exemple, étudions le code suivant:
+</p>
+<pre class="cpp code cpp">    <span class="kw4">float</span> x <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
+    x <span class="sy1">=</span> x <span class="sy2">/</span> <span class="sy2">++</span>x<span class="sy4">;</span></pre>
+<p>
+Il n&#039;est pas garanti que la valeur de x soit constante selon différent compilateurs, parce qu&#039;il n&#039;est pas clairement spécifié si l&#039;ordinateur doit évaluer le coté gauche ou droit de la division en premier. Selon le coté évalué en premier, x peut prendre une valeur différente.
+</p>
+
+<p>
+De plus, alors que ++x est évalué comme x+1, le fait de stocker la nouvelle valeur dans x peut se passer à différents moments, résultant de différentes valeurs pour x.
+</p>
+
+<p>
+Enfin, les expressions comme celle-ci sont horriblement ambiguës et doivent à tout prix être évitées. Dans le doute, séparez une expression ambiguë en plusieurs expressions pour assurer que l&#039;ordre d&#039;évaluation est correct.
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Ordre d'évaluation et effets de bords" [5298-6389] -->
+<h2 class="sectionedit4"><a name="surcharge_des_operateurs" id="surcharge_des_operateurs">Surcharge des opérateurs</a></h2>
+<div class="level2">
+
+<p>
+
+La surcharges des opérateurs peut être très utile et très dangereuse. D&#039;un coté surcharger les opérateurs d&#039;une classe que vous avez crée peut simplifier le code et améliorer sa lisibilité. D&#039;un autre coté vous pouvez surcharger un opérateur d&#039;une telle façon que cela peut masquer un problème ou simplement boguer votre programme. A utiliser avec précaution.
+</p>
+
+<p>
+Il y a deux façon de surcharger un opérateur: par une fonction globale ou un membre de classe.
+</p>
+
+<p>
+Exemple de surcharge par une fonction global:
+
+</p>
+<pre class="cpp code cpp">     ostream <span class="sy3">&amp;</span> operator<span class="sy1">&lt;&lt;</span> <span class="br0">&#40;</span>ostream <span class="sy3">&amp;</span> os, <span class="kw4">const</span> maClasse <span class="sy3">&amp;</span> rhs<span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Mais pour être capable d&#039;atteindre toutes les données privées définies dans une classe vous devez déclarer la fonction globale comme amie dans la definition de la classe.
+</p>
+
+<p>
+Exemple:
+
+</p>
+<pre class="cpp code cpp">     <span class="kw2">class</span> maClasse <span class="br0">&#123;</span>
+&nbsp;
+       <span class="co1">// Donne à la fonction operator&lt;&lt; accès à 'maDonnee'</span>
+       <span class="co1">// (cette déclaration ne doit pas être définie comme publique, privée ou protégée)</span>
+       <span class="kw2">friend</span> ostream <span class="sy3">&amp;</span> operator<span class="sy1">&lt;&lt;</span> <span class="br0">&#40;</span>ostream <span class="sy3">&amp;</span> lhs, <span class="kw4">const</span> maClasse <span class="sy3">&amp;</span> rhs<span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+       <span class="kw2">private</span><span class="sy4">:</span>
+         <span class="kw4">int</span> maDonnee<span class="sy4">;</span>
+     <span class="br0">&#125;</span></pre>
+<p>
+La surcharge par un  membre de classe peut être faite comme cela:
+
+</p>
+<pre class="cpp code cpp">     <span class="kw2">class</span> maClasse <span class="br0">&#123;</span>
+&nbsp;
+       <span class="kw2">public</span><span class="sy4">:</span>
+         <span class="co1">// Le coté gauche de l'opérateur est un pointeur vers 'this'.</span>
+         <span class="kw4">int</span> operator<span class="sy2">+</span> <span class="br0">&#40;</span><span class="kw4">const</span> maClasse <span class="sy3">&amp;</span> rhs<span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+       <span class="kw2">private</span><span class="sy4">:</span>
+         <span class="kw4">int</span> maDonnee<span class="sy4">;</span>
+     <span class="br0">&#125;</span></pre>
+</div>
+<!-- EDIT4 SECTION "Surcharge des opérateurs" [6390-] --></div>
+</body>
+</html>

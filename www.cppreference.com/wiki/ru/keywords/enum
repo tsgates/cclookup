@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru"
+ lang="ru" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>ru:keywords:enum</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:12-0700" />
+<meta name="keywords" content="ru,keywords,enum" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/ru/keywords/enum?do=index" title="Все страницы" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=ru:keywords" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/ru/keywords/enum" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/ru/keywords/enum" />
+<link rel="canonical" href="enum" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='ru:keywords';var JSINFO = {"id":"ru:keywords:enum","namespace":"ru:keywords"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="enum" id="enum">enum</a></h1>
+<div class="level1">
+
+<p>
+Синтаксис:
+</p>
+<pre class="cpp code cpp"><span class="kw2">enum</span> name <span class="br0">&#123;</span>name<span class="sy2">-</span>list<span class="br0">&#125;</span> var<span class="sy2">-</span>list<span class="sy4">;</span></pre>
+<p>
+
+Ключевое слово enum используется для создания перечисляемого типа name, состоящего из элементов name-list&#039;а. Аргумент var-list необязателен, он используется для создания экземпляров данного типа сразу после объявления. Например, данный код создает перечислимый тип для цветов:
+</p>
+<pre class="cpp code cpp">     <span class="kw2">enum</span> ColorT <span class="br0">&#123;</span>red, orange, yellow, green, blue, indigo, violet<span class="br0">&#125;</span><span class="sy4">;</span>
+     ...
+     <span class="me1">ColorT</span> c1 <span class="sy1">=</span> indigo<span class="sy4">;</span>
+     <span class="kw1">if</span><span class="br0">&#40;</span> c1 <span class="sy1">==</span> indigo <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+       <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;c1 is indigo&quot;</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+     <span class="br0">&#125;</span></pre>
+<p>
+
+Целью перечисления в предыдущем примере является определение нескольких новых констант: red, orange, yellow, и т.д. По умолчанию, данным константам соответствует последовательность целочисленных значений, начинающаяся с нуля. Однако, вы можете изменить значения этих констант, как показано ниже:
+</p>
+<pre class="cpp code cpp">     <span class="kw2">enum</span> ColorT <span class="br0">&#123;</span> red <span class="sy1">=</span> <span class="nu0">10</span>, blue <span class="sy1">=</span> <span class="nu0">15</span>, green <span class="br0">&#125;</span><span class="sy4">;</span>
+     ...
+     <span class="me1">ColorT</span> c <span class="sy1">=</span> green<span class="sy4">;</span>
+     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;c is &quot;</span> <span class="sy1">&lt;&lt;</span> c <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
+<p>
+
+При выполнении данного кода на экране появится:
+</p>
+<pre class="cpp code cpp">     c is <span class="nu0">16</span></pre>
+<p>
+
+Учтите, что все вышеописанные примеры будут работать только с компиляторами C++. При работе с обычным C, вам придется писать ключевое слово enum каждый раз, когда вы создаете экземпляр перечисляемого типа:
+</p>
+<pre class="cpp code cpp">     <span class="kw2">enum</span> ColorT <span class="br0">&#123;</span> red <span class="sy1">=</span> <span class="nu0">10</span>, blue <span class="sy1">=</span> <span class="nu0">15</span>, green <span class="br0">&#125;</span><span class="sy4">;</span>
+     ...
+     <span class="kw2">enum</span> ColorT c <span class="sy1">=</span> green<span class="sy4">;</span>   <span class="coMULTI">/* обратите внимание на дополнительное ключевое слово enum */</span>
+     <span class="kw3">printf</span><span class="br0">&#40;</span> <span class="st0">&quot;c is %d<span class="es1">\n</span>&quot;</span>, c <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+
+Есть и другой способ - добавить typedef, чтобы уравнять C и C++:
+</p>
+<pre class="cpp code cpp">     <span class="kw4">typedef</span> <span class="kw2">enum</span> ColorT <span class="br0">&#123;</span> red <span class="sy1">=</span> <span class="nu0">10</span>, blue <span class="sy1">=</span> <span class="nu0">15</span>, green <span class="br0">&#125;</span> ColorT<span class="sy4">;</span>
+     ...
+     <span class="me1">ColorT</span> c <span class="sy1">=</span> green<span class="sy4">;</span>   <span class="coMULTI">/* ключевое слово enum больше не требуется */</span>
+     <span class="kw3">printf</span><span class="br0">&#40;</span> <span class="st0">&quot;c is %d<span class="es1">\n</span>&quot;</span>, c <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+</div>
+</div>
+</body>
+</html>

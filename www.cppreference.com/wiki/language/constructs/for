@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>language:constructs:for</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="noindex,nofollow" />
+<meta name="date" content="2010-11-16T13:58:36-0800" />
+<meta name="keywords" content="language,constructs,for" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/language/constructs/for?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=language:constructs" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/language/constructs/for" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/language/constructs/for" />
+<link rel="canonical" href="for" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='language:constructs';var JSINFO = {"id":"language:constructs:for","namespace":"language:constructs"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="for#for_loop" class="toc">for loop</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="for#syntax" class="toc">Syntax</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="for#explanation" class="toc">Explanation</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="for#example" class="toc">Example</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="for_loop" id="for_loop">for loop</a></h2>
+<div class="level2">
+
+<p>
+
+Executes a loop.
+</p>
+
+<p>
+Used as a more readable equivalent of <a href="while" class="wikilink1" title="language:constructs:while"> while loop</a>.
+</p>
+
+</div>
+<!-- EDIT1 SECTION "for loop" [1-101] -->
+<h3 class="sectionedit2"><a name="syntax" id="syntax">Syntax</a></h3>
+<div class="level3">
+<div class="table sectionedit3"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <code><strong>for (</strong></code> <sub><em>init_expression</em></sub> <code><strong>;</strong></code> <sub><em>cond_expression</em></sub> <code><strong>;</strong></code> <sub><em>iteration_expression</em></sub> <code><strong>)</strong></code> <sub><em>loop_statement</em></sub> </td>
+	</tr>
+</table></div>
+<!-- EDIT3 TABLE [118-293] -->
+</div>
+<!-- EDIT2 SECTION "Syntax" [102-294] -->
+<h3 class="sectionedit4"><a name="explanation" id="explanation">Explanation</a></h3>
+<div class="level3">
+
+<p>
+
+The above syntax produces code equivalent to:
+
+</p>
+<div class="table sectionedit5"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <strong><code>{<br/>
+   </code></strong> <sub><em>init_expression</em></sub> <code><strong>;<br/>
+    while (</strong></code> <sub><em>cond_expression</em></sub> <code><strong>) {<br/>
+        </strong></code> <sub><em>loop_statement</em></sub> <code><strong><br/>
+        </strong></code> <sub><em>iteration_expression</em></sub> <code><strong>;<br/>
+    }<br/>
+}</strong></code> </td>
+	</tr>
+</table></div>
+<!-- EDIT5 TABLE [363-626] -->
+<p>
+
+The <code>init_expression</code> is executed before the execution of the loop. The <code>cond_expression</code> shall evaluate to value, convertible to <code>bool</code>. It is evaluated before each iteration of the loop. The loop continues only if its value is <code>true</code>. The <code>loop_statement</code> is executed on each iteration, after which <code>iteration_expression</code> is executed.
+</p>
+
+</div>
+<!-- EDIT4 SECTION "Explanation" [295-977] -->
+<h3 class="sectionedit6"><a name="example" id="example">Example</a></h3>
+<div class="level3">
+<pre class="cpp code cpp"><span class="co2">#include &lt;iostream&gt;</span>
+&nbsp;
+<span class="kw4">int</span> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <span class="kw1">for</span> <span class="br0">&#40;</span><span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="sy4">;</span> i<span class="sy2">++</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> i <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; &quot;</span><span class="sy4">;</span>
+    <span class="br0">&#125;</span>
+&nbsp;
+    std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+&nbsp;
+    <span class="kw1">for</span> <span class="br0">&#40;</span><span class="kw4">int</span> j <span class="sy1">=</span> <span class="nu0">2</span><span class="sy4">;</span> j <span class="sy1">&lt;</span> <span class="nu0">9</span><span class="sy4">;</span> j <span class="sy1">=</span> j <span class="sy2">+</span> <span class="nu0">2</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> j <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; &quot;</span><span class="sy4">;</span>
+    <span class="br0">&#125;</span>
+&nbsp;
+    <span class="kw1">return</span> <span class="nu0">0</span><span class="sy4">;</span>
+<span class="br0">&#125;</span></pre>
+<p>
+Output:
+
+</p>
+<pre class="cpp code cpp"><span class="nu0">0</span> <span class="nu0">1</span> <span class="nu0">2</span> <span class="nu0">3</span> <span class="nu0">4</span> <span class="nu0">5</span> <span class="nu0">6</span> <span class="nu0">7</span> <span class="nu0">8</span> <span class="nu0">9</span>
+<span class="nu0">2</span> <span class="nu0">4</span> <span class="nu0">6</span> <span class="nu0">8</span></pre>
+</div>
+<!-- EDIT6 SECTION "Example" [978-] --></div>
+</body>
+</html>

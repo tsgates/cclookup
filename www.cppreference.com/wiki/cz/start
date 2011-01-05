@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cz"
+ lang="cz" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>cz:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-11-08T14:33:05-0800" />
+<meta name="keywords" content="cz,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/cz/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=cz" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/cz/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/cz/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='cz';var JSINFO = {"id":"cz:start","namespace":"cz"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="reference_jazyka_c" id="reference_jazyka_c">Reference jazyka C++</a></h2>
+<div class="level2">
+<table class="columns-plugin" style="width:100%">
+<tr><td class="first" style="width:50%;vertical-align:top;">
+
+<p>
+<strong>Hlavní témata</strong>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="about/faq" class="wikilink1" title="cz:about:faq">FAQ (často kladené otázky)</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="preprocessor/start" class="wikilink1" title="cz:preprocessor:start">Příkazy pre-procesoru</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/cz/operator_precedence" class="wikilink2" title="cz:operator_precedence" rel="nofollow">Priority operátorů</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="escape_sequences" class="wikilink1" title="cz:escape_sequences">Escape sekvence</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="ascii" class="wikilink1" title="cz:ascii">ASCII Znaky</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/cz/data_types" class="wikilink2" title="cz:data_types" rel="nofollow">Datové typy</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/cz/keywords/start" class="wikilink2" title="cz:keywords:start" rel="nofollow">Klíčová slova</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/cz/header_files/start" class="wikilink2" title="cz:header_files:start" rel="nofollow">Hlavičkové soubory</a></div>
+</li>
+</ul>
+
+<p>
+
+<strong>Standardní knihovna jazyka C</strong>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="c/start" class="wikilink1" title="cz:c:start"> Přehled</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="io/c/start" class="wikilink1" title="cz:io:c:start"> Standardní C I/O</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="string/c/start" class="wikilink1" title="cz:string:c:start"> Standardní C řetězce &amp; znaky</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="c/math/start" class="wikilink1" title="cz:numeric:c:start"> Standardní C matematika</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="chrono/c/start" class="wikilink1" title="cz:chrono:c:start"> Standardní C čas &amp; datum</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="memory/c/start" class="wikilink1" title="cz:memory:c:start"> Standardní C pamět</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="c/other/start" class="wikilink1" title="cz:c:other:start">Ostatní standardní C funkce</a></div>
+</li>
+</ul>
+</td><td class="last">
+
+<p>
+<strong>C++ obecně</strong>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/cz/string/start" class="wikilink2" title="cz:string:start" rel="nofollow">C++ Řetězce</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/cz/io/start" class="wikilink2" title="cz:io:start" rel="nofollow">C++ I/O (vstupně-výstupní funkce)</a></div>
+<ul>
+<li class="level2"><div class="li"> <a href="http://www.cppreference.com/wiki/cz/io/sstream/start" class="wikilink2" title="cz:io:sstream:start" rel="nofollow">C++ Řetězcové proudy</a></div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/cz/exception/start" class="wikilink2" title="cz:exception:start" rel="nofollow">C++ Výjimky</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/cz/complex/start" class="wikilink2" title="cz:complex:start" rel="nofollow">Komplexní čísla</a></div>
+</li>
+</ul>
+
+<p>
+
+<strong>C++ Standard Template Library (STL)</strong>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/cz/container/start" class="wikilink2" title="cz:container:start" rel="nofollow">Přehled</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/cz/algorithm/start" class="wikilink2" title="cz:algorithm:start" rel="nofollow">C++ Algoritmy</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/cz/container/vector/start" class="wikilink2" title="cz:container:vector:start" rel="nofollow">C++ Vektory</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/cz/container/deque/start" class="wikilink2" title="cz:container:deque:start" rel="nofollow">C++ Dvojitě ukončené fronty</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/cz/container/list/start" class="wikilink2" title="cz:container:list:start" rel="nofollow">C++ Listy</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="stl/priority_queue/start" class="wikilink1" title="cz:container:priority_queue:start">C++ Prioritní fronty</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/cz/container/queue/start" class="wikilink2" title="cz:container:queue:start" rel="nofollow">C++ Fronty (Queues)</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="stl/stack/start" class="wikilink1" title="cz:container:stack:start">C++ Zásobník (Stacks)</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="stl/set/start" class="wikilink1" title="cz:container:set:start">C++ Sety (Sets)</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/cz/container/multiset/start" class="wikilink2" title="cz:container:multiset:start" rel="nofollow">C++ Rozsáhlejší sety (Multisets)</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/cz/container/map/start" class="wikilink2" title="cz:container:map:start" rel="nofollow">C++ Mapy (Maps)</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/cz/container/multimap/start" class="wikilink2" title="cz:container:multimap:start" rel="nofollow">C++ Rozsáhlejší mapy (Multimaps)</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/cz/container/bitset/start" class="wikilink2" title="cz:container:bitset:start" rel="nofollow">C++ Bitsety (Bitsets)</a></div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/cz/stl/iterators" class="wikilink2" title="cz:stl:iterators" rel="nofollow">Iterátory</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/cz/stl/functional/start" class="wikilink2" title="cz:stl:functional:start" rel="nofollow">Funkce objektů/adaptérů</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="stl/utility/start" class="wikilink1" title="cz:stl:utility:start">Základní nástroje</a></div>
+</li>
+</ul>
+</td></tr></table>
+
+</div>
+</div>
+</body>
+</html>

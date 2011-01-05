@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de"
+ lang="de" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>de:preprocessor:sharp</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:26-0700" />
+<meta name="keywords" content="de,preprocessor,sharp" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/de/preprocessor/sharp?do=index" title="Übersicht" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=de:preprocessor" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/de/preprocessor/sharp" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/de/preprocessor/sharp" />
+<link rel="canonical" href="sharp" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='de:preprocessor';var JSINFO = {"id":"de:preprocessor:sharp","namespace":"de:preprocessor"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="und" id="und"># und ##</a></h2>
+<div class="level2">
+
+<p>
+
+Die # und ## Präprozessor-Operatoren werden gemeinsam mit der #define-Direktive benutzt.
+
+</p>
+<ul>
+<li class="level1"><div class="li"> Die Benutzung von # führt dazu, dass das erste Argument nach dem # als Zeichenkette in Anführungszeichen zurückgegeben wird.</div>
+</li>
+<li class="level1"><div class="li"> Die Benutzung von ## führt dazu, dass die beiden Argumente vor und nach dem ## aneinandergehängt werden.</div>
+</li>
+</ul>
+
+<p>
+
+Zum Beispiel bewirkt der Befehl
+
+</p>
+<pre class="cpp code cpp">     <span class="co2">#define to_string( s ) # s</span></pre>
+<p>
+
+dass der Compiler diesen Befehl:
+
+</p>
+<pre class="cpp code cpp">     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> to_string<span class="br0">&#40;</span> Hello World<span class="sy3">!</span> <span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
+<p>
+
+zu folgendem umwandelt:
+
+</p>
+<pre class="cpp code cpp">     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Hello World!&quot;</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
+<p>
+
+Es folgt ein Beispiel für den ##-Befehl:
+
+</p>
+<pre class="cpp code cpp">     <span class="co2">#define concatenate( a, b ) a ## b</span>
+     <span class="co1">//...</span>
+     <span class="kw4">int</span> xy <span class="sy1">=</span> <span class="nu0">10</span><span class="sy4">;</span>
+     <span class="co1">//...</span></pre>
+<p>
+
+Obenstehender Befehl macht aus
+
+</p>
+<pre class="cpp code cpp">     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> concatenate<span class="br0">&#40;</span> x, y <span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
+<p>
+
+folgenden Code:
+
+</p>
+<pre class="cpp code cpp">     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> xy <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn"
+ lang="cn" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>cn:container:vector:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:54-0700" />
+<meta name="keywords" content="cn,container,vector,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/cn/container/vector/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=cn:container:vector" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/cn/container/vector/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/cn/container/vector/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='cn:container:vector';var JSINFO = {"id":"cn:container:vector:start","namespace":"cn:container:vector"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="c_vectors" id="c_vectors">C++ Vectors</a></h2>
+<div class="level2">
+
+<p>
+
+Vectors contain contiguous elements stored as an array. 
+</p>
+
+<p>
+Vectors 像数组一样来存储一组连续的元素。
+</p>
+
+<p>
+Accessing members of a vector can be done in <a href="../../../complexity" class="wikilink1" title="complexity">constant time</a>, appending
+elements to a vector can be done in <a href="../../../complexity" class="wikilink1" title="complexity">amortized constant time</a>, whereas locating a
+specific value or inserting elements into the vector takes <a href="../../../complexity" class="wikilink1" title="complexity">linear time</a>.
+</p>
+
+<p>
+访问 vector 中的元素可以在 <a href="../../../complexity" class="wikilink1" title="complexity">constant time</a> 内完成， 向 vector 追加元素也可以在 <a href="../../../complexity" class="wikilink1" title="complexity">constant time</a> 内完成，而定位一个特殊值元素或向
+vector 中插入元素将要花费 <a href="../../../complexity" class="wikilink1" title="complexity">linear time</a>。
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="vector_constructors" class="wikilink1" title="cn:container:vector:vector_constructors">Constructors</a></td><td class="col1">create vectors and initialize them with some data（创建 vectors，并使用数据初始化）</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="vector_operators" class="wikilink1" title="cn:container:vector:vector_operators">Operators</a></td><td class="col1">compare, assign, and access elements of a vector（vector 元素的比较，赋值，和获取）</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="assign" class="wikilink1" title="cn:container:vector:assign">assign</a></td><td class="col1">assign elements to a vector（给 vector 添加元素）</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/container/vector/at" class="wikilink2" title="cn:container:vector:at" rel="nofollow">at</a></td><td class="col1">return a reference to an element at a specific location（返回在特定位置的元素引用）</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/container/vector/back" class="wikilink2" title="cn:container:vector:back" rel="nofollow">back</a></td><td class="col1">returns a reference to last element of a vector（返回 vector 上一个元素的引用）</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/container/vector/begin" class="wikilink2" title="cn:container:vector:begin" rel="nofollow">begin</a></td><td class="col1">returns an iterator to the beginning of the vector(返回指在 vector 头的反向迭代器)</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/container/vector/capacity" class="wikilink2" title="cn:container:vector:capacity" rel="nofollow">capacity</a></td><td class="col1">returns the number of elements that the vector can hold（返回 vector 可以容纳的元素数量）</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/container/vector/clear" class="wikilink2" title="cn:container:vector:clear" rel="nofollow">clear</a></td><td class="col1">removes all elements from the vector（（删除 vector 中的所有元素））</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/container/vector/empty" class="wikilink2" title="cn:container:vector:empty" rel="nofollow">empty</a></td><td class="col1">true if the vector has no elements（如果 vector 中没有元素，返回值为 true）</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/container/vector/end" class="wikilink2" title="cn:container:vector:end" rel="nofollow">end</a></td><td class="col1">returns an iterator just past the last element of a vector（返回 vector 最后一个元素的引用）</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/container/vector/erase" class="wikilink2" title="cn:container:vector:erase" rel="nofollow">erase</a></td><td class="col1">removes elements from a vector（删除 vector 中的元素）</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/container/vector/front" class="wikilink2" title="cn:container:vector:front" rel="nofollow">front</a></td><td class="col1">returns a reference to the first element of a vector（返回 vector 第一个元素的引用）</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/container/vector/insert" class="wikilink2" title="cn:container:vector:insert" rel="nofollow">insert</a></td><td class="col1">inserts elements into the vector（向 vector 中插入元素）</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/container/vector/max_size" class="wikilink2" title="cn:container:vector:max_size" rel="nofollow">max_size</a></td><td class="col1">returns the maximum number of elements that the vector can hold（返回 vector 可以容纳的最大元素数量）</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/container/vector/pop_back" class="wikilink2" title="cn:container:vector:pop_back" rel="nofollow">pop_back</a></td><td class="col1">removes the last element of a vector（删除 vector 的最后一个元素）</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><a href="push_back" class="wikilink1" title="cn:container:vector:push_back">push_back</a></td><td class="col1">add an element to the end of the vector（向 vector 尾部追加一个元素）</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/container/vector/rbegin" class="wikilink2" title="cn:container:vector:rbegin" rel="nofollow">rbegin</a></td><td class="col1">returns a reverse_iterator to the end of the vector（返回指在 vector 尾的反向迭代器）</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/container/vector/rend" class="wikilink2" title="cn:container:vector:rend" rel="nofollow">rend</a></td><td class="col1">returns a reverse_iterator just past the beginning of the vector（返回指在 vector 头的反向迭代器）</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"><a href="reserve" class="wikilink1" title="cn:container:vector:reserve">reserve</a></td><td class="col1">sets the minimum capacity of the vector（设置 vector 的可容纳量的最小值）</td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/container/vector/resize" class="wikilink2" title="cn:container:vector:resize" rel="nofollow">resize</a></td><td class="col1">change the size of the vector（改变 vector 的大小）</td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/container/vector/size" class="wikilink2" title="cn:container:vector:size" rel="nofollow">size</a></td><td class="col1">returns the number of items in the vector(返回 vector 中元素的个数)</td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cn/container/vector/swap" class="wikilink2" title="cn:container:vector:swap" rel="nofollow">swap</a></td><td class="col1">swap the contents of this vector with another(一个 vector 与另一个 vector 交换所有内容)</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [672-2943] -->
+</div>
+<!-- EDIT1 SECTION "C++ Vectors" [1-2944] -->
+<h3 class="sectionedit3"><a name="note注意" id="note注意">Note:(注意：)</a></h3>
+<div class="level3">
+
+<p>
+
+Note that a boolean vector (vector&lt;bool&gt;) is a specialization of the vector template that is designed to use less memory.  A normal boolean variable usually uses 1-4 bytes of memory, but a boolean vector should use only one bit per boolean value.
+</p>
+
+<p>
+需要注意的是，boolean 类型的 vector 是一个特殊的 vector 模板，是一种更少内存使用的设计。正常情况下，一个 boolean 变量要用到 1-4 bytes 内存， 但是在 boolean 类型的 vector 中，每一个 boolean 值只使用 1 bit 内存。
+
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Note:(注意：)" [2945-] --></div>
+</body>
+</html>

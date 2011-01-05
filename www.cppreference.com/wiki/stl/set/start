@@ -4,100 +4,219 @@
  lang="en" dir="ltr">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>stl:set:start</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
+  <title>container:set:start</title>
+<meta name="generator" content="DokuWiki" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2009-01-14T12:14:25-0800" />
-<meta name="keywords" content="stl,set,start" />
+<meta name="date" content="2010-11-11T13:37:58-0800" />
+<meta name="keywords" content="container,set,start" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/stl/set/start?do=index" title="Index" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/container/set/start?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
-<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=stl:set" />
-<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/stl/set/start" />
-<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/stl/set/start" />
-<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=container:set" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/container/set/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/container/set/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='container:set';var JSINFO = {"id":"container:set:start","namespace":"container:set"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
 
-
-
-<h1><a name="c_sets" id="c_sets">C++ Sets</a></h1>
-<div class="level1">
+<h2 class="sectionedit1"><a name="set" id="set">set</a></h2>
+<div class="level2">
+<pre class="cpp code cpp"><span class="co2">#include &lt;set&gt;</span>
+&nbsp;
+<span class="kw2">template</span><span class="sy1">&lt;</span>
+    <span class="kw2">class</span> Key,
+    <span class="kw2">class</span> Compare <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">less</span><span class="sy1">&lt;</span> Key <span class="sy1">&gt;</span>,
+    <span class="kw2">class</span> Allocator <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">allocator</span><span class="sy1">&lt;</span> Key <span class="sy1">&gt;</span>
+<span class="sy1">&gt;</span> <span class="kw2">class</span> set<span class="sy4">;</span></pre>
+<p>
+Set is an associative container that contains a sorted set of unique objects of type <code>Key</code>. Sorting is done using the key comparison function <code>Compare</code>.
+</p>
 
 <p>
-
-The C++ Set is an associative STL container that contains a sorted set of unique
-objects.
-
+<a href="../../todo" class="wikilink1" title="todo">todo</a>
 </p>
-<table class="inline">
+
+</div>
+
+<h4><a name="member_types" id="member_types">Member types</a></h4>
+<div class="level4">
+<div class="table sectionedit2"><table class="inline">
 	<tr class="row0">
-		<td class="col0"><a href="set_constructors" class="wikilink1" title="stl:set:set_constructors">Constructors</a></td><td class="col1">default methods to allocate, copy, and deallocate sets</td>
+		<th class="col0">Member type </th><th class="col1"> Definition </th>
 	</tr>
 	<tr class="row1">
-		<td class="col0"><a href="set_operators" class="wikilink1" title="stl:set:set_operators">Operators</a></td><td class="col1">assign and compare sets</td>
+		<td class="col0"> <code>key_type</code> </td><td class="col1"> <code>Key</code> </td>
 	</tr>
 	<tr class="row2">
-		<td class="col0"><a href="begin" class="wikilink1" title="stl:set:begin">begin</a></td><td class="col1">returns an iterator to the beginning of the set</td>
+		<td class="col0"> <code>value_type</code> </td><td class="col1"> <code>Key</code> </td>
 	</tr>
 	<tr class="row3">
-		<td class="col0"><a href="clear" class="wikilink1" title="stl:set:clear">clear</a></td><td class="col1">removes all elements from the set</td>
+		<td class="col0"> <code>size_type</code> </td><td class="col1"> Unsigned integral type (usually <code>size_t</code>) </td>
 	</tr>
 	<tr class="row4">
-		<td class="col0"><a href="count" class="wikilink1" title="stl:set:count">count</a></td><td class="col1">returns the number of elements matching a certain key</td>
+		<td class="col0"> <code>difference_type</code> </td><td class="col1"> Signed integral type (usually <code>ptrdiff_t</code>) </td>
 	</tr>
 	<tr class="row5">
-		<td class="col0"><a href="empty" class="wikilink1" title="stl:set:empty">empty</a></td><td class="col1">true if the set has no elements</td>
+		<td class="col0"> <code>key_compare</code> </td><td class="col1"> <code>Compare</code> </td>
 	</tr>
 	<tr class="row6">
-		<td class="col0"><a href="end" class="wikilink1" title="stl:set:end">end</a></td><td class="col1">returns an iterator just past the last element of a set</td>
+		<td class="col0"> <code>value_compare</code> </td><td class="col1"> <code>Compare</code> </td>
 	</tr>
 	<tr class="row7">
-		<td class="col0"><a href="equal_range" class="wikilink1" title="stl:set:equal_range">equal_range</a></td><td class="col1">returns iterators to the first and just past the last elements matching a specific key</td>
+		<td class="col0"> <code>allocator_type</code> </td><td class="col1"> <code>Allocator</code> </td>
 	</tr>
 	<tr class="row8">
-		<td class="col0"><a href="erase" class="wikilink1" title="stl:set:erase">erase</a></td><td class="col1">removes elements from a set</td>
+		<td class="col0"> <code>reference</code> </td><td class="col1"> <code>Allocator::reference</code> </td>
 	</tr>
 	<tr class="row9">
-		<td class="col0"><a href="find" class="wikilink1" title="stl:set:find">find</a></td><td class="col1">returns an iterator to specific elements</td>
+		<td class="col0"> <code>const_reference</code> </td><td class="col1"> <code>Allocator::const_reference</code> </td>
 	</tr>
 	<tr class="row10">
-		<td class="col0"><a href="insert" class="wikilink1" title="stl:set:insert">insert</a></td><td class="col1">insert items into a set</td>
+		<td class="col0"> <code>pointer</code> </td><td class="col1"> <code>Allocator::pointer</code> </td>
 	</tr>
 	<tr class="row11">
-		<td class="col0"><a href="key_comp" class="wikilink1" title="stl:set:key_comp">key_comp</a></td><td class="col1">returns the function that compares keys</td>
+		<td class="col0"> <code>const_pointer</code> </td><td class="col1"> <code>Allocator::const_pointer</code> </td>
 	</tr>
 	<tr class="row12">
-		<td class="col0"><a href="lower_bound" class="wikilink1" title="stl:set:lower_bound">lower_bound</a></td><td class="col1">returns an iterator to the first element greater than or equal to a certain value</td>
+		<td class="col0"> <code>iterator</code> </td><td class="col1"> Bidirectional iterator </td>
 	</tr>
 	<tr class="row13">
-		<td class="col0"><a href="max_size" class="wikilink1" title="stl:set:max_size">max_size</a></td><td class="col1">returns the maximum number of elements that the set can hold</td>
+		<td class="col0"> <code>const_iterator</code> </td><td class="col1"> Constant bidirectional iterator </td>
 	</tr>
 	<tr class="row14">
-		<td class="col0"><a href="rbegin" class="wikilink1" title="stl:set:rbegin">rbegin</a></td><td class="col1">returns a reverse_iterator to the end of the set</td>
+		<td class="col0"> <code>reverse_iterator</code> </td><td class="col1"> <code>reverse_iterator&lt;iterator&gt;</code> </td>
 	</tr>
 	<tr class="row15">
-		<td class="col0"><a href="rend" class="wikilink1" title="stl:set:rend">rend</a></td><td class="col1">returns a reverse_iterator to the beginning of the set</td>
+		<td class="col0"> <code>const_reverse_iterator</code> </td><td class="col1"> <code>reverse_iterator&lt;const_iterator&gt;</code> </td>
 	</tr>
-	<tr class="row16">
-		<td class="col0"><a href="size" class="wikilink1" title="stl:set:size">size</a></td><td class="col1">returns the number of items in the set</td>
-	</tr>
-	<tr class="row17">
-		<td class="col0"><a href="swap" class="wikilink1" title="stl:set:swap">swap</a></td><td class="col1">swap the contents of this set with another</td>
-	</tr>
-	<tr class="row18">
-		<td class="col0"><a href="upper_bound" class="wikilink1" title="stl:set:upper_bound">upper_bound</a></td><td class="col1">returns an iterator to the first element greater than a certain value</td>
-	</tr>
-	<tr class="row19">
-		<td class="col0"><a href="value_comp" class="wikilink1" title="stl:set:value_comp">value_comp</a></td><td class="col1">returns the function that compares values</td>
-	</tr>
-</table>
+</table></div>
+<!-- EDIT2 TABLE [365-1115] -->
+</div>
 
+<h4><a name="member_functions" id="member_functions">Member functions</a></h4>
+<div class="level4">
+<div class="table sectionedit3"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="set_constructors" class="wikilink1" title="container:set:set_constructors">(constructor)</a></td><td class="col1">default methods to allocate, copy, and deallocate sets</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="set_operators" class="wikilink1" title="container:set:set_operators">Operators</a></td><td class="col1">assign and compare sets</td>
+	</tr>
+</table></div>
+<!-- EDIT3 TABLE [1141-1286] -->
+</div>
+
+<h5><a name="iterators" id="iterators">Iterators</a></h5>
+<div class="level5">
+<div class="table sectionedit4"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <a href="begin" class="wikilink1" title="container:set:begin"> begin, cbegin</a> </td><td class="col1"> returns an iterator to the beginning </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <a href="end" class="wikilink1" title="container:set:end"> end, cend</a> </td><td class="col1"> returns an iterator to the end </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <a href="rbegin" class="wikilink1" title="container:set:rbegin"> rbegin, crbegin</a> </td><td class="col1"> returns a <code>reverse_iterator</code> to the beginning of reversed container </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> <a href="rend" class="wikilink1" title="container:set:rend"> rend, crend</a> </td><td class="col1"> returns a <code>reverse_iterator</code> to the end of reversed container </td>
+	</tr>
+</table></div>
+<!-- EDIT4 TABLE [1303-1626] -->
+</div>
+
+<h5><a name="capacity" id="capacity">Capacity</a></h5>
+<div class="level5">
+<div class="table sectionedit5"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <a href="empty" class="wikilink1" title="container:set:empty">empty</a> </td><td class="col1"> checks whether the container is empty </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <a href="size" class="wikilink1" title="container:set:size">size</a> </td><td class="col1"> returns the number of elements </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <a href="max_size" class="wikilink1" title="container:set:max_size">max_size</a> </td><td class="col1"> returns the maximum number of elements </td>
+	</tr>
+</table></div>
+<!-- EDIT5 TABLE [1642-1799] -->
+</div>
+
+<h5><a name="modifiers" id="modifiers">Modifiers</a></h5>
+<div class="level5">
+<div class="table sectionedit6"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <a href="clear" class="wikilink1" title="container:set:clear">clear</a> </td><td class="col1"> removes all elements </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <a href="erase" class="wikilink1" title="container:set:erase">erase</a> </td><td class="col1"> removes elements </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <a href="insert" class="wikilink1" title="container:set:insert">insert</a> </td><td class="col1"> inserts elements </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> <a href="swap" class="wikilink1" title="container:set:swap">swap</a> </td><td class="col1"> swaps the contents </td>
+	</tr>
+</table></div>
+<!-- EDIT6 TABLE [1816-1953] -->
+</div>
+
+<h5><a name="lookup" id="lookup">Lookup</a></h5>
+<div class="level5">
+<div class="table sectionedit7"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <a href="count" class="wikilink1" title="container:set:count">count</a> </td><td class="col1"> returns the number of elements matching specific key </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <a href="find" class="wikilink1" title="container:set:find">find</a> </td><td class="col1"> finds element with specific key </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="equal_range" class="wikilink1" title="container:set:equal_range">equal_range</a></td><td class="col1">returns iterators to the first and just past the last elements matching a specific key</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="lower_bound" class="wikilink1" title="container:set:lower_bound">lower_bound</a></td><td class="col1">returns an iterator to the first element greater than or equal to a certain value</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="upper_bound" class="wikilink1" title="container:set:upper_bound">upper_bound</a></td><td class="col1">returns an iterator to the first element greater than a certain value</td>
+	</tr>
+</table></div>
+<!-- EDIT7 TABLE [1967-2375] -->
+</div>
+
+<h5><a name="observers" id="observers">Observers</a></h5>
+<div class="level5">
+<div class="table sectionedit8"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="key_comp" class="wikilink1" title="container:set:key_comp">key_comp</a></td><td class="col1">returns the function that compares keys</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="value_comp" class="wikilink1" title="container:set:value_comp">value_comp</a></td><td class="col1">returns the function that compares values</td>
+	</tr>
+</table></div>
+<!-- EDIT8 TABLE [2392-2505] -->
+</div>
+
+<h5><a name="allocator" id="allocator">Allocator</a></h5>
+<div class="level5">
+<div class="table sectionedit9"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <a href="http://www.cppreference.com/wiki/container/set/get_allocator" class="wikilink1" title="container:set:get_allocator">get_allocator</a> </td><td class="col1"> returns the allocator associated with the container </td>
+	</tr>
+</table></div>
+<!-- EDIT9 TABLE [2522-2597] --><div class="table sectionedit10"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/container/set/operator_at" class="wikilink2" title="container:set:operator_at" rel="nofollow"> operator [] </a> </td><td class="col1"> <a href="../../todo" class="wikilink1" title="todo">todo</a> </td>
+	</tr>
+</table></div>
+<!-- EDIT10 TABLE [2600-2645] -->
 </div>
 </div>
 </body>

@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl"
+ lang="pl" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>pl:c:io:sprintf</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:37-0700" />
+<meta name="keywords" content="pl,c,io,sprintf" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/pl/c/io/sprintf?do=index" title="Indeks" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=pl:c:io" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/pl/c/io/sprintf" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/pl/c/io/sprintf" />
+<link rel="canonical" href="sprintf" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='pl:c:io';var JSINFO = {"id":"pl:c:io:sprintf","namespace":"pl:c:io"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="sprintf" id="sprintf">sprintf</a></h2>
+<div class="level2">
+
+<p>
+Składnia:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cstdio&gt;</span>
+    <span class="kw4">int</span> <span class="kw3">sprintf</span><span class="br0">&#40;</span> <span class="kw4">char</span> <span class="sy2">*</span>buffer, <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>format, ... <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+
+Funkcja sprintf() działa podobnie jak printf(), z tą różnicą, iż wynik swego 
+działania przekazuje do bufora. Wartość zwracana przez funkcję reprezentuje 
+ilość przekazanych znaków do bufora. Przykładowo:
+</p>
+<pre class="cpp code cpp">     <span class="kw4">char</span> string<span class="br0">&#91;</span><span class="nu0">50</span><span class="br0">&#93;</span><span class="sy4">;</span>
+     <span class="kw4">int</span> file_number <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
+&nbsp;
+     <span class="kw3">sprintf</span><span class="br0">&#40;</span> string, <span class="st0">&quot;file.%d&quot;</span>, file_number <span class="br0">&#41;</span><span class="sy4">;</span>
+     file_number<span class="sy2">++</span><span class="sy4">;</span>
+     output_file <span class="sy1">=</span> <span class="kw3">fopen</span><span class="br0">&#40;</span> string, <span class="st0">&quot;w&quot;</span> <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Należy pamiętać, iż sprintf() nie jest przeciwieństwem funkcji takich jak atoi()
+ - gdzie atoi() konwertuje łańcuch znaków na liczbę, ale sprintf() może być użyty 
+do konwersji liczby na łańcuch znaków.
+Przykładowo, poniższy kod używa funkcji sprintf() do konwersji liczby typu 
+integer na odpowiadający jej łańcuch znaków:
+</p>
+<pre class="cpp code cpp">     <span class="kw4">char</span> result<span class="br0">&#91;</span><span class="nu0">100</span><span class="br0">&#93;</span><span class="sy4">;</span>
+     <span class="kw4">int</span> num <span class="sy1">=</span> <span class="nu0">24</span><span class="sy4">;</span>
+     <span class="kw3">sprintf</span><span class="br0">&#40;</span> result, <span class="st0">&quot;%d&quot;</span>, num <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+
+Kod poniżej jest podobny, jednak dokonuje on konwersji liczby zmiennoprzecinkowej 
+do jej postaci jako łańcuch znaków:
+</p>
+<pre class="cpp code cpp">     <span class="kw4">char</span> result<span class="br0">&#91;</span><span class="nu0">100</span><span class="br0">&#93;</span><span class="sy4">;</span>
+     <span class="kw4">float</span> fnum <span class="sy1">=</span> <span class="nu16">3.14159</span><span class="sy4">;</span>
+     <span class="kw3">sprintf</span><span class="br0">&#40;</span> result, <span class="st0">&quot;%f&quot;</span>, fnum <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Trzeba zaznaczyć, że funkcja ta nie sprawdza rozmiaru bufora w czasie konwersji 
+i może spowodować zagrożenie związane z przepełnieniem tegoż bufora. Jako 
+bezpieczniejszą alternatywę funkcji sprintf() można polecić funkcję <a href="../../../c/io/snprintf" class="wikilink1" title="c:io:snprintf">snprintf</a>.
+</p>
+
+<p>
+Zobacz także: <a href="../../../c/io/snprintf" class="wikilink1" title="c:io:snprintf">snprintf</a>, <a href="http://www.cppreference.com/wiki/pl/c/io/fprintf" class="wikilink2" title="pl:c:io:fprintf" rel="nofollow">fprintf</a>, <a href="http://www.cppreference.com/wiki/pl/c/io/printf" class="wikilink2" title="pl:c:io:printf" rel="nofollow">printf</a>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "sprintf" [2-] --></div>
+</body>
+</html>

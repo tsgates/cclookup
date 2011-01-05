@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="tr"
+ lang="tr" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>tr:string:c:strcpy</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:26-0700" />
+<meta name="keywords" content="tr,string,c,strcpy" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/tr/string/c/strcpy?do=index" title="İndeks" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=tr:string:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/tr/string/c/strcpy" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/tr/string/c/strcpy" />
+<link rel="canonical" href="strcpy" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='tr:string:c';var JSINFO = {"id":"tr:string:c:strcpy","namespace":"tr:string:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="strcpy" id="strcpy">strcpy</a></h2>
+<div class="level2">
+
+<p>
+Söz dizimi:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cstring&gt;</span>
+    <span class="kw4">char</span> <span class="sy2">*</span><span class="kw3">strcpy</span><span class="br0">&#40;</span><span class="kw4">char</span> <span class="sy2">*</span>hedef, <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>kaynak<span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+strcpy() fonksiyonu ikinci parametresiyle aldigi değeri null sonlandırıcı işaret de dahil olmak üzere birinci parametresine kopyalar. Fonksiyonun dönüş değeri birinci parametresidir (hedef). 
+</p>
+
+<p>
+Sınır kontrolü yapmadığından güvenli değildir. Benzer işi yapan daha güvenli sürümü için bknz <code>strncpy()</code>.
+</p>
+
+<p>
+Benzer Başlıklar <a href="http://www.cppreference.com/wiki/tr/string/c/memcpy" class="wikilink2" title="tr:string:c:memcpy" rel="nofollow">memcpy</a>, <a href="strcat" class="wikilink1" title="tr:string:c:strcat">strcat</a>, <a href="strchr" class="wikilink1" title="tr:string:c:strchr">strchr</a>, <a href="http://www.cppreference.com/wiki/tr/string/c/strcmp" class="wikilink2" title="tr:string:c:strcmp" rel="nofollow">strcmp</a>, <a href="http://www.cppreference.com/wiki/tr/string/c/strncmp" class="wikilink2" title="tr:string:c:strncmp" rel="nofollow">strncmp</a>, <a href="http://www.cppreference.com/wiki/tr/string/c/strncpy" class="wikilink2" title="tr:string:c:strncpy" rel="nofollow">strncpy</a>
+</p>
+
+<p>
+Diğer benzer fonksiyonlar<a href="http://www.cppreference.com/wiki/tr/string/c/strlcpy" class="wikilink2" title="tr:string:c:strlcpy" rel="nofollow">strlcpy</a> and <a href="http://www.cppreference.com/wiki/tr/string/c/strlcat" class="wikilink2" title="tr:string:c:strlcat" rel="nofollow">strlcat</a> (standart değiller).
+</p>
+
+</div>
+</div>
+</body>
+</html>

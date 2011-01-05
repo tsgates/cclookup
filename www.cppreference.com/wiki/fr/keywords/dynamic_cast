@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr"
+ lang="fr" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>fr:keywords:dynamic_cast</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:56-0700" />
+<meta name="keywords" content="fr,keywords,dynamic_cast" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/fr/keywords/dynamic_cast?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=fr:keywords" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/fr/keywords/dynamic_cast" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/fr/keywords/dynamic_cast" />
+<link rel="canonical" href="dynamic_cast" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='fr:keywords';var JSINFO = {"id":"fr:keywords:dynamic_cast","namespace":"fr:keywords"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="dynamic_cast" id="dynamic_cast">dynamic_cast</a></h2>
+<div class="level2">
+
+<p>
+Syntaxe :
+
+</p>
+<pre class="cpp code cpp">    T<span class="sy3">&amp;</span> <span class="kw2">dynamic_cast</span><span class="sy1">&lt;</span>T<span class="sy3">&amp;</span><span class="sy1">&gt;</span> <span class="br0">&#40;</span>objet<span class="br0">&#41;</span><span class="sy4">;</span>
+    T<span class="sy2">*</span> <span class="kw2">dynamic_cast</span><span class="sy1">&lt;</span>T<span class="sy2">*</span><span class="sy1">&gt;</span> <span class="br0">&#40;</span>objet<span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Le mot-clef <code>dynamic_cast</code> “caste” une donnée pointée (ou référencée) dans
+un autre type. Ce type de cast réalise une vérification à l’exécution de la
+validité de la conversion de type.
+</p>
+
+<p>
+Si vous essayez de “caster” vers un pointeur mais que le type n&#039;est pas le
+type actuel de l&#039;<code>objet</code> alors le résultat de ce “cast” sera <code>NULL</code>.
+</p>
+
+<p>
+Si vous essayez de “caster” vers une référence mais que le type n&#039;est pas
+le type actuel de l&#039;<code>objet</code> alors <code>dynamic_cast</code> va lancer une
+exception de type <a href="http://www.cppreference.com/wiki/fr/typeinfo/start#bad_cast" class="wikilink2" title="fr:typeinfo:start" rel="nofollow">std::bad_cast</a>.
+</p>
+<pre class="cpp code cpp">  <span class="kw4">struct</span> A <span class="br0">&#123;</span>
+    <span class="kw2">virtual</span> <span class="kw4">void</span> f<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> <span class="br0">&#125;</span>
+  <span class="br0">&#125;</span><span class="sy4">;</span>
+  <span class="kw4">struct</span> B <span class="sy4">:</span> <span class="kw2">public</span> A <span class="br0">&#123;</span> <span class="br0">&#125;</span><span class="sy4">;</span>
+  <span class="kw4">struct</span> C <span class="br0">&#123;</span> <span class="br0">&#125;</span><span class="sy4">;</span>
+&nbsp;
+  <span class="kw4">void</span> f <span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    A a<span class="sy4">;</span>
+    B b<span class="sy4">;</span>
+&nbsp;
+    A<span class="sy2">*</span> ap <span class="sy1">=</span> <span class="sy3">&amp;</span>b<span class="sy4">;</span>
+    B<span class="sy2">*</span> b1 <span class="sy1">=</span> <span class="kw2">dynamic_cast</span><span class="sy1">&lt;</span>B<span class="sy2">*</span><span class="sy1">&gt;</span> <span class="br0">&#40;</span><span class="sy3">&amp;</span>a<span class="br0">&#41;</span><span class="sy4">;</span>  <span class="co1">// NULL, parce que 'a' n'est pas un 'B'</span>
+    B<span class="sy2">*</span> b2 <span class="sy1">=</span> <span class="kw2">dynamic_cast</span><span class="sy1">&lt;</span>B<span class="sy2">*</span><span class="sy1">&gt;</span> <span class="br0">&#40;</span>ap<span class="br0">&#41;</span><span class="sy4">;</span>  <span class="co1">// 'b'</span>
+    C<span class="sy2">*</span> c <span class="sy1">=</span> <span class="kw2">dynamic_cast</span><span class="sy1">&lt;</span>C<span class="sy2">*</span><span class="sy1">&gt;</span> <span class="br0">&#40;</span>ap<span class="br0">&#41;</span><span class="sy4">;</span>   <span class="co1">// NULL.</span>
+&nbsp;
+    A<span class="sy3">&amp;</span> ar <span class="sy1">=</span> <span class="kw2">dynamic_cast</span><span class="sy1">&lt;</span>A<span class="sy3">&amp;</span><span class="sy1">&gt;</span> <span class="br0">&#40;</span><span class="sy2">*</span>ap<span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// Ok.</span>
+    B<span class="sy3">&amp;</span> br <span class="sy1">=</span> <span class="kw2">dynamic_cast</span><span class="sy1">&lt;</span>B<span class="sy3">&amp;</span><span class="sy1">&gt;</span> <span class="br0">&#40;</span><span class="sy2">*</span>ap<span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// Ok.</span>
+    C<span class="sy3">&amp;</span> cr <span class="sy1">=</span> <span class="kw2">dynamic_cast</span><span class="sy1">&lt;</span>C<span class="sy3">&amp;</span><span class="sy1">&gt;</span> <span class="br0">&#40;</span><span class="sy2">*</span>ap<span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// std::bad_cast</span>
+  <span class="br0">&#125;</span></pre>
+<p>
+Sujets connexes : <a href="const_cast" class="wikilink1" title="fr:keywords:const_cast">const_cast</a>, <a href="http://www.cppreference.com/wiki/fr/keywords/reinterpret_cast" class="wikilink2" title="fr:keywords:reinterpret_cast" rel="nofollow">reinterpret_cast</a>, <a href="http://www.cppreference.com/wiki/fr/keywords/static_cast" class="wikilink2" title="fr:keywords:static_cast" rel="nofollow">static_cast</a>, <a href="http://www.cppreference.com/wiki/fr/keywords/casting_comparison" class="wikilink2" title="fr:keywords:casting_comparison" rel="nofollow">casting_comparison</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

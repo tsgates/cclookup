@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es"
+ lang="es" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>es:algorithm:fill_n</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:32-0700" />
+<meta name="keywords" content="es,algorithm,fill_n" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/es/algorithm/fill_n?do=index" title="Índice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=es:algorithm" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/es/algorithm/fill_n" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/es/algorithm/fill_n" />
+<link rel="canonical" href="fill_n" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='es:algorithm';var JSINFO = {"id":"es:algorithm:fill_n","namespace":"es:algorithm"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="fill_n" id="fill_n">fill_n</a></h2>
+<div class="level2">
+
+<p>
+Sintaxis:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;algorithm&gt;</span>
+    <span class="kw4">void</span> fill_n<span class="br0">&#40;</span> forward_iterator inicio, SIZE cantidad, <span class="kw4">const</span> T<span class="sy3">&amp;</span> valor <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+La función <code>fill_n()</code> asigna <em>valor</em> a los primeros <em>cantidad</em> elementos ubicados entre <em>inicio</em> y <em>fin</em>.
+</p>
+
+<p>
+Por ejemplo, el código siguiente utiliza <code>fill_n()</code> para asignar el valor devuelto por <code><a href="http://www.cppreference.com/wiki/es/c/time/time" class="wikilink2" title="es:c:time:time" rel="nofollow">time()</a></code> a los primeros <em>n</em> elementos de un listado, donde <em>n</em> es un número aleatorio:
+</p>
+<pre class="cpp code cpp">   <span class="kw4">time_t</span> tt<span class="sy1">=</span> <span class="kw3">time</span><span class="br0">&#40;</span><span class="nu0">0</span><span class="br0">&#41;</span><span class="sy4">;</span>
+   vector<span class="sy1">&lt;</span><span class="kw4">time_t</span><span class="sy1">&gt;</span> v1<span class="sy4">;</span>
+   <span class="kw4">int</span> n<span class="sy1">=</span> <span class="kw3">rand</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, nMax<span class="sy1">=</span> n <span class="sy2">+</span> <span class="kw3">abs</span><span class="br0">&#40;</span><span class="kw3">rand</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+   <span class="kw1">for</span> <span class="br0">&#40;</span><span class="kw4">int</span> i<span class="sy1">=</span><span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> nMax<span class="sy4">;</span> <span class="sy2">++</span>i<span class="br0">&#41;</span> <span class="br0">&#123;</span> v1.<span class="me1">push_back</span><span class="br0">&#40;</span><span class="kw3">time</span><span class="br0">&#40;</span><span class="sy2">-</span><span class="nu0">1</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="br0">&#125;</span>
+   fill_n <span class="br0">&#40;</span>v1.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, n, tt<span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Después de ejecutar fill_n, v1 es: &quot;</span><span class="sy4">;</span>
+   <span class="kw1">for</span><span class="br0">&#40;</span> vector<span class="sy1">&lt;</span><span class="kw4">time_t</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">size_type</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> v1.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> v1<span class="br0">&#91;</span>i<span class="br0">&#93;</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; &quot;</span><span class="sy4">;</span>
+   <span class="br0">&#125;</span>
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
+</div>
+<!-- EDIT1 SECTION "fill_n" [1-825] -->
+<h2 class="sectionedit2"><a name="topicos_relacionados" id="topicos_relacionados">Tópicos Relacionados</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> <a href="fill" class="wikilink1" title="es:algorithm:fill">fill</a> – llena un rango con valores</div>
+</li>
+<li class="level1"><div class="li"> <a href="generate" class="wikilink1" title="es:algorithm:generate">generate</a>, <a href="http://www.cppreference.com/wiki/es/algorithm/transform" class="wikilink2" title="es:algorithm:transform" rel="nofollow">transform</a> – asigna valores a un rango usando diferentes fuentes de datos</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT2 SECTION "Tópicos Relacionados" [826-] --></div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr"
+ lang="fr" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>fr:c:io:setbuf</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:57-0700" />
+<meta name="keywords" content="fr,c,io,setbuf" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/fr/c/io/setbuf?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=fr:c:io" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/fr/c/io/setbuf" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/fr/c/io/setbuf" />
+<link rel="canonical" href="setbuf" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='fr:c:io';var JSINFO = {"id":"fr:c:io:setbuf","namespace":"fr:c:io"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="setbuf" id="setbuf">setbuf</a></h2>
+<div class="level2">
+
+<p>
+Syntaxe :
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cstdio&gt;</span>
+    <span class="kw4">void</span> <span class="kw3">setbuf</span><span class="br0">&#40;</span><span class="kw4">FILE</span> <span class="sy2">*</span>flux, <span class="kw4">char</span> <span class="sy2">*</span>buf<span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+
+La fonction <code>setbuf()</code> force l&#039;utilisation du “tampon” <code>buf</code> pour ce <code>flux</code>.
+En effet, afin de ne pas surcharger les entrées/sorties sur un disque dur, les données
+sont écrites par blocs dans un fichier : lorsque que le “tampon” <code>buf</code> est plein,
+les données sont effectivement inscrite dans le fichier, sur le disque dur.
+</p>
+
+<p>
+Attention, la taille du “tampon” doit être au moins de <code>BUFSIZ</code> (défini dans
+<code>&lt;cstdio&gt;</code>) caractères.
+</p>
+
+<p>
+Si vous passez <code>NULL</code> à la fonction, alors le mécanisme d&#039;écriture par tampon
+est désactivé et l&#039;écriture se fait directement dans le fichier.
+</p>
+
+<p>
+Sujets connexes : <a href="fclose" class="wikilink1" title="fr:c:io:fclose">fclose</a>, <a href="fopen" class="wikilink1" title="fr:c:io:fopen">fopen</a>, <a href="setvbuf" class="wikilink1" title="fr:c:io:setvbuf">setvbuf</a>
+
+</p>
+
+</div>
+</div>
+</body>
+</html>

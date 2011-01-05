@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es"
+ lang="es" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>es:preprocessor:pragma</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:32-0700" />
+<meta name="keywords" content="es,preprocessor,pragma" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/es/preprocessor/pragma?do=index" title="Índice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=es:preprocessor" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/es/preprocessor/pragma" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/es/preprocessor/pragma" />
+<link rel="canonical" href="pragma" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='es:preprocessor';var JSINFO = {"id":"es:preprocessor:pragma","namespace":"es:preprocessor"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Tabla de Contenidos</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="pragma#pragma" class="toc">#pragma</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="pragma#usos_generales" class="toc">Usos Generales</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="pragma#gcc_--_gnulinux_bsd_mac_os_x_windows_mingw_etc" class="toc">GCC -- GNU/Linux, BSD, Mac OS X, Windows (MinGW), etc</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="pragma#microsoft_visual_c" class="toc">Microsoft Visual C++</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="pragma#borland_c" class="toc">Borland C++</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="pragma" id="pragma">#pragma</a></h2>
+<div class="level2">
+<pre class="c code c">    <span class="co2">#pragma lexemas</span></pre>
+<p>
+El <a href="../start" class="wikilink1" title="es:start">comando del preprocesador</a> <code>#pragma</code> permite al programador entregar un comando al compilador que éste podrá ejecutar para realizar ciertas tareas. Dado que las capacidades de #pragma de cada compilador son específicas y definidas por su implementación, el uso de etiquetas #pragma cambia de un compilador a otro. Un ejemplo común sería rastrear la ejecución de un programa o modificar ciertas opciones en la compilación.
+</p>
+
+<p>
+Algunos compiladores como GNU GCC desaconsejan el uso de instrucciones #pragma, recomendando el uso de funcionalidades específicas en su lugar como declaraciones de atributos de funciones o archivos de recursos.
+</p>
+
+<p>
+A continuación se enumeran algunos compiladores, junto con las capacidades de #pragma que soportan.
+</p>
+
+</div>
+<!-- EDIT1 SECTION "#pragma" [1-816] -->
+<h3 class="sectionedit2"><a name="usos_generales" id="usos_generales">Usos Generales</a></h3>
+<div class="level3">
+
+<p>
+
+Diversos compiladores utilizan las siguientes instrucciones:
+</p>
+
+</div>
+
+<h4><a name="message" id="message">message</a></h4>
+<div class="level4">
+
+<p>
+Sintaxis:
+
+</p>
+<pre class="c code c"><span class="co2">#pragma message (Mensaje)</span></pre>
+<p>
+Esta directiva imprime en la consola de compilación un mensaje informacional; este mensaje no resulta ni en un error de compilación ni en una advertencia. Puede usarse, por ejemplo, para dar aviso al momento de agregar cierta cabecera que ésta requiere la activación de alguna directiva especial del compilador.
+</p>
+
+<p>
+Ejemplos:
+
+</p>
+<pre class="c code c"><span class="co2">#pragma message( &quot;Compiling &quot; __FILE__ )</span>
+&nbsp;
+<span class="co2">#if !defined __cplusplus</span>
+<span class="co2">#pragma message( &quot;Toma nota, deberias estar compilando este programa con C++.&quot;)</span>
+<span class="co2">#endif</span></pre>
+</div>
+
+<h4><a name="pack" id="pack">pack</a></h4>
+<div class="level4">
+
+<p>
+Sintaxis:
+
+</p>
+<pre class="c code c"><span class="co2">#pragma pack(n) // donde n es una potencia de 2, o 0, o no esta presente</span></pre>
+<p>
+<code>#pragma pack</code> activa o desactiva una directiva de ”<em>empaquetamiento</em>” de datos. El empaquetamiento es un metodo de optimización que alinea los miembros de las estructuras, uniones o variables miembro, en función de una cantidad de bytes conocida como el ”<em>marco de empaquetado</em>” o boundary. Esto hace mas expedito, y por tanto mas rápido, el acceso a la información una vez que esta esta en memoria ya que las variables estan alineadas a posiciones con las que el procesador este acostumbrado a trabajar. 
+</p>
+
+<p>
+El numero <em>n</em> entre parentesis indica el tamaño, en bytes, del marco de empaquetado. Puede ser una potencia de 2 hasta el tamaño en bytes que soporte la maquina (ej.: 1, 2, 4, 8, 16, 32, …) o cero (0) en cuyo caso se deshabilita.
+</p>
+
+<p>
+Ejemplo:
+
+</p>
+<pre class="c code c"><span class="co2">#pragma pack(2)</span>
+<span class="co1">// definición de alguna estructura o unión que requiere sus miembros alineados dentro de marcos de 2*8 = 16 bits</span>
+<span class="co2">#pragma pack()</span>
+<span class="co1">// en este punto la optimización de empaquetado vuelve a su estado normal</span></pre>
+</div>
+
+<h4><a name="weak" id="weak">weak</a></h4>
+<div class="level4">
+
+<p>
+Sintaxis:
+
+</p>
+<pre class="c code c"><span class="co2">#pragma weak nombre_de_simbolo</span></pre>
+<p>
+
+Esta directiva impone un “nombre débil” o sinónimo para un símbolo que es almacenado en el fichero objeto resultante. Un fichero objeto diferente (por ejemplo, un programa que incluye el primer fichero objeto como una librería) puede invocar a este símbolo aunque no lo haya definido previamente, sin que se produzca un error de compilación.
+
+</p>
+<hr />
+
+<p>
+
+A continuación siguen directivas para compiladores específicos.
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Usos Generales" [817-3080] -->
+<h3 class="sectionedit3"><a name="gcc_--_gnulinux_bsd_mac_os_x_windows_mingw_etc" id="gcc_--_gnulinux_bsd_mac_os_x_windows_mingw_etc">GCC -- GNU/Linux, BSD, Mac OS X, Windows (MinGW), etc</a></h3>
+<div class="level3">
+
+</div>
+
+<h4><a name="redefine_extname" id="redefine_extname">redefine_extname</a></h4>
+<div class="level4">
+
+<p>
+Sintaxis:
+
+</p>
+<pre class="c code c"><span class="co2">#pragma redefine_extname printf prnt</span></pre>
+<p>
+
+Esta directiva permite establecer un nuevo nombre, como <code>prnt</code>, para una función una vez traducido el nombre a lenguahe ensamblador.
+</p>
+
+</div>
+
+<h4><a name="extern_prefix" id="extern_prefix">extern_prefix</a></h4>
+<div class="level4">
+
+<p>
+Sintaxis:
+
+</p>
+<pre class="c code c"><span class="co2">#pragma extern_prefix ext_ // prefijar funciones externas con &quot;ext_&quot;</span>
+<span class="co1">// definición de varias funciones externas</span>
+<span class="co2">#pragma extern_prefix // terminar la tarea de prefijación</span></pre>
+<p>
+
+Esta directiva antepone un prefijo especial como <code>ext_</code> a las declaraciones de símbolos externos que encuentre en su camino, hasta encontrarse con otra directiva <code>extern_prefix</code>.
+</p>
+
+</div>
+<!-- EDIT3 SECTION "GCC -- GNU/Linux, BSD, Mac OS X, Windows (MinGW), etc" [3081-3771] -->
+<h3 class="sectionedit4"><a name="microsoft_visual_c" id="microsoft_visual_c">Microsoft Visual C++</a></h3>
+<div class="level3">
+
+</div>
+
+<h4><a name="once" id="once">once</a></h4>
+<div class="level4">
+
+<p>
+Sintaxis:
+
+</p>
+<pre class="c code c"><span class="co2">#pragma once</span></pre>
+<p>
+
+Esta directiva se asegura que el archivo cabecera en el que está ubicado se incluye una sola vez. Su efecto es exactamente igual al de un clásico <em>centinela de cabecera</em>:
+</p>
+<pre class="c code c"><span class="co1">// identificador.h</span>
+<span class="co2">#ifndef IDENTIFICADOR_H_</span>
+<span class="co2">#define IDENTIFICADOR_H_</span>
+... <span class="me1">definiciones</span> del archivo de cabecera
+<span class="co2">#endif</span></pre>
+</div>
+<!-- EDIT4 SECTION "Microsoft Visual C++" [3772-4162] -->
+<h3 class="sectionedit5"><a name="borland_c" id="borland_c">Borland C++</a></h3>
+<div class="level3">
+
+</div>
+
+<h4><a name="ident" id="ident">ident</a></h4>
+<div class="level4">
+
+<p>
+Sintaxis:
+
+</p>
+<pre class="c code c"><span class="co2">#pragma ident cadena_de_texto</span></pre>
+<p>
+
+Esta directiva coloca <code>cadena_de_texto</code> dentro de la seccion de comentarios (”.comment”) de un archivo objeto.
+</p>
+
+</div>
+<!-- EDIT5 SECTION "Borland C++" [4163-] --></div>
+</body>
+</html>

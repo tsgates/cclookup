@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn"
+ lang="cn" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>cn:c:string:memchr</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:52-0700" />
+<meta name="keywords" content="cn,c,string,memchr" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/cn/c/string/memchr?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=cn:c:string" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/cn/c/string/memchr" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/cn/c/string/memchr" />
+<link rel="canonical" href="memchr" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='cn:c:string';var JSINFO = {"id":"cn:c:string:memchr","namespace":"cn:c:string"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="memchr" id="memchr">memchr</a></h2>
+<div class="level2">
+
+<p>
+语法：
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cstring&gt;</span>
+    <span class="kw4">void</span> <span class="sy2">*</span><span class="kw3">memchr</span><span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">void</span> <span class="sy2">*</span>buffer, <span class="kw4">int</span> ch, <span class="kw4">size_t</span> count <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+
+memchr() 在由buffer指出的数字前count个字符中查找第一次出现的ch。返回值指向ch第一次出现的位置，如果ch没有发现返回NULL。例如：
+</p>
+<pre class="cpp code cpp">     <span class="kw4">char</span> names<span class="br0">&#91;</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="st0">&quot;Alan Bob Chris X Dave&quot;</span><span class="sy4">;</span>
+     <span class="kw1">if</span><span class="br0">&#40;</span> <span class="kw3">memchr</span><span class="br0">&#40;</span>names,<span class="st0">'X'</span>,<span class="kw3">strlen</span><span class="br0">&#40;</span>names<span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="sy1">==</span> <span class="kw2">NULL</span> <span class="br0">&#41;</span>
+       <span class="kw3">printf</span><span class="br0">&#40;</span> <span class="st0">&quot;Didn't find an X<span class="es1">\n</span>&quot;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+     <span class="kw1">else</span>
+       <span class="kw3">printf</span><span class="br0">&#40;</span> <span class="st0">&quot;Found an X<span class="es1">\n</span>&quot;</span> <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+相关主题： <a href="memcmp" class="wikilink1" title="cn:c:string:memcmp">memcmp</a>, <a href="memcpy" class="wikilink1" title="cn:c:string:memcpy">memcpy</a>, <a href="strstr" class="wikilink1" title="cn:c:string:strstr">strstr</a>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "memchr" [3-] --></div>
+</body>
+</html>

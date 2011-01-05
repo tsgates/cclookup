@@ -4,42 +4,67 @@
  lang="en" dir="ltr">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>stl:algorithm:includes</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
-<meta name="robots" content="noindex,nofollow" />
-<meta name="date" content="2009-07-14T07:08:34-0700" />
-<meta name="keywords" content="stl,algorithm,includes" />
+  <title>algorithm:includes</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:12-0700" />
+<meta name="keywords" content="algorithm,includes" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/stl/algorithm/includes?do=index" title="Index" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/algorithm/includes?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
-<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=stl:algorithm" />
-<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/stl/algorithm/includes" />
-<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/stl/algorithm/includes" />
-<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=algorithm" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/algorithm/includes" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/algorithm/includes" />
+<link rel="canonical" href="includes" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='algorithm';var JSINFO = {"id":"algorithm:includes","namespace":"algorithm"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
 
+<ul class="toc">
+<li class="clear">
 
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="includes#includes" class="toc">includes</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="includes#parameters" class="toc">Parameters</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="includes#return_value" class="toc">Return value</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="includes#example" class="toc">Example</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="includes#complexity" class="toc">Complexity</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="includes#see_also" class="toc">See also</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
 
-<h2><a name="includes" id="includes">includes</a></h2>
+<h2 class="sectionedit1"><a name="includes" id="includes">includes</a></h2>
 <div class="level2">
 
 <p>
 Syntax:
 </p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;algorithm&gt;</span>
-    template<span class="sy0">&lt;</span> typename InIterA<span class="sy0">,</span> typename InIterB <span class="sy0">&gt;</span>
-    bool includes<span class="br0">&#40;</span> InIterA start1<span class="sy0">,</span> InIterA end1<span class="sy0">,</span> InIterB start2<span class="sy0">,</span> InIterB end2 <span class="br0">&#41;</span>;
-    template<span class="sy0">&lt;</span> typename InIterA<span class="sy0">,</span> typename InIterB<span class="sy0">,</span> typename StrictWeakOrdering <span class="sy0">&gt;</span>
-    bool includes<span class="br0">&#40;</span> InIterA start1<span class="sy0">,</span> InIterA end1<span class="sy0">,</span> InIterB start2<span class="sy0">,</span> InIterB end2<span class="sy0">,</span> StrictWeakOrdering cmp <span class="br0">&#41;</span>;</pre>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;algorithm&gt;</span>
+&nbsp;
+    <span class="kw2">template</span><span class="sy1">&lt;</span> <span class="kw2">typename</span> InIterA, <span class="kw2">typename</span> InIterB <span class="sy1">&gt;</span>
+    <span class="kw4">bool</span> includes<span class="br0">&#40;</span> InIterA start1, InIterA end1, InIterB start2, InIterB end2 <span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+    <span class="kw2">template</span><span class="sy1">&lt;</span> <span class="kw2">typename</span> InIterA, <span class="kw2">typename</span> InIterB, <span class="kw2">typename</span> StrictWeakOrdering <span class="sy1">&gt;</span>
+    <span class="kw4">bool</span> includes<span class="br0">&#40;</span> InIterA start1, InIterA end1, InIterB start2, InIterB end2, StrictWeakOrdering cmp <span class="br0">&#41;</span><span class="sy4">;</span></pre>
 <p>
-The includes() algorithm returns true if every element in [start2,end2) is also
-in [start1,end1). Both of the given ranges must be sorted in ascending order and must not contain duplicate elements.
+The includes() algorithm returns <code>true</code> if every element in [start2,end2) is also
+in [start1,end1). Both of the given ranges must be sorted in ascending order. There is no requirement that every element in [start1,end1) or [start2,end2) be unique. If some element appears <em>n</em> times in [start2,end2), [start1,end1) must contain the equivalent element at least <em>n</em> times.
 </p>
 
 <p>
@@ -51,11 +76,74 @@ ordering function object cmp is given, then it is used instead.
 includes() runs in <a href="../../complexity" class="wikilink1" title="complexity">linear time</a>.
 </p>
 
+</div>
+<!-- EDIT1 SECTION "includes" [2-955] -->
+<h3 class="sectionedit2"><a name="parameters" id="parameters">Parameters</a></h3>
+<div class="level3">
+
 <p>
-Related Topics: <a href="set_difference" class="wikilink1" title="stl:algorithm:set_difference">set_difference</a>, <a href="set_intersection" class="wikilink1" title="stl:algorithm:set_intersection">set_intersection</a>, <a href="set_symmetric_difference" class="wikilink1" title="stl:algorithm:set_symmetric_difference">set_symmetric_difference</a>, <a href="set_union" class="wikilink1" title="stl:algorithm:set_union">set_union</a>
+
+todo
 </p>
 
 </div>
-<!-- SECTION "includes" [3-] --></div>
+<!-- EDIT2 SECTION "Parameters" [956-981] -->
+<h3 class="sectionedit3"><a name="return_value" id="return_value">Return value</a></h3>
+<div class="level3">
+
+<p>
+
+todo
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Return value" [982-1009] -->
+<h3 class="sectionedit4"><a name="example" id="example">Example</a></h3>
+<div class="level3">
+<pre class="cpp code cpp"> <span class="co2">#include &lt;iostream&gt;</span>
+ <span class="co2">#include &lt;vector&gt;</span>
+ <span class="co2">#include &lt;list&gt;</span>
+ <span class="co2">#include &lt;algorithm&gt;</span>
+&nbsp;
+ <span class="kw4">int</span> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+ <span class="br0">&#123;</span>
+   std<span class="sy4">::</span><span class="me2">vector</span><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> vec<span class="sy4">;</span>
+   <span class="kw1">for</span> <span class="br0">&#40;</span><span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="sy4">;</span> <span class="sy2">++</span>i<span class="br0">&#41;</span>
+     vec.<span class="me1">push_back</span><span class="br0">&#40;</span>i<span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+   std<span class="sy4">::</span><span class="me2">list</span><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> lst<span class="sy4">;</span>
+   lst.<span class="me1">push_back</span><span class="br0">&#40;</span><span class="nu0">2</span><span class="br0">&#41;</span><span class="sy4">;</span>
+   lst.<span class="me1">push_back</span><span class="br0">&#40;</span><span class="nu0">4</span><span class="br0">&#41;</span><span class="sy4">;</span>
+   lst.<span class="me1">push_back</span><span class="br0">&#40;</span><span class="nu0">6</span><span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+   <span class="kw1">if</span> <span class="br0">&#40;</span>std<span class="sy4">::</span><span class="me2">includes</span><span class="br0">&#40;</span>vec.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, vec.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, lst.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, lst.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+     std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;lst is a subset of vec.&quot;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+   <span class="kw1">else</span>
+     std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;lst is NOT a subset of vec.&quot;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+&nbsp;
+   <span class="kw1">return</span> <span class="nu0">0</span><span class="sy4">;</span>
+ <span class="br0">&#125;</span></pre>
+</div>
+<!-- EDIT4 SECTION "Example" [1010-1520] -->
+<h3 class="sectionedit5"><a name="complexity" id="complexity">Complexity</a></h3>
+<div class="level3">
+
+<p>
+
+todo
+</p>
+
+</div>
+<!-- EDIT5 SECTION "Complexity" [1521-1546] -->
+<h3 class="sectionedit6"><a name="see_also" id="see_also">See also</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="set_difference" class="wikilink1" title="algorithm:set_difference">set_difference</a>, <a href="set_intersection" class="wikilink1" title="algorithm:set_intersection">set_intersection</a>, <a href="set_symmetric_difference" class="wikilink1" title="algorithm:set_symmetric_difference">set_symmetric_difference</a>, <a href="set_union" class="wikilink1" title="algorithm:set_union">set_union</a>
+</p>
+
+</div>
+<!-- EDIT6 SECTION "See also" [1547-] --></div>
 </body>
 </html>

@@ -5,28 +5,30 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>ascii</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="generator" content="DokuWiki" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2009-06-03T11:18:24-0700" />
+<meta name="date" content="2010-10-28T18:17:08-0700" />
 <meta name="keywords" content="ascii" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/ascii?do=index" title="Index" />
+<link rel="start" href="../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/ascii?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
 <link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=" />
 <link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/ascii" />
 <link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/ascii" />
-<link rel="stylesheet" media="all" type="text/css" href="lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="canonical" href="ascii" />
+<link rel="stylesheet" media="screen" type="text/css" href="lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='';var JSINFO = {"id":"ascii","namespace":""};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
 
-
-
-<h2><a name="ascii_chart" id="ascii_chart">ASCII Chart</a></h2>
+<h2 class="sectionedit1"><a name="ascii_chart" id="ascii_chart">ASCII Chart</a></h2>
 <div class="level2">
 
 <p>
@@ -34,7 +36,7 @@
 The following chart contains the first 128 <acronym title="American Standard Code for Information Interchange">ASCII</acronym> decimal, octal, hexadecimal and character codes.
 
 </p>
-<table class="inline">
+<div class="table sectionedit2"><table class="inline">
 	<tr class="row0">
 		<th class="col0">Decimal</th><th class="col1">Octal</th><th class="col2">Hex</th><th class="col3">Character</th><th class="col4">Description</th>
 	</tr>
@@ -422,8 +424,8 @@ The following chart contains the first 128 <acronym title="American Standard Cod
 	<tr class="row128">
 		<td class="col0">127</td><td class="col1">177</td><td class="col2">7F</td><td class="col3">DEL</td><td class="col4">delete</td>
 	</tr>
-</table>
-
+</table></div>
+<!-- EDIT2 TABLE [123-2501] -->
 </div>
 </div>
 </body>

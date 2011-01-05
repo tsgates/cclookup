@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn"
+ lang="cn" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>cn:container:multimap:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:54-0700" />
+<meta name="keywords" content="cn,container,multimap,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/cn/container/multimap/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=cn:container:multimap" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/cn/container/multimap/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/cn/container/multimap/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='cn:container:multimap';var JSINFO = {"id":"cn:container:multimap:start","namespace":"cn:container:multimap"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<p>
+<strong>C++ MultiMaps</strong>
+C++ Multimaps和maps很相似，但是MultiMaps允许重复的元素。
+
+</p>
+<ul>
+<li class="level1"><div class="li"> begin() 返回指向第一个元素的迭代器 </div>
+</li>
+<li class="level1"><div class="li"> clear() 删除所有元素 </div>
+</li>
+<li class="level1"><div class="li"> count() 返回一个元素出现的次数 </div>
+</li>
+<li class="level1"><div class="li"> empty() 如果multimap为空则返回真 </div>
+</li>
+<li class="level1"><div class="li"> end() 返回一个指向multimap末尾的迭代器 </div>
+</li>
+<li class="level1"><div class="li"> equal_range() 返回指向元素的key为指定值的迭代器对 </div>
+</li>
+<li class="level1"><div class="li"> erase() 删除元素 </div>
+</li>
+<li class="level1"><div class="li"> find() 查找元素 </div>
+</li>
+<li class="level1"><div class="li"> get_allocator() 返回multimap的配置器 </div>
+</li>
+<li class="level1"><div class="li"> insert() 插入元素 </div>
+</li>
+<li class="level1"><div class="li"> key_comp() 返回比较key的函数 </div>
+</li>
+<li class="level1"><div class="li"> lower_bound() 返回键值&gt;=给定元素的第一个位置 </div>
+</li>
+<li class="level1"><div class="li"> max_size() 返回可以容纳的最大元素个数 </div>
+</li>
+<li class="level1"><div class="li"> rbegin() 返回一个指向mulitmap尾部的逆向迭代器 </div>
+</li>
+<li class="level1"><div class="li"> rend() 返回一个指向multimap头部的逆向迭代器 </div>
+</li>
+<li class="level1"><div class="li"> size() 返回multimap中元素的个数 </div>
+</li>
+<li class="level1"><div class="li"> swap() 交换两个multimaps </div>
+</li>
+<li class="level1"><div class="li"> upper_bound() 返回键值&gt;给定元素的第一个位置 </div>
+</li>
+<li class="level1"><div class="li"> value_comp() 返回比较元素value的函数 </div>
+</li>
+</ul>
+</div>
+</body>
+</html>

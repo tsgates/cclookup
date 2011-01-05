@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it"
+ lang="it" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>it:io:c:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:08-0700" />
+<meta name="keywords" content="it,io,c,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/it/io/c/start?do=index" title="Indice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=it:io:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/it/io/c/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/it/io/c/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='it:io:c';var JSINFO = {"id":"it:io:c:start","namespace":"it:io:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="standard_c_io" id="standard_c_io">Standard C I/O</a></h1>
+<div class="level1">
+
+<p>
+
+Queste funzioni forniscono una alternativa alle <a href="../../../io/start" class="wikilink1" title="io:start">classi di I/O C++ basate sui flussi</a>.  
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/io/c/clearerr" class="wikilink2" title="it:io:c:clearerr" rel="nofollow">clearerr</a></td><td class="col1">cancella gli errori</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/io/c/fclose" class="wikilink2" title="it:io:c:fclose" rel="nofollow">fclose</a></td><td class="col1">chiude un file</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/io/c/feof" class="wikilink2" title="it:io:c:feof" rel="nofollow">feof</a></td><td class="col1">ritorna TRUE se raggiunta la fine del file</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/io/c/ferror" class="wikilink2" title="it:io:c:ferror" rel="nofollow">ferror</a></td><td class="col1">controlla se il file è in errore</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/io/c/fflush" class="wikilink2" title="it:io:c:fflush" rel="nofollow">fflush</a></td><td class="col1">scrive il contenuto del buffer di output</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/io/c/fgetc" class="wikilink2" title="it:io:c:fgetc" rel="nofollow">fgetc</a></td><td class="col1">ritorna un carattere dal flusso</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/io/c/fgetpos" class="wikilink2" title="it:io:c:fgetpos" rel="nofollow">fgetpos</a></td><td class="col1">ritorna l&#039;indicatore di posizione nel file</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="fgets" class="wikilink1" title="it:io:c:fgets">fgets</a></td><td class="col1">ritorna una stringa di caratteri dal flusso</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/io/c/fopen" class="wikilink2" title="it:io:c:fopen" rel="nofollow">fopen</a></td><td class="col1">apre un file</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="fprintf" class="wikilink1" title="it:io:c:fprintf">fprintf</a></td><td class="col1">scrive sul file un output formattato</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/io/c/fputc" class="wikilink2" title="it:io:c:fputc" rel="nofollow">fputc</a></td><td class="col1">scrive un singolo carattere sul file</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/io/c/fputs" class="wikilink2" title="it:io:c:fputs" rel="nofollow">fputs</a></td><td class="col1">scrive una stringa di caartteri sul file</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/io/c/fread" class="wikilink2" title="it:io:c:fread" rel="nofollow">fread</a></td><td class="col1">legge da un file</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/io/c/freopen" class="wikilink2" title="it:io:c:freopen" rel="nofollow">freopen</a></td><td class="col1">open an existing stream with a different name</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><a href="fscanf" class="wikilink1" title="it:io:c:fscanf">fscanf</a></td><td class="col1">read formatted input from a file</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/io/c/fseek" class="wikilink2" title="it:io:c:fseek" rel="nofollow">fseek</a></td><td class="col1">move to a specific location in a file</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/io/c/fsetpos" class="wikilink2" title="it:io:c:fsetpos" rel="nofollow">fsetpos</a></td><td class="col1">move to a specific location in a file</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/io/c/ftell" class="wikilink2" title="it:io:c:ftell" rel="nofollow">ftell</a></td><td class="col1">returns the current file position indicator</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"><a href="fwrite" class="wikilink1" title="it:io:c:fwrite">fwrite</a></td><td class="col1">write to a file</td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/io/c/getc" class="wikilink2" title="it:io:c:getc" rel="nofollow">getc</a></td><td class="col1">read a character from a file</td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/io/c/getchar" class="wikilink2" title="it:io:c:getchar" rel="nofollow">getchar</a></td><td class="col1">read a character from stdin</td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/io/c/gets" class="wikilink2" title="it:io:c:gets" rel="nofollow">gets</a></td><td class="col1">read a string from stdin</td>
+	</tr>
+	<tr class="row22">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/io/c/perror" class="wikilink2" title="it:io:c:perror" rel="nofollow">perror</a></td><td class="col1">displays a string version of the current error to stderr</td>
+	</tr>
+	<tr class="row23">
+		<td class="col0"><a href="printf" class="wikilink1" title="it:io:c:printf">printf</a></td><td class="col1">write formatted output to stdout</td>
+	</tr>
+	<tr class="row24">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/io/c/putc" class="wikilink2" title="it:io:c:putc" rel="nofollow">putc</a></td><td class="col1">write a character to a stream</td>
+	</tr>
+	<tr class="row25">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/io/c/putchar" class="wikilink2" title="it:io:c:putchar" rel="nofollow">putchar</a></td><td class="col1">write a character to stdout</td>
+	</tr>
+	<tr class="row26">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/io/c/puts" class="wikilink2" title="it:io:c:puts" rel="nofollow">puts</a></td><td class="col1">write a string to stdout</td>
+	</tr>
+	<tr class="row27">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/io/c/remove" class="wikilink2" title="it:io:c:remove" rel="nofollow">remove</a></td><td class="col1">erase a file</td>
+	</tr>
+	<tr class="row28">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/io/c/rename" class="wikilink2" title="it:io:c:rename" rel="nofollow">rename</a></td><td class="col1">rename a file</td>
+	</tr>
+	<tr class="row29">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/io/c/rewind" class="wikilink2" title="it:io:c:rewind" rel="nofollow">rewind</a></td><td class="col1">move the file position indicator to the beginning of a file</td>
+	</tr>
+	<tr class="row30">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/io/c/scanf" class="wikilink2" title="it:io:c:scanf" rel="nofollow">scanf</a></td><td class="col1">read formatted input from stdin</td>
+	</tr>
+	<tr class="row31">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/io/c/setbuf" class="wikilink2" title="it:io:c:setbuf" rel="nofollow">setbuf</a></td><td class="col1">set the buffer for a specific stream</td>
+	</tr>
+	<tr class="row32">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/io/c/setvbuf" class="wikilink2" title="it:io:c:setvbuf" rel="nofollow">setvbuf</a></td><td class="col1">set the buffer and size for a specific stream</td>
+	</tr>
+	<tr class="row33">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/io/c/snprintf" class="wikilink2" title="it:io:c:snprintf" rel="nofollow">snprintf</a></td><td class="col1">write formated output to a buffer (with bound checking)</td>
+	</tr>
+	<tr class="row34">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/io/c/sprintf" class="wikilink2" title="it:io:c:sprintf" rel="nofollow">sprintf</a></td><td class="col1">write formatted output to a buffer</td>
+	</tr>
+	<tr class="row35">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/io/c/sscanf" class="wikilink2" title="it:io:c:sscanf" rel="nofollow">sscanf</a></td><td class="col1">read formatted input from a buffer</td>
+	</tr>
+	<tr class="row36">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/io/c/tmpfile" class="wikilink2" title="it:io:c:tmpfile" rel="nofollow">tmpfile</a></td><td class="col1">return a pointer to a temporary file</td>
+	</tr>
+	<tr class="row37">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/io/c/tmpnam" class="wikilink2" title="it:io:c:tmpnam" rel="nofollow">tmpnam</a></td><td class="col1">return a unique filename</td>
+	</tr>
+	<tr class="row38">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/io/c/ungetc" class="wikilink2" title="it:io:c:ungetc" rel="nofollow">ungetc</a></td><td class="col1">puts a character back into a stream</td>
+	</tr>
+	<tr class="row39">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/io/c/vprintf_vfprintf_vsprintf" class="wikilink2" title="it:io:c:vprintf_vfprintf_vsprintf" rel="nofollow">vprintf, vfprintf, and vsprintf</a></td><td class="col1">write formatted output with variable argument lists</td>
+	</tr>
+	<tr class="row40">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/io/c/vscanf_vfscanf_vsscanf" class="wikilink2" title="it:io:c:vscanf_vfscanf_vsscanf" rel="nofollow">vscanf, vfscanf, and vsscanf</a></td><td class="col1">gets formatted input from stdin with variable argument lists</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [133-2181] -->
+</div>
+</div>
+</body>
+</html>

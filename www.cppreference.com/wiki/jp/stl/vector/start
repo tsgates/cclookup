@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:container:vector:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:23-0700" />
+<meta name="keywords" content="jp,container,vector,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/container/vector/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp:container:vector" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/container/vector/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/container/vector/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp:container:vector';var JSINFO = {"id":"jp:container:vector:start","namespace":"jp:container:vector"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="c_ベクタ" id="c_ベクタ">C++ベクタ</a></h2>
+<div class="level2">
+
+<p>
+
+ベクタは配列として配置された連続する要素を持っています。
+</p>
+
+<p>
+ベクタのメンバへのアクセスは<a href="../../complexity" class="wikilink1" title="jp:complexity">定数時間</a>で終わります。ベクタへの要素の追加は<a href="../../complexity" class="wikilink1" title="jp:complexity">amortized constant time</a>で終わります。特定の値を検索したりベクタに要素を挿入する場合は<a href="../../complexity" class="wikilink1" title="jp:complexity">線形時間</a>かかります。
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="vector_constructors" class="wikilink1" title="jp:container:vector:vector_constructors">Constructors</a></td><td class="col1">ベクタを生成し、いくつかのデータで初期化します</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="vector_operators" class="wikilink1" title="jp:container:vector:vector_operators">Operators</a></td><td class="col1">比較、割り付け、ベクタの要素にアクセスします</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="assign" class="wikilink1" title="jp:container:vector:assign">assign</a></td><td class="col1">ベクタに要素を割り付けます</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="at" class="wikilink1" title="jp:container:vector:at">at</a></td><td class="col1">指定した位置の要素への参照を返却します</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="back" class="wikilink1" title="jp:container:vector:back">back</a></td><td class="col1">ベクタの最後の要素への参照を返却します</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="begin" class="wikilink1" title="jp:container:vector:begin">begin</a></td><td class="col1">ベクタの先頭を指し示すiteratorを返却します</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="capacity" class="wikilink1" title="jp:container:vector:capacity">capacity</a></td><td class="col1">ベクタが保持できる要素の数を返却します</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="clear" class="wikilink1" title="jp:container:vector:clear">clear</a></td><td class="col1">ベクタから全ての要素を取り除きます</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="empty" class="wikilink1" title="jp:container:vector:empty">empty</a></td><td class="col1">ベクタの要素がなければ真(true)を返却します</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="end" class="wikilink1" title="jp:container:vector:end">end</a></td><td class="col1">ベクタの最後の要素の1つ先を指し示すイテレータを返却します</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="erase" class="wikilink1" title="jp:container:vector:erase">erase</a></td><td class="col1">ベクタから要素を取り除きます</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/container/vector/front" class="wikilink2" title="jp:container:vector:front" rel="nofollow">front</a></td><td class="col1">ベクタの先頭の要素への参照を返却します</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><a href="insert" class="wikilink1" title="jp:container:vector:insert">insert</a></td><td class="col1">ベクタに要素を挿入します</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/container/vector/max_size" class="wikilink2" title="jp:container:vector:max_size" rel="nofollow">max_size</a></td><td class="col1">ベクタが保持できる要素の最大数を返却します</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><a href="pop_back" class="wikilink1" title="jp:container:vector:pop_back">pop_back</a></td><td class="col1">ベクタの最後の要素を取り除きます</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><a href="push_back" class="wikilink1" title="jp:container:vector:push_back">push_back</a></td><td class="col1">ベクタの最後尾に要素を追加します</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/container/vector/rbegin" class="wikilink2" title="jp:container:vector:rbegin" rel="nofollow">rbegin</a></td><td class="col1">ベクタの最後尾を指し示すreverse_iteratorを返却します</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/container/vector/rend" class="wikilink2" title="jp:container:vector:rend" rel="nofollow">rend</a></td><td class="col1">ベクタの先頭を指し示すreverse_iteratorを返却します</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/container/vector/reserve" class="wikilink2" title="jp:container:vector:reserve" rel="nofollow">reserve</a></td><td class="col1">ベクタが保持できる要素数の最小値(capacity)を設定します</td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/container/vector/resize" class="wikilink2" title="jp:container:vector:resize" rel="nofollow">resize</a></td><td class="col1">ベクタのサイズを変更します</td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/container/vector/size" class="wikilink2" title="jp:container:vector:size" rel="nofollow">size</a></td><td class="col1">ベクタに含まれる項目数を返却します</td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"><a href="swap" class="wikilink1" title="jp:container:vector:swap">swap</a></td><td class="col1">別のベクタと中身を取り替えます</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [424-2009] -->
+</div>
+<!-- EDIT1 SECTION "C++ベクタ" [1-2010] -->
+<h3 class="sectionedit3"><a name="覚え書き" id="覚え書き">覚え書き:</a></h3>
+<div class="level3">
+
+<p>
+
+ブーリアン型ベクタ(vector&lt;bool&gt;)はメモリ消費を抑えるためにベクタテンプレートが特殊化されています。普通のブーリアン型変数は通常1～4バイトのメモリを要しますが、ブーリアン型ベクタは1ブーリアン値あたり1ビットしか使用しません。
+</p>
+
+</div>
+<!-- EDIT3 SECTION "覚え書き:" [2011-] --></div>
+</body>
+</html>

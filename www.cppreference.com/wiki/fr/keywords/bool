@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr"
+ lang="fr" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>fr:keywords:bool</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:56-0700" />
+<meta name="keywords" content="fr,keywords,bool" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/fr/keywords/bool?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=fr:keywords" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/fr/keywords/bool" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/fr/keywords/bool" />
+<link rel="canonical" href="bool" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='fr:keywords';var JSINFO = {"id":"fr:keywords:bool","namespace":"fr:keywords"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="bool" id="bool">bool</a></h2>
+<div class="level2">
+
+<p>
+Le mot-clef <code>bool</code> est utilisé pour déclarer des variable de type Booléen ;
+autrement dit une variable qui peut prendre la valeur <code>true</code> ou bien <code>false</code>.
+</p>
+
+<p>
+Par exemple, le code suivant déclare une variable booléenne <code>fini</code> et l&#039;initialise
+à <code>false</code> et la boucle se poursuit jusqu&#039;à ce que sa valeur soit <code>true</code>.
+</p>
+<pre class="cpp code cpp">     <span class="kw4">bool</span> fini <span class="sy1">=</span> <span class="kw2">false</span><span class="sy4">;</span>
+     <span class="kw1">while</span> <span class="br0">&#40;</span><span class="sy3">!</span>fini<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     ...
+     <span class="br0">&#125;</span></pre>
+<p>
+
+consultez aussi la page des <a href="../data_types" class="wikilink1" title="fr:data_types">types de données</a>.
+</p>
+
+<p>
+Sujets connexes : <a href="char" class="wikilink1" title="fr:keywords:char">char</a>, <a href="double" class="wikilink1" title="fr:keywords:double">double</a>, <a href="http://www.cppreference.com/wiki/fr/keywords/false" class="wikilink2" title="fr:keywords:false" rel="nofollow">false</a>, <a href="http://www.cppreference.com/wiki/fr/keywords/float" class="wikilink2" title="fr:keywords:float" rel="nofollow">float</a>, <a href="http://www.cppreference.com/wiki/fr/keywords/int" class="wikilink2" title="fr:keywords:int" rel="nofollow">int</a>, <a href="http://www.cppreference.com/wiki/fr/keywords/long" class="wikilink2" title="fr:keywords:long" rel="nofollow">long</a>, <a href="http://www.cppreference.com/wiki/fr/keywords/short" class="wikilink2" title="fr:keywords:short" rel="nofollow">short</a>, <a href="http://www.cppreference.com/wiki/fr/keywords/signed" class="wikilink2" title="fr:keywords:signed" rel="nofollow">signed</a>, <a href="true" class="wikilink1" title="fr:keywords:true">true</a>, <a href="http://www.cppreference.com/wiki/fr/keywords/unsigned" class="wikilink2" title="fr:keywords:unsigned" rel="nofollow">unsigned</a>, <a href="http://www.cppreference.com/wiki/fr/keywords/wchar_t" class="wikilink2" title="fr:keywords:wchar_t" rel="nofollow">wchar_t</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

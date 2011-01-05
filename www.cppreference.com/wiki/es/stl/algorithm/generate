@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es"
+ lang="es" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>es:algorithm:generate</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:32-0700" />
+<meta name="keywords" content="es,algorithm,generate" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/es/algorithm/generate?do=index" title="Índice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=es:algorithm" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/es/algorithm/generate" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/es/algorithm/generate" />
+<link rel="canonical" href="generate" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='es:algorithm';var JSINFO = {"id":"es:algorithm:generate","namespace":"es:algorithm"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="generate" id="generate">generate</a></h2>
+<div class="level2">
+
+<p>
+Sintaxis:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;algorithm&gt;</span>
+    <span class="kw4">void</span> generate<span class="br0">&#40;</span> forward_iterator inicio, forward_iterator fin, Generator g <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+La función <code>generate()</code> toma valores de la función generadora <code>g</code> y los almacena uno por uno en el espacio de elementos entre <code>inicio</code> y <code>fin</code>. 
+</p>
+
+<p>
+Por ejemplo, en el siguiente código se usa la función generadora <a href="http://www.cppreference.com/wiki/other/rand" class="wikilink2" title="other:rand" rel="nofollow">rand() de la Biblioteca Estándar</a> para llenar un <code>vector</code> con elementos (pseudo-)aleatorios:
+</p>
+<pre class="cpp code cpp">    vector<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> v<span class="br0">&#40;</span><span class="nu0">5</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    generate<span class="br0">&#40;</span>v.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, v.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, <span class="kw3">rand</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// llamando a la función rand()</span>
+    <span class="co1">// En ciertos compiladores será necesario usar &amp;rand</span>
+&nbsp;
+    <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;v: &quot;</span><span class="sy4">;</span>
+    <span class="kw1">for</span> <span class="br0">&#40;</span>vector<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">size_type</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> v.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="sy2">++</span>i<span class="br0">&#41;</span>
+        <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> v<span class="br0">&#91;</span>i<span class="br0">&#93;</span> <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span><span class="sy4">;</span>
+    <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
+<p>
+<code><a href="generate_n" class="wikilink1" title="es:algorithm:generate_n">generate_n</a></code> es una función similar que llena <code>n</code> espacios llamando a la función generadora en vez de llenar un rango con inicio y final definidos.
+</p>
+
+<p>
+Tópicos Relacionados: <a href="copy" class="wikilink1" title="es:algorithm:copy">copy</a>, <a href="fill" class="wikilink1" title="es:algorithm:fill">fill</a>, <a href="generate_n" class="wikilink1" title="es:algorithm:generate_n">generate_n</a>, <a href="http://www.cppreference.com/wiki/es/algorithm/transform" class="wikilink2" title="es:algorithm:transform" rel="nofollow">transform</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

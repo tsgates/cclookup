@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>language:constructs:if</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="noindex,nofollow" />
+<meta name="date" content="2010-11-15T05:25:28-0800" />
+<meta name="keywords" content="language,constructs,if" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/language/constructs/if?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=language:constructs" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/language/constructs/if" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/language/constructs/if" />
+<link rel="canonical" href="if" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='language:constructs';var JSINFO = {"id":"language:constructs:if","namespace":"language:constructs"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="if#if_statement" class="toc">if statement</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="if#syntax" class="toc">Syntax</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="if#explanation" class="toc">Explanation</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="if#example" class="toc">Example</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="if_statement" id="if_statement">if statement</a></h2>
+<div class="level2">
+
+<p>
+
+Conditionally executes code.
+</p>
+
+<p>
+Used where code needs to be executed only is some condition is present.
+</p>
+
+</div>
+<!-- EDIT1 SECTION "if statement" [1-127] -->
+<h3 class="sectionedit2"><a name="syntax" id="syntax">Syntax</a></h3>
+<div class="level3">
+<div class="table sectionedit3"><table class="inline">
+	<tr class="row0">
+		<td class="col0 leftalign"> <code><strong>if (</strong></code> <sub><em>expression</em></sub> <code><strong>)</strong></code> <sub><em>statement_true</em></sub>  </td>
+	</tr>
+</table></div>
+<!-- EDIT3 TABLE [144-227] --><div class="table sectionedit4"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <code><strong>if (</strong></code> <sub><em>expression</em></sub> <code><strong>)</strong></code> <sub><em>statement_true</em></sub>  <code><strong>else</strong></code> <sub><em>statement_false</em></sub> </td>
+	</tr>
+</table></div>
+<!-- EDIT4 TABLE [229-356] -->
+</div>
+<!-- EDIT2 SECTION "Syntax" [128-357] -->
+<h3 class="sectionedit5"><a name="explanation" id="explanation">Explanation</a></h3>
+<div class="level3">
+
+<p>
+
+<code>expression</code> shall be an expression, convertible to <code>bool</code>. 
+</p>
+
+<p>
+If it evaluates to <code>true</code>, only <code>statement_true</code> will be executed. 
+</p>
+
+<p>
+Otherwise, <code>statement_false</code> will be executed if present.
+</p>
+
+</div>
+<!-- EDIT5 SECTION "Explanation" [358-578] -->
+<h3 class="sectionedit6"><a name="example" id="example">Example</a></h3>
+<div class="level3">
+
+<p>
+
+The following code shows several usage cases of the <code>if</code> statement
+
+</p>
+<pre class="cpp code cpp"><span class="co2">#include &lt;iostream&gt;</span>
+&nbsp;
+<span class="kw4">int</span> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">2</span><span class="sy4">;</span>
+    <span class="kw1">if</span> <span class="br0">&#40;</span>i <span class="sy1">&gt;</span> <span class="nu0">2</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;first is true&quot;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+    <span class="br0">&#125;</span> <span class="kw1">else</span> <span class="br0">&#123;</span>
+        std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;first is false&quot;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+    <span class="br0">&#125;</span>
+&nbsp;
+    i <span class="sy1">=</span> <span class="nu0">3</span><span class="sy4">;</span>
+    <span class="kw1">if</span> <span class="br0">&#40;</span>i <span class="sy1">==</span> <span class="nu0">3</span><span class="br0">&#41;</span> std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;i == 3&quot;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+&nbsp;
+    <span class="kw1">if</span> <span class="br0">&#40;</span>i <span class="sy3">!</span><span class="sy1">=</span> <span class="nu0">3</span><span class="br0">&#41;</span> std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;i != 3&quot;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+    <span class="kw1">else</span>        std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;i != 3 is false&quot;</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+&nbsp;
+    <span class="kw1">return</span> <span class="nu0">0</span><span class="sy4">;</span>
+<span class="br0">&#125;</span></pre>
+<p>
+Output:
+
+</p>
+<pre class="cpp code cpp">first is <span class="kw2">false</span>
+i <span class="sy1">==</span> <span class="nu0">3</span>
+i <span class="sy3">!</span><span class="sy1">=</span> <span class="nu0">3</span> is <span class="kw2">false</span></pre>
+</div>
+<!-- EDIT6 SECTION "Example" [579-] --></div>
+</body>
+</html>

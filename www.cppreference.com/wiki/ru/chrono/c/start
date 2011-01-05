@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru"
+ lang="ru" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>ru:chrono:c:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-11-08T12:43:22-0800" />
+<meta name="keywords" content="ru,chrono,c,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/ru/chrono/c/start?do=index" title="Все страницы" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=ru:chrono:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/ru/chrono/c/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/ru/chrono/c/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='ru:chrono:c';var JSINFO = {"id":"ru:chrono:c:start","namespace":"ru:chrono:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="функции_cвремя_и_дата" id="функции_cвремя_и_дата">Функции C: Время и Дата</a></h1>
+<div class="level1">
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/chrono/c/asctime" class="wikilink2" title="ru:chrono:c:asctime" rel="nofollow">asctime</a></td><td class="col1">время в текстовом формате</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/chrono/c/clock" class="wikilink2" title="ru:chrono:c:clock" rel="nofollow">clock</a></td><td class="col1">время работы программы</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/chrono/c/ctime" class="wikilink2" title="ru:chrono:c:ctime" rel="nofollow">ctime</a></td><td class="col1">возвращает отформатированное время</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/chrono/c/difftime" class="wikilink2" title="ru:chrono:c:difftime" rel="nofollow">difftime</a></td><td class="col1">вычисляет разницу между двумя моментами времени</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/chrono/c/gmtime" class="wikilink2" title="ru:chrono:c:gmtime" rel="nofollow">gmtime</a></td><td class="col1">преобразует дату и время во время по стандарту Гринвича</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/chrono/c/localtime" class="wikilink2" title="ru:chrono:c:localtime" rel="nofollow">localtime</a></td><td class="col1">превращает дату и время в структуру</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/ru/chrono/c/mktime" class="wikilink2" title="ru:chrono:c:mktime" rel="nofollow">mktime</a></td><td class="col1"><strong><em class="u">!!!(Нужна правка)returns the calendar version of a given time</em></strong></td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="setlocale" class="wikilink1" title="ru:chrono:c:setlocale">setlocale</a></td><td class="col1">устанавливает текущую локаль</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="strftime" class="wikilink1" title="ru:chrono:c:strftime">strftime</a></td><td class="col1">возвращает отдельные элементы даты/времени</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="time" class="wikilink1" title="ru:chrono:c:time">time</a></td><td class="col1">возвращает текущее время в секундах</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [63-900] -->
+</div>
+</div>
+</body>
+</html>

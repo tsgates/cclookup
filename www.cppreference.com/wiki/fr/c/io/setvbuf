@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr"
+ lang="fr" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>fr:c:io:setvbuf</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:57-0700" />
+<meta name="keywords" content="fr,c,io,setvbuf" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/fr/c/io/setvbuf?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=fr:c:io" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/fr/c/io/setvbuf" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/fr/c/io/setvbuf" />
+<link rel="canonical" href="setvbuf" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='fr:c:io';var JSINFO = {"id":"fr:c:io:setvbuf","namespace":"fr:c:io"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="setvbuf" id="setvbuf">setvbuf</a></h2>
+<div class="level2">
+
+<p>
+Syntaxe :
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cstdio&gt;</span>
+    <span class="kw4">int</span> <span class="kw3">setvbuf</span><span class="br0">&#40;</span><span class="kw4">FILE</span> <span class="sy2">*</span>flux, <span class="kw4">char</span> <span class="sy2">*</span>buf, <span class="kw4">int</span> mode, <span class="kw4">size_t</span> taille<span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+
+La fonction <code>setvbuf()</code> indique le “tampon” à utiliser (<code>buf</code>) pour le fichier
+<code>flux</code>. Le paramètre <code>taille</code> indique la taille de <code>buf</code>. Si <code>buf</code> vaut NULL,
+<code>setvbuf()</code> alloue automatiquement un tampon de <code>taille</code> caractères.
+</p>
+
+<p>
+Les différents <code>mode</code>s d&#039;utilisation disponibles sont :
+
+</p>
+<ul>
+<li class="level1"><div class="li"> _IOFBF - full buffering : indique la mise en mémoire tampon complète (écriture dans le fichier quand le tampon est plein uniquement).</div>
+</li>
+<li class="level1"><div class="li"> _IOLBF - line buffering : indique la mise en mémoire tampon par ligne (écriture dans le fichier à la rencontre d&#039;un caractère de fin de ligne ou quand le tampon est plein).</div>
+</li>
+<li class="level1"><div class="li"> _IONBF - no buffering : indique que l&#039;écriture dans le fichier se fait dès que possible (pas d&#039;utilisation du tampon). Et les paramètres <code>taille</code> et <code>buf</code> sont ignorés.</div>
+</li>
+</ul>
+
+<p>
+Sujet connexe : <a href="setbuf" class="wikilink1" title="fr:c:io:setbuf">setbuf</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

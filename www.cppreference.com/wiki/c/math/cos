@@ -4,55 +4,95 @@
  lang="en" dir="ltr">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>c:math:cos</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
+  <title>numeric:c:cos</title>
+<meta name="generator" content="DokuWiki" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2009-03-19T23:39:27-0700" />
-<meta name="keywords" content="c,math,cos" />
+<meta name="date" content="2010-10-28T18:17:32-0700" />
+<meta name="keywords" content="numeric,c,cos" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/c/math/cos?do=index" title="Index" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/numeric/c/cos?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
-<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=c:math" />
-<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/c/math/cos" />
-<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/c/math/cos" />
-<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=numeric:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/numeric/c/cos" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/numeric/c/cos" />
+<link rel="canonical" href="cos" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='numeric:c';var JSINFO = {"id":"numeric:c:cos","namespace":"numeric:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
 
+<ul class="toc">
+<li class="clear">
 
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="cos#cos" class="toc">cos</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="cos#parameters" class="toc">Parameters</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="cos#return_value" class="toc">Return value</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="cos#see_also" class="toc">See also</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
 
-<h2><a name="cos" id="cos">cos</a></h2>
+<h2 class="sectionedit1"><a name="cos" id="cos">cos</a></h2>
 <div class="level2">
 
 <p>
 Syntax:
 </p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;cmath&gt;</span>
-    <span class="kw4">double</span> cos<span class="br0">&#40;</span> <span class="kw4">double</span> arg <span class="br0">&#41;</span>;</pre>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cmath&gt;</span>
+&nbsp;
+    <span class="kw4">float</span> <span class="kw3">cos</span><span class="br0">&#40;</span> <span class="kw4">float</span> arg <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">double</span> <span class="kw3">cos</span><span class="br0">&#40;</span> <span class="kw4">double</span> arg <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">long</span> <span class="kw4">double</span> <span class="kw3">cos</span><span class="br0">&#40;</span> <span class="kw4">long</span> <span class="kw4">double</span> arg <span class="br0">&#41;</span><span class="sy4">;</span></pre>
 <p>
-
-The cos() function returns the cosine of arg, where arg is expressed in
-radians. The return value of cos() is in the range [-1,1]. If arg is infinite,
-cos() will return NAN and raise a floating-point exception.
-</p>
-
-<p>
-C++ also provides the following overloaded forms:
-
-</p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;cmath&gt;</span>
-    <span class="kw4">float</span> cos<span class="br0">&#40;</span> <span class="kw4">float</span> arg <span class="br0">&#41;</span>; <span class="co1">// same as cosf() in C99</span>
-    <span class="kw4">long</span> <span class="kw4">double</span> cos<span class="br0">&#40;</span> <span class="kw4">long</span> <span class="kw4">double</span> arg <span class="br0">&#41;</span>; <span class="co1">// same as cosl() in C99</span></pre>
-<p>
-Related Topics: <a href="acos" class="wikilink1" title="c:math:acos">acos</a>, <a href="asin" class="wikilink1" title="c:math:asin">asin</a>, <a href="atan" class="wikilink1" title="c:math:atan">atan</a>, <a href="atan2" class="wikilink1" title="c:math:atan2">atan2</a>, <a href="cosh" class="wikilink1" title="c:math:cosh">cosh</a>, <a href="sin" class="wikilink1" title="c:math:sin">sin</a>, <a href="sinh" class="wikilink1" title="c:math:sinh">sinh</a>, <a href="tan" class="wikilink1" title="c:math:tan">tan</a>, <a href="tanh" class="wikilink1" title="c:math:tanh">tanh</a>
+Computes cosine of <code>arg</code>.
 </p>
 
 </div>
-<!-- SECTION "cos" [3-] --></div>
+<!-- EDIT1 SECTION "cos" [1-192] -->
+<h3 class="sectionedit2"><a name="parameters" id="parameters">Parameters</a></h3>
+<div class="level3">
+
+<p>
+
+<code>arg</code> - floating point value representing angle in radians.
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Parameters" [193-275] -->
+<h3 class="sectionedit3"><a name="return_value" id="return_value">Return value</a></h3>
+<div class="level3">
+
+<p>
+
+cosine of <code>arg</code> in the range [-1.0 ; 1.0]. If <code>arg</code> is infinite, <code>NAN</code> will be returned and domain error raised.
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Return value" [276-417] -->
+<h3 class="sectionedit4"><a name="see_also" id="see_also">See also</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="sin" class="wikilink1" title="numeric:c:sin">sin</a>, <a href="tan" class="wikilink1" title="numeric:c:tan">tan</a>, <a href="acos" class="wikilink1" title="numeric:c:acos">acos</a>
+</p>
+
+</div>
+<!-- EDIT4 SECTION "See also" [418-] --></div>
 </body>
 </html>

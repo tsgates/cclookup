@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it"
+ lang="it" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>it:util:utility:pair</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:08-0700" />
+<meta name="keywords" content="it,util,utility,pair" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/it/util/utility/pair?do=index" title="Indice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=it:util:utility" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/it/util/utility/pair" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/it/util/utility/pair" />
+<link rel="canonical" href="pair" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='it:util:utility';var JSINFO = {"id":"it:util:utility:pair","namespace":"it:util:utility"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="pair_coppia" id="pair_coppia">pair (coppia)</a></h2>
+<div class="level2">
+
+<p>
+
+Sintassi:
+
+</p>
+<pre class="cpp code cpp">  pair<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+  pair<span class="br0">&#40;</span> <span class="kw4">const</span> T1 <span class="sy3">&amp;</span>a, <span class="kw4">const</span> T2 <span class="sy3">&amp;</span>b <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+The struttura pair è un modo per memorizzare insieme (quindi secondo una relazione) due dati eterogenei.
+</p>
+
+<p>
+Si può accedere ai dati di una coppia usando i campi <code>first</code> e <code>second</code>.
+</p>
+
+<p>
+Le coppie possono essere confrontate usando l&#039;operatore &#039;==&#039;. Anche l&#039;operatore <code>&lt;</code> è definito per le coppie; date due coppie <code>x</code> e <code>y</code> l&#039;operatore <code>&lt;</code> ritorna:
+</p>
+<pre class="cpp code cpp">x.<span class="me1">first</span> <span class="sy1">&lt;</span> y.<span class="me1">first</span> <span class="sy3">||</span> <span class="br0">&#40;</span><span class="sy3">!</span><span class="br0">&#40;</span>y.<span class="me1">first</span> <span class="sy1">&lt;</span> x.<span class="me1">first</span><span class="br0">&#41;</span> <span class="sy3">&amp;&amp;</span> x.<span class="me1">second</span> <span class="sy1">&lt;</span> y.<span class="me1">second</span><span class="br0">&#41;</span></pre>
+<p>
+La funzione <a href="make_pair" class="wikilink1" title="it:util:utility:make_pair">make_pair</a> può essere usata come abbreviazione per creare coppie ed evitare di specificare esplicitamente i tipi dei due dati. 
+</p>
+
+<p>
+Argomento collegato: <a href="make_pair" class="wikilink1" title="it:util:utility:make_pair">make_pair</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

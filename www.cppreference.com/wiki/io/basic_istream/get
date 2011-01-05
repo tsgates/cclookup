@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>io:basic_istream:get</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-11-12T07:43:01-0800" />
+<meta name="keywords" content="io,basic_istream,get" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/io/basic_istream/get?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=io:basic_istream" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/io/basic_istream/get" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/io/basic_istream/get" />
+<link rel="canonical" href="get" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='io:basic_istream';var JSINFO = {"id":"io:basic_istream:get","namespace":"io:basic_istream"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="get#basic_istreamget" class="toc">basic_istream::get</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="get#parameters" class="toc">Parameters</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="get#return_value" class="toc">Return value</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="get#see_also" class="toc">See also</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="basic_istreamget" id="basic_istreamget">basic_istream::get</a></h2>
+<div class="level2">
+<pre class="cpp code cpp"><span class="kw4">int</span> get<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>                                                      <span class="co1">//1</span>
+basic_istream<span class="sy3">&amp;</span> get<span class="br0">&#40;</span> char_type<span class="sy3">&amp;</span> ch <span class="br0">&#41;</span><span class="sy4">;</span>                            <span class="co1">//2</span>
+basic_istream<span class="sy3">&amp;</span> get<span class="br0">&#40;</span> char_type<span class="sy2">*</span> s, pos_type count <span class="br0">&#41;</span><span class="sy4">;</span>             <span class="co1">//3</span>
+basic_istream<span class="sy3">&amp;</span> get<span class="br0">&#40;</span> char_type<span class="sy2">*</span> s, pos_type count, <span class="kw4">char</span> delim <span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">//4</span>
+basic_istream<span class="sy3">&amp;</span> get<span class="br0">&#40;</span> basic_streambuf<span class="sy3">&amp;</span> strbuf <span class="br0">&#41;</span><span class="sy4">;</span>                  <span class="co1">//5</span>
+basic_istream<span class="sy3">&amp;</span> get<span class="br0">&#40;</span> basic_streambuf<span class="sy3">&amp;</span> strbuf, <span class="kw4">char</span> delim <span class="br0">&#41;</span><span class="sy4">;</span>      <span class="co1">//6</span></pre>
+<p>
+Extracts characters from stream. All versions stop if end-of-file occurs and calls <code>setstate(eofbit)</code> in that case (which may throw <a href="http://www.cppreference.com/wiki/io/ios_base/failure" class="wikilink2" title="io:ios_base:failure" rel="nofollow"> ios_base::failure</a> exception). 
+</p>
+
+<p>
+1) reads one character and returns it.
+</p>
+
+<p>
+2) reads one character and stores it to <code>ch</code>
+</p>
+
+<p>
+3) reads at most <code>count-1</code> characters and stores them into character string <code>s</code>. The function stops if <code>\n</code> delimiting character is found, in which case it is extracted but not stored. The resulting string is always NULL-terminated.
+</p>
+
+<p>
+4) reads at most <code>count-1</code> characters and stores them into character string <code>s</code>. The function stops if <code>delim</code> delimiting character is found, in which case it is extracted but not stored. The resulting string is always NULL-terminated.
+</p>
+
+<p>
+5) reads characters and inserts them to the given <code>basic_streambuf</code> object. The function stops if <code>\n</code> delimiting character is found, in which case it is extracted but not stored.
+</p>
+
+<p>
+6) reads characters and inserts them to the given <code>basic_streambuf</code> object. The function stops if <code>delim</code> delimiting character is found, in which case it is extracted but not stored.
+</p>
+
+</div>
+<!-- EDIT1 SECTION "basic_istream::get" [1-1590] -->
+<h3 class="sectionedit2"><a name="parameters" id="parameters">Parameters</a></h3>
+<div class="level3">
+
+<p>
+
+<code>ch</code> - reference to the character to read the input to
+</p>
+
+<p>
+<code>s</code> - character string to read the input to
+</p>
+
+<p>
+<code>count</code> - size of <code>s</code>
+</p>
+
+<p>
+<code>delim</code> - delimiting character to stop the extraction at. It is extracted but not stored.
+</p>
+
+<p>
+<code>strbuf</code> - stream buffer to read the content to
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Parameters" [1591-1886] -->
+<h3 class="sectionedit3"><a name="return_value" id="return_value">Return value</a></h3>
+<div class="level3">
+
+<p>
+
+1) the extracted character
+</p>
+
+<p>
+2-6) <code>*this</code>
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Return value" [1887-1952] -->
+<h3 class="sectionedit4"><a name="see_also" id="see_also">See also</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="getline" class="wikilink1" title="io:basic_istream:getline">getline</a>, <a href="unget" class="wikilink1" title="io:basic_istream:unget">unget</a>, <a href="read" class="wikilink1" title="io:basic_istream:read">read</a>
+
+</p>
+
+</div>
+<!-- EDIT4 SECTION "See also" [1953-] --></div>
+</body>
+</html>

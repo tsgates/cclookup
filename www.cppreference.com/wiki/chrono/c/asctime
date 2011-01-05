@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>chrono:c:asctime</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-11-07T15:51:40-0800" />
+<meta name="keywords" content="chrono,c,asctime" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/chrono/c/asctime?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=chrono:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/chrono/c/asctime" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/chrono/c/asctime" />
+<link rel="canonical" href="asctime" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='chrono:c';var JSINFO = {"id":"chrono:c:asctime","namespace":"chrono:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="asctime#asctime" class="toc">asctime</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="asctime#parameters" class="toc">Parameters</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="asctime#return_value" class="toc">Return value</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="asctime#see_also" class="toc">See also</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="asctime" id="asctime">asctime</a></h2>
+<div class="level2">
+<pre class="cpp code cpp"><span class="co2">#include &lt;ctime&gt;</span>
+&nbsp;
+<span class="kw4">char</span> <span class="sy2">*</span><span class="kw3">asctime</span><span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">struct</span> <span class="kw4">tm</span> <span class="sy2">*</span>time_ptr <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Converts given <code>tm</code> struct to a human-readable time format. The resultant string has the following format:
+</p>
+<pre class="cpp code cpp">Www Mmm dd hh<span class="sy4">:</span>mm<span class="sy4">:</span>ss yyyy</pre>
+<p>
+Where <code>Www</code> is the day of the week (one of <code>Mon</code>, <code>Tue</code>, <code>Wed</code>, <code>Thu</code>, <code>Fri</code>, <code>Sat</code>, <code>Sun</code>).
+</p>
+
+<p>
+<code>Mmm</code> is the month (one of <code>Jan</code>, <code>Feb</code>, <code>Mar</code>, <code>Apr</code>, <code>May</code>, <code>Jun</code>, <code>Jul</code>, <code>Aug</code>, <code>Sep</code>, <code>Oct</code>, <code>Nov</code>, <code>Dec</code>).
+</p>
+
+<p>
+<code>dd</code> is the day of the month, <code>hh</code> is hours, <code>mm</code> is minutes, <code>ss</code> is seconds and <code>yyyy</code> is years.
+</p>
+
+</div>
+<!-- EDIT1 SECTION "asctime" [1-610] -->
+<h3 class="sectionedit2"><a name="parameters" id="parameters">Parameters</a></h3>
+<div class="level3">
+
+<p>
+
+<code>time_ptr</code> - pointer to a <code>tm</code> object specifying the time to print
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Parameters" [611-702] -->
+<h3 class="sectionedit3"><a name="return_value" id="return_value">Return value</a></h3>
+<div class="level3">
+
+<p>
+
+pointer to a static character string. The string is shared among <code>ctime</code> and <code>asctime</code> and is overwritten on each invocation.
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Return value" [703-855] -->
+<h3 class="sectionedit4"><a name="see_also" id="see_also">See also</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="ctime" class="wikilink1" title="chrono:c:ctime">ctime</a>, <a href="difftime" class="wikilink1" title="chrono:c:difftime">difftime</a>, <a href="gmtime" class="wikilink1" title="chrono:c:gmtime">gmtime</a>, <a href="localtime" class="wikilink1" title="chrono:c:localtime">localtime</a>, <a href="mktime" class="wikilink1" title="chrono:c:mktime">mktime</a>, <a href="time" class="wikilink1" title="chrono:c:time">time</a>
+</p>
+
+</div>
+<!-- EDIT4 SECTION "See also" [856-] --></div>
+</body>
+</html>

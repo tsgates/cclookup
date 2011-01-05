@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es"
+ lang="es" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>es:c:string:isalpha</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:29-0700" />
+<meta name="keywords" content="es,c,string,isalpha" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/es/c/string/isalpha?do=index" title="Índice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=es:c:string" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/es/c/string/isalpha" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/es/c/string/isalpha" />
+<link rel="canonical" href="isalpha" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='es:c:string';var JSINFO = {"id":"es:c:string:isalpha","namespace":"es:c:string"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="isalpha" id="isalpha">isalpha</a></h2>
+<div class="level2">
+
+<p>
+Syntax:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cctype&gt;</span>
+    <span class="kw4">int</span> <span class="kw3">isalpha</span><span class="br0">&#40;</span> <span class="kw4">int</span> ch <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+
+La funcion isalpha() retorna un numero distinto de cero si el argumento es una letra
+del alfabeto. De lo contrario, retorna cero.
+</p>
+<pre class="cpp code cpp">     <span class="kw4">char</span> c<span class="sy4">;</span>
+     <span class="kw3">scanf</span><span class="br0">&#40;</span> <span class="st0">&quot;%c&quot;</span>, <span class="sy3">&amp;</span>c <span class="br0">&#41;</span><span class="sy4">;</span>
+     <span class="kw1">if</span><span class="br0">&#40;</span> <span class="kw3">isalpha</span><span class="br0">&#40;</span>c<span class="br0">&#41;</span> <span class="br0">&#41;</span>
+       <span class="kw3">printf</span><span class="br0">&#40;</span> <span class="st0">&quot;Haz ingresado una letra del alfabeto<span class="es1">\n</span>&quot;</span> <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Temas Relacionados: <a href="http://www.cppreference.com/wiki/es/c/string/isalnum" class="wikilink2" title="es:c:string:isalnum" rel="nofollow">isalnum</a>, <a href="http://www.cppreference.com/wiki/es/c/string/iscntrl" class="wikilink2" title="es:c:string:iscntrl" rel="nofollow">iscntrl</a>, <a href="http://www.cppreference.com/wiki/es/c/string/isdigit" class="wikilink2" title="es:c:string:isdigit" rel="nofollow">isdigit</a>, <a href="http://www.cppreference.com/wiki/es/c/string/isgraph" class="wikilink2" title="es:c:string:isgraph" rel="nofollow">isgraph</a>, <a href="http://www.cppreference.com/wiki/es/c/string/isprint" class="wikilink2" title="es:c:string:isprint" rel="nofollow">isprint</a>, <a href="http://www.cppreference.com/wiki/es/c/string/ispunct" class="wikilink2" title="es:c:string:ispunct" rel="nofollow">ispunct</a>, <a href="http://www.cppreference.com/wiki/es/c/string/isspace" class="wikilink2" title="es:c:string:isspace" rel="nofollow">isspace</a>, <a href="http://www.cppreference.com/wiki/es/c/string/isxdigit" class="wikilink2" title="es:c:string:isxdigit" rel="nofollow">isxdigit</a>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "isalpha" [2-] --></div>
+</body>
+</html>

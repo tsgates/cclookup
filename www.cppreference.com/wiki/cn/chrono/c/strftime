@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn"
+ lang="cn" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>cn:chrono:c:strftime</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-11-08T11:54:19-0800" />
+<meta name="keywords" content="cn,chrono,c,strftime" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/cn/chrono/c/strftime?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=cn:chrono:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/cn/chrono/c/strftime" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/cn/chrono/c/strftime" />
+<link rel="canonical" href="strftime" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='cn:chrono:c';var JSINFO = {"id":"cn:chrono:c:strftime","namespace":"cn:chrono:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="strftime" id="strftime">strftime</a></h2>
+<div class="level2">
+
+<p>
+语法：
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;ctime&gt;</span>
+    <span class="kw4">size_t</span> <span class="kw3">strftime</span><span class="br0">&#40;</span> <span class="kw4">char</span> <span class="sy2">*</span>str, <span class="kw4">size_t</span> maxsize, <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>fmt, <span class="kw4">struct</span> <span class="kw4">tm</span> <span class="sy2">*</span><span class="kw3">time</span> <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+函数 strftime() 根据fmt格式化time中日期和时间信息，然后将结果存储到str（至多maxsize个字符）。
+</p>
+
+<p>
+特定的码可以用在fmt中来确定不同的时间类型：
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<th class="col0">码</th><th class="col1">意义</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><code>%a</code></td><td class="col1">星期的缩写（例如：Fri）</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><code>%A</code></td><td class="col1">星期的完整的名字（例如：Friday）</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><code>%b</code></td><td class="col1">月份的缩写（例如：Oct）</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><code>%B</code></td><td class="col1">月份的完整名（例如：October）</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><code>%c</code></td><td class="col1">标准的日期和时间字符串</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><code>%d</code></td><td class="col1">月份的第几天，以数字方式 (1-31)</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><code>%H</code></td><td class="col1">小时，24小时格式 (00-23)</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><code>%I</code></td><td class="col1">小时，12小时格式 (1-12)</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><code>%j</code></td><td class="col1">年的第几天，以数字方式 (1-366)</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><code>%m</code></td><td class="col1">月份，以数字方式 (1-12)。 注意：Microsoft Visual C++ 的某些版本使用范围0-11。</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><code>%M</code></td><td class="col1">分钟，数字方式 (0-59)</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><code>%p</code></td><td class="col1">特定locale中的 AM 或 PM</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><code>%S</code></td><td class="col1">秒，以数字方式 (0-59)</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><code>%U</code></td><td class="col1">年的第几周 (0-53), 第一周拥有第一个星期日</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><code>%w</code></td><td class="col1">星期几，以数字方式 (0-6), 0是星期日</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><code>%W</code></td><td class="col1">年的第几周 (0-53), 第一周拥有第一个星期一</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><code>%x</code></td><td class="col1">标准日期字符串</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"><code>%X</code></td><td class="col1">标准时间字符串</td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"><code>%y</code></td><td class="col1">年，数字方式，没有带世纪 (0-99)</td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"><code>%Y</code></td><td class="col1">年，数字方式，带有世纪</td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"><code>%Z</code></td><td class="col1">时区名字</td>
+	</tr>
+	<tr class="row22">
+		<td class="col0"><code>%%</code></td><td class="col1">百分号</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [345-1390] -->
+<p>
+
+strftime() 函数放入str中字符的数目，发生错误时返回0。
+</p>
+
+<p>
+相关主题： <a href="gmtime" class="wikilink1" title="cn:chrono:c:gmtime">gmtime</a>, <a href="localtime" class="wikilink1" title="cn:chrono:c:localtime">localtime</a>, <a href="time" class="wikilink1" title="cn:chrono:c:time">time</a>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "strftime" [2-] --></div>
+</body>
+</html>

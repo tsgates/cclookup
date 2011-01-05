@@ -4,36 +4,38 @@
  lang="pl" dir="ltr">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>pl:c:math:exp</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
-<meta name="robots" content="noindex,nofollow" />
-<meta name="date" content="2009-07-11T11:05:35-0700" />
-<meta name="keywords" content="pl,c,math,exp" />
+  <title>pl:numeric:c:exp</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:39-0700" />
+<meta name="keywords" content="pl,numeric,c,exp" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../../../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/pl/c/math/exp?do=index" title="Indeks" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/pl/numeric/c/exp?do=index" title="Indeks" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
-<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=pl:c:math" />
-<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/pl/c/math/exp" />
-<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/pl/c/math/exp" />
-<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=pl:numeric:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/pl/numeric/c/exp" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/pl/numeric/c/exp" />
+<link rel="canonical" href="exp" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='pl:numeric:c';var JSINFO = {"id":"pl:numeric:c:exp","namespace":"pl:numeric:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
 
-
-
-<h2><a name="exp" id="exp">exp</a></h2>
+<h2 class="sectionedit1"><a name="exp" id="exp">exp</a></h2>
 <div class="level2">
 
 <p>
 Składnia:
 </p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;cmath&gt;</span>
-    <span class="kw4">double</span> exp<span class="br0">&#40;</span><span class="kw4">double</span> num<span class="br0">&#41;</span>;</pre>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cmath&gt;</span>
+    <span class="kw4">double</span> <span class="kw3">exp</span><span class="br0">&#40;</span><span class="kw4">double</span> num<span class="br0">&#41;</span><span class="sy4">;</span></pre>
 <p>
 
 Funkcja exp() zwraca <em>e</em> (~2.7182818) podniesione do potęgi <em>num</em>.
@@ -43,14 +45,14 @@ Funkcja exp() zwraca <em>e</em> (~2.7182818) podniesione do potęgi <em>num</em>
 C++ dostarcza również przeciążone wersje funkcji: 
 
 </p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;cmath&gt;</span>
-    <span class="kw4">float</span> exp<span class="br0">&#40;</span><span class="kw4">float</span> num<span class="br0">&#41;</span>;  <span class="co1">//to samo co expf() w C99</span>
-    <span class="kw4">long</span> <span class="kw4">double</span> exp<span class="br0">&#40;</span><span class="kw4">long</span> <span class="kw4">double</span> num<span class="br0">&#41;</span>;  <span class="co1">//to samo co expl() w C99</span></pre>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cmath&gt;</span>
+    <span class="kw4">float</span> <span class="kw3">exp</span><span class="br0">&#40;</span><span class="kw4">float</span> num<span class="br0">&#41;</span><span class="sy4">;</span>  <span class="co1">//to samo co expf() w C99</span>
+    <span class="kw4">long</span> <span class="kw4">double</span> <span class="kw3">exp</span><span class="br0">&#40;</span><span class="kw4">long</span> <span class="kw4">double</span> num<span class="br0">&#41;</span><span class="sy4">;</span>  <span class="co1">//to samo co expl() w C99</span></pre>
 <p>
-Tematy pokrewne: <a href="http://www.cppreference.com/wiki/pl/c/math/log" class="wikilink2" title="pl:c:math:log" rel="nofollow">log</a>, <a href="http://www.cppreference.com/wiki/pl/c/math/pow" class="wikilink2" title="pl:c:math:pow" rel="nofollow">pow</a>, <a href="http://www.cppreference.com/wiki/pl/c/math/sqrt" class="wikilink2" title="pl:c:math:sqrt" rel="nofollow">sqrt</a>
+Tematy pokrewne: <a href="log" class="wikilink1" title="pl:numeric:c:log">log</a>, <a href="pow" class="wikilink1" title="pl:numeric:c:pow">pow</a>, <a href="sqrt" class="wikilink1" title="pl:numeric:c:sqrt">sqrt</a>
 </p>
 
 </div>
-<!-- SECTION "exp" [3-] --></div>
+<!-- EDIT1 SECTION "exp" [3-] --></div>
 </body>
 </html>

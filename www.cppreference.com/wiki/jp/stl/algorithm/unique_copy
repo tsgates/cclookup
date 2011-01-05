@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:algorithm:unique_copy</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:23-0700" />
+<meta name="keywords" content="jp,algorithm,unique_copy" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/algorithm/unique_copy?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp:algorithm" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/algorithm/unique_copy" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/algorithm/unique_copy" />
+<link rel="canonical" href="unique_copy" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp:algorithm';var JSINFO = {"id":"jp:algorithm:unique_copy","namespace":"jp:algorithm"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="unique_copy" id="unique_copy">unique_copy</a></h2>
+<div class="level2">
+
+<p>
+Syntax:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;algorithm&gt;</span>
+    output_iterator unique_copy<span class="br0">&#40;</span> input_iterator start, input_iterator end, output_iterator result <span class="br0">&#41;</span><span class="sy4">;</span>
+    output_iterator unique_copy<span class="br0">&#40;</span> input_iterator start, input_iterator end, output_iterator result, BinPred p <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+
+unique_copy()関数は範囲[start,end)を連続した重複値を破棄しつつ、resultが指す位置にコピーします。
+この時、コピー先の領域は確保済みでなければなりません。
+</p>
+
+<p>
+二項述語pが与えられた場合、pが二つの要素が重複値であるかどうかを検査します。
+</p>
+
+<p>
+unique_copy()の戻り値は、新たに得られた範囲のendイテレータです。
+</p>
+
+<p>
+unique_copy()は<a href="../../complexity" class="wikilink1" title="jp:complexity">線形時間</a>で実行されます。
+</p>
+
+<p>
+関連トピック: <a href="adjacent_find" class="wikilink1" title="jp:algorithm:adjacent_find">adjacent_find</a>, <a href="http://www.cppreference.com/wiki/jp/algorithm/remove" class="wikilink2" title="jp:algorithm:remove" rel="nofollow">remove</a>, <a href="http://www.cppreference.com/wiki/jp/algorithm/unique" class="wikilink2" title="jp:algorithm:unique" rel="nofollow">unique</a>
+
+</p>
+
+</div>
+<!-- EDIT1 SECTION "unique_copy" [2-] --></div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="tw"
+ lang="tw" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>tw:escape_sequences</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:11-0700" />
+<meta name="keywords" content="tw,escape_sequences" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/tw/escape_sequences?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=tw" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/tw/escape_sequences" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/tw/escape_sequences" />
+<link rel="canonical" href="escape_sequences" />
+<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='tw';var JSINFO = {"id":"tw:escape_sequences","namespace":"tw"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="脫逸序列" id="脫逸序列">脫逸序列</a></h2>
+<div class="level2">
+
+<p>
+
+下面的脫逸序列可以在字串中表示一些特殊字元：
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<th class="col0 centeralign">  脫逸序列  </th><th class="col1 centeralign">  敘述  </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">%%</td><td class="col1">百分比符號</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">\&#039;</td><td class="col1">單引號</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">\”</td><td class="col1">雙引號</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">\\</td><td class="col1">反斜線</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0">\nnn</td><td class="col1">Octal number (nnn)</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0">\0</td><td class="col1">Null character (really just the octal number zero)</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0">\a</td><td class="col1">Audible bell</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0">\b</td><td class="col1">Backspace</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0">\f</td><td class="col1">Formfeed</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0">\n</td><td class="col1">換行</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0">\r</td><td class="col1">Carriage return</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0">\t</td><td class="col1">水平定位(通常是往右位移到8的倍數)</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0">\v</td><td class="col1">Vertical tab</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0">\xnnn</td><td class="col1">Hexadecimal number (nnn)</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [93-455] -->
+<p>
+
+An example of this is contained in the following code (which assumes that the
+newline character generates complete newlines, i.e. on Unix systems):
+</p>
+<pre class="cpp code cpp">    <span class="kw3">printf</span><span class="br0">&#40;</span> <span class="st0">&quot;This<span class="es1">\n</span>is<span class="es1">\n</span>a<span class="es1">\n</span>test<span class="es1">\n</span><span class="es1">\n</span>She said, <span class="es1">\&quot;</span>How are you?<span class="es1">\&quot;</span><span class="es1">\n</span>&quot;</span> <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+which would display
+</p>
+<pre class="code">
+    This
+    is
+    a
+    test
+
+    She said, "How are you?"</pre>
+</div>
+</div>
+</body>
+</html>

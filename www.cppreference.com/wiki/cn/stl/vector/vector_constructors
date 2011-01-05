@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn"
+ lang="cn" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>cn:container:vector:vector_constructors</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:54-0700" />
+<meta name="keywords" content="cn,container,vector,vector_constructors" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/cn/container/vector/vector_constructors?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=cn:container:vector" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/cn/container/vector/vector_constructors" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/cn/container/vector/vector_constructors" />
+<link rel="canonical" href="vector_constructors" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='cn:container:vector';var JSINFO = {"id":"cn:container:vector:vector_constructors","namespace":"cn:container:vector"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="vector_constructors_vector_构造函数" id="vector_constructors_vector_构造函数">Vector constructors（Vector 构造函数）</a></h2>
+<div class="level2">
+
+<p>
+Syntax:
+语法：
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;vector&gt;</span>
+    <span class="kw2">using</span> <span class="kw2">namespace</span> std<span class="sy4">;</span>
+    vector<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    vector<span class="br0">&#40;</span> <span class="kw4">const</span> vector<span class="sy3">&amp;</span> c <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw2">explicit</span> vector<span class="br0">&#40;</span> size_type num, <span class="kw4">const</span> T<span class="sy3">&amp;</span> val <span class="sy1">=</span> T<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw2">template</span><span class="sy1">&lt;</span> <span class="kw2">typename</span> input_iterator <span class="sy1">&gt;</span>
+    vector<span class="br0">&#40;</span> input_iterator start, input_iterator end <span class="br0">&#41;</span><span class="sy4">;</span>
+    ~vector<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+The default vector constructor takes no arguments, creates a new instance of
+that vector.
+</p>
+
+<p>
+vector 默认构造函数不带参数，只创建一个 vector 实例。
+</p>
+
+<p>
+The second constructor is a default copy constructor that can be used to create
+a new vector that is a copy of the given vector c.
+</p>
+
+<p>
+第二个构造函数是默认的复制构造函数，它会创建一个给定 vector c 的复本 vector。
+</p>
+
+<p>
+The third constructor creates a vector with num objects. If val is specified,
+each of those objects will be given that value, otherwise, those objects are
+given T&#039;s default constructor&#039;s value. For example, the following code
+creates a vector consisting of five copies of the integer 42:
+</p>
+
+<p>
+第三个构造函数创建了一个有 num 个对象的 vector。如果 val 值给定，所有的对象都被赋上 val 值， 否则就会被赋上 T 的默认构造函数的值，下面的代码会创建一个有 5
+ 个整数42 构成的 vector。
+</p>
+<pre class="cpp code cpp">   vector<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> v1<span class="br0">&#40;</span> <span class="nu0">5</span>, <span class="nu0">42</span> <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+The last constructor creates a vector that is initialized to contain the
+elements between start and end. For example:
+</p>
+
+<p>
+最后一个构造函数创建了一个包含了从 start 到 end 之间的所有元素的 vector。例如：
+</p>
+<pre class="cpp code cpp">   <span class="co1">// create a vector of random integers</span>
+   <span class="co1">// 创建一个由随机整数元素组成的 vector</span>
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;original vector: &quot;</span><span class="sy4">;</span>
+   vector<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> v<span class="sy4">;</span>
+   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="sy4">;</span> <span class="sy2">++</span>i <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     <span class="kw4">int</span> num <span class="sy1">=</span> <span class="br0">&#40;</span><span class="kw4">int</span><span class="br0">&#41;</span> <span class="kw3">rand</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy2">%</span> <span class="nu0">10</span><span class="sy4">;</span>
+     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> num <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; &quot;</span><span class="sy4">;</span>
+     v.<span class="me1">push_back</span><span class="br0">&#40;</span> num <span class="br0">&#41;</span><span class="sy4">;</span>
+   <span class="br0">&#125;</span>
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+&nbsp;
+   <span class="co1">// find the first element of v that is even</span>
+   <span class="co1">// 搜索第一个值是偶数的元素</span>
+   vector<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">iterator</span> iter1 <span class="sy1">=</span> v.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+   <span class="kw1">while</span><span class="br0">&#40;</span> iter1 <span class="sy3">!</span><span class="sy1">=</span> v.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy3">&amp;&amp;</span> <span class="sy2">*</span>iter1 <span class="sy2">%</span> <span class="nu0">2</span> <span class="sy3">!</span><span class="sy1">=</span> <span class="nu0">0</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     <span class="sy2">++</span>iter1<span class="sy4">;</span>
+   <span class="br0">&#125;</span>
+&nbsp;
+   <span class="co1">// find the last element of v that is even</span>
+   <span class="co1">// 搜索最后一个值是偶数的元素</span>
+   vector<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">iterator</span> iter2 <span class="sy1">=</span> v.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+   <span class="kw1">do</span> <span class="br0">&#123;</span>
+     <span class="sy2">--</span>iter2<span class="sy4">;</span>
+   <span class="br0">&#125;</span> <span class="kw1">while</span><span class="br0">&#40;</span> iter2 <span class="sy3">!</span><span class="sy1">=</span> v.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy3">&amp;&amp;</span> <span class="sy2">*</span>iter2 <span class="sy2">%</span> <span class="nu0">2</span> <span class="sy3">!</span><span class="sy1">=</span> <span class="nu0">0</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+   <span class="co1">// only proceed if we find both numbers</span>
+   <span class="co1">// 当上述两个值都存在时才执行</span>
+   <span class="kw1">if</span><span class="br0">&#40;</span> iter1 <span class="sy3">!</span><span class="sy1">=</span> v.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy3">&amp;&amp;</span> iter2 <span class="sy3">!</span><span class="sy1">=</span> v.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;first even number: &quot;</span> <span class="sy1">&lt;&lt;</span> <span class="sy2">*</span>iter1 <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;, last even number: &quot;</span> <span class="sy1">&lt;&lt;</span> <span class="sy2">*</span>iter2 <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+&nbsp;
+     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;new vector: &quot;</span><span class="sy4">;</span>
+     vector<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> v2<span class="br0">&#40;</span> iter1, iter2 <span class="br0">&#41;</span><span class="sy4">;</span>
+     <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> v2.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="sy2">++</span>i <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+       <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> v2<span class="br0">&#91;</span>i<span class="br0">&#93;</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; &quot;</span><span class="sy4">;</span>
+     <span class="br0">&#125;</span>
+     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+   <span class="br0">&#125;</span></pre>
+<p>
+When run, this code displays the following output:
+运行上述代码将会显示下面的结果：
+</p>
+<pre class="code">
+   original vector: 1 9 7 9 2 7 2 1 9 8
+   first even number: 2, last even number: 8
+   new vector: 2 7 2 1 9</pre>
+<p>
+The last constructor provides for a handy way to initialize an STL vector with data from an old style array.
+</p>
+
+<p>
+最后一个构造函数提供了一个手动从原始风格 array 中获取数据来初始化 STL vector 的方法，
+</p>
+
+<p>
+Example（例子）:
+</p>
+<pre class="cpp code cpp">    <span class="kw4">float</span> fp_values<span class="br0">&#91;</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="br0">&#123;</span> <span class="nu16">0.1</span>, <span class="nu16">0.2</span> , <span class="nu16">0.3</span>, <span class="nu16">0.4</span><span class="br0">&#125;</span><span class="sy4">;</span>      <span class="co1">// somewhere an array is created（在这里创建一个数组）</span>
+...
+    <span class="me1">vector</span><span class="sy1">&lt;</span><span class="kw4">float</span><span class="sy1">&gt;</span> fp_vector<span class="br0">&#40;</span>fp_values,fp_values<span class="sy2">+</span><span class="nu0">4</span><span class="br0">&#41;</span><span class="sy4">;</span>  <span class="co1">// elements in the array are copied into fp_vector（数组里的元素都被复制到 fp_vector 中了）</span></pre>
+<p>
+Keep in mind that pointers are just a possible elementary form of iterators.
+</p>
+
+<p>
+记住指针也是一种可接受的基本迭代器类型
+</p>
+
+<p>
+All of these constructors run in <a href="../../../complexity" class="wikilink1" title="complexity">linear time</a> except the first, which runs in
+<a href="../../../complexity" class="wikilink1" title="complexity">constant time</a>.
+</p>
+
+<p>
+所有这些构造函数都是以 <a href="../../../complexity" class="wikilink1" title="complexity">linear time</a> 运行，除了第一个是以 <a href="../../../complexity" class="wikilink1" title="complexity">constant time</a> 运行。
+</p>
+
+<p>
+The default destructor is called for each element when the vector is destroyed.
+</p>
+
+</div>
+</div>
+</body>
+</html>

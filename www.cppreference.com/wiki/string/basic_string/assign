@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>string:basic_string:assign</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-11-07T14:04:29-0800" />
+<meta name="keywords" content="string,basic_string,assign" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/string/basic_string/assign?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=string:basic_string" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/string/basic_string/assign" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/string/basic_string/assign" />
+<link rel="canonical" href="assign" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='string:basic_string';var JSINFO = {"id":"string:basic_string:assign","namespace":"string:basic_string"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="assign#basic_stringassign" class="toc">basic_string::assign</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="assign#parameters" class="toc">Parameters</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="assign#return_value" class="toc">Return value</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="assign#example" class="toc">Example</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="assign#see_also" class="toc">See also</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="basic_stringassign" id="basic_stringassign">basic_string::assign</a></h2>
+<div class="level2">
+<pre class="cpp code cpp">basic_string<span class="sy3">&amp;</span> assign<span class="br0">&#40;</span> <span class="kw4">const</span> basic_string<span class="sy3">&amp;</span> str <span class="br0">&#41;</span><span class="sy4">;</span>
+basic_string<span class="sy3">&amp;</span> assign<span class="br0">&#40;</span> <span class="kw4">const</span> Char<span class="sy2">*</span> str <span class="br0">&#41;</span><span class="sy4">;</span>
+basic_string<span class="sy3">&amp;</span> assign<span class="br0">&#40;</span> <span class="kw4">const</span> Char<span class="sy2">*</span> str, size_type num <span class="br0">&#41;</span><span class="sy4">;</span>
+basic_string<span class="sy3">&amp;</span> assign<span class="br0">&#40;</span> <span class="kw4">const</span> basic_string<span class="sy3">&amp;</span> str, size_type index, size_type len <span class="br0">&#41;</span><span class="sy4">;</span>
+basic_string<span class="sy3">&amp;</span> assign<span class="br0">&#40;</span> size_type num, Char ch <span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+<span class="kw2">template</span><span class="sy1">&lt;</span> <span class="kw2">class</span> InputIterator <span class="sy1">&gt;</span>
+basic_string<span class="sy3">&amp;</span> assign<span class="br0">&#40;</span> InputIterator first, InputIterator last <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+The default assign method gives the current string the values from <code>start</code> to <code>end</code>, or gives it <code>num</code> copies of <code>ch</code>.
+</p>
+
+<p>
+In addition to the normal assign functionality that all C++ containers have, strings possess an assign method that also allows them to:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> assign <code>str</code> to the current string,</div>
+</li>
+<li class="level1"><div class="li"> assign the first <code>num</code> characters of <code>str</code> to the current string,</div>
+</li>
+<li class="level1"><div class="li"> assign a substring of <code>str</code> starting at <code>index</code> that is <code>len</code> characters long to the current string,</div>
+</li>
+</ul>
+
+<p>
+
+This function will destroy the previous contents of the string.
+</p>
+
+</div>
+<!-- EDIT1 SECTION "basic_string::assign" [1-979] -->
+<h3 class="sectionedit2"><a name="parameters" id="parameters">Parameters</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="../../todo" class="wikilink1" title="todo">todo</a>
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Parameters" [980-1010] -->
+<h3 class="sectionedit3"><a name="return_value" id="return_value">Return value</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="../../todo" class="wikilink1" title="todo">todo</a>
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Return value" [1011-1043] -->
+<h3 class="sectionedit4"><a name="example" id="example">Example</a></h3>
+<div class="level3">
+<pre class="cpp code cpp">std<span class="sy4">::</span><span class="me2">string</span> str1, str2 <span class="sy1">=</span> <span class="st0">&quot;War and Peace&quot;</span><span class="sy4">;</span>
+str1.<span class="me1">assign</span><span class="br0">&#40;</span> str2, <span class="nu0">4</span>, <span class="nu0">3</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> str1 <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span></pre>
+<p>
+Output:
+</p>
+<pre class="code">
+and</pre>
+</div>
+<!-- EDIT4 SECTION "Example" [1044-1215] -->
+<h3 class="sectionedit5"><a name="see_also" id="see_also">See also</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="../../todo" class="wikilink1" title="todo">todo</a>
+
+</p>
+
+</div>
+<!-- EDIT5 SECTION "See also" [1216-] --></div>
+</body>
+</html>

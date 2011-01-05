@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:container:list:begin</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:24-0700" />
+<meta name="keywords" content="jp,container,list,begin" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/container/list/begin?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp:container:list" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/container/list/begin" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/container/list/begin" />
+<link rel="canonical" href="begin" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp:container:list';var JSINFO = {"id":"jp:container:list:begin","namespace":"jp:container:list"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="begin" id="begin">begin</a></h2>
+<div class="level2">
+
+<p>
+
+文法:
+
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;list&gt;</span>
+    iterator begin<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    const_iterator begin<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span></pre>
+<p>
+begin()関数は、リストの最初の要素を指すイテレータを返します。
+begin()関数は必ず<a href="../../complexity" class="wikilink1" title="jp:complexity">定数時間</a>で処理されます。
+</p>
+
+<p>
+例えば、次の要素begin()関数を使ってイテレータを初期化し、リスト中の値を探索しています:
+</p>
+<pre class="cpp code cpp">     <span class="co1">// 文字のリストを作る</span>
+     list<span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span> my_list<span class="sy4">;</span>
+     <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+       my_list.<span class="me1">push_front</span><span class="br0">&#40;</span> i <span class="sy2">+</span> <span class="st0">'a'</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+     <span class="br0">&#125;</span>
+&nbsp;
+     <span class="co1">// リストを表示する</span>
+     list<span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">iterator</span> it<span class="sy4">;</span>
+     <span class="kw1">for</span><span class="br0">&#40;</span> it <span class="sy1">=</span> my_list.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> it <span class="sy3">!</span><span class="sy1">=</span> my_list.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="sy2">++</span>it <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+       <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="sy2">*</span>it<span class="sy4">;</span>
+     <span class="br0">&#125;</span></pre>
+<p>
+関連トピック: <a href="end" class="wikilink1" title="jp:container:list:end">end</a>, <a href="rbegin" class="wikilink1" title="jp:container:list:rbegin">rbegin</a>, <a href="rend" class="wikilink1" title="jp:container:list:rend">rend</a>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "begin" [3-] --></div>
+</body>
+</html>

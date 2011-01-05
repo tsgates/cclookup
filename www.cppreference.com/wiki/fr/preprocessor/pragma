@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr"
+ lang="fr" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>fr:preprocessor:pragma</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:56-0700" />
+<meta name="keywords" content="fr,preprocessor,pragma" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/fr/preprocessor/pragma?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=fr:preprocessor" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/fr/preprocessor/pragma" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/fr/preprocessor/pragma" />
+<link rel="canonical" href="pragma" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='fr:preprocessor';var JSINFO = {"id":"fr:preprocessor:pragma","namespace":"fr:preprocessor"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="pragma" id="pragma">#pragma</a></h2>
+<div class="level2">
+<pre class="cpp code cpp">    <span class="co2">#pragma lexems</span></pre>
+<p>
+La commande <code>#pragma</code> permet au programmeur d&#039;indiquer au compilateur d&#039;exécuter
+certaines actions. La commande <code>#pragma</code> dépend de l&#039;implémentation qui en est
+faite sur chaque compilateur, son utilisation diffère d&#039;un compilateur à l&#039;autre.
+une possibilité de cette commande peut être de tracer l&#039;exécution du programme.
+</p>
+
+<p>
+<code>#pragma</code> peut aussi être utilisé pour appeler une fonction avant l&#039;exécution du
+<code>main</code> ou à sa sortie.
+
+</p>
+<pre class="cpp code cpp"><span class="co2">#pragma startup foo() // La fonction ne doit pas avoir de type de retour ni de paramètres</span>
+<span class="co2">#pragma exit bar()</span></pre>
+<p>
+Ci-dessous, une liste des familles de compilateurs et des <acronym title="Operating System">OS</acronym> sur lesquels ceux-ci
+sont disponibles, présente les spécificités propres à l&#039;implémentation de <code>#pragma</code>
+sur ces compilateurs.
+</p>
+
+</div>
+<!-- EDIT1 SECTION "#pragma" [1-823] -->
+<h3 class="sectionedit2"><a name="gnu_c_compiler_gcc_-_gnulinux_bsd_gnuhurd_gnudarwinmac_os_x_windows_mingw" id="gnu_c_compiler_gcc_-_gnulinux_bsd_gnuhurd_gnudarwinmac_os_x_windows_mingw">GNU C Compiler (GCC) - GNU/Linux, BSD, GNU/Hurd, GNU/Darwin/Mac OS X, Windows (MinGW)</a></h3>
+<div class="level3">
+
+</div>
+
+<h4><a name="redefine_extname" id="redefine_extname">redefine_extname</a></h4>
+<div class="level4">
+<pre class="cpp code cpp">    <span class="co2">#pragma redefine_extname printf prnt</span></pre>
+<p>
+
+Fournit au fonctions C un alias définit par le programmeur lorsque que le compilateur
+traduit le code en assembleur.
+</p>
+
+</div>
+
+<h4><a name="extern_prefix" id="extern_prefix">extern_prefix</a></h4>
+<div class="level4">
+<pre class="cpp code cpp">    <span class="co2">#pragma extern_prefix ext_ // démarrage du pré-fixage</span>
+    <span class="co1">// insérez ici vos préfixes</span>
+    <span class="co2">#pragma extern_prefix // fin du préfixage</span></pre>
+<p>
+
+Préfixe toutes les noms des fonctions assembleur avec une chaîne de caractères. Une
+autre utilisation de <code>#pragma extern_prefix</code> stoppera le pré-fixage de des fonctions.
+</p>
+
+</div>
+
+<h4><a name="pack" id="pack">pack</a></h4>
+<div class="level4">
+<pre class="cpp code cpp">    <span class="co2">#pragma pack(64) // optimise toutes les classes, unions et structures à la suite de cette ligne pour du code 64 bits</span></pre>
+<p>
+
+Cette méthode d&#039;optimisation “aligne” les membres des structures, classes et unions à
+un facteur de la taille du “paquet” de données. Cela simplifie (et donc accélère) l&#039;accès
+données par le processeur puisque les données sont “alignée” sur le début des structures
+de données que le processeur utilise. Cependant, ce procédé a un coût mémoire plus élevé
+que la normale qui est causé par l&#039;ajout de données aléatoires et inutiles pour permettre
+l&#039;alignement des “paquets” de données.
+</p>
+
+<p>
+La valeur numérique entre parenthèses doit être une puissance de 2 (2, 4, 8, 16, 32, 64…).
+</p>
+
+<p>
+Il y a d&#039;autres utilisations possibles d&#039;utilise la commande <code>#pragma pack</code> qui sont décrits
+ci-dessous (bien que la méthode précédente soit la plus commune et la plus facile) :
+
+</p>
+<pre class="cpp code cpp"><span class="co2">#pragma pack() /* avec des parenthèses vides */</span></pre>
+<p>
+
+Ceci réinitialisera la valeur de “packing”.
+</p>
+
+<p>
+<em>Article issu de la traduction de l&#039;<a href="../../preprocessor/pragma" class="wikilink1" title="preprocessor:pragma">article anglais</a> qui n&#039;est
+pas terminé</em>
+</p>
+
+</div>
+<!-- EDIT2 SECTION "GNU C Compiler (GCC) - GNU/Linux, BSD, GNU/Hurd, GNU/Darwin/Mac OS X, Windows (MinGW)" [824-] --></div>
+</body>
+</html>

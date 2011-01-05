@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it"
+ lang="it" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>it:container:queue:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:09-0700" />
+<meta name="keywords" content="it,container,queue,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/it/container/queue/start?do=index" title="Indice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=it:container:queue" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/it/container/queue/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/it/container/queue/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='it:container:queue';var JSINFO = {"id":"it:container:queue:start","namespace":"it:container:queue"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="code_in_c_queues" id="code_in_c_queues">Code in C++ (Queues)</a></h1>
+<div class="level1">
+
+<p>
+
+The code del C++ (<code>queue</code>) è un adattatore di container permette
+di trattarlo come un FIFO (first-in,first-out).
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="queue_constructors" class="wikilink1" title="it:container:queue:queue_constructors">Costruttori</a></td><td class="col1">costruttori di una nuova <code>queue</code></td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="back" class="wikilink1" title="it:container:queue:back">back</a></td><td class="col1">ritorna una reference all&#039;ultimo elemento di una <code>queue</code></td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="empty" class="wikilink1" title="it:container:queue:empty">empty</a></td><td class="col1"><em>true</em> se la queue non contiene elementi</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="front" class="wikilink1" title="it:container:queue:front">front</a></td><td class="col1">ritorna una reference reference to the first element of a <code>queue</code></td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="pop" class="wikilink1" title="it:container:queue:pop">pop</a></td><td class="col1">rimuove il primo elemento di una <code>queue</code></td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="push" class="wikilink1" title="it:container:queue:push">push</a></td><td class="col1">aggiunge un elemento alla fine della <code>queue</code></td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="size" class="wikilink1" title="it:container:queue:size">size</a></td><td class="col1">ritorna il numero di items della queue</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [160-597] -->
+</div>
+</div>
+</body>
+</html>

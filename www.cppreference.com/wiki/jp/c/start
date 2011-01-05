@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:c:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:20-0700" />
+<meta name="keywords" content="jp,c,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/c/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/c/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/c/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp:c';var JSINFO = {"id":"jp:c:start","namespace":"jp:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="start#標準cライブラリ" class="toc">標準Cライブラリ</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="start#cライブラリ関数" class="toc">Cライブラリ関数</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="start#標準cヘッダファイル" class="toc">標準Cヘッダファイル</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="標準cライブラリ" id="標準cライブラリ">標準Cライブラリ</a></h2>
+<div class="level2">
+
+<p>
+
+C++プログラマは<a href="http://www.open-std.org/jtc1/sc22/wg14/" class="urlextern" title="http://www.open-std.org/jtc1/sc22/wg14/"  rel="nofollow">ISO/IEC 9899:1990</a> (<a href="http://en.wikipedia.org/wiki/ANSI_C" class="urlextern" title="http://en.wikipedia.org/wiki/ANSI_C"  rel="nofollow">C90</a>として知られている)で定義されている標準Cライブラリの多種多様な関数を使うことができます。それらライブラリのすべての関数は<strong>std</strong><a href="../keywords/namespace" class="wikilink1" title="jp:keywords:namespace">名前空間</a>の中で定義されています。
+</p>
+
+</div>
+<!-- EDIT1 SECTION "標準Cライブラリ" [1-423] -->
+<h3 class="sectionedit2"><a name="cライブラリ関数" id="cライブラリ関数">Cライブラリ関数</a></h3>
+<div class="level3">
+
+<p>
+
+以下は機能毎におおざっぱに分類した標準Cライブラリ関数のリストです:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="io/start" class="wikilink1" title="jp:c:io:start">標準C 入出力</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="string/start" class="wikilink1" title="jp:c:string:start">標準C 文字列 &amp; 文字</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="math/start" class="wikilink1" title="jp:c:math:start">標準C 数学</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="date/start" class="wikilink1" title="jp:c:date:start">標準C 時間 &amp; 日付</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="mem/start" class="wikilink1" title="jp:c:mem:start">標準C メモリ</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="other/start" class="wikilink1" title="jp:c:other:start">その他の標準Cの関数</a></div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT2 SECTION "Cライブラリ関数" [424-801] -->
+<h3 class="sectionedit3"><a name="標準cヘッダファイル" id="標準cヘッダファイル">標準Cヘッダファイル</a></h3>
+<div class="level3">
+
+<p>
+
+前述の関数は以下の18ヘッダファイルで定義されています:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> &lt;cassert&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;ciso646&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;csetjmp&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;cstdio&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;ctime&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cctype&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;climits&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;csignal&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;cstdlib&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;cwchar&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cerrno&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;clocale&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;cstdarg&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;cstring&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;cwctype&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cfloat&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;cmath&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;cstddef&gt;</div>
+</li>
+</ul>
+
+<p>
+
+標準Cライブラリのヘッダファイルをインクルードするときは、<code>file.h</code>表記よりも<code>cfile</code>表記を使う方がより好ましいです。たとえば、<code>stdio.h</code>ヘッダファイルは以下の命令でインクルードされるべきです:
+</p>
+<pre class="cpp code cpp">  <span class="co2">#include &lt;cstdio&gt;</span></pre>
+<p>
+<code>file.h</code>表記も動作しますが、それは主に後方互換性のためです。<code>cfile</code>と<code>file.h</code>表記の違いは、<code>file.h</code>表記を通してインクルードすると、関数が<strong>std</strong>名前空間ではなくグローバル名前空間に現れてしまうことです。
+</p>
+
+<p>
+以下も参照してください: <a href="http://www.open-std.org/jtc1/sc22/wg14/www/standards.html" class="urlextern" title="http://www.open-std.org/jtc1/sc22/wg14/www/standards.html"  rel="nofollow">Approved Standards of working group 14</a>の<a href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1124.pdf" class="urlextern" title="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1124.pdf"  rel="nofollow">The 2005 C99 working paper</a>
+
+</p>
+
+</div>
+<!-- EDIT3 SECTION "標準Cヘッダファイル" [802-] --></div>
+</body>
+</html>

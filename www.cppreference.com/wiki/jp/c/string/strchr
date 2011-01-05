@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:c:string:strchr</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:22-0700" />
+<meta name="keywords" content="jp,c,string,strchr" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/c/string/strchr?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp:c:string" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/c/string/strchr" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/c/string/strchr" />
+<link rel="canonical" href="strchr" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp:c:string';var JSINFO = {"id":"jp:c:string:strchr","namespace":"jp:c:string"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="strchr" id="strchr">strchr</a></h2>
+<div class="level2">
+
+<p>
+
+文法:
+
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cstring&gt;</span>
+    <span class="kw4">char</span> <span class="sy2">*</span><span class="kw3">strchr</span><span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>文字列, <span class="kw4">int</span> 文字 <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+strchr()関数は、<code>文字列</code>の中から、指定された<code>文字</code>を探索して、初めに見つかった位置のポインタを返します。もしも見つからなければNULLを返します。
+</p>
+
+<p>
+関連トピック: <a href="strcat" class="wikilink1" title="jp:c:string:strcat">strcat</a>, <a href="strcmp" class="wikilink1" title="jp:c:string:strcmp">strcmp</a>, <a href="strcpy" class="wikilink1" title="jp:c:string:strcpy">strcpy</a>, <a href="strlen" class="wikilink1" title="jp:c:string:strlen">strlen</a>, <a href="strncat" class="wikilink1" title="jp:c:string:strncat">strncat</a>, <a href="strncmp" class="wikilink1" title="jp:c:string:strncmp">strncmp</a>, <a href="strncpy" class="wikilink1" title="jp:c:string:strncpy">strncpy</a>, <a href="strpbrk" class="wikilink1" title="jp:c:string:strpbrk">strpbrk</a>, <a href="strspn" class="wikilink1" title="jp:c:string:strspn">strspn</a>, <a href="strstr" class="wikilink1" title="jp:c:string:strstr">strstr</a>, <a href="strtok" class="wikilink1" title="jp:c:string:strtok">strtok</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

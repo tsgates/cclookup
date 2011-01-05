@@ -4,48 +4,101 @@
  lang="en" dir="ltr">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>stl:algorithm:swap</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
+  <title>algorithm:swap</title>
+<meta name="generator" content="DokuWiki" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2008-10-14T15:42:06-0700" />
-<meta name="keywords" content="stl,algorithm,swap" />
+<meta name="date" content="2010-11-07T02:20:24-0800" />
+<meta name="keywords" content="algorithm,swap" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/stl/algorithm/swap?do=index" title="Index" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/algorithm/swap?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
-<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=stl:algorithm" />
-<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/stl/algorithm/swap" />
-<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/stl/algorithm/swap" />
-<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=algorithm" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/algorithm/swap" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/algorithm/swap" />
+<link rel="canonical" href="swap" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='algorithm';var JSINFO = {"id":"algorithm:swap","namespace":"algorithm"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
 
+<ul class="toc">
+<li class="clear">
 
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="swap#swap" class="toc">swap</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="swap#parameters" class="toc">Parameters</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="swap#return_value" class="toc">Return value</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="swap#complexity" class="toc">Complexity</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="swap#see_also" class="toc">See also</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
 
-<h2><a name="swap" id="swap">swap</a></h2>
+<h2 class="sectionedit1"><a name="swap" id="swap">swap</a></h2>
 <div class="level2">
-
+<pre class="cpp code cpp"><span class="co2">#include &lt;algorithm&gt;</span>
+&nbsp;
+<span class="kw2">template</span><span class="sy1">&lt;</span> <span class="kw2">class</span> Assignable <span class="sy1">&gt;</span>
+<span class="kw4">void</span> swap<span class="br0">&#40;</span> Assignable<span class="sy3">&amp;</span> a, Assignable<span class="sy3">&amp;</span> b <span class="br0">&#41;</span><span class="sy4">;</span></pre>
 <p>
-Syntax:
-</p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;algorithm&gt;</span>
-    <span class="kw4">void</span> swap<span class="br0">&#40;</span> Assignable<span class="sy0">&amp;</span> a<span class="sy0">,</span> Assignable<span class="sy0">&amp;</span> b <span class="br0">&#41;</span>;</pre>
-<p>
-The swap() function swaps the values of a and b.
-swap() expects that its arguments will conform to the Assignable model; that
-is, they should have a copy constructor and work with the = operator. This
-function performs one copy and two assignments.
-</p>
-
-<p>
-Related Topics: <a href="copy" class="wikilink1" title="stl:algorithm:copy">copy</a>, <a href="copy_backward" class="wikilink1" title="stl:algorithm:copy_backward">copy_backward</a>, <a href="copy_n" class="wikilink1" title="stl:algorithm:copy_n">copy_n</a>, <a href="iter_swap" class="wikilink1" title="stl:algorithm:iter_swap">iter_swap</a>, <a href="swap_ranges" class="wikilink1" title="stl:algorithm:swap_ranges">swap_ranges</a>
+Swaps the given values <code>a</code> and <code>b</code>.
 </p>
 
 </div>
-<!-- SECTION "swap" [3-] --></div>
+<!-- EDIT1 SECTION "swap" [1-167] -->
+<h3 class="sectionedit2"><a name="parameters" id="parameters">Parameters</a></h3>
+<div class="level3">
+
+<p>
+
+<code>a</code>, <code>b</code> - the values to be swapped
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Parameters" [168-228] -->
+<h3 class="sectionedit3"><a name="return_value" id="return_value">Return value</a></h3>
+<div class="level3">
+
+<p>
+
+(none)
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Return value" [229-258] -->
+<h3 class="sectionedit4"><a name="complexity" id="complexity">Complexity</a></h3>
+<div class="level3">
+
+<p>
+
+constant
+</p>
+
+</div>
+<!-- EDIT4 SECTION "Complexity" [259-288] -->
+<h3 class="sectionedit5"><a name="see_also" id="see_also">See also</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="copy" class="wikilink1" title="algorithm:copy">copy</a>, <a href="copy_backward" class="wikilink1" title="algorithm:copy_backward">copy_backward</a>, <a href="iter_swap" class="wikilink1" title="algorithm:iter_swap">iter_swap</a>, <a href="swap_ranges" class="wikilink1" title="algorithm:swap_ranges">swap_ranges</a>
+</p>
+
+</div>
+<!-- EDIT5 SECTION "See also" [289-] --></div>
 </body>
 </html>

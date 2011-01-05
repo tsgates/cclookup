@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr"
+ lang="fr" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>fr:string:getline</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:58-0700" />
+<meta name="keywords" content="fr,string,getline" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/fr/string/getline?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=fr:string" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/fr/string/getline" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/fr/string/getline" />
+<link rel="canonical" href="getline" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='fr:string';var JSINFO = {"id":"fr:string:getline","namespace":"fr:string"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="getline" id="getline">getline</a></h2>
+<div class="level2">
+
+<p>
+Syntaxe :
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;string&gt;</span>
+    istream<span class="sy3">&amp;</span> std<span class="sy4">::</span><span class="me2">getline</span><span class="br0">&#40;</span> istream<span class="sy3">&amp;</span> is, string<span class="sy3">&amp;</span> s, <span class="kw4">char</span> delimiter <span class="sy1">=</span> <span class="st0">'<span class="es1">\n</span>'</span> <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+L&#039;en-tête C++ <strong>string</strong> définie la fonction globale <em>getline()</em> pour lire les chaînes de caractère depuis un flux d&#039;E/S.
+La fonction <em>getline()</em>, qui ne fait pas partie de la classe <em>string</em>, lit une ligne depuis <em>is</em> et la met dans <em>s</em>.
+Si un caractère délimiteur est spécifié, alors <em>getline()</em> utilisera <em>delimiter</em> pour savoir quand arrêter de lire les données.
+</p>
+
+<p>
+Par exemple, le code suivant lit une ligne de texte depuis <em>stdin</em> et l&#039;affiche sur <em>stdout</em> :
+</p>
+<pre class="cpp code cpp">   string s<span class="sy4">;</span>
+   getline<span class="br0">&#40;</span> <span class="kw3">cin</span>, s <span class="br0">&#41;</span><span class="sy4">;</span>
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Vous avez entre &quot;</span> <span class="sy1">&lt;&lt;</span> s <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
+<p>
+Après avoir mis une ligne de données dans une chaîne de caractère <em>string</em>, vous trouveriez certainement que les fonctions de <a href="../../io/sstream/start" class="wikilink1" title="io:sstream:start">stringstreams</a> sont très utiles pour extraire les données de cette chaîne.
+ Par exemple, le code suivant lit des nombres depuis l&#039;entrée standard, ignorant toutes lignes “commentée” commençant avec les doubles slash :
+</p>
+<pre class="cpp code cpp">    <span class="co1">// attends des nombres délimités par des espaces ou des lignes commençant par</span>
+    <span class="co1">// deux slashes (//)</span>
+    string s<span class="sy4">;</span>
+    <span class="kw1">while</span><span class="br0">&#40;</span> getline<span class="br0">&#40;</span><span class="kw3">cin</span>,s<span class="br0">&#41;</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+      <span class="kw1">if</span><span class="br0">&#40;</span> s.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy1">&gt;=</span> <span class="nu0">2</span> <span class="sy3">&amp;&amp;</span> s<span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span> <span class="sy1">==</span> <span class="st0">'/'</span> <span class="sy3">&amp;&amp;</span> s<span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span> <span class="sy1">==</span> <span class="st0">'/'</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;  ignore le commentaire : &quot;</span> <span class="sy1">&lt;&lt;</span> s <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+      <span class="br0">&#125;</span> <span class="kw1">else</span> <span class="br0">&#123;</span>
+        istringstream ss<span class="br0">&#40;</span>s<span class="br0">&#41;</span><span class="sy4">;</span>
+        <span class="kw4">double</span> d<span class="sy4">;</span>
+        <span class="kw1">while</span><span class="br0">&#40;</span> ss <span class="sy1">&gt;&gt;</span> d <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+          <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;  a mis un nombre : &quot;</span> <span class="sy1">&lt;&lt;</span> d <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+        <span class="br0">&#125;</span>
+      <span class="br0">&#125;</span>
+    <span class="br0">&#125;</span></pre>
+<p>
+Quand vous exécutez une interface utilisateur, le code ci-dessus produit cette sortie :
+</p>
+<pre class="code">
+    // test
+      ignore le commentaire : // test
+    23.3 -1 3.14159
+      a mis un nombre : 23.3
+      a mis un nombre : -1
+      a mis un nombre : 3.14159
+    // next batch
+      ignore le commentaire : // next batch
+    1 2 3 4 5
+      a mis un nombre : 1
+      a mis un nombre : 2
+      a mis un nombre : 3
+      a mis un nombre : 4
+      a mis un nombre : 5
+    50
+      a mis un nombre : 50</pre>
+<p>
+Comme la fonction <em>getline()</em> commence à lire à la position en cours du fichier, il peut aussi être utilisé pour lire le reste d&#039;une ligne, ou n&#039;importe quel caractère jusqu&#039;au délimiteur spécifié.
+</p>
+
+<p>
+Sujets relatif : <a href="../../io/get" class="wikilink1" title="io:get">get</a>, <a href="../../io/getline" class="wikilink1" title="io:getline">getline</a>, <a href="../../io/sstream/start" class="wikilink1" title="io:sstream:start">stringstream</a>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "getline" [3-] --></div>
+</body>
+</html>

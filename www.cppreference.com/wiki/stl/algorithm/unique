@@ -4,56 +4,177 @@
  lang="en" dir="ltr">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>stl:algorithm:unique</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
-<meta name="robots" content="index,follow" />
-<meta name="date" content="2008-11-13T05:42:40-0800" />
-<meta name="keywords" content="stl,algorithm,unique" />
+  <title>algorithm:unique</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="noindex,nofollow" />
+<meta name="date" content="2010-11-16T13:12:19-0800" />
+<meta name="keywords" content="algorithm,unique" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/stl/algorithm/unique?do=index" title="Index" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/algorithm/unique?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
-<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=stl:algorithm" />
-<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/stl/algorithm/unique" />
-<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/stl/algorithm/unique" />
-<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=algorithm" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/algorithm/unique" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/algorithm/unique" />
+<link rel="canonical" href="unique" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='algorithm';var JSINFO = {"id":"algorithm:unique","namespace":"algorithm"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
 
+<ul class="toc">
+<li class="clear">
 
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="unique#unique" class="toc">unique</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="unique#parameters" class="toc">Parameters</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="unique#return_value" class="toc">Return value</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="unique#equivalent_function" class="toc">Equivalent function</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="unique#example" class="toc">Example</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="unique#complexity" class="toc">Complexity</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="unique#see_also" class="toc">See also</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
 
-<h2><a name="unique" id="unique">unique</a></h2>
+<h2 class="sectionedit1"><a name="unique" id="unique">unique</a></h2>
 <div class="level2">
-
+<pre class="cpp code cpp"><span class="co2">#include &lt;algorithm&gt;</span>
+&nbsp;
+<span class="kw2">template</span><span class="sy1">&lt;</span> <span class="kw2">class</span> ForwardIterator <span class="sy1">&gt;</span>
+ForwardIterator unique<span class="br0">&#40;</span> ForwardIterator first, ForwardIterator last <span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+<span class="kw2">template</span><span class="sy1">&lt;</span> <span class="kw2">class</span> ForwardIterator, <span class="kw2">class</span> BinaryPredicate <span class="sy1">&gt;</span>
+ForwardIterator unique<span class="br0">&#40;</span> ForwardIterator first, ForwardIterator last, BinaryPredicate p <span class="br0">&#41;</span><span class="sy4">;</span></pre>
 <p>
-Syntax:
-</p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;algorithm&gt;</span>
-    iterator unique<span class="br0">&#40;</span> iterator start<span class="sy0">,</span> iterator end <span class="br0">&#41;</span>;
-    iterator unique<span class="br0">&#40;</span> iterator start<span class="sy0">,</span> iterator end<span class="sy0">,</span> BinPred p <span class="br0">&#41;</span>;</pre>
-<p>
-The unique() algorithm removes all consecutive duplicate elements from the
-range [start,end). If the binary predicate p is given, then it is used to test
-two elements to see if they are duplicates.
+Removes all consecutive duplicate elements from the range <code>[first, last)</code>. Removing is done by shifting the range when needed in such a way that corresponding elements are overwritten. Only the first element in each group of equal elements is left. The elements between the old and the new end or the range are left intact. Iterator to the new end of the range is returned.
 </p>
 
 <p>
-The return value of unique() is an iterator to the end of the modified range.
-</p>
-
-<p>
-unique() runs in <a href="../../complexity" class="wikilink1" title="complexity">linear time</a>.
-</p>
-
-<p>
-Related Topics: <a href="adjacent_find" class="wikilink1" title="stl:algorithm:adjacent_find">adjacent_find</a>, <a href="remove" class="wikilink1" title="stl:algorithm:remove">remove</a>, <a href="unique_copy" class="wikilink1" title="stl:algorithm:unique_copy">unique_copy</a>
+One version of the function uses <code>operator==</code> to compare the elements, another uses the given binary predicate <code>p</code>.
 </p>
 
 </div>
-<!-- SECTION "unique" [3-] --></div>
+<!-- EDIT1 SECTION "unique" [1-806] -->
+<h3 class="sectionedit2"><a name="parameters" id="parameters">Parameters</a></h3>
+<div class="level3">
+
+<p>
+
+<code>first</code>, <code>last</code> - the range of the elements to be processed
+</p>
+
+<p>
+<code>p</code> - binary predicate which returns <code>true</code> if the elements should be treated as equal
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Parameters" [807-983] -->
+<h3 class="sectionedit3"><a name="return_value" id="return_value">Return value</a></h3>
+<div class="level3">
+
+<p>
+
+forward iterator to the new end of the range
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Return value" [984-1051] -->
+<h3 class="sectionedit4"><a name="equivalent_function" id="equivalent_function">Equivalent function</a></h3>
+<div class="level3">
+
+<p>
+
+First version:
+
+</p>
+<pre class="cpp code cpp"><span class="kw2">template</span><span class="sy1">&lt;</span><span class="kw2">class</span> ForwardIterator<span class="sy1">&gt;</span>
+ForwardIterator unique<span class="br0">&#40;</span>ForwardIterator first, ForwardIterator last<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    ForwardIterator result <span class="sy1">=</span> first<span class="sy4">;</span>
+    <span class="kw1">while</span> <span class="br0">&#40;</span><span class="sy2">++</span>first <span class="sy3">!</span><span class="sy1">=</span> last<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        <span class="kw1">if</span> <span class="br0">&#40;</span><span class="sy3">!</span><span class="br0">&#40;</span><span class="sy2">*</span>result <span class="sy1">==</span> <span class="sy2">*</span>first<span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+            <span class="sy2">*</span><span class="br0">&#40;</span><span class="sy2">++</span>result<span class="br0">&#41;</span> <span class="sy1">=</span> <span class="sy2">*</span>first<span class="sy4">;</span>
+        <span class="br0">&#125;</span>
+    <span class="br0">&#125;</span>
+    <span class="kw1">return</span> <span class="sy2">++</span>result<span class="sy4">;</span>
+<span class="br0">&#125;</span></pre>
+<p>
+Second version:
+
+</p>
+<pre class="cpp code cpp"><span class="kw2">template</span><span class="sy1">&lt;</span><span class="kw2">class</span> ForwardIterator, <span class="kw2">class</span> BinaryPredicate<span class="sy1">&gt;</span>
+ForwardIterator unique<span class="br0">&#40;</span>ForwardIterator first, ForwardIterator last, BinaryPredicate p<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    ForwardIterator result <span class="sy1">=</span> first<span class="sy4">;</span>
+    <span class="kw1">while</span> <span class="br0">&#40;</span><span class="sy2">++</span>first <span class="sy3">!</span><span class="sy1">=</span> last<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        <span class="kw1">if</span> <span class="br0">&#40;</span><span class="sy3">!</span>p<span class="br0">&#40;</span><span class="sy2">*</span>result, <span class="sy2">*</span>first<span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+            <span class="sy2">*</span><span class="br0">&#40;</span><span class="sy2">++</span>result<span class="br0">&#41;</span> <span class="sy1">=</span> <span class="sy2">*</span>first<span class="sy4">;</span>
+        <span class="br0">&#125;</span>
+    <span class="br0">&#125;</span>
+    <span class="kw1">return</span> <span class="sy2">++</span>result<span class="sy4">;</span>
+<span class="br0">&#125;</span></pre>
+</div>
+<!-- EDIT4 SECTION "Equivalent function" [1052-1738] -->
+<h3 class="sectionedit5"><a name="example" id="example">Example</a></h3>
+<div class="level3">
+<pre class="cpp code cpp"><span class="co2">#include &lt;iostream&gt;</span>
+<span class="co2">#include &lt;algorithm&gt;</span>
+<span class="co2">#include &lt;vector&gt;</span>
+&nbsp;
+<span class="kw4">int</span> main <span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    <span class="kw4">int</span> myints<span class="br0">&#91;</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="br0">&#123;</span><span class="nu0">10</span>,<span class="nu0">20</span>,<span class="nu0">20</span>,<span class="nu0">20</span>,<span class="nu0">30</span>,<span class="nu0">30</span>,<span class="nu0">20</span>,<span class="nu0">20</span>,<span class="nu0">10</span><span class="br0">&#125;</span><span class="sy4">;</span>
+    std<span class="sy4">::</span><span class="me2">vector</span><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> v<span class="br0">&#40;</span>myints, myints <span class="sy2">+</span> <span class="nu0">9</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    std<span class="sy4">::</span><span class="me2">vector</span><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">iterator</span> last<span class="sy4">;</span>
+&nbsp;
+    last <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">unique</span><span class="br0">&#40;</span>v.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, v.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// 10 20 30 20 10 30 20 20 10</span>
+                                            <span class="co1">//                ^</span>
+    <span class="kw1">for</span> <span class="br0">&#40;</span>std<span class="sy4">::</span><span class="me2">vector</span><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">iterator</span> it <span class="sy1">=</span> v.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> it <span class="sy3">!</span><span class="sy1">=</span> v.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="sy2">++</span>it<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="sy2">*</span>it <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; &quot;</span><span class="sy4">;</span>
+    <span class="br0">&#125;</span>
+&nbsp;
+    <span class="kw1">return</span> <span class="nu0">0</span><span class="sy4">;</span>
+<span class="br0">&#125;</span></pre>
+<p>
+Output:
+
+</p>
+<pre class="code">
+10 20 30 20 10</pre>
+</div>
+<!-- EDIT5 SECTION "Example" [1739-2329] -->
+<h3 class="sectionedit6"><a name="complexity" id="complexity">Complexity</a></h3>
+<div class="level3">
+
+<p>
+
+linear in distance between <code>first</code> and <code>last</code>
+</p>
+
+</div>
+<!-- EDIT6 SECTION "Complexity" [2330-2400] -->
+<h3 class="sectionedit7"><a name="see_also" id="see_also">See also</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="adjacent_find" class="wikilink1" title="algorithm:adjacent_find">adjacent_find</a>, <a href="remove" class="wikilink1" title="algorithm:remove">remove</a>, <a href="unique_copy" class="wikilink1" title="algorithm:unique_copy">unique_copy</a>
+</p>
+
+</div>
+<!-- EDIT7 SECTION "See also" [2401-] --></div>
 </body>
 </html>

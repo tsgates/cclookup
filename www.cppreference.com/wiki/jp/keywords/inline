@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:keywords:inline</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:20-0700" />
+<meta name="keywords" content="jp,keywords,inline" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/keywords/inline?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp:keywords" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/keywords/inline" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/keywords/inline" />
+<link rel="canonical" href="inline" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp:keywords';var JSINFO = {"id":"jp:keywords:inline","namespace":"jp:keywords"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="inline" id="inline">inline</a></h2>
+<div class="level2">
+
+<p>
+文法:
+</p>
+<pre class="cpp code cpp">    <span class="kw2">inline</span> <span class="kw4">int</span> functionA<span class="br0">&#40;</span> <span class="kw4">int</span> a <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    ...
+    <span class="br0">&#125;</span></pre>
+<p>
+インラインキーワードを使用すると、その関数に対する呼び出しの代わりに、関数の中身をその場で展開して、関数呼び出しの高速化するようにコンパイラに依頼します。
+ただ、あくまでも依頼であって、命令ではないため、何かしらの理由がある場合にはコンパイラがinline指示を無視することもあります。
+</p>
+
+<p>
+関数定義がクラス定義に含まれている場合には、コンパイラは自動的にinline指示されているかのように処理しようとします。
+この場合にはilineキーワードは不要です。
+</p>
+
+</div>
+</div>
+</body>
+</html>

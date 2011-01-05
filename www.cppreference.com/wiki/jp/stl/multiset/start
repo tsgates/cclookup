@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:container:multiset:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:24-0700" />
+<meta name="keywords" content="jp,container,multiset,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/container/multiset/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp:container:multiset" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/container/multiset/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/container/multiset/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp:container:multiset';var JSINFO = {"id":"jp:container:multiset:start","namespace":"jp:container:multiset"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="c_マルチセット" id="c_マルチセット">C++ マルチセット</a></h2>
+<div class="level2">
+
+<p>
+
+C++ マルチセットはセットと似て, ソートされたセットのオブジェクトを含む連想コンテナを保持します。しかし、オブジェクトの重複を許す点で異なります。
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/container/multiset/multiset_constructors" class="wikilink2" title="jp:container:multiset:multiset_constructors" rel="nofollow">multiset_constructors</a></td><td class="col1">要素の割り当て、コピー、作成済み要素の削除をします</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/container/multiset/multiset_operators" class="wikilink2" title="jp:container:multiset:multiset_operators" rel="nofollow">multiset_operators</a></td><td class="col1">マルチセットの比較、割り付けをします</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/container/multiset/begin" class="wikilink2" title="jp:container:multiset:begin" rel="nofollow">begin</a></td><td class="col1">マルチセットの先頭を指し示すiteratorを返却します</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/container/multiset/clear" class="wikilink2" title="jp:container:multiset:clear" rel="nofollow">clear</a></td><td class="col1">マルチセットから全ての要素を取り除きます</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/container/multiset/count" class="wikilink2" title="jp:container:multiset:count" rel="nofollow">count</a></td><td class="col1">あるキーにマッチする要素の数を返却します</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/container/multiset/empty" class="wikilink2" title="jp:container:multiset:empty" rel="nofollow">empty</a></td><td class="col1">マルチセットの要素がなければ真(true)を返却します</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/container/multiset/end" class="wikilink2" title="jp:container:multiset:end" rel="nofollow">end</a></td><td class="col1">マルチセットの最後の要素の1つ先を指し示すイテレータを返却します</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/container/multiset/equal_range" class="wikilink2" title="jp:container:multiset:equal_range" rel="nofollow">equal_range</a></td><td class="col1">特定のキーにマッチする要素の先頭と最後尾へのiteratorを返却します</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/container/multiset/erase" class="wikilink2" title="jp:container:multiset:erase" rel="nofollow">erase</a></td><td class="col1">マルチセットから要素を取り除きます</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/container/multiset/find" class="wikilink2" title="jp:container:multiset:find" rel="nofollow">find</a></td><td class="col1">特定の要素のiteratorを返却します</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/container/multiset/insert" class="wikilink2" title="jp:container:multiset:insert" rel="nofollow">insert</a></td><td class="col1">マルチセットに項目を挿入します</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/container/multiset/key_comp" class="wikilink2" title="jp:container:multiset:key_comp" rel="nofollow">key_comp</a></td><td class="col1">キーを比較する関数を返却します</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/container/multiset/lower_bound" class="wikilink2" title="jp:container:multiset:lower_bound" rel="nofollow">lower_bound</a></td><td class="col1">ある値より小さい最初の要素を指し示すiteratorを返却します</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/container/multiset/max_size" class="wikilink2" title="jp:container:multiset:max_size" rel="nofollow">max_size</a></td><td class="col1">マルチセットが保持できる要素の最大数を返却します</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/container/multiset/rbegin" class="wikilink2" title="jp:container:multiset:rbegin" rel="nofollow">rbegin</a></td><td class="col1">マルチセットの最後尾を指し示すreverse_iteratorを返却します</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/container/multiset/rend" class="wikilink2" title="jp:container:multiset:rend" rel="nofollow">rend</a></td><td class="col1">マルチセットの先頭を指し示すreverse_iteratorを返却します</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/container/multiset/size" class="wikilink2" title="jp:container:multiset:size" rel="nofollow">size</a></td><td class="col1">マルチセットに含まれる項目数を返却します</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/container/multiset/swap" class="wikilink2" title="jp:container:multiset:swap" rel="nofollow">swap</a></td><td class="col1">別のマルチセットと中身を取り替えます</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/container/multiset/upper_bound" class="wikilink2" title="jp:container:multiset:upper_bound" rel="nofollow">upper_bound</a></td><td class="col1">ある値より大きい最初の要素を指し示すiteratorを返却します</td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/container/multiset/value_comp" class="wikilink2" title="jp:container:multiset:value_comp" rel="nofollow">value_comp</a></td><td class="col1">値を比較する関数を返却します</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [250-1863] -->
+</div>
+</div>
+</body>
+</html>

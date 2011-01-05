@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>io:c:fwrite</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:01-0700" />
+<meta name="keywords" content="io,c,fwrite" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/io/c/fwrite?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=io:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/io/c/fwrite" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/io/c/fwrite" />
+<link rel="canonical" href="fwrite" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='io:c';var JSINFO = {"id":"io:c:fwrite","namespace":"io:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="fwrite#fwrite" class="toc">fwrite</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="fwrite#parameters" class="toc">Parameters</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="fwrite#return_value" class="toc">Return value</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="fwrite#see_also" class="toc">See also</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="fwrite" id="fwrite">fwrite</a></h2>
+<div class="level2">
+
+<p>
+Syntax:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cstdio&gt;</span>
+    <span class="kw4">int</span> <span class="kw3">fwrite</span><span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">void</span> <span class="sy2">*</span>buffer, <span class="kw4">size_t</span> size, <span class="kw4">size_t</span> count, <span class="kw4">FILE</span> <span class="sy2">*</span>stream <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Writes specified number of objects in the given array to the given output stream. Objects are not interpreted in any way.
+</p>
+
+</div>
+<!-- EDIT1 SECTION "fwrite" [1-266] -->
+<h3 class="sectionedit2"><a name="parameters" id="parameters">Parameters</a></h3>
+<div class="level3">
+
+<p>
+
+<code>buffer</code> - pointer to the first object object in the array to be written
+</p>
+
+<p>
+<code>size</code> - size of each object
+</p>
+
+<p>
+<code>count</code> - the number of the objects to be written
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Parameters" [267-447] -->
+<h3 class="sectionedit3"><a name="return_value" id="return_value">Return value</a></h3>
+<div class="level3">
+
+<p>
+
+number of objects written
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Return value" [448-496] -->
+<h3 class="sectionedit4"><a name="see_also" id="see_also">See also</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="fread" class="wikilink1" title="io:c:fread">fread</a>, <a href="fprintf" class="wikilink1" title="io:c:fprintf">fprintf</a>, <a href="fputc" class="wikilink1" title="io:c:fputc">fputc</a>
+</p>
+
+</div>
+<!-- EDIT4 SECTION "See also" [497-] --></div>
+</body>
+</html>

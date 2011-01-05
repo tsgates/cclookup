@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it"
+ lang="it" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>it:container:deque:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:08-0700" />
+<meta name="keywords" content="it,container,deque,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/it/container/deque/start?do=index" title="Indice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=it:container:deque" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/it/container/deque/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/it/container/deque/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='it:container:deque';var JSINFO = {"id":"it:container:deque:start","namespace":"it:container:deque"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="c_dequecode_a_due_estremi" id="c_dequecode_a_due_estremi">C++ Deque: code a due estremi</a></h2>
+<div class="level2">
+
+<p>
+
+Le <em>deque</em> (code a due estremi, pronunciate &#039;deck&#039;) sono simili ai <a href="../vector/start" class="wikilink1" title="it:stl:vector:start">vettori</a>, ma permettono
+di fare inserimenti e cancellazioni veloci ad entrambe le estremità del <em>container</em>.
+</p>
+
+<p>
+Le <em>deque</em> sono comunemente implementate come array allocati dinamicamente che possono essere estesi ad
+entrambe le estremità. Questo garantisce accesso a <a href="../../complexity" class="wikilink1" title="it:complexity">tempo costante</a>, inserimenti e cancellazioni alle
+estremità a tempo costante ammortizzato e infine inserimenti e cancellazioni a posizioni interne alla coda a <a href="../../complexity" class="wikilink1" title="it:complexity">tempo lineare</a>
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="deque_constructors" class="wikilink1" title="it:container:deque:deque_constructors">Costruttori</a></td><td class="col1">creano deques e le popolano di dati</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="deque_operators" class="wikilink1" title="it:container:deque:deque_operators">Operatori</a></td><td class="col1">confrontano, assegnano, e accedono elementi di una deque</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="assign" class="wikilink1" title="it:container:deque:assign">assign</a></td><td class="col1">assigna elementi ad una deque</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="at" class="wikilink1" title="it:container:deque:at">at</a></td><td class="col1">returna un elemento ad una specifica locazione</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="back" class="wikilink1" title="it:container:deque:back">back</a></td><td class="col1">ritorna una reference all&#039;ultimo elemento di una deque</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="begin" class="wikilink1" title="it:container:deque:begin">begin</a></td><td class="col1">ritorna un iteratore che punta all&#039;inzio di una deque</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="clear" class="wikilink1" title="it:container:deque:clear">clear</a></td><td class="col1">rimuove tutti gli elementi di una deque</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="empty" class="wikilink1" title="it:container:deque:empty">empty</a></td><td class="col1">ritorna <code>true</code> se la deque non ha elementi</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="end" class="wikilink1" title="it:container:deque:end">end</a></td><td class="col1">ritorna un iteratore alla prima posizione dopo l&#039;ultimo elemento della deque</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="erase" class="wikilink1" title="it:container:deque:erase">erase</a></td><td class="col1">rimuove elementi della deque</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="front" class="wikilink1" title="it:container:deque:front">front</a></td><td class="col1">ritorna una reference al primo elemento di una deque</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="insert" class="wikilink1" title="it:container:deque:insert">insert</a></td><td class="col1">inserisce elementi nella deque</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><a href="max_size" class="wikilink1" title="it:container:deque:max_size">max_size</a></td><td class="col1">ritorna il massimo numero di elementi che la deque può contenere</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><a href="pop_back" class="wikilink1" title="it:container:deque:pop_back">pop_back</a></td><td class="col1">rimuove l&#039;ultimo elemento di una deque</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><a href="pop_front" class="wikilink1" title="it:container:deque:pop_front">pop_front</a></td><td class="col1">rimuove il primo elemento di una deque</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><a href="push_back" class="wikilink1" title="it:container:deque:push_back">push_back</a></td><td class="col1">aggiunge un elemento alla fine della deque</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><a href="push_front" class="wikilink1" title="it:container:deque:push_front">push_front</a></td><td class="col1">aggiunge un elemento all&#039;inzio della deque</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><a href="rbegin" class="wikilink1" title="it:container:deque:rbegin">rbegin</a></td><td class="col1">ritorna un <em>reverse_iterator</em> che punta alla fine della deque</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"><a href="rend" class="wikilink1" title="it:container:deque:rend">rend</a></td><td class="col1">ritorna un <em>reverse_iterator</em> che punta all&#039;inizio della deque</td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"><a href="resize" class="wikilink1" title="it:container:deque:resize">resize</a></td><td class="col1">cambia la dimensione della deque</td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"><a href="size" class="wikilink1" title="it:container:deque:size">size</a></td><td class="col1">ritorna il numero di item della deque</td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"><a href="swap" class="wikilink1" title="it:container:deque:swap">swap</a></td><td class="col1">scambia elementi della deque con quelli di un&#039;altra istanza</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [613-1979] -->
+</div>
+<!-- EDIT1 SECTION "C++ Deque: code a due estremi" [1-1981] -->
+<h3 class="sectionedit3"><a name="note" id="note">Note</a></h3>
+<div class="level3">
+
+<p>
+
+Il nome deque viene pronunciato “deck” e sta per “double-ended queue”. Donald Knuth riferisce che il nome è stato coniato da E. J. Schweppe.
+<a href="http://www-cs-faculty.stanford.edu/~uno/taocp.html" class="urlextern" title="http://www-cs-faculty.stanford.edu/~uno/taocp.html"  rel="nofollow">vedi D. E. Knuth, The Art of Computer Programming. Volume 1: Fundamental Algorithms, second edition. Addison-Wesley, 1973. Sezione 2.2.1</a>
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Note" [1982-] --></div>
+</body>
+</html>

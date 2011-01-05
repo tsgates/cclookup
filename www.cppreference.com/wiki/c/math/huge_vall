@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>numeric:c:huge_vall</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:33-0700" />
+<meta name="keywords" content="numeric,c,huge_vall" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/numeric/c/huge_vall?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=numeric:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/numeric/c/huge_vall" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/numeric/c/huge_vall" />
+<link rel="canonical" href="huge_vall" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='numeric:c';var JSINFO = {"id":"numeric:c:huge_vall","namespace":"numeric:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="huge_vall" id="huge_vall">HUGE_VALL</a></h2>
+<div class="level2">
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [22-42] -->
+<p>
+
+The <code>HUGE_VALL</code> macro expands to a positive <code>long double</code> constant expression. It indicates that the value is not representable by <code>long double</code> type (infinity). It is not usually representable by <code>float</code> or <code>double</code>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "HUGE_VALL" [1-271] -->
+<h3 class="sectionedit3"><a name="see_also" id="see_also">See also</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="huge_val" class="wikilink1" title="numeric:c:huge_val">HUGE_VAL</a>, <a href="huge_valf" class="wikilink1" title="numeric:c:huge_valf">HUGE_VALF</a>
+</p>
+
+</div>
+<!-- EDIT3 SECTION "See also" [272-] --></div>
+</body>
+</html>

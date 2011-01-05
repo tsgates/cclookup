@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de"
+ lang="de" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>de:preprocessor:preprocessor_vars</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:26-0700" />
+<meta name="keywords" content="de,preprocessor,preprocessor_vars" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/de/preprocessor/preprocessor_vars?do=index" title="Übersicht" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=de:preprocessor" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/de/preprocessor/preprocessor_vars" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/de/preprocessor/preprocessor_vars" />
+<link rel="canonical" href="preprocessor_vars" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='de:preprocessor';var JSINFO = {"id":"de:preprocessor:preprocessor_vars","namespace":"de:preprocessor"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="vordefinierte_praeprozessor-variablen" id="vordefinierte_praeprozessor-variablen">vordefinierte Präprozessor-Variablen</a></h2>
+<div class="level2">
+
+<p>
+
+Syntax:
+
+</p>
+<pre class="cpp code cpp">    __LINE__
+    __FILE__
+    __DATE__
+    __TIME__
+    __cplusplus
+    __STDC__</pre>
+<p>
+Die folgenden Variablen sind evtl. compilerspezifisch, sollten aber normalerweise funktionieren:
+</p>
+<ul>
+<li class="level1"><div class="li"> Die <code>__LINE__</code>- und <code>__FILE__</code>-Variablen beinhalten die aktuelle Zeile und Datei.</div>
+</li>
+<li class="level1"><div class="li"> Die <code>__DATE__</code>-Variable enthält das Datum im Format „Monat/Tag/Jahr“ zum Zeitpunkt des Kompilierens.</div>
+</li>
+<li class="level1"><div class="li"> Die <code>__TIME__</code>-Variable enthält die Uhrzeit im Format „Stunde:Minute:Sekunde“ zum Zeitpunkt des Kompilierens.</div>
+</li>
+<li class="level1"><div class="li"> Die <code>__cplusplus</code>-Variable ist nur definiert, wenn ein C++-Programm kompiliert wird. In einigen älteren Compilern heißt die Variable auch <code>c_plusplus</code>.</div>
+</li>
+<li class="level1"><div class="li"> Die <code>__STDC__</code>-Variable ist definiert, wenn ein C-Programm kompiliert wird, kann aber auch definiert sein, wenn ein C++-Programm kompiliert wird.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT1 SECTION "vordefinierte Präprozessor-Variablen" [1-905] -->
+<h3 class="sectionedit2"><a name="gcc-spezifische_variablen" id="gcc-spezifische_variablen">GCC-spezifische Variablen</a></h3>
+<div class="level3">
+
+<p>
+
+Die folgenden Variablen sind GCC-spezifisch:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>__func__</code> enthält den Namen der aktuellen Funktion</div>
+</li>
+<li class="level1"><div class="li"> <code>__FUNCTION__</code> ist eine Alternative zu <code>__func__</code></div>
+</li>
+<li class="level1"><div class="li"> Die <code>__PRETTY_FUNCTION__</code>-Variable enthält die Typangabe der Funktion sowie ihren Namen.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT2 SECTION "GCC-spezifische Variablen" [906-] --></div>
+</body>
+</html>

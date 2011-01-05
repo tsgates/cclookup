@@ -5,66 +5,43 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>string:copy</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="generator" content="DokuWiki" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2008-10-17T14:54:04-0700" />
+<meta name="date" content="2010-11-10T16:29:59-0800" />
 <meta name="keywords" content="string,copy" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/string/copy?do=index" title="Index" />
+<link rel="start" href="../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/string/copy?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
 <link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=string" />
 <link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/string/copy" />
 <link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/string/copy" />
-<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="canonical" href="copy" />
+<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='string';var JSINFO = {"id":"string:copy","namespace":"string"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
 
-
-
-<h2><a name="copy" id="copy">copy</a></h2>
+<h2 class="sectionedit1"><a name="page_redirected_auto" id="page_redirected_auto">Page redirected (auto)</a></h2>
 <div class="level2">
-
-<p>
-Syntax:
-</p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;string&gt;</span>
-    size_type copy<span class="br0">&#40;</span> <span class="kw4">char</span><span class="sy0">*</span> str<span class="sy0">,</span> size_type num<span class="sy0">,</span> size_type index <span class="sy0">=</span> <span class="nu19">0</span> <span class="br0">&#41;</span>;</pre>
-<p>
-
-The copy() function copies num characters of the current string (starting at
-index if it&#039;s specified, 0 otherwise) into str.
-The return value of copy() is the number of characters copied.
-For example, the following code uses copy() to extract a substring of a string
-into an array of characters:
-</p>
-<pre class="c code c++" style="font-family:monospace;">   <span class="kw4">char</span> buf<span class="br0">&#91;</span><span class="nu0">30</span><span class="br0">&#93;</span>;
-   memset<span class="br0">&#40;</span> buf<span class="sy0">,</span> <span class="st0">'<span class="es0">\0</span>'</span><span class="sy0">,</span> <span class="nu0">30</span> <span class="br0">&#41;</span>;
-   <span class="kw4">string</span> str <span class="sy0">=</span> <span class="st0">&quot;Trying is the first step towards success.&quot;</span>;
-   str.<span class="me1">copy</span><span class="br0">&#40;</span> buf<span class="sy0">,</span> <span class="nu0">24</span> <span class="br0">&#41;</span>;
-   <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> buf <span class="sy0">&lt;&lt;</span> endl;</pre>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="../redirect" class="wikilink1" title="redirect">redirect</a></td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [34-49] -->
 <p>
 
-When run, this code displays:
+See <a href="basic_string/copy" class="wikilink1" title="string:basic_string:copy"> this</a>
 </p>
-<pre class="c code c++" style="font-family:monospace;">   Trying is the first step</pre>
-<p>
-
-Note that before calling copy(), we first call (Standard C String and
-Character) memset() to fill the destination array with copies of the NULL
-character. This step is included to make sure that the resulting array of
-characters is NULL-terminated.
-</p>
-
-<p>
-Related Topics: <a href="substr" class="wikilink1" title="string:substr">substr</a>
-</p>
-
+<div class="noteredirect">This page has been moved, the new location is <a href="basic_string/copy" class="wikilink1" title="string:basic_string:copy">basic_string::copy</a>.</div>
 </div>
-<!-- SECTION "copy" [3-] --></div>
+</div>
 </body>
 </html>

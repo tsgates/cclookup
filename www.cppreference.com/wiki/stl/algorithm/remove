@@ -4,67 +4,122 @@
  lang="en" dir="ltr">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>stl:algorithm:remove</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
+  <title>algorithm:remove</title>
+<meta name="generator" content="DokuWiki" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2009-05-07T11:37:11-0700" />
-<meta name="keywords" content="stl,algorithm,remove" />
+<meta name="date" content="2010-11-13T11:06:49-0800" />
+<meta name="keywords" content="algorithm,remove" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/stl/algorithm/remove?do=index" title="Index" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/algorithm/remove?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
-<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=stl:algorithm" />
-<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/stl/algorithm/remove" />
-<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/stl/algorithm/remove" />
-<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=algorithm" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/algorithm/remove" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/algorithm/remove" />
+<link rel="canonical" href="remove" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='algorithm';var JSINFO = {"id":"algorithm:remove","namespace":"algorithm"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
 
+<ul class="toc">
+<li class="clear">
 
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="remove#remove" class="toc">remove</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="remove#parameters" class="toc">Parameters</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="remove#return_value" class="toc">Return value</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="remove#equivalent_function" class="toc">Equivalent function</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="remove#complexity" class="toc">Complexity</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="remove#see_also" class="toc">See also</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
 
-<h2><a name="remove" id="remove">remove</a></h2>
+<h2 class="sectionedit1"><a name="remove" id="remove">remove</a></h2>
 <div class="level2">
-
+<pre class="cpp code cpp"><span class="co2">#include &lt;algorithm&gt;</span>
+&nbsp;
+<span class="kw2">template</span><span class="sy1">&lt;</span> <span class="kw2">class</span> ForwardIterator, <span class="kw2">class</span> T <span class="sy1">&gt;</span>
+ForwardIterator <span class="kw3">remove</span><span class="br0">&#40;</span> ForwardIterator first, ForwardIterator last, <span class="kw4">const</span> T<span class="sy3">&amp;</span> value <span class="br0">&#41;</span><span class="sy4">;</span></pre>
 <p>
-Syntax:
-</p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;algorithm&gt;</span>
-    iterator remove<span class="br0">&#40;</span> iterator start<span class="sy0">,</span> iterator end<span class="sy0">,</span> <span class="kw4">const</span> TYPE<span class="sy0">&amp;</span> val <span class="br0">&#41;</span>;</pre>
-<p>
-The remove() algorithm removes all of the elements in the range [start,end)
-that are equal to val.
-</p>
-
-<p>
-The return value of this function is an iterator after the last element of the new
-sequence that should contain no elements equal to val.
-</p>
-
-<p>
-Note that remove() doesn&#039;t actually “remove” things from the range [start, end); if
-remove() is called on a container, the length of the container will remain the same
-afterwards (remove() couldn&#039;t possibly affect that through the iterators alone), and
-all the elements will still be in the container. Instead, remove() puts all the “removed”
-elements to the end of the container, and returns the iterator that separates the not-removed
-and removed elements. To actually remove items from a container, you would have to call the
-erase() method of the container, to erase elements starting at the returned iterator.
-This is usually combined in what is called the <a href="http://en.wikipedia.org/wiki/Erase-remove_idiom" class="urlextern" title="http://en.wikipedia.org/wiki/Erase-remove_idiom"  rel="nofollow">erase-remove idiom</a>:
-</p>
-<pre class="code">container.erase(remove(container.begin(), container.end(), val), container.end());</pre>
-
-<p>
-The remove() function runs in <a href="../../complexity" class="wikilink1" title="complexity">linear time</a>.
-</p>
-
-<p>
-Related Topics: <a href="remove_copy" class="wikilink1" title="stl:algorithm:remove_copy">remove_copy</a>, <a href="remove_copy_if" class="wikilink1" title="stl:algorithm:remove_copy_if">remove_copy_if</a>, <a href="remove_if" class="wikilink1" title="stl:algorithm:remove_if">remove_if</a>, <a href="unique" class="wikilink1" title="stl:algorithm:unique">unique</a>, <a href="unique_copy" class="wikilink1" title="stl:algorithm:unique_copy">unique_copy</a>
+Removes all elements equaling the given value <code>value</code> from the range, defined by <code>[first, last)</code>. Removing is done by shifting the range when needed in such a way that corresponding elements are overwritten. The elements between the old and the new end or the range are left intact. Iterator to the new end of the range is returned.
 </p>
 
 </div>
-<!-- SECTION "remove" [3-] --></div>
+<!-- EDIT1 SECTION "remove" [1-527] -->
+<h3 class="sectionedit2"><a name="parameters" id="parameters">Parameters</a></h3>
+<div class="level3">
+
+<p>
+
+<code>first</code>, <code>last</code> - the range of the elements to be processed
+</p>
+
+<p>
+<code>value</code> - value of the elements to remove
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Parameters" [528-657] -->
+<h3 class="sectionedit3"><a name="return_value" id="return_value">Return value</a></h3>
+<div class="level3">
+
+<p>
+
+forward iterator to the new end of the range
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Return value" [658-725] -->
+<h3 class="sectionedit4"><a name="equivalent_function" id="equivalent_function">Equivalent function</a></h3>
+<div class="level3">
+<pre class="cpp code cpp"><span class="kw2">template</span><span class="sy1">&lt;</span><span class="kw2">class</span> ForwardIterator, <span class="kw2">class</span> T<span class="sy1">&gt;</span>
+ForwardIterator <span class="kw3">remove</span><span class="br0">&#40;</span>ForwardIterator first, ForwardIterator last, <span class="kw4">const</span> T<span class="sy3">&amp;</span> value<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+    ForwardIterator result <span class="sy1">=</span> first<span class="sy4">;</span>
+    <span class="kw1">for</span> <span class="br0">&#40;</span><span class="sy4">;</span> first <span class="sy3">!</span><span class="sy1">=</span> last<span class="sy4">;</span> <span class="sy2">++</span>first<span class="br0">&#41;</span>
+        <span class="kw1">if</span> <span class="br0">&#40;</span><span class="sy3">!</span><span class="br0">&#40;</span><span class="sy2">*</span>first <span class="sy1">==</span> value<span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+            <span class="sy2">*</span>result<span class="sy2">++</span> <span class="sy1">=</span> <span class="sy2">*</span>first<span class="sy4">;</span>
+        <span class="br0">&#125;</span>
+    <span class="br0">&#125;</span>
+    <span class="kw1">return</span> result<span class="sy4">;</span>
+<span class="br0">&#125;</span></pre>
+</div>
+<!-- EDIT4 SECTION "Equivalent function" [726-1075] -->
+<h3 class="sectionedit5"><a name="complexity" id="complexity">Complexity</a></h3>
+<div class="level3">
+
+<p>
+
+linear in the distance between <code>first</code> and <code>last</code>
+</p>
+
+</div>
+<!-- EDIT5 SECTION "Complexity" [1076-1150] -->
+<h3 class="sectionedit6"><a name="see_also" id="see_also">See also</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="remove_if" class="wikilink1" title="algorithm:remove_if">remove_if</a>, <a href="remove_copy" class="wikilink1" title="algorithm:remove_copy">remove_copy</a>, <a href="remove_copy_if" class="wikilink1" title="algorithm:remove_copy_if">remove_copy_if</a>
+
+</p>
+
+</div>
+<!-- EDIT6 SECTION "See also" [1151-] --></div>
 </body>
 </html>

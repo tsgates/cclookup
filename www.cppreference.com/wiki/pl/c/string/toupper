@@ -5,35 +5,37 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>pl:c:string:toupper</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
-<meta name="robots" content="noindex,nofollow" />
-<meta name="date" content="2009-07-11T15:21:23-0700" />
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:37-0700" />
 <meta name="keywords" content="pl,c,string,toupper" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../../../index.html" />
+<link rel="start" href="../../../../index.html" />
 <link rel="contents" href="http://www.cppreference.com/wiki/pl/c/string/toupper?do=index" title="Indeks" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
 <link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=pl:c:string" />
 <link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/pl/c/string/toupper" />
 <link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/pl/c/string/toupper" />
-<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="canonical" href="toupper" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='pl:c:string';var JSINFO = {"id":"pl:c:string:toupper","namespace":"pl:c:string"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
 
-
-
-<h2><a name="toupper" id="toupper">toupper</a></h2>
+<h2 class="sectionedit1"><a name="toupper" id="toupper">toupper</a></h2>
 <div class="level2">
 
 <p>
 Składnia:
 </p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;cctype&gt;</span>
-    <span class="kw4">int</span> toupper<span class="br0">&#40;</span><span class="kw4">int</span> ch<span class="br0">&#41;</span>;</pre>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cctype&gt;</span>
+    <span class="kw4">int</span> <span class="kw3">toupper</span><span class="br0">&#40;</span><span class="kw4">int</span> ch<span class="br0">&#41;</span><span class="sy4">;</span></pre>
 <p>
 
 Funkcja toupper() zwraca znak <em>ch</em> w postaci wielkiej litery.
@@ -44,6 +46,6 @@ Tematy pokrewne: <a href="tolower" class="wikilink1" title="pl:c:string:tolower"
 </p>
 
 </div>
-<!-- SECTION "toupper" [2-] --></div>
+<!-- EDIT1 SECTION "toupper" [2-] --></div>
 </body>
 </html>

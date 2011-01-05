@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>string:basic_string:swap</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-11-07T10:37:24-0800" />
+<meta name="keywords" content="string,basic_string,swap" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/string/basic_string/swap?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=string:basic_string" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/string/basic_string/swap" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/string/basic_string/swap" />
+<link rel="canonical" href="swap" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='string:basic_string';var JSINFO = {"id":"string:basic_string:swap","namespace":"string:basic_string"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="swap#basic_stringswap" class="toc">basic_string::swap</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="swap#parameters" class="toc">Parameters</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="swap#returned_value" class="toc">Returned value</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="swap#example" class="toc">Example</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="swap#complexity" class="toc">Complexity</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="swap#see_also" class="toc">See also</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="basic_stringswap" id="basic_stringswap">basic_string::swap</a></h2>
+<div class="level2">
+<pre class="cpp code cpp">    <span class="kw4">void</span> swap<span class="br0">&#40;</span> basic_string<span class="sy3">&amp;</span> str <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Swaps the contents with those of the given string <code>str</code>. All iterators are invalidated
+The swap() function exchanges the elements of the current string with those of
+from. This function operates in <a href="../../complexity" class="wikilink1" title="complexity">constant time</a>.
+</p>
+
+</div>
+<!-- EDIT1 SECTION "basic_string::swap" [1-313] -->
+<h3 class="sectionedit2"><a name="parameters" id="parameters">Parameters</a></h3>
+<div class="level3">
+
+<p>
+
+<code>str</code> - string to be swapped
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Parameters" [314-365] -->
+<h3 class="sectionedit3"><a name="returned_value" id="returned_value">Returned value</a></h3>
+<div class="level3">
+
+<p>
+
+(none)
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Returned value" [366-397] -->
+<h3 class="sectionedit4"><a name="example" id="example">Example</a></h3>
+<div class="level3">
+
+<p>
+
+The following code uses the <code>swap()</code> function to exchange the values of two strings:
+</p>
+<pre class="cpp code cpp">std<span class="sy4">::</span><span class="me2">string</span> first<span class="br0">&#40;</span> <span class="st0">&quot;This comes first&quot;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+std<span class="sy4">::</span><span class="me2">string</span> second<span class="br0">&#40;</span> <span class="st0">&quot;And this is second&quot;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+std<span class="sy4">::</span><span class="me2">first</span>.<span class="me1">swap</span><span class="br0">&#40;</span> second <span class="br0">&#41;</span><span class="sy4">;</span>
+std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> first <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> second <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span></pre>
+<p>
+Output:
+</p>
+<pre class="code">
+And this is second
+This comes first</pre>
+</div>
+<!-- EDIT4 SECTION "Example" [398-767] -->
+<h3 class="sectionedit5"><a name="complexity" id="complexity">Complexity</a></h3>
+<div class="level3">
+
+<p>
+
+constant
+</p>
+
+</div>
+<!-- EDIT5 SECTION "Complexity" [768-797] -->
+<h3 class="sectionedit6"><a name="see_also" id="see_also">See also</a></h3>
+<div class="level3">
+
+</div>
+<!-- EDIT6 SECTION "See also" [798-] --></div>
+</body>
+</html>

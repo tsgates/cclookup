@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>util:time:c:tm</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:33-0700" />
+<meta name="keywords" content="util,time,c,tm" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/util/time/c/tm?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=util:time:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/util/time/c/tm" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/util/time/c/tm" />
+<link rel="canonical" href="tm" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='util:time:c';var JSINFO = {"id":"util:time:c:tm","namespace":"util:time:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="tm" id="tm">tm</a></h2>
+<div class="level2">
+
+<p>
+
+This struct defines broken-down time. At least the following items are included:
+</p>
+<pre class="cpp code cpp"><span class="kw4">int</span> tm_sec<span class="sy4">;</span>
+<span class="kw4">int</span> tm_min<span class="sy4">;</span>
+<span class="kw4">int</span> tm_hour<span class="sy4">;</span>
+<span class="kw4">int</span> tm_mday<span class="sy4">;</span>
+<span class="kw4">int</span> tm_mon<span class="sy4">;</span>
+<span class="kw4">int</span> tm_year<span class="sy4">;</span>
+<span class="kw4">int</span> tm_wday<span class="sy4">;</span>
+<span class="kw4">int</span> tm_yday<span class="sy4">;</span>
+<span class="kw4">int</span> tm_isdst<span class="sy4">;</span></pre>
+<p>
+<br/>
+
+The explanation of the members is as follows:
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<th class="col0 leftalign">Member	</th><th class="col1"> Explanation </th><th class="col2"> Range </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"><code>tm_sec</code>  </td><td class="col1"> seconds * </td><td class="col2"> 0-60 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"><code>tm_min</code>  </td><td class="col1 leftalign"> minutes   </td><td class="col2"> 0-59 </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><code>tm_hour</code> </td><td class="col1 leftalign"> hours     </td><td class="col2"> 0-23 </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><code>tm_mday</code> </td><td class="col1 leftalign"> day of the month	</td><td class="col2"> 1-31 </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 leftalign"><code>tm_mon</code>  </td><td class="col1 leftalign"> months since January  </td><td class="col2"> 0-11 </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><code>tm_year</code> </td><td class="col1 leftalign"> years since 1900  </td><td class="col2"> </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><code>tm_wday</code> </td><td class="col1"> day of the week (Sunday =<code>0</code>) </td><td class="col2"> 0-6 </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><code>tm_yday</code> </td><td class="col1"> day of the year (January 1 = <code>0</code>) </td><td class="col2"> 0-365 </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><code>tm_isdst</code></td><td class="col1"> Daylight Saving flag **</td><td class="col2"> </td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [279-711] -->
+<p>
+
+* the actual range is <code>0-59</code>, additional second is to allow occasional leap second.
+</p>
+
+<p>
+** Daylight Saving flag is positive when daylight saving is in effect, <code>0</code> if not in effect and negative if such information is unavailable.
+
+</p>
+
+</div>
+</div>
+</body>
+</html>

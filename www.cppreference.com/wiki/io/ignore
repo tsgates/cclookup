@@ -5,53 +5,43 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>io:ignore</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="generator" content="DokuWiki" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2009-03-09T12:13:28-0700" />
+<meta name="date" content="2010-11-12T07:47:45-0800" />
 <meta name="keywords" content="io,ignore" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/io/ignore?do=index" title="Index" />
+<link rel="start" href="../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/io/ignore?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
 <link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=io" />
 <link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/io/ignore" />
 <link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/io/ignore" />
-<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="canonical" href="ignore" />
+<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='io';var JSINFO = {"id":"io:ignore","namespace":"io"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
 
-
-
-<h2><a name="ignore" id="ignore">ignore</a></h2>
+<h2 class="sectionedit1"><a name="page_redirected_auto" id="page_redirected_auto">Page redirected (auto)</a></h2>
 <div class="level2">
-
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="../redirect" class="wikilink1" title="redirect">redirect</a></td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [34-49] -->
 <p>
-Syntax:
-</p>
-<pre class="c code c++" style="font-family:monospace;">    istream<span class="sy0">&amp;</span> istream<span class="sy0">::</span><span class="me2">ignore</span><span class="br0">&#40;</span> streamsize num<span class="sy0">=</span><span class="nu0">1</span><span class="sy0">,</span> <span class="kw4">int</span> delim<span class="sy0">=</span>EOF <span class="br0">&#41;</span>;</pre>
-<p>
 
-The ignore() function is used with input streams. It reads and throws away
-characters until num characters have been read (where num defaults to 1) or
-until the character delim is read (where delim defaults to <acronym title="End of file">EOF</acronym>).
-The ignore() function can sometimes be useful when using the getline() function
-together with the » operator. For example, if you read some input that is
-followed by a newline using the » operator, the newline will remain in the
-input as the next thing to be read. Since getline() will by default stop
-reading input when it reaches a newline, a subsequent call to getline() will
-return an empty string. In this case, the ignore() function could be called
-before getline() to “throw away” the newline.
+See <a href="basic_istream/ignore" class="wikilink1" title="io:basic_istream:ignore"> this</a>
 </p>
-
-<p>
-Related Topics: <a href="get" class="wikilink1" title="io:get">get</a>, <a href="getline" class="wikilink1" title="io:getline">getline</a>
-</p>
-
+<div class="noteredirect">This page has been moved, the new location is <a href="basic_istream/ignore" class="wikilink1" title="io:basic_istream:ignore">basic_istream::ignore</a>.</div>
 </div>
-<!-- SECTION "ignore" [3-] --></div>
+</div>
 </body>
 </html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es"
+ lang="es" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>es:container:set:set_constructors</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:32-0700" />
+<meta name="keywords" content="es,container,set,set_constructors" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/es/container/set/set_constructors?do=index" title="Índice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=es:container:set" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/es/container/set/set_constructors" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/es/container/set/set_constructors" />
+<link rel="canonical" href="set_constructors" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='es:container:set';var JSINFO = {"id":"es:container:set:set_constructors","namespace":"es:container:set"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Tabla de Contenidos</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="set_constructors#constructor_y_destructor_de_set" class="toc">Constructor y Destructor de Set</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="set_constructors#constructor_por_defecto" class="toc">Constructor Por Defecto</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="set_constructors#constructor_copia" class="toc">Constructor Copia</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="set_constructors#destructor" class="toc">Destructor</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="set_constructors#otros_constructores" class="toc">Otros Constructores</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="set_constructors#ejemplos" class="toc">Ejemplos</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="constructor_y_destructor_de_set" id="constructor_y_destructor_de_set">Constructor y Destructor de Set</a></h2>
+<div class="level2">
+
+<p>
+Sintaxis:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;set&gt;</span>
+    set<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    set<span class="br0">&#40;</span> <span class="kw4">const</span> set<span class="sy3">&amp;</span> conjunto <span class="br0">&#41;</span><span class="sy4">;</span>
+    set<span class="br0">&#40;</span> input_iterator inicio, input_iterator final <span class="br0">&#41;</span><span class="sy4">;</span>
+    set<span class="br0">&#40;</span> input_iterator inicio, input_iterator final, <span class="kw4">const</span> key_compare<span class="sy3">&amp;</span> comp <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw2">explicit</span> set<span class="br0">&#40;</span> <span class="kw4">const</span> key_compare<span class="sy3">&amp;</span> comp <span class="br0">&#41;</span><span class="sy4">;</span>
+    ~set<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Cada <code><a href="start" class="wikilink1" title="es:container:set:start">set</a></code> tiene un constructor por defecto, constructor copia, y destructor.
+</p>
+
+</div>
+<!-- EDIT1 SECTION "Constructor y Destructor de Set" [1-413] -->
+<h3 class="sectionedit2"><a name="constructor_por_defecto" id="constructor_por_defecto">Constructor Por Defecto</a></h3>
+<div class="level3">
+
+<p>
+El constructor por defecto no tiene argumentos. Crea un conjunto vacío del tipo indicado, usando los criterios de almacenamiento y comparación por defecto. Ejecuta en <a href="../../complexity" class="wikilink1" title="es:complexity">tiempo constante</a>. 
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Constructor Por Defecto" [414-655] -->
+<h3 class="sectionedit3"><a name="constructor_copia" id="constructor_copia">Constructor Copia</a></h3>
+<div class="level3">
+
+<p>
+El constructor copia por defecto crea una copia de un <em>conjunto</em>. Se ejecuta en <a href="../../complexity" class="wikilink1" title="es:complexity">tiempo lineal</a>.
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Constructor Copia" [656-800] -->
+<h3 class="sectionedit4"><a name="destructor" id="destructor">Destructor</a></h3>
+<div class="level3">
+
+<p>
+El destructor es invocado automáticamente cuando el set deba ser destruído.
+</p>
+
+</div>
+<!-- EDIT4 SECTION "Destructor" [801-900] -->
+<h3 class="sectionedit5"><a name="otros_constructores" id="otros_constructores">Otros Constructores</a></h3>
+<div class="level3">
+
+<p>
+
+<code>set</code> acepta también constructores de rango, como los otros contenedores de la biblioteca STL. Estos constructores toman dos argumentos indicando el inicio y final (“uno pasado del último elemento”) de un rango externo, y crean un nuevo conjunto copiando los elementos de ese rango en el orden adecuado. Opcionalmente se puede pasar el criterio de comparación como tercer parámetro <em>comp</em>.
+</p>
+
+<p>
+Un constructor <a href="http://www.cppreference.com/wiki/es.keywords/explicit" class="wikilink2" title="es.keywords:explicit" rel="nofollow">explícito</a> toma como único argumento un criterio de comparación <em>comp</em>, y crea un conjunto vacío que siga ese criterio de comparación para ordenar sus elementos. Este constructor debiera ejecutarse en tiempo constante.
+</p>
+
+</div>
+<!-- EDIT5 SECTION "Otros Constructores" [901-1598] -->
+<h3 class="sectionedit6"><a name="ejemplos" id="ejemplos">Ejemplos</a></h3>
+<div class="level3">
+<pre class="cpp code cpp">  <span class="kw4">const</span> <span class="kw4">int</span> max_nums <span class="sy1">=</span> <span class="nu0">10</span><span class="sy4">;</span>
+  <span class="kw4">int</span> nums<span class="br0">&#91;</span>max_nums<span class="br0">&#93;</span> <span class="sy1">=</span> <span class="br0">&#123;</span><span class="nu0">3</span>,<span class="nu0">1</span>,<span class="nu0">4</span>,<span class="nu0">1</span>,<span class="nu0">5</span>,<span class="nu0">9</span>,<span class="nu0">2</span>,<span class="nu0">6</span>,<span class="nu0">5</span>,<span class="nu0">8</span><span class="br0">&#125;</span><span class="sy4">;</span>
+&nbsp;
+  set<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> digitos<span class="sy4">;</span>
+  <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> max_nums<span class="sy4">;</span> <span class="sy2">++</span>i <span class="br0">&#41;</span> digitos.<span class="me1">insert</span><span class="br0">&#40;</span>nums<span class="br0">&#91;</span>i<span class="br0">&#93;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+  <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Los digitos unicos son: &quot;</span><span class="sy4">;</span>
+  <span class="kw1">for</span><span class="br0">&#40;</span> set<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">const_iterator</span> iter <span class="sy1">=</span> digitos.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+       iter <span class="sy3">!</span><span class="sy1">=</span> digitos.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+       <span class="sy2">++</span>iter <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="sy2">*</span>iter <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span><span class="sy4">;</span>
+  <span class="br0">&#125;</span>
+  <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span></pre>
+<p>
+Al ser ejecutado, este código muestra lo que sigue:
+</p>
+<pre class="code">
+Los digitos unicos son: 1 2 3 4 5 6 8 9</pre>
+<p>
+Para construir el mismo set usando los constructores por rangos, ahorrándose el ciclo <em>for</em> de inicialización, se puede hacer de la manera siguiente:
+</p>
+<pre class="cpp code cpp">  <span class="kw4">const</span> <span class="kw4">int</span> max_nums <span class="sy1">=</span> <span class="nu0">10</span><span class="sy4">;</span>
+  <span class="kw4">int</span> nums<span class="br0">&#91;</span>max_nums<span class="br0">&#93;</span> <span class="sy1">=</span> <span class="br0">&#123;</span><span class="nu0">3</span>,<span class="nu0">1</span>,<span class="nu0">4</span>,<span class="nu0">1</span>,<span class="nu0">5</span>,<span class="nu0">9</span>,<span class="nu0">2</span>,<span class="nu0">6</span>,<span class="nu0">5</span>,<span class="nu0">8</span><span class="br0">&#125;</span><span class="sy4">;</span>
+&nbsp;
+  set<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> digitos <span class="br0">&#40;</span>nums, nums <span class="sy2">+</span> max_nums<span class="br0">&#41;</span><span class="sy4">;</span></pre>
+</div>
+<!-- EDIT6 SECTION "Ejemplos" [1599-] --></div>
+</body>
+</html>

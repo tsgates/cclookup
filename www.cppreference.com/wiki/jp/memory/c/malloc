@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:memory:c:malloc</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-11-08T14:12:40-0800" />
+<meta name="keywords" content="jp,memory,c,malloc" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/memory/c/malloc?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp:memory:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/memory/c/malloc" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/memory/c/malloc" />
+<link rel="canonical" href="malloc" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp:memory:c';var JSINFO = {"id":"jp:memory:c:malloc","namespace":"jp:memory:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="malloc" id="malloc">malloc</a></h2>
+<div class="level2">
+
+<p>
+
+文法:
+
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cstdlib&gt;</span>
+    <span class="kw4">void</span> <span class="sy2">*</span><span class="kw3">malloc</span><span class="br0">&#40;</span> <span class="kw4">size_t</span> サイズ <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+malloc()関数は、<code>サイズ</code>で指定されたメモリブロックのポインタを返します。エラーが発生するとNULLを返します。メモリのポインタはヒープ上のメモリを指します。スタック上を指すことはありません。使用し終わったら、メモリブロックはfreeするようにしましょう。
+</p>
+
+<p>
+サンプル:
+
+</p>
+<pre class="cpp code cpp">     <span class="kw4">typedef</span> <span class="kw4">struct</span> data_type <span class="br0">&#123;</span>
+       <span class="kw4">int</span> age<span class="sy4">;</span>
+       <span class="kw4">char</span> name<span class="br0">&#91;</span><span class="nu0">20</span><span class="br0">&#93;</span><span class="sy4">;</span>
+     <span class="br0">&#125;</span> data<span class="sy4">;</span>
+&nbsp;
+     data <span class="sy2">*</span>bob<span class="sy4">;</span>
+     bob <span class="sy1">=</span> <span class="br0">&#40;</span>data<span class="sy2">*</span><span class="br0">&#41;</span> <span class="kw3">malloc</span><span class="br0">&#40;</span> <span class="kw3">sizeof</span><span class="br0">&#40;</span>data<span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+     <span class="kw1">if</span><span class="br0">&#40;</span> bob <span class="sy3">!</span><span class="sy1">=</span> <span class="kw2">NULL</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+       bob<span class="sy2">-</span><span class="sy1">&gt;</span>age <span class="sy1">=</span> <span class="nu0">22</span><span class="sy4">;</span>
+       <span class="kw3">strcpy</span><span class="br0">&#40;</span> bob<span class="sy2">-</span><span class="sy1">&gt;</span>name, <span class="st0">&quot;ロバート&quot;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+       <span class="kw3">printf</span><span class="br0">&#40;</span> <span class="st0">&quot;%s は %d 歳です<span class="es1">\n</span>&quot;</span>, bob<span class="sy2">-</span><span class="sy1">&gt;</span>name, bob<span class="sy2">-</span><span class="sy1">&gt;</span>age <span class="br0">&#41;</span><span class="sy4">;</span>
+     <span class="br0">&#125;</span>
+     <span class="kw3">free</span><span class="br0">&#40;</span> bob <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+C++では、Cのmalloc/freeの代わりに、new/deleteを使用する方が良いです。
+</p>
+
+<p>
+関連トピック: <a href="calloc" class="wikilink1" title="jp:memory:c:calloc">calloc</a>, <a href="../../keywords/delete" class="wikilink1" title="jp:keywords:delete">delete</a>, <a href="free" class="wikilink1" title="jp:memory:c:free">free</a>, <a href="../../keywords/new" class="wikilink1" title="jp:keywords:new">new</a>, <a href="realloc" class="wikilink1" title="jp:memory:c:realloc">realloc</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

@@ -5,21 +5,25 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>ru:faq</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="generator" content="DokuWiki" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2009-03-25T14:35:41-0700" />
+<meta name="date" content="2010-10-28T18:17:08-0700" />
 <meta name="keywords" content="ru,faq" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../index.html" />
+<link rel="start" href="../../index.html" />
 <link rel="contents" href="http://www.cppreference.com/wiki/ru/faq?do=index" title="Все страницы" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
 <link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=ru" />
 <link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/ru/faq" />
 <link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/ru/faq" />
-<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="canonical" href="faq" />
+<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='ru';var JSINFO = {"id":"ru:faq","namespace":"ru"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
@@ -40,7 +44,7 @@
 <li class="level3"><div class="li"><span class="li"><a href="faq#какой_wiki-движок_используется_на_этом_сайте" class="toc">Какой wiki-движок используется на этом сайте?</a></span></div></li>
 <li class="level3"><div class="li"><span class="li"><a href="faq#для_кого_предназначен_этот_сайт" class="toc">Для кого предназначен этот сайт?</a></span></div></li>
 <li class="level3"><div class="li"><span class="li"><a href="faq#неужели_этот_сайт_содержит_полный_и_окончательный_список_всего_что_я_могу_сделать_с_c" class="toc">Неужели этот сайт содержит полный и окончательный список всего, что я могу сделать с C++?</a></span></div></li>
-<li class="level3"><div class="li"><span class="li"><a href="faq#некоторые_примеры_опубликованные_на_этом_сайте_не_работают_у_меня._в_чем_дело" class="toc">Некоторые примеры, опубликованные на этом сайте, не работают у меня. В чем дело?</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="faq#некоторые_примеры_опубликованные_на_этом_сайте_не_работают_у_меня_в_чем_дело" class="toc">Некоторые примеры, опубликованные на этом сайте, не работают у меня. В чем дело?</a></span></div></li>
 <li class="level3"><div class="li"><span class="li"><a href="faq#я_обнаружил_а_на_сайте_ошибку" class="toc">Я обнаружил(а) на сайте ошибку!</a></span></div></li>
 <li class="level3"><div class="li"><span class="li"><a href="faq#что_это_за_сайт" class="toc">Что это за сайт?</a></span></div></li></ul>
 </li></ul>
@@ -49,14 +53,12 @@
 </div>
 <!-- TOC END -->
 
-
-
-<h2><a name="часто_задаваемые_вопросы" id="часто_задаваемые_вопросы">Часто задаваемые вопросы</a></h2>
+<h2 class="sectionedit1"><a name="часто_задаваемые_вопросы" id="часто_задаваемые_вопросы">Часто задаваемые вопросы</a></h2>
 <div class="level2">
 
 </div>
-<!-- SECTION "Часто задаваемые вопросы" [1-58] -->
-<h3><a name="я_могу_получить_копию_этого_сайта" id="я_могу_получить_копию_этого_сайта">Я могу получить копию этого сайта?</a></h3>
+<!-- EDIT1 SECTION "Часто задаваемые вопросы" [1-58] -->
+<h3 class="sectionedit2"><a name="я_могу_получить_копию_этого_сайта" id="я_могу_получить_копию_этого_сайта">Я могу получить копию этого сайта?</a></h3>
 <div class="level3">
 
 <p>
@@ -73,8 +75,8 @@
 </p>
 
 </div>
-<!-- SECTION "Я могу получить копию этого сайта?" [59-1490] -->
-<h3><a name="я_могу_сделать_зеркалопереводсвою_версию_этого_сайта" id="я_могу_сделать_зеркалопереводсвою_версию_этого_сайта">Я могу сделать зеркало/перевод/свою версию этого сайта?</a></h3>
+<!-- EDIT2 SECTION "Я могу получить копию этого сайта?" [59-1490] -->
+<h3 class="sectionedit3"><a name="я_могу_сделать_зеркалопереводсвою_версию_этого_сайта" id="я_могу_сделать_зеркалопереводсвою_версию_этого_сайта">Я могу сделать зеркало/перевод/свою версию этого сайта?</a></h3>
 <div class="level3">
 
 <p>
@@ -83,8 +85,8 @@
 </p>
 
 </div>
-<!-- SECTION "Я могу сделать зеркало/перевод/свою версию этого сайта?" [1491-1915] -->
-<h3><a name="это_wiki_я_могу_изменять_содержимое_страниц" id="это_wiki_я_могу_изменять_содержимое_страниц">Это wiki? Я могу изменять содержимое страниц?</a></h3>
+<!-- EDIT3 SECTION "Я могу сделать зеркало/перевод/свою версию этого сайта?" [1491-1915] -->
+<h3 class="sectionedit4"><a name="это_wiki_я_могу_изменять_содержимое_страниц" id="это_wiki_я_могу_изменять_содержимое_страниц">Это wiki? Я могу изменять содержимое страниц?</a></h3>
 <div class="level3">
 
 <p>
@@ -97,8 +99,8 @@
 </p>
 
 </div>
-<!-- SECTION "Это wiki? Я могу изменять содержимое страниц?" [1916-2459] -->
-<h3><a name="какой_wiki-движок_используется_на_этом_сайте" id="какой_wiki-движок_используется_на_этом_сайте">Какой wiki-движок используется на этом сайте?</a></h3>
+<!-- EDIT4 SECTION "Это wiki? Я могу изменять содержимое страниц?" [1916-2459] -->
+<h3 class="sectionedit5"><a name="какой_wiki-движок_используется_на_этом_сайте" id="какой_wiki-движок_используется_на_этом_сайте">Какой wiki-движок используется на этом сайте?</a></h3>
 <div class="level3">
 
 <p>
@@ -107,8 +109,8 @@ cppreference.com работает на <a href="http://www.dokuwiki.org" class="
 </p>
 
 </div>
-<!-- SECTION "Какой wiki-движок используется на этом сайте?" [2460-2626] -->
-<h3><a name="для_кого_предназначен_этот_сайт" id="для_кого_предназначен_этот_сайт">Для кого предназначен этот сайт?</a></h3>
+<!-- EDIT5 SECTION "Какой wiki-движок используется на этом сайте?" [2460-2626] -->
+<h3 class="sectionedit6"><a name="для_кого_предназначен_этот_сайт" id="для_кого_предназначен_этот_сайт">Для кого предназначен этот сайт?</a></h3>
 <div class="level3">
 
 <p>
@@ -126,8 +128,8 @@ cppreference.com работает на <a href="http://www.dokuwiki.org" class="
 </ul>
 
 </div>
-<!-- SECTION "Для кого предназначен этот сайт?" [2627-3399] -->
-<h3><a name="неужели_этот_сайт_содержит_полный_и_окончательный_список_всего_что_я_могу_сделать_с_c" id="неужели_этот_сайт_содержит_полный_и_окончательный_список_всего_что_я_могу_сделать_с_c">Неужели этот сайт содержит полный и окончательный список всего, что я могу сделать с C++?</a></h3>
+<!-- EDIT6 SECTION "Для кого предназначен этот сайт?" [2627-3399] -->
+<h3 class="sectionedit7"><a name="неужели_этот_сайт_содержит_полный_и_окончательный_список_всего_что_я_могу_сделать_с_c" id="неужели_этот_сайт_содержит_полный_и_окончательный_список_всего_что_я_могу_сделать_с_c">Неужели этот сайт содержит полный и окончательный список всего, что я могу сделать с C++?</a></h3>
 <div class="level3">
 
 <p>
@@ -136,8 +138,8 @@ cppreference.com работает на <a href="http://www.dokuwiki.org" class="
 </p>
 
 </div>
-<!-- SECTION "Неужели этот сайт содержит полный и окончательный список всего, что я могу сделать с C++?" [3400-4032] -->
-<h3><a name="некоторые_примеры_опубликованные_на_этом_сайте_не_работают_у_меня._в_чем_дело" id="некоторые_примеры_опубликованные_на_этом_сайте_не_работают_у_меня._в_чем_дело">Некоторые примеры, опубликованные на этом сайте, не работают у меня. В чем дело?</a></h3>
+<!-- EDIT7 SECTION "Неужели этот сайт содержит полный и окончательный список всего, что я могу сделать с C++?" [3400-4032] -->
+<h3 class="sectionedit8"><a name="некоторые_примеры_опубликованные_на_этом_сайте_не_работают_у_меня_в_чем_дело" id="некоторые_примеры_опубликованные_на_этом_сайте_не_работают_у_меня_в_чем_дело">Некоторые примеры, опубликованные на этом сайте, не работают у меня. В чем дело?</a></h3>
 <div class="level3">
 
 <p>
@@ -150,7 +152,7 @@ cppreference.com работает на <a href="http://www.dokuwiki.org" class="
 <li class="level1"><div class="li"> заголовочные файлы меняются, как сумашедшие. Чтобы подключить поддержку <a href="../stl/vector/start" class="wikilink1" title="stl:vector:start">векторов</a>, возможно, Вам придется подключить один из этих заголовочных файлов:</div>
 </li>
 </ul>
-<pre class="c code c++" style="font-family:monospace;">      <span class="co2">#include &lt;vector&gt;</span>
+<pre class="cpp code cpp">      <span class="co2">#include &lt;vector&gt;</span>
       <span class="co2">#include &lt;Vector&gt;</span>
       <span class="co2">#include &lt;vector.h&gt;</span></pre>
 <p>
@@ -161,23 +163,23 @@ cppreference.com работает на <a href="http://www.dokuwiki.org" class="
 <li class="level1"><div class="li"> другая проблема с заголовочными файлами заключается в том, что более новые компиляторы могут использовать более платформо-независимый код для подключения стандартных библиотек C. Например, Вам стоит использовать</div>
 </li>
 </ul>
-<pre class="c code c++" style="font-family:monospace;">      <span class="co2">#include &lt;cstdio&gt;</span></pre>
+<pre class="cpp code cpp">      <span class="co2">#include &lt;cstdio&gt;</span></pre>
 <p>
 
 вместо
 
 </p>
-<pre class="c code c++" style="font-family:monospace;">      <span class="co2">#include &lt;stdio.h&gt;</span></pre><ul>
+<pre class="cpp code cpp">      <span class="co2">#include &lt;stdio.h&gt;</span></pre><ul>
 <li class="level1"><div class="li"> Весь код, размещенный на этом сайте, подразумевает, что вы будете использовать корректное пространство имен. Если Ваш компилятор староват, то Вы могли обойтись простым вызовом, как например:</div>
 </li>
 </ul>
-<pre class="c code c++" style="font-family:monospace;">      <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;hello world!&quot;</span>;</pre>
+<pre class="cpp code cpp">      <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;hello world!&quot;</span><span class="sy4">;</span></pre>
 <p>
 
 Однако, новые компиляторы требуют, чтобы Вы либо используете
 
 </p>
-<pre class="c code c++" style="font-family:monospace;">      std<span class="sy0">::</span><a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;hello world!&quot;</span>;</pre>
+<pre class="cpp code cpp">      std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;hello world!&quot;</span><span class="sy4">;</span></pre>
 <p>
 
 или же объявляете какое пространство имен будете использовать с помощью команды «using namespace».
@@ -193,18 +195,18 @@ cppreference.com работает на <a href="http://www.dokuwiki.org" class="
 </p>
 
 </div>
-<!-- SECTION "Некоторые примеры, опубликованные на этом сайте, не работают у меня. В чем дело?" [4033-7351] -->
-<h3><a name="я_обнаружил_а_на_сайте_ошибку" id="я_обнаружил_а_на_сайте_ошибку">Я обнаружил(а) на сайте ошибку!</a></h3>
+<!-- EDIT8 SECTION "Некоторые примеры, опубликованные на этом сайте, не работают у меня. В чем дело?" [4033-7351] -->
+<h3 class="sectionedit9"><a name="я_обнаружил_а_на_сайте_ошибку" id="я_обнаружил_а_на_сайте_ошибку">Я обнаружил(а) на сайте ошибку!</a></h3>
 <div class="level3">
 
 <p>
 
-Если вы нашли любые ошибки в данном руководстве, то можете свободно их исправить самостоятельно. Также вы можете связаться с нами <a href="mailto:&#x63;&#x6f;&#x6d;&#x6d;&#x65;&#x6e;&#x74;&#x73;&#x40;&#x63;&#x70;&#x70;&#x72;&#x65;&#x66;&#x65;&#x72;&#x65;&#x6e;&#x63;&#x65;&#x2e;&#x63;&#x6f;&#x6d;" class="mail JSnocheck" title="&#x63;&#x6f;&#x6d;&#x6d;&#x65;&#x6e;&#x74;&#x73;&#x40;&#x63;&#x70;&#x70;&#x72;&#x65;&#x66;&#x65;&#x72;&#x65;&#x6e;&#x63;&#x65;&#x2e;&#x63;&#x6f;&#x6d;">comments@cppreference.com</a>.
+Если вы нашли любые ошибки в данном руководстве, то можете свободно их исправить самостоятельно. Также вы можете связаться с нами <a href="mailto:&#x63;&#x6f;&#x6d;&#x6d;&#x65;&#x6e;&#x74;&#x73;&#x40;&#x63;&#x70;&#x70;&#x72;&#x65;&#x66;&#x65;&#x72;&#x65;&#x6e;&#x63;&#x65;&#x2e;&#x63;&#x6f;&#x6d;" class="mail JSnocheck" title="&#x63;&#x6f;&#x6d;&#x6d;&#x65;&#x6e;&#x74;&#x73;&#x40;&#x63;&#x70;&#x70;&#x72;&#x65;&#x66;&#x65;&#x72;&#x65;&#x6e;&#x63;&#x65;&#x2e;&#x63;&#x6f;&#x6d;">&#x63;&#x6f;&#x6d;&#x6d;&#x65;&#x6e;&#x74;&#x73;&#x40;&#x63;&#x70;&#x70;&#x72;&#x65;&#x66;&#x65;&#x72;&#x65;&#x6e;&#x63;&#x65;&#x2e;&#x63;&#x6f;&#x6d;</a>.
 </p>
 
 </div>
-<!-- SECTION "Я обнаружил(а) на сайте ошибку!" [7352-7684] -->
-<h3><a name="что_это_за_сайт" id="что_это_за_сайт">Что это за сайт?</a></h3>
+<!-- EDIT9 SECTION "Я обнаружил(а) на сайте ошибку!" [7352-7684] -->
+<h3 class="sectionedit10"><a name="что_это_за_сайт" id="что_это_за_сайт">Что это за сайт?</a></h3>
 <div class="level3">
 
 <p>
@@ -213,6 +215,6 @@ cppreference.com работает на <a href="http://www.dokuwiki.org" class="
 </p>
 
 </div>
-<!-- SECTION "Что это за сайт?" [7685-] --></div>
+<!-- EDIT10 SECTION "Что это за сайт?" [7685-] --></div>
 </body>
 </html>

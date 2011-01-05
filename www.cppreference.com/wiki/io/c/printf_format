@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>io:c:printf_format</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-29T11:34:33-0700" />
+<meta name="keywords" content="io,c,printf_format" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/io/c/printf_format?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=io:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/io/c/printf_format" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/io/c/printf_format" />
+<link rel="canonical" href="printf_format" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='io:c';var JSINFO = {"id":"io:c:printf_format","namespace":"io:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h3 class="sectionedit1"><a name="printf_format" id="printf_format">printf format</a></h3>
+<div class="level3">
+
+<p>
+
+There are different %-codes for different variable types, as well as options to limit
+the length of the variables and whatnot.
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<th class="col0">Code</th><th class="col1">Format</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">%c</td><td class="col1">character</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">%d</td><td class="col1">signed integers</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">%i</td><td class="col1">signed integers</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">%I64d</td><td class="col1">long long (8B integer), <acronym title="Microsoft">MS</acronym>-specific</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0">%I64u</td><td class="col1">unsigned long long (8B integer), <acronym title="Microsoft">MS</acronym>-specific</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0">%e</td><td class="col1">scientific notation, with a lowercase “e”</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0">%E</td><td class="col1">scientific notation, with a uppercase “E”</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0">%f</td><td class="col1">floating point</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0">%g</td><td class="col1">use %e or %f, whichever is shorter</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0">%G</td><td class="col1">use %E or %f, whichever is shorter</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0">%o</td><td class="col1">octal</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0">%s</td><td class="col1">a string of characters</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0">%u</td><td class="col1">unsigned integer</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0">%x</td><td class="col1">unsigned hexadecimal, with lowercase letters</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0">%X</td><td class="col1">unsigned hexadecimal, with uppercase letters</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0">%p</td><td class="col1">a pointer</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0">%n</td><td class="col1">the argument shall be a pointer to an integer into which is placed the number of characters written so far</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [152-801] -->
+</div>
+<!-- EDIT1 SECTION "printf format" [1-802] -->
+<h3 class="sectionedit3"><a name="formatting_modifiers" id="formatting_modifiers">Formatting Modifiers</a></h3>
+<div class="level3">
+
+<p>
+
+An integer placed between a % sign and the format command acts as a minimum
+field width specifier, and pads the output with spaces or zeros to make it long
+enough. If you want to pad with zeros, place a zero before the minimum field
+width specifier:
+</p>
+<pre class="cpp code cpp">     <span class="sy2">%</span>012d</pre>
+<p>
+You may also specify the minimum field width in an int variable if instead of a
+number you put the * sign:
+</p>
+<pre class="cpp code cpp">     <span class="kw4">int</span> width <span class="sy1">=</span> <span class="nu0">12</span><span class="sy4">;</span>
+     <span class="kw4">int</span> age <span class="sy1">=</span> <span class="nu0">100</span><span class="sy4">;</span>
+     <span class="kw3">printf</span><span class="br0">&#40;</span><span class="st0">&quot;%*d&quot;</span>, width, age<span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+You can also include a precision modifier, in the form of a <code>.N</code> where <code>N</code> is some
+number, before the format command:
+</p>
+<pre class="cpp code cpp">     <span class="sy2">%</span>012.4d</pre>
+<p>
+The precision modifier has different meanings depending on the format command
+being used:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> With <code>%e</code>, <code>%E</code>, and <code>%f</code>, the precision modifier lets you specify the number of decimal places desired. For example, <code>%12.6f</code> will display a floating number at least 12 digits wide, with six decimal places.</div>
+</li>
+<li class="level1"><div class="li"> With <code>%g</code> and <code>%G</code>, the precision modifier determines the maximum number of significant digits displayed.</div>
+</li>
+<li class="level1"><div class="li"> With <code>%s</code>, the precision modifier simply acts as a maximum field length, to complement the minimum field length that precedes the period.</div>
+</li>
+</ul>
+
+<p>
+
+As with field width specifier, you may use an int variable
+to specify the precision modifier by using the * sign:
+</p>
+<pre class="cpp code cpp">     <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> msg <span class="sy1">=</span> <span class="st0">&quot;Hello printf&quot;</span><span class="sy4">;</span>
+     <span class="kw4">int</span> string_size <span class="sy1">=</span> <span class="kw3">strlen</span> <span class="br0">&#40;</span>msg<span class="br0">&#41;</span><span class="sy4">;</span>
+     <span class="kw3">printf</span><span class="br0">&#40;</span><span class="st0">&quot;msg: %.*s&quot;</span>, string_size, msg<span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+All of <code>printf</code>&#039;s output is right-justified, unless you place a minus sign
+right after the % sign. For example,
+</p>
+<pre class="cpp code cpp">     <span class="sy2">%-</span><span class="nu17">12.4f</span></pre>
+<p>
+will display a floating point number with a minimum of 12 characters, 4 decimal
+places, and left justified. 
+</p>
+
+<p>
+You may modify the <code>%d</code>, <code>%i</code>, <code>%o</code>, <code>%u</code>, and <code>%x</code> type
+specifiers with the letter <code>l</code> and the letter <code>h</code> to specify <code>long</code> and <code>short</code> data
+types (e.g. <code>%hd</code> means a <code>short</code> integer). 
+</p>
+
+<p>
+The <code>%e</code>, <code>%f</code>, and <code>%g</code> type specifiers can have the letter <code>l</code> before them to indicate that a double follows. 
+The <code>%g</code>, <code>%f</code>, and <code>%e</code> type specifiers can be preceded with the character <code>#</code> to ensure that
+the decimal point will be present, even if there are no decimal digits. 
+</p>
+
+<p>
+The use of the <code>#</code> character with the <code>%x</code> type specifier indicates that the hexidecimal
+number should be printed with the <code>0x</code> prefix. 
+</p>
+
+<p>
+The use of the <code>#</code> character
+with the <code>%o</code> type specifier indicates that the octal value should be displayed
+with a <code>0</code> prefix.
+</p>
+
+<p>
+Inserting a plus sign <code>+</code> into the type specifier will force positive values to
+be preceded by a <code>+</code> sign. Putting a space character &#039; &#039; there will force
+positive values to be preceded by a single space character.
+</p>
+
+<p>
+You can also include <a href="../../escape_sequences" class="wikilink1" title="escape_sequences">constant escape sequences</a> in the output string.
+</p>
+
+<p>
+<a href="../../todo" class="wikilink1" title="todo">todo</a>
+
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Formatting Modifiers" [803-] --></div>
+</body>
+</html>

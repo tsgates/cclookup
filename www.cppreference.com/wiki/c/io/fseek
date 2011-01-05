@@ -5,71 +5,43 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>c:io:fseek</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
-<meta name="robots" content="index,follow" />
-<meta name="date" content="2008-10-14T15:42:01-0700" />
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="noindex,nofollow" />
+<meta name="date" content="2010-11-15T01:57:37-0800" />
 <meta name="keywords" content="c,io,fseek" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/c/io/fseek?do=index" title="Index" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/c/io/fseek?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
 <link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=c:io" />
 <link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/c/io/fseek" />
 <link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/c/io/fseek" />
-<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="canonical" href="fseek" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='c:io';var JSINFO = {"id":"c:io:fseek","namespace":"c:io"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
 
-
-
-<h2><a name="fseek" id="fseek">fseek</a></h2>
+<h2 class="sectionedit1"><a name="page_redirected_auto" id="page_redirected_auto">Page redirected (auto)</a></h2>
 <div class="level2">
-
-<p>
-Syntax:
-</p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;cstdio&gt;</span>
-    <span class="kw4">int</span> fseek<span class="br0">&#40;</span> FILE <span class="sy0">*</span>stream<span class="sy0">,</span> <span class="kw4">long</span> offset<span class="sy0">,</span> <span class="kw4">int</span> origin <span class="br0">&#41;</span>;</pre>
-<p>
-
-The function fseek() sets the file position data for the given stream.
-</p>
-
-<p>
-The origin value should have one of the following values (defined in cstdio):
-
-</p>
-<table class="inline">
+<div class="table sectionedit2"><table class="inline">
 	<tr class="row0">
-		<th class="col0 leftalign"> Name     </th><th class="col1 leftalign"> Explanation                     </th>
+		<td class="col0"> <a href="../../redirect" class="wikilink1" title="redirect">redirect</a> </td>
 	</tr>
-	<tr class="row1">
-		<td class="col0"> SEEK_SET </td><td class="col1"> Seek from the start of the file </td>
-	</tr>
-	<tr class="row2">
-		<td class="col0"> SEEK_CUR </td><td class="col1 leftalign"> Seek from the current location  </td>
-	</tr>
-	<tr class="row3">
-		<td class="col0"> SEEK_END </td><td class="col1 leftalign"> Seek from the end of the file   </td>
-	</tr>
-</table>
-
+</table></div>
+<!-- EDIT2 TABLE [34-52] -->
 <p>
 
-fseek() returns zero upon success, non-zero on failure. You can use fseek() to
-move beyond a file, but not before the beginning. Using fseek() clears the <acronym title="End of file">EOF</acronym>
-flag associated with that stream.
+See <a href="../../io/c/fseek" class="wikilink1" title="io:c:fseek"> this</a>
 </p>
-
-<p>
-Related Topics: <a href="fgetpos" class="wikilink1" title="c:io:fgetpos">fgetpos</a>, <a href="fopen" class="wikilink1" title="c:io:fopen">fopen</a>, <a href="fsetpos" class="wikilink1" title="c:io:fsetpos">fsetpos</a>, <a href="ftell" class="wikilink1" title="c:io:ftell">ftell</a>, <a href="rewind" class="wikilink1" title="c:io:rewind">rewind</a>, <a href="fread" class="wikilink1" title="c:io:fread">fread</a>
-</p>
-
+<div class="noteredirect">This page has been moved, the new location is <a href="../../io/c/fseek" class="wikilink1" title="io:c:fseek">fseek</a>.</div>
 </div>
-<!-- SECTION "fseek" [3-] --></div>
+</div>
 </body>
 </html>

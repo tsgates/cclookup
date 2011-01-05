@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de"
+ lang="de" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>de:preprocessor:preprocessor_if</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:26-0700" />
+<meta name="keywords" content="de,preprocessor,preprocessor_if" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/de/preprocessor/preprocessor_if?do=index" title="Übersicht" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=de:preprocessor" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/de/preprocessor/preprocessor_if" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/de/preprocessor/preprocessor_if" />
+<link rel="canonical" href="preprocessor_if" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='de:preprocessor';var JSINFO = {"id":"de:preprocessor:preprocessor_if","namespace":"de:preprocessor"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="praeprozessor-bedingungen" id="praeprozessor-bedingungen">Präprozessor-Bedingungen</a></h2>
+<div class="level2">
+<pre class="cpp code cpp"><span class="co2">#if, #ifdef, #ifndef, #else, #elif, #endif</span></pre>
+<p>
+
+Diese Präprozessor-Befehle geben dem Compiler die Fähigkeit, Verzweigungen vorzunehmen. Wenn eine Datei kompiliert wird, können diese Befehle benutzt werden, um bestimmte Zeilen zu integrieren oder auszulassen.
+
+</p>
+<pre class="cpp code cpp">     <span class="co2">#if Ausdruck</span></pre>
+<p>
+
+Wenn der Wert des Ausdrucks true ist, wird der Code, der dem Befehl folgt, kompiliert.
+</p>
+<pre class="cpp code cpp">     <span class="co2">#ifdef Makro</span></pre>
+<p>
+
+Wenn das angegebene Makro durch ein <a href="define" class="wikilink1" title="de:preprocessor:define">#define</a> definiert wurde, wird der Code, der dem Befehl folgt, kompiliert.
+</p>
+<pre class="cpp code cpp">     <span class="co2">#ifndef Makro</span></pre>
+<p>
+
+Wenn das angegebene Makro nicht durch ein <a href="define" class="wikilink1" title="de:preprocessor:define">#define</a> definiert wurde, wird der Code, der dem Befehl folgt, kompiliert.
+</p>
+<pre class="cpp code cpp">     <span class="co2">#if Bedingung1</span>
+     <span class="co1">//...</span>
+     <span class="co2">#elif Bedingung2</span>
+     <span class="co1">//...</span>
+     <span class="co2">#endif</span></pre>
+<p>
+
+Der #elif-Befehl ist ein stark verkürztes „else if“ und funktioniert genau so, wie man erwarten würde.
+</p>
+
+<p>
+Beispiel 1:
+
+</p>
+<pre class="cpp code cpp">     <span class="co2">#ifdef DEBUG</span>
+       <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Testversion! i=&quot;</span> <span class="sy1">&lt;&lt;</span> i <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+     <span class="co2">#else</span>
+       <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;finale Version!&quot;</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+     <span class="co2">#endif</span></pre>
+<p>
+
+Es ist zu beachten, wie viel einfacher die Fehlersuche mit diesem Konstrukt im Vergleich dazu, ständig „cout“s hinzuzufügen oder zu entfernen, ist.
+</p>
+
+<p>
+Beispiel 2:
+
+</p>
+<pre class="cpp code cpp">    <span class="co2">#define N 42</span>
+    <span class="co2">#ifdef N</span>
+        <span class="co2">#if N == 1</span>
+            <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;N = 1&quot;</span><span class="sy4">;</span>
+        <span class="co2">#elif N == 2</span>
+            <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;N = 2&quot;</span><span class="sy4">;</span>
+        <span class="co2">#elif N == 42</span>
+            <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;answer to life, the universe and everything&quot;</span><span class="sy4">;</span>
+        <span class="co2">#endif</span>
+    <span class="co2">#endif</span></pre>
+</div>
+</div>
+</body>
+</html>

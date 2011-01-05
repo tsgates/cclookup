@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="tw"
+ lang="tw" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>tw:io:get</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:11-0700" />
+<meta name="keywords" content="tw,io,get" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/tw/io/get?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=tw:io" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/tw/io/get" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/tw/io/get" />
+<link rel="canonical" href="get" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='tw:io';var JSINFO = {"id":"tw:io:get","namespace":"tw:io"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="get" id="get">get</a></h2>
+<div class="level2">
+
+<p>
+語法：
+</p>
+<pre class="cpp code cpp">    <span class="kw4">int</span> istream<span class="sy4">::</span><span class="me2">get</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    istream<span class="sy3">&amp;</span> istream<span class="sy4">::</span><span class="me2">get</span><span class="br0">&#40;</span> <span class="kw4">char</span><span class="sy3">&amp;</span> ch <span class="br0">&#41;</span><span class="sy4">;</span>
+    istream<span class="sy3">&amp;</span> istream<span class="sy4">::</span><span class="me2">get</span><span class="br0">&#40;</span> <span class="kw4">char</span><span class="sy2">*</span> buffer, streamsize num <span class="br0">&#41;</span><span class="sy4">;</span>
+    istream<span class="sy3">&amp;</span> istream<span class="sy4">::</span><span class="me2">get</span><span class="br0">&#40;</span> <span class="kw4">char</span><span class="sy2">*</span> buffer, streamsize num, <span class="kw4">char</span> delim <span class="br0">&#41;</span><span class="sy4">;</span>
+    istream<span class="sy3">&amp;</span> istream<span class="sy4">::</span><span class="me2">get</span><span class="br0">&#40;</span> streambuf<span class="sy3">&amp;</span> buffer <span class="br0">&#41;</span><span class="sy4">;</span>
+    istream<span class="sy3">&amp;</span> istream<span class="sy4">::</span><span class="me2">get</span><span class="br0">&#40;</span> streambuf<span class="sy3">&amp;</span> buffer, <span class="kw4">char</span> delim <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+
+get() 函式使用於輸入串流 (input streams) 中。其功能為下列之一：
+</p>
+<ul>
+<li class="level1"><div class="li"> 讀取一個字元，並回傳其值。</div>
+</li>
+<li class="level1"><div class="li"> 讀取一個字元，並將其值存於 ch。</div>
+</li>
+<li class="level1"><div class="li"> 將最多 num - 1 個字元讀入 buffer 中。若遇到 EOF、換行，或是 delim 所指定的字元的話，則提早停止讀取。（在下一次讀取前，delim 不會被讀入）</div>
+</li>
+<li class="level1"><div class="li"> 不斷將字元讀進 buffer 中，直到遇到 EOF、換行或 delim 所指定的字元才停止。（同前，delim 在下次呼叫 get() 前不會被讀入）</div>
+</li>
+</ul>
+
+<p>
+以下範例會逐字元顯示 temp.txt 中的內容：
+</p>
+<pre class="cpp code cpp">     <span class="kw4">char</span> ch<span class="sy4">;</span>
+     ifstream fin<span class="br0">&#40;</span> <span class="st0">&quot;temp.txt&quot;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+     <span class="kw1">while</span><span class="br0">&#40;</span> fin.<span class="me1">get</span><span class="br0">&#40;</span>ch<span class="br0">&#41;</span> <span class="br0">&#41;</span>
+       <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> ch<span class="sy4">;</span>
+     fin.<span class="me1">close</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+相關主題： <a href="http://www.cppreference.com/wiki/tw/io/gcount" class="wikilink2" title="tw:io:gcount" rel="nofollow">gcount</a>, <a href="http://www.cppreference.com/wiki/tw/io/getline" class="wikilink2" title="tw:io:getline" rel="nofollow">getline</a>, <a href="../../string/getline" class="wikilink1" title="string:getline">(C++ Strings) getline</a>, <a href="http://www.cppreference.com/wiki/tw/io/ignore" class="wikilink2" title="tw:io:ignore" rel="nofollow">ignore</a>, <a href="http://www.cppreference.com/wiki/tw/io/peek" class="wikilink2" title="tw:io:peek" rel="nofollow">peek</a>, <a href="http://www.cppreference.com/wiki/tw/io/put" class="wikilink2" title="tw:io:put" rel="nofollow">put</a>, <a href="http://www.cppreference.com/wiki/tw/io/read" class="wikilink2" title="tw:io:read" rel="nofollow">read</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>container:unordered_multiset:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-11-11T13:38:23-0800" />
+<meta name="keywords" content="container,unordered_multiset,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/container/unordered_multiset/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=container:unordered_multiset" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/container/unordered_multiset/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/container/unordered_multiset/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='container:unordered_multiset';var JSINFO = {"id":"container:unordered_multiset:start","namespace":"container:unordered_multiset"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="unordered_multiset" id="unordered_multiset">unordered_multiset</a></h2>
+<div class="level2">
+<pre class="cpp code cpp"><span class="co2">#include &lt;unordered_set&gt;</span>
+&nbsp;
+<span class="kw2">template</span><span class="sy1">&lt;</span>
+    <span class="kw2">class</span> Key,
+    <span class="kw2">class</span> Hash <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">hash</span><span class="sy1">&lt;</span> Key <span class="sy1">&gt;</span>,
+    <span class="kw2">class</span> Pred <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">equal_to</span><span class="sy1">&lt;</span> Key <span class="sy1">&gt;</span>,
+    <span class="kw2">class</span> Allocator <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">allocator</span><span class="sy1">&lt;</span> Key <span class="sy1">&gt;</span>
+<span class="sy1">&gt;</span> <span class="kw2">class</span> unordered_multiset<span class="sy4">;</span></pre><div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [247-267] -->
+<p>
+
+Unordered multiset is an associative container that contains set of possibly non-unique objects of type <code>Key</code>.
+</p>
+
+<p>
+<a href="../../todo" class="wikilink1" title="todo">todo</a>
+</p>
+
+</div>
+
+<h4><a name="member_types" id="member_types">Member types</a></h4>
+<div class="level4">
+<div class="table sectionedit3"><table class="inline">
+	<tr class="row0">
+		<th class="col0">Member type </th><th class="col1"> Definition </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <code>key_type</code> </td><td class="col1"> <code>Key</code> </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <code>value_type</code> </td><td class="col1"> <code>Key</code> </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> <code>size_type</code> </td><td class="col1"> Unsigned integral type (usually <code>size_t</code>) </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> <code>difference_type</code> </td><td class="col1"> Signed integral type (usually <code>ptrdiff_t</code>) </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> <code>hasher</code> </td><td class="col1"> <code>Hash</code> </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> <code>key_equal</code> </td><td class="col1"> <code>Pred</code> </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"> <code>allocator_type</code> </td><td class="col1"> <code>Allocator</code> </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"> <code>reference</code> </td><td class="col1"> <code>Allocator::reference</code> </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"> <code>const_reference</code> </td><td class="col1"> <code>Allocator::const_reference</code> </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"> <code>pointer</code> </td><td class="col1"> <code>Allocator::pointer</code> </td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"> <code>const_pointer</code> </td><td class="col1"> <code>Allocator::const_pointer</code> </td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"> <code>iterator</code> </td><td class="col1"> Bidirectional iterator (<a href="../../todo" class="wikilink1" title="todo">todo</a>) </td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"> <code>const_iterator</code> </td><td class="col1"> Constant bidirectional iterator (<a href="../../todo" class="wikilink1" title="todo">todo</a>) </td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"> <code>local_iterator</code> </td><td class="col1"> (<a href="../../todo" class="wikilink1" title="todo">todo</a>) </td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"> <code>const_local_iterator</code> </td><td class="col1"> (<a href="../../todo" class="wikilink1" title="todo">todo</a>) </td>
+	</tr>
+</table></div>
+<!-- EDIT3 TABLE [415-1126] -->
+</div>
+
+<h4><a name="member_functions" id="member_functions">Member functions</a></h4>
+<div class="level4">
+<div class="table sectionedit4"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/container/unordered_multiset/constructors" class="wikilink2" title="container:unordered_multiset:constructors" rel="nofollow">(constructor)</a></td><td class="col1">default methods to allocate, copy, and deallocate unordered multisets</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/container/unordered_multiset/operators" class="wikilink2" title="container:unordered_multiset:operators" rel="nofollow">Operators</a></td><td class="col1">assign and compare unordered multisets</td>
+	</tr>
+</table></div>
+<!-- EDIT4 TABLE [1152-1319] -->
+</div>
+
+<h5><a name="iterators" id="iterators">Iterators</a></h5>
+<div class="level5">
+<div class="table sectionedit5"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <a href="begin" class="wikilink1" title="container:unordered_multiset:begin"> begin, cbegin</a> </td><td class="col1"> returns an iterator to the beginning </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <a href="end" class="wikilink1" title="container:unordered_multiset:end"> end, cend</a> </td><td class="col1"> returns an iterator to the end </td>
+	</tr>
+</table></div>
+<!-- EDIT5 TABLE [1336-1461] -->
+</div>
+
+<h5><a name="capacity" id="capacity">Capacity</a></h5>
+<div class="level5">
+<div class="table sectionedit6"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <a href="empty" class="wikilink1" title="container:unordered_multiset:empty">empty</a> </td><td class="col1"> checks whether the container is empty </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <a href="size" class="wikilink1" title="container:unordered_multiset:size">size</a> </td><td class="col1"> returns the number of elements </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <a href="max_size" class="wikilink1" title="container:unordered_multiset:max_size">max_size</a> </td><td class="col1"> returns the maximum number of elements </td>
+	</tr>
+</table></div>
+<!-- EDIT6 TABLE [1477-1634] -->
+</div>
+
+<h5><a name="modifiers" id="modifiers">Modifiers</a></h5>
+<div class="level5">
+<div class="table sectionedit7"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <a href="http://www.cppreference.com/wiki/container/unordered_multiset/clear" class="wikilink2" title="container:unordered_multiset:clear" rel="nofollow">clear</a> </td><td class="col1"> removes all elements </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <a href="http://www.cppreference.com/wiki/container/unordered_multiset/erase" class="wikilink2" title="container:unordered_multiset:erase" rel="nofollow">erase</a> </td><td class="col1"> removes elements </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <a href="http://www.cppreference.com/wiki/container/unordered_multiset/insert" class="wikilink2" title="container:unordered_multiset:insert" rel="nofollow">insert</a> </td><td class="col1"> inserts elements </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/container/unordered_multiset/emplace" class="wikilink2" title="container:unordered_multiset:emplace" rel="nofollow">emplace</a> </td><td class="col1"> <a href="../../todo" class="wikilink1" title="todo">todo</a> </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/container/unordered_multiset/emplace_hint" class="wikilink2" title="container:unordered_multiset:emplace_hint" rel="nofollow">emplace_hint</a> </td><td class="col1"> <a href="../../todo" class="wikilink1" title="todo">todo</a> </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> <a href="swap" class="wikilink1" title="container:unordered_multiset:swap">swap</a> </td><td class="col1"> swaps the contents </td>
+	</tr>
+</table></div>
+<!-- EDIT7 TABLE [1651-1847] -->
+</div>
+
+<h5><a name="observers" id="observers">Observers</a></h5>
+<div class="level5">
+<div class="table sectionedit8"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <a href="http://www.cppreference.com/wiki/container/unordered_multiset/hash_function" class="wikilink2" title="container:unordered_multiset:hash_function" rel="nofollow">hash_function</a> </td><td class="col1"> <a href="../../todo" class="wikilink1" title="todo">todo</a> </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <a href="http://www.cppreference.com/wiki/container/unordered_multiset/key_eq" class="wikilink2" title="container:unordered_multiset:key_eq" rel="nofollow">key_eq</a> </td><td class="col1"> <a href="../../todo" class="wikilink1" title="todo">todo</a> </td>
+	</tr>
+</table></div>
+<!-- EDIT8 TABLE [1864-1924] -->
+</div>
+
+<h5><a name="lookup" id="lookup">Lookup</a></h5>
+<div class="level5">
+<div class="table sectionedit9"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <a href="http://www.cppreference.com/wiki/container/unordered_multiset/count" class="wikilink2" title="container:unordered_multiset:count" rel="nofollow">count</a> </td><td class="col1"> returns the number of elements matching specific key </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <a href="http://www.cppreference.com/wiki/container/unordered_multiset/find" class="wikilink2" title="container:unordered_multiset:find" rel="nofollow">find</a> </td><td class="col1"> finds element with specific key </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/container/unordered_multiset/equal_range" class="wikilink2" title="container:unordered_multiset:equal_range" rel="nofollow">equal_range</a> </td><td class="col1"> returns iterators to the first and just past the last elements matching a specific key</td>
+	</tr>
+</table></div>
+<!-- EDIT9 TABLE [1938-2160] -->
+</div>
+
+<h5><a name="bucket_interface" id="bucket_interface">Bucket interface</a></h5>
+<div class="level5">
+<div class="table sectionedit10"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/container/unordered_multiset/bucker_count" class="wikilink2" title="container:unordered_multiset:bucker_count" rel="nofollow">bucker_count</a> </td><td class="col1"> <a href="../../todo" class="wikilink1" title="todo">todo</a> </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/container/unordered_multiset/max_bucket_count" class="wikilink2" title="container:unordered_multiset:max_bucket_count" rel="nofollow">max_bucket_count</a> </td><td class="col1"> <a href="../../todo" class="wikilink1" title="todo">todo</a> </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/container/unordered_multiset/bucket_size" class="wikilink2" title="container:unordered_multiset:bucket_size" rel="nofollow">bucket_size</a> </td><td class="col1"> <a href="../../todo" class="wikilink1" title="todo">todo</a> </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/container/unordered_multiset/bucket" class="wikilink2" title="container:unordered_multiset:bucket" rel="nofollow">bucket</a> </td><td class="col1"> <a href="../../todo" class="wikilink1" title="todo">todo</a> </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="begin" class="wikilink1" title="container:unordered_multiset:begin">begin</a> </td><td class="col1"> <a href="../../todo" class="wikilink1" title="todo">todo</a> </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="end" class="wikilink1" title="container:unordered_multiset:end">end</a> </td><td class="col1"> <a href="../../todo" class="wikilink1" title="todo">todo</a> </td>
+	</tr>
+</table></div>
+<!-- EDIT10 TABLE [2184-2356] -->
+</div>
+
+<h5><a name="hash_policy" id="hash_policy">Hash policy</a></h5>
+<div class="level5">
+<div class="table sectionedit11"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/container/unordered_multiset/load_factor" class="wikilink2" title="container:unordered_multiset:load_factor" rel="nofollow">load_factor</a> </td><td class="col1"> <a href="../../todo" class="wikilink1" title="todo">todo</a> </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/container/unordered_multiset/max_load_factor" class="wikilink2" title="container:unordered_multiset:max_load_factor" rel="nofollow">max_load_factor</a> </td><td class="col1"> <a href="../../todo" class="wikilink1" title="todo">todo</a> </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/container/unordered_multiset/rehash" class="wikilink2" title="container:unordered_multiset:rehash" rel="nofollow">rehash</a> </td><td class="col1"> <a href="../../todo" class="wikilink1" title="todo">todo</a> </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/container/unordered_multiset/reserve" class="wikilink2" title="container:unordered_multiset:reserve" rel="nofollow">reserve</a> </td><td class="col1"> <a href="../../todo" class="wikilink1" title="todo">todo</a> </td>
+	</tr>
+</table></div>
+<!-- EDIT11 TABLE [2375-2493] -->
+</div>
+
+<h5><a name="observers1" id="observers1">Observers</a></h5>
+<div class="level5">
+<div class="table sectionedit12"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/container/unordered_multiset/hash_function" class="wikilink2" title="container:unordered_multiset:hash_function" rel="nofollow">hash_function</a> </td><td class="col1"> <a href="../../todo" class="wikilink1" title="todo">todo</a> </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/container/unordered_multiset/key_eq" class="wikilink2" title="container:unordered_multiset:key_eq" rel="nofollow">key_eq</a> </td><td class="col1"> <a href="../../todo" class="wikilink1" title="todo">todo</a> </td>
+	</tr>
+</table></div>
+<!-- EDIT12 TABLE [2510-2568] -->
+</div>
+
+<h5><a name="allocator" id="allocator">Allocator</a></h5>
+<div class="level5">
+<div class="table sectionedit13"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <a href="get_allocator" class="wikilink1" title="container:unordered_multiset:get_allocator">get_allocator</a> </td><td class="col1"> returns the allocator associated with the container </td>
+	</tr>
+</table></div>
+<!-- EDIT13 TABLE [2585-2660] -->
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>string:c:atoi</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:08-0700" />
+<meta name="keywords" content="string,c,atoi" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/string/c/atoi?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=string:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/string/c/atoi" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/string/c/atoi" />
+<link rel="canonical" href="atoi" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='string:c';var JSINFO = {"id":"string:c:atoi","namespace":"string:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="atoi#atoi_atol_atoll" class="toc">atoi, atol, atoll</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="atoi#parameters" class="toc">Parameters</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="atoi#return_value" class="toc">Return value</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="atoi#example" class="toc">Example</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="atoi#see_also" class="toc">See also</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="atoi_atol_atoll" id="atoi_atol_atoll">atoi, atol, atoll</a></h2>
+<div class="level2">
+
+<p>
+Syntax:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cstdlib&gt;</span>
+    <span class="kw4">int</span> <span class="kw3">atoi</span><span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>str <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">long</span> <span class="kw3">atol</span><span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>str <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">long</span> <span class="kw4">long</span> atoll<span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>str <span class="br0">&#41;</span><span class="sy4">;</span>     <span class="co1">//C++0x feature</span></pre>
+<p>
+Interprets an integer value in a character string. Function discards any whitespace characters until first non-whitespace character is found. Then it takes as many characters as possible to form a valid integer number representation and converts them to integer value. The valid integer value consists of the following parts:
+</p>
+
+<p>
+- (optional) plus or minus sign
+</p>
+
+<p>
+- numeric digits
+</p>
+
+</div>
+<!-- EDIT1 SECTION "atoi, atol, atoll" [1-581] -->
+<h3 class="sectionedit2"><a name="parameters" id="parameters">Parameters</a></h3>
+<div class="level3">
+
+<p>
+
+<code>str</code> - pointer to a character string to convert
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Parameters" [582-653] -->
+<h3 class="sectionedit3"><a name="return_value" id="return_value">Return value</a></h3>
+<div class="level3">
+
+<p>
+
+integer value value corresponding to the contents of <code>str</code> on success or <code>0</code> otherwise
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Return value" [654-767] -->
+<h3 class="sectionedit4"><a name="example" id="example">Example</a></h3>
+<div class="level3">
+<pre class="cpp code cpp">    <span class="kw4">int</span> i<span class="sy4">;</span>
+    i <span class="sy1">=</span> <span class="kw3">atoi</span><span class="br0">&#40;</span> <span class="st0">&quot;512&quot;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+    i <span class="sy1">=</span> <span class="kw3">atoi</span><span class="br0">&#40;</span> <span class="st0">&quot;512.035&quot;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+    i <span class="sy1">=</span> <span class="kw3">atoi</span><span class="br0">&#40;</span> <span class="st0">&quot;   512.035&quot;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+    i <span class="sy1">=</span> <span class="kw3">atoi</span><span class="br0">&#40;</span> <span class="st0">&quot;   512+34&quot;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+    i <span class="sy1">=</span> <span class="kw3">atoi</span><span class="br0">&#40;</span> <span class="st0">&quot;   512 bottles of beer on the wall&quot;</span> <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+All five of the above assignments to the variable <code>i</code> would result in it being
+set to <code>512</code>.
+</p>
+<pre class="cpp code cpp">    <span class="kw4">int</span> i <span class="sy1">=</span> <span class="kw3">atoi</span><span class="br0">&#40;</span> <span class="st0">&quot; does not work: 512&quot;</span> <span class="br0">&#41;</span><span class="sy4">;</span>  <span class="co1">// results in i == 0</span></pre>
+</div>
+<!-- EDIT4 SECTION "Example" [768-1153] -->
+<h3 class="sectionedit5"><a name="see_also" id="see_also">See also</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="atof" class="wikilink1" title="string:c:atof">atof</a>, <a href="../../io/c/sprintf" class="wikilink1" title="io:c:sprintf">sprintf</a>
+</p>
+
+</div>
+<!-- EDIT5 SECTION "See also" [1154-] --></div>
+</body>
+</html>

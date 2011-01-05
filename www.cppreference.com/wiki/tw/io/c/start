@@ -1,0 +1,323 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="tw"
+ lang="tw" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>tw:io:c:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-11-10T21:39:52-0800" />
+<meta name="keywords" content="tw,io,c,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/tw/io/c/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=tw:io:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/tw/io/c/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/tw/io/c/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='tw:io:c';var JSINFO = {"id":"tw:io:c:start","namespace":"tw:io:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h3 class="sectionedit1"><a name="c-style_file_inputoutput" id="c-style_file_inputoutput">C-style file input/output</a></h3>
+<div class="level3">
+
+<p>
+
+The <code>&lt;cstdio&gt;</code> header provides generic file operation support and supplies functions with narrow character input/output capabilities.
+</p>
+
+<p>
+The <code>&lt;cwchar&gt;</code> header supplies functions with wide character input/output capabilities.  
+</p>
+
+</div>
+
+<h4><a name="functions" id="functions">Functions</a></h4>
+<div class="level4">
+
+</div>
+
+<h5><a name="file_access" id="file_access">File access</a></h5>
+<div class="level5">
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/fopen" class="wikilink2" title="tw:io:c:fopen" rel="nofollow">fopen</a></td><td class="col1">開啟檔案</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/freopen" class="wikilink2" title="tw:io:c:freopen" rel="nofollow">freopen</a></td><td class="col1">open an existing stream with a different name</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/fflush" class="wikilink2" title="tw:io:c:fflush" rel="nofollow">fflush</a></td><td class="col1">writes the contents of the output buffer</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/fclose" class="wikilink2" title="tw:io:c:fclose" rel="nofollow">fclose</a></td><td class="col1">關閉檔案</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/setbuf" class="wikilink2" title="tw:io:c:setbuf" rel="nofollow">setbuf</a></td><td class="col1">set the buffer for a specific stream</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/setvbuf" class="wikilink2" title="tw:io:c:setvbuf" rel="nofollow">setvbuf</a></td><td class="col1">set the buffer and size for a specific stream</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [300-574] -->
+</div>
+
+<h5><a name="直接輸入輸出_direct_inputoutput" id="直接輸入輸出_direct_inputoutput">直接輸入/輸出(Direct input/output)</a></h5>
+<div class="level5">
+<div class="table sectionedit3"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/fread" class="wikilink2" title="tw:io:c:fread" rel="nofollow">fread</a></td><td class="col1">從檔案讀取</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/fwrite" class="wikilink2" title="tw:io:c:fwrite" rel="nofollow">fwrite</a></td><td class="col1">寫到檔案</td>
+	</tr>
+</table></div>
+<!-- EDIT3 TABLE [622-675] -->
+</div>
+
+<h5><a name="字元輸入輸出_character_inputoutput" id="字元輸入輸出_character_inputoutput">字元輸入/輸出(Character input/output)</a></h5>
+<div class="level5">
+
+<p>
+
+ASCII或MBCS字元I/O(Narrow character I/O):
+</p>
+<div class="table sectionedit4"><table class="inline">
+	<tr class="row0">
+		<td class="col0 leftalign"> <a href="http://www.cppreference.com/wiki/tw/io/c/fgetc" class="wikilink2" title="tw:io:c:fgetc" rel="nofollow"> fgetc, getc</a>  </td><td class="col1"> get a character from a file stream</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> <a href="http://www.cppreference.com/wiki/tw/io/c/fgets" class="wikilink2" title="tw:io:c:fgets" rel="nofollow">fgets</a>  </td><td class="col1"> get a character string from a file stream</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> <a href="http://www.cppreference.com/wiki/tw/io/c/fputc" class="wikilink2" title="tw:io:c:fputc" rel="nofollow"> fputc, putc</a>  </td><td class="col1"> write a character to a file stream</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> <a href="http://www.cppreference.com/wiki/tw/io/c/fputs" class="wikilink2" title="tw:io:c:fputs" rel="nofollow">fputs</a>  </td><td class="col1"> write a character string to a file stream</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> <a href="http://www.cppreference.com/wiki/tw/io/c/getchar" class="wikilink2" title="tw:io:c:getchar" rel="nofollow">getchar</a></td><td class="col1"> 從標準輸入讀取一個字元(read a character from <code>stdin</code>)</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 leftalign"> <a href="http://www.cppreference.com/wiki/tw/io/c/gets" class="wikilink2" title="tw:io:c:gets" rel="nofollow">gets</a>   </td><td class="col1"> 從標準輸入讀取一個字串(read a character string from <code>stdin</code>)</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> <a href="http://www.cppreference.com/wiki/tw/io/c/putchar" class="wikilink2" title="tw:io:c:putchar" rel="nofollow">putchar</a></td><td class="col1"> 寫一個字元到標準輸出(write a character to <code>stdout</code>)</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0 leftalign"> <a href="http://www.cppreference.com/wiki/tw/io/c/puts" class="wikilink2" title="tw:io:c:puts" rel="nofollow">puts</a>   </td><td class="col1"> 寫一個字串到標準輸出(write a character string to <code>stdout</code>) </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"> <a href="http://www.cppreference.com/wiki/tw/io/c/ungetc" class="wikilink2" title="tw:io:c:ungetc" rel="nofollow">ungetc</a> </td><td class="col1"> puts a character back into a file stream </td>
+	</tr>
+</table></div>
+<!-- EDIT4 TABLE [771-1415] -->
+<p>
+
+UNICODE字元I/O(Wide character I/O):
+</p>
+<div class="table sectionedit5"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <a href="http://www.cppreference.com/wiki/tw/io/c/fgetwc" class="wikilink2" title="tw:io:c:fgetwc" rel="nofollow">fgetwc</a> </td><td class="col1"> get a wide character from a file stream</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <a href="http://www.cppreference.com/wiki/tw/io/c/fgetws" class="wikilink2" title="tw:io:c:fgetws" rel="nofollow">fgetws</a> </td><td class="col1"> get a wide character string from a file stream</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <a href="http://www.cppreference.com/wiki/tw/io/c/fputwc" class="wikilink2" title="tw:io:c:fputwc" rel="nofollow">fputwc</a> </td><td class="col1"> write a character to a file stream </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> <a href="http://www.cppreference.com/wiki/tw/io/c/fputws" class="wikilink2" title="tw:io:c:fputws" rel="nofollow">fputws</a> </td><td class="col1"> write a character string to a file stream </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> <a href="http://www.cppreference.com/wiki/tw/io/c/getwchar" class="wikilink2" title="tw:io:c:getwchar" rel="nofollow">getwchar</a> </td><td class="col1"> read a character from <code>stdin</code> </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> <a href="http://www.cppreference.com/wiki/tw/io/c/putwchar" class="wikilink2" title="tw:io:c:putwchar" rel="nofollow">putwchar</a> </td><td class="col1"> write a character to <code>stdout</code> </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> <a href="http://www.cppreference.com/wiki/tw/io/c/ungetwc" class="wikilink2" title="tw:io:c:ungetwc" rel="nofollow">ungetwc</a> </td><td class="col1"> puts a character back into a file stream </td>
+	</tr>
+</table></div>
+<!-- EDIT5 TABLE [1455-1845] -->
+</div>
+
+<h5><a name="格式化輸入輸出_formatted_inputoutput" id="格式化輸入輸出_formatted_inputoutput">格式化輸入/輸出(Formatted input/output)</a></h5>
+<div class="level5">
+
+<p>
+
+Narrow character I/O:
+</p>
+<div class="table sectionedit6"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/scanf" class="wikilink2" title="tw:io:c:scanf" rel="nofollow">scanf</a> </td><td class="col1"> read formatted input from <code>stdin</code> </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/fscanf" class="wikilink2" title="tw:io:c:fscanf" rel="nofollow">fscanf</a> </td><td class="col1"> read formatted input from a file stream </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/sscanf" class="wikilink2" title="tw:io:c:sscanf" rel="nofollow">sscanf</a> </td><td class="col1"> read formatted input from a buffer </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/vscanf" class="wikilink2" title="tw:io:c:vscanf" rel="nofollow">vscanf</a> </td><td class="col1"> read formatted input from <code>stdin</code> using variable argument list (<a href="../../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature) </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/vfscanf" class="wikilink2" title="tw:io:c:vfscanf" rel="nofollow">vfscanf</a> </td><td class="col1"> read formatted input from a file stream using variable argument list (<a href="../../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature) </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/vsscanf" class="wikilink2" title="tw:io:c:vsscanf" rel="nofollow">vsscanf</a> </td><td class="col1"> read formatted input from a buffer using variable argument list (<a href="../../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature) </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/printf" class="wikilink2" title="tw:io:c:printf" rel="nofollow">printf</a> </td><td class="col1"> print formatted output to <code>stdout</code> </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/fprintf" class="wikilink2" title="tw:io:c:fprintf" rel="nofollow">fprintf</a> </td><td class="col1"> print formatted output to a file stream </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/sprintf" class="wikilink2" title="tw:io:c:sprintf" rel="nofollow">sprintf</a> </td><td class="col1"> print formatted output to a buffer </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/snprintf" class="wikilink2" title="tw:io:c:snprintf" rel="nofollow">snprintf</a></td><td class="col1"> print formatted output to a buffer (with bounds checking) (<a href="../../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature) </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/vprintf" class="wikilink2" title="tw:io:c:vprintf" rel="nofollow">vprintf</a> </td><td class="col1"> print formatted output to <code>stdout</code> using variable argument list </td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/vfprintf" class="wikilink2" title="tw:io:c:vfprintf" rel="nofollow">vfprintf</a> </td><td class="col1"> print formatted output to a file stream using variable argument list </td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/vsprintf" class="wikilink2" title="tw:io:c:vsprintf" rel="nofollow">vsprintf</a> </td><td class="col1"> print formatted output to a buffer using variable argument list </td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/vsnprintf" class="wikilink2" title="tw:io:c:vsnprintf" rel="nofollow">vsnprintf</a> </td><td class="col1"> print formatted output to a buffer using variable argument list (with bounds checking) (<a href="../../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature) </td>
+	</tr>
+</table></div>
+<!-- EDIT6 TABLE [1921-3026] -->
+<p>
+
+Wide character I/O:
+</p>
+<div class="table sectionedit7"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/wscanf" class="wikilink2" title="tw:io:c:wscanf" rel="nofollow">wscanf</a> </td><td class="col1"> read formatted wide character input from <code>stdin</code> </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/fwscanf" class="wikilink2" title="tw:io:c:fwscanf" rel="nofollow">fwscanf</a> </td><td class="col1"> read formatted wide character input from a file stream </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/swscanf" class="wikilink2" title="tw:io:c:swscanf" rel="nofollow">swscanf</a> </td><td class="col1"> read formatted wide character input from a buffer </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/vwscanf" class="wikilink2" title="tw:io:c:vwscanf" rel="nofollow">vwscanf</a> </td><td class="col1"> read formatted wide character input from <code>stdin</code> using variable argument list (<a href="../../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature) </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/vfwscanf" class="wikilink2" title="tw:io:c:vfwscanf" rel="nofollow">vfwscanf</a> </td><td class="col1"> read formatted wide character input from a file stream using variable argument list (<a href="../../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature) </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/vswscanf" class="wikilink2" title="tw:io:c:vswscanf" rel="nofollow">vswscanf</a> </td><td class="col1"> read formatted wide character input from a buffer using variable argument list (<a href="../../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature) </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/wprintf" class="wikilink2" title="tw:io:c:wprintf" rel="nofollow">wprintf</a> </td><td class="col1"> print formatted wide character output to <code>stdout</code> </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/fwprintf" class="wikilink2" title="tw:io:c:fwprintf" rel="nofollow">fwprintf</a> </td><td class="col1"> print formatted wide character output to a file stream </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/swprintf" class="wikilink2" title="tw:io:c:swprintf" rel="nofollow">swprintf</a> </td><td class="col1"> print formatted wide character output to a buffer </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/vwprintf" class="wikilink2" title="tw:io:c:vwprintf" rel="nofollow">vwprintf</a> </td><td class="col1"> print formatted wide character output to <code>stdout</code> using variable argument list </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/vfwprintf" class="wikilink2" title="tw:io:c:vfwprintf" rel="nofollow">vfwprintf</a> </td><td class="col1"> print formatted wide character output to a file stream using variable argument list </td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/vswprintf" class="wikilink2" title="tw:io:c:vswprintf" rel="nofollow">vswprintf</a> </td><td class="col1"> print formatted wide character output to a buffer using variable argument list </td>
+	</tr>
+</table></div>
+<!-- EDIT7 TABLE [3048-4122] -->
+</div>
+
+<h5><a name="file_positioning" id="file_positioning">File positioning</a></h5>
+<div class="level5">
+<div class="table sectionedit8"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/fgetpos" class="wikilink2" title="tw:io:c:fgetpos" rel="nofollow">fgetpos</a> </td><td class="col1"> get the file position indicator</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/fseek" class="wikilink2" title="tw:io:c:fseek" rel="nofollow">fseek</a> </td><td class="col1"> move to a specific location in a file</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/fsetpos" class="wikilink2" title="tw:io:c:fsetpos" rel="nofollow">fsetpos</a> </td><td class="col1"> move to a specific location in a file</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/ftell" class="wikilink2" title="tw:io:c:ftell" rel="nofollow">ftell</a> </td><td class="col1"> returns the current file position indicator</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/rewind" class="wikilink2" title="tw:io:c:rewind" rel="nofollow">rewind</a> </td><td class="col1"> move the file position indicator to the beginning of a file</td>
+	</tr>
+</table></div>
+<!-- EDIT8 TABLE [4146-4432] -->
+</div>
+
+<h5><a name="error-handling" id="error-handling">Error-handling</a></h5>
+<div class="level5">
+<div class="table sectionedit9"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/clearerr" class="wikilink2" title="tw:io:c:clearerr" rel="nofollow">clearerr</a> </td><td class="col1"> clears errors</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/feof" class="wikilink2" title="tw:io:c:feof" rel="nofollow">feof</a> </td><td class="col1"> checks for the end-of-file</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/ferror" class="wikilink2" title="tw:io:c:ferror" rel="nofollow">ferror</a> </td><td class="col1"> checks for a file error</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/perror" class="wikilink2" title="tw:io:c:perror" rel="nofollow">perror</a> </td><td class="col1"> displays a string version of the current error to stderr</td>
+	</tr>
+</table></div>
+<!-- EDIT9 TABLE [4454-4635] -->
+</div>
+
+<h5><a name="檔案操作_operations_on_files" id="檔案操作_operations_on_files">檔案操作(Operations on files)</a></h5>
+<div class="level5">
+<div class="table sectionedit10"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/remove" class="wikilink2" title="tw:io:c:remove" rel="nofollow">remove</a> </td><td class="col1"> 刪除檔案(erase a file)</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/rename" class="wikilink2" title="tw:io:c:rename" rel="nofollow">rename</a> </td><td class="col1"> 檔案重新命名(rename a file)</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/tmpfile" class="wikilink2" title="tw:io:c:tmpfile" rel="nofollow">tmpfile</a> </td><td class="col1"> return a pointer to a temporary file</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/c/tmpnam" class="wikilink2" title="tw:io:c:tmpnam" rel="nofollow">tmpnam</a> </td><td class="col1"> return a unique filename</td>
+	</tr>
+</table></div>
+<!-- EDIT10 TABLE [4676-4859] -->
+</div>
+
+<h4><a name="macros" id="macros">Macros</a></h4>
+<div class="level4">
+
+<p>
+
+<a href="../../../todo" class="wikilink1" title="todo">todo</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

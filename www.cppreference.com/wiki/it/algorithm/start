@@ -1,0 +1,317 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it"
+ lang="it" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>it:algorithm:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-11-07T08:36:39-0800" />
+<meta name="keywords" content="it,algorithm,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/it/algorithm/start?do=index" title="Indice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=it:algorithm" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/it/algorithm/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/it/algorithm/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='it:algorithm';var JSINFO = {"id":"it:algorithm:start","namespace":"it:algorithm"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="algoritmi_c" id="algoritmi_c">Algoritmi C++</a></h1>
+<div class="level1">
+
+<p>
+Le seguenti funzioni sono definite &lt;algorithm&gt; and sono parte del namespace std.
+</p>
+
+</div>
+
+<h5><a name="operazioni_sequenziali_invarianti" id="operazioni_sequenziali_invarianti">Operazioni sequenziali invarianti</a></h5>
+<div class="level5">
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/for_each" class="wikilink2" title="it:algorithm:for_each" rel="nofollow">for_each</a></td><td class="col1">applica una funzione ad una lista di elementi</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/count" class="wikilink2" title="it:algorithm:count" rel="nofollow">count</a></td><td class="col1">ritrona il numero di elementi che hanno un determinato valore</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="../stl/algorithm/count_if" class="wikilink1" title="it:algorithm:count_if">count_if</a></td><td class="col1">ritorna il numero di elementi per cui un certo predicato è vero</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/mismatch" class="wikilink2" title="it:algorithm:mismatch" rel="nofollow">mismatch</a></td><td class="col1">trova la prima posizione dove due range differiscono</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/equal" class="wikilink2" title="it:algorithm:equal" rel="nofollow">equal</a></td><td class="col1">determina se due insiemi di elementi sono lo stesso</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/find" class="wikilink2" title="it:algorithm:find" rel="nofollow">find</a></td><td class="col1">trova un valore in un dato intervallo</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/find_if" class="wikilink2" title="it:algorithm:find_if" rel="nofollow">find_if</a></td><td class="col1">trova il primo elemento per cui un dato predicato è soddisfatto</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/find_end" class="wikilink2" title="it:algorithm:find_end" rel="nofollow">find_end</a></td><td class="col1">trova l&#039;ultima sequenza di elementi in un certo intervallo</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/find_first_of" class="wikilink2" title="it:algorithm:find_first_of" rel="nofollow">find_first_of</a></td><td class="col1">cerca un elemento in un insieme dato</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/adjacent_find" class="wikilink2" title="it:algorithm:adjacent_find" rel="nofollow">adjacent_find</a></td><td class="col1">cerca due elementi adiacenti che hanno una determinata relazione tra loro</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/search" class="wikilink2" title="it:algorithm:search" rel="nofollow">search</a></td><td class="col1">cerca un intervallo di elementi</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/search_n" class="wikilink2" title="it:algorithm:search_n" rel="nofollow">search_n</a></td><td class="col1">cerca N copie consecutive di un elemento in un dato intervallo</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [156-978] -->
+</div>
+
+<h5><a name="operazioni_sequenziali_modificanti" id="operazioni_sequenziali_modificanti">Operazioni sequenziali modificanti</a></h5>
+<div class="level5">
+<div class="table sectionedit3"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/copy" class="wikilink2" title="it:algorithm:copy" rel="nofollow">copy</a></td><td class="col1">copia un certo intervallo di intervalli in una nuova posizione</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/copy_backward" class="wikilink2" title="it:algorithm:copy_backward" rel="nofollow">copy_backward</a></td><td class="col1">copia un intervallo di elementi in ordine inverso</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/fill" class="wikilink2" title="it:algorithm:fill" rel="nofollow">fill</a></td><td class="col1">assegna ad un intervallo di elementi un certo valore</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/fill_n" class="wikilink2" title="it:algorithm:fill_n" rel="nofollow">fill_n</a></td><td class="col1">assegna un valore ad un certo numero di elementi</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/transform" class="wikilink2" title="it:algorithm:transform" rel="nofollow">transform</a></td><td class="col1">applica una trasformazione ad una serie di elementi</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/generate" class="wikilink2" title="it:algorithm:generate" rel="nofollow">generate</a></td><td class="col1">salva il risultato di una funzione in un intervallo</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/generate_n" class="wikilink2" title="it:algorithm:generate_n" rel="nofollow">generate_n</a></td><td class="col1">salva il risultato dell&#039;applicazione di una funzione invocata N volte</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/remove" class="wikilink2" title="it:algorithm:remove" rel="nofollow">remove</a></td><td class="col1">rimuovi gli elementi uguali ad un certo valore</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/remove_if" class="wikilink2" title="it:algorithm:remove_if" rel="nofollow">remove_if</a></td><td class="col1">rimuovi gli elementi per i quali un predicato è vero</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/remove_copy" class="wikilink2" title="it:algorithm:remove_copy" rel="nofollow">remove_copy</a></td><td class="col1">copia un intervallo di elementi tralasciando quelli che hanno un determinato valore</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/remove_copy_if" class="wikilink2" title="it:algorithm:remove_copy_if" rel="nofollow">remove_copy_if</a></td><td class="col1">crea una copia di un range di elementi per i quali un predicato è vero</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/replace" class="wikilink2" title="it:algorithm:replace" rel="nofollow">replace</a></td><td class="col1">sostituisci ogni elemento avente un certo valore con un nuovo valore</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/replace_if" class="wikilink2" title="it:algorithm:replace_if" rel="nofollow">replace_if</a></td><td class="col1">cambia i valori degli elementi per i quali un predica è vero</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/replace_copy" class="wikilink2" title="it:algorithm:replace_copy" rel="nofollow">replace_copy</a></td><td class="col1">copia un intervallo, sostituendo certi elementi con nuovi</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/replace_copy_if" class="wikilink2" title="it:algorithm:replace_copy_if" rel="nofollow">replace_copy_if</a></td><td class="col1">copia un intervallo di elementi, sostituendo quelli per i quali un certo predicato è vero</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/swap" class="wikilink2" title="it:algorithm:swap" rel="nofollow">swap</a></td><td class="col1">scambia i valori di due oggetti</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/swap_ranges" class="wikilink2" title="it:algorithm:swap_ranges" rel="nofollow">swap_ranges</a></td><td class="col1">scambia due range di oggetti</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/iter_swap" class="wikilink2" title="it:algorithm:iter_swap" rel="nofollow">iter_swap</a></td><td class="col1">scambia gli elementi puntati da due iteratori</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/partition" class="wikilink2" title="it:algorithm:partition" rel="nofollow">partition</a></td><td class="col1">scambia un range di elementi in due gruppi</td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/stable_partition" class="wikilink2" title="it:algorithm:stable_partition" rel="nofollow">stable_partition</a></td><td class="col1">dividi gli elementi in due gruppi preservando il loro ordine relativo</td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/reverse" class="wikilink2" title="it:algorithm:reverse" rel="nofollow">reverse</a></td><td class="col1">inverti gli elementi di un certo range</td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/reverse_copy" class="wikilink2" title="it:algorithm:reverse_copy" rel="nofollow">reverse_copy</a></td><td class="col1">crea una copia di un range in ordine invertito</td>
+	</tr>
+	<tr class="row22">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/rotate" class="wikilink2" title="it:algorithm:rotate" rel="nofollow">rotate</a></td><td class="col1">sposta a sinistra gli elementi di un dato range per certo numero di posizioni</td>
+	</tr>
+	<tr class="row23">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/rotate_copy" class="wikilink2" title="it:algorithm:rotate_copy" rel="nofollow">rotate_copy</a></td><td class="col1">copia e ruota un range di elementi</td>
+	</tr>
+	<tr class="row24">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/random_shuffle" class="wikilink2" title="it:algorithm:random_shuffle" rel="nofollow">random_shuffle</a></td><td class="col1">riordina a caso gli elementi di un certo intervallo</td>
+	</tr>
+	<tr class="row25">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/unique" class="wikilink2" title="it:algorithm:unique" rel="nofollow">unique</a></td><td class="col1">rimuovi gli elementi duplicati consecutivi all&#039;intervallo di un range</td>
+	</tr>
+	<tr class="row26">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/unique_copy" class="wikilink2" title="it:algorithm:unique_copy" rel="nofollow">unique_copy</a></td><td class="col1">crea una copia di un certo range che non contiene duplicati consecutivi</td>
+	</tr>
+</table></div>
+<!-- EDIT3 TABLE [1020-3001] -->
+</div>
+
+<h5><a name="operazioni_di_ordinamento" id="operazioni_di_ordinamento">Operazioni di ordinamento</a></h5>
+<div class="level5">
+<div class="table sectionedit4"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/sort" class="wikilink2" title="it:algorithm:sort" rel="nofollow">sort</a></td><td class="col1">ordina un range in ordine ascendente</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/partial_sort" class="wikilink2" title="it:algorithm:partial_sort" rel="nofollow">partial_sort</a></td><td class="col1">ordina i primi N elementi di un range</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/partial_sort_copy" class="wikilink2" title="it:algorithm:partial_sort_copy" rel="nofollow">partial_sort_copy</a></td><td class="col1">copia e ordina parzialmente un intervallo di elementi</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/stable_sort" class="wikilink2" title="it:algorithm:stable_sort" rel="nofollow">stable_sort</a></td><td class="col1">ordina un intervallo di elementi allo stesso tempo preservando l&#039;ordine tra elementi uguali</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/nth_element" class="wikilink2" title="it:algorithm:nth_element" rel="nofollow">nth_element</a></td><td class="col1">mett un elemento nella sua locazione ordinata e fa in modo che nessun elemento alla sinistra sia più grande degli elementi alla destra</td>
+	</tr>
+</table></div>
+<!-- EDIT4 TABLE [3034-3480] -->
+</div>
+
+<h5><a name="operazioni_di_ricerca_binaria_sui_range_ordinati" id="operazioni_di_ricerca_binaria_sui_range_ordinati">Operazioni di ricerca binaria (sui range ordinati)</a></h5>
+<div class="level5">
+<div class="table sectionedit5"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/lower_bound" class="wikilink2" title="it:algorithm:lower_bound" rel="nofollow">lower_bound</a></td><td class="col1">cerca il primo posto dove un elemento può essere inserito preservando l&#039;ordine</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/upper_bound" class="wikilink2" title="it:algorithm:upper_bound" rel="nofollow">upper_bound</a></td><td class="col1">cerca l&#039;ultimo posto dove un valore può essere inserito preservando l&#039;ordine</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/binary_search" class="wikilink2" title="it:algorithm:binary_search" rel="nofollow">binary_search</a></td><td class="col1">determina se un elemento esiste in un certo range</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/equal_range" class="wikilink2" title="it:algorithm:equal_range" rel="nofollow">equal_range</a></td><td class="col1">cerca un range di elementi che sono uguali ad un certo elemento</td>
+	</tr>
+</table></div>
+<!-- EDIT5 TABLE [3538-3883] -->
+</div>
+
+<h5><a name="operazioni_su_insiemi_ordinati" id="operazioni_su_insiemi_ordinati">Operazioni su insiemi ordinati</a></h5>
+<div class="level5">
+<div class="table sectionedit6"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/merge" class="wikilink2" title="it:algorithm:merge" rel="nofollow">merge</a></td><td class="col1">unisci due range ordinati</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/inplace_merge" class="wikilink2" title="it:algorithm:inplace_merge" rel="nofollow">inplace_merge</a></td><td class="col1">unisci due range ordinati &#039;in-place&#039;</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/includes" class="wikilink2" title="it:algorithm:includes" rel="nofollow">includes</a></td><td class="col1">ritorna vero se un insieme è il sottoinsieme di un altro</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/set_difference" class="wikilink2" title="it:algorithm:set_difference" rel="nofollow">set_difference</a></td><td class="col1">calcola la differenza tra due insiemi</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/set_intersection" class="wikilink2" title="it:algorithm:set_intersection" rel="nofollow">set_intersection</a></td><td class="col1">calcola l&#039;intersezione tra due insiemi</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/set_symmetric_difference" class="wikilink2" title="it:algorithm:set_symmetric_difference" rel="nofollow">set_symmetric_difference</a></td><td class="col1">calcola la differenza simmetrica tra due insiemi</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/set_union" class="wikilink2" title="it:algorithm:set_union" rel="nofollow">set_union</a></td><td class="col1">calcola l&#039;unione di due set</td>
+	</tr>
+</table></div>
+<!-- EDIT6 TABLE [3921-4333] -->
+</div>
+
+<h5><a name="heap_operations" id="heap_operations">Heap operations</a></h5>
+<div class="level5">
+<div class="table sectionedit7"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/is_heap" class="wikilink2" title="it:algorithm:is_heap" rel="nofollow">is_heap</a></td><td class="col1">ritorna vero se un dato range è nello heap</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/make_heap" class="wikilink2" title="it:algorithm:make_heap" rel="nofollow">make_heap</a></td><td class="col1">crea uno heap a partire da un intervallo di elementi</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/push_heap" class="wikilink2" title="it:algorithm:push_heap" rel="nofollow">push_heap</a></td><td class="col1">aggiungi un elemento ad uno heap</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/pop_heap" class="wikilink2" title="it:algorithm:pop_heap" rel="nofollow">pop_heap</a></td><td class="col1">rimuove l&#039;elemento più grande di uno heap</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/sort_heap" class="wikilink2" title="it:algorithm:sort_heap" rel="nofollow">sort_heap</a></td><td class="col1">trasforma lo heap in un intervallo di elementi ordinati</td>
+	</tr>
+</table></div>
+<!-- EDIT7 TABLE [4356-4661] -->
+</div>
+
+<h5><a name="operazioni_sui_massimi_e_minimi_di_un_insieme" id="operazioni_sui_massimi_e_minimi_di_un_insieme">Operazioni sui massimi e minimi di un insieme</a></h5>
+<div class="level5">
+<div class="table sectionedit8"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/max" class="wikilink2" title="it:algorithm:max" rel="nofollow">max</a></td><td class="col1">ritorna il più grande di due elementi</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/max_element" class="wikilink2" title="it:algorithm:max_element" rel="nofollow">max_element</a></td><td class="col1">ritorna l&#039;elemento più grande in un intervallo</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/min" class="wikilink2" title="it:algorithm:min" rel="nofollow">min</a></td><td class="col1">ritorna il minore di due elementi</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/min_element" class="wikilink2" title="it:algorithm:min_element" rel="nofollow">min_element</a></td><td class="col1">ritorna il più piccolo elemento in un range</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/lexicographical_compare" class="wikilink2" title="it:algorithm:lexicographical_compare" rel="nofollow">lexicographical_compare</a></td><td class="col1">ritorna vero se un range è minore di un altro in senso lessicografico</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/next_permutation" class="wikilink2" title="it:algorithm:next_permutation" rel="nofollow">next_permutation</a></td><td class="col1">genera la successiva permutazione lessicograficamente maggiore di un range di elementi</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/prev_permutation" class="wikilink2" title="it:algorithm:prev_permutation" rel="nofollow">prev_permutation</a></td><td class="col1">genera la successiva permutazione lessicograficamente minore di un range di elementi</td>
+	</tr>
+</table></div>
+<!-- EDIT8 TABLE [4714-5254] -->
+</div>
+
+<h5><a name="operazioni_numeriche" id="operazioni_numeriche">Operazioni numeriche</a></h5>
+<div class="level5">
+
+<p>
+
+The following functions are defined in &lt;numeric&gt;, and are part of the std namespace.
+Le funzioni che seguono sono definite in &lt;numeric&gt; e sono parte del namespace std
+
+</p>
+<div class="table sectionedit9"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/accumulate" class="wikilink2" title="it:algorithm:accumulate" rel="nofollow">accumulate</a></td><td class="col1">somma un inetervallo di elementi</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/inner_product" class="wikilink2" title="it:algorithm:inner_product" rel="nofollow">inner_product</a></td><td class="col1">calcola il prodotto interno di due intervalli di elementi</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/adjacent_difference" class="wikilink2" title="it:algorithm:adjacent_difference" rel="nofollow">adjacent_difference</a></td><td class="col1">calcola la differenza tra elementi adiacenti in un range</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/it/algorithm/partial_sum" class="wikilink2" title="it:algorithm:partial_sum" rel="nofollow">partial_sum</a></td><td class="col1">calcola la somma parziale di un range di elementi</td>
+	</tr>
+</table></div>
+<!-- EDIT9 TABLE [5450-5728] -->
+</div>
+</div>
+</body>
+</html>

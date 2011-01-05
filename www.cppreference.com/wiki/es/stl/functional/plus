@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es"
+ lang="es" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>es:util:functional:plus</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:32-0700" />
+<meta name="keywords" content="es,util,functional,plus" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/es/util/functional/plus?do=index" title="Índice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=es:util:functional" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/es/util/functional/plus" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/es/util/functional/plus" />
+<link rel="canonical" href="plus" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='es:util:functional';var JSINFO = {"id":"es:util:functional:plus","namespace":"es:util:functional"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Tabla de Contenidos</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="plus#plus" class="toc">plus</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="plus#uso" class="toc">Uso</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="plus#ejemplo" class="toc">Ejemplo</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="plus#topicos_relacionados" class="toc">Tópicos Relacionados</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="plus" id="plus">plus</a></h2>
+<div class="level2">
+
+<p>
+Sintaxis:
+</p>
+<pre class="cpp code cpp"><span class="co2">#include &lt;functional&gt;</span>
+<span class="kw2">template</span> <span class="sy1">&lt;</span><span class="kw2">typename</span> Type<span class="sy1">&gt;</span>
+<span class="kw4">struct</span> std<span class="sy4">::</span><span class="me2">plus</span><span class="sy4">;</span></pre>
+<p>
+<code>plus()</code> es una plantilla para una familia de functoides provista en la cabecera <code><a href="start" class="wikilink1" title="es:util:functional:start">&lt;functional&gt;</a></code> y que provee una interface al operador global <code>operator+</code> binario (“suma”).
+</p>
+
+<p>
+Para un tipo de datos <em>Type</em>, una instancia de <code>plus&lt;Type&gt;</code> es una función binaria que toma dos argumentos (<em>a</em> y <em>b</em> por ejemplo) de tipo <code>Type</code> y devuelve su suma. Es decir, <code>plus()</code> está implementado de la siguiente manera:
+</p>
+<pre class="cpp code cpp">  <span class="kw2">template</span> <span class="sy1">&lt;</span><span class="kw2">class</span> Type<span class="sy1">&gt;</span> <span class="kw4">struct</span> greater <span class="sy4">:</span> binary_function <span class="sy1">&lt;</span>Type,Type,Type<span class="sy1">&gt;</span> <span class="br0">&#123;</span>
+    Type operator<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#40;</span><span class="kw4">const</span> Type<span class="sy3">&amp;</span> a, <span class="kw4">const</span> Type<span class="sy3">&amp;</span> b<span class="br0">&#41;</span> <span class="kw4">const</span>
+      <span class="br0">&#123;</span><span class="kw1">return</span> a<span class="sy2">+</span>b<span class="sy4">;</span><span class="br0">&#125;</span>
+  <span class="br0">&#125;</span><span class="sy4">;</span></pre>
+<p>
+En términos generalizados el operador <code>operator()</code> está definido para proveer la sintaxis necesaria, permitiendo usar <code>plus</code> de la misma manera como si fuera una función común y corriente.
+</p>
+
+</div>
+<!-- EDIT1 SECTION "plus" [1-915] -->
+<h3 class="sectionedit2"><a name="uso" id="uso">Uso</a></h3>
+<div class="level3">
+
+<p>
+
+Instancias (objetos) de esta clase pueden usarse en cualquier lugar en los <a href="../algorithm/start" class="wikilink1" title="es:stl:algorithm:start">algoritmos</a> en el cual se tenga dos fuentes de datos (ej.: dos iteradores) y se desee sumar los valores apuntados; usualmente esto es <a href="http://www.cppreference.com/wiki/es/stl/algorithm/transform" class="wikilink2" title="es:stl:algorithm:transform" rel="nofollow">transform</a>.
+</p>
+
+<p>
+Dado un tipo de datos <em>Type</em> con cuatro variables <em>a</em> y <em>b</em>, <em>s1</em> y <em>s2</em>, las siguientes instrucciones son equivalentes:
+</p>
+<pre class="cpp code cpp">Type a, b<span class="sy4">;</span>
+std<span class="sy4">::</span><span class="me2">plus</span><span class="sy1">&lt;</span>Type<span class="sy1">&gt;</span> suma<span class="sy4">;</span>
+Type s1 <span class="sy1">=</span> a <span class="sy2">+</span> b<span class="sy4">;</span>
+Type s2 <span class="sy1">=</span> suma<span class="br0">&#40;</span>a,b<span class="br0">&#41;</span><span class="sy4">;</span></pre>
+</div>
+<!-- EDIT2 SECTION "Uso" [916-1418] -->
+<h3 class="sectionedit3"><a name="ejemplo" id="ejemplo">Ejemplo</a></h3>
+<div class="level3">
+
+<p>
+
+El siguiente código usa <code>plus&lt;int&gt;</code> y <a href="bind2nd" class="wikilink1" title="es:util:functional:bind2nd">bind2nd</a> para sumar 7 a todos los números de un vector:
+</p>
+<pre class="cpp code cpp"><span class="kw4">int</span> main<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    vector<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> numeros<span class="sy4">;</span>
+    <span class="kw1">for</span> <span class="br0">&#40;</span><span class="kw4">int</span> i<span class="sy1">=</span><span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="sy4">;</span> <span class="sy2">++</span>i<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+      numeros.<span class="me1">push_back</span><span class="br0">&#40;</span>i<span class="br0">&#41;</span><span class="sy4">;</span>
+      <span class="br0">&#125;</span>
+    <span class="kw3">cout</span><span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Al inicio vector es: &quot;</span><span class="sy4">;</span>
+    copy <span class="br0">&#40;</span>numeros.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, numeros.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, ostream_iterator<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">&#40;</span><span class="kw3">cout</span>, <span class="st0">&quot; &quot;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw3">cout</span><span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+    transform <span class="br0">&#40;</span>numeros.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, numeros.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, numeros.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, bind2nd<span class="br0">&#40;</span>plus<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, <span class="nu0">7</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw3">cout</span><span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Al final vector es: &quot;</span><span class="sy4">;</span>
+    copy <span class="br0">&#40;</span>numeros.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, numeros.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, ostream_iterator<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">&#40;</span><span class="kw3">cout</span>, <span class="st0">&quot; &quot;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw3">cout</span><span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
+<p>
+La salida del programa será como la siguiente:
+</p>
+<pre class="code">
+Al inicio vector es: 0 1 2 3 4 5 6 7 8 9
+Al final vector es: 7 8 9 10 11 12 13 14 15 16</pre>
+</div>
+<!-- EDIT3 SECTION "Ejemplo" [1419-2180] -->
+<h3 class="sectionedit4"><a name="topicos_relacionados" id="topicos_relacionados">Tópicos Relacionados</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/es/util/functional/minus" class="wikilink2" title="es:util:functional:minus" rel="nofollow">minus</a>, <a href="http://www.cppreference.com/wiki/es/util/functional/multiplies" class="wikilink2" title="es:util:functional:multiplies" rel="nofollow">multiplies</a>, <a href="http://www.cppreference.com/wiki/es/util/functional/divides" class="wikilink2" title="es:util:functional:divides" rel="nofollow">divides</a>, <a href="http://www.cppreference.com/wiki/es/util/functional/modulus" class="wikilink2" title="es:util:functional:modulus" rel="nofollow">modulus</a>: más functoides aritméticos.</div>
+</li>
+<li class="level1"><div class="li"> <code><a href="http://www.cppreference.com/wiki/es/stl/algorithm/transform" class="wikilink2" title="es:stl:algorithm:transform" rel="nofollow">transform</a></code>: transformar una secuencia usando un functoide.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT4 SECTION "Tópicos Relacionados" [2181-] --></div>
+</body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>language:constructs:types</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="noindex,nofollow" />
+<meta name="date" content="2010-11-16T16:56:35-0800" />
+<meta name="keywords" content="language,constructs,types" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/language/constructs/types?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=language:constructs" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/language/constructs/types" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/language/constructs/types" />
+<link rel="canonical" href="types" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='language:constructs';var JSINFO = {"id":"language:constructs:types","namespace":"language:constructs"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="types#predefined_types" class="toc">Predefined types</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="types#boolean_type" class="toc">Boolean type</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="types#character_types" class="toc">Character types</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="types#integer_types" class="toc">Integer types</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="types#floating_point_types" class="toc">Floating point types</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="types#see_also" class="toc">See also</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="predefined_types" id="predefined_types">Predefined types</a></h2>
+<div class="level2">
+
+</div>
+<!-- EDIT1 SECTION "Predefined types" [1-28] -->
+<h3 class="sectionedit2"><a name="boolean_type" id="boolean_type">Boolean type</a></h3>
+<div class="level3">
+
+<p>
+
+<code><strong>bool</strong></code> - type, capable of holding one of the two values: <code>true</code> or <code>false</code>.
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Boolean type" [29-137] -->
+<h3 class="sectionedit3"><a name="character_types" id="character_types">Character types</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> <strong><code>signed char</code></strong> - type for signed character representation.</div>
+</li>
+<li class="level1"><div class="li"> <strong><code>unsigned char</code></strong> - type for unsigned character representation.</div>
+</li>
+<li class="level1"><div class="li"> <strong><code>char</code></strong> - type for character representation which can be most efficiently processed on the target system (equivalent to either <code>signed char</code> or <code>unsigned char</code>).</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <strong><code>wchar_t</code></strong> - type for wide character representation</div>
+</li>
+<li class="level1"><div class="li"> <strong><code>char16_t</code></strong> - type for UTF-16 character representation (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</div>
+</li>
+<li class="level1"><div class="li"> <strong><code>char32_t</code></strong> - type for UTF-32 character representation (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT3 SECTION "Character types" [138-710] -->
+<h3 class="sectionedit4"><a name="integer_types" id="integer_types">Integer types</a></h3>
+<div class="level3">
+
+<p>
+
+<strong><code>int</code></strong> - basic integer type. Can be omitted if any of the modifiers are present. If no length modifiers are present, guaranteed to have width of at least 16 bits. However, on 32/64 bit systems it is almost exclusively guaranteed to have length of at least 32 bits (see below).
+</p>
+
+</div>
+
+<h4><a name="modifiers" id="modifiers">Modifiers</a></h4>
+<div class="level4">
+
+<p>
+
+Modifies the integer type. Can be mixed in any order. Only one of each group can be present in type definition.
+</p>
+
+<p>
+<strong>Signedess</strong>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong><code>signed</code></strong> - target type will have signed representation (this is the default if omitted)</div>
+</li>
+<li class="level1"><div class="li"> <strong><code>unsigned</code></strong> - target type will have signed representation</div>
+</li>
+</ul>
+
+<p>
+
+<strong>Size</strong>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong><code>short</code></strong> - target type will be optimized for space and will have width of at least 16 bits</div>
+</li>
+<li class="level1"><div class="li"> <strong><code>long</code></strong> - target type will have width of at least 32 bits</div>
+</li>
+<li class="level1"><div class="li"> <strong><code>long long</code></strong> - target type will have width of at least 64 bits (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a name="properties" id="properties">Properties</a></h4>
+<div class="level4">
+
+<p>
+
+This table summaries all available integer types and their properties
+
+</p>
+<div class="table sectionedit5"><table class="inline">
+	<tr class="row0">
+		<th class="col0" rowspan="2"> Type specifier </th><th class="col1" rowspan="2"> Equivalent type </th><th class="col2 centeralign" colspan="6">  Width in bits by data model  </th>
+	</tr>
+	<tr class="row1">
+		<th class="col0"> C++ standard </th><th class="col1 centeralign">  LP32  </th><th class="col2 centeralign">  ILP32  </th><th class="col3 centeralign">  LLP64  </th><th class="col4 centeralign">  LP64  </th><th class="col5"> </th>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <code>short</code> </td><td class="col1 centeralign" rowspan="4">  <code>short int</code>  </td><td class="col2 centeralign" rowspan="6">  at least<br/>
+<strong>16</strong>  </td><td class="col3 centeralign" rowspan="6">  <strong>16</strong>  </td><td class="col4 centeralign" rowspan="6">  <strong>16</strong>  </td><td class="col5 centeralign" rowspan="6">  <strong>16</strong>  </td><td class="col6 centeralign" rowspan="6">  <strong>16</strong>  </td><td class="col7" rowspan="23"> </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> <code>short int</code> </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> <code>signed short</code> </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> <code>signed short int</code> </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> <code>unsigned short</code> </td><td class="col1 centeralign" rowspan="2">  <code>unsigned short int</code>  </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"> <code>unsigned short int</code> </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"> <code>int</code> </td><td class="col1 centeralign" rowspan="3">  <code>int</code>  </td><td class="col2 centeralign" rowspan="5">  at least<br/>
+<strong>16</strong>  </td><td class="col3 centeralign" rowspan="5">  <strong>16</strong>  </td><td class="col4 centeralign" rowspan="5">  <strong>32</strong>  </td><td class="col5 centeralign" rowspan="5">  <strong>32</strong>  </td><td class="col6 centeralign" rowspan="5">  <strong>32</strong>  </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"> <code>signed</code> </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"> <code>signed int</code> </td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"> <code>unsigned</code> </td><td class="col1 centeralign" rowspan="2">  <code>unsigned int</code>  </td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"> <code>unsigned int</code> </td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"> <code>long</code> </td><td class="col1 centeralign" rowspan="4">  <code>long int</code>  </td><td class="col2 centeralign" rowspan="6">  at least<br/>
+<strong>32</strong>  </td><td class="col3 centeralign" rowspan="6">  <strong>32</strong>  </td><td class="col4 centeralign" rowspan="6">  <strong>32</strong>  </td><td class="col5 centeralign" rowspan="6">  <strong>32</strong>  </td><td class="col6 centeralign" rowspan="6">  <strong>64</strong>  </td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"> <code>long int</code> </td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"> <code>signed long</code> </td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"> <code>signed long int</code> </td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"> <code>unsigned long</code> </td><td class="col1 centeralign" rowspan="2">  <code>unsigned long int</code>  </td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"> <code>unsigned long int</code> </td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"> <code>long long</code> </td><td class="col1 centeralign" rowspan="4">  <code>long long int</code> <br/>
+(<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)  </td><td class="col2 centeralign" rowspan="6">  at least<br/>
+<strong>64</strong>  </td><td class="col3 centeralign" rowspan="6">  <strong>64</strong>  </td><td class="col4 centeralign" rowspan="6">  <strong>64</strong>  </td><td class="col5 centeralign" rowspan="6">  <strong>64</strong>  </td><td class="col6 centeralign" rowspan="6">  <strong>64</strong>  </td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"> <code>long long int</code> </td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"> <code>signed long long</code> </td>
+	</tr>
+	<tr class="row22">
+		<td class="col0"> <code>signed long long int</code> </td>
+	</tr>
+	<tr class="row23">
+		<td class="col0"> <code>unsigned long long</code> </td><td class="col1 centeralign" rowspan="2">  <code>unsigned long long int</code><br/>
+(<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)  </td>
+	</tr>
+	<tr class="row24">
+		<td class="col0"> <code>unsigned long long int</code> </td>
+	</tr>
+</table></div>
+<!-- EDIT5 TABLE [1688-3601] -->
+</div>
+
+<h5><a name="data_models" id="data_models">Data models</a></h5>
+<div class="level5">
+
+<p>
+
+32 bit systems:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>LP32</strong>:     </div>
+<ul>
+<li class="level2"><div class="li"> Win16 <acronym title="Application Programming Interface">API</acronym></div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <strong>ILP32</strong>:</div>
+<ul>
+<li class="level2"><div class="li"> Win32 <acronym title="Application Programming Interface">API</acronym></div>
+</li>
+<li class="level2"><div class="li"> Unix and Unix-like systems (Linux, MacOSX)</div>
+</li>
+</ul>
+</li>
+</ul>
+
+<p>
+
+64 bit systems:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>LLP64</strong></div>
+<ul>
+<li class="level2"><div class="li"> Win64 <acronym title="Application Programming Interface">API</acronym></div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <strong>LP64</strong></div>
+<ul>
+<li class="level2"><div class="li"> Unix and Unix-like systems (Linux, MacOSX)</div>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+<!-- EDIT4 SECTION "Integer types" [711-3862] -->
+<h3 class="sectionedit6"><a name="floating_point_types" id="floating_point_types">Floating point types</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> <strong><code>float</code></strong> - single precision floating point type. Usually IEEE-754 32 bit floating point type</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <strong><code>double</code></strong> - double precision floating point type. Usually IEEE-754 64 bit floating point type</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <strong><code>long double</code></strong> - extended precision floating point type. Does not necessarily map to types mandated by IEEE-754. Usually 80-bit x87 floating point type on x86 and x86-64 architectures.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT6 SECTION "Floating point types" [3863-4295] -->
+<h3 class="sectionedit7"><a name="see_also" id="see_also">See also</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="type_specifiers" class="wikilink1" title="language:constructs:type_specifiers"> type specifiers</a>
+
+</p>
+
+</div>
+<!-- EDIT7 SECTION "See also" [4296-] --></div>
+</body>
+</html>

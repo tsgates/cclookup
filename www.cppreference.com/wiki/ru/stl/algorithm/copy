@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru"
+ lang="ru" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>ru:algorithm:copy</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:13-0700" />
+<meta name="keywords" content="ru,algorithm,copy" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/ru/algorithm/copy?do=index" title="Все страницы" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=ru:algorithm" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/ru/algorithm/copy" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/ru/algorithm/copy" />
+<link rel="canonical" href="copy" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='ru:algorithm';var JSINFO = {"id":"ru:algorithm:copy","namespace":"ru:algorithm"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="copy" id="copy">copy</a></h2>
+<div class="level2">
+
+<p>
+Синтаксис:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;algorithm&gt;</span>
+    output_iterator copy<span class="br0">&#40;</span> input_iterator start, input_iterator end, output_iterator dest <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Функция <code>copy</code> копирует элементы между <code>start</code> и <code>end</code> в расположение <code>dest</code>. Другими словами, после работы функции <code>copy</code>,
+</p>
+<pre class="cpp code cpp">   <span class="sy2">*</span>dest <span class="sy1">=</span> <span class="sy2">*</span>start
+   <span class="sy2">*</span><span class="br0">&#40;</span>dest<span class="sy2">+</span><span class="nu0">1</span><span class="br0">&#41;</span> <span class="sy1">=</span> <span class="sy2">*</span><span class="br0">&#40;</span>start<span class="sy2">+</span><span class="nu0">1</span><span class="br0">&#41;</span>
+   <span class="sy2">*</span><span class="br0">&#40;</span>dest<span class="sy2">+</span><span class="nu0">2</span><span class="br0">&#41;</span> <span class="sy1">=</span> <span class="sy2">*</span><span class="br0">&#40;</span>start<span class="sy2">+</span><span class="nu0">2</span><span class="br0">&#41;</span>
+   ...
+   <span class="sy2">*</span><span class="br0">&#40;</span>dest<span class="sy2">+</span>N<span class="br0">&#41;</span> <span class="sy1">=</span> <span class="sy2">*</span><span class="br0">&#40;</span>start<span class="sy2">+</span>N<span class="br0">&#41;</span></pre>
+<p>
+Возвращаемое значение - позиция в диапазоне назначения после последнего скопированного эелмента (т.е. <code>dest+N+1</code>).
+<code>copy</code> действует за <a href="../../../complexity" class="wikilink1" title="complexity">линейное время</a>.
+</p>
+
+<p>
+Например, следующий код использует <code>copy</code>, чтобы скопировать содержимое одного вектора в другой и вывести результирующий вектор:
+</p>
+<pre class="cpp code cpp">   vector<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> from_vector<span class="sy4">;</span>
+   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     from_vector.<span class="me1">push_back</span><span class="br0">&#40;</span> i <span class="br0">&#41;</span><span class="sy4">;</span>
+   <span class="br0">&#125;</span>
+&nbsp;
+   vector<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> to_vector<span class="br0">&#40;</span><span class="nu0">10</span><span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+   copy<span class="br0">&#40;</span> from_vector.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, from_vector.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, to_vector.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;to_vector contains: &quot;</span><span class="sy4">;</span>
+   copy<span class="br0">&#40;</span> to_vector.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, to_vector.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, ostream_iterator<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">&#40;</span> <span class="kw3">cout</span>, <span class="st0">&quot; &quot;</span> <span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
+<p>
+Смотрите также: <a href="copy_backward" class="wikilink1" title="ru:algorithm:copy_backward">copy_backward</a>, <a href="http://www.cppreference.com/wiki/ru/algorithm/copy_n" class="wikilink2" title="ru:algorithm:copy_n" rel="nofollow">copy_n</a>, <a href="generate" class="wikilink1" title="ru:algorithm:generate">generate</a>, <a href="remove_copy" class="wikilink1" title="ru:algorithm:remove_copy">remove_copy</a>, <a href="swap" class="wikilink1" title="ru:algorithm:swap">swap</a>, <a href="transform" class="wikilink1" title="ru:algorithm:transform">transform</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cz"
+ lang="cz" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>cz:numeric:c:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:28-0700" />
+<meta name="keywords" content="cz,numeric,c,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/cz/numeric/c/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=cz:numeric:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/cz/numeric/c/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/cz/numeric/c/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='cz:numeric:c';var JSINFO = {"id":"cz:numeric:c:start","namespace":"cz:numeric:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="standard_c_math_matematicke_funkce" id="standard_c_math_matematicke_funkce">Standard C Math (Matematické funkce)</a></h1>
+<div class="level1">
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/numeric/c/abs" class="wikilink2" title="cz:numeric:c:abs" rel="nofollow">abs</a></td><td class="col1">absolutní hodnota</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/numeric/c/acos" class="wikilink2" title="cz:numeric:c:acos" rel="nofollow">acos</a></td><td class="col1">arkus kosinus</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/numeric/c/asin" class="wikilink2" title="cz:numeric:c:asin" rel="nofollow">asin</a></td><td class="col1">arkus sinus</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/numeric/c/atan" class="wikilink2" title="cz:numeric:c:atan" rel="nofollow">atan</a></td><td class="col1">arkus tangens</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/numeric/c/atan2" class="wikilink2" title="cz:numeric:c:atan2" rel="nofollow">atan2</a></td><td class="col1">arkus tangens s 2 parametry pro rozlišení kvadrantů</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/numeric/c/ceil" class="wikilink2" title="cz:numeric:c:ceil" rel="nofollow">ceil</a></td><td class="col1">zaokrouhlení na celé číslo vždy nahoru</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/numeric/c/cos" class="wikilink2" title="cz:numeric:c:cos" rel="nofollow">cos</a></td><td class="col1">kosinus</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/numeric/c/cosh" class="wikilink2" title="cz:numeric:c:cosh" rel="nofollow">cosh</a></td><td class="col1">hyperbolický kosinus</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/numeric/c/div" class="wikilink2" title="cz:numeric:c:div" rel="nofollow">div</a></td><td class="col1">vrací celočíselný podíl a zbytek po dělení</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/numeric/c/exp" class="wikilink2" title="cz:numeric:c:exp" rel="nofollow">exp</a></td><td class="col1">vrací “e” umocněnné na parametr</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/numeric/c/fabs" class="wikilink2" title="cz:numeric:c:fabs" rel="nofollow">fabs</a></td><td class="col1">absolutní hodnota pro čísla s pohyblivou řádovou čárkou (float)</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/numeric/c/floor" class="wikilink2" title="cz:numeric:c:floor" rel="nofollow">floor</a></td><td class="col1">zaokrouhlení na celé číslo vždy dolů</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/numeric/c/fmod" class="wikilink2" title="cz:numeric:c:fmod" rel="nofollow">fmod</a></td><td class="col1">vrací zbytek po dělení</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/numeric/c/frexp" class="wikilink2" title="cz:numeric:c:frexp" rel="nofollow">frexp</a></td><td class="col1">převede číslo do vědeckého tvaru</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/numeric/c/labs" class="wikilink2" title="cz:numeric:c:labs" rel="nofollow">labs</a></td><td class="col1">absolutní hodnota pro dlouhá čísla (long)</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/numeric/c/ldexp" class="wikilink2" title="cz:numeric:c:ldexp" rel="nofollow">ldexp</a></td><td class="col1">převod čísla z vědeckého tvaru</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/numeric/c/ldiv" class="wikilink2" title="cz:numeric:c:ldiv" rel="nofollow">ldiv</a></td><td class="col1">vrací podíl a zbytek po celočíselném dělení pro dlouhá čísla</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/numeric/c/log" class="wikilink2" title="cz:numeric:c:log" rel="nofollow">log</a></td><td class="col1">přirozený logaritmus (základ e)</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/numeric/c/log10" class="wikilink2" title="cz:numeric:c:log10" rel="nofollow">log10</a></td><td class="col1">dekadický logaritmus (základ 10)</td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/numeric/c/modf" class="wikilink2" title="cz:numeric:c:modf" rel="nofollow">modf</a></td><td class="col1">rozložení na smíšené číslo</td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/numeric/c/pow" class="wikilink2" title="cz:numeric:c:pow" rel="nofollow">pow</a></td><td class="col1">mocnina</td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/numeric/c/sin" class="wikilink2" title="cz:numeric:c:sin" rel="nofollow">sin</a></td><td class="col1">sinus</td>
+	</tr>
+	<tr class="row22">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/numeric/c/sinh" class="wikilink2" title="cz:numeric:c:sinh" rel="nofollow">sinh</a></td><td class="col1">hyperbolický sinus</td>
+	</tr>
+	<tr class="row23">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/numeric/c/sqrt" class="wikilink2" title="cz:numeric:c:sqrt" rel="nofollow">sqrt</a></td><td class="col1">odmocnina (druhá)</td>
+	</tr>
+	<tr class="row24">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/numeric/c/tan" class="wikilink2" title="cz:numeric:c:tan" rel="nofollow">tan</a></td><td class="col1">tangens</td>
+	</tr>
+	<tr class="row25">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/numeric/c/tanh" class="wikilink2" title="cz:numeric:c:tanh" rel="nofollow">tanh</a></td><td class="col1">hyperbolický tangens</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [60-1133] -->
+</div>
+
+<h5><a name="kompilovani_v_gcc" id="kompilovani_v_gcc">Kompilování v gcc</a></h5>
+<div class="level5">
+
+<p>
+
+Aby bylo možné využít některé z výše uvedených funkcí, některé verze gcc kompilátoru požadují explicitně přilinkovat knihovnu (Math) pomocí přepínače <code>-lm</code>.
+</p>
+
+</div>
+</div>
+</body>
+</html>

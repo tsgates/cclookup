@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr"
+ lang="fr" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>fr:c:string:strxfrm</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:57-0700" />
+<meta name="keywords" content="fr,c,string,strxfrm" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/fr/c/string/strxfrm?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=fr:c:string" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/fr/c/string/strxfrm" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/fr/c/string/strxfrm" />
+<link rel="canonical" href="strxfrm" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='fr:c:string';var JSINFO = {"id":"fr:c:string:strxfrm","namespace":"fr:c:string"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="strxfrm" id="strxfrm">strxfrm</a></h2>
+<div class="level2">
+
+<p>
+Syntaxe :
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cstring&gt;</span>
+    <span class="kw4">size_t</span> <span class="kw3">strxfrm</span><span class="br0">&#40;</span> <span class="kw4">char</span> <span class="sy2">*</span>str1, <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>str2, <span class="kw4">size_t</span> n<span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+La fonction <code>strxfrm()</code> transforme la chaîne <code>str2</code> de telle manière que le résultat
+de <code><a href="strcmp" class="wikilink1" title="fr:c:string:strcmp">strcmp()</a></code> sur deux chaînes ayant été modifiées par <code>strxfrm()</code>
+soit le même que le résultat de <code><a href="strcoll" class="wikilink1" title="fr:c:string:strcoll">strcoll()</a></code> sur les deux chaînes
+avant leur transformation. Les <code>n</code> premiers caractères de la chaîne transformée
+sont placés dans <code>str1</code>. La transformation est effectué en considérant la catégorie
+<code>LC_COLLATE</code> de la localisation en cours (cf. <code><a href="../date/setlocale" class="wikilink1" title="fr:c:date:setlocale">setlocale()</a></code>).
+</p>
+
+<p>
+La fonction <code>strxfrm()</code> renvoie le nombre d&#039;octets nécessaires pour stocker
+la chaîne transformée <code>str1</code> sans compter le caractère nul <code>\0</code> final.
+Si la valeur renvoyée est supérieure ou égale à <code>n</code>, le contenu de <code>str1</code> est indéfini.
+</p>
+
+<p>
+Sujets connexes : <a href="strcmp" class="wikilink1" title="fr:c:string:strcmp">strcmp</a>, <a href="strcoll" class="wikilink1" title="fr:c:string:strcoll">strcoll</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

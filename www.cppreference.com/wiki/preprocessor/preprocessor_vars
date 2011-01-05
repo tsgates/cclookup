@@ -5,28 +5,30 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>preprocessor:preprocessor_vars</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="generator" content="DokuWiki" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2009-01-08T11:25:50-0800" />
+<meta name="date" content="2010-10-28T18:17:02-0700" />
 <meta name="keywords" content="preprocessor,preprocessor_vars" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/preprocessor/preprocessor_vars?do=index" title="Index" />
+<link rel="start" href="../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/preprocessor/preprocessor_vars?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
 <link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=preprocessor" />
 <link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/preprocessor/preprocessor_vars" />
 <link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/preprocessor/preprocessor_vars" />
-<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="canonical" href="preprocessor_vars" />
+<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='preprocessor';var JSINFO = {"id":"preprocessor:preprocessor_vars","namespace":"preprocessor"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
 
-
-
-<h2><a name="predefined_preprocessor_variables" id="predefined_preprocessor_variables">Predefined preprocessor variables</a></h2>
+<h2 class="sectionedit1"><a name="predefined_preprocessor_variables" id="predefined_preprocessor_variables">Predefined preprocessor variables</a></h2>
 <div class="level2">
 
 <p>
@@ -34,7 +36,7 @@
 Syntax:
 
 </p>
-<pre class="c code c++" style="font-family:monospace;">    __LINE__
+<pre class="cpp code cpp">    __LINE__
     __FILE__
     __DATE__
     __TIME__
@@ -58,8 +60,8 @@ The following variables can vary by compiler, but generally work:
 </ul>
 
 </div>
-<!-- SECTION "Predefined preprocessor variables" [1-938] -->
-<h3><a name="gcc-specific_variables" id="gcc-specific_variables">GCC-specific variables</a></h3>
+<!-- EDIT1 SECTION "Predefined preprocessor variables" [1-938] -->
+<h3 class="sectionedit2"><a name="gcc-specific_variables" id="gcc-specific_variables">GCC-specific variables</a></h3>
 <div class="level3">
 
 <p>
@@ -77,6 +79,6 @@ The following are GCC-specific variables.  While they are not specifically prepr
 </ul>
 
 </div>
-<!-- SECTION "GCC-specific variables" [939-] --></div>
+<!-- EDIT2 SECTION "GCC-specific variables" [939-] --></div>
 </body>
 </html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it"
+ lang="it" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>it:container:deque:end</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:08-0700" />
+<meta name="keywords" content="it,container,deque,end" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/it/container/deque/end?do=index" title="Indice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=it:container:deque" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/it/container/deque/end" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/it/container/deque/end" />
+<link rel="canonical" href="end" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='it:container:deque';var JSINFO = {"id":"it:container:deque:end","namespace":"it:container:deque"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="end" id="end">end</a></h2>
+<div class="level2">
+
+<p>
+Sintassi:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;deque&gt;</span>
+    iterator end<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    const_iterator end<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span></pre>
+<p>
+La funzione end() ritorna un iteratore alla prima posizione dopo l&#039;ultimo
+elemento di una <code>deque</code>. Di conseguenza per accedere all&#039;ultimo elemento
+di una <code>deque</code> tramite l&#039;iteratore ritornato da deque bisogna prima
+decrementarlo.
+</p>
+
+<p>
+Per esempio il codice che segue usa begin() e end() per attraversare tutti
+gli elementi di <code>deque</code>:
+</p>
+<pre class="cpp code cpp">   deque<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> dq1<span class="br0">&#40;</span> <span class="nu0">5</span>, <span class="nu0">789</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+   deque<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">iterator</span> it<span class="sy4">;</span>
+   <span class="kw1">for</span><span class="br0">&#40;</span> it <span class="sy1">=</span> dq1.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> it <span class="sy3">!</span><span class="sy1">=</span> dq1.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> it<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="sy2">*</span>it <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+   <span class="br0">&#125;</span></pre>
+<p>
+L&#039;iteratore viene inizializzato con una chiamata a begin(). Dopo che il body
+del loop viene eseguito l&#039;iteratore viene incrementato e confrontato con il
+risultato della chiamata ad end(). Dato che end() ritorna un iteratore che
+punta alla prima posizione dopo l&#039;ultimo elemento nella coda, il loop termina
+solo dopo che tutti gli elementi sono stati analizzati.
+</p>
+
+<p>
+end() gira in <a href="../../complexity" class="wikilink1" title="it:complexity">constant time</a>.
+</p>
+
+<p>
+Argomenti correlati: <a href="begin" class="wikilink1" title="it:container:deque:begin">begin</a>, <a href="rbegin" class="wikilink1" title="it:container:deque:rbegin">rbegin</a>, <a href="rend" class="wikilink1" title="it:container:deque:rend">rend</a>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "end" [3-] --></div>
+</body>
+</html>

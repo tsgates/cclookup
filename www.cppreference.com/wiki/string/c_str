@@ -5,51 +5,43 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>string:c_str</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="generator" content="DokuWiki" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2008-10-14T15:42:11-0700" />
+<meta name="date" content="2010-11-10T16:29:55-0800" />
 <meta name="keywords" content="string,c_str" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/string/c_str?do=index" title="Index" />
+<link rel="start" href="../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/string/c_str?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
 <link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=string" />
 <link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/string/c_str" />
 <link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/string/c_str" />
-<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="canonical" href="c_str" />
+<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='string';var JSINFO = {"id":"string:c_str","namespace":"string"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
 
-
-
-<h2><a name="c_str" id="c_str">c_str</a></h2>
+<h2 class="sectionedit1"><a name="page_redirected_auto" id="page_redirected_auto">Page redirected (auto)</a></h2>
 <div class="level2">
-
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="../redirect" class="wikilink1" title="redirect">redirect</a></td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [34-49] -->
 <p>
-Syntax:
-</p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;string&gt;</span>
-    <span class="kw4">const</span> <span class="kw4">char</span><span class="sy0">*</span> c_str<span class="br0">&#40;</span><span class="br0">&#41;</span>;</pre>
-<p>
-The function c_str() returns a const pointer to a regular C string, identical
-to the current string. The returned string is null-terminated.
-</p>
 
-<p>
-Note that since the returned pointer is of type const, the character data that
-c_str() returns cannot be modified. Furthermore, you do not need to call <a href="../c/mem/free" class="wikilink1" title="c:mem:free">free</a>
-or <a href="../keywords/delete" class="wikilink1" title="keywords:delete">delete</a> on this pointer.
+See <a href="basic_string/c_str" class="wikilink1" title="string:basic_string:c_str"> this</a>
 </p>
-
-<p>
-Related Topics: <a href="string_operators" class="wikilink1" title="string:string_operators">String operators</a>, <a href="data" class="wikilink1" title="string:data">data</a>
-</p>
-
+<div class="noteredirect">This page has been moved, the new location is <a href="basic_string/c_str" class="wikilink1" title="string:basic_string:c_str">basic_string::c_str</a>.</div>
 </div>
-<!-- SECTION "c_str" [3-] --></div>
+</div>
 </body>
 </html>

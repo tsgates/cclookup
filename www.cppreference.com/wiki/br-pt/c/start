@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="br-pt"
+ lang="br-pt" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>br-pt:c:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:02-0700" />
+<meta name="keywords" content="br-pt,c,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/br-pt/c/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=br-pt:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/br-pt/c/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/br-pt/c/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='br-pt:c';var JSINFO = {"id":"br-pt:c:start","namespace":"br-pt:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="start#a_biblioteca_standard_do_c" class="toc">A biblioteca standard do C</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="start#funcoes_da_biblioteca_c" class="toc">Funções da biblioteca C</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="start#header_files_standard_do_c" class="toc">Header Files standard do C</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="a_biblioteca_standard_do_c" id="a_biblioteca_standard_do_c">A biblioteca standard do C</a></h2>
+<div class="level2">
+
+<p>
+
+Os programadores C++ têm acesso a uma variedade de funções das bibliotecas standard do C, como estabelecido em <a href="http://www.open-std.org/jtc1/sc22/wg14/" class="urlextern" title="http://www.open-std.org/jtc1/sc22/wg14/"  rel="nofollow">ISO/IEC 9899:1990</a> (conhecido como <a href="http://en.wikipedia.org/wiki/ANSI_C" class="urlextern" title="http://en.wikipedia.org/wiki/ANSI_C"  rel="nofollow">C90</a>).  Todas as funções dessas bibliotecas estão definidas no <a href="http://www.cppreference.com/wiki/br-pt/keywords/namespace" class="wikilink2" title="br-pt:keywords:namespace" rel="nofollow">namespace</a> <strong>std</strong>.
+</p>
+
+</div>
+<!-- EDIT1 SECTION "A biblioteca standard do C" [1-374] -->
+<h3 class="sectionedit2"><a name="funcoes_da_biblioteca_c" id="funcoes_da_biblioteca_c">Funções da biblioteca C</a></h3>
+<div class="level3">
+
+<p>
+
+A seguir temos uma lista das funções da biblioteca standard do C, agrupadas aproximadamente por funcionalidade:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="io/start" class="wikilink1" title="br-pt:c:io:start">E/S standard do C</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="string/start" class="wikilink1" title="br-pt:c:string:start">String &amp; Character standard do C</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="math/start" class="wikilink1" title="br-pt:c:math:start">Matemática standard do C</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/br-pt/c/date/start" class="wikilink2" title="br-pt:c:date:start" rel="nofollow">Data e Hora standard do C</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="mem/start" class="wikilink1" title="br-pt:c:mem:start">Memória standard do C</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="other/start" class="wikilink1" title="br-pt:c:other:start">Outras funções standard do C</a></div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT2 SECTION "Funções da biblioteca C" [375-814] -->
+<h3 class="sectionedit3"><a name="header_files_standard_do_c" id="header_files_standard_do_c">Header Files standard do C</a></h3>
+<div class="level3">
+
+<p>
+
+As funções acima estão definidas nos 18 header files seguintes:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> &lt;cassert&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;ciso646&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;csetjmp&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;cstdio&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;ctime&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cctype&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;climits&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;csignal&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;cstdlib&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;cwchar&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cerrno&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;clocale&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;cstdarg&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;cstring&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;cwctype&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cfloat&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;cmath&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;cstddef&gt;</div>
+</li>
+</ul>
+
+<p>
+
+Quando incluir os header files para as bibliotecas standard do C, é preferível usar a notação <code>cfile</code> em vez da notação <code>file.h</code>. Por exemplo, o header file <code>stdio.h</code> deve ser incluído usando este comando:
+</p>
+<pre class="cpp code cpp">  <span class="co2">#include &lt;cstdio&gt;</span></pre>
+<p>
+A notação <code>file.h</code> funciona, mas é dirigida para fins de retrocompatibilidade. A diferença entre as notações <code>cfile</code> e <code>file.h</code> é que funções incluídas com a notação <code>file.h</code> aparecerão no namespace global em vez do namespace <strong>std</strong>.
+</p>
+
+<p>
+Consulte também: <a href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1124.pdf" class="urlextern" title="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1124.pdf"  rel="nofollow">O artigo C99 de 2005</a> do <a href="http://www.open-std.org/jtc1/sc22/wg14/www/standards.html" class="urlextern" title="http://www.open-std.org/jtc1/sc22/wg14/www/standards.html"  rel="nofollow">Padrões Aprovados do grupo de trabalho 14</a>.
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Header Files standard do C" [815-] --></div>
+</body>
+</html>

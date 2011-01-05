@@ -4,118 +4,149 @@
  lang="en" dir="ltr">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>stl:deque:erase</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
+  <title>container:deque:erase</title>
+<meta name="generator" content="DokuWiki" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2008-11-14T16:13:43-0800" />
-<meta name="keywords" content="stl,deque,erase" />
+<meta name="date" content="2010-11-08T15:46:28-0800" />
+<meta name="keywords" content="container,deque,erase" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/stl/deque/erase?do=index" title="Index" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/container/deque/erase?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
-<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=stl:deque" />
-<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/stl/deque/erase" />
-<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/stl/deque/erase" />
-<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=container:deque" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/container/deque/erase" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/container/deque/erase" />
+<link rel="canonical" href="erase" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='container:deque';var JSINFO = {"id":"container:deque:erase","namespace":"container:deque"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
 
+<ul class="toc">
+<li class="clear">
 
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="erase#dequeerase" class="toc">deque::erase</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="erase#parameters" class="toc">Parameters</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="erase#return_value" class="toc">Return value</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="erase#example" class="toc">Example</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="erase#complexity" class="toc">Complexity</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="erase#see_also" class="toc">See also</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
 
-<h2><a name="erase" id="erase">erase</a></h2>
+<h2 class="sectionedit1"><a name="dequeerase" id="dequeerase">deque::erase</a></h2>
 <div class="level2">
-
+<pre class="cpp code cpp">iterator erase<span class="br0">&#40;</span> iterator loc <span class="br0">&#41;</span><span class="sy4">;</span>                   <span class="co1">//1</span>
+iterator erase<span class="br0">&#40;</span> iterator first, iterator last <span class="br0">&#41;</span><span class="sy4">;</span>  <span class="co1">//2</span></pre>
 <p>
-Syntax:
-</p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;deque&gt;</span>
-    iterator erase<span class="br0">&#40;</span> iterator loc <span class="br0">&#41;</span>;
-    iterator erase<span class="br0">&#40;</span> iterator start<span class="sy0">,</span> iterator end <span class="br0">&#41;</span>;</pre>
-<p>
-The erase() function either deletes the element at location loc, or deletes the
-elements between start and end (including start but not including end). The
-return value is the element after the last element erased.
+Removes elements from the container.
 </p>
 
 <p>
-The first version of erase (the version that deletes a single element at
-location loc) runs in <a href="../../complexity" class="wikilink1" title="complexity">constant time</a> for lists and <a href="../../complexity" class="wikilink1" title="complexity">linear time</a> for deques,
-deques, and strings. The multiple-element version of erase always takes
-<a href="../../complexity" class="wikilink1" title="complexity">linear time</a>.
-</p>
-
-<p>
-For example:
-</p>
-<pre class="c code c++" style="font-family:monospace;">   <span class="co1">// Create a deque, load it with the first ten characters of the alphabet</span>
-   deque<span class="sy0">&lt;</span>char<span class="sy0">&gt;</span> alphaDeque;
-   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i<span class="sy0">=</span><span class="nu19">0</span>; i <span class="sy0">&lt;</span> <span class="nu0">10</span>; i<span class="sy0">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
-     alphaDeque.<span class="me1">push_back</span><span class="br0">&#40;</span> i <span class="sy0">+</span> <span class="nu0">65</span> <span class="br0">&#41;</span>;
-   <span class="br0">&#125;</span>
-   <span class="kw4">int</span> size <span class="sy0">=</span> alphaDeque.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span>;
-   deque<span class="sy0">&lt;</span>char<span class="sy0">&gt;::</span><span class="me2">iterator</span> startIterator;
-   deque<span class="sy0">&lt;</span>char<span class="sy0">&gt;::</span><span class="me2">iterator</span> tempIterator;
-   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i<span class="sy0">=</span><span class="nu19">0</span>; i <span class="sy0">&lt;</span> size; i<span class="sy0">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
-     startIterator <span class="sy0">=</span> alphaDeque.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span>;
-     alphaDeque.<span class="me1">erase</span><span class="br0">&#40;</span> startIterator <span class="br0">&#41;</span>;
-     <span class="co1">// Display the deque</span>
-     <span class="kw1">for</span><span class="br0">&#40;</span> tempIterator <span class="sy0">=</span> alphaDeque.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span>; tempIterator <span class="sy0">!=</span> alphaDeque.<span class="me1">end</span> <span class="br0">&#40;</span><span class="br0">&#41;</span>; tempIterator<span class="sy0">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
-       <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="sy0">*</span>tempIterator;
-     <span class="br0">&#125;</span>
-     <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> endl;
-   <span class="br0">&#125;</span></pre>
-<p>
-That code would display the following output:
-</p>
-<pre class="code">
-   BCDEFGHIJ
-   CDEFGHIJ
-   DEFGHIJ
-   EFGHIJ
-   FGHIJ
-   GHIJ
-   HIJ
-   IJ
-   J</pre>
-<p>
-In the next example, erase() is called with two iterators to delete a range of
-elements from a deque:
-</p>
-<pre class="c code c++" style="font-family:monospace;">   <span class="co1">// create a deque, load it with the first ten characters of the alphabet</span>
-   deque<span class="sy0">&lt;</span>char<span class="sy0">&gt;</span> alphaDeque;
-   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i<span class="sy0">=</span><span class="nu19">0</span>; i <span class="sy0">&lt;</span> <span class="nu0">10</span>; i<span class="sy0">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
-     alphaDeque.<span class="me1">push_back</span><span class="br0">&#40;</span> i <span class="sy0">+</span> <span class="nu0">65</span> <span class="br0">&#41;</span>;
-   <span class="br0">&#125;</span>
-   <span class="co1">// display the complete deque</span>
-   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i <span class="sy0">=</span> <span class="nu19">0</span>; i <span class="sy0">&lt;</span> alphaDeque.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span>; i<span class="sy0">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
-     <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> alphaDeque<span class="br0">&#91;</span>i<span class="br0">&#93;</span>;
-   <span class="br0">&#125;</span>
-   <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> endl;
-&nbsp;
-   <span class="co1">// use erase to remove all but the first two and last three elements</span>
-   <span class="co1">// of the deque</span>
-   alphaDeque.<span class="me1">erase</span><span class="br0">&#40;</span> alphaDeque.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">+</span><span class="nu0">2</span><span class="sy0">,</span> alphaDeque.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">-</span><span class="nu0">3</span> <span class="br0">&#41;</span>;
-   <span class="co1">// display the modified deque</span>
-   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i <span class="sy0">=</span> <span class="nu19">0</span>; i <span class="sy0">&lt;</span> alphaDeque.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span>; i<span class="sy0">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
-     <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> alphaDeque<span class="br0">&#91;</span>i<span class="br0">&#93;</span>;
-   <span class="br0">&#125;</span>
-   <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> endl;</pre>
-<p>
-When run, the above code displays:
-</p>
-<pre class="code">
-   ABCDEFGHIJ
-   ABHIJ</pre>
-<p>
-
-Related Topics: <a href="clear" class="wikilink1" title="stl:deque:clear">clear</a>, <a href="insert" class="wikilink1" title="stl:deque:insert">insert</a>, <a href="pop_back" class="wikilink1" title="stl:deque:pop_back">pop_back</a>, <a href="pop_front" class="wikilink1" title="stl:deque:pop_front">pop_front</a>
+Removes either element pointed to by <code>loc</code> or all elements in range <code>[first, last)</code>.
 </p>
 
 </div>
-<!-- SECTION "erase" [3-] --></div>
+<!-- EDIT1 SECTION "deque::erase" [1-275] -->
+<h3 class="sectionedit2"><a name="parameters" id="parameters">Parameters</a></h3>
+<div class="level3">
+
+<p>
+
+<code>loc</code> - element to be erased
+</p>
+
+<p>
+<code>first</code>, <code>last</code> - the range of the elements to be erased
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Parameters" [276-389] -->
+<h3 class="sectionedit3"><a name="return_value" id="return_value">Return value</a></h3>
+<div class="level3">
+
+<p>
+
+iterator to the element past the last element erased
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Return value" [390-465] -->
+<h3 class="sectionedit4"><a name="example" id="example">Example</a></h3>
+<div class="level3">
+<pre class="cpp code cpp"><span class="co1">// create a deque</span>
+std<span class="sy4">::</span><span class="me2">deque</span><span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span> dq<span class="sy4">;</span>
+&nbsp;
+<span class="kw4">const</span> <span class="kw4">char</span> letters<span class="br0">&#91;</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="st0">&quot;1234567890&quot;</span><span class="sy4">;</span>
+<span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i<span class="sy1">=</span><span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    dq.<span class="me1">push_back</span><span class="br0">&#40;</span> letters<span class="br0">&#91;</span>i<span class="br0">&#93;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+<span class="br0">&#125;</span>
+&nbsp;
+deque<span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">iterator</span> it, it2<span class="sy4">;</span>
+&nbsp;
+it <span class="sy1">=</span> dq.<span class="me1">begin</span><span class="sy4">;</span>
+std<span class="sy4">::</span><span class="me2">advance</span><span class="br0">&#40;</span> it, <span class="nu0">5</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+dq.<span class="me1">erase</span><span class="br0">&#40;</span> it <span class="br0">&#41;</span><span class="sy4">;</span>      <span class="co1">//remove 6th element</span>
+&nbsp;
+<span class="kw1">for</span><span class="br0">&#40;</span> it <span class="sy1">=</span> dq.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> it <span class="sy3">!</span><span class="sy1">=</span> dq.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="sy2">++</span>it <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="sy2">*</span>it<span class="sy4">;</span>
+<span class="br0">&#125;</span>
+std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span>
+&nbsp;
+it2 <span class="sy1">=</span> it<span class="sy4">;</span>
+std<span class="sy4">::</span><span class="me2">advance</span><span class="br0">&#40;</span> it, <span class="nu0">2</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+dq.<span class="me1">erase</span><span class="br0">&#40;</span> it, it2 <span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">//remove 7th and 8th elements</span>
+&nbsp;
+<span class="kw1">for</span><span class="br0">&#40;</span> it <span class="sy1">=</span> dq.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> it <span class="sy3">!</span><span class="sy1">=</span> dq.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="sy2">++</span>it <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="sy2">*</span>it<span class="sy4">;</span>
+<span class="br0">&#125;</span>
+std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> std<span class="sy4">::</span><span class="me2">endl</span><span class="sy4">;</span></pre>
+<p>
+Output:
+</p>
+<pre class="code">
+123457890
+1234590</pre>
+</div>
+<!-- EDIT4 SECTION "Example" [466-1081] -->
+<h3 class="sectionedit5"><a name="complexity" id="complexity">Complexity</a></h3>
+<div class="level3">
+
+<p>
+
+1. constant
+</p>
+
+<p>
+2. linear in distance between <code>first</code> and <code>last</code>
+</p>
+
+</div>
+<!-- EDIT5 SECTION "Complexity" [1082-1168] -->
+<h3 class="sectionedit6"><a name="see_also" id="see_also">See also</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="clear" class="wikilink1" title="container:deque:clear">clear</a>, <a href="insert" class="wikilink1" title="container:deque:insert">insert</a>, <a href="pop_back" class="wikilink1" title="container:deque:pop_back">pop_back</a>, <a href="pop_front" class="wikilink1" title="container:deque:pop_front">pop_front</a>
+</p>
+
+</div>
+<!-- EDIT6 SECTION "See also" [1169-] --></div>
 </body>
 </html>

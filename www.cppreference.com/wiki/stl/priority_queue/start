@@ -4,58 +4,132 @@
  lang="en" dir="ltr">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>stl:priority_queue:start</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
+  <title>container:priority_queue:start</title>
+<meta name="generator" content="DokuWiki" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2008-10-14T15:42:07-0700" />
-<meta name="keywords" content="stl,priority_queue,start" />
+<meta name="date" content="2010-11-10T18:39:42-0800" />
+<meta name="keywords" content="container,priority_queue,start" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/stl/priority_queue/start?do=index" title="Index" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/container/priority_queue/start?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
-<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=stl:priority_queue" />
-<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/stl/priority_queue/start" />
-<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/stl/priority_queue/start" />
-<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=container:priority_queue" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/container/priority_queue/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/container/priority_queue/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='container:priority_queue';var JSINFO = {"id":"container:priority_queue:start","namespace":"container:priority_queue"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
 
-
-
-<h1><a name="c_priority_queues" id="c_priority_queues">C++ Priority Queues</a></h1>
-<div class="level1">
-
+<h2 class="sectionedit1"><a name="priority_queue" id="priority_queue">priority_queue</a></h2>
+<div class="level2">
+<pre class="cpp code cpp"><span class="co2">#include &lt;queue&gt;</span>
+&nbsp;
+<span class="kw2">template</span><span class="sy1">&lt;</span>
+    <span class="kw2">class</span> T,
+    <span class="kw2">class</span> Container <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">deque</span><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span>,
+    <span class="kw2">class</span> Compare <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">less</span><span class="sy1">&lt;</span><span class="kw2">typename</span> Container<span class="sy4">::</span><span class="me2">value_type</span><span class="sy1">&gt;</span>
+<span class="sy1">&gt;</span> <span class="kw2">class</span> priority_queue<span class="sy4">;</span></pre>
 <p>
-
+<a href="../../todo" class="wikilink1" title="todo">todo</a>
 C++ Priority Queues are like queues, but the elements inside the queue are
 ordered by some predicate.
-
 </p>
-<table class="inline">
+
+</div>
+
+<h4><a name="member_types" id="member_types">Member types</a></h4>
+<div class="level4">
+<div class="table sectionedit2"><table class="inline">
 	<tr class="row0">
-		<td class="col0"><a href="pqueue_constructors" class="wikilink1" title="stl:priority_queue:pqueue_constructors">Constructors</a></td><td class="col1">construct a new priority queue</td>
+		<th class="col0">Member type </th><th class="col1"> Definition </th>
 	</tr>
 	<tr class="row1">
-		<td class="col0"><a href="empty" class="wikilink1" title="stl:priority_queue:empty">empty</a></td><td class="col1">true if the priority queue has no elements</td>
+		<td class="col0"> <code>container_type</code> </td><td class="col1"> <code>Container</code> </td>
 	</tr>
 	<tr class="row2">
-		<td class="col0"><a href="pop" class="wikilink1" title="stl:priority_queue:pop">pop</a></td><td class="col1">removes the top element of a priority queue</td>
+		<td class="col0"> <code>value_type</code> </td><td class="col1"> <code>Container::value_type</code> </td>
 	</tr>
 	<tr class="row3">
-		<td class="col0"><a href="push" class="wikilink1" title="stl:priority_queue:push">push</a></td><td class="col1">adds an element to the end of the priority queue</td>
+		<td class="col0"> <code>size_type</code> </td><td class="col1"> <code>Container::size_type</code> </td>
 	</tr>
 	<tr class="row4">
-		<td class="col0"><a href="size" class="wikilink1" title="stl:priority_queue:size">size</a></td><td class="col1">returns the number of items in the priority queue</td>
+		<td class="col0"> <code>reference</code> </td><td class="col1"> <code>Container::reference</code> (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature) </td>
 	</tr>
 	<tr class="row5">
-		<td class="col0"><a href="top" class="wikilink1" title="stl:priority_queue:top">top</a></td><td class="col1">returns the top element of the priority queue</td>
+		<td class="col0"> <code>const_reference</code> </td><td class="col1"> <code>Container::const_reference</code> (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature) </td>
 	</tr>
-</table>
+</table></div>
+<!-- EDIT2 TABLE [343-645] -->
+</div>
 
+<h4><a name="member_functions" id="member_functions">Member functions</a></h4>
+<div class="level4">
+<div class="table sectionedit3"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <a href="pqueue_constructors" class="wikilink1" title="container:priority_queue:pqueue_constructors">Constructors</a></td><td class="col1">construct a new priority queue</td>
+	</tr>
+</table></div>
+<!-- EDIT3 TABLE [671-741] -->
+</div>
+
+<h5><a name="element_access" id="element_access">Element access</a></h5>
+<div class="level5">
+<div class="table sectionedit4"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <a href="top" class="wikilink1" title="container:priority_queue:top">top</a> </td><td class="col1"> access the first element </td>
+	</tr>
+</table></div>
+<!-- EDIT4 TABLE [763-801] -->
+</div>
+
+<h5><a name="capacity" id="capacity">Capacity</a></h5>
+<div class="level5">
+<div class="table sectionedit5"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <a href="empty" class="wikilink1" title="container:priority_queue:empty">empty</a> </td><td class="col1"> checks whether the container is empty </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <a href="size" class="wikilink1" title="container:priority_queue:size">size</a> </td><td class="col1"> returns the number of elements </td>
+	</tr>
+</table></div>
+<!-- EDIT5 TABLE [817-916] -->
+</div>
+
+<h5><a name="modifiers" id="modifiers">Modifiers</a></h5>
+<div class="level5">
+<div class="table sectionedit6"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <a href="http://www.cppreference.com/wiki/container/priority_queue/emplace" class="wikilink2" title="container:priority_queue:emplace" rel="nofollow">emplace</a> </td><td class="col1"> <a href="../../todo" class="wikilink1" title="todo">todo</a> (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature) </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <a href="push" class="wikilink1" title="container:priority_queue:push">push</a> </td><td class="col1"> inserts an element </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <a href="pop" class="wikilink1" title="container:priority_queue:pop">pop</a> </td><td class="col1"> removes the first element </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> <a href="http://www.cppreference.com/wiki/container/priority_queue/swap" class="wikilink1" title="container:priority_queue:swap">swap</a> </td><td class="col1"> swaps the contents (<a href="../../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature) </td>
+	</tr>
+</table></div>
+<!-- EDIT6 TABLE [933-1110] -->
+</div>
+
+<h4><a name="protected_members" id="protected_members">Protected members</a></h4>
+<div class="level4">
+<div class="table sectionedit7"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <code>Container c</code> </td><td class="col1"> provides direct access to the underlying container </td>
+	</tr>
+</table></div>
+<!-- EDIT7 TABLE [1137-1209] -->
 </div>
 </div>
 </body>

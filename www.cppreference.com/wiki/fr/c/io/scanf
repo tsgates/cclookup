@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr"
+ lang="fr" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>fr:c:io:scanf</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:57-0700" />
+<meta name="keywords" content="fr,c,io,scanf" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/fr/c/io/scanf?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=fr:c:io" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/fr/c/io/scanf" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/fr/c/io/scanf" />
+<link rel="canonical" href="scanf" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='fr:c:io';var JSINFO = {"id":"fr:c:io:scanf","namespace":"fr:c:io"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="scanf" id="scanf">scanf</a></h2>
+<div class="level2">
+
+<p>
+Syntaxe :
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cstdio&gt;</span>
+    <span class="kw4">int</span> <span class="kw3">scanf</span><span class="br0">&#40;</span><span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>format, ... <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+La fonction <code>scanf()</code> lit, depuis l&#039;entrée standard (<code>stdin</code>), des données selon
+le <code>format</code> passé en paramètre et stocke les données dans la liste des argument
+qui suit. Son fonctionnement est semblable à celui de <code><a href="printf" class="wikilink1" title="fr:c:io:printf">printf()</a></code>.
+</p>
+
+<p>
+La chaîne de caractères <code>format</code> est composée de caractères de contrôle ;
+<code>scanf()</code> ignore les espace, tabulation et autres espaces “blancs”. Ces caractères
+de contrôles sont précédés par un <code>%</code> et doivent être utilisés ainsi :
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<th class="col0">Caractère de contrôle</th><th class="col1">Type de donnée reçu</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">%c</td><td class="col1">un seul caractère</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">%d</td><td class="col1">un nombre décimal</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">%i</td><td class="col1">un entier</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">%e, %f, %g</td><td class="col1">un nombre à virgule flottante</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0">%lf</td><td class="col1">un double</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0">%o</td><td class="col1">un nombre au format octal</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0">%s</td><td class="col1">une chaîne de caractères</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0">%x</td><td class="col1">un nombre au format hexadécimal</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0">%p</td><td class="col1">un pointeur</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0">%n</td><td class="col1">un entier égal au nombre de caractères lus jusque là</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0">%u</td><td class="col1">un entier non signé</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0">%[]</td><td class="col1">un ensemble de caractères</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0">%%</td><td class="col1">un caractère <code>%</code></td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [607-1040] -->
+<p>
+
+<code>scanf()</code> lit des données sur l&#039;entrée standard en faisant correspondre
+les caractère lus au format attendu. Lorsqu&#039;un caractère de contrôle est lu,
+la données correspondante est stockée dans la variable suivante. Les caractères
+“blancs” (espaces, tabulations, etc.) sont ignorés. Les autres caractères sont
+interprétés et les données correspondantes sont alors lues. La présence d&#039;un nombre
+entre le <code>%</code> et le caractère de contrôle indique que seulement ce nombre de
+caractères seront lus et convertis dans la variable. Si <code>scanf()</code> rencontre
+un ensemble de caractères, annoncés par la séquence de contrôle <code>%[]</code>, alors
+les caractères à l&#039;intérieur des crochets seront lu et stockés dans la variable.
+</p>
+
+<p>
+La valeur de retour de <code>scanf()</code> est le nombre de variable correctement assignées,
+ou bien <code><acronym title="End of file">EOF</acronym></code> en cas d&#039;erreur.
+</p>
+
+<p>
+Le bout de code suivant  utilise <code>scanf()</code> pour lire un entier, puis un nombre à virgule
+flottante et un double que l&#039;utilisateur aura indiqué au clavier.
+</p>
+
+<p>
+Remarquez que les arguments de destinations passés à <code>scanf()</code> sont passés par adresse
+comme l&#039;indique l&#039;esperluette <code>&amp;</code> précédant chaque variable.
+</p>
+<pre class="cpp code cpp">   <span class="kw4">int</span> i<span class="sy4">;</span>
+   <span class="kw4">float</span> f<span class="sy4">;</span>
+   <span class="kw4">double</span> d<span class="sy4">;</span>
+&nbsp;
+   <span class="kw3">printf</span><span class="br0">&#40;</span> <span class="st0">&quot;Tapez un entier : &quot;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+   <span class="kw3">scanf</span><span class="br0">&#40;</span> <span class="st0">&quot;%d&quot;</span>, <span class="sy3">&amp;</span>i <span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+   <span class="kw3">printf</span><span class="br0">&#40;</span> <span class="st0">&quot;Taper un nombre flottant : &quot;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+   <span class="kw3">scanf</span><span class="br0">&#40;</span> <span class="st0">&quot;%f&quot;</span>, <span class="sy3">&amp;</span>f <span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+   <span class="kw3">printf</span><span class="br0">&#40;</span> <span class="st0">&quot;tapez un double : &quot;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+   <span class="kw3">scanf</span><span class="br0">&#40;</span> <span class="st0">&quot;%lf&quot;</span>, <span class="sy3">&amp;</span>d <span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+   <span class="kw3">printf</span><span class="br0">&#40;</span> <span class="st0">&quot;Vous avez entré %d, %f, et %lf<span class="es1">\n</span>&quot;</span>, i, f, d <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Sujets connexes : <a href="fgets" class="wikilink1" title="fr:c:io:fgets">fgets</a>, <a href="fscanf" class="wikilink1" title="fr:c:io:fscanf">fscanf</a>, <a href="printf" class="wikilink1" title="fr:c:io:printf">printf</a>, <a href="sscanf" class="wikilink1" title="fr:c:io:sscanf">sscanf</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es"
+ lang="es" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>es:numeric:c:ldexp</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:32-0700" />
+<meta name="keywords" content="es,numeric,c,ldexp" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/es/numeric/c/ldexp?do=index" title="Índice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=es:numeric:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/es/numeric/c/ldexp" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/es/numeric/c/ldexp" />
+<link rel="canonical" href="ldexp" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='es:numeric:c';var JSINFO = {"id":"es:numeric:c:ldexp","namespace":"es:numeric:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="ldexp" id="ldexp">ldexp</a></h2>
+<div class="level2">
+
+<p>
+
+Sintaxis:
+
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cmath&gt;</span>
+    <span class="kw4">double</span> <span class="kw3">ldexp</span><span class="br0">&#40;</span> <span class="kw4">double</span> num, <span class="kw4">int</span> <span class="kw3">exp</span> <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+
+La función <code>ldexp()</code> toma dos números: una mantisa <code>num</code> y un exponente <code>exp</code> y calcula el número en punto flotante que forman como <code>num * (2 ^ exp)</code>.
+</p>
+
+<p>
+Si se produce un desbordamiento (p.ej.: el exponente es muy grande), la función devuelve <code>HUGE_VAL</code>.
+</p>
+
+<p>
+C++ provee las siguientes sobrecargas:
+
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cmath&gt;</span>
+    <span class="kw4">float</span> <span class="kw3">ldexp</span><span class="br0">&#40;</span> <span class="kw4">float</span> num, <span class="kw4">int</span> <span class="kw3">exp</span> <span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// ldexpf() en C99</span>
+    <span class="kw4">long</span> <span class="kw4">double</span> <span class="kw3">ldexp</span><span class="br0">&#40;</span> <span class="kw4">long</span> <span class="kw4">double</span> num, <span class="kw4">int</span> <span class="kw3">exp</span> <span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// ldexpl() en C99</span></pre>
+<p>
+En cierta forma <code>ldexp()</code> es la inversa de <code>frexp()</code>.
+</p>
+
+<p>
+Relacionados: <a href="frexp" class="wikilink1" title="es:numeric:c:frexp">frexp</a>, <a href="modf" class="wikilink1" title="es:numeric:c:modf">modf</a>
+
+</p>
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de"
+ lang="de" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    de:container:size    [C++ Reference]
+  </title>
+
+  <meta name="generator" content="DokuWiki" />
+<meta name="robots" content="noindex,follow" />
+<meta name="date" content="1969-12-31T16:00:00-0800" />
+<meta name="keywords" content="de,container,size" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/de/container/size?do=index" title="Übersicht" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=de:container" />
+<link rel="edit" title="Diese Seite bearbeiten" href="http://www.cppreference.com/wiki/de/container/size?do=edit" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/de/container/size" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/de/container/size" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='de:container';var JSINFO = {"id":"de:container:size","namespace":"de:container"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+
+  <link rel="shortcut icon" href="../../lib/tpl/custom1/images/favicon.png" />
+
+  </head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+      <div class="pagename">
+        [[<a href="http://www.cppreference.com/wiki/de/container/size?do=backlink"  title="Links hierher">de:container:size</a>]]
+      </div>
+      <div class="logo">
+        <a href="http://www.cppreference.com"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">C++ Reference</a>      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+    
+    
+        <div class="breadcrumbs">
+      <span class="bchead">Sie befinden sich hier: </span><a href="../../start"  title="start">C++ Reference</a> &raquo; <a href="../start"  title="de:start">C++ Referenz</a> &raquo; <a href="http://www.cppreference.com/wiki/de/container/start"  title="de:container:start" class="wikilink2" rel="nofollow">container</a> &raquo; <a href="size"  title="de:container:size" class="wikilink2" rel="nofollow">size</a>    </div>
+    
+  </div>
+
+<div class="plugin_translation"><span>Übersetzungen dieser Seite<sup><a href="../../localization" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><a href="http://www.cppreference.com/wiki/container/size" class="wikilink2" title="container:size" rel="nofollow">en</a></div></li>  <li><div class="li"><a href="http://www.cppreference.com/wiki/br-pt/container/size" class="wikilink2" title="br-pt:container:size" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="http://www.cppreference.com/wiki/cn/container/size" class="wikilink2" title="cn:container:size" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="http://www.cppreference.com/wiki/cz/container/size" class="wikilink2" title="cz:container:size" rel="nofollow">cz</a></div></li>  <li><div class="li"><span class="curid"><a href="size" class="wikilink2" title="de:container:size" rel="nofollow">de</a></span></div></li>  <li><div class="li"><a href="http://www.cppreference.com/wiki/es/container/size" class="wikilink2" title="es:container:size" rel="nofollow">es</a></div></li>  <li><div class="li"><a href="http://www.cppreference.com/wiki/fr/container/size" class="wikilink2" title="fr:container:size" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="http://www.cppreference.com/wiki/it/container/size" class="wikilink2" title="it:container:size" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="http://www.cppreference.com/wiki/jp/container/size" class="wikilink2" title="jp:container:size" rel="nofollow">jp</a></div></li>  <li><div class="li"><a href="http://www.cppreference.com/wiki/lv/container/size" class="wikilink2" title="lv:container:size" rel="nofollow">lv</a></div></li>  <li><div class="li"><a href="http://www.cppreference.com/wiki/nl/container/size" class="wikilink2" title="nl:container:size" rel="nofollow">nl</a></div></li>  <li><div class="li"><a href="http://www.cppreference.com/wiki/pl/container/size" class="wikilink2" title="pl:container:size" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="http://www.cppreference.com/wiki/ro/container/size" class="wikilink2" title="ro:container:size" rel="nofollow">ro</a></div></li>  <li><div class="li"><a href="http://www.cppreference.com/wiki/ru/container/size" class="wikilink2" title="ru:container:size" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="http://www.cppreference.com/wiki/sk/container/size" class="wikilink2" title="sk:container:size" rel="nofollow">sk</a></div></li>  <li><div class="li"><a href="http://www.cppreference.com/wiki/tr/container/size" class="wikilink2" title="tr:container:size" rel="nofollow">tr</a></div></li>  <li><div class="li"><a href="http://www.cppreference.com/wiki/tw/container/size" class="wikilink2" title="tw:container:size" rel="nofollow">tw</a></div></li></ul></div>
+  
+  
+  <div class="page">
+
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2828341-1";
+urchinTracker();
+</script>
+    <!-- wikipage start -->
+    
+<h1 class="sectionedit1"><a name="dieses_thema_existiert_noch_nicht" id="dieses_thema_existiert_noch_nicht">Dieses Thema existiert noch nicht</a></h1>
+<div class="level1">
+
+<p>
+
+Sie sind einem Link zu einer Seite gefolgt, die noch nicht existiert. Sie können die Seite mit dem Knopf <strong>“[Seite anlegen]„</strong> selbst anlegen und mit Inhalt füllen.
+</p>
+
+</div>
+
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+      <!--
+      <div class="doc">
+              </div>
+      -->
+    </div>
+
+   
+    <div class="bar" id="bar__bottom">
+      <div class="bar-left" id="bar__bottomleft">
+        <a href="http://www.cppreference.com/wiki/de/container/size?do=edit&amp;rev="  class="action create" accesskey="e" rel="nofollow" title="Seite anlegen">Seite anlegen</a> &#149;
+        <a href="http://www.cppreference.com/wiki/de/container/size?do=revisions"  class="action revs" accesskey="o" rel="nofollow" title="Ältere Versionen">Ältere Versionen</a>      </div>
+      <div class="bar-right" id="bar__bottomright">
+         &#149;
+         &#149;
+         &#149;
+        <a href="http://www.cppreference.com/wiki/de/container/size?do=login&amp;sectok=d3cca5ac319124b251ecd37edf955140"  class="action login" accesskey="" rel="nofollow" title="Anmelden">Anmelden</a> &#149;
+        <a href="http://www.cppreference.com/wiki/de/container/size?do=index"  class="action index" accesskey="x" rel="nofollow" title="Übersicht">Übersicht</a> &#149;
+        <a href="http://www.cppreference.com/wiki/de/container/size?do=recent"  class="action recent" accesskey="r" rel="nofollow" title="Letzte Änderungen">Letzte Änderungen</a> &#149;
+        <a  href="http://www.cppreference.com/wiki/feed.php" title="Recent changes RSS feed">RSS</a> &#149;
+        <a href='http://creativecommons.org/licenses/by/3.0/us/' title='Creative Commons license'>cc</a> &#149;
+        <form action="../../../index.html" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="no"></div>
+</body>
+</html>

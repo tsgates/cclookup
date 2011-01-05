@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru"
+ lang="ru" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>ru:chrono:c:strftime</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-11-08T12:48:34-0800" />
+<meta name="keywords" content="ru,chrono,c,strftime" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/ru/chrono/c/strftime?do=index" title="Все страницы" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=ru:chrono:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/ru/chrono/c/strftime" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/ru/chrono/c/strftime" />
+<link rel="canonical" href="strftime" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='ru:chrono:c';var JSINFO = {"id":"ru:chrono:c:strftime","namespace":"ru:chrono:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="strftime" id="strftime">strftime</a></h2>
+<div class="level2">
+
+<p>
+Синтаксис:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;ctime&gt;</span>
+    <span class="kw4">size_t</span> <span class="kw3">strftime</span><span class="br0">&#40;</span> <span class="kw4">char</span> <span class="sy2">*</span>str, <span class="kw4">size_t</span> maxsize, <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>fmt, <span class="kw4">struct</span> <span class="kw4">tm</span> <span class="sy2">*</span><span class="kw3">time</span> <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Функция strftime() формирует строку str, содержащую дату и время в соответствии со строкой формата fmt (Возвращает количество символов записанных в str).
+</p>
+
+<p>
+Следующие коды могут быть использованы в fmt, для установки различных видов времени:
+Certain codes may be used in fmt to specify different types of time:
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<th class="col0">код</th><th class="col1">значение</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><code>%a</code></td><td class="col1">аббревиатура дня недели (например Fri)</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><code>%A</code></td><td class="col1">полное название дня недели (например Friday)</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><code>%b</code></td><td class="col1">аббревиатура названия мсяца (например Oct)</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><code>%B</code></td><td class="col1">полное название мсяца (например October)</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><code>%c</code></td><td class="col1">стандартный формат даты и времени</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><code>%d</code></td><td class="col1">день месяца, в качестве числа (1-31)</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><code>%H</code></td><td class="col1">24 часовой формат (00-23)</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><code>%I</code></td><td class="col1">12 часовой формат (1-12)</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><code>%j</code></td><td class="col1">день года (1-366)</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><code>%m</code></td><td class="col1">месяц как число (1-12). Примечание: в некоторых версиях Microsoft Visual C++ могут использовать значения в диапазоне от 0-11.</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><code>%M</code></td><td class="col1">минуты в числовом формате (0-59)</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><code>%p</code></td><td class="col1">AM или PM</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><code>%S</code></td><td class="col1">секунды как числа (0-59)</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><code>%U</code></td><td class="col1">номер недели в году, (0-53), когда неделя == 1 тогда первый день == Воскресенье</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><code>%w</code></td><td class="col1">день недели в виде числа (0-6), где воскресенье == 0</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><code>%W</code></td><td class="col1">номер недели в году, (0-53), когда неделя == 1 тогда первый день == Понедельник</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><code>%x</code></td><td class="col1">стандартный формат даты</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"><code>%X</code></td><td class="col1">стандартный формат времени</td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"><code>%y</code></td><td class="col1">год без учета века (0-99)</td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"><code>%Y</code></td><td class="col1">год с учета века</td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"><code>%Z</code></td><td class="col1">навание часового пояса</td>
+	</tr>
+	<tr class="row22">
+		<td class="col0"><code>%%</code></td><td class="col1">знак процента</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [650-2288] -->
+<p>
+
+Функция strftime() возвращает количество символов записанных str, и ноль в случае ошибки.
+</p>
+
+<p>
+Смотри также: <a href="http://www.cppreference.com/wiki/ru/chrono/c/gmtime" class="wikilink2" title="ru:chrono:c:gmtime" rel="nofollow">gmtime</a>, <a href="http://www.cppreference.com/wiki/ru/chrono/c/localtime" class="wikilink2" title="ru:chrono:c:localtime" rel="nofollow">localtime</a>, <a href="time" class="wikilink1" title="ru:chrono:c:time">time</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cz"
+ lang="cz" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>cz:c:other:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:27-0700" />
+<meta name="keywords" content="cz,c,other,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/cz/c/other/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=cz:c:other" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/cz/c/other/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/cz/c/other/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='cz:c:other';var JSINFO = {"id":"cz:c:other:start","namespace":"cz:c:other"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="other_standard_c_functions_ostatni_funkce_jazyka_c" id="other_standard_c_functions_ostatni_funkce_jazyka_c">Other standard C functions (ostatní funkce jazyka C)</a></h1>
+<div class="level1">
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/c/other/abort" class="wikilink2" title="cz:c:other:abort" rel="nofollow">abort</a></td><td class="col1">ukončí program s příznakem selhání</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/c/other/assert" class="wikilink2" title="cz:c:other:assert" rel="nofollow">assert</a></td><td class="col1">je-li výraz nepravdivý ukončí program</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/c/other/atexit" class="wikilink2" title="cz:c:other:atexit" rel="nofollow">atexit</a></td><td class="col1">registruje funkce, které se zavolají při ukončení programu</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/c/other/bsearch" class="wikilink2" title="cz:c:other:bsearch" rel="nofollow">bsearch</a></td><td class="col1">hlédá pomocí bisekce</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/c/other/exit" class="wikilink2" title="cz:c:other:exit" rel="nofollow">exit</a></td><td class="col1">ukončí program</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/c/other/getenv" class="wikilink2" title="cz:c:other:getenv" rel="nofollow">getenv</a></td><td class="col1">vrací informace prostředí</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/c/other/longjmp" class="wikilink2" title="cz:c:other:longjmp" rel="nofollow">longjmp</a></td><td class="col1">začne vykonávat kód v určitém bodě programu nastavený pomocí setjmp</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/c/other/putenv" class="wikilink2" title="cz:c:other:putenv" rel="nofollow">putenv</a></td><td class="col1">přidá/změní nastavení prostředí</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/c/other/qsort" class="wikilink2" title="cz:c:other:qsort" rel="nofollow">qsort</a></td><td class="col1">provede quicksort</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/c/other/raise" class="wikilink2" title="cz:c:other:raise" rel="nofollow">raise</a></td><td class="col1">pošle signál programu</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/c/other/rand" class="wikilink2" title="cz:c:other:rand" rel="nofollow">rand</a></td><td class="col1">vrací pseudonáhodné číslo</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/c/other/setjmp" class="wikilink2" title="cz:c:other:setjmp" rel="nofollow">setjmp</a></td><td class="col1">nastaví bod programu k vykonání pomocí longjmp</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/c/other/signal" class="wikilink2" title="cz:c:other:signal" rel="nofollow">signal</a></td><td class="col1">registruje funkci jako obsluhu signálu</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/c/other/srand" class="wikilink2" title="cz:c:other:srand" rel="nofollow">srand</a></td><td class="col1">inicializuje náhodný generátor čísel</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/c/other/system" class="wikilink2" title="cz:c:other:system" rel="nofollow">system</a></td><td class="col1">předá příkaz vychozímu příkazovému interpretru</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/c/other/va_arg" class="wikilink2" title="cz:c:other:va_arg" rel="nofollow">va_arg</a></td><td class="col1">používá seznam parametrů proměnné délky</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [76-917] -->
+</div>
+</div>
+</body>
+</html>

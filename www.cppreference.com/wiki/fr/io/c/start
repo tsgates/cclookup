@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr"
+ lang="fr" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>fr:io:c:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:59-0700" />
+<meta name="keywords" content="fr,io,c,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/fr/io/c/start?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=fr:io:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/fr/io/c/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/fr/io/c/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='fr:io:c';var JSINFO = {"id":"fr:io:c:start","namespace":"fr:io:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="standard_c_io" id="standard_c_io">Standard C I/O</a></h1>
+<div class="level1">
+
+<p>
+
+Ces fonctions fournissent une alternative aux <a href="http://www.cppreference.com/wiki/fr/io/start" class="wikilink2" title="fr:io:start" rel="nofollow">classes C++ de flux d&#039;entrée/sortie</a>
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="clearerr" class="wikilink1" title="fr:io:c:clearerr">clearerr</a></td><td class="col1">efface les erreurs</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="fclose" class="wikilink1" title="fr:io:c:fclose">fclose</a></td><td class="col1">ferme un fichier</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="feof" class="wikilink1" title="fr:io:c:feof">feof</a></td><td class="col1">vrai si à la fin du fichier</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="ferror" class="wikilink1" title="fr:io:c:ferror">ferror</a></td><td class="col1">vérifie pour une erreur de fichier</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="fflush" class="wikilink1" title="fr:io:c:fflush">fflush</a></td><td class="col1">écrit le contenu du buffer de sortie</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="fgetc" class="wikilink1" title="fr:io:c:fgetc">fgetc</a></td><td class="col1">récupère un caractère à partir d&#039;un flux</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="fgetpos" class="wikilink1" title="fr:io:c:fgetpos">fgetpos</a></td><td class="col1">récupère l&#039;indicateur de la position du fichier</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="fgets" class="wikilink1" title="fr:io:c:fgets">fgets</a></td><td class="col1">récupèe une chaîne de caractère à partir d&#039;un flux</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="fopen" class="wikilink1" title="fr:io:c:fopen">fopen</a></td><td class="col1">ouvre un fichier</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="fprintf" class="wikilink1" title="fr:io:c:fprintf">fprintf</a></td><td class="col1">impression de la sortie formatée dans un fichier</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="fputc" class="wikilink1" title="fr:io:c:fputc">fputc</a></td><td class="col1">écrit un caractère dans un fichier</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="fputs" class="wikilink1" title="fr:io:c:fputs">fputs</a></td><td class="col1">écrit une chaîne de caractère dans un fichier</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><a href="fread" class="wikilink1" title="fr:io:c:fread">fread</a></td><td class="col1">lecture à partir un fichier</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><a href="freopen" class="wikilink1" title="fr:io:c:freopen">freopen</a></td><td class="col1">ouvre un flux existant sous un nom différent</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><a href="fscanf" class="wikilink1" title="fr:io:c:fscanf">fscanf</a></td><td class="col1">lecture d&#039;une entrée formatée à partir d&#039;un fichier</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><a href="fseek" class="wikilink1" title="fr:io:c:fseek">fseek</a></td><td class="col1">déplace le curseur dans un fichier</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><a href="fsetpos" class="wikilink1" title="fr:io:c:fsetpos">fsetpos</a></td><td class="col1">déplace le curseur dans un fichier</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><a href="ftell" class="wikilink1" title="fr:io:c:ftell">ftell</a></td><td class="col1">retourne la position actuelle du curseur</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"><a href="fwrite" class="wikilink1" title="fr:io:c:fwrite">fwrite</a></td><td class="col1">écrit dans un fichier</td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"><a href="getc" class="wikilink1" title="fr:io:c:getc">getc</a></td><td class="col1">lecture d&#039;un caractère dans un fichier</td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"><a href="getchar" class="wikilink1" title="fr:io:c:getchar">getchar</a></td><td class="col1">lecture d&#039;un caractère depuis <em>stdin</em></td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"><a href="gets" class="wikilink1" title="fr:io:c:gets">gets</a></td><td class="col1">lecture d&#039;une chaîne de caractère depuis <em>stdin</em></td>
+	</tr>
+	<tr class="row22">
+		<td class="col0"><a href="perror" class="wikilink1" title="fr:io:c:perror">perror</a></td><td class="col1">affiche une chaîne de caractère représentant l&#039;erreur à <em>stderr</em></td>
+	</tr>
+	<tr class="row23">
+		<td class="col0"><a href="printf" class="wikilink1" title="fr:io:c:printf">printf</a></td><td class="col1">écrit une sortie formatée dans <em>stdout</em></td>
+	</tr>
+	<tr class="row24">
+		<td class="col0"><a href="putc" class="wikilink1" title="fr:io:c:putc">putc</a></td><td class="col1">écrit un caractère dans <em>stdout</em></td>
+	</tr>
+	<tr class="row25">
+		<td class="col0"><a href="putchar" class="wikilink1" title="fr:io:c:putchar">putchar</a></td><td class="col1">écrit un caractère dans <em>stdout</em></td>
+	</tr>
+	<tr class="row26">
+		<td class="col0"><a href="puts" class="wikilink1" title="fr:io:c:puts">puts</a></td><td class="col1">écrit une chaîne de caractère dans <em>stdout</em></td>
+	</tr>
+	<tr class="row27">
+		<td class="col0"><a href="remove" class="wikilink1" title="fr:io:c:remove">remove</a></td><td class="col1">efface un fichier</td>
+	</tr>
+	<tr class="row28">
+		<td class="col0"><a href="rename" class="wikilink1" title="fr:io:c:rename">rename</a></td><td class="col1">renomme un fichier</td>
+	</tr>
+	<tr class="row29">
+		<td class="col0"><a href="rewind" class="wikilink1" title="fr:io:c:rewind">rewind</a></td><td class="col1">déplace le curseur du fichier au début du fichier</td>
+	</tr>
+	<tr class="row30">
+		<td class="col0"><a href="scanf" class="wikilink1" title="fr:io:c:scanf">scanf</a></td><td class="col1">lecture d&#039;une entrée formatée à partir de <em>stdin</em></td>
+	</tr>
+	<tr class="row31">
+		<td class="col0"><a href="setbuf" class="wikilink1" title="fr:io:c:setbuf">setbuf</a></td><td class="col1">définit le <em>buffer</em> pour un flux spécifique</td>
+	</tr>
+	<tr class="row32">
+		<td class="col0"><a href="setvbuf" class="wikilink1" title="fr:io:c:setvbuf">setvbuf</a></td><td class="col1">définit le <em>buffer</em> et sa taille pour un flux spécifique</td>
+	</tr>
+	<tr class="row33">
+		<td class="col0"><a href="snprintf" class="wikilink1" title="fr:io:c:snprintf">snprintf</a></td><td class="col1">écrit une sortie formatée dans un <em>buffer</em> (avec vérification de la limite)</td>
+	</tr>
+	<tr class="row34">
+		<td class="col0"><a href="sprintf" class="wikilink1" title="fr:io:c:sprintf">sprintf</a></td><td class="col1">écrit une sortie formatée dans un <em>buffer</em></td>
+	</tr>
+	<tr class="row35">
+		<td class="col0"><a href="sscanf" class="wikilink1" title="fr:io:c:sscanf">sscanf</a></td><td class="col1">lecture d&#039;une entrée formatée à partir d&#039;un <em>buffer</em></td>
+	</tr>
+	<tr class="row36">
+		<td class="col0"><a href="tmpfile" class="wikilink1" title="fr:io:c:tmpfile">tmpfile</a></td><td class="col1">retourne un pointeur dans un fichier temporaore</td>
+	</tr>
+	<tr class="row37">
+		<td class="col0"><a href="tmpnam" class="wikilink1" title="fr:io:c:tmpnam">tmpnam</a></td><td class="col1">retourne un nom de fichier unique</td>
+	</tr>
+	<tr class="row38">
+		<td class="col0"><a href="ungetc" class="wikilink1" title="fr:io:c:ungetc">ungetc</a></td><td class="col1">met un caractère à sa place d&#039;origine dans un flux</td>
+	</tr>
+	<tr class="row39">
+		<td class="col0"><a href="vprintf_vfprintf_vsprintf" class="wikilink1" title="fr:io:c:vprintf_vfprintf_vsprintf">vprintf, vfprintf, et vsprintf</a></td><td class="col1">écrit une sortie formatée à partir d&#039;une liste d&#039;arguments</td>
+	</tr>
+	<tr class="row40">
+		<td class="col0"><a href="vscanf_vfscanf_vsscanf" class="wikilink1" title="fr:io:c:vscanf_vfscanf_vsscanf">vscanf, vfscanf, et vsscanf</a></td><td class="col1">récupère une entrée formatée à partir de <em>stdin</em> avec une liste d&#039;arguments</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [132-2552] -->
+</div>
+</div>
+</body>
+</html>

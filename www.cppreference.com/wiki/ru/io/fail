@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru"
+ lang="ru" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>ru:io:fail</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:12-0700" />
+<meta name="keywords" content="ru,io,fail" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/ru/io/fail?do=index" title="Все страницы" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=ru:io" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/ru/io/fail" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/ru/io/fail" />
+<link rel="canonical" href="fail" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='ru:io';var JSINFO = {"id":"ru:io:fail","namespace":"ru:io"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="fail" id="fail">fail</a></h2>
+<div class="level2">
+
+<p>
+Синтаксис:
+</p>
+<pre class="cpp code cpp">    <span class="kw4">bool</span> stream<span class="sy4">::</span><span class="me2">fail</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Функция fail() возвращат истину, если обнаружена ошибка в текущем потоке, иначе возвращает ложь. Функция может использоваться для проверки успешности предыдущей операции.
+</p>
+
+<p>
+Примеры сбоев, для которых наначаются ошибки:
+</p>
+<ul>
+<li class="level1"><div class="li"> файл не найден (при открытии файла для чтения),</div>
+</li>
+<li class="level1"><div class="li"> файл не может быть создан (при открытии файла для записи),</div>
+</li>
+<li class="level1"><div class="li"> конец файла достигнут до завершения чтения запрошенных данных,</div>
+</li>
+<li class="level1"><div class="li"> некорректный формат данных (например символы, при чтении чисел).</div>
+</li>
+</ul>
+
+<p>
+
+Заданное один раз, состояние ошибки будет переводить все остальные операции с потоком в состояние ошибки, пока состояние ошибки не будет сброшено с помощью функции сброса.
+</p>
+
+<p>
+Смотрите также: <a href="bad" class="wikilink1" title="ru:io:bad">bad</a>, <a href="clear" class="wikilink1" title="ru:io:clear">clear</a>, <a href="eof" class="wikilink1" title="ru:io:eof">eof</a>, <a href="exceptions" class="wikilink1" title="ru:io:exceptions">exceptions</a>, <a href="good" class="wikilink1" title="ru:io:good">good</a>, <a href="rdstate" class="wikilink1" title="ru:io:rdstate">rdstate</a>
+</p>
+
+<p>
+Состояния потока:
+</p>
+<ul>
+<li class="level1"><div class="li">if (s): Предыдущая операция успешна (аналог !s.fail() ).</div>
+</li>
+<li class="level1"><div class="li">if (s.fail()): Предыдущая операция не удалась.</div>
+</li>
+<li class="level1"><div class="li">if (s.eof()): Произведена попытка чтения за границей файла.</div>
+</li>
+<li class="level1"><div class="li">if (s.bad()): Состояние потока не определено. Поток не может быть больше использован.</div>
+</li>
+<li class="level1"><div class="li">if (s.good()): Нет ни одного из состояний bad/eof/fail.</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT1 SECTION "fail" [3-] --></div>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de"
+ lang="de" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>de:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-11-08T14:33:33-0800" />
+<meta name="keywords" content="de,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/de/start?do=index" title="Übersicht" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=de" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/de/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/de/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='de';var JSINFO = {"id":"de:start","namespace":"de"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="c_referenz" id="c_referenz">C++ Referenz</a></h2>
+<div class="level2">
+<table class="columns-plugin" style="width:100%">
+<tr><td class="first" style="width:50%;vertical-align:top;">
+
+<p>
+<strong>Allgemeine Themen</strong>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="about/faq" class="wikilink1" title="de:about:faq">FAQ (Häufig gestellte Fragen)</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="preprocessor/start" class="wikilink1" title="de:preprocessor:start">Präprozessor-Anweisungen</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/de/operator_precedence" class="wikilink2" title="de:operator_precedence" rel="nofollow">Operatorrangfolge</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/de/escape_sequences" class="wikilink2" title="de:escape_sequences" rel="nofollow">Escape-Sequenzen</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="ascii" class="wikilink1" title="de:ascii">ASCII-Tabelle</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/de/data_types" class="wikilink2" title="de:data_types" rel="nofollow">Datentypen</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="keywords" class="wikilink2" title="de:keywords" rel="nofollow">Schlüsselwörter</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/de/header_files" class="wikilink2" title="de:header_files" rel="nofollow">Header-Dateien</a></div>
+</li>
+</ul>
+
+<p>
+
+<strong>Standard C Bibliothek</strong>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="c" class="wikilink2" title="de:c" rel="nofollow">Übersicht</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="io/c/start" class="wikilink1" title="de:io:c:start">Standard C Ein- und Ausgabe</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/de/string/c/start" class="wikilink2" title="de:string:c:start" rel="nofollow">Standard C Zeichen und Zeichenketten</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/de/math/c/start" class="wikilink2" title="de:math:c:start" rel="nofollow">Standard C Mathematik</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/de/chrono/c/start" class="wikilink2" title="de:chrono:c:start" rel="nofollow">Standard C Zeit &amp; Datum</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/de/memory/c/start" class="wikilink2" title="de:memory:c:start" rel="nofollow">Standard C Speicher</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/de/c/other" class="wikilink2" title="de:c:other" rel="nofollow">Andere Standard C Funktionen</a></div>
+</li>
+</ul>
+</td><td class="last">
+
+<p>
+<strong>C++ Allgemein</strong>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="string/start" class="wikilink1" title="de:string:start">C++ Zeichenketten</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="io" class="wikilink2" title="de:io" rel="nofollow">C++ Ein- und Ausgabe</a></div>
+<ul>
+<li class="level2"><div class="li"> <a href="io/sstream" class="wikilink2" title="de:io:sstream" rel="nofollow">C++ String Streams</a></div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/de/exception" class="wikilink2" title="de:exception" rel="nofollow">C++ Ausnahmen</a></div>
+</li>
+</ul>
+
+<p>
+
+<strong>C++ Standard Template Library (STL)</strong>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="stl" class="wikilink2" title="de:stl" rel="nofollow">Übersicht</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="stl/algorithm" class="wikilink2" title="de:stl:algorithm" rel="nofollow">C++ Algorithmen</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="stl/vector" class="wikilink1" title="de:stl:vector">C++ Vektoren</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/de/stl/deque" class="wikilink2" title="de:stl:deque" rel="nofollow">C++ Warteschlangen mit zwei Enden</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="stl/list/start" class="wikilink1" title="de:stl:list:start">C++ Listen</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/de/stl/priority_queue" class="wikilink2" title="de:stl:priority_queue" rel="nofollow">C++ priorisierte Warteschlange</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/de/stl/queue" class="wikilink2" title="de:stl:queue" rel="nofollow">C++ Warteschlangen</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/de/stl/stack" class="wikilink2" title="de:stl:stack" rel="nofollow">C++ Stapel</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="stl/set" class="wikilink2" title="de:stl:set" rel="nofollow">C++ Sets</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/de/stl/multiset" class="wikilink2" title="de:stl:multiset" rel="nofollow">C++ Multisets</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/de/stl/map" class="wikilink2" title="de:stl:map" rel="nofollow">C++ Maps</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/de/stl/multimap" class="wikilink2" title="de:stl:multimap" rel="nofollow">C++ Multimaps</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/de/stl/bitset" class="wikilink2" title="de:stl:bitset" rel="nofollow">C++ Bitsets</a></div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <a href="stl/iterators" class="wikilink1" title="de:stl:iterators">Iteratoren</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/de/stl/functional" class="wikilink2" title="de:stl:functional" rel="nofollow">Function objects/adapters</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/de/stl/utility" class="wikilink2" title="de:stl:utility" rel="nofollow">Allgemeine Hilfsmittel</a></div>
+</li>
+</ul>
+</td></tr></table>
+
+</div>
+</div>
+</body>
+</html>

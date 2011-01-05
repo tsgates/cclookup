@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl"
+ lang="nl" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>nl:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-11-08T14:35:34-0800" />
+<meta name="keywords" content="nl,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/nl/start?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=nl" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/nl/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/nl/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='nl';var JSINFO = {"id":"nl:start","namespace":"nl"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="c_naslagwerk" id="c_naslagwerk">C++ Naslagwerk</a></h2>
+<div class="level2">
+<table class="columns-plugin" style="width:100%">
+<tr><td class="first" style="width:50%;vertical-align:top;">
+
+<p>
+<strong>Algemene onderwerpen</strong>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/nl/about/faq" class="wikilink2" title="nl:about:faq" rel="nofollow">FAQ (Veelgestelde vragen) </a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/nl/preprocessor" class="wikilink2" title="nl:preprocessor" rel="nofollow">Pre-processor directieven</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/nl/operator_precedence" class="wikilink2" title="nl:operator_precedence" rel="nofollow">Bewerkingsvolgorde bij operatoren </a></div>
+</li>
+<li class="level1"><div class="li"> <a href="escape_sequences" class="wikilink1" title="nl:escape_sequences">Escape sequences</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="ascii" class="wikilink1" title="nl:ascii">ASCII-tabel</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/nl/data_types" class="wikilink2" title="nl:data_types" rel="nofollow">Data typen</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/nl/keywords/start" class="wikilink2" title="nl:keywords:start" rel="nofollow">Gereserveerde woorden en uitdrukkingen</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/nl/header_files/start" class="wikilink2" title="nl:header_files:start" rel="nofollow">Header bestanden</a></div>
+</li>
+</ul>
+
+<p>
+
+<strong>Standard C Library</strong>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/nl/c/start" class="wikilink2" title="nl:c:start" rel="nofollow">Overzicht</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/nl/io/c/start" class="wikilink2" title="nl:io:c:start" rel="nofollow">Standard C I/O</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/nl/string/c/start" class="wikilink2" title="nl:string:c:start" rel="nofollow">Standaard C strings &amp; karakters</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/nl/numeric/c/start" class="wikilink2" title="nl:numeric:c:start" rel="nofollow">Standaard C mathematiek</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/nl/chrono/c/start" class="wikilink2" title="nl:chrono:c:start" rel="nofollow">Standaard C tijd &amp; datum</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/nl/memory/c/start" class="wikilink2" title="nl:memory:c:start" rel="nofollow">Standaard C geheugen</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/nl/c/other/start" class="wikilink2" title="nl:c:other:start" rel="nofollow">Overige standaard C functies</a></div>
+</li>
+</ul>
+</td><td class="last">
+
+<p>
+<strong>Algemeen C++</strong>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/nl/string/start" class="wikilink2" title="nl:string:start" rel="nofollow">C++ strings</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/nl/io/start" class="wikilink2" title="nl:io:start" rel="nofollow">C++ I/O</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/nl/io/sstream/start" class="wikilink2" title="nl:io:sstream:start" rel="nofollow">C++ string streams</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/nl/exception/start" class="wikilink2" title="nl:exception:start" rel="nofollow">C++ exceptions</a></div>
+</li>
+</ul>
+
+<p>
+
+<strong>C++ Standard Template Library (STL)</strong>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/nl/stl/start" class="wikilink2" title="nl:stl:start" rel="nofollow">Overzicht</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/nl/stl/algorithm/start" class="wikilink2" title="nl:stl:algorithm:start" rel="nofollow">C++ algorithmen</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/nl/stl/vector/start" class="wikilink2" title="nl:stl:vector:start" rel="nofollow">C++ container vector</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/nl/stl/deque/start" class="wikilink2" title="nl:stl:deque:start" rel="nofollow">C++ double-ended queue</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/nl/stl/list/start" class="wikilink2" title="nl:stl:list:start" rel="nofollow">C++ container lijst </a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/nl/stl/priority_queue/start" class="wikilink2" title="nl:stl:priority_queue:start" rel="nofollow">C++ geprioriseerde rijen (priority queues)</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/nl/stl/queue/start" class="wikilink2" title="nl:stl:queue:start" rel="nofollow">C++ rijen (queues)</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/nl/stl/stack/start" class="wikilink2" title="nl:stl:stack:start" rel="nofollow">C++ stapels</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/nl/stl/set/start" class="wikilink2" title="nl:stl:set:start" rel="nofollow">C++ sets</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/nl/stl/multiset/start" class="wikilink2" title="nl:stl:multiset:start" rel="nofollow">C++ multisets</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/nl/stl/map/start" class="wikilink2" title="nl:stl:map:start" rel="nofollow">C++ mappen</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/nl/stl/multimap/start" class="wikilink2" title="nl:stl:multimap:start" rel="nofollow">C++ multimappen</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/nl/stl/bitset/start" class="wikilink2" title="nl:stl:bitset:start" rel="nofollow">C++ bitsets</a></div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/nl/stl/iterators" class="wikilink2" title="nl:stl:iterators" rel="nofollow">Iteratoren</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/nl/stl/functional/start" class="wikilink2" title="nl:stl:functional:start" rel="nofollow">Functie objekten/adaptors</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/nl/stl/utility/start" class="wikilink2" title="nl:stl:utility:start" rel="nofollow">Algemene hulpmidellen</a></div>
+</li>
+</ul>
+</td></tr></table>
+
+</div>
+</div>
+</body>
+</html>

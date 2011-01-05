@@ -5,141 +5,178 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>string:start</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="generator" content="DokuWiki" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2009-07-01T08:02:29-0700" />
+<meta name="date" content="2010-11-12T05:28:12-0800" />
 <meta name="keywords" content="string,start" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/string/start?do=index" title="Index" />
+<link rel="start" href="../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/string/start?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
 <link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=string" />
 <link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/string/start" />
 <link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/string/start" />
-<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='string';var JSINFO = {"id":"string:start","namespace":"string"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
 
+<ul class="toc">
+<li class="level1"><div class="li"><span class="li"><a href="start#strings_library" class="toc">Strings library</a></span></div>
+<ul class="toc">
+<li class="clear">
 
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="start#char_traits" class="toc">Char traits</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="start#strings" class="toc">Strings</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="start#c-style_strings" class="toc">C-style strings</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
 
-<h1><a name="c_strings" id="c_strings">C++ Strings</a></h1>
+<h1 class="sectionedit1"><a name="strings_library" id="strings_library">Strings library</a></h1>
 <div class="level1">
+
+</div>
+<!-- EDIT1 SECTION "Strings library" [1-29] -->
+<h3 class="sectionedit2"><a name="char_traits" id="char_traits">Char traits</a></h3>
+<div class="level3">
 
 <p>
 
-The string class provides a useful way to manipulate and store sequences of characters, and is defined in the <code>std</code> namespace in the <code>&lt;string&gt;</code> header file.
+Strings library provides <a href="char_traits" class="wikilink1" title="string:char_traits">char_traits</a>, a template class, defining types and functions for a character container. Several specializations are defined in header <code>&lt;string&gt;</code>:
 
 </p>
-<table class="inline">
+<div class="table sectionedit3"><table class="inline">
 	<tr class="row0">
-		<td class="col0"><a href="string_constructors" class="wikilink1" title="string:string_constructors">Constructors</a></td><td class="col1">create strings from arrays of characters and other strings</td>
+		<td class="col0"> <code>char_traits&lt; char &gt;</code> </td><td class="col1"> template specialization, defining operations with <code>char</code> character type </td>
 	</tr>
 	<tr class="row1">
-		<td class="col0"><a href="string_operators" class="wikilink1" title="string:string_operators">Operators</a></td><td class="col1">concatenate strings, assign strings, use strings for I/O, compare strings</td>
+		<td class="col0"> <code>char_traits&lt; wchar_t &gt;</code> </td><td class="col1"> template specialization, defining operations with <code>wchar_t</code> character type </td>
 	</tr>
 	<tr class="row2">
-		<td class="col0"><a href="append" class="wikilink1" title="string:append">append</a></td><td class="col1">append characters and strings onto a string</td>
+		<td class="col0"> <code>char_traits&lt; char16_t &gt;</code> </td><td class="col1"> template specialization, defining operations with <code>char16_t</code> character type (<a href="../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</td>
 	</tr>
 	<tr class="row3">
-		<td class="col0"><a href="assign" class="wikilink1" title="string:assign">assign</a></td><td class="col1">give a string values from strings of characters and other C++ strings</td>
+		<td class="col0"> <code>char_traits&lt; char32_t &gt;</code> </td><td class="col1"> template specialization, defining operations with <code>char32_t</code> character type (<a href="../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</td>
 	</tr>
-	<tr class="row4">
-		<td class="col0"><a href="at" class="wikilink1" title="string:at">at</a></td><td class="col1">returns the character at a specific location</td>
-	</tr>
-	<tr class="row5">
-		<td class="col0"><a href="begin" class="wikilink1" title="string:begin">begin</a></td><td class="col1">returns an iterator to the beginning of the string</td>
-	</tr>
-	<tr class="row6">
-		<td class="col0"><a href="c_str" class="wikilink1" title="string:c_str">c_str</a></td><td class="col1">returns a non-modifiable standard C character array version of the string</td>
-	</tr>
-	<tr class="row7">
-		<td class="col0"><a href="capacity" class="wikilink1" title="string:capacity">capacity</a></td><td class="col1">returns the number of characters that the string can hold</td>
-	</tr>
-	<tr class="row8">
-		<td class="col0"><a href="clear" class="wikilink1" title="string:clear">clear</a></td><td class="col1">removes all characters from the string</td>
-	</tr>
-	<tr class="row9">
-		<td class="col0"><a href="compare" class="wikilink1" title="string:compare">compare</a></td><td class="col1">compares two strings</td>
-	</tr>
-	<tr class="row10">
-		<td class="col0"><a href="copy" class="wikilink1" title="string:copy">copy</a></td><td class="col1">copies characters from a string into an array</td>
-	</tr>
-	<tr class="row11">
-		<td class="col0"><a href="data" class="wikilink1" title="string:data">data</a></td><td class="col1">returns a pointer to the first character of a string</td>
-	</tr>
-	<tr class="row12">
-		<td class="col0"><a href="empty" class="wikilink1" title="string:empty">empty</a></td><td class="col1">true if the string has no characters</td>
-	</tr>
-	<tr class="row13">
-		<td class="col0"><a href="end" class="wikilink1" title="string:end">end</a></td><td class="col1">returns an iterator just past the last character of a string</td>
-	</tr>
-	<tr class="row14">
-		<td class="col0"><a href="erase" class="wikilink1" title="string:erase">erase</a></td><td class="col1">removes characters from a string</td>
-	</tr>
-	<tr class="row15">
-		<td class="col0"><a href="find" class="wikilink1" title="string:find">find</a></td><td class="col1">find characters in the string</td>
-	</tr>
-	<tr class="row16">
-		<td class="col0"><a href="find_first_not_of" class="wikilink1" title="string:find_first_not_of">find_first_not_of</a></td><td class="col1">find first absence of characters</td>
-	</tr>
-	<tr class="row17">
-		<td class="col0"><a href="find_first_of" class="wikilink1" title="string:find_first_of">find_first_of</a></td><td class="col1">find first occurrence of characters</td>
-	</tr>
-	<tr class="row18">
-		<td class="col0"><a href="find_last_not_of" class="wikilink1" title="string:find_last_not_of">find_last_not_of</a></td><td class="col1">find last absence of characters</td>
-	</tr>
-	<tr class="row19">
-		<td class="col0"><a href="find_last_of" class="wikilink1" title="string:find_last_of">find_last_of</a></td><td class="col1">find last occurrence of characters</td>
-	</tr>
-	<tr class="row20">
-		<td class="col0"><a href="getline" class="wikilink1" title="string:getline">getline</a></td><td class="col1">read data from an I/O stream into a string</td>
-	</tr>
-	<tr class="row21">
-		<td class="col0"><a href="insert" class="wikilink1" title="string:insert">insert</a></td><td class="col1">insert characters into a string</td>
-	</tr>
-	<tr class="row22">
-		<td class="col0"><a href="length" class="wikilink1" title="string:length">length</a></td><td class="col1">returns the length of the string</td>
-	</tr>
-	<tr class="row23">
-		<td class="col0"><a href="max_size" class="wikilink1" title="string:max_size">max_size</a></td><td class="col1">returns the maximum number of characters that the string can hold</td>
-	</tr>
-	<tr class="row24">
-		<td class="col0"><a href="push_back" class="wikilink1" title="string:push_back">push_back</a></td><td class="col1">add a character to the end of the string</td>
-	</tr>
-	<tr class="row25">
-		<td class="col0"><a href="rbegin" class="wikilink1" title="string:rbegin">rbegin</a></td><td class="col1">returns a reverse_iterator to the end of the string</td>
-	</tr>
-	<tr class="row26">
-		<td class="col0"><a href="rend" class="wikilink1" title="string:rend">rend</a></td><td class="col1">returns a reverse_iterator to the beginning of the string</td>
-	</tr>
-	<tr class="row27">
-		<td class="col0"><a href="replace" class="wikilink1" title="string:replace">replace</a></td><td class="col1">replace characters in the string</td>
-	</tr>
-	<tr class="row28">
-		<td class="col0"><a href="reserve" class="wikilink1" title="string:reserve">reserve</a></td><td class="col1">sets the minimum capacity of the string</td>
-	</tr>
-	<tr class="row29">
-		<td class="col0"><a href="resize" class="wikilink1" title="string:resize">resize</a></td><td class="col1">change the size of the string</td>
-	</tr>
-	<tr class="row30">
-		<td class="col0"><a href="rfind" class="wikilink1" title="string:rfind">rfind</a></td><td class="col1">find the last occurrence of a substring</td>
-	</tr>
-	<tr class="row31">
-		<td class="col0"><a href="size" class="wikilink1" title="string:size">size</a></td><td class="col1">returns the number of items in the string</td>
-	</tr>
-	<tr class="row32">
-		<td class="col0"><a href="substr" class="wikilink1" title="string:substr">substr</a></td><td class="col1">returns a certain substring</td>
-	</tr>
-	<tr class="row33">
-		<td class="col0"><a href="swap" class="wikilink1" title="string:swap">swap</a></td><td class="col1">swap the contents of this string with another</td>
-	</tr>
-</table>
+</table></div>
+<!-- EDIT3 TABLE [228-705] -->
+</div>
+<!-- EDIT2 SECTION "Char traits" [30-706] -->
+<h3 class="sectionedit4"><a name="strings" id="strings">Strings</a></h3>
+<div class="level3">
 
 </div>
+
+<h5><a name="basic_string" id="basic_string">basic_string</a></h5>
+<div class="level5">
+
+<p>
+
+Header <code>&lt;string&gt;</code> defines class template <a href="basic_string/start" class="wikilink1" title="string:basic_string:start">basic_string</a> which generalizes the way how sequences of characters are manipulated and stored. It is defined as follows:
+</p>
+<pre class="cpp code cpp"><span class="kw2">template</span><span class="sy1">&lt;</span>
+    <span class="kw2">typename</span> Char,
+    <span class="kw2">typename</span> Traits <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">char_traits</span><span class="sy1">&lt;</span>Char<span class="sy1">&gt;</span>,
+    <span class="kw2">typename</span> Allocator <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">allocator</span><span class="sy1">&lt;</span>Char<span class="sy1">&gt;</span> <span class="sy1">&gt;</span>
+<span class="sy1">&gt;</span> <span class="kw2">class</span> basic_string<span class="sy4">;</span></pre>
+<p>
+Also, several specializations of the class <code>basic_string</code> are provided:
+</p>
+<pre class="cpp code cpp"><span class="kw4">typedef</span> basic_string<span class="sy1">&lt;</span> <span class="kw4">char</span> <span class="sy1">&gt;</span>     string<span class="sy4">;</span>
+<span class="kw4">typedef</span> basic_string<span class="sy1">&lt;</span> <span class="kw4">wchar_t</span> <span class="sy1">&gt;</span>  wstring<span class="sy4">;</span>
+<span class="kw4">typedef</span> basic_string<span class="sy1">&lt;</span> char16_t <span class="sy1">&gt;</span> u16string<span class="sy4">;</span>    <span class="co1">//C++0x feature</span>
+<span class="kw4">typedef</span> basic_string<span class="sy1">&lt;</span> char32_t <span class="sy1">&gt;</span> u32string<span class="sy4">;</span>    <span class="co1">//C++0x feature</span></pre>
 </div>
+
+<h5><a name="functions" id="functions">Functions</a></h5>
+<div class="level5">
+<div class="table sectionedit5"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="getline" class="wikilink1" title="string:getline">getline</a></td><td class="col1">read data from an I/O stream into a string</td>
+	</tr>
+</table></div>
+<!-- EDIT5 TABLE [1399-1455] -->
+</div>
+
+<h5><a name="numeric_conversions" id="numeric_conversions">Numeric conversions</a></h5>
+<div class="level5">
+
+<p>
+
+The header <code>&lt;string&gt;</code> provides the following functions performing numeric conversion functions:
+
+</p>
+<div class="table sectionedit6"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="stoi" class="wikilink1" title="string:stoi"> stoi, stol, stoll, stoul, stoull</a> </td><td class="col1"> converts the given string to an integer (<a href="../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature) </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/string/stof" class="wikilink2" title="string:stof" rel="nofollow"> stof, stod, stold</a> </td><td class="col1"> converts the given string to an floating point value (<a href="../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature) </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/string/to_string" class="wikilink2" title="string:to_string" rel="nofollow">to_string</a> </td><td class="col1"> converts the given integral or floating point value to <code>string</code> (<a href="../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature) </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/string/to_wstring" class="wikilink2" title="string:to_wstring" rel="nofollow">to_wstring</a> </td><td class="col1"> converts the given integral or floating point value to <code>wstring</code> (<a href="../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature) </td>
+	</tr>
+</table></div>
+<!-- EDIT6 TABLE [1581-2012] -->
+</div>
+
+<h5><a name="hash_support" id="hash_support">Hash support</a></h5>
+<div class="level5">
+
+<p>
+
+The header <code>&lt;string&gt;</code> provides the following specializations of class template <code>hash</code> (see <a href="http://www.cppreference.com/wiki/utility/hash" class="wikilink2" title="utility:hash" rel="nofollow">hash</a>)
+
+</p>
+<div class="table sectionedit7"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <code>hash&lt; string &gt;</code> </td><td class="col1"> template specialization, providing hash support for <code>string</code> string type (<a href="../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <code>hash&lt; wstring &gt;</code> </td><td class="col1"> template specialization, providing hash support for <code>wstring</code> string type (<a href="../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <code>hash&lt; u16string &gt;</code> </td><td class="col1"> template specialization, providing hash support for <code>u16string</code> string type (<a href="../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> <code>hash&lt; u32string &gt;</code> </td><td class="col1"> template specialization, providing hash support for <code>u32string</code> string type (<a href="../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature)</td>
+	</tr>
+</table></div>
+<!-- EDIT7 TABLE [2146-2639] -->
+</div>
+<!-- EDIT4 SECTION "Strings" [707-2640] -->
+<h3 class="sectionedit8"><a name="c-style_strings" id="c-style_strings">C-style strings</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="c/start" class="wikilink1" title="string:c:start"> Null-terminated strings</a>
+</p>
+
+<p>
+<a href="cw/start" class="wikilink1" title="string:cw:start"> Null-terminated wide strings</a>
+
+</p>
+
+</div>
+<!-- EDIT8 SECTION "C-style strings" [2641-] --></div>
 </body>
 </html>

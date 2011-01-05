@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:algorithm:adjacent_find</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:23-0700" />
+<meta name="keywords" content="jp,algorithm,adjacent_find" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/algorithm/adjacent_find?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp:algorithm" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/algorithm/adjacent_find" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/algorithm/adjacent_find" />
+<link rel="canonical" href="adjacent_find" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp:algorithm';var JSINFO = {"id":"jp:algorithm:adjacent_find","namespace":"jp:algorithm"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="adjacent_find" id="adjacent_find">adjacent_find</a></h2>
+<div class="level2">
+
+<p>
+文法:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;algorithm&gt;</span>
+    forward_iterator adjacent_find<span class="br0">&#40;</span> forward_iterator start, forward_iterator end <span class="br0">&#41;</span><span class="sy4">;</span>
+    forward_iterator adjacent_find<span class="br0">&#40;</span> forward_iterator start, forward_iterator end, BinPred pr <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+
+adjacent_find()関数は<code>start</code>と<code>end</code>の間にある二つの連続した同じ要素を探します。二項述語<code>pr</code>が与えられた場合、同値判定にそれを用います。
+</p>
+
+<p>
+見つかった場合、二つの要素の最初の要素を指すiteratorを返します。見つからなかった場合、iteratorは<code>end</code>を指します。
+</p>
+
+<p>
+例えば、次のコードでは0から10の整数を要素として持ち7が二つ連続して出現しているvectorを生成し、adjacent_find()で7の組の位置を探しています:
+</p>
+<pre class="cpp code cpp">   vector<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> v1<span class="sy4">;</span>
+   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     v1.<span class="me1">push_back</span><span class="br0">&#40;</span>i<span class="br0">&#41;</span><span class="sy4">;</span>
+     <span class="co1">// 二つ目の7を挿入</span>
+     <span class="kw1">if</span><span class="br0">&#40;</span> i <span class="sy1">==</span> <span class="nu0">7</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+       v1.<span class="me1">push_back</span><span class="br0">&#40;</span>i<span class="br0">&#41;</span><span class="sy4">;</span>
+     <span class="br0">&#125;</span>
+   <span class="br0">&#125;</span>
+&nbsp;
+   vector<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">iterator</span> result<span class="sy4">;</span>
+   result <span class="sy1">=</span> adjacent_find<span class="br0">&#40;</span> v1.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, v1.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+   <span class="kw1">if</span><span class="br0">&#40;</span> result <span class="sy1">==</span> v1.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;v1では隣接した要素は見つかりませんでした&quot;</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+   <span class="br0">&#125;</span>
+&nbsp;
+   <span class="kw1">else</span> <span class="br0">&#123;</span>
+     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="sy2">*</span>result <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;から始まる隣接した要素を発見&quot;</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+   <span class="br0">&#125;</span></pre>
+<p>
+関連トピック: <a href="find" class="wikilink1" title="jp:algorithm:find">find</a>, <a href="http://www.cppreference.com/wiki/jp/algorithm/find_end" class="wikilink2" title="jp:algorithm:find_end" rel="nofollow">find_end</a>, <a href="http://www.cppreference.com/wiki/jp/algorithm/find_first_of" class="wikilink2" title="jp:algorithm:find_first_of" rel="nofollow">find_first_of</a>, <a href="http://www.cppreference.com/wiki/jp/algorithm/find_if" class="wikilink2" title="jp:algorithm:find_if" rel="nofollow">find_if</a>, <a href="http://www.cppreference.com/wiki/jp/algorithm/unique" class="wikilink2" title="jp:algorithm:unique" rel="nofollow">unique</a>, <a href="unique_copy" class="wikilink1" title="jp:algorithm:unique_copy">unique_copy</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr"
+ lang="fr" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>fr:c:other:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:57-0700" />
+<meta name="keywords" content="fr,c,other,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/fr/c/other/start?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=fr:c:other" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/fr/c/other/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/fr/c/other/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='fr:c:other';var JSINFO = {"id":"fr:c:other:start","namespace":"fr:c:other"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="autres_fonctions_standard_c" id="autres_fonctions_standard_c">Autres Fonctions standard C</a></h1>
+<div class="level1">
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="abort" class="wikilink1" title="fr:c:other:abort">abort</a></td><td class="col1">arrête le programme</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="assert" class="wikilink1" title="fr:c:other:assert">assert</a></td><td class="col1">arrête le programme si l&#039;expression évaluée est fausse</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="atexit" class="wikilink1" title="fr:c:other:atexit">atexit</a></td><td class="col1">définit une fonction à appeler lorsque le programme se termine</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="bsearch" class="wikilink1" title="fr:c:other:bsearch">bsearch</a></td><td class="col1">algorithme de recherche par dichotomie</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="exit" class="wikilink1" title="fr:c:other:exit">exit</a></td><td class="col1">arrête le programme</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="getenv" class="wikilink1" title="fr:c:other:getenv">getenv</a></td><td class="col1">lire les paramètres d&#039;environnement</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="longjmp" class="wikilink1" title="fr:c:other:longjmp">longjmp</a></td><td class="col1">entamer l&#039;exécution à partir d&#039;un point de reprise “placé” avec <code><a href="setjmp" class="wikilink1" title="fr:c:other:setjmp">setjmp()</a></code></td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="putenv" class="wikilink1" title="fr:c:other:putenv">putenv</a></td><td class="col1">ajouter / modifier les paramètres de l&#039;environnement</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="qsort" class="wikilink1" title="fr:c:other:qsort">qsort</a></td><td class="col1">algorithme du tri rapide</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="raise" class="wikilink1" title="fr:c:other:raise">raise</a></td><td class="col1">envoyer un signal au programme</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="rand" class="wikilink1" title="fr:c:other:rand">rand</a></td><td class="col1">retourne un nombre pseudo-aléatoire</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="setjmp" class="wikilink1" title="fr:c:other:setjmp">setjmp</a></td><td class="col1">mise à jour du point de reprise d&#039;exécution du programme</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><a href="signal" class="wikilink1" title="fr:c:other:signal">signal</a></td><td class="col1">enregistrer une fonction en tant que gestionnaire de signal</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><a href="srand" class="wikilink1" title="fr:c:other:srand">srand</a></td><td class="col1">initialiser le générateur de nombre aléatoire</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><a href="system" class="wikilink1" title="fr:c:other:system">system</a></td><td class="col1">exécute une commande de la console par défaut de l&#039;<acronym title="Operating System">OS</acronym></td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><a href="va_arg" class="wikilink1" title="fr:c:other:va_arg">va_arg</a></td><td class="col1">utilisation d&#039;une liste de paramètre à longueur variable</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [50-1013] -->
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es"
+ lang="es" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>es:keywords:typeid</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-11-09T07:15:50-0800" />
+<meta name="keywords" content="es,keywords,typeid" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/es/keywords/typeid?do=index" title="Índice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=es:keywords" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/es/keywords/typeid" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/es/keywords/typeid" />
+<link rel="canonical" href="typeid" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='es:keywords';var JSINFO = {"id":"es:keywords:typeid","namespace":"es:keywords"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="typeid" id="typeid">typeid</a></h2>
+<div class="level2">
+
+<p>
+Sintaxis:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;typeinfo&gt;</span>
+    <span class="kw2">typeid</span><span class="br0">&#40;</span> objeto <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+El operador <code>typeid</code>, aplicado a una variable u objeto, retorna una referencia a un objeto del tipo <a href="http://www.cppreference.com/wiki/es/typeinfo/start#type_info" class="wikilink2" title="es:typeinfo:start" rel="nofollow">type_info</a> que describe las características del tipo de datos de &#039;objeto&#039;.
+</p>
+
+<p>
+Si &#039;objeto&#039; es un puntero nulo, esta operación lanza una excepción del tipo <a href="http://www.cppreference.com/wiki/es/typeinfo/start#bad_cast" class="wikilink2" title="es:typeinfo:start" rel="nofollow">std::bad_typeid</a>.
+</p>
+
+<p>
+En el estándar C++98, la cabecera <code>&lt;typeinfo&gt;</code> es requerida para que este operador funcione, y no incluirla se considera como un programa malformado.
+</p>
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:container:map:map_constructors</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:24-0700" />
+<meta name="keywords" content="jp,container,map,map_constructors" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/container/map/map_constructors?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp:container:map" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/container/map/map_constructors" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/container/map/map_constructors" />
+<link rel="canonical" href="map_constructors" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp:container:map';var JSINFO = {"id":"jp:container:map:map_constructors","namespace":"jp:container:map"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="map_constructors_destructors" id="map_constructors_destructors">Map Constructors &amp; Destructors</a></h2>
+<div class="level2">
+
+<p>
+Syntax:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;map&gt;</span>
+    map<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    map<span class="br0">&#40;</span> <span class="kw4">const</span> map<span class="sy3">&amp;</span> m <span class="br0">&#41;</span><span class="sy4">;</span>
+    map<span class="br0">&#40;</span> input_iterator start, input_iterator end <span class="br0">&#41;</span><span class="sy4">;</span>
+    map<span class="br0">&#40;</span> input_iterator start, input_iterator end, <span class="kw4">const</span> key_compare<span class="sy3">&amp;</span> cmp <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw2">explicit</span> map<span class="br0">&#40;</span> <span class="kw4">const</span> key_compare<span class="sy3">&amp;</span> cmp <span class="br0">&#41;</span><span class="sy4">;</span>
+    ~map<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+デフォルトのコンストラクタは、引数をとりませんが、マップの新しいインスタンスを作成し、一定の時間で実行されます。
+既定のコピーコンストラクタの処理時間は、線形時間となりますが、指定されたマップのコピーし、新しいマップを作成するために使用することができます。
+</p>
+
+<p>
+マップを作成するときに、入力値の開始のイテレータと終了のイテレータを渡すことができます、または比較関数のcmpを渡すことができます。
+</p>
+
+<p>
+デフォルトのデストラクタは、マップが破棄されるべきときに呼ばれます。
+</p>
+
+<p>
+たとえば、次のコードは、文字列を整数に関連づけるマップを作成しています。
+</p>
+<pre class="cpp code cpp">    <span class="kw4">struct</span> strCmp <span class="br0">&#123;</span>
+      <span class="kw4">bool</span> operator<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> s1, <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> s2 <span class="br0">&#41;</span> <span class="kw4">const</span> <span class="br0">&#123;</span>
+        <span class="kw1">return</span> <span class="kw3">strcmp</span><span class="br0">&#40;</span> s1, s2 <span class="br0">&#41;</span> <span class="sy1">&lt;</span> <span class="nu0">0</span><span class="sy4">;</span>
+      <span class="br0">&#125;</span>
+    <span class="br0">&#125;</span><span class="sy4">;</span>
+&nbsp;
+    ...
+&nbsp;
+    <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>father <span class="sy1">=</span> <span class="st0">&quot;Homer&quot;</span><span class="sy4">;</span>
+    <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>mother <span class="sy1">=</span> <span class="st0">&quot;Marge&quot;</span><span class="sy4">;</span>
+    <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>kid1 <span class="sy1">=</span> <span class="st0">&quot;Lisa&quot;</span><span class="sy4">;</span>
+    <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>kid2 <span class="sy1">=</span> <span class="st0">&quot;Maggie&quot;</span><span class="sy4">;</span>
+    <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>kid3 <span class="sy1">=</span> <span class="st0">&quot;Bart&quot;</span><span class="sy4">;</span>
+    map<span class="sy1">&lt;</span><span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span>, <span class="kw4">int</span>, strCmp<span class="sy1">&gt;</span> ages<span class="sy4">;</span>
+    ages<span class="br0">&#91;</span>father<span class="br0">&#93;</span> <span class="sy1">=</span> <span class="nu0">38</span><span class="sy4">;</span>
+    ages<span class="br0">&#91;</span>mother<span class="br0">&#93;</span> <span class="sy1">=</span> <span class="nu0">37</span><span class="sy4">;</span>
+    ages<span class="br0">&#91;</span>kid1<span class="br0">&#93;</span> <span class="sy1">=</span> <span class="nu0">8</span><span class="sy4">;</span>
+    ages<span class="br0">&#91;</span>kid2<span class="br0">&#93;</span> <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
+    ages<span class="br0">&#91;</span>kid3<span class="br0">&#93;</span> <span class="sy1">=</span> <span class="nu0">11</span><span class="sy4">;</span>
+&nbsp;
+    <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Bart is &quot;</span> <span class="sy1">&lt;&lt;</span> ages<span class="br0">&#91;</span>kid3<span class="br0">&#93;</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; years old&quot;</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
+<p>
+
+Related Topics: <a href="map_operators" class="wikilink1" title="jp:container:map:map_operators">map_Operators</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

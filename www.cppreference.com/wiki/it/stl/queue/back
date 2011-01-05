@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it"
+ lang="it" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>it:container:queue:back</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:09-0700" />
+<meta name="keywords" content="it,container,queue,back" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/it/container/queue/back?do=index" title="Indice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=it:container:queue" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/it/container/queue/back" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/it/container/queue/back" />
+<link rel="canonical" href="back" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='it:container:queue';var JSINFO = {"id":"it:container:queue:back","namespace":"it:container:queue"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="back" id="back">back</a></h2>
+<div class="level2">
+
+<p>
+Sintassi:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;queue&gt;</span>
+    T<span class="sy3">&amp;</span> back<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">const</span> T<span class="sy3">&amp;</span> back<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span></pre>
+<p>
+La funzione back() ritorna una reference all&#039;ultimo elemento di una queue.
+Esempio:
+</p>
+<pre class="cpp code cpp">   queue<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> q<span class="sy4">;</span>
+   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">5</span><span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     q.<span class="me1">push</span><span class="br0">&#40;</span>i<span class="br0">&#41;</span><span class="sy4">;</span>
+   <span class="br0">&#125;</span>
+   <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Il primo elemento è &quot;</span> <span class="sy1">&lt;&lt;</span> q.<span class="me1">front</span><span class="br0">&#40;</span><span class="br0">&#41;</span>
+        <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; mentre l'ultimo elemento è &quot;</span> <span class="sy1">&lt;&lt;</span> q.<span class="me1">back</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
+<p>
+La coda produce il seguente output
+</p>
+<pre class="code">
+   Il primo elemento è 0 mentre l'ultimo elemento è 4</pre>
+<p>
+La funzione back() gira a <a href="../../../complexity" class="wikilink1" title="complexity">tempo costante</a>.
+</p>
+
+<p>
+Argomenti correlati: <a href="front" class="wikilink1" title="it:container:queue:front">front</a>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "back" [3-] --></div>
+</body>
+</html>

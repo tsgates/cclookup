@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn"
+ lang="cn" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>cn:container:vector:vector_operators</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:54-0700" />
+<meta name="keywords" content="cn,container,vector,vector_operators" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/cn/container/vector/vector_operators?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=cn:container:vector" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/cn/container/vector/vector_operators" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/cn/container/vector/vector_operators" />
+<link rel="canonical" href="vector_operators" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='cn:container:vector';var JSINFO = {"id":"cn:container:vector:vector_operators","namespace":"cn:container:vector"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="vector_operators_vector_操作符" id="vector_operators_vector_操作符">Vector operators（Vector 操作符）</a></h2>
+<div class="level2">
+
+<p>
+Syntax:
+</p>
+
+<p>
+语法：
+
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;vector&gt;</span>
+    T<span class="sy3">&amp;</span> operator<span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#40;</span> size_type index <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">const</span> T<span class="sy3">&amp;</span> operator<span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#40;</span> size_type index <span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span>
+    vector<span class="sy3">&amp;</span> operator<span class="sy1">=</span><span class="br0">&#40;</span><span class="kw4">const</span> vector<span class="sy3">&amp;</span> c2<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">bool</span> operator<span class="sy1">==</span><span class="br0">&#40;</span><span class="kw4">const</span> vector<span class="sy3">&amp;</span> c1, <span class="kw4">const</span> vector<span class="sy3">&amp;</span> c2<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">bool</span> operator<span class="sy3">!</span><span class="sy1">=</span><span class="br0">&#40;</span><span class="kw4">const</span> vector<span class="sy3">&amp;</span> c1, <span class="kw4">const</span> vector<span class="sy3">&amp;</span> c2<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">bool</span> operator<span class="sy1">&lt;</span><span class="br0">&#40;</span><span class="kw4">const</span> vector<span class="sy3">&amp;</span> c1, <span class="kw4">const</span> vector<span class="sy3">&amp;</span> c2<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">bool</span> operator<span class="sy1">&gt;</span><span class="br0">&#40;</span><span class="kw4">const</span> vector<span class="sy3">&amp;</span> c1, <span class="kw4">const</span> vector<span class="sy3">&amp;</span> c2<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">bool</span> operator<span class="sy1">&lt;=</span><span class="br0">&#40;</span><span class="kw4">const</span> vector<span class="sy3">&amp;</span> c1, <span class="kw4">const</span> vector<span class="sy3">&amp;</span> c2<span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">bool</span> operator<span class="sy1">&gt;=</span><span class="br0">&#40;</span><span class="kw4">const</span> vector<span class="sy3">&amp;</span> c1, <span class="kw4">const</span> vector<span class="sy3">&amp;</span> c2<span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+All of the C++ containers can be compared and assigned with the standard
+comparison operators: ==, !=, &lt;=, &gt;=, &lt;, &gt;, and =. Individual elements of a
+vector can be examined with the [] operator.
+</p>
+
+<p>
+所有的 C++ 容器都可以使用比较操作符：==，!=，&lt;=，&gt;=，&lt;，&gt;，和 = 来比较赋值。单个的 vector 元素可以使用 [] 操作符来检查。
+</p>
+
+<p>
+Performing a comparison or assigning one vector to another takes <a href="../../../complexity" class="wikilink1" title="complexity">linear time</a>.
+</p>
+
+<p>
+执行两个 vector 之间的比较和赋值将花费 <a href="../../../complexity" class="wikilink1" title="complexity">linear time</a>。
+</p>
+
+<p>
+The [] operator runs in <a href="../../../complexity" class="wikilink1" title="complexity">constant time</a>.
+</p>
+
+<p>
+而操作符 [] 运行将花费 <a href="../../../complexity" class="wikilink1" title="complexity">constant time</a>。
+</p>
+
+<p>
+Two vectors are equal if:
+</p>
+
+<p>
+满足下面两个条件的 vector 是相等的：
+
+</p>
+<ol>
+<li class="level1"><div class="li"> Their size is the same, and (包含的元素个数是一样的，即 size 是相同的，)  - </div>
+</li>
+<li class="level1"><div class="li"> Each member in location i in one vect or is equal to the the member in location i in the other vector.（两个 vector 中相同位置上的元素值是相等的。）</div>
+</li>
+</ol>
+
+<p>
+
+Comparisons among vectors are done lexicographically.
+</p>
+
+<p>
+vectors 之间的比较是按字典顺序执行。
+</p>
+
+<p>
+For example, the following code uses the [] operator to access all of the
+elements of a vector:
+</p>
+
+<p>
+例如，下面的代码使用 [] 操作符来访问 vector 的所有元素：
+</p>
+<pre class="cpp code cpp">   vector<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> v<span class="br0">&#40;</span> <span class="nu0">5</span>, <span class="nu0">1</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> v.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;Element &quot;</span> <span class="sy1">&lt;&lt;</span> i <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; is &quot;</span> <span class="sy1">&lt;&lt;</span> v<span class="br0">&#91;</span>i<span class="br0">&#93;</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+   <span class="br0">&#125;</span></pre>
+<p>
+Related Topics: <a href="http://www.cppreference.com/wiki/cn/container/vector/at" class="wikilink2" title="cn:container:vector:at" rel="nofollow">at</a>
+</p>
+
+<p>
+相关主题：<a href="http://www.cppreference.com/wiki/cn/container/vector/at" class="wikilink2" title="cn:container:vector:at" rel="nofollow">at</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

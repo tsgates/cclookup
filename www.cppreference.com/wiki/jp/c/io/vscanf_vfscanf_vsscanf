@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:c:io:vscanf_vfscanf_vsscanf</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:22-0700" />
+<meta name="keywords" content="jp,c,io,vscanf_vfscanf_vsscanf" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/c/io/vscanf_vfscanf_vsscanf?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp:c:io" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/c/io/vscanf_vfscanf_vsscanf" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/c/io/vscanf_vfscanf_vsscanf" />
+<link rel="canonical" href="vscanf_vfscanf_vsscanf" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp:c:io';var JSINFO = {"id":"jp:c:io:vscanf_vfscanf_vsscanf","namespace":"jp:c:io"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="vscanf_vfscanf_vsscanf" id="vscanf_vfscanf_vsscanf">vscanf, vfscanf, vsscanf</a></h2>
+<div class="level2">
+
+<p>
+
+文法:
+
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cstdarg&gt;</span>
+    <span class="co2">#include &lt;cstdio&gt;</span>
+    <span class="kw4">int</span> vscanf<span class="br0">&#40;</span> <span class="kw4">char</span> <span class="sy2">*</span>フォーマット, <span class="kw4">va_list</span> 引数ポインタ <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">int</span> vfscanf<span class="br0">&#40;</span> <span class="kw4">FILE</span> <span class="sy2">*</span>ストリーム, <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>フォーマット, <span class="kw4">va_list</span> 引数ポインタ <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">int</span> vsscanf<span class="br0">&#40;</span> <span class="kw4">char</span> <span class="sy2">*</span>バッファ, <span class="kw4">char</span> <span class="sy2">*</span>フォーマット, <span class="kw4">va_list</span> 引数ポインタ <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+これらの関数は、scanf(), fscanf(), sscanf()と非常によく似ています。異なる点は、引数リストが、引数リストへのポインタに変わっている点です。va_listはcstdargで定義されていて、<a href="../other/va_arg" class="wikilink1" title="jp:c:other:va_arg">va_arg</a>でも使用することができます。
+</p>
+
+<p>
+サンプル:
+
+</p>
+<pre class="cpp code cpp">     <span class="kw4">int</span> scanf_<span class="br0">&#40;</span> <span class="kw4">char</span> <span class="sy2">*</span>fmt, ... <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+       <span class="kw4">va_list</span> args<span class="sy4">;</span>
+       <span class="kw3">va_start</span><span class="br0">&#40;</span> args, fmt <span class="br0">&#41;</span><span class="sy4">;</span>
+       <span class="kw4">int</span> r <span class="sy1">=</span> vscanf<span class="br0">&#40;</span>frmt, args<span class="br0">&#41;</span><span class="sy4">;</span>
+       <span class="kw3">scanf</span><span class="br0">&#40;</span><span class="st0">&quot;%*[^<span class="es1">\n</span>]&quot;</span><span class="br0">&#41;</span>, <span class="kw3">getchar</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">//空のバッファ</span>
+       <span class="kw3">va_end</span><span class="br0">&#40;</span> args <span class="br0">&#41;</span><span class="sy4">;</span>
+       <span class="kw1">return</span> r<span class="sy4">;</span>
+     <span class="br0">&#125;</span></pre>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cz"
+ lang="cz" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>cz:container:set:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:28-0700" />
+<meta name="keywords" content="cz,container,set,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/cz/container/set/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=cz:container:set" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/cz/container/set/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/cz/container/set/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='cz:container:set';var JSINFO = {"id":"cz:container:set:start","namespace":"cz:container:set"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="c_sets" id="c_sets">C++ Sets</a></h1>
+<div class="level1">
+
+<p>
+
+set&lt;Key, Compare, Alloc&gt;
+</p>
+
+<p>
+C++ Set je asociativní kontejner STL, který obsahuje uspořádanou množinu unikátních objektů typu klíč (klíčů).
+Klíč odpovídá i hodnotě, všechny prvky v množině jsou unikátní.
+Třídění na množině se provádí pomocí fukce Compare (defaultně se používá std::less&lt;Key&gt;).
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/container/set/set_constructors" class="wikilink2" title="cz:container:set:set_constructors" rel="nofollow">Constructors</a></td><td class="col1">konstruktory a destruktory množin</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/container/set/set_operators" class="wikilink2" title="cz:container:set:set_operators" rel="nofollow">Operators</a></td><td class="col1">operátory přiřazení a porovnání množin</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/container/set/begin" class="wikilink2" title="cz:container:set:begin" rel="nofollow">begin</a></td><td class="col1">vrací iterátor na začátek množiny Set</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/container/set/clear" class="wikilink2" title="cz:container:set:clear" rel="nofollow">clear</a></td><td class="col1">odstraní všechny objekty v možině</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/container/set/count" class="wikilink2" title="cz:container:set:count" rel="nofollow">count</a></td><td class="col1">vrací počet objektů odpovídající určitému klíči</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/container/set/empty" class="wikilink2" title="cz:container:set:empty" rel="nofollow">empty</a></td><td class="col1">true pokud je množina prázdná</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/container/set/end" class="wikilink2" title="cz:container:set:end" rel="nofollow">end</a></td><td class="col1">vrací iterátor za poslední prvek v množině</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/container/set/equal_range" class="wikilink2" title="cz:container:set:equal_range" rel="nofollow">equal_range</a></td><td class="col1">vrátí iterátory na první a za poslední prvek odpovídající zadanému klíči</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/container/set/erase" class="wikilink2" title="cz:container:set:erase" rel="nofollow">erase</a></td><td class="col1">odstraní prvky z množiny</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/container/set/find" class="wikilink2" title="cz:container:set:find" rel="nofollow">find</a></td><td class="col1">vrátí iterátor na určitý prvek</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/container/set/insert" class="wikilink2" title="cz:container:set:insert" rel="nofollow">insert</a></td><td class="col1">vloží nový prvek do množiny</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/container/set/key_comp" class="wikilink2" title="cz:container:set:key_comp" rel="nofollow">key_comp</a></td><td class="col1">vrátí funkci, která porovnává klíče</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/container/set/lower_bound" class="wikilink2" title="cz:container:set:lower_bound" rel="nofollow">lower_bound</a></td><td class="col1">vrátí iterátor na první prvek větší nebo stejně veliký jako zadaná hodnota</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/container/set/max_size" class="wikilink2" title="cz:container:set:max_size" rel="nofollow">max_size</a></td><td class="col1">vrátí maximální počet prvků, který může být do množiny vložen</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/container/set/rbegin" class="wikilink2" title="cz:container:set:rbegin" rel="nofollow">rbegin</a></td><td class="col1">vrátí reverse_iterator na konec množiny</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/container/set/rend" class="wikilink2" title="cz:container:set:rend" rel="nofollow">rend</a></td><td class="col1">vrací reverse_iterator před začátek množiny</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/container/set/size" class="wikilink2" title="cz:container:set:size" rel="nofollow">size</a></td><td class="col1">vrací počet prvků v množině</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/container/set/swap" class="wikilink2" title="cz:container:set:swap" rel="nofollow">swap</a></td><td class="col1">prohodí obsah této a jiné množiny</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/container/set/upper_bound" class="wikilink2" title="cz:container:set:upper_bound" rel="nofollow">upper_bound</a></td><td class="col1">vrátí iterátor na první prvek větší než určitá hodnota</td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/cz/container/set/value_comp" class="wikilink2" title="cz:container:set:value_comp" rel="nofollow">value_comp</a></td><td class="col1">vrátí funkci, která porovnává hodnoty</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [359-1618] -->
+</div>
+</div>
+</body>
+</html>

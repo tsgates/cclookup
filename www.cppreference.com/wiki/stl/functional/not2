@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>util:functional:not2</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:33-0700" />
+<meta name="keywords" content="util,functional,not2" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/util/functional/not2?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=util:functional" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/util/functional/not2" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/util/functional/not2" />
+<link rel="canonical" href="not2" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='util:functional';var JSINFO = {"id":"util:functional:not2","namespace":"util:functional"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="level1"><div class="li"><span class="li"><a href="not2#not2" class="toc">not2</a></span></div>
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="not2#parameters" class="toc">Parameters</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="not2#predicate" class="toc">Predicate</a></span></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"><span class="li"><a href="not2#return_value" class="toc">Return value</a></span></div></li>
+<li class="level1"><div class="li"><span class="li"><a href="not2#example" class="toc">Example</a></span></div></li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h1 class="sectionedit1"><a name="not2" id="not2">not2</a></h1>
+<div class="level1">
+<pre class="cpp code cpp">function <span class="kw2">template</span><span class="sy1">&lt;</span>functional<span class="sy1">&gt;</span><span class="kw2">template</span> <span class="sy1">&lt;</span><span class="kw2">class</span> Predicate<span class="sy1">&gt;</span>
+  binary_negate<span class="sy1">&lt;</span>Predicate<span class="sy1">&gt;</span> not2 <span class="br0">&#40;</span><span class="kw4">const</span> Predicate<span class="sy3">&amp;</span> pred<span class="br0">&#41;</span><span class="sy4">;</span></pre>
+</div>
+
+<h5><a name="return_negation_of_binary_function_object" id="return_negation_of_binary_function_object">Return negation of binary function object</a></h5>
+<div class="level5">
+
+<p>
+This function constructs a function object that has the opposite behavior of pred (its argument, another function object).
+</p>
+
+<p>
+Function objects are objects whose class defines member function operator(). This member function allows the object to be used with the same syntax as a regular function call, and therefore it can be used in templates instead of a pointer to a function.
+</p>
+
+<p>
+The function object returned by not2 has its operator() defined such that it returns true when pred would return false, and false when pred would return true.
+</p>
+
+<p>
+It is defined with the same behavior as:
+</p>
+<pre class="cpp code cpp"> <span class="kw2">template</span> <span class="sy1">&lt;</span><span class="kw2">class</span> Predicate<span class="sy1">&gt;</span>
+  binary_negate<span class="sy1">&lt;</span>Predicate<span class="sy1">&gt;</span> not2 <span class="br0">&#40;</span><span class="kw4">const</span> Predicate<span class="sy3">&amp;</span> pred<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+  <span class="kw1">return</span> binary_negate<span class="sy1">&lt;</span>Predicate<span class="sy1">&gt;</span><span class="br0">&#40;</span>pred<span class="br0">&#41;</span><span class="sy4">;</span>
+<span class="br0">&#125;</span></pre>
+<p>
+not2 is specifically designed to negate function objects (predicates) derived from binary_function (members first_argument_type and second_argument_type are required). For unary function objects, see not1.
+</p>
+
+</div>
+<!-- EDIT1 SECTION "not2" [1-1135] -->
+<h3 class="sectionedit2"><a name="parameters" id="parameters">Parameters</a></h3>
+<div class="level3">
+
+</div>
+<!-- EDIT2 SECTION "Parameters" [1136-1157] -->
+<h3 class="sectionedit3"><a name="predicate" id="predicate">Predicate</a></h3>
+<div class="level3">
+
+<p>
+
+Binary function object derived from binary_function. 
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Predicate" [1158-1236] -->
+<h1 class="sectionedit4"><a name="return_value" id="return_value">Return value</a></h1>
+<div class="level1">
+
+<p>
+
+A binary function object with the opposite behavior of pred.
+binary_negate is a type derived from binary_function.
+</p>
+
+</div>
+<!-- EDIT4 SECTION "Return value" [1237-1381] -->
+<h1 class="sectionedit5"><a name="example" id="example">Example</a></h1>
+<div class="level1">
+<pre class="cpp code cpp"> <span class="co1">// not2 example</span>
+<span class="co2">#include &lt;iostream&gt;</span>
+<span class="co2">#include &lt;functional&gt;</span>
+<span class="co2">#include &lt;algorithm&gt;</span>
+<span class="kw2">using</span> <span class="kw2">namespace</span> std<span class="sy4">;</span>
+&nbsp;
+<span class="kw4">int</span> main <span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+  <span class="kw4">int</span> foo<span class="br0">&#91;</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="br0">&#123;</span><span class="nu0">10</span>,<span class="nu0">20</span>,<span class="nu0">30</span>,<span class="nu0">40</span>,<span class="nu0">50</span><span class="br0">&#125;</span><span class="sy4">;</span>
+  <span class="kw4">int</span> bar<span class="br0">&#91;</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="br0">&#123;</span><span class="nu0">0</span>,<span class="nu0">15</span>,<span class="nu0">30</span>,<span class="nu0">45</span>,<span class="nu0">60</span><span class="br0">&#125;</span><span class="sy4">;</span>
+  pair<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy2">*</span>,<span class="kw4">int</span><span class="sy2">*</span><span class="sy1">&gt;</span> firstmatch,firstmismatch<span class="sy4">;</span>
+  firstmismatch<span class="sy1">=</span>mismatch <span class="br0">&#40;</span>foo, foo<span class="sy2">+</span><span class="nu0">5</span>, bar, equal_to<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+  firstmatch<span class="sy1">=</span>mismatch <span class="br0">&#40;</span>foo, foo<span class="sy2">+</span><span class="nu0">5</span>, bar, not2<span class="br0">&#40;</span>equal_to<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+  <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;First mismatch in bar is &quot;</span> <span class="sy1">&lt;&lt;</span> <span class="sy2">*</span>firstmismatch.<span class="me1">second</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;<span class="es1">\n</span>&quot;</span><span class="sy4">;</span>
+  <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;First match in bar is &quot;</span> <span class="sy1">&lt;&lt;</span> <span class="sy2">*</span>firstmatch.<span class="me1">second</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;<span class="es1">\n</span>&quot;</span><span class="sy4">;</span>
+  <span class="kw1">return</span> <span class="nu0">0</span><span class="sy4">;</span>
+<span class="br0">&#125;</span></pre><pre class="cpp code cpp">First mismatch in bar is <span class="nu0">0</span>
+First match in bar is <span class="nu0">30</span></pre>
+</div>
+<!-- EDIT5 SECTION "Example" [1382-] --></div>
+</body>
+</html>

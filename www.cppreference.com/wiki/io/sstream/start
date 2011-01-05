@@ -5,28 +5,30 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>io:sstream:start</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="generator" content="DokuWiki" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2009-04-15T08:41:10-0700" />
+<meta name="date" content="2010-10-28T18:16:59-0700" />
 <meta name="keywords" content="io,sstream,start" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/io/sstream/start?do=index" title="Index" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/io/sstream/start?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
 <link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=io:sstream" />
 <link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/io/sstream/start" />
 <link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/io/sstream/start" />
-<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='io:sstream';var JSINFO = {"id":"io:sstream:start","namespace":"io:sstream"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
 
-
-
-<h1><a name="c_string_streams" id="c_string_streams">C++ String Streams</a></h1>
+<h1 class="sectionedit1"><a name="c_string_streams" id="c_string_streams">C++ String Streams</a></h1>
 <div class="level1">
 
 <p>
@@ -61,7 +63,7 @@ stringstream. See the <a href="../start" class="wikilink1" title="io:start">C++ 
 In addition, string streams also supply the following functions:
 
 </p>
-<table class="inline">
+<div class="table sectionedit2"><table class="inline">
 	<tr class="row0">
 		<td class="col0"><a href="constructors" class="wikilink1" title="io:sstream:constructors">Constructors</a></td><td class="col1">create new string streams</td>
 	</tr>
@@ -74,8 +76,8 @@ In addition, string streams also supply the following functions:
 	<tr class="row3">
 		<td class="col0"><a href="str" class="wikilink1" title="io:sstream:str">str</a></td><td class="col1">get or set the stream&#039;s string</td>
 	</tr>
-</table>
-
+</table></div>
+<!-- EDIT2 TABLE [745-954] -->
 </div>
 </div>
 </body>

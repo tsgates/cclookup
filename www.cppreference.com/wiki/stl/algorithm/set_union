@@ -4,37 +4,60 @@
  lang="en" dir="ltr">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>stl:algorithm:set_union</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
+  <title>algorithm:set_union</title>
+<meta name="generator" content="DokuWiki" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2009-02-12T01:59:45-0800" />
-<meta name="keywords" content="stl,algorithm,set_union" />
+<meta name="date" content="2010-10-28T18:18:12-0700" />
+<meta name="keywords" content="algorithm,set_union" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/stl/algorithm/set_union?do=index" title="Index" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/algorithm/set_union?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
-<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=stl:algorithm" />
-<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/stl/algorithm/set_union" />
-<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/stl/algorithm/set_union" />
-<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=algorithm" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/algorithm/set_union" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/algorithm/set_union" />
+<link rel="canonical" href="set_union" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='algorithm';var JSINFO = {"id":"algorithm:set_union","namespace":"algorithm"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
 
+<ul class="toc">
+<li class="clear">
 
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="set_union#set_union" class="toc">set_union</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="set_union#parameters" class="toc">Parameters</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="set_union#return_value" class="toc">Return value</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="set_union#example" class="toc">Example</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="set_union#complexity" class="toc">Complexity</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="set_union#see_also" class="toc">See also</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
 
-<h2><a name="set_union" id="set_union">set_union</a></h2>
+<h2 class="sectionedit1"><a name="set_union" id="set_union">set_union</a></h2>
 <div class="level2">
 
 <p>
 Syntax:
 </p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;algorithm&gt;</span>
-    iterator set_union<span class="br0">&#40;</span> iterator start1<span class="sy0">,</span> iterator end1<span class="sy0">,</span> iterator start2<span class="sy0">,</span> iterator end2<span class="sy0">,</span> iterator result <span class="br0">&#41;</span>;
-    iterator set_union<span class="br0">&#40;</span> iterator start1<span class="sy0">,</span> iterator end1<span class="sy0">,</span> iterator start2<span class="sy0">,</span> iterator end2<span class="sy0">,</span> iterator result<span class="sy0">,</span> StrictWeakOrdering cmp <span class="br0">&#41;</span>;</pre>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;algorithm&gt;</span>
+    output_iterator set_union<span class="br0">&#40;</span> input_iterator start1, input_iterator end1, input_iterator2 start2, input_iterator2 end2, output_iterator result <span class="br0">&#41;</span><span class="sy4">;</span>
+    output_iterator set_union<span class="br0">&#40;</span> input_iterator start1, input_iterator end1, input_iterator2 start2, input_iterator2 end2, output_iterator result, StrictWeakOrdering cmp <span class="br0">&#41;</span><span class="sy4">;</span></pre>
 <p>
 The set_union() algorithm computes the sorted union of the two sorted ranges [start1,end1)
 and [start2,end2) and stores it starting at result.
@@ -48,11 +71,78 @@ The return value of set_union() is an iterator to the end of the union range.
 set_union() runs in <a href="../../complexity" class="wikilink1" title="complexity">linear time</a>.
 </p>
 
+</div>
+<!-- EDIT1 SECTION "set_union" [2-663] -->
+<h3 class="sectionedit2"><a name="parameters" id="parameters">Parameters</a></h3>
+<div class="level3">
+
 <p>
-Related Topics: <a href="includes" class="wikilink1" title="stl:algorithm:includes">includes</a>, <a href="merge" class="wikilink1" title="stl:algorithm:merge">merge</a>, <a href="set_difference" class="wikilink1" title="stl:algorithm:set_difference">set_difference</a>, <a href="set_intersection" class="wikilink1" title="stl:algorithm:set_intersection">set_intersection</a>, <a href="set_symmetric_difference" class="wikilink1" title="stl:algorithm:set_symmetric_difference">set_symmetric_difference</a>
+
+todo
 </p>
 
 </div>
-<!-- SECTION "set_union" [3-] --></div>
+<!-- EDIT2 SECTION "Parameters" [664-689] -->
+<h3 class="sectionedit3"><a name="return_value" id="return_value">Return value</a></h3>
+<div class="level3">
+
+<p>
+
+todo
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Return value" [690-717] -->
+<h3 class="sectionedit4"><a name="example" id="example">Example</a></h3>
+<div class="level3">
+<pre class="cpp code cpp"><span class="co1">// set_union example</span>
+<span class="co2">#include &lt;iostream&gt;</span>
+<span class="co2">#include &lt;algorithm&gt;</span>
+<span class="co2">#include &lt;vector&gt;</span>
+<span class="kw2">using</span> <span class="kw2">namespace</span> std<span class="sy4">;</span>
+&nbsp;
+<span class="kw4">int</span> main <span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+  <span class="kw4">int</span> first<span class="br0">&#91;</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="br0">&#123;</span><span class="nu0">5</span>,<span class="nu0">10</span>,<span class="nu0">15</span>,<span class="nu0">20</span>,<span class="nu0">25</span><span class="br0">&#125;</span><span class="sy4">;</span>
+  <span class="kw4">int</span> second<span class="br0">&#91;</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="br0">&#123;</span><span class="nu0">50</span>,<span class="nu0">40</span>,<span class="nu0">30</span>,<span class="nu0">20</span>,<span class="nu0">10</span><span class="br0">&#125;</span><span class="sy4">;</span>
+  vector<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> v<span class="br0">&#40;</span><span class="nu0">10</span><span class="br0">&#41;</span><span class="sy4">;</span>                           <span class="co1">// 0  0  0  0  0  0  0  0  0  0</span>
+  vector<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">iterator</span> it<span class="sy4">;</span>
+&nbsp;
+  sort <span class="br0">&#40;</span>first,first<span class="sy2">+</span><span class="nu0">5</span><span class="br0">&#41;</span><span class="sy4">;</span>     <span class="co1">//  5 10 15 20 25</span>
+  sort <span class="br0">&#40;</span>second,second<span class="sy2">+</span><span class="nu0">5</span><span class="br0">&#41;</span><span class="sy4">;</span>   <span class="co1">// 10 20 30 40 50</span>
+&nbsp;
+  it<span class="sy1">=</span>set_union <span class="br0">&#40;</span>first, first<span class="sy2">+</span><span class="nu0">5</span>, second, second<span class="sy2">+</span><span class="nu0">5</span>, v.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+                                               <span class="co1">// 5 10 15 20 25 30 40 50  0  0</span>
+&nbsp;
+  <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;union has &quot;</span> <span class="sy1">&lt;&lt;</span> <span class="kw4">int</span><span class="br0">&#40;</span>it <span class="sy2">-</span> v.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; elements.<span class="es1">\n</span>&quot;</span><span class="sy4">;</span>
+&nbsp;
+  <span class="kw1">return</span> <span class="nu0">0</span><span class="sy4">;</span>
+<span class="br0">&#125;</span></pre>
+<p>
+Output:
+union has 8 elements
+</p>
+
+</div>
+<!-- EDIT4 SECTION "Example" [718-1388] -->
+<h3 class="sectionedit5"><a name="complexity" id="complexity">Complexity</a></h3>
+<div class="level3">
+
+<p>
+
+todo
+</p>
+
+</div>
+<!-- EDIT5 SECTION "Complexity" [1389-1414] -->
+<h3 class="sectionedit6"><a name="see_also" id="see_also">See also</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="includes" class="wikilink1" title="algorithm:includes">includes</a>, <a href="merge" class="wikilink1" title="algorithm:merge">merge</a>, <a href="set_difference" class="wikilink1" title="algorithm:set_difference">set_difference</a>, <a href="set_intersection" class="wikilink1" title="algorithm:set_intersection">set_intersection</a>, <a href="set_symmetric_difference" class="wikilink1" title="algorithm:set_symmetric_difference">set_symmetric_difference</a>
+</p>
+
+</div>
+<!-- EDIT6 SECTION "See also" [1415-] --></div>
 </body>
 </html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr"
+ lang="fr" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>fr:container:vector:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:01-0700" />
+<meta name="keywords" content="fr,container,vector,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/fr/container/vector/start?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=fr:container:vector" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/fr/container/vector/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/fr/container/vector/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='fr:container:vector';var JSINFO = {"id":"fr:container:vector:start","namespace":"fr:container:vector"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="vecteurs_c_vector" id="vecteurs_c_vector">Vecteurs C++ (vector)</a></h2>
+<div class="level2">
+
+<p>
+
+Les vecteurs (std::vector) sont des classes conteneurs dont les éléments sont contigus et stockés dans un tableau.
+</p>
+
+<p>
+L&#039;accès au contenu d&#039;un vecteur peut être effectué avec une <a href="../../complexity" class="wikilink1" title="fr:complexity">complexité algorithmique</a> constante. L&#039;ajout à la fin d&#039;un vecteur est de complexité amortie constante, tandis que la recherche d&#039;une valeur donnée ou l&#039;insertion d&#039;élément dans le vecteur est de complexité linéaire.
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="vector_constructors" class="wikilink1" title="fr:container:vector:vector_constructors">Constructeurs</a></td><td class="col1">creation d&#039;un vecteur et initialisation éventuelle avec des valeurs données</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="vector_operators" class="wikilink1" title="fr:container:vector:vector_operators">Opérateurs</a></td><td class="col1">comparaison, affectation et accès aux éléments du vecteur</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/fr/container/vector/assign" class="wikilink1" title="fr:container:vector:assign">assign</a></td><td class="col1">affecte des éléments au vecteur</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="at" class="wikilink1" title="fr:container:vector:at">at</a></td><td class="col1">retourne l&#039;élément situé à un emplacement donné du vecteur</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="back" class="wikilink1" title="fr:container:vector:back">back</a></td><td class="col1">retourne une référence sur le dernier élément du vecteur</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/fr/container/vector/begin" class="wikilink2" title="fr:container:vector:begin" rel="nofollow">begin</a></td><td class="col1">retourne un itérateur sur le premier élément du vecteur</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="capacity" class="wikilink1" title="fr:container:vector:capacity">capacity</a></td><td class="col1">retourne le nombre d&#039;élément que le vecteur peut contenir sans allouer davantage de mémoire</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="clear" class="wikilink1" title="fr:container:vector:clear">clear</a></td><td class="col1">supprime tous les éléments du vecteur</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="empty" class="wikilink1" title="fr:container:vector:empty">empty</a></td><td class="col1">retourne vrai si le vecteur ne contient pas d&#039;éléments</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="end" class="wikilink1" title="fr:container:vector:end">end</a></td><td class="col1">retourne un itérateur situé juste après le dernier élément du vecteur</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/fr/container/vector/erase" class="wikilink2" title="fr:container:vector:erase" rel="nofollow">erase</a></td><td class="col1">supprime des éléments du vecteur</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/fr/container/vector/front" class="wikilink2" title="fr:container:vector:front" rel="nofollow">front</a></td><td class="col1">retourne une référence sur le premier élément du vecteur</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><a href="insert" class="wikilink1" title="fr:container:vector:insert">insert</a></td><td class="col1">insère des éléments dans le vecteur</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><a href="max_size" class="wikilink1" title="fr:container:vector:max_size">max_size</a></td><td class="col1">retourne la taille maximale du vecteur</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><a href="pop_back" class="wikilink1" title="fr:container:vector:pop_back">pop_back</a></td><td class="col1">supprime le dernier élément du vecteur</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><a href="push_back" class="wikilink1" title="fr:container:vector:push_back">push_back</a></td><td class="col1">ajoute un élément à la fin du vecteur</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/fr/container/vector/rbegin" class="wikilink2" title="fr:container:vector:rbegin" rel="nofollow">rbegin</a></td><td class="col1">retourne un reverse_iterator vers la fin du vecteur</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/fr/container/vector/rend" class="wikilink2" title="fr:container:vector:rend" rel="nofollow">rend</a></td><td class="col1">retourne un reverse_iterator vers le début du vecteur</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"><a href="reserve" class="wikilink1" title="fr:container:vector:reserve">reserve</a></td><td class="col1">positionne la taille minimale du vecteur</td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"><a href="resize" class="wikilink1" title="fr:container:vector:resize">resize</a></td><td class="col1">change la taille du vecteur</td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"><a href="size" class="wikilink1" title="fr:container:vector:size">size</a></td><td class="col1">retourne le nombre d&#039;éléments contenus dans le vecteur</td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"><a href="swap" class="wikilink1" title="fr:container:vector:swap">swap</a></td><td class="col1">échange le contenu du vecteur avec celui d&#039;un autre</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [460-1950] -->
+</div>
+<!-- EDIT1 SECTION "Vecteurs C++ (vector)" [1-1952] -->
+<h3 class="sectionedit3"><a name="notes" id="notes">Notes :</a></h3>
+<div class="level3">
+
+<p>
+
+Le vecteur de booléens (vector&lt;bool&gt;) est définit comme une spécialisation du template de vecteur. Il permet d&#039;utiliser moins de mémoire. Une variable booléenne normale (bool) utilise de 1 à 4 octets de mémoire, tandis qu&#039;un vecteur de booléen n&#039;utilise qu&#039;un seul bit par valeur booléenne.
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Notes :" [1953-] --></div>
+</body>
+</html>

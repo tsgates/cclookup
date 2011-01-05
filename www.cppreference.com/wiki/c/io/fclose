@@ -5,47 +5,43 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>c:io:fclose</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
-<meta name="robots" content="index,follow" />
-<meta name="date" content="2008-10-14T15:42:00-0700" />
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="noindex,nofollow" />
+<meta name="date" content="2010-11-15T01:55:51-0800" />
 <meta name="keywords" content="c,io,fclose" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/c/io/fclose?do=index" title="Index" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/c/io/fclose?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
 <link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=c:io" />
 <link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/c/io/fclose" />
 <link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/c/io/fclose" />
-<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="canonical" href="fclose" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='c:io';var JSINFO = {"id":"c:io:fclose","namespace":"c:io"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
 
-
-
-<h2><a name="fclose" id="fclose">fclose</a></h2>
+<h2 class="sectionedit1"><a name="page_redirected_auto" id="page_redirected_auto">Page redirected (auto)</a></h2>
 <div class="level2">
-
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <a href="../../redirect" class="wikilink1" title="redirect">redirect</a> </td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [34-52] -->
 <p>
-Syntax:
-</p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;cstdio&gt;</span>
-    <span class="kw4">int</span> fclose<span class="br0">&#40;</span> FILE <span class="sy0">*</span>stream <span class="br0">&#41;</span>;</pre>
-<p>
 
-The function fclose() closes the given file stream, deallocating any buffers
-associated with that stream. fclose() returns 0 upon success, and <acronym title="End of file">EOF</acronym>
-otherwise.
+See <a href="../../io/c/fclose" class="wikilink1" title="io:c:fclose"> this</a>
 </p>
-
-<p>
-Related Topics: <a href="fflush" class="wikilink1" title="c:io:fflush">fflush</a>, <a href="fopen" class="wikilink1" title="c:io:fopen">fopen</a>, <a href="freopen" class="wikilink1" title="c:io:freopen">freopen</a>, <a href="setbuf" class="wikilink1" title="c:io:setbuf">setbuf</a>
-</p>
-
+<div class="noteredirect">This page has been moved, the new location is <a href="../../io/c/fclose" class="wikilink1" title="io:c:fclose">fclose</a>.</div>
 </div>
-<!-- SECTION "fclose" [3-] --></div>
+</div>
 </body>
 </html>

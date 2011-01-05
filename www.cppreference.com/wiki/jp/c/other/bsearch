@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:c:other:bsearch</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:21-0700" />
+<meta name="keywords" content="jp,c,other,bsearch" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/c/other/bsearch?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp:c:other" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/c/other/bsearch" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/c/other/bsearch" />
+<link rel="canonical" href="bsearch" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp:c:other';var JSINFO = {"id":"jp:c:other:bsearch","namespace":"jp:c:other"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="bsearch" id="bsearch">bsearch</a></h2>
+<div class="level2">
+
+<p>
+
+文法:
+
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cstdlib&gt;</span>
+    <span class="kw4">void</span> <span class="sy2">*</span><span class="kw3">bsearch</span><span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">void</span> <span class="sy2">*</span>キー, <span class="kw4">const</span> <span class="kw4">void</span> <span class="sy2">*</span>バッファ, <span class="kw4">size_t</span> 数, <span class="kw4">size_t</span> サイズ, <span class="kw4">int</span> <span class="br0">&#40;</span><span class="sy2">*</span>比較関数<span class="br0">&#41;</span><span class="br0">&#40;</span><span class="kw4">const</span> <span class="kw4">void</span> <span class="sy2">*</span>, <span class="kw4">const</span> <span class="kw4">void</span> <span class="sy2">*</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+
+bsearch()関数は、<code>キー</code>にマッチする要素を、<code>buf[0]</code>〜<code>buf[数-1]</code>の中から二分探索アルゴリズムを使用して探索します。<code>比較関数</code>は、最初の引数が二番目の引数よりも小さければ負の値を、等しければゼロを、大きければ正の値を返す関数を指定します。<code>バッファ</code>の要素は、昇順に並んでいる必要があります。bsearch()の返り値は、マッチした要素のポインタになります。もしもマッチする要素がなければNULLが返されます。
+</p>
+
+<p>
+関連トピック: <a href="qsort" class="wikilink1" title="jp:c:other:qsort">qsort</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

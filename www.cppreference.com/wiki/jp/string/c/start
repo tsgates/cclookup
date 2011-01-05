@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:string:c:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:17-0700" />
+<meta name="keywords" content="jp,string,c,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/string/c/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp:string:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/string/c/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/string/c/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp:string:c';var JSINFO = {"id":"jp:string:c:start","namespace":"jp:string:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="標準_c_文字列_文字" id="標準_c_文字列_文字">標準 C 文字列＆文字</a></h1>
+<div class="level1">
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="atof" class="wikilink1" title="jp:string:c:atof">atof</a></td><td class="col1">文字列を倍精度浮動小数点数に変換します</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="atoi" class="wikilink1" title="jp:string:c:atoi">atoi</a></td><td class="col1">文字列を整数に変換します</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="atol" class="wikilink1" title="jp:string:c:atol">atol</a></td><td class="col1">文字列をロング型の整数に変換します</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="isalnum" class="wikilink1" title="jp:string:c:isalnum">isalnum</a></td><td class="col1">文字がアルファベットか数値ならtrueを返します</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="isalpha" class="wikilink1" title="jp:string:c:isalpha">isalpha</a></td><td class="col1">文字がアルファベットならtrueを返します</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="iscntrl" class="wikilink1" title="jp:string:c:iscntrl">iscntrl</a></td><td class="col1">文字がコントロール文字ならtrueを返します</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="isdigit" class="wikilink1" title="jp:string:c:isdigit">isdigit</a></td><td class="col1">文字が数値ならtrueを返します</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="isgraph" class="wikilink1" title="jp:string:c:isgraph">isgraph</a></td><td class="col1">文字がグラフィック文字ならtrueを返します</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="islower" class="wikilink1" title="jp:string:c:islower">islower</a></td><td class="col1">文字がアルファベットの小文字ならtrueを返します</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="isprint" class="wikilink1" title="jp:string:c:isprint">isprint</a></td><td class="col1">文字が印字可能な文字ならtrueを返します</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="ispunct" class="wikilink1" title="jp:string:c:ispunct">ispunct</a></td><td class="col1">文字が句読点記号ならtrueを返します</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="isspace" class="wikilink1" title="jp:string:c:isspace">isspace</a></td><td class="col1">文字が空白文字ならtrueを返します</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><a href="isupper" class="wikilink1" title="jp:string:c:isupper">isupper</a></td><td class="col1">文字がアルファベットの大文字ならtrueを返します</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><a href="isxdigit" class="wikilink1" title="jp:string:c:isxdigit">isxdigit</a></td><td class="col1">文字が16進法の文字ならtrueを返します</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><a href="memchr" class="wikilink1" title="jp:string:c:memchr">memchr</a></td><td class="col1">配列の中を探索して、指定された文字が最初に登場する最初の位置を返します</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><a href="memcmp" class="wikilink1" title="jp:string:c:memcmp">memcmp</a></td><td class="col1">２つのバッファを比較します</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><a href="memcpy" class="wikilink1" title="jp:string:c:memcpy">memcpy</a></td><td class="col1">１つのバッファを他のバッファにコピーします</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><a href="memmove" class="wikilink1" title="jp:string:c:memmove">memmove</a></td><td class="col1">１つのバッファを他のバッファに移動します</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"><a href="memset" class="wikilink1" title="jp:string:c:memset">memset</a></td><td class="col1">バッファを指定された文字で埋めます</td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"><a href="strcat" class="wikilink1" title="jp:string:c:strcat">strcat</a></td><td class="col1">２つの文字列を繋げます</td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"><a href="strchr" class="wikilink1" title="jp:string:c:strchr">strchr</a></td><td class="col1">文字列の中から指定された文字を検索して、最初に見つかった位置を返します</td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"><a href="strcmp" class="wikilink1" title="jp:string:c:strcmp">strcmp</a></td><td class="col1">２つの文字列を比較します</td>
+	</tr>
+	<tr class="row22">
+		<td class="col0"><a href="strcoll" class="wikilink1" title="jp:string:c:strcoll">strcoll</a></td><td class="col1">現在のロケールに従って、２つの文字列を比較します</td>
+	</tr>
+	<tr class="row23">
+		<td class="col0"><a href="strcpy" class="wikilink1" title="jp:string:c:strcpy">strcpy</a></td><td class="col1">１つの文字列を他の文字列にコピーします</td>
+	</tr>
+	<tr class="row24">
+		<td class="col0"><a href="strcspn" class="wikilink1" title="jp:string:c:strcspn">strcspn</a></td><td class="col1">他の文字列の中から、１つの文字列に含まれる文字が含まれない文字列を返します(後でチェック)</td>
+	</tr>
+	<tr class="row25">
+		<td class="col0"><a href="strerror" class="wikilink1" title="jp:string:c:strerror">strerror</a></td><td class="col1">指定されたエラーコードの文字列形式のメッセージを返します</td>
+	</tr>
+	<tr class="row26">
+		<td class="col0"><a href="strlen" class="wikilink1" title="jp:string:c:strlen">strlen</a></td><td class="col1">指定された文字列の長さを返します</td>
+	</tr>
+	<tr class="row27">
+		<td class="col0"><a href="strncat" class="wikilink1" title="jp:string:c:strncat">strncat</a></td><td class="col1">指定された文字数分だけ切り出し、２つの文字列を繋げます</td>
+	</tr>
+	<tr class="row28">
+		<td class="col0"><a href="strncmp" class="wikilink1" title="jp:string:c:strncmp">strncmp</a></td><td class="col1">指定された文字数分だけ２つの文字列を比較します</td>
+	</tr>
+	<tr class="row29">
+		<td class="col0"><a href="strncpy" class="wikilink1" title="jp:string:c:strncpy">strncpy</a></td><td class="col1">指定された文字数分だけ、１つの文字列を他の文字列にコピーします</td>
+	</tr>
+	<tr class="row30">
+		<td class="col0"><a href="strpbrk" class="wikilink1" title="jp:string:c:strpbrk">strpbrk</a></td><td class="col1">他の文字列の中から、指定された文字列の中の文字が初めて登場する位置を返します</td>
+	</tr>
+	<tr class="row31">
+		<td class="col0"><a href="strrchr" class="wikilink1" title="jp:string:c:strrchr">strrchr</a></td><td class="col1">指定された文字列の中から、指定された文字が登場する最後の位置を探索します</td>
+	</tr>
+	<tr class="row32">
+		<td class="col0"><a href="strspn" class="wikilink1" title="jp:string:c:strspn">strspn</a></td><td class="col1">他の文字列の中から、指定された文字列に含まれる文字だけで構成された、文字列の長さを返します</td>
+	</tr>
+	<tr class="row33">
+		<td class="col0"><a href="strstr" class="wikilink1" title="jp:string:c:strstr">strstr</a></td><td class="col1">指定された文字列が含まれる最初の位置を探索して返します</td>
+	</tr>
+	<tr class="row34">
+		<td class="col0"><a href="strtod" class="wikilink1" title="jp:string:c:strtod">strtod</a></td><td class="col1">文字列を倍精度浮動小数点数に変換します</td>
+	</tr>
+	<tr class="row35">
+		<td class="col0"><a href="strtok" class="wikilink1" title="jp:string:c:strtok">strtok</a></td><td class="col1">文字列の中の次のトークンを探索して返します</td>
+	</tr>
+	<tr class="row36">
+		<td class="col0"><a href="strtol" class="wikilink1" title="jp:string:c:strtol">strtol</a></td><td class="col1">文字列をロング型の整数に変換します</td>
+	</tr>
+	<tr class="row37">
+		<td class="col0"><a href="strtoul" class="wikilink1" title="jp:string:c:strtoul">strtoul</a></td><td class="col1">文字列を符号なしのロング型の整数に変換します</td>
+	</tr>
+	<tr class="row38">
+		<td class="col0"><a href="strxfrm" class="wikilink1" title="jp:string:c:strxfrm">strxfrm</a></td><td class="col1">文字列比較関数を使用できるように、文字列を変換します</td>
+	</tr>
+	<tr class="row39">
+		<td class="col0"><a href="tolower" class="wikilink1" title="jp:string:c:tolower">tolower</a></td><td class="col1">文字列を小文字に変換します</td>
+	</tr>
+	<tr class="row40">
+		<td class="col0"><a href="toupper" class="wikilink1" title="jp:string:c:toupper">toupper</a></td><td class="col1">文字列を大文字に変換します</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [50-3355] -->
+</div>
+</div>
+</body>
+</html>

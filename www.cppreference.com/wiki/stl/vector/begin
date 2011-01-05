@@ -4,54 +4,98 @@
  lang="en" dir="ltr">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>stl:vector:begin</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
+  <title>container:vector:begin</title>
+<meta name="generator" content="DokuWiki" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2008-10-14T15:42:10-0700" />
-<meta name="keywords" content="stl,vector,begin" />
+<meta name="date" content="2010-11-07T02:47:54-0800" />
+<meta name="keywords" content="container,vector,begin" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/stl/vector/begin?do=index" title="Index" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/container/vector/begin?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
-<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=stl:vector" />
-<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/stl/vector/begin" />
-<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/stl/vector/begin" />
-<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=container:vector" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/container/vector/begin" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/container/vector/begin" />
+<link rel="canonical" href="begin" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='container:vector';var JSINFO = {"id":"container:vector:begin","namespace":"container:vector"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
 
+<ul class="toc">
+<li class="clear">
 
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="begin#vectorbegin_vectorcbegin" class="toc">vector::begin, vector::cbegin</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="begin#parameters" class="toc">Parameters</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="begin#return_value" class="toc">Return value</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="begin#example" class="toc">Example</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="begin#complexity" class="toc">Complexity</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="begin#see_also" class="toc">See also</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
 
-<h2><a name="begin" id="begin">begin</a></h2>
+<h2 class="sectionedit1"><a name="vectorbegin_vectorcbegin" id="vectorbegin_vectorcbegin">vector::begin, vector::cbegin</a></h2>
 <div class="level2">
-
+<pre class="cpp code cpp">iterator begin<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+const_iterator begin<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span>
+const_iterator cbegin<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span>   <span class="co1">//C++0x feature</span></pre>
 <p>
-Syntax:
-</p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;vector&gt;</span>
-    iterator begin<span class="br0">&#40;</span><span class="br0">&#41;</span>;
-    const_iterator begin<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw4">const</span>;</pre>
-<p>
-The function begin() returns an iterator to the first element of the vector,
-and runs in <a href="../../complexity" class="wikilink1" title="complexity">constant time</a>.
+Returns an iterator to the first element of the container.
 </p>
 
+</div>
+<!-- EDIT1 SECTION "vector::begin, vector::cbegin" [1-214] -->
+<h3 class="sectionedit2"><a name="parameters" id="parameters">Parameters</a></h3>
+<div class="level3">
+
 <p>
-For example, the following code uses begin() to initialize an iterator that is
+
+(none)
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Parameters" [215-242] -->
+<h3 class="sectionedit3"><a name="return_value" id="return_value">Return value</a></h3>
+<div class="level3">
+
+<p>
+
+iterator to the first element
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Return value" [243-295] -->
+<h3 class="sectionedit4"><a name="example" id="example">Example</a></h3>
+<div class="level3">
+
+<p>
+
+The following code uses begin() to initialize an iterator that is
 used to traverse the elements of a vector:
 </p>
-<pre class="c code c++" style="font-family:monospace;">    vector<span class="sy0">&lt;</span>string<span class="sy0">&gt;</span> words;
-    <span class="kw4">string</span> str;
+<pre class="cpp code cpp">    vector<span class="sy1">&lt;</span>string<span class="sy1">&gt;</span> words<span class="sy4">;</span>
+    string str<span class="sy4">;</span>
 &nbsp;
-    <span class="kw1">while</span><span class="br0">&#40;</span> cin <span class="sy0">&gt;&gt;</span> str <span class="br0">&#41;</span> words.<span class="me1">push_back</span><span class="br0">&#40;</span>str<span class="br0">&#41;</span>;
+    <span class="kw1">while</span><span class="br0">&#40;</span> <span class="kw3">cin</span> <span class="sy1">&gt;&gt;</span> str <span class="br0">&#41;</span> words.<span class="me1">push_back</span><span class="br0">&#40;</span>str<span class="br0">&#41;</span><span class="sy4">;</span>
 &nbsp;
-    vector<span class="sy0">&lt;</span>string<span class="sy0">&gt;::</span><span class="me2">iterator</span> iter;
-    <span class="kw1">for</span><span class="br0">&#40;</span> iter <span class="sy0">=</span> words.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span>; iter <span class="sy0">!=</span> words.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span>; iter<span class="sy0">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
-      <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="sy0">*</span>iter <span class="sy0">&lt;&lt;</span> endl;
+    <span class="kw1">for</span><span class="br0">&#40;</span> vector<span class="sy1">&lt;</span>string<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">const_iterator</span> iter <span class="sy1">=</span> words.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+         iter <span class="sy3">!</span><span class="sy1">=</span> words.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="sy2">++</span>iter <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+      <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="sy2">*</span>iter <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
     <span class="br0">&#125;</span></pre>
 <p>
 When given this input:
@@ -67,11 +111,27 @@ When given this input:
     you're
     so
     fine</pre>
+</div>
+<!-- EDIT4 SECTION "Example" [296-866] -->
+<h3 class="sectionedit5"><a name="complexity" id="complexity">Complexity</a></h3>
+<div class="level3">
+
 <p>
-Related Topics: <a href="vector_operators" class="wikilink1" title="stl:vector:vector_operators">[] operator</a>, <a href="at" class="wikilink1" title="stl:vector:at">at</a>, <a href="end" class="wikilink1" title="stl:vector:end">end</a>, <a href="rbegin" class="wikilink1" title="stl:vector:rbegin">rbegin</a>, <a href="rend" class="wikilink1" title="stl:vector:rend">rend</a>
+
+constant
 </p>
 
 </div>
-<!-- SECTION "begin" [3-] --></div>
+<!-- EDIT5 SECTION "Complexity" [867-896] -->
+<h3 class="sectionedit6"><a name="see_also" id="see_also">See also</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="http://www.cppreference.com/wiki/container/vector/operator_at" class="wikilink1" title="container:vector:operator_at">operator[] </a>, <a href="at" class="wikilink1" title="container:vector:at">at</a>, <a href="end" class="wikilink1" title="container:vector:end">end</a>, <a href="rbegin" class="wikilink1" title="container:vector:rbegin">rbegin</a>, <a href="rend" class="wikilink1" title="container:vector:rend">rend</a>
+</p>
+
+</div>
+<!-- EDIT6 SECTION "See also" [897-] --></div>
 </body>
 </html>

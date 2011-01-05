@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru"
+ lang="ru" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>ru:container:deque:swap</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:14-0700" />
+<meta name="keywords" content="ru,container,deque,swap" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/ru/container/deque/swap?do=index" title="Все страницы" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=ru:container:deque" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/ru/container/deque/swap" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/ru/container/deque/swap" />
+<link rel="canonical" href="swap" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='ru:container:deque';var JSINFO = {"id":"ru:container:deque:swap","namespace":"ru:container:deque"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="swap" id="swap">swap</a></h2>
+<div class="level2">
+
+<p>
+Синтаксис:
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;deque&gt;</span>
+    <span class="kw4">void</span> swap<span class="br0">&#40;</span> container<span class="sy3">&amp;</span> from <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Функция swap() меняется содержимым текущей двусторонней очереди с двусторонней очередью from.
+Функция выполняется за <a href="http://www.cppreference.com/wiki/ru/complexity" class="wikilink2" title="ru:complexity" rel="nofollow">константное время</a>.
+</p>
+
+<p>
+Например, такой код использует swap() для обмена значениями двух двусторонних очередей:
+</p>
+<pre class="cpp code cpp">    deque<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> v<span class="br0">&#40;</span> <span class="nu0">5</span>, <span class="nu0">1</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+    deque<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> d<span class="br0">&#40;</span> <span class="nu0">4</span>, <span class="nu0">42</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+    v.<span class="me1">swap</span><span class="br0">&#40;</span> d <span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+    <span class="kw4">size_t</span> i<span class="sy4">;</span>
+    <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;v содержит: &quot;</span><span class="sy4">;</span>
+    <span class="kw1">for</span><span class="br0">&#40;</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> v.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="sy2">++</span>i <span class="br0">&#41;</span> <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> v<span class="br0">&#91;</span>i<span class="br0">&#93;</span> <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span><span class="sy4">;</span>
+    <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+&nbsp;
+    <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;d содержит: &quot;</span><span class="sy4">;</span>
+    <span class="kw1">for</span><span class="br0">&#40;</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> d.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="sy2">++</span>i <span class="br0">&#41;</span> <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> d<span class="br0">&#91;</span>i<span class="br0">&#93;</span> <span class="sy1">&lt;&lt;</span> <span class="st0">' '</span><span class="sy4">;</span>
+    <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span></pre>
+<p>
+Код выведет:
+</p>
+<pre class="code">
+    v содержит: 42 42 42 42
+    d содержит: 1 1 1 1 1</pre>
+<p>
+
+Смотри также: <a href="insert" class="wikilink1" title="ru:container:deque:insert">insert</a>, <a href="deque_operators" class="wikilink1" title="ru:container:deque:deque_operators">оператор =</a>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "swap" [3-] --></div>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>string:char_traits</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-11-12T07:31:10-0800" />
+<meta name="keywords" content="string,char_traits" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/string/char_traits?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=string" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/string/char_traits" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/string/char_traits" />
+<link rel="canonical" href="char_traits" />
+<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='string';var JSINFO = {"id":"string:char_traits","namespace":"string"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="character_traits" id="character_traits">Character traits</a></h2>
+<div class="level2">
+<pre class="cpp code cpp"><span class="co2">#include &lt;string&gt;</span>
+&nbsp;
+<span class="kw2">template</span><span class="sy1">&lt;</span> <span class="kw2">class</span> Char <span class="sy1">&gt;</span>
+<span class="kw2">class</span> char_traits<span class="sy4">;</span></pre>
+<p>
+Char traits defines the stream and string operation properties of a character type. Specifically, they define the types used for manipulating the characters and character strings, as well as all the common operations for the given character type.
+</p>
+
+<p>
+Each set of character traits is defined as a template specialization <code>Traits&lt; Char &gt;</code> where <code>Char</code> is the type of the character. 
+</p>
+
+<p>
+The template shall to specify the following members:
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Expression </th><th class="col1"> Explanation </th><th class="col2"> Complexity </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <code>char_type</code> </td><td class="col1"> the type of the character, <code>Char</code> </td><td class="col2"> compile time </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <code>int_type</code> </td><td class="col1"> type, able to hold all values of <code>Char</code> and <code><acronym title="End of file">EOF</acronym></code> value </td><td class="col2"> compile time </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> <code>off_type</code> </td><td class="col1"> <em>implementation defined</em> </td><td class="col2"> compile time </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> <code>pos_type</code> </td><td class="col1"> <em>implementation defined</em> </td><td class="col2"> compile time </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> <code>state_type</code> </td><td class="col1"> <em>implementation defined</em> </td><td class="col2"> compile time </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> <code>void assign( Char &amp;r, Char a )</code> </td><td class="col1"> assigns <code>r = a</code> </td><td class="col2"> constant </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"> <code>bool eq( Char a, Char b )</code> </td><td class="col1"> shall return <code>true</code> if <code>a</code> and <code>b</code> are equivalent </td><td class="col2"> constant </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"> <code>bool lt( Char a, Char b )</code> </td><td class="col1 leftalign"> shall return <code>true</code> if <code>a</code> is less than <code>b</code>  </td><td class="col2"> constant </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"> <code>char_type *assign( Char *p, size_t n, Char a )</code> </td><td class="col1"> shall assign value <code>a</code> to character string <code>[p, p+n)</code>. Shall return <code>p</code> </td><td class="col2"> linear </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"> <code>char_type *move( Char *p, const Char *q, size_t n)</code> </td><td class="col1 leftalign"> shall assign character string <code>[q, q+n)</code> to character string <code>[p, p+n)</code>.<br/>
+Shall return <code>p</code>. Performs correctly even if &#039;[p, p+n)<code> and &#039;[q, q+n)</code> overlap.  </td><td class="col2"> linear </td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"> <code>char_type *copy( Char *p, const Char *q, size_t n)</code> </td><td class="col1"> shall assign character string <code>[q, q+n)</code> to character string <code>[p, p+n)</code>.<br/>
+Shall return <code>p</code>. <code>q</code> shall not be in <code>[p, p+n)</code> </td><td class="col2"> linear </td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"> <code>int compare( const Char *p, const Char *q, size_t n )</code> </td><td class="col1"> shall return <code>0</code> if character strings <code>[p, p+n)</code> and <code>[q, q+n)</code> are equal,<br/>
+shall return negative value if <code>[p, p+n)</code> is less than <code>[q, q+n)</code> and<br/>
+shall return positive value if <code>[p, p+n)</code> is greater than <code>[q, q+n)</code>.<br/>
+The comparison is done lexicographically, using <code>eq</code> and <code>lt</code> functions. </td><td class="col2"> linear </td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"> <code>size_t length()</code> </td><td class="col1"> shall return the position of the terminating <code>Char()</code> (i.e. null-character) </td><td class="col2"> linear </td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"> <code>const char_type *find( const Char *p, size_t n, Char a )</code> </td><td class="col1"> shall return the pointer to the first character of value <code>a</code> in character string <code>p</code> </td><td class="col2"> linear </td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"> <code>char_type to_char_type( int_type a )</code> </td><td class="col1"> shall return equivalent value of <code>char_type</code> type.<br/>
+If there is no such value, return value is unspecified </td><td class="col2"> constant </td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"> <code>int_type to_int_type( char_type a )</code> </td><td class="col1"> shall return equivalent value of <code>int_type</code> type. </td><td class="col2"> constant </td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"> <code>bool eq_int_type( int_type a, int_type b )</code> </td><td class="col1"> shall return false if one of <code>a</code> or <code>b</code> equals <code>eof()</code> and the other is not. <br/>
+Shall return true if <code>a</code> equals <code>b</code>. Return value is unspecified in other cases. </td><td class="col2"> constant </td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"> <code>int_type eof()</code> </td><td class="col1"> shall return a value not equal to any value of type <code>char_type</code> </td><td class="col2"> constant </td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"> <code>bool not_eof( int_type a )</code> </td><td class="col1"> shall return <code>true</code> if <code>a</code> and <code>eof()</code> are equivalent</td><td class="col2"> constant </td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [542-3171] -->
+<p>
+There is class template <code>char_traits</code> defined, which serves as a basis for explicit instantiations. It fulfills all requirements of <code>Traits</code> concept.
+</p>
+
+<p>
+Also, several specializations are defined for most common character types which which has to specify the following members:
+
+</p>
+<div class="table sectionedit3"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Instantiation </th><th class="col1"> <code>char_type</code> </th><th class="col2"> <code>int_type</code> </th><th class="col3"> <code>off_type</code> </th><th class="col4"> <code>pos_type</code> </th><th class="col5"> <code>state_type</code> </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <code>char_traits&lt; char &gt;</code> </td><td class="col1"> <code>char</code> </td><td class="col2"> <code>int</code> </td><td class="col3"> <code>streamoff</code> </td><td class="col4"> <code>streampos</code> </td><td class="col5"> <code>mbstate_t</code> </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <code>char_traits&lt; wchar_t &gt;</code> </td><td class="col1"> <code>wchar_t</code> </td><td class="col2"> <code>wint_t</code> </td><td class="col3"> <code>wstreamoff</code> </td><td class="col4"> <code>wstreampos</code> </td><td class="col5"> <code>mbstate_t</code> </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> <code>char_traits&lt; char16_t &gt;</code> (<a href="../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature) </td><td class="col1"> <code>char16_t</code> </td><td class="col2"> <code>int_least16_t</code> </td><td class="col3"> <code>streamoff</code> </td><td class="col4"> <code>u16streampos</code> </td><td class="col5"> <code>mbstate_t</code> </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> <code>char_traits&lt; char32_t &gt;</code> (<a href="../c_0x" class="wikilink1" title="c_0x">C++0x</a> feature) </td><td class="col1"> <code>char32_t</code> </td><td class="col2"> <code>int_least32_t</code> </td><td class="col3"> <code>streamoff</code> </td><td class="col4"> <code>u32streampos</code> </td><td class="col5"> <code>mbstate_t</code> </td>
+	</tr>
+</table></div>
+<!-- EDIT3 TABLE [3454-4032] -->
+</div>
+<!-- EDIT1 SECTION "Character traits" [1-4033] -->
+<h3 class="sectionedit4"><a name="see_also" id="see_also">See also</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="basic_string/start" class="wikilink1" title="string:basic_string:start">basic_string</a>
+
+</p>
+
+</div>
+<!-- EDIT4 SECTION "See also" [4034-] --></div>
+</body>
+</html>

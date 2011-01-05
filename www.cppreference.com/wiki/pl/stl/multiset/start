@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl"
+ lang="pl" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>pl:container:multiset:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:39-0700" />
+<meta name="keywords" content="pl,container,multiset,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/pl/container/multiset/start?do=index" title="Indeks" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=pl:container:multiset" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/pl/container/multiset/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/pl/container/multiset/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='pl:container:multiset';var JSINFO = {"id":"pl:container:multiset:start","namespace":"pl:container:multiset"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="c_multizbiory" id="c_multizbiory">C++ Multizbiory</a></h2>
+<div class="level2">
+
+<p>
+
+C++ Multizbiory są jak zbiory posortowanymi kontenerami asocjacyjnymi STL, ale z tą różnicą, że pozwalają na duplikację obiektów. 
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/pl/container/multiset/multiset_constructors" class="wikilink2" title="pl:container:multiset:multiset_constructors" rel="nofollow">multiset_constructors</a></td><td class="col1">default methods to allocate, copy, and deallocate multisets</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/pl/container/multiset/multiset_operators" class="wikilink2" title="pl:container:multiset:multiset_operators" rel="nofollow">multiset_operators</a></td><td class="col1">assign and compare multisets</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/pl/container/multiset/begin" class="wikilink2" title="pl:container:multiset:begin" rel="nofollow">begin</a></td><td class="col1">returns an iterator to the beginning of the multiset</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/pl/container/multiset/clear" class="wikilink2" title="pl:container:multiset:clear" rel="nofollow">clear</a></td><td class="col1">removes all elements from the multiset</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/pl/container/multiset/count" class="wikilink2" title="pl:container:multiset:count" rel="nofollow">count</a></td><td class="col1">returns the number of elements matching a certain key</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/pl/container/multiset/empty" class="wikilink2" title="pl:container:multiset:empty" rel="nofollow">empty</a></td><td class="col1">true if the multiset has no elements</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/pl/container/multiset/end" class="wikilink2" title="pl:container:multiset:end" rel="nofollow">end</a></td><td class="col1">returns an iterator just past the last element of a multiset</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/pl/container/multiset/equal_range" class="wikilink2" title="pl:container:multiset:equal_range" rel="nofollow">equal_range</a></td><td class="col1">returns iterators to the first and just past the last elements matching a specific key</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/pl/container/multiset/erase" class="wikilink2" title="pl:container:multiset:erase" rel="nofollow">erase</a></td><td class="col1">removes elements from a multiset</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/pl/container/multiset/find" class="wikilink2" title="pl:container:multiset:find" rel="nofollow">find</a></td><td class="col1">returns an iterator to specific elements</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/pl/container/multiset/insert" class="wikilink2" title="pl:container:multiset:insert" rel="nofollow">insert</a></td><td class="col1">inserts items into a multiset</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/pl/container/multiset/key_comp" class="wikilink2" title="pl:container:multiset:key_comp" rel="nofollow">key_comp</a></td><td class="col1">returns the function that compares keys</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/pl/container/multiset/lower_bound" class="wikilink2" title="pl:container:multiset:lower_bound" rel="nofollow">lower_bound</a></td><td class="col1">returns an iterator to the first element greater than or equal to a certain value</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/pl/container/multiset/max_size" class="wikilink2" title="pl:container:multiset:max_size" rel="nofollow">max_size</a></td><td class="col1">returns the maximum number of elements that the multiset can hold</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/pl/container/multiset/rbegin" class="wikilink2" title="pl:container:multiset:rbegin" rel="nofollow">rbegin</a></td><td class="col1">returns a reverse_iterator to the end of the multiset</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/pl/container/multiset/rend" class="wikilink2" title="pl:container:multiset:rend" rel="nofollow">rend</a></td><td class="col1">returns a reverse_iterator to the beginning of the multiset</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/pl/container/multiset/size" class="wikilink2" title="pl:container:multiset:size" rel="nofollow">size</a></td><td class="col1">returns the number of items in the multiset</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/pl/container/multiset/swap" class="wikilink2" title="pl:container:multiset:swap" rel="nofollow">swap</a></td><td class="col1">swap the contents of this multiset with another</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/pl/container/multiset/upper_bound" class="wikilink2" title="pl:container:multiset:upper_bound" rel="nofollow">upper_bound</a></td><td class="col1">returns an iterator to the first element greater than a certain value</td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/pl/container/multiset/value_comp" class="wikilink2" title="pl:container:multiset:value_comp" rel="nofollow">value_comp</a></td><td class="col1">returns the function that compares values</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [170-1493] -->
+</div>
+</div>
+</body>
+</html>

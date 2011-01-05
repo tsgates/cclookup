@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:keywords:template</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:20-0700" />
+<meta name="keywords" content="jp,keywords,template" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/keywords/template?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp:keywords" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/keywords/template" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/keywords/template" />
+<link rel="canonical" href="template" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp:keywords';var JSINFO = {"id":"jp:keywords:template","namespace":"jp:keywords"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="template" id="template">template</a></h2>
+<div class="level2">
+
+</div>
+
+<h4><a name="汎用オブジェクトの宣言" id="汎用オブジェクトの宣言">汎用オブジェクトの宣言</a></h4>
+<div class="level4">
+
+<p>
+
+文法:
+
+</p>
+<pre class="cpp code cpp">    <span class="kw2">template</span> <span class="sy1">&lt;</span><span class="kw2">class</span> データ型<span class="sy1">&gt;</span> 返値の型 名前<span class="br0">&#40;</span> パラメータリスト <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    命令リスト<span class="sy4">;</span>
+    <span class="br0">&#125;</span></pre>
+<p>
+
+テンプレートは汎用の関数やクラスを作成するのに使用されます。汎用の関数やクラスは、指定されたデータ型の詳細を使用時まで知らせなくても、操作するコードを書くことができます。”データ型”というプレースホルダーが他の多くの<a href="../data_types" class="wikilink1" title="jp:data_types">データ型</a>と置換されることで、この機能は実現されています。
+</p>
+
+<p>
+例えば、以下のコードは汎用的な変数の入れ替え関数を定義しています。置き換える２つの変数にはあらゆる型を指定することができます:
+</p>
+<pre class="cpp code cpp">     <span class="kw2">template</span><span class="sy1">&lt;</span><span class="kw2">class</span> X<span class="sy1">&gt;</span> <span class="kw4">void</span> genericSwap<span class="br0">&#40;</span> X <span class="sy3">&amp;</span>a, X <span class="sy3">&amp;</span>b <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+       X tmp<span class="sy4">;</span>
+&nbsp;
+       tmp <span class="sy1">=</span> a<span class="sy4">;</span>
+       a <span class="sy1">=</span> b<span class="sy4">;</span>
+       b <span class="sy1">=</span> tmp<span class="sy4">;</span>
+     <span class="br0">&#125;</span>
+     <span class="kw4">int</span> main<span class="br0">&#40;</span><span class="kw4">void</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+       ...
+       <span class="kw4">int</span> num1 <span class="sy1">=</span> <span class="nu0">5</span><span class="sy4">;</span>
+       <span class="kw4">int</span> num2 <span class="sy1">=</span> <span class="nu0">21</span><span class="sy4">;</span>
+       <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;入れ替え前: num1 = &quot;</span> <span class="sy1">&lt;&lt;</span> num1 <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;, num2 = &quot;</span> <span class="sy1">&lt;&lt;</span> num2 <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+       genericSwap<span class="br0">&#40;</span> num1, num2 <span class="br0">&#41;</span><span class="sy4">;</span>
+       <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;入れ替え後: num1 = &quot;</span> <span class="sy1">&lt;&lt;</span> num1 <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;, num2 = &quot;</span> <span class="sy1">&lt;&lt;</span> num2 <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+       <span class="kw4">char</span> c1 <span class="sy1">=</span> <span class="st0">'a'</span><span class="sy4">;</span>
+       <span class="kw4">char</span> c2 <span class="sy1">=</span> <span class="st0">'z'</span><span class="sy4">;</span>
+       <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;入れ替え前: c1 = &quot;</span> <span class="sy1">&lt;&lt;</span> c1 <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;, c2 = &quot;</span> <span class="sy1">&lt;&lt;</span> c2 <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+       genericSwap<span class="br0">&#40;</span> c1, c2 <span class="br0">&#41;</span><span class="sy4">;</span>
+       <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;入れ替え後: c1 = &quot;</span> <span class="sy1">&lt;&lt;</span> c1 <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;, c2 = &quot;</span> <span class="sy1">&lt;&lt;</span> c2 <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+       ...
+       <span class="kw1">return</span><span class="br0">&#40;</span> <span class="nu0">0</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+     <span class="br0">&#125;</span></pre>
+<p>
+次のテンプレートは、汎用クラスを宣言しています。
+
+</p>
+<pre class="cpp code cpp"><span class="co2">#include &lt;cassert&gt;</span>
+&nbsp;
+<span class="kw4">const</span> <span class="kw4">unsigned</span> <span class="kw4">int</span> maxSize <span class="sy1">=</span> <span class="nu0">20</span><span class="sy4">;</span>
+&nbsp;
+<span class="kw2">template</span><span class="sy1">&lt;</span><span class="kw2">class</span> T<span class="sy1">&gt;</span>
+<span class="kw2">class</span> simpleStack
+<span class="br0">&#123;</span>
+   <span class="kw2">public</span><span class="sy4">:</span>
+     simpleStack<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">:</span> amount<span class="br0">&#40;</span><span class="nu0">0</span><span class="br0">&#41;</span> <span class="br0">&#123;</span><span class="br0">&#125;</span>
+     <span class="kw4">bool</span> empty<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw4">const</span> <span class="br0">&#123;</span> <span class="kw1">return</span> amount <span class="sy1">==</span> <span class="nu0">0</span><span class="sy4">;</span> <span class="br0">&#125;</span>
+     <span class="kw4">bool</span> full<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw4">const</span> <span class="br0">&#123;</span> <span class="kw1">return</span> amount <span class="sy1">==</span> maxSize<span class="sy4">;</span> <span class="br0">&#125;</span>
+     <span class="kw4">unsigned</span> <span class="kw4">int</span> size<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw4">const</span> <span class="br0">&#123;</span> <span class="kw1">return</span> amount<span class="sy4">;</span> <span class="br0">&#125;</span>
+     <span class="kw4">void</span> clear<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> amount <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> <span class="br0">&#125;</span>
+     <span class="kw4">const</span> T<span class="sy3">&amp;</span> top<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span>
+     <span class="kw4">void</span> pop<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+     <span class="kw4">void</span> push<span class="br0">&#40;</span> <span class="kw4">const</span> T <span class="sy3">&amp;</span>x<span class="br0">&#41;</span><span class="sy4">;</span>
+   <span class="kw2">private</span><span class="sy4">:</span>
+     <span class="kw4">unsigned</span> <span class="kw4">int</span> amount<span class="sy4">;</span>
+     T array<span class="br0">&#91;</span> maxSize <span class="br0">&#93;</span><span class="sy4">;</span>
+<span class="br0">&#125;</span><span class="sy4">;</span>
+&nbsp;
+<span class="kw2">template</span><span class="sy1">&lt;</span><span class="kw2">class</span> T<span class="sy1">&gt;</span>
+<span class="kw4">const</span> T<span class="sy3">&amp;</span> simpleStack<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">top</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw4">const</span>
+<span class="br0">&#123;</span>
+   <span class="kw3">assert</span><span class="br0">&#40;</span> <span class="sy3">!</span>empty<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+   <span class="kw1">return</span> array<span class="br0">&#91;</span> amount <span class="sy2">-</span> <span class="nu0">1</span> <span class="br0">&#93;</span><span class="sy4">;</span>
+<span class="br0">&#125;</span>
+&nbsp;
+<span class="kw2">template</span><span class="sy1">&lt;</span><span class="kw2">typename</span> T<span class="sy1">&gt;</span> <span class="coMULTI">/*宣言のclassはtypenameと置き換えても同じ意味を持ちます*/</span>
+<span class="kw4">void</span> simpleStack<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">pop</span><span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+   <span class="kw3">assert</span><span class="br0">&#40;</span> <span class="sy3">!</span>empty<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+   <span class="sy2">--</span>amount<span class="sy4">;</span>
+<span class="br0">&#125;</span>
+&nbsp;
+<span class="kw2">template</span><span class="sy1">&lt;</span><span class="kw2">typename</span> T<span class="sy1">&gt;</span>
+<span class="kw4">void</span> simpleStack<span class="sy1">&lt;</span>T<span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">push</span><span class="br0">&#40;</span><span class="kw4">const</span> T <span class="sy3">&amp;</span>x<span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+   <span class="kw3">assert</span><span class="br0">&#40;</span> <span class="sy3">!</span>full<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+   array<span class="br0">&#91;</span> amount<span class="sy2">++</span> <span class="br0">&#93;</span> <span class="sy1">=</span> x<span class="sy4">;</span>
+<span class="br0">&#125;</span>
+&nbsp;
+<span class="co2">#include &lt;iostream&gt;</span>
+&nbsp;
+<span class="coMULTI">/* main code */</span>
+&nbsp;
+<span class="kw4">int</span> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+<span class="br0">&#123;</span>
+  simpleStack<span class="sy1">&lt;</span> <span class="kw4">int</span> <span class="sy1">&gt;</span> aIntStack<span class="sy4">;</span>
+&nbsp;
+  <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">100</span><span class="sy4">;</span>
+  <span class="kw1">while</span> <span class="br0">&#40;</span> <span class="sy3">!</span>aIntStack.<span class="me1">full</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span>
+      aIntStack.<span class="me1">push</span><span class="br0">&#40;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+  <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span>  <span class="st0">&quot;スタックサイズ: &quot;</span> <span class="sy1">&lt;&lt;</span> aIntStack.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+  <span class="kw1">return</span> <span class="nu0">0</span><span class="sy4">;</span>
+<span class="br0">&#125;</span></pre>
+</div>
+
+<h4><a name="依存名の_明確化" id="依存名の_明確化">依存名の、明確化</a></h4>
+<div class="level4">
+
+<p>
+
+<span class="curid"><a href="template" class="wikilink1" title="jp:keywords:template">template</a></span>キーワードは、テンプレートを参照している<a href="dependent_name" class="wikilink1" title="jp:keywords:dependent_name">依存名</a>を表すのにも使用されます。<a href="typename" class="wikilink1" title="jp:keywords:typename">typename</a>キーワードとは異なり、<span class="curid"><a href="template" class="wikilink1" title="jp:keywords:template">template</a></span>キーワードはテンプレートのメンバー名の直前に置かれます。サンプル:
+</p>
+<pre class="cpp code cpp"><span class="kw4">struct</span> Foo <span class="br0">&#123;</span>
+  <span class="kw2">template</span><span class="sy1">&lt;</span><span class="kw2">typename</span> T<span class="sy1">&gt;</span>
+  <span class="kw4">struct</span> Member <span class="br0">&#123;</span>
+    <span class="kw4">typedef</span> <span class="kw4">int</span> type<span class="sy4">;</span>
+  <span class="br0">&#125;</span><span class="sy4">;</span>
+<span class="br0">&#125;</span><span class="sy4">;</span>
+&nbsp;
+<span class="kw2">template</span><span class="sy1">&lt;</span><span class="kw2">class</span> T<span class="sy1">&gt;</span>
+<span class="kw4">struct</span> Bar <span class="br0">&#123;</span>
+  <span class="kw4">typedef</span> <span class="kw2">typename</span> T<span class="sy4">::</span><span class="kw2">template</span> Member<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">type</span> bar<span class="sy4">;</span>
+<span class="br0">&#125;</span><span class="sy4">;</span>
+&nbsp;
+<span class="kw4">typedef</span> Bar<span class="sy1">&lt;</span>Foo<span class="sy1">&gt;</span> FooBar<span class="sy4">;</span></pre>
+<p>
+関連トピック: <a href="typename" class="wikilink1" title="jp:keywords:typename">typename</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de"
+ lang="de" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>de:keywords:typename</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="noindex,nofollow" />
+<meta name="date" content="2010-11-14T15:20:51-0800" />
+<meta name="keywords" content="de,keywords,typename" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/de/keywords/typename?do=index" title="Übersicht" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=de:keywords" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/de/keywords/typename" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/de/keywords/typename" />
+<link rel="canonical" href="typename" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='de:keywords';var JSINFO = {"id":"de:keywords:typename","namespace":"de:keywords"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="typename" id="typename">typename</a></h2>
+<div class="level2">
+
+</div>
+
+<h4><a name="type_parameter_fuer_templates_definieren" id="type_parameter_fuer_templates_definieren">Type Parameter für Templates definieren</a></h4>
+<div class="level4">
+
+<p>
+
+In <a href="http://www.cppreference.com/wiki/de/keywords/template" class="wikilink2" title="de:keywords:template" rel="nofollow">template</a> argument, <span class="curid"><a href="typename" class="wikilink1" title="de:keywords:typename">typename</a></span> kann synonym mit <a href="http://www.cppreference.com/wiki/de/keywords/class" class="wikilink2" title="de:keywords:class" rel="nofollow">class</a> genutzt werden um Type parameter zu bestimmen. Auch wenn es für den Compiler keinen unterschied macht, so empfiehlt Alexandrescu <a href="http://www.cppreference.com/wiki/de/keywords/class" class="wikilink2" title="de:keywords:class" rel="nofollow">class</a> zu verwenden, wenn das Template argument eine <a href="http://www.cppreference.com/wiki/de/keywords/class" class="wikilink2" title="de:keywords:class" rel="nofollow">class</a> oder <a href="http://www.cppreference.com/wiki/de/keywords/struct" class="wikilink2" title="de:keywords:struct" rel="nofollow">struct</a>
+ist, und <span class="curid"><a href="typename" class="wikilink1" title="de:keywords:typename">typename</a></span> für andere type-arten. Dies dient ausschliesslich der lesbarkeit des quelltextes.
+</p>
+
+</div>
+
+<h4><a name="disambiguating_dependent_names" id="disambiguating_dependent_names">Disambiguating Dependent Names</a></h4>
+<div class="level4">
+
+<p>
+
+Das schlüsselwort <span class="curid"><a href="typename" class="wikilink1" title="de:keywords:typename">typename</a></span> wird ausserdem genutzt um einen <a href="http://www.cppreference.com/wiki/de/keywords/dependent_name" class="wikilink2" title="de:keywords:dependent_name" rel="nofollow">abhängigen namen</a> als template definition, welches einem Typ angehört, zu bestimmen.
+</p>
+<pre class="cpp code cpp"><span class="kw4">struct</span> Foo <span class="br0">&#123;</span>
+  <span class="kw4">typedef</span> <span class="kw4">int</span> Type<span class="sy4">;</span>
+<span class="br0">&#125;</span><span class="sy4">;</span>
+&nbsp;
+<span class="kw2">template</span><span class="sy1">&lt;</span><span class="kw2">class</span> T<span class="sy1">&gt;</span>
+<span class="kw4">struct</span> Bar <span class="br0">&#123;</span>
+  <span class="kw4">typedef</span> <span class="kw2">typename</span> T<span class="sy4">::</span><span class="me2">Type</span> BarType<span class="sy4">;</span> <span class="co1">// In einem typedef</span>
+  <span class="kw4">void</span> baz<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     <span class="kw2">typename</span> T<span class="sy4">::</span><span class="me2">Type</span> instance<span class="sy4">;</span>     <span class="co1">// In einer deklarierung</span>
+  <span class="br0">&#125;</span>
+<span class="br0">&#125;</span><span class="sy4">;</span>
+&nbsp;
+<span class="kw4">typedef</span> Bar<span class="sy1">&lt;</span>Foo<span class="sy1">&gt;</span> FooBar<span class="sy4">;</span></pre>
+<p>
+
+Verwandte Themen: <a href="http://www.cppreference.com/wiki/de/keywords/class" class="wikilink2" title="de:keywords:class" rel="nofollow">class</a>, <a href="http://www.cppreference.com/wiki/de/keywords/template" class="wikilink2" title="de:keywords:template" rel="nofollow">template</a>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "typename" [3-] --></div>
+</body>
+</html>

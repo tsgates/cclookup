@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:container:bitset:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:24-0700" />
+<meta name="keywords" content="jp,container,bitset,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/container/bitset/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp:container:bitset" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/container/bitset/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/container/bitset/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp:container:bitset';var JSINFO = {"id":"jp:container:bitset:start","namespace":"jp:container:bitset"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h1 class="sectionedit1"><a name="c_ビットセット" id="c_ビットセット">C++ ビットセット</a></h1>
+<div class="level1">
+
+<p>
+
+C++ビットセットはプログラマにデータ構造としてのビット集合を提供します。ビットセットはAND、ORのような様々な演算子で操作可能です。
+</p>
+
+<p>
+C++ビットセットのサイズはコンパイル時に固定され、そのサイズはビットセットへのテンプレート引数です。もし実行時にビットセットのサイズを変更したいのであれば、<a href="http://www.boost.org/" class="urlextern" title="http://www.boost.org/"  rel="nofollow">Boost</a>ライブラリのdynamic_bitsetが使えます。
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/container/bitset/bitset_constructors" class="wikilink2" title="jp:container:bitset:bitset_constructors" rel="nofollow">Constructors</a></td><td class="col1">ビットセットを生成します</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/container/bitset/bitset_operators" class="wikilink2" title="jp:container:bitset:bitset_operators" rel="nofollow">Operators</a></td><td class="col1">ビットセットの比較と値の割り付けを行います</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/container/bitset/any" class="wikilink2" title="jp:container:bitset:any" rel="nofollow">any</a></td><td class="col1">いずれかのビットがセットされていた場合に真(true)を返却します</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/container/bitset/count" class="wikilink2" title="jp:container:bitset:count" rel="nofollow">count</a></td><td class="col1">セットされたビットの数を返却します</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/container/bitset/flip" class="wikilink2" title="jp:container:bitset:flip" rel="nofollow">flip</a></td><td class="col1">ビットセットを反転させます</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/container/bitset/none" class="wikilink2" title="jp:container:bitset:none" rel="nofollow">none</a></td><td class="col1">ビットが1つもセットされていなければ真(true)を返却します</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/container/bitset/reset" class="wikilink2" title="jp:container:bitset:reset" rel="nofollow">reset</a></td><td class="col1">すべてのビットをゼロに初期化します</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/container/bitset/set" class="wikilink2" title="jp:container:bitset:set" rel="nofollow">set</a></td><td class="col1">ビットをセットします</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/container/bitset/size" class="wikilink2" title="jp:container:bitset:size" rel="nofollow">size</a></td><td class="col1">ビットセットが保持できるビットの数を返却します</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/container/bitset/test" class="wikilink2" title="jp:container:bitset:test" rel="nofollow">test</a></td><td class="col1">指定されたビットの値を返却します</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/container/bitset/to_string" class="wikilink2" title="jp:container:bitset:to_string" rel="nofollow">to_string</a></td><td class="col1">ビットセットの文字列表現を返却します</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/jp/container/bitset/to_ulong" class="wikilink2" title="jp:container:bitset:to_ulong" rel="nofollow">to_ulong</a></td><td class="col1">ビットセットの整数表現を返却します</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [549-1409] -->
+</div>
+</div>
+</body>
+</html>

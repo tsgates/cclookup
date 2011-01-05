@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="br-pt"
+ lang="br-pt" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>br-pt:io:c:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:18:03-0700" />
+<meta name="keywords" content="br-pt,io,c,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/br-pt/io/c/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=br-pt:io:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/br-pt/io/c/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/br-pt/io/c/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='br-pt:io:c';var JSINFO = {"id":"br-pt:io:c:start","namespace":"br-pt:io:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<p>
+Essas funções oferecem uma alternativa ao C + + baseada em fluxo classes IO.
+</p>
+<div class="table sectionedit1"><table class="inline">
+	<tr class="row0">
+		<th class="col0 leftalign"> Código         </th><th class="col1 leftalign"> Função                              </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> clearerr       </td><td class="col1 leftalign"> Limpa erros                         </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> fclose         </td><td class="col1 leftalign"> Fechar arquivo                      </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> feof           </td><td class="col1 leftalign"> Verdadeiro se no fim do arquivo     </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> ferror         </td><td class="col1 leftalign"> verifica se há um erro de arquivo   </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> fflush </td><td class="col1"> grava o conteúdo do buffer de saída </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0 leftalign"> fgetc	 </td><td class="col1"> Obtem um caractere de um fluxo </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0">fopen</td><td class="col1">obter o indicador de posição de arquivo</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0">fgets</td><td class="col1">obter uma seqüência de caracteres de uma stream</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0">fopen</td><td class="col1">abrir um arquivo</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0">fprintf</td><td class="col1">imprimir saída formatada para um arquivo</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0">fputc</td><td class="col1">escrever um caractere para um arquivo</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0">fputs</td><td class="col1">escrever uma string para um arquivo</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0">fread</td><td class="col1">ler um arquivo</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0">freopen</td><td class="col1">abrir uma stream existente com um nome diferente</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0">fscanf</td><td class="col1">ler entrada formatada de um arquivo</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0">fseek</td><td class="col1">se deslocar para um local específico em um arquivo</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0">fsetpos</td><td class="col1">se deslocar para um local específico em um arquivo</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0">ftell</td><td class="col1">retorna o indicador de posição do arquivo atual</td>
+	</tr>
+	<tr class="row19">
+		<td class="col0">fwrite</td><td class="col1">escrever para um ficheiro</td>
+	</tr>
+	<tr class="row20">
+		<td class="col0">getc</td><td class="col1">ler um caractere de um arquivo</td>
+	</tr>
+	<tr class="row21">
+		<td class="col0">getchar</td><td class="col1">leia um caractere do stdin</td>
+	</tr>
+	<tr class="row22">
+		<td class="col0">gets</td><td class="col1">ler uma seqüência de caracteres de stdin</td>
+	</tr>
+	<tr class="row23">
+		<td class="col0">perror</td><td class="col1">Exibe a versão de uma série de o erro atual para stderr</td>
+	</tr>
+	<tr class="row24">
+		<td class="col0">printf</td><td class="col1">Escreve a saída formatada para stdout</td>
+	</tr>
+	<tr class="row25">
+		<td class="col0">putc</td><td class="col1">escrever um caractere para um fluxo</td>
+	</tr>
+	<tr class="row26">
+		<td class="col0">putchar</td><td class="col1">escrever um caractere para stdout</td>
+	</tr>
+	<tr class="row27">
+		<td class="col0">puts</td><td class="col1">escrever uma string em stdout</td>
+	</tr>
+	<tr class="row28">
+		<td class="col0">remove</td><td class="col1">apagar um arquivo</td>
+	</tr>
+	<tr class="row29">
+		<td class="col0">rename</td><td class="col1">renomear um arquivo</td>
+	</tr>
+	<tr class="row30">
+		<td class="col0">rewind</td><td class="col1">mover o indicador de posição do arquivo para o início de um arquivo</td>
+	</tr>
+	<tr class="row31">
+		<td class="col0">scanf</td><td class="col1">ler entrada formatada a partir de stdin</td>
+	</tr>
+	<tr class="row32">
+		<td class="col0">setbuf</td><td class="col1">definir  o buffer para um fluxo específico</td>
+	</tr>
+	<tr class="row33">
+		<td class="col0">setvbuf</td><td class="col1">definir o tamanho do buffer e para um fluxo específico</td>
+	</tr>
+	<tr class="row34">
+		<td class="col0">snprintf</td><td class="col1">escrever a saída formatada para um buffer (com verificação de limite)</td>
+	</tr>
+	<tr class="row35">
+		<td class="col0">sprintf</td><td class="col1">Escreve a saída formatada para um buffer</td>
+	</tr>
+	<tr class="row36">
+		<td class="col0">sscanf</td><td class="col1">ler entrada formatada de um buffer</td>
+	</tr>
+	<tr class="row37">
+		<td class="col0">tmpfile</td><td class="col1">retornar um ponteiro para um arquivo temporário</td>
+	</tr>
+	<tr class="row38">
+		<td class="col0">tmpnam</td><td class="col1">retornar um nome de arquivo único</td>
+	</tr>
+	<tr class="row39">
+		<td class="col0">ungetc</td><td class="col1">coloca um caractere de volta em um fluxo (stream)</td>
+	</tr>
+	<tr class="row40">
+		<td class="col0">vprintf, vfprintf, and vsprintf</td><td class="col1">Escreve a saída formatada com listas de argumento variável</td>
+	</tr>
+	<tr class="row41">
+		<td class="col0">vscanf, vfscanf, and vsscanf</td><td class="col1">Obtém entrada formatada a partir de stdin com listas de argumento variável</td>
+	</tr>
+</table></div>
+<!-- EDIT1 TABLE [80-2292] --></div>
+</body>
+</html>

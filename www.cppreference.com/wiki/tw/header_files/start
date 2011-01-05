@@ -1,0 +1,255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="tw"
+ lang="tw" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>tw:header_files:start</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-11-10T01:22:23-0800" />
+<meta name="keywords" content="tw,header_files,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/tw/header_files/start?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=tw:header_files" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/tw/header_files/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/tw/header_files/start" />
+<link rel="canonical" href="start" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='tw:header_files';var JSINFO = {"id":"tw:header_files:start","namespace":"tw:header_files"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="start#c_header_files" class="toc">C++ Header Files</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="start#容器_containers" class="toc">容器(Containers)</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="start#general" class="toc">General</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="start#c_strings" class="toc">C++ Strings</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="start#c_串流與輸入輸出_streams_and_inputoutput" class="toc">C++ 串流與輸入/輸出(Streams and Input/Output)</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="start#numerics" class="toc">Numerics</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="start#language_support" class="toc">Language Support</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="start#c_standard_library" class="toc">C Standard Library</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="c_header_files" id="c_header_files">C++ Header Files</a></h2>
+<div class="level2">
+
+<p>
+
+This page lists the various header files that are available in standard C++, grouped by topic.
+</p>
+
+</div>
+<!-- EDIT1 SECTION "C++ Header Files" [1-124] -->
+<h3 class="sectionedit2"><a name="容器_containers" id="容器_containers">容器(Containers)</a></h3>
+<div class="level3">
+<div class="table sectionedit3"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/stl/bitset/start" class="wikilink2" title="tw:stl:bitset:start" rel="nofollow">&lt;bitset&gt;</a></td><td class="col1">Provides the specialized container class <a href="http://www.cppreference.com/wiki/tw/stl/bitset/start" class="wikilink2" title="tw:stl:bitset:start" rel="nofollow">std::bitset</a>, 位元陣列(bit array)</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/stl/deque/start" class="wikilink2" title="tw:stl:deque:start" rel="nofollow">&lt;deque&gt;</a></td><td class="col1">提供容器的類別模板 <a href="http://www.cppreference.com/wiki/tw/stl/deque/start" class="wikilink2" title="tw:stl:deque:start" rel="nofollow">std::deque</a>, 雙向佇列(double-ended queue)</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/stl/list/start" class="wikilink2" title="tw:stl:list:start" rel="nofollow">&lt;list&gt;</a></td><td class="col1">提供容器的類別模板 <a href="http://www.cppreference.com/wiki/tw/stl/list/start" class="wikilink2" title="tw:stl:list:start" rel="nofollow">std::list</a>, 雙向鏈結串列(doubly-linked list)</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/stl/map/start" class="wikilink2" title="tw:stl:map:start" rel="nofollow">&lt;map&gt;</a></td><td class="col1">提供容器的類別模板 <a href="http://www.cppreference.com/wiki/tw/stl/map/start" class="wikilink2" title="tw:stl:map:start" rel="nofollow">std::map</a> and <a href="http://www.cppreference.com/wiki/tw/stl/multimap/start" class="wikilink2" title="tw:stl:multimap:start" rel="nofollow">std::multimap</a>, 關聯陣列(associative array) and multimap.</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/stl/queue/start" class="wikilink2" title="tw:stl:queue:start" rel="nofollow">&lt;queue&gt;</a></td><td class="col1">Provides the container adapter class <a href="http://www.cppreference.com/wiki/tw/stl/queue/start" class="wikilink2" title="tw:stl:queue:start" rel="nofollow">std::queue</a>, 單向佇列(single-ended queue)</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/stl/set/start" class="wikilink2" title="tw:stl:set:start" rel="nofollow">&lt;set&gt;</a></td><td class="col1">Provides the container class templates <a href="http://www.cppreference.com/wiki/tw/stl/set/start" class="wikilink2" title="tw:stl:set:start" rel="nofollow">std::set</a> and <a href="http://www.cppreference.com/wiki/tw/stl/multiset/start" class="wikilink2" title="tw:stl:multiset:start" rel="nofollow">std::multiset</a>, sorted associative containers or sets.</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/stl/stack/start" class="wikilink2" title="tw:stl:stack:start" rel="nofollow">&lt;stack&gt;</a></td><td class="col1">Provides the container adapter class <a href="http://www.cppreference.com/wiki/tw/stl/stack/start" class="wikilink2" title="tw:stl:stack:start" rel="nofollow">std::stack</a>, 堆疊(stack).</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="../stl/vector/start" class="wikilink1" title="tw:stl:vector:start">&lt;vector&gt;</a></td><td class="col1">提供容器的類別模板 <a href="../stl/vector/start" class="wikilink1" title="tw:stl:vector:start">std::vector</a>, 動態陣列(dynamic array)</td>
+	</tr>
+</table></div>
+<!-- EDIT3 TABLE [153-1205] -->
+</div>
+<!-- EDIT2 SECTION "容器(Containers)" [125-1206] -->
+<h3 class="sectionedit4"><a name="general" id="general">General</a></h3>
+<div class="level3">
+<div class="table sectionedit5"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/stl/algorithm/start" class="wikilink2" title="tw:stl:algorithm:start" rel="nofollow">&lt;algorithm&gt;</a></td><td class="col1">Provides definitions of many container algorithms.</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/stl/functional/start" class="wikilink2" title="tw:stl:functional:start" rel="nofollow">&lt;functional&gt;</a></td><td class="col1">Provides several function objects, designed for use with the standard algorithms.</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/stl/iterators" class="wikilink2" title="tw:stl:iterators" rel="nofollow">&lt;iterator&gt;</a></td><td class="col1">Provides classes and templates for working with iterators.</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">&lt;locale&gt;</td><td class="col1">Provides classes and templates for working with locales.</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/stl/memory/start" class="wikilink2" title="tw:stl:memory:start" rel="nofollow">&lt;memory&gt;</a></td><td class="col1">Provides facilities for memory management in C++, including the class template <a href="http://www.cppreference.com/wiki/tw/stl/memory/auto_ptr" class="wikilink2" title="tw:stl:memory:auto_ptr" rel="nofollow">std::auto_ptr</a>.</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/exception/start" class="wikilink2" title="tw:exception:start" rel="nofollow">&lt;stdexcept&gt;</a></td><td class="col1">Contains standard exception classes such as std::logic_error and std::runtime_error, both derived from std::exception.</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="../stl/utility/start" class="wikilink1" title="tw:stl:utility:start">&lt;utility&gt;</a></td><td class="col1">Provides the template class <a href="http://www.cppreference.com/wiki/tw/stl/utility/pair" class="wikilink2" title="tw:stl:utility:pair" rel="nofollow">std::pair</a>, for working with pairs (two-member tuples) of objects.</td>
+	</tr>
+</table></div>
+<!-- EDIT5 TABLE [1224-2043] -->
+</div>
+<!-- EDIT4 SECTION "General" [1207-2044] -->
+<h3 class="sectionedit6"><a name="c_strings" id="c_strings">C++ Strings</a></h3>
+<div class="level3">
+<div class="table sectionedit7"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/string/start" class="wikilink2" title="tw:string:start" rel="nofollow">&lt;string&gt;</a></td><td class="col1">提供 C++ 標準字串類別與模板</td>
+	</tr>
+</table></div>
+<!-- EDIT7 TABLE [2066-2130] -->
+</div>
+<!-- EDIT6 SECTION "C++ Strings" [2045-2131] -->
+<h3 class="sectionedit8"><a name="c_串流與輸入輸出_streams_and_inputoutput" id="c_串流與輸入輸出_streams_and_inputoutput">C++ 串流與輸入/輸出(Streams and Input/Output)</a></h3>
+<div class="level3">
+<div class="table sectionedit9"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/start" class="wikilink2" title="tw:io:start" rel="nofollow">&lt;fstream&gt;</a></td><td class="col1">Provides facilities for file-based input and output.</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/start" class="wikilink2" title="tw:io:start" rel="nofollow">&lt;ios&gt;</a></td><td class="col1">Provides several types and functions basic to the operation of iostreams.</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/start" class="wikilink2" title="tw:io:start" rel="nofollow">&lt;iostream&gt;</a></td><td class="col1">Provides C++ input and output fundamentals.</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/start" class="wikilink2" title="tw:io:start" rel="nofollow">&lt;iosfwd&gt;</a></td><td class="col1">Provides forward declarations of several I/O-related class templates.</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/start" class="wikilink2" title="tw:io:start" rel="nofollow">&lt;iomanip&gt;</a></td><td class="col1">Provides facilities to manipulate output formatting, such as the base used when formatting integers and the precision of floating point values.</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/sstream/start" class="wikilink2" title="tw:io:sstream:start" rel="nofollow">&lt;istream&gt;</a></td><td class="col1">Provides the template class std::istream and other supporting classes for input.</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/sstream/start" class="wikilink2" title="tw:io:sstream:start" rel="nofollow">&lt;ostream&gt;</a></td><td class="col1">Provides the template class std::ostream and other supporting classes for output.</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/io/sstream/start" class="wikilink2" title="tw:io:sstream:start" rel="nofollow">&lt;sstream&gt;</a></td><td class="col1">Provides the template class std::sstream and other supporting classes for string manipulation.</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0">&lt;streambuf&gt;</td><td class="col1"> </td>
+	</tr>
+</table></div>
+<!-- EDIT9 TABLE [2194-3056] -->
+</div>
+<!-- EDIT8 SECTION "C++ 串流與輸入/輸出(Streams and Input/Output)" [2132-3057] -->
+<h3 class="sectionedit10"><a name="numerics" id="numerics">Numerics</a></h3>
+<div class="level3">
+<div class="table sectionedit11"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/complex/start" class="wikilink2" title="tw:complex:start" rel="nofollow">&lt;complex&gt;</a></td><td class="col1">Provides class template std::complex and associated functions for working with complex numbers.</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/numeric/start" class="wikilink2" title="tw:numeric:start" rel="nofollow">&lt;numeric&gt;</a></td><td class="col1">Provides algorithms for numerical processing.</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/valarray/start" class="wikilink2" title="tw:valarray:start" rel="nofollow">&lt;valarray&gt;</a></td><td class="col1">Provides the template class std::valarray, an array class optimized for numeric processing.</td>
+	</tr>
+</table></div>
+<!-- EDIT11 TABLE [3076-3395] -->
+</div>
+<!-- EDIT10 SECTION "Numerics" [3058-3396] -->
+<h3 class="sectionedit12"><a name="language_support" id="language_support">Language Support</a></h3>
+<div class="level3">
+<div class="table sectionedit13"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/exception/start" class="wikilink2" title="tw:exception:start" rel="nofollow">&lt;exception&gt;</a></td><td class="col1">Provides several types and functions related to exception handling, including std::exception, the base class of all exceptions thrown by the Standard Library.</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/limits/start" class="wikilink2" title="tw:limits:start" rel="nofollow">&lt;limits&gt;</a></td><td class="col1">Provides the template class <a href="http://www.cppreference.com/wiki/tw/limits/numeric_limits" class="wikilink2" title="tw:limits:numeric_limits" rel="nofollow">std::numeric_limits</a>, used for describing properties of fundamental numeric types.</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/new/start" class="wikilink2" title="tw:new:start" rel="nofollow">&lt;new&gt;</a></td><td class="col1">Provides operators new and delete and other functions and types composing the fundamentals of C++ memory management.</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="http://www.cppreference.com/wiki/tw/typeinfo/start" class="wikilink2" title="tw:typeinfo:start" rel="nofollow">&lt;typeinfo&gt;</a></td><td class="col1">Provides facilities for working with C++ run-time type information.</td>
+	</tr>
+</table></div>
+<!-- EDIT13 TABLE [3423-4013] -->
+</div>
+<!-- EDIT12 SECTION "Language Support" [3397-4014] -->
+<h3 class="sectionedit14"><a name="c_standard_library" id="c_standard_library">C Standard Library</a></h3>
+<div class="level3">
+
+<p>
+
+Each header from the <a href="../c/start" class="wikilink1" title="tw:c:start">C standard library</a> is included in the C++
+standard library under a different name, generated by removing the .h,
+and adding a &#039;c&#039; at the start, for example <code>time.h</code> becomes
+<code>ctime</code>. The only difference between these headers and the traditional
+C standard library headers is that where possible the functions should
+be placed into the <code>std:: namespace</code> (although few compilers actually do
+this). In <acronym title="International Organization for Standardization">ISO</acronym> C, functions in standard library are allowed to be
+implemented by macros, which is not allowed by <acronym title="International Organization for Standardization">ISO</acronym> C++.
+
+</p>
+<ul>
+<li class="level1"><div class="li"> &lt;cassert&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cctype&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cerrno&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cfloat&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;climits&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cmath&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;csetjmp&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;csignal&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cstdlib&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cstddef&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cstdarg&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cstdio&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cstring&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;ctime&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cwchar&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cwctype&gt;</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT14 SECTION "C Standard Library" [4015-] --></div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es"
+ lang="es" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>es:algorithm:find_if</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:32-0700" />
+<meta name="keywords" content="es,algorithm,find_if" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/es/algorithm/find_if?do=index" title="Índice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=es:algorithm" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/es/algorithm/find_if" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/es/algorithm/find_if" />
+<link rel="canonical" href="find_if" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='es:algorithm';var JSINFO = {"id":"es:algorithm:find_if","namespace":"es:algorithm"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Tabla de Contenidos</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="find_if#find_if" class="toc">find_if</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="find_if#ejemplo" class="toc">Ejemplo</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="find_if#topicos_relacionados" class="toc">Tópicos Relacionados</a></span></div></li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="find_if" id="find_if">find_if</a></h2>
+<div class="level2">
+
+<p>
+Sintaxis
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;algorithm&gt;</span>
+    input_iterator find_if<span class="br0">&#40;</span> input_iterator inicio, input_iterator fin, Predicado cond <span class="br0">&#41;</span><span class="sy4">;</span></pre><ul>
+<li class="level1"><div class="li"> <em>inicio</em> y <em>fin</em> modelan <a href="../../../stl/iterators" class="wikilink1" title="stl:iterators">Input Iterator</a>.</div>
+</li>
+</ul>
+
+<p>
+
+La función <code>find_if()</code> devuelve un iterador apuntando al lugar en el rango donde primero se ha encontrado un valor que cumpla la condición <em>cond</em>.
+</p>
+
+<p>
+<strong>Retorno</strong>: un <code>input_iterator</code> <em>x</em> tal que <code>cond(*x)==<a href="../../keywords/true" class="wikilink1" title="es:keywords:true">true</a></code>; o el iterador <em>fin</em> si no se encuentra.
+</p>
+
+</div>
+<!-- EDIT1 SECTION "find_if" [1-510] -->
+<h2 class="sectionedit2"><a name="ejemplo" id="ejemplo">Ejemplo</a></h2>
+<div class="level2">
+
+<p>
+
+El código siguiente utiliza <code>find_if()</code> junto con el predicado especial <code>mul5m1</code> para encontrar en un vector de números generador un valor que sea un múltiplo de 5, menos 1 (por ejemplo: 4, 9, 19, …):
+</p>
+<pre class="cpp code cpp">  <span class="kw4">struct</span> mul5m1 <span class="br0">&#123;</span>
+    <span class="kw4">bool</span> operator<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#40;</span><span class="kw4">int</span> x<span class="br0">&#41;</span> <span class="kw4">const</span> <span class="br0">&#123;</span>
+      <span class="kw1">return</span> <span class="br0">&#40;</span><span class="sy2">++</span>x <span class="sy2">%</span> <span class="nu0">5</span> <span class="sy1">==</span> <span class="nu0">0</span><span class="br0">&#41;</span><span class="sy4">;</span>
+      <span class="br0">&#125;</span>
+    <span class="br0">&#125;</span><span class="sy4">;</span>
+&nbsp;
+    <span class="kw3">srand</span><span class="br0">&#40;</span><span class="kw3">time</span><span class="br0">&#40;</span> <span class="nu0">0</span> <span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    vector<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> v<span class="sy4">;</span>
+    <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+      v.<span class="me1">push_back</span><span class="br0">&#40;</span> <span class="kw3">rand</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="br0">&#125;</span>
+&nbsp;
+    <span class="kw3">cout</span><span class="sy1">&lt;&lt;</span> <span class="st0">&quot;v is: &quot;</span><span class="sy4">;</span>
+    copy <span class="br0">&#40;</span>v.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, v.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, ostream_iterator<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">&#40;</span><span class="kw3">cout</span>, <span class="st0">&quot; &quot;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw3">cout</span><span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+&nbsp;
+    vector<span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="sy4">::</span><span class="me2">iterator</span> pos_item <span class="sy1">=</span> find_if<span class="br0">&#40;</span> v.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, v.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, mul5m1<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+&nbsp;
+    <span class="kw1">if</span> <span class="br0">&#40;</span>pos_item <span class="sy3">!</span><span class="sy1">=</span> v.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+      <span class="kw3">cout</span><span class="sy1">&lt;&lt;</span> <span class="st0">&quot;v contains a value multiple of five, minus one&quot;</span>
+      <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; at position: &quot;</span><span class="sy1">&lt;&lt;</span> distance<span class="br0">&#40;</span>pos_item, v.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
+      <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; with value: &quot;</span><span class="sy1">&lt;&lt;</span> <span class="sy2">*</span>pos_item<span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span></pre>
+<p>
+La salida de este código podría ser por ejemplo la siguiente:
+</p>
+<pre class="code">
+v is:  181 -37 56 13271 6840 -21715 3179 14087 815 -4
+v contains a value multiple of five, minus one at position: 6 with value: 3179</pre>
+</div>
+<!-- EDIT2 SECTION "Ejemplo" [511-1578] -->
+<h2 class="sectionedit3"><a name="topicos_relacionados" id="topicos_relacionados">Tópicos Relacionados</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> <code><a href="find" class="wikilink1" title="es:algorithm:find">find</a></code> – encuentra un valor específico en un rango</div>
+</li>
+<li class="level1"><div class="li"> <code><a href="http://www.cppreference.com/wiki/es/algorithm/find_first_of" class="wikilink2" title="es:algorithm:find_first_of" rel="nofollow">find_first_of</a></code> – encuentra uno de varios posibles valores</div>
+</li>
+<li class="level1"><div class="li"> <code><a href="count" class="wikilink1" title="es:algorithm:count">count</a></code>, <code><a href="http://www.cppreference.com/wiki/es/algorithm/count_if" class="wikilink2" title="es:algorithm:count_if" rel="nofollow">count_if</a></code> – cuenta ocurrencias de un valor</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT3 SECTION "Tópicos Relacionados" [1579-] --></div>
+</body>
+</html>

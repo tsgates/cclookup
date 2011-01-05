@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>io:c:scanf</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-11-12T06:58:34-0800" />
+<meta name="keywords" content="io,c,scanf" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/io/c/scanf?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=io:c" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/io/c/scanf" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/io/c/scanf" />
+<link rel="canonical" href="scanf" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='io:c';var JSINFO = {"id":"io:c:scanf","namespace":"io:c"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="scanf#scanf" class="toc">scanf</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="scanf#parameters" class="toc">Parameters</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="scanf#return_value" class="toc">Return value</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="scanf#see_also" class="toc">See also</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="scanf" id="scanf">scanf</a></h2>
+<div class="level2">
+<pre class="cpp code cpp"><span class="co2">#include &lt;cstdio&gt;</span>
+&nbsp;
+<span class="kw4">int</span> <span class="kw3">scanf</span><span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>format, ... <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+Reads data from the standard input and stores them according to given <code>format</code> parameter into given locations.
+</p>
+
+</div>
+<!-- EDIT1 SECTION "scanf" [1-203] -->
+<h3 class="sectionedit2"><a name="parameters" id="parameters">Parameters</a></h3>
+<div class="level3">
+
+<p>
+
+<code>format</code> - pointer to a character string specifying how to read the input. 
+</p>
+
+</div>
+<div class="plugin_include_content" id="plugin_include__io:c:template_scanf_format">
+<div class="level3">
+
+<p>
+
+The format string consists of whitespace characters, non-whitespace characters (except <code>%</code>) and conversion specifications. Each conversion specification has the following format:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> introductory <code>%</code> character</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> (optional) assignment-suppressing character <code>*</code> </div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> (optional) integer number (greater than zero) that specifies maximum field width </div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> (optional) width modifier that specifies the size of the receiving argument</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> conversion specifier</div>
+</li>
+</ul>
+
+<p>
+The following format specifiers are available:
+
+</p>
+<div class="table sectionedit3"><table class="inline">
+	<tr class="row0">
+		<th class="col0 centeralign" rowspan="2">  Conversion<br/>
+specifier  </th><th class="col1 centeralign" rowspan="2">  Explanation  </th><th class="col2 centeralign" colspan="10">  Receiving type  </th>
+	</tr>
+	<tr class="row1">
+		<th class="col0 centeralign">  <code>hh</code>  </th><th class="col1 centeralign">  <code>h</code>  </th><th class="col2 centeralign">  (none)  </th><th class="col3 centeralign">  <code>l</code>  </th><th class="col4 centeralign">  <code>ll</code>  </th><th class="col5 centeralign">  <code>j</code>  </th><th class="col6 centeralign">  <code>z</code>  </th><th class="col7 centeralign">  <code>t</code>  </th><th class="col8 centeralign">  <code>L</code>  </th><td class="col9"></td>
+	</tr>
+	<tr class="row2">
+		<th class="col0 centeralign">  <code>%</code>  </th><td class="col1"> matches literal <strong><code>%</code></strong> </td><td class="col2 centeralign">  (invalid)  </td><td class="col3 centeralign">  (invalid)  </td><td class="col4 centeralign">  (invalid)  </td><td class="col5 centeralign">  (invalid)  </td><td class="col6 centeralign">  (invalid)  </td><td class="col7 centeralign">  (invalid)  </td><td class="col8 centeralign">  (invalid)  </td><td class="col9 centeralign">  (invalid)  </td><td class="col10 centeralign">  (invalid)  </td><td class="col11"></td>
+	</tr>
+	<tr class="row3">
+		<th class="col0 centeralign">  <code>c</code>  </th><td class="col1"> matches a single <strong>character</strong> </td><td class="col2 centeralign" rowspan="3">  (invalid)  </td><td class="col3 centeralign" rowspan="3">  (invalid)  </td><td class="col4 centeralign" rowspan="3">  <code>char</code>  </td><td class="col5 centeralign" rowspan="3">  <code>wchar_t</code>  </td><td class="col6 centeralign" rowspan="3">  (invalid)  </td><td class="col7 centeralign" rowspan="3">  (invalid)  </td><td class="col8 centeralign" rowspan="3">  (invalid)  </td><td class="col9 centeralign" rowspan="3">  (invalid)  </td><td class="col10 centeralign" rowspan="3">  (invalid)  </td><td class="col11"></td>
+	</tr>
+	<tr class="row4">
+		<th class="col0 centeralign">  <code>s</code>  </th><td class="col1"> matches a <strong>character string</strong> </td><td class="col2"></td>
+	</tr>
+	<tr class="row5">
+		<th class="col0 centeralign">  <code>[<em>set</em>]</code>  </th><td class="col1"> matches a non-empty sequence of character from a given set of characters. If the first character of the set is <code>^</code>, then all characters not in the set are matched. If the set begins with <code>]</code> or <code>^]</code> then the <code>]</code> character is also included into the set. </td><td class="col2"></td>
+	</tr>
+	<tr class="row6">
+		<th class="col0 centeralign">  <code>d</code>  </th><td class="col1"> matches a <strong>decimal integer</strong> whose format is the same as expected by <code>strtol</code> with the value <code>10</code> for the <code>base</code> argument</td><td class="col2 centeralign" rowspan="6">  <code>signed<br/>
+char</code> <br/>
+<br/>
+or <br/>
+<br/>
+<code>unsigned<br/>
+char</code>  </td><td class="col3 centeralign" rowspan="6">  <code>signed<br/>
+short</code> <br/>
+<br/>
+or <br/>
+<br/>
+<code>unsigned<br/>
+short</code>  </td><td class="col4 centeralign" rowspan="6">  <code>signed<br/>
+int</code> <br/>
+<br/>
+or <br/>
+<br/>
+<code>unsigned<br/>
+int</code>  </td><td class="col5 centeralign" rowspan="6">  <code>signed<br/>
+long</code> <br/>
+<br/>
+or <br/>
+<br/>
+<code>unsigned<br/>
+long</code>  </td><td class="col6 centeralign" rowspan="6">  <code>signed<br/>
+long long</code> <br/>
+<br/>
+or <br/>
+<br/>
+<code>unsigned<br/>
+long long</code>  </td><td class="col7 centeralign" rowspan="6">  <code>intmax_t</code><br/>
+<br/>
+or <br/>
+<br/>
+<code>uintmax_t</code>  </td><td class="col8 centeralign" rowspan="6">  <code>size_t</code>  </td><td class="col9 centeralign" rowspan="6">  <code>ptrdiff_t</code>  </td><td class="col10 centeralign" rowspan="6">  (invalid)  </td><td class="col11"></td>
+	</tr>
+	<tr class="row7">
+		<th class="col0 centeralign">  <code>i</code>  </th><td class="col1"> matches an <strong>integer</strong> whose format is the same as expected by <code>strtol</code> with the value <code>0</code> for the <code>base</code> argument </td><td class="col2"></td>
+	</tr>
+	<tr class="row8">
+		<th class="col0 centeralign">  <code>u</code>  </th><td class="col1"> matches an <strong>unsigned integer</strong> whose format is the same as expected by <code>strtoul</code> with the value <code>0</code> for the <code>base</code> argument</td><td class="col2"></td>
+	</tr>
+	<tr class="row9">
+		<th class="col0 centeralign">  <code>o</code>  </th><td class="col1"> matches an <strong>octal integer</strong> whose format is the same as expected by <code>strtol</code> with the value <code>8</code> for the <code>base</code> argument</td><td class="col2"></td>
+	</tr>
+	<tr class="row10">
+		<th class="col0 centeralign">  <code>x</code>, <code>X</code>  </th><td class="col1"> matches a <strong>hexadecimal integer</strong> whose format is the same as expected by <code>strtol</code> with the value <code>16</code> for the <code>base</code> argument</td><td class="col2"></td>
+	</tr>
+	<tr class="row11">
+		<th class="col0 centeralign">  <code>n</code>  </th><td class="col1"> no input is consumed. Returns the <strong>number of characters read so far</strong>. Does not increment the assignment count returned by the function. If the specifier has assignment-suppressing operator defined, the behavior is undefined </td><td class="col2"></td>
+	</tr>
+	<tr class="row12">
+		<th class="col0 centeralign">  <code>a</code>, <code>A</code> <br/>
+<code>e</code>, <code>E</code> <br/>
+<code>f</code>, <code>F</code> <br/>
+<code>g</code>, <code>G</code>  </th><td class="col1 leftalign"> matches a <strong>floating-point number</strong> whose format is the same as expected by <code>strtod</code>  </td><td class="col2 centeralign">  (invalid)  </td><td class="col3 centeralign">  (invalid)  </td><td class="col4 centeralign">  <code>float</code>  </td><td class="col5 centeralign">  <code>double</code>  </td><td class="col6 centeralign">  (invalid)  </td><td class="col7 centeralign">  (invalid)  </td><td class="col8 centeralign">  (invalid)  </td><td class="col9 centeralign">  (invalid)  </td><td class="col10 centeralign">  <code>long<br/>
+double</code>  </td><td class="col11"></td>
+	</tr>
+	<tr class="row13">
+		<th class="col0 centeralign">  <code>p</code>  </th><td class="col1"> matches implementation defined character sequence defining a <strong>pointer</strong>. <code>printf</code> family of functions should produce the same sequence using <code>%p</code> format specifier </td><td class="col2 centeralign">  (invalid)  </td><td class="col3 centeralign">  (invalid)  </td><td class="col4 centeralign">  <code>void *</code>  </td><td class="col5 centeralign">  (invalid)  </td><td class="col6 centeralign">  (invalid)  </td><td class="col7 centeralign">  (invalid)  </td><td class="col8 centeralign">  (invalid)  </td><td class="col9 centeralign">  (invalid)  </td><td class="col10 centeralign">  (invalid)  </td><td class="col11"></td>
+	</tr>
+</table></div>
+<!-- EDIT3 TABLE [562-3729] -->
+</div>
+<div class="secedit">
+<form class="button btn_incledit" method="post" action="http://www.cppreference.com/wiki/io/c/doku.php"><div class="no">
+<input type="hidden" name="do" value="edit" /><input type="hidden" name="redirect_id" value="io:c:scanf" /><input type="hidden" name="id" value="io:c:template_scanf_format" /><input type="submit" value="Edit (io:c:template_scanf_format)" class="button" title="io:c:template_scanf_format"/>
+</div></form>
+</div>
+</div>
+<div class="level3">
+
+<p>
+<code>. . .</code> - pointers to the additional arguments.
+</p>
+
+</div>
+<!-- EDIT2 SECTION "Parameters" [204-403] -->
+<h3 class="sectionedit4"><a name="return_value" id="return_value">Return value</a></h3>
+<div class="level3">
+
+<p>
+
+number of arguments successfully read, or <code><acronym title="End of file">EOF</acronym></code> if failure occurs.
+</p>
+
+</div>
+<!-- EDIT4 SECTION "Return value" [404-495] -->
+<h3 class="sectionedit5"><a name="see_also" id="see_also">See also</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="fscanf" class="wikilink1" title="io:c:fscanf">fscanf</a>, <a href="sscanf" class="wikilink1" title="io:c:sscanf">sscanf</a>, <a href="fgets" class="wikilink1" title="io:c:fgets">fgets</a>, <a href="printf" class="wikilink1" title="io:c:printf">printf</a>
+</p>
+
+</div>
+<!-- EDIT5 SECTION "See also" [496-] --></div>
+</body>
+</html>

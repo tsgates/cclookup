@@ -1,0 +1,424 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="jp"
+ lang="jp" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>jp:operator_precedence</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:19-0700" />
+<meta name="keywords" content="jp,operator_precedence" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/jp/operator_precedence?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=jp" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/jp/operator_precedence" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/jp/operator_precedence" />
+<link rel="canonical" href="operator_precedence" />
+<link rel="stylesheet" media="screen" type="text/css" href="../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='jp';var JSINFO = {"id":"jp:operator_precedence","namespace":"jp"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="operator_precedence#c_演算子の優先順位" class="toc">C++ 演算子の優先順位</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="operator_precedence#評価順序と副作用" class="toc">評価順序と副作用</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="operator_precedence#演算子のオーバーロード" class="toc">演算子のオーバーロード</a></span></div></li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="c_演算子の優先順位" id="c_演算子の優先順位">C++ 演算子の優先順位</a></h2>
+<div class="level2">
+
+<p>
+
+リストの上位の演算子から順番に評価されます。同じグループの演算子は同じ優先度を持っています。すべての演算子は、特別な情報がない限りは、左から右への結合性があります。
+</p>
+
+<p>
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<th class="col0 centeralign">  優先度  </th><th class="col1 centeralign">  演算子  </th><th class="col2 centeralign">  説明  </th><th class="col3 centeralign">  サンプル  </th><th class="col4 centeralign">  オーバーロード可能か？  </th><th class="col5 centeralign">  結合性  </th><td class="col6"></td>
+	</tr>
+	<tr class="row1">
+		<td class="col0">1</td><td class="col1"><code>::</code></td><td class="col2">スコープ解決演算子</td><td class="col3">Class::age = 2;</td><td class="col4">no</td><td class="col5">none</td><td class="col6"></td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">2</td><td class="col1"><code>()</code><br/>
+<code>()</code><br/>
+<code>[]</code><br/>
+<code>-&gt;</code><br/>
+<code>.</code><br/>
+<code>++</code><br/>
+<code>--</code><br/>
+<code>const_cast</code><br/>
+<code>dynamic_cast</code><br/>
+<code>static_cast</code><br/>
+<code>reinterpret_cast</code><br/>
+<code>typeid</code></td><td class="col2">関数呼び出し<br/>
+メンバーの初期化 <br/>
+配列アクセス<br/>
+ポインタ変数からのメンバーアクセス<br/>
+オブジェクトからのメンバーアクセス<br/>
+後置インクリメント<br/>
+後置デクリメント<br/>
+特別なキャスト<br/>
+特別なキャスト<br/>
+特別なキャスト<br/>
+特別なキャスト<br/>
+実行時型情報</td><td class="col3">isdigit(&#039;1&#039;)<br/>
+ c_tor(int x, int y) : _x(x), _y(y*10){};<br/>
+array[4] = 2;<br/>
+ptr-&gt;age = 34;<br/>
+obj.age = 34;<br/>
+for( int i = 0; i &lt; 10; i++ ) cout &lt;&lt; i;<br/>
+for( int i = 10; i &gt; 0; i-- ) cout &lt;&lt; i;<br/>
+const_cast&lt;type_to&gt;(type_from);<br/>
+dynamic_cast&lt;type_to&gt;(type_from);<br/>
+static_cast&lt;type_to&gt;(type_from);<br/>
+reinterpret_cast&lt;type_to&gt;(type_from);<br/>
+cout « typeid(type).name();</td><td class="col4">yes<br/>
+yes<br/>
+yes<br/>
+yes<br/>
+no<br/>
+yes<br/>
+yes<br/>
+no<br/>
+no<br/>
+no<br/>
+no<br/>
+no</td><td class="col5">左から右</td><td class="col6"></td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">3</td><td class="col1"><code>!</code><br/>
+<code>not</code><br/>
+<code>~</code><br/>
+<code>compl</code><br/>
+<code>++</code><br/>
+<code>--</code><br/>
+<code>-</code><br/>
+<code>+</code><br/>
+<code>*</code><br/>
+<code>&amp;</code><br/>
+<code>new</code><br/>
+<code>new []</code><br/>
+<code>delete</code><br/>
+<code>delete []</code><br/>
+<code>(type)</code><br/>
+<code>sizeof</code></td><td class="col2">論理的反転<br/>
+! の別名 <br/>
+ビットの比較<br/>
+~ の別名 <br/>
+前置インクリメント<br/>
+前置デクリメント<br/>
+単項マイナス<br/>
+単項プラス<br/>
+参照外し<br/>
+アドレス<br/>
+動的メモリ割り当て<br/>
+配列の動的メモリ割り当て<br/>
+メモリのデリート<br/>
+配列のメモリのデリート<br/>
+指定された型へのキャスト<br/>
+オブジェクトもしくは型のサイズ取得</td><td class="col3">if( !done ) …<br/>
+<br/>
+flags = ~flags;<br/>
+<br/>
+for( i = 0; i &lt; 10; ++i ) cout &lt;&lt; i;<br/>
+for( i = 10; i &gt; 0; --i ) cout &lt;&lt; i;<br/>
+int i = -1;<br/>
+int i = +1;<br/>
+int data = *intPtr;<br/>
+int *intPtr = &amp;data;<br/>
+long *pVar = new long; <br/>
+MyClass *ptr = new MyClass(args);<br/>
+ delete pVar;<br/>
+ delete [] array;<br/>
+int i = (int) floatNum;\\int size = sizeof(float);</td><td class="col4">yes<br/>
+<br/>
+yes<br/>
+<br/>
+yes<br/>
+yes<br/>
+yes<br/>
+yes<br/>
+yes<br/>
+yes<br/>
+yes<br/>
+yes<br/>
+yes<br/>
+yes<br/>
+yes<br/>
+no</td><td class="col5">右から左</td><td class="col6"></td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">4</td><td class="col1"><code>-&gt;*</code><br/>
+<code>.*</code></td><td class="col2">メンバーポインタのセレクタ<br/>
+メンバーオブジェクトのセレクタ</td><td class="col3">ptr-&gt;*var = 24;<br/>
+obj.*var = 24;</td><td class="col4">yes<br/>
+no</td><td class="col5">左から右</td><td class="col6"></td>
+	</tr>
+	<tr class="row5">
+		<td class="col0">5</td><td class="col1"><code>*</code><br/>
+<code>/</code><br/>
+<code>%</code></td><td class="col2">かけ算<br/>
+割り算<br/>
+剰余</td><td class="col3">int i = 2 * 4;<br/>
+float f = 10.0 / 3.0;<br/>
+int rem = 4 % 3;</td><td class="col4">yes<br/>
+yes<br/>
+yes</td><td class="col5">左から右</td><td class="col6"></td>
+	</tr>
+	<tr class="row6">
+		<td class="col0">6</td><td class="col1"><code>+</code><br/>
+<code>-</code></td><td class="col2">足し算<br/>
+引き算</td><td class="col3">int i = 2 + 3;<br/>
+int i = 5 - 1;</td><td class="col4">yes<br/>
+yes</td><td class="col5">左から右</td><td class="col6"></td>
+	</tr>
+	<tr class="row7">
+		<td class="col0">7</td><td class="col1"><code>&lt;&lt;</code><br/>
+<code>&gt;&gt;</code></td><td class="col2">左ビットシフト<br/>
+右ビットシフト</td><td class="col3">int flags = 33 &lt;&lt; 1;<br/>
+int flags = 33 &gt;&gt; 1;</td><td class="col4">yes<br/>
+yes</td><td class="col5">左から右</td><td class="col6"></td>
+	</tr>
+	<tr class="row8">
+		<td class="col0">8</td><td class="col1"><code>&lt;</code><br/>
+<code>&lt;=</code><br/>
+<code>&gt;</code><br/>
+<code>&gt;=</code></td><td class="col2">比較 より小さい<br/>
+比較 より小さいか等しい<br/>
+比較 より大きい<br/>
+比較 より大きいか等しい</td><td class="col3">if( i &lt; 42 ) …<br/>
+if( i &lt;= 42 ) ...<br/>
+if( i &gt; 42 ) …<br/>
+if( i &gt;= 42 ) ...</td><td class="col4">yes<br/>
+yes<br/>
+yes<br/>
+yes</td><td class="col5">左から右</td><td class="col6"></td>
+	</tr>
+	<tr class="row9">
+		<td class="col0">9</td><td class="col1"><code>==</code><br/>
+<code>eq</code><br/>
+<code>!=</code><br/>
+<code>not_eq</code></td><td class="col2">比較 等しい<br/>
+== の別名 <br/>
+比較 等しくない<br/>
+!= の別名 </td><td class="col3">if( i == 42 ) ...<br/>
+<br/>
+if( i != 42 ) …<br/>
+</td><td class="col4">yes<br/>
+-<br/>
+yes<br/>
+</td><td class="col5">左から右</td><td class="col6"></td>
+	</tr>
+	<tr class="row10">
+		<td class="col0">10</td><td class="col1"><code>&amp;</code><br/>
+<code>bitand</code></td><td class="col2">ビット積(AND)<br/>
+&amp; の別名</td><td class="col3">flags = flags &amp; 42;<br/>
+</td><td class="col4">yes<br/>
+</td><td class="col5">左から右</td><td class="col6"></td>
+	</tr>
+	<tr class="row11">
+		<td class="col0">11</td><td class="col1"><code>^</code><br/>
+<code>xor</code></td><td class="col2">ビット排他的論理和(XOR)<br/>
+^ の別名 </td><td class="col3">flags = flags ^ 42;<br/>
+</td><td class="col4">yes<br/>
+</td><td class="col5">左から右</td><td class="col6"></td>
+	</tr>
+	<tr class="row12">
+		<td class="col0">12</td><td class="col1"><code>|</code><br/>
+<code>bitor</code></td><td class="col2">ビット和(OR)<br/>
+| の別名</td><td class="col3">flags = flags | 42;<br/>
+</td><td class="col4">yes<br/>
+</td><td class="col5">左から右</td><td class="col6"></td>
+	</tr>
+	<tr class="row13">
+		<td class="col0">13</td><td class="col1"><code>&amp;&amp;</code><br/>
+<code>and</code></td><td class="col2">論理積(AND)<br/>
+&amp;&amp; の別名</td><td class="col3">if( conditionA &amp;&amp; conditionB ) …<br/>
+</td><td class="col4">yes<br/>
+</td><td class="col5">左から右</td><td class="col6"></td>
+	</tr>
+	<tr class="row14">
+		<td class="col0">14</td><td class="col1"><code>||</code><br/>
+<code>or</code></td><td class="col2">論理和(OR)<br/>
+|| の別名</td><td class="col3">if( conditionA || conditionB ) ...<br/>
+</td><td class="col4">yes<br/>
+</td><td class="col5">左から右</td><td class="col6"></td>
+	</tr>
+	<tr class="row15">
+		<td class="col0">15</td><td class="col1"><code>? :</code></td><td class="col2">Ternary conditional (if-then-else)</td><td class="col3">int i = (a &gt; b) ? a : b;</td><td class="col4">no</td><td class="col5">right to left</td><td class="col6"></td>
+	</tr>
+	<tr class="row16">
+		<td class="col0">16</td><td class="col1"><code>=</code><br/>
+<code>+=</code><br/>
+<code>-=</code><br/>
+<code>*=</code><br/>
+<code>/=</code><br/>
+<code>%=</code><br/>
+<code>&amp;=</code><br/>
+<code>and_eq</code><br/>
+<code>^=</code><br/>
+<code>xor_eq</code><br/>
+<code>|=</code><br/>
+<code>or_eq</code><br/>
+<code>&lt;&lt;=</code><br/>
+<code>&gt;&gt;=</code></td><td class="col2">代入演算子<br/>
+足して代入<br/>
+引いて代入<br/>
+積の代入<br/>
+商の代入<br/>
+剰余の代入<br/>
+ビット積(AND)の代入<br/>
+&amp;= の別名 <br/>
+ビット排他的論理和(XOR)の代入<br/>
+^= の代入 <br/>
+ビット和(OR)の代入<br/>
+|= の別名<br/>
+左ビットシフトの代入<br/>
+右ビットシフトの代入</td><td class="col3">int a = b;<br/>
+a += 3;<br/>
+b -= 4;<br/>
+a *= 5;<br/>
+a /= 2;<br/>
+a %= 3;<br/>
+flags &amp;= new_flags;<br/>
+<br/>
+flags ^= new_flags;<br/>
+<br/>
+flags |= new_flags;<br/>
+<br/>
+flags &lt;&lt;= 2;<br/>
+flags &gt;&gt;= 2;</td><td class="col4">yes<br/>
+yes<br/>
+yes<br/>
+yes<br/>
+yes<br/>
+yes<br/>
+yes<br/>
+<br/>
+yes<br/>
+<br/>
+yes<br/>
+<br/>
+yes<br/>
+yes</td><td class="col5">右から左</td><td class="col6"></td>
+	</tr>
+	<tr class="row17">
+		<td class="col0">17</td><td class="col1"><code>throw</code></td><td class="col2">例外のスロー</td><td class="col3">throw EClass(“Message”);</td><td class="col4" colspan="3">no</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0">18</td><td class="col1"><code>,</code></td><td class="col2">逐次評価演算子</td><td class="col3">for( i = 0, j = 0; i &lt; 10; i++, j++ ) …</td><td class="col4">yes</td><td class="col5">左から右</td><td class="col6"></td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [308-5091] -->
+</div>
+<!-- EDIT1 SECTION "C++ 演算子の優先順位" [1-5092] -->
+<h2 class="sectionedit3"><a name="評価順序と副作用" id="評価順序と副作用">評価順序と副作用</a></h2>
+<div class="level2">
+
+<p>
+
+演算子の優先順位に関して、C++の重要な側面の一つは、式における評価順序と、副作用の順序です。いくつかの場面ではどのような結果になるか未定義なものがあります。例えば、以下のコードを見てください:
+</p>
+<pre class="cpp code cpp">    <span class="kw4">float</span> x <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
+    x <span class="sy1">=</span> x <span class="sy2">/</span> <span class="sy2">++</span>x<span class="sy4">;</span></pre>
+<p>
+コンパイラが先に評価するのが、割り算の左側か、それとも右側かというのは明確に仕様として決まっていません。そのため、xの値は異なるコンパイラを使っても同じ結果になるという保証はされません。どちらが先に評価されるかによって、xの値は変化します。
+</p>
+
+<p>
+それに加えて、++xがx+1と評価されて実際に格納されて副作用が発生するタイミングも不定です。そのため、タイミングごとに違うxの値として評価されることがあるため、最終的なxの値が異なる可能性があります。
+</p>
+
+<p>
+結論としては、上記のような式は恐ろしく曖昧なため、どのようなコストを支払っても避けるべきです。疑わしい場合には、一つの曖昧な式を複数の式に分割し、評価順序が明確になるようにしてください。
+</p>
+
+</div>
+<!-- EDIT3 SECTION "評価順序と副作用" [5093-6391] -->
+<h2 class="sectionedit4"><a name="演算子のオーバーロード" id="演算子のオーバーロード">演算子のオーバーロード</a></h2>
+<div class="level2">
+
+<p>
+
+演算子のオーバーロードはとても便利に使用できる反面、とても危険な状態になる可能性もあります。便利な側面としては、自分で作成したクラスの演算子をオーバーロードすることで、既存の演算子の知識を利用できるようになって読みやすさが向上するという面があります。もう一方の危険な側面としては、予想外の評価がされてしまってプログラムの動作が違うものになってしまうか、最悪の場合はプログラムを壊すことにもなりかねません。慎重に使用してください。
+</p>
+
+<p>
+演算子のオーバーロードをするには、グローバル関数として定義する方法と、クラスのメンバーとして定義する方法の２種類あります。
+</p>
+
+<p>
+グローバル関数として定義する場合のサンプル:
+
+</p>
+<pre class="cpp code cpp">     ostream <span class="sy3">&amp;</span> operator<span class="sy1">&lt;&lt;</span> <span class="br0">&#40;</span>ostream <span class="sy3">&amp;</span> os, <span class="kw4">const</span> myClass <span class="sy3">&amp;</span> rhs<span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+ユーザが定義したクラスの中のプライベートなデータにアクセスする場合には、クラス宣言の中で、上記のグローバル関数をfriend関数として宣言する必要があります。
+</p>
+
+<p>
+例:
+
+</p>
+<pre class="cpp code cpp">     <span class="kw2">class</span> myClass <span class="br0">&#123;</span>
+&nbsp;
+       <span class="co1">// operator&lt;&lt;関数が'myData'にアクセスできるようにします</span>
+       <span class="co1">// (この宣言はpublicではなく、privateかprotectedにすべきです)</span>
+       <span class="kw2">friend</span> ostream <span class="sy3">&amp;</span> operator<span class="sy1">&lt;&lt;</span> <span class="br0">&#40;</span>ostream <span class="sy3">&amp;</span> lhs, <span class="kw4">const</span> myClass <span class="sy3">&amp;</span> rhs<span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+       <span class="kw2">private</span><span class="sy4">:</span>
+         <span class="kw4">int</span> myData<span class="sy4">;</span>
+     <span class="br0">&#125;</span></pre>
+<p>
+クラスのメンバーとして演算子のオーバーロードを行うには、以下のようにします:
+
+</p>
+<pre class="cpp code cpp">     <span class="kw2">class</span> myClass <span class="br0">&#123;</span>
+&nbsp;
+       <span class="kw2">public</span><span class="sy4">:</span>
+         <span class="co1">// 演算子の左辺値は'this'ポインタになります</span>
+         <span class="kw4">int</span> operator<span class="sy2">+</span> <span class="br0">&#40;</span><span class="kw4">const</span> myClass <span class="sy3">&amp;</span> rhs<span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+       <span class="kw2">private</span><span class="sy4">:</span>
+         <span class="kw4">int</span> myData<span class="sy4">;</span>
+     <span class="br0">&#125;</span></pre>
+</div>
+<!-- EDIT4 SECTION "演算子のオーバーロード" [6392-] --></div>
+</body>
+</html>

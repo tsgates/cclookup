@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es"
+ lang="es" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>es:io:get</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:29-0700" />
+<meta name="keywords" content="es,io,get" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/es/io/get?do=index" title="Índice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=es:io" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/es/io/get" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/es/io/get" />
+<link rel="canonical" href="get" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='es:io';var JSINFO = {"id":"es:io:get","namespace":"es:io"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="get" id="get">get</a></h2>
+<div class="level2">
+
+<p>
+Sintaxis:
+</p>
+<pre class="cpp code cpp">    <span class="kw4">int</span> istream<span class="sy4">::</span><span class="me2">get</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    istream<span class="sy3">&amp;</span> istream<span class="sy4">::</span><span class="me2">get</span><span class="br0">&#40;</span> <span class="kw4">char</span><span class="sy3">&amp;</span> ch <span class="br0">&#41;</span><span class="sy4">;</span>
+    istream<span class="sy3">&amp;</span> istream<span class="sy4">::</span><span class="me2">get</span><span class="br0">&#40;</span> <span class="kw4">char</span><span class="sy2">*</span> buffer, streamsize num <span class="br0">&#41;</span><span class="sy4">;</span>
+    istream<span class="sy3">&amp;</span> istream<span class="sy4">::</span><span class="me2">get</span><span class="br0">&#40;</span> <span class="kw4">char</span><span class="sy2">*</span> buffer, streamsize num, <span class="kw4">char</span> delim <span class="br0">&#41;</span><span class="sy4">;</span>
+    istream<span class="sy3">&amp;</span> istream<span class="sy4">::</span><span class="me2">get</span><span class="br0">&#40;</span> streambuf<span class="sy3">&amp;</span> buffer <span class="br0">&#41;</span><span class="sy4">;</span>
+    istream<span class="sy3">&amp;</span> istream<span class="sy4">::</span><span class="me2">get</span><span class="br0">&#40;</span> streambuf<span class="sy3">&amp;</span> buffer, <span class="kw4">char</span> delim <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+La función <code>get()</code> se usa con los flujos de entrada para:
+</p>
+<ul>
+<li class="level1"><div class="li"> leer un caracter y devolver su valor,</div>
+</li>
+<li class="level1"><div class="li"> leer un caracter y almacenarlo en <code>ch</code>,</div>
+</li>
+<li class="level1"><div class="li"> leer varios caracters hacia un <code>buffer</code> hasta que <code>num -1 </code> caracteres sean leídos o se alcance el <acronym title="End of file">EOF</acronym> o un delimitador <code>delim</code> (cuando un delimitador se encuentra no es leído en <code>buffer</code>),</div>
+</li>
+<li class="level1"><div class="li"> leer varios caracteres hacia un <code>buffer</code> hasta que se encuentre un salto de línea, <acronym title="End of file">EOF</acronym> o delimitador (nuevamente, el delimitador no es leído).</div>
+</li>
+</ul>
+
+<p>
+
+Por ejemplo el código siguiente muestra los contenidos del archivo <code>temp.txt</code> caracter a caracter:
+</p>
+<pre class="cpp code cpp">     <span class="kw4">char</span> ch<span class="sy4">;</span>
+     ifstream fentrada<span class="br0">&#40;</span> <span class="st0">&quot;temp.txt&quot;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+     <span class="kw1">while</span><span class="br0">&#40;</span> fentrada.<span class="me1">get</span><span class="br0">&#40;</span>ch<span class="br0">&#41;</span> <span class="br0">&#41;</span>
+       <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> ch<span class="sy4">;</span>
+     fin.<span class="me1">close</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+La función relacionada <code><a href="peek" class="wikilink1" title="es:io:peek">peek</a></code> sólo avisa qué caracter sigue en un flujo pero no lo lee a una variable.
+</p>
+
+<p>
+Tópicos Relacionados: <a href="http://www.cppreference.com/wiki/es/io/gcount" class="wikilink2" title="es:io:gcount" rel="nofollow">gcount</a>, <a href="http://www.cppreference.com/wiki/es/io/getline" class="wikilink2" title="es:io:getline" rel="nofollow">getline</a>, <a href="../../string/getline" class="wikilink1" title="string:getline">(C++ Strings) getline</a>, <a href="http://www.cppreference.com/wiki/es/io/ignore" class="wikilink2" title="es:io:ignore" rel="nofollow">ignore</a>, <a href="peek" class="wikilink1" title="es:io:peek">peek</a>, <a href="http://www.cppreference.com/wiki/es/io/put" class="wikilink2" title="es:io:put" rel="nofollow">put</a>, <a href="http://www.cppreference.com/wiki/es/io/read" class="wikilink2" title="es:io:read" rel="nofollow">read</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

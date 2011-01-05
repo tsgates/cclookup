@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn"
+ lang="cn" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>cn:c:io:scanf</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:52-0700" />
+<meta name="keywords" content="cn,c,io,scanf" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/cn/c/io/scanf?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=cn:c:io" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/cn/c/io/scanf" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/cn/c/io/scanf" />
+<link rel="canonical" href="scanf" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='cn:c:io';var JSINFO = {"id":"cn:c:io:scanf","namespace":"cn:c:io"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="scanf" id="scanf">scanf</a></h2>
+<div class="level2">
+
+<p>
+语法：
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;cstdio&gt;</span>
+    <span class="kw4">int</span> <span class="kw3">scanf</span><span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>format, ... <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+scanf()根据给定的格式从stdin中读取输入，并把数据存入其它参数中。它的工作方式很像printf()。
+</p>
+
+<p>
+格式化字符串由控制字符，空白字符和非空白字符组成。控制字符由百分号(%)开头，并列在下面：
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<th class="col0">控制字符</th><th class="col1">解释</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">%c</td><td class="col1">一个单独的字符</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">%d</td><td class="col1">一个十进制整数</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">%i</td><td class="col1">一个整数</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">%e, %f, %g</td><td class="col1">一个浮点数</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0">%lf</td><td class="col1">一个双精度浮点数</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0">%o</td><td class="col1">一个八进制数</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0">%s</td><td class="col1">一个字符串</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0">%x</td><td class="col1">一个十六进制数</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0">%p</td><td class="col1">一个指针</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0">%n</td><td class="col1">等于目前读到字符数目的整数</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0">%u</td><td class="col1">一个无符号整型</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0">%[]</td><td class="col1">一组字符</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0">%%</td><td class="col1">百分号</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [368-717] -->
+<p>
+
+scanf() 读取输入，根据格式匹配字符。当读到控制字符时，它将值读取到下一个变量。空白字符（tab，空格等）被忽略。非空白字符匹配到输入，然后丢弃。如果在百分号和控制字符之间有数字，则至多有那么些字符被变换到变量中。如果scnaf()遇到由%[]控制字符表示的一组字符，那么任何方括号内的字符被读入到变量中。scanf()的返回值是成功被赋值的变量个数，如果发生错误返回EOF。
+</p>
+
+<p>
+以下的代码简单展示了使用scanf()从用户读取一个整数，浮点数和双精度浮点数。注意scanf()的变量参数根据地址传递，由每个变量前引导的地址符(&amp;)表示(denote?)：
+</p>
+<pre class="cpp code cpp">   <span class="kw4">int</span> i<span class="sy4">;</span>
+   <span class="kw4">float</span> f<span class="sy4">;</span>
+   <span class="kw4">double</span> d<span class="sy4">;</span>
+&nbsp;
+   <span class="kw3">printf</span><span class="br0">&#40;</span> <span class="st0">&quot;Enter an integer: &quot;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+   <span class="kw3">scanf</span><span class="br0">&#40;</span> <span class="st0">&quot;%d&quot;</span>, <span class="sy3">&amp;</span>i <span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+   <span class="kw3">printf</span><span class="br0">&#40;</span> <span class="st0">&quot;Enter a float: &quot;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+   <span class="kw3">scanf</span><span class="br0">&#40;</span> <span class="st0">&quot;%f&quot;</span>, <span class="sy3">&amp;</span>f <span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+   <span class="kw3">printf</span><span class="br0">&#40;</span> <span class="st0">&quot;Enter a double: &quot;</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+   <span class="kw3">scanf</span><span class="br0">&#40;</span> <span class="st0">&quot;%lf&quot;</span>, <span class="sy3">&amp;</span>d <span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+   <span class="kw3">printf</span><span class="br0">&#40;</span> <span class="st0">&quot;You entered %d, %f, and %lf<span class="es1">\n</span>&quot;</span>, i, f, d <span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+相关主题： <a href="fgets" class="wikilink1" title="cn:c:io:fgets">fgets</a>, <a href="fscanf" class="wikilink1" title="cn:c:io:fscanf">fscanf</a>, <a href="printf" class="wikilink1" title="cn:c:io:printf">printf</a>, <a href="sscanf" class="wikilink1" title="cn:c:io:sscanf">sscanf</a>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "scanf" [3-] --></div>
+</body>
+</html>

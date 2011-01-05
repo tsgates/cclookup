@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru"
+ lang="ru" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>ru:string:npos</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:13-0700" />
+<meta name="keywords" content="ru,string,npos" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/ru/string/npos?do=index" title="Все страницы" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=ru:string" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/ru/string/npos" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/ru/string/npos" />
+<link rel="canonical" href="npos" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='ru:string';var JSINFO = {"id":"ru:string:npos","namespace":"ru:string"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="npos" id="npos">npos</a></h2>
+<div class="level2">
+
+<p>
+Синтаксис:
+</p>
+<pre class="cpp code cpp"> <span class="kw4">static</span> <span class="kw4">const</span> size_type npos <span class="sy1">=</span> <span class="sy2">-</span><span class="nu0">1</span><span class="sy4">;</span></pre>
+<p>
+<code>string::npos</code> - это специальное значение, которое указывает на следующие ситуации:
+</p>
+<ul>
+<li class="level1"><div class="li"> «не найдено», как возвращаемое значение функций <code>find()</code>, <code>find_first_of()</code>, и т.д.</div>
+</li>
+<li class="level1"><div class="li"> «все оставшиеся символы», в качестве длины подстроки.</div>
+</li>
+</ul>
+
+<p>
+
+Код для примера:
+
+</p>
+<pre class="cpp code cpp"> <span class="co2">#include &lt;set&gt;</span>
+ <span class="co2">#include &lt;iostream&gt;</span>
+ <span class="co2">#include &lt;iterator&gt;</span>
+ <span class="co2">#include &lt;algorithm&gt;</span>
+ <span class="co2">#include &lt;string&gt;</span>
+&nbsp;
+ <span class="kw4">int</span> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
+ <span class="br0">&#123;</span>
+   <span class="kw4">const</span> std<span class="sy4">::</span><span class="me2">string</span> text<span class="br0">&#40;</span><span class="st0">&quot;Vectors contain contiguous elements stored as an array.<span class="es1">\n</span><span class="es1">\n</span>&quot;</span>
+                          <span class="st0">&quot;Accessing members of a vector can be done in constant time, &quot;</span>
+                          <span class="st0">&quot;appending elements to a vector can be done in amortized constant time, &quot;</span>
+                          <span class="st0">&quot;whereas locating a specific value &quot;</span>
+                          <span class="st0">&quot;or inserting elements into the vector takes linear time.&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+   <span class="kw4">const</span> std<span class="sy4">::</span><span class="me2">string</span> delims<span class="br0">&#40;</span><span class="st0">&quot; <span class="es1">\t</span><span class="es1">\n</span>.,?!;:<span class="es1">\&quot;</span>&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+   std<span class="sy4">::</span><span class="me2">set</span><span class="sy1">&lt;</span>std<span class="sy4">::</span><span class="me2">string</span><span class="sy1">&gt;</span> words<span class="sy4">;</span>
+   std<span class="sy4">::</span><span class="me2">string</span><span class="sy4">::</span><span class="me2">size_type</span> end_pos<span class="sy4">;</span>
+&nbsp;
+   <span class="co1">// нахождение начала первого слова</span>
+   std<span class="sy4">::</span><span class="me2">string</span><span class="sy4">::</span><span class="me2">size_type</span> beg_pos <span class="sy1">=</span> text.<span class="me1">find_first_not_of</span><span class="br0">&#40;</span>delims<span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+   <span class="co1">// пока beg_pos не равняется &quot;not found&quot; (т.е. найдено начало слова)</span>
+   <span class="kw1">while</span> <span class="br0">&#40;</span>beg_pos <span class="sy3">!</span><span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">string</span><span class="sy4">::</span><span class="me2">npos</span><span class="br0">&#41;</span>
+   <span class="br0">&#123;</span>
+     <span class="co1">// нахождение ограничителя (конца слова)</span>
+     end_pos <span class="sy1">=</span> text.<span class="me1">find_first_of</span><span class="br0">&#40;</span>delims, beg_pos<span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+     <span class="co1">// вставка подстроки в множество</span>
+     words.<span class="me1">insert</span><span class="br0">&#40;</span>text.<span class="me1">substr</span><span class="br0">&#40;</span>beg_pos,
+                              end_pos <span class="sy1">==</span> std<span class="sy4">::</span><span class="me2">string</span><span class="sy4">::</span><span class="me2">npos</span> <span class="co1">// если end_pos равен &quot;not found&quot;</span>
+                              <span class="sy4">?</span> std<span class="sy4">::</span><span class="me2">string</span><span class="sy4">::</span><span class="me2">npos</span>          <span class="co1">// тогда &quot;all remaining characters&quot;</span>
+                              <span class="sy4">:</span> end_pos <span class="sy2">-</span> beg_pos<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+     <span class="co1">// нахождение начала слова</span>
+     beg_pos <span class="sy1">=</span> text.<span class="me1">find_first_not_of</span><span class="br0">&#40;</span>delims, end_pos<span class="br0">&#41;</span><span class="sy4">;</span>
+   <span class="br0">&#125;</span>
+&nbsp;
+   <span class="co1">// вывод слов на экран</span>
+   std<span class="sy4">::</span><span class="me2">copy</span><span class="br0">&#40;</span>words.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, words.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, std<span class="sy4">::</span><span class="me2">ostream_iterator</span><span class="sy1">&lt;</span>std<span class="sy4">::</span><span class="me2">string</span><span class="sy1">&gt;</span><span class="br0">&#40;</span>std<span class="sy4">::</span><span class="kw3">cout</span>, <span class="st0">&quot;<span class="es1">\n</span>&quot;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+   <span class="kw1">return</span> <span class="nu0">0</span><span class="sy4">;</span>
+ <span class="br0">&#125;</span></pre>
+<p>
+Смотрите также: <a href="find" class="wikilink1" title="ru:string:find">find</a>, <a href="find_first_not_of" class="wikilink1" title="ru:string:find_first_not_of">find_first_not_of</a>, <a href="find_first_of" class="wikilink1" title="ru:string:find_first_of">find_first_of</a>, <a href="find_last_not_of" class="wikilink1" title="ru:string:find_last_not_of">find_last_not_of</a>, <a href="find_last_of" class="wikilink1" title="ru:string:find_last_of">find_last_of</a>, <a href="rfind" class="wikilink1" title="ru:string:rfind">rfind</a>, <a href="substr" class="wikilink1" title="ru:string:substr">substr</a>
+</p>
+
+</div>
+</div>
+</body>
+</html>

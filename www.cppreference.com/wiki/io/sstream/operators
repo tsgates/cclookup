@@ -5,49 +5,51 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>io:sstream:operators</title>
-<meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="generator" content="DokuWiki" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2008-10-14T15:42:03-0700" />
+<meta name="date" content="2010-10-28T18:16:59-0700" />
 <meta name="keywords" content="io,sstream,operators" />
 <link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
-<link rel="start" href="../../index.html" />
-<link rel="contents" href="http://www.cppreference.com/wiki/io/sstream/operators?do=index" title="Index" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/io/sstream/operators?do=index" title="Sitemap" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
 <link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=io:sstream" />
 <link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/io/sstream/operators" />
 <link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/io/sstream/operators" />
-<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@edit=0&amp;write=1" ></script>
+<link rel="canonical" href="operators" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='io:sstream';var JSINFO = {"id":"io:sstream:operators","namespace":"io:sstream"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
 </head>
 <body>
 <div class="dokuwiki export">
 
-
-
-<h2><a name="string_stream_operators" id="string_stream_operators">String Stream Operators</a></h2>
+<h2 class="sectionedit1"><a name="string_stream_operators" id="string_stream_operators">String Stream Operators</a></h2>
 <div class="level2">
 
 <p>
 Syntax:
 </p>
-<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;sstream&gt;</span>
-    operator<span class="sy0">&lt;&lt;</span>
-    operator<span class="sy0">&gt;&gt;</span></pre>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;sstream&gt;</span>
+    operator<span class="sy1">&lt;&lt;</span>
+    operator<span class="sy1">&gt;&gt;</span></pre>
 <p>
 
 Like C++_I/O_Streams, the simplest way to use string streams is to take
 advantage of the overloaded « and » operators.
 The « operator inserts data into the stream. For example:
 </p>
-<pre class="c code c++" style="font-family:monospace;">    stream1 <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;hello&quot;</span> <span class="sy0">&lt;&lt;</span> i;</pre>
+<pre class="cpp code cpp">    stream1 <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;hello&quot;</span> <span class="sy1">&lt;&lt;</span> i<span class="sy4">;</span></pre>
 <p>
 
 This example inserts the string “hello” and the variable i into stream1. In
 contrast, the » operator extracts data out of a string stream:
 </p>
-<pre class="c code c++" style="font-family:monospace;">    stream1 <span class="sy0">&gt;&gt;</span> i;</pre>
+<pre class="cpp code cpp">    stream1 <span class="sy1">&gt;&gt;</span> i<span class="sy4">;</span></pre>
 <p>
 
 This code reads a value from stream1 and assigns the variable i that value.
@@ -58,6 +60,6 @@ Related Topics: <a href="../start" class="wikilink1" title="io:start">C++ I/O St
 </p>
 
 </div>
-<!-- SECTION "String Stream Operators" [3-] --></div>
+<!-- EDIT1 SECTION "String Stream Operators" [3-] --></div>
 </body>
 </html>

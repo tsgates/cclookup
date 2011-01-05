@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cn"
+ lang="cn" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>cn:c:other:signal</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:49-0700" />
+<meta name="keywords" content="cn,c,other,signal" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/cn/c/other/signal?do=index" title="Sitemap" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=cn:c:other" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/cn/c/other/signal" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/cn/c/other/signal" />
+<link rel="canonical" href="signal" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='cn:c:other';var JSINFO = {"id":"cn:c:other:signal","namespace":"cn:c:other"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="signal" id="signal">signal</a></h2>
+<div class="level2">
+
+<p>
+语法：
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;csignal&gt;</span>
+    <span class="kw4">void</span> <span class="br0">&#40;</span> <span class="sy2">*</span><span class="kw4">signal</span><span class="br0">&#40;</span> <span class="kw4">int</span> <span class="kw4">signal</span>, <span class="kw4">void</span> <span class="br0">&#40;</span><span class="sy2">*</span> func<span class="br0">&#41;</span> <span class="br0">&#40;</span><span class="kw4">int</span><span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span> <span class="br0">&#40;</span><span class="kw4">int</span><span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+signal() 函数设置你的程序接收到信号 signal 时调用 func。 func 可以是一个通常的信号处理函数，或者以下宏之一（定义在 csignal 头文件中）：
+
+</p>
+<div class="table sectionedit2"><table class="inline">
+	<tr class="row0">
+		<th class="col0">宏</th><th class="col1">解释</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">SIG_DFL</td><td class="col1">默认信号处理函数</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">SIG_IGN</td><td class="col1">忽略此信号</td>
+	</tr>
+</table></div>
+<!-- EDIT2 TABLE [318-391] -->
+<p>
+
+可以附到(attach)信号处理函数的一些基本信号如下：
+
+</p>
+<div class="table sectionedit3"><table class="inline">
+	<tr class="row0">
+		<th class="col0">信号</th><th class="col1">描述</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">SIGTERM</td><td class="col1">通用停止信号，可以被捕获</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">SIGINT</td><td class="col1">终止程序，正常是 ctrl-c.</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">SIGQUIT</td><td class="col1">终止程序，同SIGINT类似</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">SIGKILL</td><td class="col1">停止程序。不可以被捕获。</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0">SIGHUP</td><td class="col1">报告一个中断连接终止。</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0">SIGSEGV</td><td class="col1">报告一个内存段错误。</td>
+	</tr>
+</table></div>
+<!-- EDIT3 TABLE [463-739] -->
+<p>
+
+signal()的返回值是之前此信号处理函数的地址，如果发生错误返回SIG_ERR。
+</p>
+
+<p>
+例如，下面这个例子使用 signal() 函数在用户终止程序时调用任意数目的函数。函数们存储在一个向量(vector)中，并且一个单一的“清理”函数在程序终止时调用这个向量中的每一个函数：
+</p>
+<pre class="cpp code cpp">  <span class="kw4">void</span> f1<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;calling f1()...&quot;</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+  <span class="br0">&#125;</span>
+&nbsp;
+  <span class="kw4">void</span> f2<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    <span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;calling f2()...&quot;</span> <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span>
+  <span class="br0">&#125;</span>
+&nbsp;
+  <span class="kw4">typedef</span> <span class="kw4">void</span><span class="br0">&#40;</span><span class="sy2">*</span>endFunc<span class="br0">&#41;</span><span class="br0">&#40;</span><span class="kw4">void</span><span class="br0">&#41;</span><span class="sy4">;</span>
+  vector<span class="sy1">&lt;</span>endFunc<span class="sy1">&gt;</span> endFuncs<span class="sy4">;</span>
+&nbsp;
+  <span class="kw4">void</span> cleanUp<span class="br0">&#40;</span> <span class="kw4">int</span> dummy <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">unsigned</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> endFuncs.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> i<span class="sy2">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+      endFunc f <span class="sy1">=</span> endFuncs.<span class="me1">at</span><span class="br0">&#40;</span>i<span class="br0">&#41;</span><span class="sy4">;</span>
+      <span class="br0">&#40;</span><span class="sy2">*</span>f<span class="br0">&#41;</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="br0">&#125;</span>
+    <span class="kw3">exit</span><span class="br0">&#40;</span><span class="sy2">-</span><span class="nu0">1</span><span class="br0">&#41;</span><span class="sy4">;</span>
+  <span class="br0">&#125;</span>
+&nbsp;
+  <span class="kw4">int</span> main<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+&nbsp;
+    <span class="co1">// connect various signals to our clean-up function</span>
+    <span class="kw4">signal</span><span class="br0">&#40;</span> <span class="kw2">SIGTERM</span>, cleanUp <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">signal</span><span class="br0">&#40;</span> <span class="kw2">SIGINT</span>, cleanUp <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">signal</span><span class="br0">&#40;</span> SIGQUIT, cleanUp <span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">signal</span><span class="br0">&#40;</span> SIGHUP, cleanUp <span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+    <span class="co1">// add two specific clean-up functions to a list of functions</span>
+    endFuncs.<span class="me1">push_back</span><span class="br0">&#40;</span> f1 <span class="br0">&#41;</span><span class="sy4">;</span>
+    endFuncs.<span class="me1">push_back</span><span class="br0">&#40;</span> f2 <span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+    <span class="co1">// loop until the user breaks</span>
+    <span class="kw1">while</span><span class="br0">&#40;</span> <span class="nu0">1</span> <span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+    <span class="kw1">return</span> <span class="nu0">0</span><span class="sy4">;</span>
+  <span class="br0">&#125;</span></pre>
+<p>
+相关主题： <a href="raise" class="wikilink1" title="cn:c:other:raise">raise</a>
+</p>
+
+</div>
+<!-- EDIT1 SECTION "signal" [3-] --></div>
+</body>
+</html>

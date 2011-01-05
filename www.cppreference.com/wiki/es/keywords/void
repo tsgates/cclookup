@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es"
+ lang="es" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>es:keywords:void</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:32-0700" />
+<meta name="keywords" content="es,keywords,void" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/es/keywords/void?do=index" title="Índice" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=es:keywords" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/es/keywords/void" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/es/keywords/void" />
+<link rel="canonical" href="void" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='es:keywords';var JSINFO = {"id":"es:keywords:void","namespace":"es:keywords"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Tabla de Contenidos</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="void#void" class="toc">void</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="void#indicador_de_sin_valor" class="toc">Indicador de Sin Valor</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="void#como_indicador_de_un_puntero_generico" class="toc">Como indicador de un puntero genérico</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="void#topicos_relacionados" class="toc">Tópicos Relacionados</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<h2 class="sectionedit1"><a name="void" id="void">void</a></h2>
+<div class="level2">
+
+<p>
+
+La <a href="start" class="wikilink1" title="es:keywords:start">palabra clave</a> <code>void</code> es un <a href="../data_types" class="wikilink1" title="es:data_types">nombre de tipo de datos</a> y se usa con un doble significado en C++:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> Como indicador para funciones que no retornan un valor, o no toman argumentos.</div>
+</li>
+<li class="level1"><div class="li"> Como indicador de un puntero genérico (“puntero-a-cualquier-cosa”).</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT1 SECTION "void" [1-298] -->
+<h3 class="sectionedit2"><a name="indicador_de_sin_valor" id="indicador_de_sin_valor">Indicador de Sin Valor</a></h3>
+<div class="level3">
+
+<p>
+
+<code>void</code> como declaración del tipo de retorno de una función indica que esa función no retorna, de hecho, un valor:
+</p>
+<pre class="cpp code cpp"><span class="kw4">void</span> double_it <span class="br0">&#40;</span><span class="kw4">int</span><span class="sy3">&amp;</span> x<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    x<span class="sy2">*</span><span class="sy1">=</span> <span class="nu0">2</span><span class="sy4">;</span>
+    <span class="kw1">return</span><span class="sy4">;</span> <span class="co1">// aquí termina la función, sin devolver nada.</span>
+<span class="br0">&#125;</span>
+&nbsp;
+<span class="co1">// La forma de llamar a la función double_it() es como sigue:</span>
+&nbsp;
+<span class="kw4">int</span> valor <span class="sy1">=</span> <span class="nu0">100</span><span class="sy4">;</span>
+double_it <span class="br0">&#40;</span>valor<span class="br0">&#41;</span><span class="sy4">;</span></pre>
+<p>
+<code>void</code> como lista de argumentos indica explícitamente que la función no recibe ningún argumento.
+</p>
+<pre class="cpp code cpp"><span class="kw4">int</span> random <span class="br0">&#40;</span><span class="kw4">void</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+    <span class="kw4">int</span> x<span class="sy1">=</span> <span class="kw3">rand</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw1">return</span> x <span class="sy3">^</span> <span class="kw3">rand</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+<span class="br0">&#125;</span>
+&nbsp;
+<span class="co1">// La forma de llamar a la función random es como sigue:</span>
+<span class="kw4">int</span> r <span class="sy1">=</span> random<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span></pre>
+</div>
+<!-- EDIT2 SECTION "Indicador de Sin Valor" [299-940] -->
+<h3 class="sectionedit3"><a name="como_indicador_de_un_puntero_generico" id="como_indicador_de_un_puntero_generico">Como indicador de un puntero genérico</a></h3>
+<div class="level3">
+
+<p>
+
+La palabra clave <code>void</code> no puede usarse para declarar una variable o referencia, pero puede utilizarse para convertir o declarar un puntero que apunta a algún lugar en memoria, representativo de un tipo de datos que “no interesa” (al momento de declarar).
+</p>
+
+<p>
+<img src="../../lib/images/smileys/fixme.gif" class="middle" alt="FIXME" /> poner ejemplo
+</p>
+
+</div>
+<!-- EDIT3 SECTION "Como indicador de un puntero genérico" [941-1272] -->
+<h3 class="sectionedit4"><a name="topicos_relacionados" id="topicos_relacionados">Tópicos Relacionados</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> <a href="../data_types" class="wikilink1" title="es:data_types">data_types</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="bool" class="wikilink1" title="es:keywords:bool">bool</a>, <a href="http://www.cppreference.com/wiki/es/keywords/char" class="wikilink2" title="es:keywords:char" rel="nofollow">char</a>, <a href="http://www.cppreference.com/wiki/es/keywords/double" class="wikilink2" title="es:keywords:double" rel="nofollow">double</a>, <a href="http://www.cppreference.com/wiki/es/keywords/float" class="wikilink2" title="es:keywords:float" rel="nofollow">float</a>, <a href="http://www.cppreference.com/wiki/es/keywords/int" class="wikilink2" title="es:keywords:int" rel="nofollow">int</a>, <a href="http://www.cppreference.com/wiki/es/keywords/long" class="wikilink2" title="es:keywords:long" rel="nofollow">long</a>, <a href="http://www.cppreference.com/wiki/es/keywords/short" class="wikilink2" title="es:keywords:short" rel="nofollow">short</a>, <a href="http://www.cppreference.com/wiki/es/keywords/signed" class="wikilink2" title="es:keywords:signed" rel="nofollow">signed</a>, <a href="http://www.cppreference.com/wiki/es/keywords/unsigned" class="wikilink2" title="es:keywords:unsigned" rel="nofollow">unsigned</a>, <a href="http://www.cppreference.com/wiki/es/keywords/wchar_t" class="wikilink2" title="es:keywords:wchar_t" rel="nofollow">wchar_t</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="http://www.cppreference.com/wiki/es/keywords/dynamic_cast" class="wikilink2" title="es:keywords:dynamic_cast" rel="nofollow">dynamic_cast</a>, <a href="reinterpret_cast" class="wikilink1" title="es:keywords:reinterpret_cast">reinterpret_cast</a></div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT4 SECTION "Tópicos Relacionados" [1273-] --></div>
+</body>
+</html>

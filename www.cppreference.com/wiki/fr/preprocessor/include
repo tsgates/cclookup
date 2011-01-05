@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr"
+ lang="fr" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>fr:preprocessor:include</title>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-10-28T18:17:56-0700" />
+<meta name="keywords" content="fr,preprocessor,include" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://www.cppreference.com/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="http://www.cppreference.com/wiki/fr/preprocessor/include?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://www.cppreference.com/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="http://www.cppreference.com/wiki/feed.php?mode=list&amp;ns=fr:preprocessor" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://www.cppreference.com/wiki/_export/xhtml/fr/preprocessor/include" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://www.cppreference.com/wiki/_export/raw/fr/preprocessor/include" />
+<link rel="canonical" href="include" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css.php@t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css.php@s=all&amp;t=custom1&amp;tseed=1289693594" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css.php@s=print&amp;t=custom1&amp;tseed=1289693594" />
+<script type="text/javascript" ><!--//--><![CDATA[//><!--
+var NS='fr:preprocessor';var JSINFO = {"id":"fr:preprocessor:include","namespace":"fr:preprocessor"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js.php@tseed=1289693594" ></script>
+</head>
+<body>
+<div class="dokuwiki export">
+
+<h2 class="sectionedit1"><a name="include" id="include">#include</a></h2>
+<div class="level2">
+
+<p>
+Syntaxe :
+
+</p>
+<pre class="cpp code cpp">    <span class="co2">#include &lt;fichier&gt;</span>
+    <span class="co2">#include &quot;fichier&quot;</span></pre>
+<p>
+Cette commande va chercher le <code>fichier</code> et insérer son contenu à l&#039;emplacement
+du <code>#include</code>.
+</p>
+
+<p>
+La différence de syntaxe entre les deux lignes est qu&#039;avec les guillemets, le compilateur
+ne fera pas de recherche approfondie pour ce fichier tandis qu&#039;avec les signes
+inférieur/supérieur le compilateur cherchera le fichier de quelque manière.
+</p>
+
+<p>
+L&#039;implémentation de ces deux comportement dépend du compilateur, mais, généralement,
+les signes inférieur/supérieur indiquent qu&#039;il faut aller chercher le fichier dans
+les répertoires de la librairie standard. Et les guillemets indiquent une recherche
+dans le répertoire courant.
+</p>
+
+<p>
+L&#039;implémentation de la commande <code>#include</code> en C++ permet d&#039;éviter de mettre le nom
+complet du fichier (au moins pour les librairies standard). C&#039;est pour cela que le
+code ci-dessous fonctionne :
+
+</p>
+<pre class="cpp code cpp">     <span class="co2">#include &lt;iostream&gt;</span></pre>
+<p>
+…et que le compilateur ne vous hurle pas dessus.
+</p>
+
+</div>
+</div>
+</body>
+</html>
